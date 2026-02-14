@@ -17,6 +17,10 @@
   --brand: #9ad1c9;
   --accent: #64b6ac;
   --card: #13201e;
+   --surface: #ffffff;     /* white section background */
+  --ink-strong: #0e1514;  /* dark text on light surfaces */
+  --line-strong: rgba(6, 20, 19, 0.12); /* light divider on white */
+
 
   /* Sizing */
   --radius: 8px;
@@ -71,15 +75,13 @@ p  { margin: 0 0 12px; }
 /* -------------------------
    HEADER / NAV
    ------------------------- */
+
 .site-header {
-  border-bottom: 1px solid var(--line);
-  padding: 14px 0;
-  background: linear-gradient(180deg, rgba(6, 20, 19, 0.8), transparent);
-  position: sticky;
-  top: 0;
-  backdrop-filter: saturate(140%) blur(6px);
-  z-index: 20;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line-strong);
+  backdrop-filter: none;  /* remove glass effect on white */
 }
+
 .header-wrap {
   display: flex;
   align-items: center;
@@ -95,8 +97,10 @@ p  { margin: 0 0 12px; }
   margin: 0;
   padding: 0;
 }
-.nav a { color: var(--ink); opacity: 0.9; }
-.nav a:hover, .nav a:focus { color: var(--brand); }
+
+.nav a { color: var(--ink-strong); opacity: 0.9; }
+.nav a:hover, .nav a:focus { color: #265b56; } /* darker teal for hover */
+
 
 /* -------------------------
    HERO
@@ -132,7 +136,13 @@ p  { margin: 0 0 12px; }
 /* -------------------------
    SECTIONS & CARDS
    ------------------------- */
-.section { padding: 40px 0; }
+
+.section {
+  background: var(--surface);
+  color: var(--ink-strong);
+  border-top: 1px solid var(--line-strong);
+}
+
 .section h2 { margin-bottom: 14px; }
 
 .card-grid {
@@ -141,12 +151,13 @@ p  { margin: 0 0 12px; }
   gap: 16px;
 }
 
+
 .card {
-  background: var(--card);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--radius);
-  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  color: var(--ink-strong);
 }
+
 .card h3 { margin-top: 0; }
 
 ul { padding-left: 18px; margin: 0 0 8px; }
@@ -171,10 +182,11 @@ li + li { margin-top: 6px; }
 /* -------------------------
    FOOTER
    ------------------------- */
+
 .site-footer {
-  margin-top: 56px;
-  border-top: 1px solid var(--line);
-  padding: 20px 0 28px;
+  background: var(--surface);
+  border-top: 1px solid var(--line-strong);
+  color: var(--ink-strong);
 }
 .footer-grid {
   display: grid;
@@ -183,8 +195,8 @@ li + li { margin-top: 6px; }
 }
 .footer-grid ul { list-style: none; padding: 0; margin: 8px 0 0; }
 .footer-grid li { margin: 4px 0; }
-.footer-grid a { color: var(--muted); }
-.footer-grid a:hover { color: var(--brand); }
+.footer-grid a { color: #365e59; }         /* readable link color on white */
+.footer-grid a:hover { color: #204a45; }   /* darker hover */
 .small { color: var(--muted); font-size: 0.95rem; }
 
 /* -------------------------
@@ -217,3 +229,6 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   .site-header, .site-footer { display: none; }
   a { color: black; text-decoration: underline; }
 }
+
+/* Lead text and small text on light */
+.lead, .small { color: #395753; }
