@@ -82,7 +82,7 @@ p  { margin: 0 0 12px; }
    ------------------------- */
 
 .site-header {
-  padding: 20px 0;
+  padding: 10px 0;
   background: var(--surface);
   border-bottom: 1px solid var(--line-strong);
   backdrop-filter: none;  /* remove glass effect on white */
