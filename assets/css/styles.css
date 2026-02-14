@@ -412,7 +412,7 @@ section#what-we-do .card-grid {
    
 .hero-right .cad-contour,
 .hero-right svg.cad-contour {
-  height: 200px !important;    /* change this number to your taste: 180 / 220 / 240 */
+  height: 300px !important;    /* change this number to your taste: 180 / 220 / 240 */
   width: auto !important;
   max-height: none !important; /* neutralize earlier max-height rules */
   display: block;              /* no inline baseline quirks */
