@@ -85,7 +85,7 @@ p  { margin: 0 0 12px; }
   list-style: none;
   padding: 10px 0;
   background: var(--surface);
-  border-bottom: 1px solid var(--line-strong);
+  border-bottom: 0 !important;
   backdrop-filter: none;  /* remove glass effect on white */
 }
 
@@ -192,13 +192,13 @@ p  { margin: 0 0 12px; }
 .section {
   background: var(--surface);
   color: var(--bg);
-  border-top: 1px solid var(--line-strong);
+  border-top: 0 !important;
   padding: 60px 0;
 }
 
 /* Add spacing BETWEEN sections as well */
 .section + .section {
-  margin-top: 28px;                /* space “outside” the blocks */
+  margin-top: 0 !important;                /* space “outside” the blocks */
 }
 
 .section h2 { margin: 0 0 22px; }
@@ -271,7 +271,7 @@ section#focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile
 
 .site-footer {
   background: var(--surface);
-  border-top: 1px solid var(--line-strong);
+  border-top: 0 !important;
   color: var(--ink-strong);
   padding-top: 28px;
 }
