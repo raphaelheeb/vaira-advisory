@@ -39,9 +39,10 @@ html, body { margin: 0; padding: 0; }
 
 body {
   font-family: var(--font);
+  font-size: 16.5px;
   color: var(--ink);
   background: radial-gradient(1000px 1000px at 100% 0%, var(--bg-soft) 0%, var(--bg) 40%);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,10 +59,10 @@ a:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
 /* Type scale */
 h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
 h1 { font-size: clamp(28px, 4vw, 42px); }
-h2 { font-size: clamp(22px, 3vw, 28px); }
+h2 { font-size: clamp(22px, 3vw, 30px); }
 h3 { font-size: clamp(18px, 2.4vw, 20px); }
 p  { margin: 0 0 12px; }
-.lead { font-size: 1.1rem; color: #395753; }
+.lead { font-size: 1.125rem; color: #395753; }
 
 /* Wrappers */
 .content-wrapper,
@@ -72,18 +73,23 @@ p  { margin: 0 0 12px; }
   padding-right: 48px;
 }
 
+/* Narrow wrappers for text-heavy blocks */
+
+.wrapper--narrow { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+
 /* -------------------------
    HEADER / NAV
    ------------------------- */
 
 .site-header {
-  padding: 18px 0;
+  padding: 20px 0;
   background: var(--surface);
   border-bottom: 1px solid var(--line-strong);
   backdrop-filter: none;  /* remove glass effect on white */
 }
 
-.site-header img { height: 48px; }
+.site-header img { height: 40px; }
 
 .header-wrap {
   display: flex;
@@ -96,11 +102,10 @@ p  { margin: 0 0 12px; }
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   margin: 0;
   padding: 0;
 }
-
 
 .nav a {
   display: inline-block;               /* avoids baseline quirks */
@@ -110,8 +115,7 @@ p  { margin: 0 0 12px; }
   opacity: 0.9;
 }
 
-.nav a:hover, .nav a:focus { color: #265b56; } /* darker teal for hover */
-
+.nav a[aria-current="page"]{ color: #204a45; font-weight: 700; } /* darker teal for hover */
 
 /* -------------------------
    HERO
@@ -155,33 +159,39 @@ p  { margin: 0 0 12px; }
   background: var(--surface);
   color: var(--bg);
   border-top: 1px solid var(--line-strong);
-  padding: 56px 0;
+  padding: 60px 0;
 }
 
 /* Add spacing BETWEEN sections as well */
 .section + .section {
-  margin-top: 24px;                /* space “outside” the blocks */
+  margin-top: 28px;                /* space “outside” the blocks */
 }
 
-.section h2 { margin: 0 0 20px; }
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-}
+.section h2 { margin: 0 0 22px; }
 
 
+/* Card elevation and rounded corners */
 .card {
   background: var(--surface);
-  border: 1px solid var(--line-strong);
   color: var(--ink-strong);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  padding: 18px 16px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.02), 0 8px 20px rgba(6, 20, 19, 0.04);
 }
 
-.card h3 { margin-top: 0; }
+/* Tighter titles inside cards */
+.card h3 { margin: 0 0 8px; }
+
+/* Slightly larger grid gap for breath */
+.card-grid { gap: 24px; }
 
 ul { padding-left: 18px; margin: 0 0 8px; }
 li + li { margin-top: 6px; }
+
+#focus .card-grid { grid-template-columns: repeat(2, minmax(280px, 1fr)); }
+@media (max-width: 720px) { #focus .card-grid { grid-template-columns: 1fr; } }
+
 
 /* -------------------------
    CTAs & BUTTONS
@@ -228,6 +238,21 @@ th, td { padding: 10px 12px; border-bottom: 1px solid var(--line-soft); }
 th { text-align: left; color: var(--muted); font-weight: 600; }
 
 /* -------------------------
+   SKIP LINK
+   ------------------------- */
+
+.skip-link {
+  position: absolute; left: -9999px; top: auto;
+  width: 1px; height: 1px; overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed; left: 16px; top: 12px; width: auto; height: auto;
+  background: #fff; color: #062422; padding: 8px 12px; border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+
+/* -------------------------
    RESPONSIVE
    ------------------------- */
 @media (max-width: 860px) {
@@ -252,10 +277,8 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   a { color: black; text-decoration: underline; }
 }
 
-
 /* Lead text and small text on light */
 .lead, .small { color: #395753; }
-
 
 /* DEFAULT WHITE (for everything) */
 .section {
