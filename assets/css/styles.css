@@ -152,7 +152,8 @@ p  { margin: 0 0 12px; }
 
 .hero-ctas .cta-btn { 
             margin-right: 8px;
-            color:#ffffff; 
+            color:#ffffff;
+            backround:#9ad1c9;
                     }
 
 /* If needed on small screens: */
@@ -270,7 +271,7 @@ section#focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile
    ------------------------- */
 
 .site-footer {
-  background: var(--surface);
+  background: #f1f7f6;
   border-top: 0 !important;
   color: var(--ink-strong);
   padding-top: 28px;
