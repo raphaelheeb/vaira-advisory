@@ -409,29 +409,26 @@ section#what-we-do .card-grid {
     margin-top: 16px;
   }
 
-/* --- HERO VISUAL: force an explicit height on the actual SVG --- */
-   
-.hero-right .cad-contour,
-.hero-right svg.cad-contour {
-  height: 500px !important;    /* change this number to your taste: 180 / 220 / 240 */
-  width: auto !important;
-  max-height: none !important; /* neutralize earlier max-height rules */
-  display: block;              /* no inline baseline quirks */
+/* === Increase CAD visual size in Hero === */
+
+/* Increase width of right column */
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); /* right side gets more space */
 }
 
-/* If your SVG doesn't carry the .cad-contour class, this covers any SVG in hero-right */
-.hero-right > svg {
-  height: 200px !important;
-  width: auto !important;
-  max-height: none !important;
-  display: block;
-}
-
-/* Ensure the right column doesn't stretch the SVG vertically */
+/* Grow the visual container */
 .hero-right {
+  inline-size: clamp(280px, 40vw, 480px); /* <<< main knob */
   display: flex;
-  align-items: flex-start;      /* don't stretch to the grid row's height */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make SVG fill the container */
+.hero-right svg {
+  width: 100%;
+  height: auto;
+  max-height: none !important;
 }
 }
 
