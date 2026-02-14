@@ -74,7 +74,6 @@ p  { margin: 0 0 12px; }
 }
 
 /* Narrow wrappers for text-heavy blocks */
-
 .wrapper--narrow { max-width: 980px; margin: 0 auto; padding: 0 20px; }
 
 
@@ -89,7 +88,7 @@ p  { margin: 0 0 12px; }
   backdrop-filter: none;  /* remove glass effect on white */
 }
 
-.site-header img { height: 40px; }
+.site-header img { height: 50px; }
 
 .header-wrap {
   display: flex;
