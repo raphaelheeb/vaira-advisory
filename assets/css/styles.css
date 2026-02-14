@@ -198,6 +198,28 @@ p  { margin: 0 0 12px; }
   box-shadow: 0 1px 1px rgba(0,0,0,0.02), 0 8px 20px rgba(6, 20, 19, 0.04);
 }
 
+/* === Areas of Focus: 2×2 grid on desktop === */
+#focus .card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));  /* 2 columns only */
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  #focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile */
+}
+
+/* Rounded cards here as well */
+#focus .card {
+  border-radius: 12px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line-strong, rgba(6,20,19,.12));
+  color: var(--ink-strong, #0e1514);
+  padding: 18px 16px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.02), 0 8px 20px rgba(6, 20, 19, 0.04);
+}
+
+
 /* -------------------------
    CTAs & BUTTONS
    ------------------------- */
