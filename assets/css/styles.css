@@ -433,5 +433,17 @@ section#what-we-do .card-grid {
   justify-content: flex-start;
 }
 }
-   
+
+   /* === Center CTA title + button === */
+
+#cta .content-wrapper,
+#CTA .content-wrapper {       /* your HTML uses id="CTA" with caps */
+  text-align: center;
+}
+
+#cta .cta-btn,
+#CTA .cta-btn {
+  display: inline-block;      /* ensures proper centering */
+  margin: 16px auto 0;        /* adds spacing above, auto-centers */
+}
 }
