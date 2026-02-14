@@ -174,29 +174,29 @@ p  { margin: 0 0 12px; }
 
 .section h2 { margin: 0 0 22px; }
 
+/* === What We Do grid === */
+#what-we-do .card-grid {
+  display: grid;                               /* <- ensure grid is actually on */
+  grid-template-columns: repeat(3, 1fr);       /* 3 across on desktop */
+  gap: 24px;
+}
 
-/* Card elevation and rounded corners */
-.card {
-  background: var(--surface);
-  color: var(--ink-strong);
-  border: 1px solid var(--line-strong);
+@media (max-width: 980px) {
+  #what-we-do .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  #what-we-do .card-grid { grid-template-columns: 1fr; }
+}
+
+/* Round edges as requested */
+#what-we-do .card {
   border-radius: 12px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line-strong, rgba(6,20,19,.12));
+  color: var(--ink-strong, #0e1514);
   padding: 18px 16px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.02), 0 8px 20px rgba(6, 20, 19, 0.04);
 }
-
-/* Tighter titles inside cards */
-.card h3 { margin: 0 0 8px; }
-
-/* Slightly larger grid gap for breath */
-.card-grid { gap: 24px; }
-
-ul { padding-left: 18px; margin: 0 0 8px; }
-li + li { margin-top: 6px; }
-
-#focus .card-grid { grid-template-columns: repeat(2, minmax(280px, 1fr)); }
-@media (max-width: 720px) { #focus .card-grid { grid-template-columns: 1fr; } }
-
 
 /* -------------------------
    CTAs & BUTTONS
