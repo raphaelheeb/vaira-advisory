@@ -117,9 +117,11 @@ p  { margin: 0 0 12px; }
 /* -------------------------
    HERO
    ------------------------- */
-.hero { padding: 36px 0 24px;
-      background: var(--accent);
+.hero { 
+   background: var(--accent);
+   padding: 36px 0 24px;
       }
+.hero .content-wrapper { padding-left: 20px; padding-right: 20px; }
 
 .hero-grid {
   display: grid;
@@ -131,6 +133,12 @@ p  { margin: 0 0 12px; }
 .hero-sub   { color: var(--muted); margin-bottom: 14px; }
 
 .hero-ctas .cta-btn { margin-right: 8px; }
+
+/* If needed on small screens: */
+@media (max-width: 860px) {
+  .hero { padding: 24px 0 16px; }
+  .hero-grid { grid-template-columns: 1fr; }
+}
 
 /* --- CAD/Lattice hero visuals --- */
 .hero-right { position: relative; min-height: 260px; }
