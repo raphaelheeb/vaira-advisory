@@ -119,10 +119,10 @@ p  { margin: 0 0 12px; }
    HERO
    ------------------------- */
 .hero { 
-   background: #0f1b1a;
+   background: #0A6064;
    padding: 28px 0 18px;
       }
-.hero .content-wrapper { padding-left: 20px; padding-right: 20px; }
+.hero .content-wrapper { padding-left: 10px; padding-right: 10px; }
 
 .hero-grid {
   display: grid;
