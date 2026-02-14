@@ -1,1 +1,230 @@
+/* =========================================================
+   VAIRA Advisory – Lightweight Styles
+   Purpose: Minimal, professional styling for a small, static site
+   ========================================================= */
 
+/* -------------------------
+   DESIGN TOKENS
+   ------------------------- */
+:root {
+  /* Colors (dark technical palette) */
+  --bg: #0e1514;
+  --bg-soft: #0f2220;
+  --ink: #e8f0ef;
+  --muted: #b8d4d0;
+  --line: rgba(184, 212, 208, 0.20);
+  --line-soft: rgba(184, 212, 208, 0.12);
+  --brand: #9ad1c9;
+  --accent: #64b6ac;
+  --card: #13201e;
+
+  /* Sizing */
+  --radius: 8px;
+  --maxw: 1080px;
+
+  /* Typography */
+  --font: 'Public Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+/* -------------------------
+   RESET / BASE
+   ------------------------- */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background:
+    radial-gradient(1000px 1000px at 100% 0%, var(--bg-soft) 0%, var(--bg) 40%);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+svg { display: block; }
+
+main { display: block; }
+
+/* Link & focus */
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--brand); }
+a:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* Type scale */
+h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
+h1 { font-size: clamp(28px, 4vw, 42px); }
+h2 { font-size: clamp(22px, 3vw, 28px); }
+h3 { font-size: clamp(18px, 2.4vw, 20px); }
+p  { margin: 0 0 12px; }
+.lead { font-size: 1.1rem; color: var(--muted); }
+
+/* Wrappers */
+.content-wrapper,
+.header-wrap,
+.footer-grid {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -------------------------
+   HEADER / NAV
+   ------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  background: linear-gradient(180deg, rgba(6, 20, 19, 0.8), transparent);
+  position: sticky;
+  top: 0;
+  backdrop-filter: saturate(140%) blur(6px);
+  z-index: 20;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-header img {
+  height: 28px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  color: var(--ink);
+  opacity: 0.9;
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--brand);
+}
+
+/* -------------------------
+   HERO
+   ------------------------- */
+.hero {
+  padding: 64px 0 40px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: start;
+}
+.hero-title { margin-bottom: 10px; }
+.hero-sub   { color: var(--muted); margin-bottom: 18px; }
+
+/* Optional right-side decorative block (kept light) */
+.hero-right .card {
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, var(--card), #0e1a18);
+  border: 1px solid var(--line);
+}
+
+/* -------------------------
+   SECTIONS & CARDS
+   ------------------------- */
+.section {
+  padding: 40px 0;
+}
+.section h2 {
+  margin-bottom: 14px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.card h3 { margin-top: 0; }
+
+ul { padding-left: 18px; margin: 0 0 8px; }
+li + li { margin-top: 6px; }
+
+/* -------------------------
+   CTAs & BUTTONS
+   ------------------------- */
+.cta-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #062422;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 160ms ease, transform 100ms ease;
+}
+.cta-btn:hover { background: #7dc6bc; }
+.cta-btn:active { transform: translateY(1px); }
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+.site-footer {
+  margin-top: 56px;
+  border-top: 1px solid var(--line);
+  padding: 20px 0 28px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.footer-grid li { margin: 4px 0; }
+.footer-grid a { color: var(--muted); }
+.footer-grid a:hover { color: var(--brand); }
+.small { color: var(--muted); font-size: 0.95rem; }
+
+/* -------------------------
+   TABLES (if you add any later)
+   ------------------------- */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--line-soft); }
+th { text-align: left; color: var(--muted); font-weight: 600; }
+
+/* -------------------------
+   RESPONSIVE
+   ------------------------- */
+@media (max-width: 960px) {
+  .hero { padding-top: 48px; }
+}
+
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .nav { gap: 14px; }
+}
+
+/* -------------------------
+   PRINT (basic)
+   ------------------------- */
+@media print {
+  .site-header, .site-footer { display: none; }
+  a { color: black; text-decoration: underline; }
+}
+``
