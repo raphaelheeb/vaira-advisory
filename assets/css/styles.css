@@ -256,7 +256,7 @@ section#focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile
   display: inline-block;
   padding: 10px 16px;
   background: var(--accent);
-  color: #062422;
+  color: #7dc6bc;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
@@ -412,7 +412,7 @@ section#what-we-do .card-grid {
    
 .hero-right .cad-contour,
 .hero-right svg.cad-contour {
-  height: 300px !important;    /* change this number to your taste: 180 / 220 / 240 */
+  height: 500px !important;    /* change this number to your taste: 180 / 220 / 240 */
   width: auto !important;
   max-height: none !important; /* neutralize earlier max-height rules */
   display: block;              /* no inline baseline quirks */
