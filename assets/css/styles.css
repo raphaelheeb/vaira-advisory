@@ -339,7 +339,8 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 
 
 /* WHAT WE DO — very light teal tint */
-  background: #f1f7f6;
+#what-we-do { 
+background: #f1f7f6;
 }
 
 /* ABOUT — pure white */
