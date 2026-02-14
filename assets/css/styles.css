@@ -409,29 +409,74 @@ section#what-we-do .card-grid {
     margin-top: 16px;
   }
 
-/* === Increase CAD visual size in Hero === */
+/*************************************************
+  CLEAN HERO LAYOUT (FINAL OVERRIDE)
+  – Two columns on desktop, stack on mobile
+  – Easy knobs for hero height and visual size
+**************************************************/
 
-/* Increase width of right column */
-   
+/* 0) Optional: make hero use a wider wrapper than the rest */
+.wrapper--wide {
+  max-width: 1280px;     /* widen as you like: 1200–1360 */
+  margin: 0 auto;
+  padding: 0 24px;       /* gutter near viewport edge */
+}
+
+/* 1) Hero container: adjust height here */
+.hero {
+  /* Choose ONE of the two approaches:
+     A) padding-driven (responsive “feel”) */
+  padding: 96px 0 80px;   /* Increase/decrease to taste */
+  /* B) OR min-height (comment the padding above and use this)
+  min-height: 620px;
+  display: flex; align-items: center;
+  */
+  background: #0f1b1a;    /* Set the hero background color */
+}
+
+/* 2) Two-column hero grid (desktop), stacked on mobile */
 .hero-grid {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important; /* left : right ratio */
   gap: 32px;
+  align-items: center;   /* vertical alignment of both columns */
+}
+
+/* 3) Left column (title + subtitle + CTA) – safe defaults */
+.hero-grid > :first-child {
+  align-self: center;
+  margin: 0;
+}
+.hero-title { margin: 0 0 8px; line-height: 1.08; }
+.hero-sub   { margin: 0 0 12px; }
+
+/* 4) Right column (CAD visual) – this is the main size knob */
+.hero-right {
+  /* Width-based sizing: the visual scales with this column */
+  inline-size: clamp(320px, 42vw, 560px);
+  display: flex; 
   align-items: center;
-}
-}
-
-   /* === Center CTA title + button === */
-
-#cta .content-wrapper,
-#CTA .content-wrapper {       /* your HTML uses id="CTA" with caps */
-  text-align: center;
+  justify-content: flex-start;
 }
 
-#cta .cta-btn,
-#CTA .cta-btn {
-  display: inline-block;      /* ensures proper centering */
-  margin: 16px auto 0;        /* adds spacing above, auto-centers */
+/* Make the SVG fill the column cleanly */
+.hero-right > svg,
+.hero-right .cad-contour {
+  inline-size: 100% !important;  /* width:100% */
+  block-size: auto !important;   /* height:auto maintains aspect ratio */
+  display: block !important;
+  max-height: none !important;
+}
+
+/* 5) Mobile behavior: stack and soften sizes */
+@media (max-width: 860px) {
+  .hero { padding: 56px 0 40px; }                  /* smaller vertical space on mobile */
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .hero-right { inline-size: clamp(240px, 64vw, 360px); margin-top: 12px; }
+}
+
+/* 6) Optional tiny optical nudge if visual looks 1–2px misaligned */
+.hero-right { transform: translateY(0); }           /* set to 1px or -1px if needed */
 }
 
 /* === Minimal clean footer === */
