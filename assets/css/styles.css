@@ -252,5 +252,33 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   a { color: black; text-decoration: underline; }
 }
 
+
 /* Lead text and small text on light */
 .lead, .small { color: #395753; }
+
+
+/* DEFAULT WHITE (for everything) */
+.section {
+  background: var(--surface);
+}
+
+/* WHAT WE DO — light grey */
+#what-we-do {
+  background: #f6f8f8;
+}
+
+/* ABOUT — pure white */
+#about {
+  background: #ffffff;
+}
+
+/* AREAS OF FOCUS — very light teal tint */
+#focus {
+  background: #f1f7f6;
+}
+
+/* CTA — slightly darker neutral */
+#cta {
+  background: #e9eeee;
+}
+
