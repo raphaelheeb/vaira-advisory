@@ -10,14 +10,14 @@
   /* Colors (dark technical palette) */
   --bg: #0e1514;
   --bg-soft: #0f2220;
-  --ink: #e8f0ef;
-  --muted: #b8d4d0;
+  --ink: #0C1A1C;
+  --muted: #6E7A82;
   --line: rgba(184, 212, 208, 0.20);
   --line-soft: rgba(184, 212, 208, 0.12);
   --brand: #9ad1c9;
   --accent: #64b6ac;
   --card: #13201e;
-   --surface: #ffffff;     /* white section background */
+  --surface: #ffffff;     /* white section background */
   --ink-strong: #0e1514;  /* dark text on light surfaces */
   --line-strong: rgba(6, 20, 19, 0.12); /* light divider on white */
 
@@ -116,7 +116,9 @@ p  { margin: 0 0 12px; }
 /* -------------------------
    HERO
    ------------------------- */
-.hero { padding: 36px 0 24px; }
+.hero { padding: 36px 0 24px;
+      background: var(--accent);
+      }
 
 .hero-grid {
   display: grid;
@@ -150,7 +152,7 @@ p  { margin: 0 0 12px; }
    ------------------------- */
 
 .section {
-  background: var(--surface);
+  background: var(--ink-strong);
   color: var(--ink-strong);
   border-top: 1px solid var(--line-strong);
   padding: 56px 0;
