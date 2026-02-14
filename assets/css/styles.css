@@ -353,3 +353,38 @@ section#what-we-do .card-grid {
 @media (max-width: 620px) {
   section#what-we-do .card-grid { grid-template-columns: 1fr; }
 }
+
+/* === SIMPLE HERO FIX === */
+
+/* Align both hero columns in the same row */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;      /* makes both columns align vertically */
+  gap: 32px;
+}
+
+/* Ensure the left side and the visual align perfectly */
+.hero-left,
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Make the visual smaller */
+.hero-right svg {
+  max-height: 200px;
+  height: auto;
+  width: 100%;
+}
+
+/* Mobile: stack */
+@media(max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-right {
+    margin-top: 16px;
+  }
+}
