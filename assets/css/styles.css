@@ -418,7 +418,7 @@ section#what-we-do .card-grid {
 
 /* Grow the visual container */
 .hero-right {
-  inline-size: clamp(280px, 40vw, 480px); /* <<< main knob */
+  inline-size: clamp(480px, 40vw, 680px); /* <<< main knob */
   display: flex;
   align-items: center;
   justify-content: center;
