@@ -453,7 +453,7 @@ section#what-we-do .card-grid {
 /* 4) Right column (CAD visual) – this is the main size knob */
 .hero-right {
   /* Width-based sizing: the visual scales with this column */
-  inline-size: clamp(320px, 42vw, 560px);
+  inline-size: clamp(360px, 48vw, 640px);
   display: flex; 
   align-items: center;
   justify-content: flex-start;
