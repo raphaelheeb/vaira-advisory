@@ -412,23 +412,12 @@ section#what-we-do .card-grid {
 /* === Increase CAD visual size in Hero === */
 
 /* Increase width of right column */
+   
 .hero-grid {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); /* right side gets more space */
-}
-
-/* Grow the visual container */
-.hero-right {
-  inline-size: clamp(340px, 48vw, 600px); /* <<< main knob */
-  display: flex;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 32px;
   align-items: center;
-  justify-content: center;
-}
-
-/* Make SVG fill the container */
-.hero-right svg {
-  width: 100%;
-  height: auto;
-  max-height: none !important;
 }
 }
 
