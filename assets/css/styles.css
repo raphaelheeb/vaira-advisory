@@ -1,6 +1,6 @@
 /* =========================================================
-   VAIRA Advisory – Lightweight Styles
-   Purpose: Minimal, professional styling for a small, static site
+   VAIRA Advisory – Lightweight Styles (Integrated Version)
+   Restores the original dark technical look + CAD/Lattice hero
    ========================================================= */
 
 /* -------------------------
@@ -31,16 +31,12 @@
    ------------------------- */
 * { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+html, body { margin: 0; padding: 0; }
 
 body {
   font-family: var(--font);
   color: var(--ink);
-  background:
-    radial-gradient(1000px 1000px at 100% 0%, var(--bg-soft) 0%, var(--bg) 40%);
+  background: radial-gradient(1000px 1000px at 100% 0%, var(--bg-soft) 0%, var(--bg) 40%);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,7 +44,6 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 svg { display: block; }
-
 main { display: block; }
 
 /* Link & focus */
@@ -91,9 +86,7 @@ p  { margin: 0 0 12px; }
   justify-content: space-between;
   gap: 16px;
 }
-.site-header img {
-  height: 28px;
-}
+.site-header img { height: 28px; }
 
 .nav {
   list-style: none;
@@ -102,21 +95,14 @@ p  { margin: 0 0 12px; }
   margin: 0;
   padding: 0;
 }
-.nav a {
-  color: var(--ink);
-  opacity: 0.9;
-}
-.nav a:hover,
-.nav a:focus {
-  color: var(--brand);
-}
+.nav a { color: var(--ink); opacity: 0.9; }
+.nav a:hover, .nav a:focus { color: var(--brand); }
 
 /* -------------------------
    HERO
    ------------------------- */
-.hero {
-  padding: 64px 0 40px;
-}
+.hero { padding: 64px 0 40px; }
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -126,24 +112,28 @@ p  { margin: 0 0 12px; }
 .hero-title { margin-bottom: 10px; }
 .hero-sub   { color: var(--muted); margin-bottom: 18px; }
 
-/* Optional right-side decorative block (kept light) */
-.hero-right .card {
-  min-height: 160px;
+.hero-ctas .cta-btn { margin-right: 8px; }
+
+/* --- CAD/Lattice hero visuals --- */
+.hero-right { position: relative; min-height: 260px; }
+.iso-lattice,
+.cad-contour {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.visual--cad {
   display: grid;
-  place-items: center;
-  background: linear-gradient(180deg, var(--card), #0e1a18);
-  border: 1px solid var(--line);
+  gap: 10px;
+  align-content: start;
+  opacity: 0.9;
 }
 
 /* -------------------------
    SECTIONS & CARDS
    ------------------------- */
-.section {
-  padding: 40px 0;
-}
-.section h2 {
-  margin-bottom: 14px;
-}
+.section { padding: 40px 0; }
+.section h2 { margin-bottom: 14px; }
 
 .card-grid {
   display: grid;
@@ -191,11 +181,7 @@ li + li { margin-top: 6px; }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
-.footer-grid ul {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0;
-}
+.footer-grid ul { list-style: none; padding: 0; margin: 8px 0 0; }
 .footer-grid li { margin: 4px 0; }
 .footer-grid a { color: var(--muted); }
 .footer-grid a:hover { color: var(--brand); }
@@ -214,10 +200,14 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 @media (max-width: 960px) {
   .hero { padding-top: 48px; }
 }
-
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
+  .visual--cad { margin-top: 8px; }
   .nav { gap: 14px; }
+}
+/* If the visuals feel heavy on very small screens, hide the lattice: */
+@media (max-width: 480px) {
+  .iso-lattice { display: none; }
 }
 
 /* -------------------------
@@ -227,24 +217,3 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   .site-header, .site-footer { display: none; }
   a { color: black; text-decoration: underline; }
 }
-/* --- CAD/Lattice hero visuals --- */
-.hero-right {
-  position: relative;
-  min-height: 260px;
-}
-.iso-lattice,
-.cad-contour {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.visual--cad {
-  display: grid;
-  gap: 10px;
-  align-content: start;
-  opacity: 0.9;               /* slight transparency to keep it elegant */
-}
-@media (max-width: 860px) {
-  .visual--cad { margin-top: 8px; }
-}
-``
