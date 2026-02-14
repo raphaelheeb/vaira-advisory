@@ -410,7 +410,7 @@ section#what-we-do .card-grid {
 
 /* === Control the hero visual size === */
 .hero-right svg {
-  max-height: 260px;   /* adjust to taste: 160, 180, 240, 260 ... */
+  max-height: 460px;   /* adjust to taste: 160, 180, 240, 260 ... */
   height: auto;
   width: 100%;
 }
