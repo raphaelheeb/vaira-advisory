@@ -448,78 +448,29 @@ section#what-we-do .card-grid {
   margin: 16px auto 0;        /* adds spacing above, auto-centers */
 }
 
-/*********************************************
- CLEAN, MODERN FOOTER LAYOUT (FINAL OVERRIDE)
-**********************************************/
+/* === Minimal clean footer === */
 
-/* Footer container spacing */
 .site-footer {
-  padding: 48px 0 40px;
   background: #ffffff;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 48px 0 40px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
 }
 
-/* 3-column grid, evenly spaced */
-.footer-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(200px, 1fr)) !important; 
-  gap: 40px !important;
-  align-items: start !important;
+.footer-single {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-/* Mobile layout: collapse to single column */
-@media (max-width: 760px) {
-  .footer-grid {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
-  }
+.footer-logo {
+  height: 32px;
+  margin-bottom: 12px;
 }
 
-/* Footer headings */
-.footer-grid h4 {
-  margin: 0 0 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #0d1b1a;
-}
-
-/* Footer text */
-.footer-grid p.small {
-  margin: 4px 0;
-  line-height: 1.5;
-}
-
-/* Footer links */
-.footer-grid a {
-  color: #265b56;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-.footer-grid a:hover {
-  color: #183a38;
-}
-
-/* Footer lists */
-.footer-grid ul {
-  list-style: none;
-  padding: 0;
+.site-footer p.small {
   margin: 0;
-}
-.footer-grid li {
-  margin: 4px 0;
-}
-
-/* Footer logo sizing + spacing */
-.footer-grid img {
-  height: 30px;
-  display: block;
-  margin-bottom: 16px;
-}
-
-/* Ensure CTA is visually centered in its column */
-.footer-grid .cta-btn {
-  display: inline-block;
-  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #395753; /* subtle, elegant */
 }
 
 }
