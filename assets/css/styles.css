@@ -82,6 +82,7 @@ p  { margin: 0 0 12px; }
    ------------------------- */
 
 .site-header {
+  list-style: none;
   padding: 10px 0;
   background: var(--surface);
   border-bottom: 1px solid var(--line-strong);
@@ -91,6 +92,7 @@ p  { margin: 0 0 12px; }
 .site-header img { height: 50px; }
 
 .header-wrap {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -306,10 +308,6 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 /* Lead text and small text on light */
 .lead, .small { color: #395753; }
 
-/* DEFAULT WHITE (for everything) */
-.section {
-  background: var(--surface);
-}
 
 /* WHAT WE DO — light grey */
 #what-we-do {
