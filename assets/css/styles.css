@@ -338,9 +338,8 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 .lead, .small { color: #395753; }
 
 
-/* WHAT WE DO — light grey */
-#what-we-do {
-  background: #f6f8f8;
+/* WHAT WE DO — very light teal tint */
+  background: #f1f7f6;
 }
 
 /* ABOUT — pure white */
