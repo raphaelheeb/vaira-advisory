@@ -255,7 +255,7 @@ section#focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile
 .cta-btn {
   display: inline-block;
   padding: 10px 16px;
-  background: var(--accent);
+  background: #0A6064;
   color: #7dc6bc;
   border-radius: 6px;
   font-weight: 600;
