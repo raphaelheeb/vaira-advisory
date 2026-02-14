@@ -83,7 +83,7 @@ p  { margin: 0 0 12px; }
 
 .site-header {
   list-style: none;
-  padding: 10px 0;
+  padding: 20px 0 20px;
   background: var(--surface);
   border-bottom: 0 !important;
   backdrop-filter: none;  /* remove glass effect on white */
@@ -145,15 +145,15 @@ p  { margin: 0 0 12px; }
   align-items: center;
 }
 .hero-title { line-height: 1.08; 
-             margin-bottom: 8px;
+             margin-bottom: 16px;
              color: #ffffff;
             }
-.hero-sub   { color: #ffffff; margin-bottom: 14px; }
+.hero-sub   { color: #ffffff; margin-bottom: 16px; }
 
 .hero-ctas .cta-btn { 
             margin-right: 8px;
             color:#ffffff;
-            backround:#9ad1c9;
+            backround:#ffffff;
                     }
 
 /* If needed on small screens: */
@@ -175,7 +175,7 @@ p  { margin: 0 0 12px; }
 .iso-lattice {display: none !important;}
 .cad-contour {
   width: 100%;
-  height: auto;
+  height: 220px;
   display: block;
   opacity: 0.85;
 }
