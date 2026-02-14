@@ -95,14 +95,13 @@ p  { margin: 0 0 12px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
 }
 
 .nav {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
   margin: 0;
   padding: 0;
 }
@@ -111,8 +110,6 @@ p  { margin: 0 0 12px; }
   display: inline-block;               /* avoids baseline quirks */
   line-height: 1.2;                    /* consistent vertical rhythm */
   padding-top: 2px;                    /* nudge to match logo optics */
-  color: var(--ink-strong);
-  opacity: 0.9;
 }
 
 .nav a[aria-current="page"]{ color: #204a45; font-weight: 700; } /* darker teal for hover */
