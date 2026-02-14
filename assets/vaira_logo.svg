@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#0a5b5d;fill-opacity:1;stroke-width:0.324373"
+     id="rect1"
+     width="200"
+     height="200"
+     x="7.6089054e-16"
+     y="-6.6626815e-15" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:14.462px;line-height:0;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.512433"
+     x="81.541191"
+     y="134.15504"
+     id="text1"
+     transform="scale(1.1847426,0.84406521)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:14.462px;line-height:1.25;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.512433"
+       x="81.541191"
+       y="134.15504"
+       id="tspan2" /><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.9604px;line-height:0;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:3.43958px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.512433"
+       x="83.260979"
+       y="145.50713"
+       id="tspan3"
+       dx="0 -0.88987589 -1.3348138 0 0 0 -1.7797518 -1.7797518">ADVISORY</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.9167px;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2.11667px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.91;stroke-dasharray:none"
+     x="85.312645"
+     y="112.24283"
+     id="text1-7"
+     transform="scale(1.1486213,0.87060897)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.9167px;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:-2.11667px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.91;stroke-dasharray:none"
+       x="84.254311"
+       y="112.24283"
+       id="tspan3-3"
+       dx="0 -1.7997519 -1.7997519 0.90987599 0.90987599">VAIRA</tspan></text>
+</svg>
