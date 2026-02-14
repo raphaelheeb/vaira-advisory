@@ -227,4 +227,24 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
   .site-header, .site-footer { display: none; }
   a { color: black; text-decoration: underline; }
 }
+/* --- CAD/Lattice hero visuals --- */
+.hero-right {
+  position: relative;
+  min-height: 260px;
+}
+.iso-lattice,
+.cad-contour {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.visual--cad {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  opacity: 0.9;               /* slight transparency to keep it elegant */
+}
+@media (max-width: 860px) {
+  .visual--cad { margin-top: 8px; }
+}
 ``
