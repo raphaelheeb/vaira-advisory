@@ -77,10 +77,13 @@ p  { margin: 0 0 12px; }
    ------------------------- */
 
 .site-header {
+  padding: 18px 0;
   background: var(--surface);
   border-bottom: 1px solid var(--line-strong);
   backdrop-filter: none;  /* remove glass effect on white */
 }
+
+.site-header img { height: 48px; }
 
 .header-wrap {
   display: flex;
@@ -88,17 +91,25 @@ p  { margin: 0 0 12px; }
   justify-content: space-between;
   gap: 16px;
 }
-.site-header img { height: 28px; }
 
 .nav {
   list-style: none;
   display: flex;
-  gap: 18px;
+  align-items: center;
+  gap: 22px;
   margin: 0;
   padding: 0;
 }
 
-.nav a { color: var(--ink-strong); opacity: 0.9; }
+
+.nav a {
+  display: inline-block;               /* avoids baseline quirks */
+  line-height: 1.2;                    /* consistent vertical rhythm */
+  padding-top: 2px;                    /* nudge to match logo optics */
+  color: var(--ink-strong);
+  opacity: 0.9;
+}
+
 .nav a:hover, .nav a:focus { color: #265b56; } /* darker teal for hover */
 
 
