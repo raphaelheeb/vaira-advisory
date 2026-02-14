@@ -141,13 +141,15 @@ p  { margin: 0 0 12px; }
   .hero-grid { grid-template-columns: 1fr; }
 }
 
-/* --- CAD/Lattice hero visuals --- */
-.hero-right {          
-  max-height: 240px;   /* bei Bedarf 200–280px ausprobieren */
-  width: 100%;
-  height: auto;
-  opacity: 0.85;
-            }
+/* Rechte Spalte (Visual): auf Cap-Height von H1 ausrichten */
+
+.hero-right {
+  align-self: center;          /* Das ist oft der 'fehlende' Punkt */
+  display: flex;               /* Flex hilft, das SVG optisch zu „setzen“ */
+  align-items: center;         /* vertikal im eigenen Block mittig */
+  justify-content: flex-start; /* linksbündig zur Grid-Spalte */
+  margin: 0;                   /* Sicherheitsreset */
+}
 
 .iso-lattice {display: none !important;}
 .cad-contour {
