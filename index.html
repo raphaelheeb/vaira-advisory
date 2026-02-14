@@ -43,24 +43,24 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="content-wrapper wrapper--narrow">
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="content-wrapper wrapper--narrow">
     <div class="hero-grid">
+
       <!-- LEFT: message -->
       <div class="hero-left">
         <h1 class="hero-title">Turning Technology into Scalable, Industrial Solutions.</h1>
-        <p class="hero-sub">We support organizations at the intersection of innovation, technology, and advanced manufacturing.</p>
+        <p class="hero-sub">
+          We support organizations at the intersection of innovation, technology, and advanced manufacturing.
+        </p>
         <div class="hero-ctas">
           <a href="mailto:info@vaira-advisory.com" class="cta-btn">Get in Touch</a>
         </div>
-          </div>
       </div>
 
       <!-- RIGHT: abstract technical visual (CAD) -->
       <div class="hero-right visual--cad" aria-hidden="true">
-      
-        <!-- CAD CONTOUR -->
         <svg class="cad-contour" viewBox="0 0 600 600" role="img" aria-label="CAD contours">
           <defs>
             <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
@@ -68,8 +68,8 @@
               <stop offset="1" stop-color="rgba(184,212,208,0.3)"/>
             </linearGradient>
             <style>
-              .c { fill:none; stroke:url(#cadStroke); stroke-width:1.5; vector-effect:non-scaling-stroke; }
-              .dash { stroke-dasharray:6 8; }
+              .c { fill: none; stroke: url(#cadStroke); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+              .dash { stroke-dasharray: 6 8; }
             </style>
           </defs>
           <!-- Primary contour family -->
@@ -97,8 +97,10 @@
           </g>
         </svg>
       </div>
-    </div>
-  </section>
+
+    </div> <!-- END .hero-grid -->
+  </div>   <!-- END .content-wrapper -->
+</section>
 
   <!-- WHAT WE DO -->
   <section class="section" id="what-we-do">
