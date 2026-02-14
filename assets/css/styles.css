@@ -447,4 +447,55 @@ section#what-we-do .card-grid {
   display: inline-block;      /* ensures proper centering */
   margin: 16px auto 0;        /* adds spacing above, auto-centers */
 }
+
+/* === Clean, modern footer styling === */
+
+.site-footer {
+  padding: 48px 0;
+  background: var(--surface);
+  color: var(--ink-strong, #062422);
+}
+
+/* Clean 3 column layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Typography */
+.footer-grid h4 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer-grid p.small {
+  margin: 4px 0;
+}
+.footer-grid ul li {
+  margin: 4px 0;
+}
+
+.footer-grid img {
+  height: 28px;
+  margin-bottom: 12px;
+}
+
+/* Links */
+.footer-grid a {
+  color: #265b56;
+  text-decoration: none;
+}
+.footer-grid a:hover {
+  color: #183a38;
+}
+
 }
