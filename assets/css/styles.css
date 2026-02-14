@@ -144,10 +144,16 @@ p  { margin: 0 0 12px; }
   gap: 28px;
   align-items: center;
 }
-.hero-title { line-height: 1.08; margin-bottom: 8px; }
-.hero-sub   { color: var(--muted); margin-bottom: 14px; }
+.hero-title { line-height: 1.08; 
+             margin-bottom: 8px;
+             color: #ffffff;
+            }
+.hero-sub   { color: #ffffff; margin-bottom: 14px; }
 
-.hero-ctas .cta-btn { margin-right: 8px; }
+.hero-ctas .cta-btn { 
+            margin-right: 8px;
+            color:#ffffff; 
+                    }
 
 /* If needed on small screens: */
 @media (max-width: 860px) {
