@@ -119,8 +119,8 @@ p  { margin: 0 0 12px; }
    HERO
    ------------------------- */
 .hero { 
-   background: var(--accent);
-   padding: 36px 0 24px;
+   background: #0f1b1a;
+   padding: 28px 0 18px;
       }
 .hero .content-wrapper { padding-left: 20px; padding-right: 20px; }
 
@@ -142,7 +142,13 @@ p  { margin: 0 0 12px; }
 }
 
 /* --- CAD/Lattice hero visuals --- */
-.hero-right { position: relative; min-height: 260px; }
+.hero-right {          
+  max-height: 240px;   /* bei Bedarf 200–280px ausprobieren */
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+            }
+
 .iso-lattice {display: none !important;}
 .cad-contour {
   width: 100%;
