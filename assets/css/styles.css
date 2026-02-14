@@ -152,7 +152,7 @@ p  { margin: 0 0 12px; }
    ------------------------- */
 
 .section {
-  background: var(--ink-strong);
+  background: var(--bg);
   color: var(--ink-strong);
   border-top: 1px solid var(--line-strong);
   padding: 56px 0;
