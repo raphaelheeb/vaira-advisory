@@ -271,7 +271,7 @@ section#focus .card-grid { grid-template-columns: 1fr; }      /* stack on mobile
    ------------------------- */
 
 .site-footer {
-  background: #f1f7f6;
+  background: #ffffff;
   border-top: 0 !important;
   color: var(--ink-strong);
   padding-top: 28px;
@@ -338,24 +338,24 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 .lead, .small { color: #395753; }
 
 
-/* WHAT WE DO — very light teal tint */
+/* WHAT WE DO — pure white */
 #what-we-do { 
-background: #f1f7f6;
+background: #ffffff;
 }
 
-/* ABOUT — pure white */
+/* ABOUT — very light teal tint */
 #about {
-  background: #ffffff;
-}
-
-/* AREAS OF FOCUS — very light teal tint */
-#focus {
   background: #f1f7f6;
 }
 
-/* CTA — slightly darker neutral */
+/* AREAS OF FOCUS — pure white */
+#focus {
+  background: #ffffff;
+}
+
+/* CTA — very light teal tint */
 #cta {
-  background: #e9eeee;
+  background: #f1f7f6;
 }
 
 /* -------------------------
