@@ -199,7 +199,7 @@ p  { margin: 0 0 12px; }
 
 /* === Areas of Focus: 2×2 grid on desktop === */
 #focus .card-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(280px, 1fr));  /* 2 columns only */
   gap: 24px;
 }
