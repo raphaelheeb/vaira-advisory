@@ -171,6 +171,9 @@ p  { margin: 0 0 12px; }
   background: #7dc6bc;
 }
 
+.hero-ctas .cta-btn:hover { background: #ffffff; }
+.hero-ctas .cta-btn:active { transform: translateY(1px); }
+
 /* Right column: container for the visual */
 .hero .hero-right {
   display: flex;
