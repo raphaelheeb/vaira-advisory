@@ -31,7 +31,7 @@
   --font: 'Public Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
 
   /* Hero knobs (Option A) */
-  --hero-wrapper-maxw: 1650px;     /* widen hero slightly compared to rest */
+  --hero-wrapper-maxw: 1350px;     /* widen hero slightly compared to rest */
   --hero-col-left: 0.7fr;          /* text column */
   --hero-col-right: 2.3fr;         /* visual column – increase for larger visual */
   --hero-gap: 32px;
