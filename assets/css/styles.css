@@ -149,6 +149,8 @@ p  { margin: 0 0 12px; }
   grid-template-columns: minmax(0, var(--hero-col-left)) minmax(0, var(--hero-col-right));
   gap: var(--hero-gap);
   align-items: center;
+  position: relative;
+  z-index: 2; 
 }
 
 /* Left column: first child in the grid (no .hero-left class in HTML) */
