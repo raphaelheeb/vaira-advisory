@@ -1,21 +1,21 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
-    <a href="/vaira-advisory/">
-      <img src="/vaira-advisory/assets/img/logo.svg" alt="VAIRA Advisory logo" class="site-logo">
+    <a href="{{ site.baseurl }}/" aria-label="Home">
+      <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory" class="header-logo" style="height:50px">
     </a>
 
     <nav aria-label="Main Navigation">
       <ul class="nav">
-        <li><a href="/vaira-advisory/services/">Services</a></li>
-        <li><a href="/vaira-advisory/industries/">Industries</a></li>
-        <li><a href="/vaira-advisory/use-cases/">Use Cases</a></li>
-        <li><a href="/vaira-advisory/about/">About</a></li>
-        <li><a href="/vaira-advisory/contact/">Contact</a></li>
+        <li><a href="{{ site.baseurl }}/services/">Services</a></li>
+        <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
+        <li><a href="{{ site.baseurl }}/use-cases/">Use Cases</a></li>
+        <li><a href="{{ site.baseurl }}/about/">About</a></li>
+        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
       </ul>
 
       <!-- Language Switcher -->
-      <div class="language-switcher" aria-label="Language Switch">
-        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <div class="language-switcher" aria-label="Language switch">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
       </div>
     </nav>
