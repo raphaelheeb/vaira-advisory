@@ -32,12 +32,12 @@
 
   /* === HERO KNOBS (edit these to fine‑tune) === */
   --hero-wrapper-maxw: 1500px;  /* widen hero beyond normal content */
-  --hero-col-left: 1fr;         /* left column (text) */
+  --hero-col-left: 1.1fr;         /* left column (text) */
   --hero-col-right: 1.4fr;      /* right column (visual) */
   --hero-gap: 32px;
   --hero-pad-top: 96px;
   --hero-pad-bottom: 80px;
-  --hero-visual-max: 920px;     /* cap for SVG width inside its column */
+  --hero-visual-max: 720px;     /* cap for SVG width inside its column */
 }
 
 /* -------------------------
