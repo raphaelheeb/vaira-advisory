@@ -265,6 +265,7 @@ section#focus .card-grid {
   font-weight: 600;
   text-decoration: none;
   transition: background 160ms ease, transform 100ms ease;
+  text-align: center;
 }
 .cta-btn:hover { background: #7dc6bc; }
 .cta-btn:active { transform: translateY(1px); }
