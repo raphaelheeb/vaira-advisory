@@ -49,42 +49,8 @@
 
 </main>
 
-<footer class="site-footer">
-  <div class="content-wrapper" style="text-align:center">
-    <p class="small">© VAIRA Advisory</p>
-  </div>
-</footer>
-
-<script>
-(function() {
-  // Persist selection in localStorage
-  const saved = localStorage.getItem('vaira-lang') || 'en';
-  document.documentElement.classList.add('lang-' + saved);
-
-  // Activate correct button
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    if (btn.dataset.lang === saved) btn.classList.add('active');
-  });
-
-  // Add click handlers
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-
-      // Update HTML class
-      document.documentElement.classList.remove('lang-en', 'lang-de');
-      document.documentElement.classList.add('lang-' + lang);
-
-      // Update button states
-      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Store preference
-      localStorage.setItem('vaira-lang', lang);
-    });
-  });
-})();
-</script>
+{% include footer.html %}
+  
 <script src="/vaira-advisory/assets/js/lang.js"></script>
 </body>
 </html>
