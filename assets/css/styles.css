@@ -35,9 +35,9 @@
   --hero-col-left: 1.1fr;         /* left column (text) */
   --hero-col-right: 1.4fr;      /* right column (visual) */
   --hero-gap: 32px;
-  --hero-pad-top: 40px;
-  --hero-pad-bottom: 40px;
-  --hero-visual-max: 520px;     /* cap for SVG width inside its column */
+  --hero-pad-top: 20px;
+  --hero-pad-bottom: 20px;
+  --hero-visual-max: 420px;     /* cap for SVG width inside its column */
 }
 
 /* -------------------------
@@ -175,7 +175,7 @@ p  { margin: 0 0 12px; }
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 /* The CAD SVG visual – responsive and capped */
