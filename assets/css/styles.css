@@ -284,10 +284,10 @@ section#focus .card-grid {
    ------------------------- */
 .site-footer {
   background: #ffffff;
-  border-top: 0;
   color: var(--ink-strong);
   padding-top: 28px;
   paddint-bottom: 28px;
+  text-align: center;
 }
 
 /* -------------------------
