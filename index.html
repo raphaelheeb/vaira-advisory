@@ -57,46 +57,17 @@
           <a href="mailto:info@vaira-advisory.com" class="cta-btn">Get in Touch</a>
         </div>
       </div>
-      
-  <!-- (Optional) LATTICE (kept for toggle flexibility) -->
-      <div class="iso-lattice">
-      <svg class="iso-lattice" viewBox="0 0 600 600" aria-hidden="true" role="img">
-          <defs>
-            <linearGradient id="isoStroke" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="rgba(184,212,208,0.65)"/>
-              <stop offset="1" stop-color="rgba(184,212,208,0.25)"/>
-            </linearGradient>
-            <style>.l { fill:none; stroke:url(#isoStroke); stroke-width:1.2; vector-effect: non-scaling-stroke; }</style>
-          </defs>
-          <g class="layer-h">
-            <path class="l" d="M80 120 L520 120"/><path class="l" d="M60 180 L540 180"/><path class="l" d="M40 240 L560 240"/>
-            <path class="l" d="M20 300 L580 300"/><path class="l" d="M40 360 L560 360"/><path class="l" d="M60 420 L540 420"/><path class="l" d="M80 480 L520 480"/>
-          </g>
-          <g class="layer-60">
-            <path class="l" d="M180 80 L60 300"/><path class="l" d="M240 60 L100 320"/><path class="l" d="M300 40 L140 340"/>
-            <path class="l" d="M360 40 L180 360"/><path class="l" d="M420 60 L220 380"/><path class="l" d="M480 80 L260 400"/>
-            <path class="l" d="M540 120 L300 420"/><path class="l" d="M560 180 L340 440"/><path class="l" d="M560 240 L380 460"/><path class="l" d="M540 300 L420 480"/>
-          </g>
-          <g class="layer-120">
-            <path class="l" d="M420 80 L540 300"/><path class="l" d="M360 60 L500 320"/><path class="l" d="M300 40 L460 340"/>
-            <path class="l" d="M240 40 L420 360"/><path class="l" d="M180 60 L380 380"/><path class="l" d="M120 80 L340 400"/>
-            <path class="l" d="M60 120 L300 420"/><path class="l" d="M40 180 L260 440"/><path class="l" d="M40 240 L220 460"/><path class="l" d="M60 300 L180 480"/>
-          </g>
-        </svg>
-      </div>
 
-      
       <!-- RIGHT COLUMN: Visual (CAD) -->
       <div class="hero-right visual--cad" aria-hidden="true">
         <svg class="cad-contour"
-     viewBox="0 0 600 600"
-     role="img"
-     aria-label="CAD contours"
-    
+             viewBox="0 0 600 600"
+             role="img"
+             aria-label="CAD contours">
           <defs>
             <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="rgba(184,212,208,0.7)"/>
-              <stop offset="1" stop-color="rgba(184,212,208,0.3)"/>
+              <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.70"/>
+              <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.30"/>
             </linearGradient>
             <style>
               .c { fill: none; stroke: url(#cadStroke); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
@@ -127,7 +98,37 @@
       </div>
 
     </div> <!-- END .hero-grid -->
-  </div>   <!-- END .content-wrapper -->
+
+    <!-- LATTICE: OUTSIDE the grid so it can sit behind -->
+    <div class="iso-lattice" aria-hidden="true">
+      <svg class="lattice-svg" viewBox="0 0 600 600" role="img" aria-label="Hero lattice">
+        <defs>
+          <linearGradient id="isoStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.65"/>
+            <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.25"/>
+          </linearGradient>
+          <style>
+            .l { fill: none; stroke: url(#isoStroke); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+          </style>
+        </defs>
+        <g class="layer-h">
+          <path class="l" d="M80 120 L520 120"/><path class="l" d="M60 180 L540 180"/><path class="l" d="M40 240 L560 240"/>
+          <path class="l" d="M20 300 L580 300"/><path class="l" d="M40 360 L560 360"/><path class="l" d="M60 420 L540 420"/><path class="l" d="M80 480 L520 480"/>
+        </g>
+        <g class="layer-60">
+          <path class="l" d="M180 80 L60 300"/><path class="l" d="M240 60 L100 320"/><path class="l" d="M300 40 L140 340"/>
+          <path class="l" d="M360 40 L180 360"/><path class="l" d="M420 60 L220 380"/><path class="l" d="M480 80 L260 400"/>
+          <path class="l" d="M540 120 L300 420"/><path class="l" d="M560 180 L340 440"/><path class="l" d="M560 240 L380 460"/><path class="l" d="M540 300 L420 480"/>
+        </g>
+        <g class="layer-120">
+          <path class="l" d="M420 80 L540 300"/><path class="l" d="M360 60 L500 320"/><path class="l" d="M300 40 L460 340"/>
+          <path class="l" d="M240 40 L420 360"/><path class="l" d="M180 60 L380 380"/><path class="l" d="M120 80 L340 400"/>
+          <path class="l" d="M60 120 L300 420"/><path class="l" d="M40 180 L260 440"/><path class="l" d="M40 240 L220 460"/><path class="l" d="M60 300 L180 480"/>
+        </g>
+      </svg>
+    </div>
+
+  </div> <!-- END .content-wrapper -->
 </section>
 
   <!-- WHAT WE DO -->
