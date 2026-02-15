@@ -32,7 +32,7 @@
 
   /* Hero knobs (Option A) */
   --hero-wrapper-maxw: 1350px;     /* widen hero slightly compared to rest */
-  --hero-col-left: 1.0fr;          /* text column */
+  --hero-col-left: 1fr;          /* text column */
   --hero-col-right: 1.4fr;         /* visual column – increase for larger visual */
   --hero-gap: 32px;
   --hero-pad-top: 96px;
