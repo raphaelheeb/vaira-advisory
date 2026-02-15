@@ -35,8 +35,8 @@
   --hero-col-left: 1.1fr;         /* left column (text) */
   --hero-col-right: 1.4fr;      /* right column (visual) */
   --hero-gap: 32px;
-  --hero-pad-top: 96px;
-  --hero-pad-bottom: 80px;
+  --hero-pad-top: 60px;
+  --hero-pad-bottom: 60px;
   --hero-visual-max: 520px;     /* cap for SVG width inside its column */
 }
 
