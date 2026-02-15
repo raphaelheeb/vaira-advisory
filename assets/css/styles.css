@@ -215,6 +215,32 @@ p  { margin: 0 0 12px; }
   max-width: var(--hero-visual-max);   /* cap to keep balance on very wide screens */
 }
 
+/* --- HERO cartesian grid (horizontal + vertical lines) --- */
+.hero {
+  position: relative;        /* already present */
+  overflow: hidden;          /* already present, keeps overlay clipped */
+}
+
+/* Grid overlay behind content, below the iso-lattice if you want */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;                /* 0 < iso-lattice(1) < hero-grid(2) */
+  pointer-events: none;
+  /* Two layers: vertical lines, horizontal lines */
+  background-image:
+    linear-gradient(to right, rgba(184,212,208,0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184,212,208,0.16) 1px, transparent 1px);
+  background-size: 48px 48px;  /* grid spacing — tweak to taste (e.g., 40px, 56px) */
+  opacity: 0.30;               /* overall strength */
+}
+
+/* Keep current stacking: grid above overlays, lattice in between */
+.hero .hero-grid { position: relative; z-index: 2; }
+.iso-lattice     { position: absolute; z-index: 1; }
+
+
 /* Large screens: optionally let the visual lead more */
 @media (min-width: 1200px) {
   /* Uncomment to exaggerate the right side on very large screens
