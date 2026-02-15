@@ -167,7 +167,7 @@ p  { margin: 0 0 12px; }
 }
 .hero-ctas .cta-btn {
   margin-right: 8px;
-  color: var(--ink);
+  color: #ffffff;
   background: #7dc6bc;
 }
 
@@ -277,6 +277,8 @@ section#focus .card-grid {
 
 #CTA {
   text-align: center;
+  padding-top: 48px;
+  padding-bottom: 56px;
 }
 
 /* -------------------------
@@ -285,8 +287,8 @@ section#focus .card-grid {
 .site-footer {
   background: #ffffff;
   color: var(--ink-strong);
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: center;
 }
 
