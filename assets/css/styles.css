@@ -195,10 +195,16 @@ p  { margin: 0 0 12px; }
   top: 0;
   right: 0;
   width: 65%;        /* adjust to taste */
-  height: auto;
-  opacity: 0.15;     /* subtle technical background */
+  max-width: 1000px;
+  opacity: 0.22;     /* subtle technical background */
   pointer-events: none;
   z-index: 1;
+}
+
+.iso-lattice .lattice-svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .cad-contour {
