@@ -430,3 +430,61 @@ html.lang-de p[lang="de"],
 html.lang-de li[lang="de"] {
   display: block !important;
 }
+
+/* ==== Language switcher (EN/DE) ==== */
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  margin-left: 24px; /* sits to the right of the nav */
+  align-items: center;
+}
+
+.lang-btn {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid rgba(14,21,20,0.25);
+  color: #0e1514; /* dark ink on your white header */
+  line-height: 1.2;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.lang-btn.active {
+  background: #0A6064;      /* your accent */
+  color: #ffffff;
+  border-color: #0A6064;
+}
+
+.lang-btn:hover {
+  background: #7dc6bc;      /* mint */
+  color: #0A6064;
+  border-color: #7dc6bc;
+}
+
+/* Default visibility: show EN, hide DE */
+[lang="de"] { display: none; }
+
+/* When DE is active on <html> */
+html.lang-de [lang="en"] { display: none !important; }
+html.lang-de [lang="de"] { display: inline !important; }
+
+/* Ensure block-level German elements display correctly */
+html.lang-de p[lang="de"],
+html.lang-de div[lang="de"],
+html.lang-de li[lang="de"],
+html.lang-de h1[lang="de"],
+html.lang-de h2[lang="de"],
+html.lang-de h3[lang="de"],
+html.lang-de section[lang="de"],
+html.lang-de article[lang="de"] {
+  display: block !important;
+}
+
+/* Optional: minor spacing when language labels stack on mobile */
+@media (max-width: 640px) {
+  .language-switcher { margin-left: 12px; }
+  .lang-btn { padding: 4px 10px; }
+}
