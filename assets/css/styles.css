@@ -99,7 +99,7 @@ p  { margin: 0 0 12px; }
   background: var(--surface);
   border-bottom: 0;
 }
-.site-header img { height: 50px; }
+.site-header img { height: 60px; }
 
 .header-wrap {
   display: flex;
