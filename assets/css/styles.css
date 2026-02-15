@@ -273,6 +273,7 @@ section#focus .card-grid {
   border-top: 0;
   color: var(--ink-strong);
   padding-top: 28px;
+  paddint-bottom: 28px;
 }
 .footer-grid {
   display: grid;
