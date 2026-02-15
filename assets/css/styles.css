@@ -167,12 +167,12 @@ p  { margin: 0 0 12px; }
 }
 .hero-ctas .cta-btn {
   margin-right: 8px;
-  color: #ffffff;
+  color: var(--ink);
   background: #7dc6bc;
 }
 
 .hero-ctas .cta-btn:hover { background: #ffffff;
-                          color: var(--ink);
+                          color: var(--accent);
                           }
 .hero-ctas .cta-btn:active { transform: translateY(1px); }
 
