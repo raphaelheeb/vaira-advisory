@@ -175,7 +175,7 @@ p  { margin: 0 0 12px; }
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 0;
+  margin-left: 40px;
 }
 
 /* The CAD SVG visual – responsive and capped */
