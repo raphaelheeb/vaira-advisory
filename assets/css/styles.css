@@ -190,23 +190,6 @@ p  { margin: 0 0 12px; }
 
 /* The CAD SVG visual – responsive and capped */
 
-.iso-lattice {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 65%;        /* adjust to taste */
-  max-width: 1000px;
-  opacity: 0.22;     /* subtle technical background */
-  pointer-events: none;
-  z-index: 1;
-}
-
-.iso-lattice .lattice-svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .cad-contour {
   width: 100%;
   height: auto;
@@ -238,8 +221,6 @@ p  { margin: 0 0 12px; }
 
 /* Keep current stacking: grid above overlays, lattice in between */
 .hero .hero-grid { position: relative; z-index: 2; }
-.iso-lattice     { position: absolute; z-index: 1; }
-
 
 /* Large screens: optionally let the visual lead more */
 @media (min-width: 1200px) {
