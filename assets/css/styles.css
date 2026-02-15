@@ -383,3 +383,50 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* -------------------------
+Language switcher styling 
+____________________________*/
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  margin-left: 24px;
+}
+
+.lang-btn {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #0e1514;
+  transition: all 120ms ease;
+}
+
+.lang-btn.active {
+  background: #0A6064;
+  color: white;
+  border-color: #0A6064;
+}
+
+.lang-btn:hover {
+  background: #7dc6bc;
+  color: #0A6064;
+}
+
+/* Default: show EN, hide DE */
+[lang="de"] { display: none; }
+
+/* Active language overrides applied via JS */
+html.lang-de [lang="en"] { display: none !important; }
+html.lang-de [lang="de"] { display: inline !important; }
+
+/* For block-level German elements */
+html.lang-de blockquote[lang="de"],
+html.lang-de div[lang="de"],
+html.lang-de p[lang="de"],
+html.lang-de li[lang="de"] {
+  display: block !important;
+}
