@@ -1,0 +1,5 @@
+# _config.yml
+title: VAIRA Advisory
+url: "https://raphaelheeb.github.io"
+baseurl: "/vaira-advisory"    # IMPORTANT for project sites
+theme: null                   # You’re using custom CSS, not a Jekyll theme
