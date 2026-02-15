@@ -289,21 +289,6 @@ section#focus .card-grid {
   padding-top: 28px;
   paddint-bottom: 28px;
 }
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.footer-grid ul { list-style: none; padding: 0; margin: 8px 0 0; }
-.footer-grid li { margin: 4px 0; }
-.footer-grid a { color: #365e59; }
-.footer-grid a:hover { color: #204a45; }
-.small { color: #395753; font-size: 0.95rem; }
-
-/* Minimal single-column footer (if used) */
-.footer-single { max-width: 680px; margin: 0 auto; }
-.footer-logo { height: 32px; margin-bottom: 12px; }
-.site-footer p.small { margin: 0; font-size: 0.9rem; }
 
 /* -------------------------
    TABLES
