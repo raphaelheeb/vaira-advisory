@@ -346,3 +346,8 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* Allow hero to grow beyond normal content width */
+.hero .content-wrapper {
+  max-width: none;
+}
