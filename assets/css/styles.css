@@ -37,7 +37,7 @@
   --hero-gap: 32px;
   --hero-pad-top: 96px;
   --hero-pad-bottom: 80px;
-  --hero-visual-max: 720px;     /* cap for SVG width inside its column */
+  --hero-visual-max: 520px;     /* cap for SVG width inside its column */
 }
 
 /* -------------------------
