@@ -271,7 +271,8 @@ section#focus .card-grid {
   text-decoration: none;
   transition: background 160ms ease, transform 100ms ease;
 }
-.cta-btn:hover { background: #7dc6bc; }
+.cta-btn:hover { background: #7dc6bc;
+               color: var(--ink);}
 .cta-btn:active { transform: translateY(1px); }
 
 #CTA {
