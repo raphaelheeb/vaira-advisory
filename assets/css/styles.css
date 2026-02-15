@@ -187,6 +187,7 @@ p  { margin: 0 0 12px; }
 /* The CAD SVG visual – responsive and capped */
 .iso-lattice { display: block; 
              opacity: 0.3;
+              color: #ffffff;
              }
 .cad-contour {
   width: 100%;
