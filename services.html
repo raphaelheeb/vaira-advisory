@@ -1,112 +1,256 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Services — VAIRA Advisory</title>
-  <meta name="description" content="What we do: Innovation & Technology, Engineering & Materials, Manufacturing & Industrialization, Technical Due Diligence." />
-  
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-<!-- Styles (use relative path for GitHub Pages project sites) -->
-<link rel="stylesheet" href="assets/css/styles.css" />
-  
-<link rel="icon" href="/favicon.ico" />
-<meta property="og:site_name" content="VAIRA Advisory"/>
-<meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary_large_image"/>
-
-  <meta property="og:title" content="Services — VAIRA Advisory" />
-  <meta property="og:description" content="Innovation, engineering, industrialization, and technical due diligence services." />
+  <meta charset="utf-8">
+  <title>Services | VAIRA Advisory</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hands-on deep-tech and industrialization services: scouting, evaluation, R&D-to-Market, engineering support, scale-up, supplier sourcing.">
+  <link rel="canonical" href="/services/">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<a class="skip-link" href="#main">Skip to main content</a>
-<main id="main"> … </main>
-  
 <body>
-  
+
 <header class="site-header">
-  <div class="header-wrap">
-    <a href="/"><img src="/assets/img/vaira_logo.svg" alt="VAIRA Advisory"></a>
-    <nav aria-label="Primary">
+  <div class="header-wrap content-wrapper">
+    <a href="/" aria-label="VAIRA Advisory">
+      <img src="/assets/img/logo.svg" alt="VAIRA Advisory">
+    </a>
+    <nav aria-label="Main">
       <ul class="nav">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#focus">Focus</a></li>
+        <li><a href="/services/" aria-current="page">Services</a></li>
+        <li><a href="/industries/">Industries</a></li>
+        <li><a href="/use-cases/">Use Cases</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-  <main>
-    <section class="section">
-      <div class="content-wrapper">
-        <h1>Services</h1>
-        <p class="lead">We focus on practical, first‑time‑right execution across the innovation‑to‑industry lifecycle.</p>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Innovation & Technology</h3>
-            <ul>
-              <li>Innovation &amp; technology scouting</li>
-              <li>Technology evaluation</li>
-              <li>Opportunity assessment</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Engineering & Materials</h3>
-            <ul>
-              <li>Materials and engineering guidance</li>
-              <li>Polymer &amp; composite expertise</li>
-              <li>Feasibility and concept development</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Manufacturing & Industrialization</h3>
-            <ul>
-              <li>Industrialization &amp; scale‑up</li>
-              <li>Process development &amp; validation</li>
-              <li>Manufacturing footprint &amp; supplier strategy</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Technical Due Diligence</h3>
-            <ul>
-              <li>Deep‑tech assessment</li>
-              <li>Technical risk evaluation</li>
-              <li>R&amp;D‑to‑market roadmap reviews</li>
-            </ul>
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="content-wrapper wrapper--wide">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">
+            <span lang="en">Hands‑On Engineering &amp; Industrialization Services</span>
+            <br><span lang="de" class="small">Praxisnahe Engineering‑ &amp; Industrialisierungs‑Dienstleistungen</span>
+          </h1>
+          <p class="hero-sub">
+            <span lang="en">From discovery to first‑time‑right production — we design, test, and implement with your engineers and suppliers.</span>
+            <br><span lang="de">Von der Idee bis zur fehlerfreien Serienproduktion — wir konzipieren, testen und implementieren gemeinsam mit Ihren Engineering‑ und Lieferantenteams.</span>
+          </p>
+          <div class="hero-ctas">
+            <a class="cta-btn" href="/contact/"><span lang="en">Discuss Your Project</span><span lang="de">Projekt besprechen</span></a>
           </div>
         </div>
+
+        <!-- Right column: reuse your CAD SVG or keep empty -->
+        <div class="hero-right" aria-hidden="true">
+          <!-- Optional: insert your existing CAD SVG here -->
+        </div>
       </div>
-    </section>
-  </main>
-  
+    </div>
+  </section>
+
+  <!-- SERVICES CATALOG -->
+  <section id="services" class="section">
+    <div class="content-wrapper wrapper--narrow">
+      <h2>
+        <span lang="en">What We Do</span>
+        <br><span lang="de" class="small">Unsere Leistungen</span>
+      </h2>
+
+      <div class="card-grid">
+        <!-- 1: Technology Evaluation & Due Diligence -->
+        <article class="card">
+          <h3>
+            <span lang="en">Technology Evaluation &amp; Due Diligence</span>
+            <br><span lang="de" class="small">Technologiebewertung &amp; Due Diligence</span>
+          </h3>
+          <p>
+            <span lang="en">Decide with facts: TRL/MRL, manufacturability (DFM/DFX), feasibility and risk.</span><br>
+            <span lang="de">Faktenbasierte Entscheidungen: TRL/MRL, Herstellbarkeit (DFM/DFX), Machbarkeit und Risiken.</span>
+          </p>
+          <ul>
+            <li><span lang="en">TRL/MRL review, manufacturability &amp; DFM/DFX</span><span lang="de">TRL/MRL‑Bewertung, Herstellbarkeit &amp; DFM/DFX</span></li>
+            <li><span lang="en">Process feasibility, risk map, light PFMEA</span><span lang="de">Prozess‑Machbarkeit, Risiko‑Matrix, PFMEA light</span></li>
+            <li><span lang="en">Benchmarking, DOE plan, cost/yield model</span><span lang="de">Benchmarking, DOE‑Plan, Kosten/Yield‑Modell</span></li>
+            <li><span lang="en">Supplier document review / audits</span><span lang="de">Lieferanten‑Dokumentenprüfung / Audits</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> decision memo, risk matrix, capex/yield model.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Decision Memo, Risiko‑Matrix, Capex/Yield‑Modell.</span>
+          </p>
+        </article>
+
+        <!-- 2: Innovation & Technology Scouting -->
+        <article class="card">
+          <h3>
+            <span lang="en">Innovation &amp; Technology Scouting</span>
+            <br><span lang="de" class="small">Innovation &amp; Technologie‑Scouting</span>
+          </h3>
+          <p>
+            <span lang="en">Find the right tech and partners quickly — including supplier shortlists in EU/JP/CN.</span><br>
+            <span lang="de">Schnell zur passenden Technologie und zu Lieferanten — inkl. Shortlists in EU/JP/CN.</span>
+          </p>
+          <ul>
+            <li><span lang="en">Landscape scan (materials, processes, equipment)</span><span lang="de">Landscape‑Scan (Materialien, Prozesse, Anlagen)</span></li>
+            <li><span lang="en">Supplier shortlist, first contact, NDA support</span><span lang="de">Lieferanten‑Shortlist, Erstkontakt, NDA‑Support</span></li>
+            <li><span lang="en">Sample builds &amp; evaluation templates</span><span lang="de">Musteraufbauten &amp; Bewertungs‑Templates</span></li>
+            <li><span lang="en">IP/standards context (non‑legal)</span><span lang="de">IP/Normen‑Kontext (ohne Rechtsberatung)</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> ranked shortlist, outreach plan, next‑step roadmap.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Gerankte Shortlist, Outreach‑Plan, Next‑Step‑Roadmap.</span>
+          </p>
+        </article>
+
+        <!-- 3: R&D-to-Market Guidance -->
+        <article class="card">
+          <h3>
+            <span lang="en">R&amp;D‑to‑Market Guidance</span>
+            <br><span lang="de" class="small">R&amp;D‑zu‑Markt Begleitung</span>
+          </h3>
+          <p>
+            <span lang="en">Turn prototypes into robust products: requirements, DFM/DFX, EVT/DVT/PVT.</span><br>
+            <span lang="de">Prototypen zu robusten Produkten: Anforderungen, DFM/DFX, EVT/DVT/PVT.</span>
+          </p>
+          <ul>
+            <li><span lang="en">CTQs &amp; requirements with product/QA</span><span lang="de">CTQs &amp; Anforderungen mit Produkt/QA</span></li>
+            <li><span lang="en">Design reviews, materials &amp; tolerances</span><span lang="de">Design‑Reviews, Materialien &amp; Toleranzen</span></li>
+            <li><span lang="en">Build plans &amp; test matrix (EVT/DVT/PVT)</span><span lang="de">Build‑Pläne &amp; Test‑Matrix (EVT/DVT/PVT)</span></li>
+            <li><span lang="en">Documentation checklist</span><span lang="de">Dokumentations‑Checkliste</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> gated plan, test matrix, BOM/BoP draft.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Gate‑Plan, Test‑Matrix, BOM/BoP‑Entwurf.</span>
+          </p>
+        </article>
+
+        <!-- 4: Industrialization & Scale-Up -->
+        <article class="card">
+          <h3>
+            <span lang="en">Industrialization &amp; Scale‑Up</span>
+            <br><span lang="de" class="small">Industrialisierung &amp; Scale‑Up</span>
+          </h3>
+          <p>
+            <span lang="en">Design the line, hit the yield: process windows, control plan, SOPs, ramp KPIs.</span><br>
+            <span lang="de">Linie auslegen, Yield erreichen: Prozessfenster, Control Plan, SOPs, Ramp‑KPIs.</span>
+          </p>
+          <ul>
+            <li><span lang="en">Process window &amp; capacity/takt model</span><span lang="de">Prozessfenster &amp; Kapazitäts/Takt‑Modell</span></li>
+            <li><span lang="en">Control plan, SPC, PPAP readiness</span><span lang="de">Control Plan, SPC, PPAP‑Readiness</span></li>
+            <li><span lang="en">SOPs &amp; training plans</span><span lang="de">SOPs &amp; Trainingspläne</span></li>
+            <li><span lang="en">Ramp plan (FTY, scrap, cycle time)</span><span lang="de">Ramp‑Plan (FTY, Ausschuss, Zykluszeit)</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> industrialization plan, SOP pack, ramp model.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Industrialisierungsplan, SOP‑Paket, Ramp‑Modell.</span>
+          </p>
+        </article>
+
+        <!-- 5: Supply Chain Optimization -->
+        <article class="card">
+          <h3>
+            <span lang="en">Supply Chain Optimization &amp; Global Sourcing</span>
+            <br><span lang="de" class="small">Supply‑Chain‑Optimierung &amp; Global Sourcing</span>
+          </h3>
+          <p>
+            <span lang="en">De‑risk and reduce cost without losing quality — EU/JP/CN.</span><br>
+            <span lang="de">Risiken senken und Kosten reduzieren — ohne Qualitätsverlust (EU/JP/CN).</span>
+          </p>
+          <ul>
+            <li><span lang="en">RFQ pack, apples‑to‑apples comparison</span><span lang="de">RFQ‑Paket, Apples‑to‑Apples‑Vergleich</span></li>
+            <li><span lang="en">Dual‑sourcing strategy &amp; audits</span><span lang="de">Dual‑Sourcing‑Strategie &amp; Audits</span></li>
+            <li><span lang="en">Pilot builds &amp; trials</span><span lang="de">Pilotaufbauten &amp; Trials</span></li>
+            <li><span lang="en">TCO / VAVE recommendations</span><span lang="de">TCO / VAVE‑Empfehlungen</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> supplier decision doc, TCO model, pilot playbook.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Supplier‑Decision‑Doc, TCO‑Modell, Pilot‑Playbook.</span>
+          </p>
+        </article>
+
+        <!-- 6: Embedded Engineering Support -->
+        <article class="card">
+          <h3>
+            <span lang="en">Embedded Engineering Support</span>
+            <br><span lang="de" class="small">Eingebettete Engineering‑Unterstützung</span>
+          </h3>
+          <p>
+            <span lang="en">Hands‑on bandwidth when you need it: process/mfg/materials.</span><br>
+            <span lang="de">Praxisnahe Verstärkung nach Bedarf: Prozess/Fertigung/Materialien.</span>
+          </p>
+          <ul>
+            <li><span lang="en">On‑site or remote, 1–3 days/week</span><span lang="de">On‑site oder remote, 1–3 Tage/Woche</span></li>
+            <li><span lang="en">Design reviews with CAD/FEA teams</span><span lang="de">Design‑Reviews mit CAD/FEA‑Teams</span></li>
+            <li><span lang="en">Test campaigns &amp; DOE coordination</span><span lang="de">Testkampagnen &amp; DOE‑Koordination</span></li>
+          </ul>
+          <p class="small">
+            <span lang="en"><strong>Deliverables:</strong> weekly progress notes, resolved issues, change logs.</span>
+            <br><span lang="de"><strong>Ergebnisse:</strong> Wöchentliche Status‑Notes, Issue‑Liste, Change‑Logs.</span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section id="how-we-work" class="section">
+    <div class="content-wrapper wrapper--narrow">
+      <h2>
+        <span lang="en">How We Work</span>
+        <br><span lang="de" class="small">Wie wir arbeiten</span>
+      </h2>
+
+      <ol>
+        <li>
+          <strong><span lang="en">Embedded with management &amp; engineering</span><span lang="de">Eingebettet in Management &amp; Engineering</span></strong><br>
+          <span lang="en">We align business goals with process reality and work side‑by‑side with your teams.</span>
+          <span lang="de">Wir verbinden Business‑Ziele mit Prozessrealität und arbeiten eng mit Ihren Teams.</span>
+        </li>
+        <li>
+          <strong><span lang="en">First‑time‑right mindset</span><span lang="de">First‑Time‑Right‑Ansatz</span></strong><br>
+          <span lang="en">Plan once, validate early, ramp with control to save time and cost.</span>
+          <span lang="de">Einmal planen, früh validieren, kontrolliert hochfahren — spart Zeit und Kosten.</span>
+        </li>
+        <li>
+          <strong><span lang="en">Clear cadence &amp; artifacts</span><span lang="de">Klare Taktung &amp; Artefakte</span></strong><br>
+          <span lang="en">Weekly syncs, decision memos, models, SOPs — no fluff.</span>
+          <span lang="de">Wöchentliche Abstimmungen, Decision Memos, Modelle, SOPs — ohne Floskeln.</span>
+        </li>
+      </ol>
+
+      <div class="hero-ctas">
+        <a class="cta-btn" href="/use-cases/"><span lang="en">See Use Cases</span><span lang="de">Use Cases ansehen</span></a>
+        <a class="cta-btn" href="/industries/"><span lang="en">Explore Industries</span><span lang="de">Industrien erkunden</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="CTA" class="section">
+    <div class="content-wrapper wrapper--narrow" style="text-align:center">
+      <h2>
+        <span lang="en">Ready to Accelerate?</span>
+        <br><span lang="de" class="small">Bereit für den nächsten Schritt?</span>
+      </h2>
+      <p class="lead">
+        <span lang="en">Tell us about your product, process, and timeline.</span>
+        <br><span lang="de">Erzählen Sie uns von Produkt, Prozess und Zeitplan.</span>
+      </p>
+      <a class="cta-btn" href="/contact/"><span lang="en">Contact VAIRA</span><span lang="de">Kontakt aufnehmen</span></a>
+    </div>
+  </section>
+
+</main>
+
 <footer class="site-footer">
-  <div class="footer-grid content-wrapper">
-    <div>
-      <img src="/assets/img/vaira_logo.svg" alt="VAIRA Advisory" style="height:28px">
-      <p class="small">Turning technology into scalable, first‑time‑right industrial solutions.</p>
-      <p class="small">© 2026 VAIRA Advisory. All rights reserved.</p>
-    </div>
-    <nav aria-label="Footer Navigation">
-      <h4 class="small">Explore</h4>
-      <ul>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/industries.html">Industries</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div>
-      <h4 class="small">Get in touch</h4>
-      <p class="small"><a href="mailto:info@vaira-advisory.com">info@vaira-advisory.com</a></p>
-      <p class="small"><a class="cta-btn" href="mailto:info@vaira-advisory.com">Schedule a Call</a></p>
-    </div>
+  <div class="content-wrapper" style="text-align:center">
+    <p class="small">© <span lang="en">VAIRA Advisory</span><span lang="de">VAIRA Advisory</span></p>
   </div>
 </footer>
 
