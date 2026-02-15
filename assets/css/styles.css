@@ -1,8 +1,8 @@
 /* =========================================================
-   VAIRA Advisory – Lightweight Styles (Refactored, Option A)
-   - Dark technical look
-   - Large, dominant CAD hero visual
-   - Clean, single-source definitions (no duplicates)
+   VAIRA Advisory – Refactored Styles (Option A: Large Visual)
+   - Clean cascade (single source of truth)
+   - Adjustable hero via variables
+   - Dark technical look preserved
    ========================================================= */
 
 /* -------------------------
@@ -10,40 +10,40 @@
    ------------------------- */
 :root {
   /* Colors (dark technical palette) */
-  --bg: #0e1514;            /* sehr dunkles grün */
-  --bg-soft: #0f2220;       /* sehr dunkles grün */
-  --ink: #0C1A1C;           /* sehr dunkles grün */
-  --muted: #6E7A82;         /* helleres grau */
+  --bg: #0e1514;
+  --bg-soft: #0f2220;
+  --ink: #0C1A1C;
+  --muted: #6E7A82;
   --line: rgba(184, 212, 208, 0.20);
   --line-soft: rgba(184, 212, 208, 0.12);
-  --brand: #9ad1c9;         /* helles mintgrün */
-  --accent: #0A6064;        /* dunkleres grün, teal */
-  --card: #13201e;          /* sehr dunkles grün */
-  --surface: #ffffff;       /* white section background */
-  --ink-strong: #0e1514;    /* dark almost black text on light surfaces */
-  --line-strong: rgba(6, 20, 19, 0.12); /* light divider on white */
+  --brand: #9ad1c9;
+  --accent: #0A6064;
+  --card: #13201e;
+  --surface: #ffffff;
+  --ink-strong: #0e1514;
+  --line-strong: rgba(6, 20, 19, 0.12);
 
-  /* Layout sizing */
+  /* Layout */
   --radius: 8px;
   --maxw: 1460px;
 
   /* Typography */
   --font: 'Public Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
 
-  /* Hero knobs (Option A) */
-  --hero-wrapper-maxw: 1350px;     /* widen hero slightly compared to rest */
-  --hero-col-left: 1fr;          /* text column */
-  --hero-col-right: 1.4fr;         /* visual column – increase for larger visual */
+  /* === HERO KNOBS (edit these to fine‑tune) === */
+  --hero-wrapper-maxw: 1650px;  /* widen hero beyond normal content */
+  --hero-col-left: 1fr;         /* left column (text) */
+  --hero-col-right: 1.6fr;      /* right column (visual) */
   --hero-gap: 32px;
   --hero-pad-top: 96px;
   --hero-pad-bottom: 80px;
+  --hero-visual-max: 960px;     /* cap for SVG width inside its column */
 }
 
 /* -------------------------
    RESET / BASE
    ------------------------- */
 * { box-sizing: border-box; }
-
 html, body { margin: 0; padding: 0; }
 
 body {
@@ -73,7 +73,9 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 p  { margin: 0 0 12px; }
 .lead, .small { color: #395753; }
 
-/* Wrappers */
+/* -------------------------
+   WRAPPERS
+   ------------------------- */
 .content-wrapper,
 .header-wrap,
 .footer-grid {
@@ -83,7 +85,6 @@ p  { margin: 0 0 12px; }
   padding-right: 48px;
 }
 
-/* Narrow wrapper for text-heavy blocks */
 .wrapper--narrow {
   max-width: 980px;
   margin: 0 auto;
@@ -94,16 +95,13 @@ p  { margin: 0 0 12px; }
    HEADER / NAV
    ------------------------- */
 .site-header {
-  list-style: none;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   background: var(--surface);
-  border-bottom: 0 !important;
-  backdrop-filter: none;
+  border-bottom: 0;
 }
 .site-header img { height: 50px; }
 
 .header-wrap {
-  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -125,21 +123,25 @@ p  { margin: 0 0 12px; }
 .nav a[aria-current="page"] { color: #204a45; font-weight: 700; }
 
 /* -------------------------
-   HERO (Option A – large visual)
+   HERO (Option A: Large Visual)
    ------------------------- */
 .hero {
   background: var(--accent);
   padding: var(--hero-pad-top) 0 var(--hero-pad-bottom);
 }
 
-/* Hero wrapper wider than default */
-.hero .content-wrapper.wrapper--wide {
+/* Critical: let the hero ignore the default content-wrapper width */
+.hero .content-wrapper { max-width: none; }
+
+/* Hero's own wide wrapper (controls hero overall width) */
+.hero .wrapper--wide {
   max-width: var(--hero-wrapper-maxw);
+  margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-/* Two-column grid: right visual dominates */
+/* Two-column layout (right dominates, adjustable via variables) */
 .hero .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, var(--hero-col-left)) minmax(0, var(--hero-col-right));
@@ -147,28 +149,28 @@ p  { margin: 0 0 12px; }
   align-items: center;
 }
 
-/* Left column (you don’t have a .hero-left class; use :first-child safely) */
+/* Left column: first child in the grid (no .hero-left class in HTML) */
 .hero .hero-grid > :first-child {
   align-self: center;
   margin: 0;
 }
 
-/* Typography/colors inside hero */
-.hero-title { 
+/* Text styling inside hero */
+.hero-title {
   line-height: 1.08;
   margin: 0 0 16px;
   color: #ffffff;
 }
-.hero-sub { 
-  color: #ffffff; 
-  margin: 0 0 16px; 
+.hero-sub {
+  color: #ffffff;
+  margin: 0 0 16px;
 }
 .hero-ctas .cta-btn {
   margin-right: 8px;
   color: #ffffff;
 }
 
-/* Right column (visual) */
+/* Right column: container for the visual */
 .hero .hero-right {
   display: flex;
   align-items: center;
@@ -176,24 +178,25 @@ p  { margin: 0 0 12px; }
   margin: 0;
 }
 
-/* Visual: make SVG scale with its column */
-.iso-lattice { display: none !important; } /* keep hidden for now */
+/* The CAD SVG visual – responsive and capped */
+.iso-lattice { display: none; } /* keep hidden if unused */
 .cad-contour {
   width: 100%;
-  height: auto;          /* crucial: allow responsive scaling */
+  height: auto;
   display: block;
   opacity: 0.85;
-  max-width: none;       /* defend against any global caps */
+  max-width: var(--hero-visual-max);   /* cap to keep balance on very wide screens */
 }
 
-/* Optional: adjust right-dominance on very large screens */
+/* Large screens: optionally let the visual lead more */
 @media (min-width: 1200px) {
+  /* Uncomment to exaggerate the right side on very large screens
   .hero .hero-grid {
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.8fr);
-  }
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.8fr);
+  } */
 }
 
-/* Mobile: stack and soften sizes */
+/* Mobile: stack cleanly */
 @media (max-width: 860px) {
   .hero { padding: 56px 0 40px; }
   .hero .hero-grid { grid-template-columns: 1fr; }
@@ -206,18 +209,13 @@ p  { margin: 0 0 12px; }
 .section {
   background: var(--surface);
   color: var(--bg);
-  border-top: 0 !important;
+  border-top: 0;
   padding: 60px 0;
 }
-
-/* Add spacing BETWEEN sections as well */
-.section + .section {
-  margin-top: 0 !important;
-}
-
+.section + .section { margin-top: 0; }
 .section h2 { margin: 0 0 22px; }
 
-/* === What We Do grid — 3/2/1 responsive === */
+/* What We Do – 3/2/1 grid */
 #what-we-do .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -230,7 +228,7 @@ p  { margin: 0 0 12px; }
   #what-we-do .card-grid { grid-template-columns: 1fr; }
 }
 
-/* Round, elevated cards */
+/* Rounded, elevated cards */
 #what-we-do .card,
 #focus .card {
   border-radius: 12px;
@@ -241,7 +239,7 @@ p  { margin: 0 0 12px; }
   box-shadow: 0 1px 1px rgba(0,0,0,0.02), 0 8px 20px rgba(6, 20, 19, 0.04);
 }
 
-/* === Areas of Focus: 2×2 desktop, stack mobile === */
+/* Areas of Focus – 2×2 desktop, stack on mobile */
 section#focus .card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 1fr));
@@ -272,7 +270,7 @@ section#focus .card-grid {
    ------------------------- */
 .site-footer {
   background: #ffffff;
-  border-top: 0 !important;
+  border-top: 0;
   color: var(--ink-strong);
   padding-top: 28px;
 }
@@ -287,7 +285,7 @@ section#focus .card-grid {
 .footer-grid a:hover { color: #204a45; }
 .small { color: #395753; font-size: 0.95rem; }
 
-/* Minimal clean footer (single-column) if used */
+/* Minimal single-column footer (if used) */
 .footer-single { max-width: 680px; margin: 0 auto; }
 .footer-logo { height: 32px; margin-bottom: 12px; }
 .site-footer p.small { margin: 0; font-size: 0.9rem; }
@@ -308,20 +306,24 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 }
 .skip-link:focus {
   position: fixed; left: 16px; top: 12px; width: auto; height: auto;
-  background: #fff; color: #062422; padding: 8px 12px; border-radius: 6px;
+  background: #fff; color: #062422;
+  padding: 8px 12px; border-radius: 6px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.12);
 }
 
 /* -------------------------
-   RESPONSIVE (global)
+   SECTION BACKGROUNDS
+   ------------------------- */
+#what-we-do { background: #ffffff; }
+#about { background: #f1f7f6; }
+#focus { background: #ffffff; }
+#CTA { background: #f1f7f6; }
+
+/* -------------------------
+   RESPONSIVE (global tweaks)
    ------------------------- */
 @media (max-width: 860px) {
-  .hero { padding-top: 48px; } /* mild adjustment for smaller screens */
-}
-
-/* If the visuals feel heavy on very small screens, hide the lattice (kept) */
-@media (max-width: 480px) {
-  .iso-lattice { display: none; }
+  .hero { padding-top: 48px; }
 }
 
 /* -------------------------
@@ -333,21 +335,8 @@ th { text-align: left; color: var(--muted); font-weight: 600; }
 }
 
 /* -------------------------
-   SECTION BACKGROUNDS (kept)
-   ------------------------- */
-#what-we-do { background: #ffffff; }
-#about { background: #f1f7f6; }
-#focus { background: #ffffff; }
-#CTA { background: #f1f7f6; }
-
-/* -------------------------
-   PREFER REDUCED MOTION (a11y nicety)
+   REDUCED MOTION (a11y)
    ------------------------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
-}
-
-/* Allow hero to grow beyond normal content width */
-.hero .content-wrapper {
-  max-width: none;
 }
