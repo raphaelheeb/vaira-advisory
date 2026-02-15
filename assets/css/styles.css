@@ -257,7 +257,9 @@ section#focus .card-grid {
    BUTTONS / CTAs
    ------------------------- */
 .cta-btn {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px 16px;
   background: var(--accent);
   color: #ffffff;
@@ -265,7 +267,6 @@ section#focus .card-grid {
   font-weight: 600;
   text-decoration: none;
   transition: background 160ms ease, transform 100ms ease;
-  text-align: center;
 }
 .cta-btn:hover { background: #7dc6bc; }
 .cta-btn:active { transform: translateY(1px); }
