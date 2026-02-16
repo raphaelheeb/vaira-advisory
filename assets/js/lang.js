@@ -1,3 +1,4 @@
+/* assets/js/lang.js */
 /* VAIRA Advisory – simple EN/DE language switcher */
 (function () {
   const DEFAULT_LANG = 'en';
