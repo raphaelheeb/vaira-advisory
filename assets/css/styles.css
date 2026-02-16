@@ -86,7 +86,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 }
 
 /* -------------------------
-   HEADER
+   HEADER (CLEAN LAYOUT)
    ------------------------- */
 .site-header {
   background: #ffffff;
@@ -95,38 +95,42 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: var(--ink-strong);
 }
 
+/* Outer container: space between LEFT GROUP and RIGHT switcher */
 .header-wrap {
   max-width: var(--maxw);
   margin: 0 auto;
   padding-inline: var(--page-pad);
   display: flex;
   align-items: center;
-  gap: 24px; /* tighter base gap; nav will sit next to logo */
+  justify-content: space-between; /* left group ↔ right switcher */
+  gap: 16px;
+}
+
+/* LEFT group: logo + nav side-by-side */
+.brand-and-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px; /* space between logo and nav */
 }
 
 /* Logo */
 .site-header .site-logo {
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
 }
-
 .site-header .site-logo img,
 .site-header .site-logo svg {
   display: block;
   height: 64px;
   width: auto;
-  margin: 0;
-  padding: 0;
-  transform: translateX(-2px); /* optical correction */
+  transform: translateX(-2px);
 }
 
-/* Nav sits next to logo; language switcher is pushed to the far right */
+/* Navigation */
 .site-header nav {
   display: flex;
   align-items: center;
-  margin-left: auto !important;            /* ensure nav stays beside logo */
+  margin: 0; /* keep nav next to logo */
 }
 
 .nav {
@@ -137,20 +141,24 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   margin: 0;
   padding: 0;
 }
-
 .nav a {
   line-height: 1.2;
   padding-top: 2px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--brand);
 }
 
-/* Language switcher pushes to right edge */
+/* Language switcher: naturally pinned to the right by space-between */
 .language-switcher {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 16px;         /* <-- this sends it to the far right */
 }
 
+/* Language buttons */
 .lang-btn {
   cursor: pointer;
   font-size: 0.9rem;
@@ -161,18 +169,24 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: #0e1514;
   transition: background 130ms ease, color 130ms ease;
 }
-
 .lang-btn.active { background: #0A6064; color: #ffffff; }
 .lang-btn:hover  { background: #7dc6bc; color: #0A6064; }
 
-/* Mobile header layout */
+/* Mobile behavior: stack neatly */
 @media (max-width: 720px) {
   .header-wrap {
     flex-wrap: wrap;
     gap: 12px;
   }
-  .site-header nav { order: 2; width: 100%; }
-  .language-switcher { order: 3; margin-left: 0; }
+  .brand-and-nav {
+    width: 100%;
+    justify-content: space-between;  /* logo left, nav right on same line */
+    gap: 12px;
+  }
+  .language-switcher {
+    width: 100%;
+    justify-content: flex-start;      /* switcher goes below, left-aligned */
+  }
 }
 
 /* -------------------------
@@ -422,59 +436,4 @@ html.lang-de blockquote[lang="de"] {
    ------------------------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
-}
-
-/* =========================================================
-   HEADER LAYOUT: NAV NEXT TO LOGO, SWITCHER FAR RIGHT
-   ========================================================= */
-
-/* Ensure the header uses a single flex row */
-.header-wrap {
-  display: flex;
-  align-items: center;
-  gap: 24px;            /* space between logo and nav */
-  padding-inline: var(--page-pad);
-  max-width: var(--maxw);
-  margin: 0 auto;
-}
-
-/* Explicit visual order (no HTML changes needed) */
-.site-header .site-logo { order: 1; }   /* leftmost */
-.site-header nav        { order: 2; }   /* sits right next to the logo */
-.language-switcher      { order: 3; }   /* last item */
-
-/* Keep the language switcher pinned to the far right */
-.language-switcher {
-  margin-left: auto;    /* pushes it to the right edge */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Make sure nav does not push itself away from the logo */
-.site-header nav {
-  margin-left: 0 !important;  /* override any previous auto margins */
-  display: flex;
-  align-items: center;
-}
-
-/* Optional: slightly tighter spacing inside the nav links */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Mobile: stack cleanly; avoid pushing the switcher off-screen */
-@media (max-width: 720px) {
-  .header-wrap {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .site-header .site-logo { order: 1; }
-  .site-header nav        { order: 2; width: 100%; } /* nav on its own line */
-  .language-switcher      { order: 3; margin-left: 0; } /* no push on stacked layout */
 }
