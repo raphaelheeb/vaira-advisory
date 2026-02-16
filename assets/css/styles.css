@@ -94,6 +94,10 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 /* -------------------------
    HEADER
    ------------------------- */
+
+/* Perfect logo alignment with hero title */
+.site-header .site-logo
+
 .site-header {
   background: #ffffff;
   padding: 18px 0;
@@ -115,12 +119,12 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 /* Logo */
 .site-header .site-logo img,
 .site-header .site-logo svg {
-  height: 64px;       /* Adjust if desired */
-  width: auto;
-  display: flex;
-  align-items: center;
+  display: block;    /* removes inline gap */
   margin: 0;
   padding: 0;
+  height: 64px;      /* or preferred */
+  width: auto;
+  transform: translateX(-2px);
 }
 
 /* Navigation */
