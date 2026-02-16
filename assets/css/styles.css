@@ -208,3 +208,10 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   background: #7dc6bc;
   color: #fff;
 }
+
+.hero .wrapper--wide {
+  max-width: var(--hero-wrapper-maxw);
+  margin: 0 auto;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+}
