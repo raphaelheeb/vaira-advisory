@@ -423,3 +423,58 @@ html.lang-de blockquote[lang="de"] {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* =========================================================
+   HEADER LAYOUT: NAV NEXT TO LOGO, SWITCHER FAR RIGHT
+   ========================================================= */
+
+/* Ensure the header uses a single flex row */
+.header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;            /* space between logo and nav */
+  padding-inline: var(--page-pad);
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+/* Explicit visual order (no HTML changes needed) */
+.site-header .site-logo { order: 1; }   /* leftmost */
+.site-header nav        { order: 2; }   /* sits right next to the logo */
+.language-switcher      { order: 3; }   /* last item */
+
+/* Keep the language switcher pinned to the far right */
+.language-switcher {
+  margin-left: auto;    /* pushes it to the right edge */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Make sure nav does not push itself away from the logo */
+.site-header nav {
+  margin-left: 0 !important;  /* override any previous auto margins */
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: slightly tighter spacing inside the nav links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Mobile: stack cleanly; avoid pushing the switcher off-screen */
+@media (max-width: 720px) {
+  .header-wrap {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .site-header .site-logo { order: 1; }
+  .site-header nav        { order: 2; width: 100%; } /* nav on its own line */
+  .language-switcher      { order: 3; margin-left: 0; } /* no push on stacked layout */
+}
