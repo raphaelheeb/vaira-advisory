@@ -320,14 +320,17 @@ html.lang-de article[lang="de"] {
     0 8px 20px rgba(6,20,19,0.04);
 }
 
-/* ✅ Prevent spans from turning block-level (fixes bullets + spacing) */
+#what-we-do .card li,
+#focus .card li {
+  margin: 0.35rem 0;   /* vertical spacing between bullets */
+  line-height: 1.5;    /* improves readability */
+}
+
 #what-we-do .card li span,
 #focus .card li span {
   display: inline;
   margin: 0;
   padding: 0;
-   margin: 0.35rem 0;   /* vertical spacing */
-   line-height: 1.5;   /* improves readability */
 }
 
 #what-we-do .card:hover,
