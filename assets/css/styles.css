@@ -326,6 +326,8 @@ html.lang-de article[lang="de"] {
   display: inline;
   margin: 0;
   padding: 0;
+   margin: 0.35rem 0;   /* vertical spacing */
+   line-height: 1.5;   /* improves readability */
 }
 
 #what-we-do .card:hover,
