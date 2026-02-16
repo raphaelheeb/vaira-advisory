@@ -25,7 +25,45 @@ description: Turning technology into scalable, industrial solutions.
       </div>
 
       <div class="hero-right visual--cad" aria-hidden="true">
-        <!-- Keep your existing CAD SVG here -->
+<svg class="cad-contour"
+     viewBox="0 0 600 600"
+     role="img"
+     aria-label="CAD contours">
+  <defs>
+    <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.30"/>
+    </linearGradient>
+    <style>
+      .c { fill: none; stroke: url(#cadStroke); stroke-width: 1.5;
+          vector-effect: non-scaling-stroke; }
+      .dash { stroke-dasharray: 6 8; }
+    </style>
+  </defs>
+
+  <g>
+    <path class="c" d="M80 270 C170 150, 430 150, 520 270"/>
+    <path class="c" d="M60 320 C160 210, 440 210, 540 320"/>
+    <path class="c" d="M50 370 C160 280, 440 280, 550 370"/>
+    <path class="c" d="M60 420 C170 350, 430 350, 540 420"/>
+    <path class="c" d="M80 470 C190 420, 410 420, 520 470"/>
+  </g>
+
+  <g>
+    <path class="c" d="M180 180 C160 260, 160 360, 180 440"/>
+    <path class="c" d="M240 160 C220 250, 220 370, 240 460"/>
+    <path class="c" d="M300 150 C280 250, 280 380, 300 480"/>
+    <path class="c" d="M360 160 C340 250, 340 370, 360 460"/>
+    <path class="c" d="M420 180 C400 260, 400 360, 420 440"/>
+  </g>
+
+  <g opacity="0.45">
+    <path class="c dash" d="M100 140 L500 140"/>
+    <path class="c dash" d="M100 500 L500 500"/>
+    <path class="c dash" d="M120 120 L120 520"/>
+    <path class="c dash" d="M480 120 L480 520"/>
+  </g>
+</svg>
       </div>
     </div>
   </div>
