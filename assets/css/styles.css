@@ -1,5 +1,5 @@
 /* =========================================================
-   VAIRA Advisory – Cleaned + Stable Stylesheet (FINAL)
+   VAIRA Advisory – Stable Stylesheet (CLEAN & FIXED)
    ========================================================= */
 
 /* -------------------------
@@ -22,7 +22,7 @@
   --radius: 8px;
   --maxw: 1460px;
 
-  /* Unified padding */
+  /* Layout paddings */
   --page-pad: 32px;
 
   /* Fonts */
@@ -30,11 +30,7 @@
 
   /* Hero Controls */
   --hero-wrapper-maxw: 1500px;
-  --hero-col-left: 1.1fr;
-  --hero-col-right: 1.4fr;
   --hero-gap: 32px;
-  --hero-pad-top: 20px;
-  --hero-pad-bottom: 20px;
   --hero-visual-max: 520px;
 }
 
@@ -44,8 +40,9 @@
 * { box-sizing: border-box; }
 
 html, body {
-  margin: 0; padding: 0;
-  background: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
 }
 
 body {
@@ -68,34 +65,29 @@ h2 { font-size: clamp(22px, 3vw, 30px); }
 h3 { font-size: clamp(18px, 2.4vw, 20px); }
 
 /* -------------------------
-   WRAPPERS – unified
+   WRAPPERS
    ------------------------- */
 .content-wrapper {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding-left: var(--page-pad);
-  padding-right: var(--page-pad);
+  padding-inline: var(--page-pad);
 }
 
 .wrapper--narrow {
   max-width: 980px;
   margin: 0 auto;
-  padding-left: var(--page-pad);
-  padding-right: var(--page-pad);
+  padding-inline: var(--page-pad);
 }
 
 .hero .wrapper--wide {
   max-width: var(--hero-wrapper-maxw);
   margin: 0 auto;
-  padding-left: var(--page-pad);
-  padding-right: var(--page-pad);
+  padding-inline: var(--page-pad);
 }
 
 /* -------------------------
-   HEADER (FINAL CLEAN VERSION)
+   HEADER
    ------------------------- */
-
-/* Header container */
 .site-header {
   background: #ffffff;
   padding: 18px 0;
@@ -103,48 +95,40 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: var(--ink-strong);
 }
 
-/* Unified wrapper matching hero wrapper exactly */
 .header-wrap {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding-left: var(--page-pad);    /* <-- SAME as hero wrapper */
-  padding-right: var(--page-pad);   /* <-- SAME as hero wrapper */
-
+  padding-inline: var(--page-pad);
   display: flex;
   align-items: center;
-  gap: 48px;                        /* Space between logo and nav */
+  gap: 24px; /* tighter base gap; nav will sit next to logo */
 }
 
-/* Logo container */
+/* Logo */
 .site-header .site-logo {
-  display: flex;        /* removes inline gap */
+  display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-/* Logo image (works for img OR inline SVG) */
 .site-header .site-logo img,
 .site-header .site-logo svg {
   display: block;
-  height: 64px;          /* adjust size here */
+  height: 64px;
   width: auto;
   margin: 0;
   padding: 0;
-
-  /* optical correction for SVG text/box imbalance */
-  transform: translateX(-2px);
+  transform: translateX(-2px); /* optical correction */
 }
 
-/* Navigation container */
+/* Nav sits next to logo; language switcher is pushed to the far right */
 .site-header nav {
-  margin-left: auto;     /* pushes nav + language switcher to right */
   display: flex;
   align-items: center;
-  gap: 32px;
+  margin-left: 0;            /* ensure nav stays beside logo */
 }
 
-/* Nav list */
 .nav {
   list-style: none;
   display: flex;
@@ -159,14 +143,14 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   padding-top: 2px;
 }
 
-/* Language switcher */
+/* Language switcher pushes to right edge */
 .language-switcher {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: auto;         /* <-- this sends it to the far right */
 }
 
-/* Language buttons */
 .lang-btn {
   cursor: pointer;
   font-size: 0.9rem;
@@ -178,29 +162,40 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   transition: background 130ms ease, color 130ms ease;
 }
 
-.lang-btn.active {
-  background: #0A6064;
-  color: #ffffff;
+.lang-btn.active { background: #0A6064; color: #ffffff; }
+.lang-btn:hover  { background: #7dc6bc; color: #0A6064; }
+
+/* Mobile header layout */
+@media (max-width: 720px) {
+  .header-wrap {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .site-header nav { order: 2; width: 100%; }
+  .language-switcher { order: 3; margin-left: 0; }
 }
 
-.lang-btn:hover {
-  background: #7dc6bc;
-  color: #0A6064;
-}
-
-/* Language visibility logic */
+/* -------------------------
+   LANGUAGE VISIBILITY
+   (works with span[lang], li[lang], and block elements)
+   ------------------------- */
+/* Default: hide DE content */
 [lang="de"] { display: none; }
-html.lang-de [lang="en"] { display: none !important; }
-html.lang-de [lang="de"] { display: inline !important; }
 
-html.lang-de blockquote[lang="de"],
-html.lang-de div[lang="de"],
+/* German mode: hide EN */
+html.lang-de [lang="en"] { display: none !important; }
+
+/* German mode: show DE properly per element type */
+html.lang-de span[lang="de"] { display: inline !important; }
+html.lang-de li[lang="de"]   { display: list-item !important; }
 html.lang-de p[lang="de"],
+html.lang-de div[lang="de"],
 html.lang-de h1[lang="de"],
 html.lang-de h2[lang="de"],
 html.lang-de h3[lang="de"],
 html.lang-de section[lang="de"],
-html.lang-de article[lang="de"] {
+html.lang-de article[lang="de"],
+html.lang-de blockquote[lang="de"] {
   display: block !important;
 }
 
@@ -209,51 +204,44 @@ html.lang-de article[lang="de"] {
    ------------------------- */
 .hero {
   background: var(--accent);
-  padding: var(--hero-pad-top) 0 var(--hero-pad-bottom);
+  padding: 56px 0 36px;
   overflow: hidden;
   position: relative;
+  color: #ffffff;
 }
 
-/* 2 columns */
 .hero .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.0fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); /* wider left column */
   gap: var(--hero-gap);
   align-items: center;
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-grid > :first-child {
-  align-self: center;
-}
-
-.hero-title{
+/* Left column: title ~2 lines, subtitle ~1 line (desktop) */
+.hero-title {
   color: #ffffff;
-  font-size: clamp(30px, 5vw, 48px);   /* slightly larger max to allow 2 lines comfortably */
+  font-size: clamp(30px, 5vw, 48px);
   line-height: 1.15;
-  max-width: 28ch;                     /* tune until it wraps to ~2 lines on desktop */
-  word-break: normal;
+  max-width: 28ch; /* encourage 2 lines */
 }
 
 .hero-sub {
   color: #ffffff;
   font-size: clamp(16px, 2vw, 18.5px);
   line-height: 1.35;
-  white-space: nowrap;                  /* try to keep it one line */
-  max-width: 38ch;                      /* safeguard if it must wrap on very narrow screens */
-  overflow: hidden;
-  text-overflow: ellipsis;              /* optional: avoid wrap on medium screens */
+  white-space: nowrap;  /* keep on 1 line when possible */
+  max-width: 38ch;
 }
 
-/* If the subtitle must never truncate on desktop, relax the white-space below a threshold */
 @media (max-width: 980px) {
   .hero-sub {
-    white-space: normal;                /* allow wrap on smaller screens */
-    text-overflow: initial;
+    white-space: normal; /* allow wrapping on smaller screens */
   }
+}
 
-/* CTA */
+/* CTA in hero */
 .hero-ctas .cta-btn {
   background: #7dc6bc;
   color: #ffffff;
@@ -270,7 +258,6 @@ html.lang-de article[lang="de"] {
   justify-content: flex-end;
   align-items: center;
 }
-
 .cad-contour {
   width: 100%;
   max-width: var(--hero-visual-max);
@@ -289,12 +276,12 @@ html.lang-de article[lang="de"] {
     linear-gradient(to right, rgba(184,212,208,0.16) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(184,212,208,0.16) 1px, transparent 1px);
   background-size: 48px 48px;
-  opacity: .30;
+  opacity: 0.30;
 }
 
 /* Mobile hero */
 @media (max-width: 860px) {
-  .hero { padding: 56px 0 40px; }
+  .hero { padding: 48px 0 28px; }
   .hero .hero-grid { grid-template-columns: 1fr; }
   .hero .hero-right { margin-top: 12px; }
 }
@@ -307,27 +294,30 @@ html.lang-de article[lang="de"] {
   padding: 60px 0;
   color: var(--bg);
 }
+.section h2 { margin-bottom: 22px; }
 
-.section h2 {
-  margin-bottom: 22px;
-}
-
+/* Distinct background for the “Ready to Accelerate” section */
 .section#CTA {
-   background: var(--brand);
+  background: var(--brand);     /* light brand tint */
+  color: var(--ink-strong);
 }
-   
+.section#CTA h2, .section#CTA h3 { color: var(--ink-strong); }
+
 /* -------------------------
    CARDS
    ------------------------- */
+/* Let cards grow wider while remaining responsive */
+#what-we-do .content-wrapper.wrapper--narrow {
+  max-width: 1200px; /* wider than default narrow to give cards room */
+}
+
+/* Adaptive grid: keeps cards wide and reduces columns gracefully */
 #what-we-do .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
 }
 
-@media (max-width: 980px) {
-  #what-we-do .card-grid { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 620px) {
   #what-we-do .card-grid { grid-template-columns: 1fr; }
 }
@@ -338,23 +328,10 @@ html.lang-de article[lang="de"] {
   background: #ffffff;
   border: 1px solid var(--line-strong);
   padding: 18px 16px;
-  transition: all 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease;
   box-shadow:
     0 1px 1px rgba(0,0,0,0.02),
     0 8px 20px rgba(6,20,19,0.04);
-}
-
-#what-we-do .card li,
-#focus .card li {
-  margin: 0.35rem 0;   /* vertical spacing between bullets */
-  line-height: 1.5;    /* improves readability */
-}
-
-#what-we-do .card li span,
-#focus .card li span {
-  display: inline;
-  margin: 0;
-  padding: 0;
 }
 
 #what-we-do .card:hover,
@@ -365,28 +342,29 @@ html.lang-de article[lang="de"] {
     0 16px 30px rgba(6,20,19,0.06);
 }
 
-/* =========================================================
-   LANGUAGE VISIBILITY (FULLY CORRECT)
-   ========================================================= */
-
-/* Default: hide German */
-[lang="de"] {
-  display: none;
+/* List spacing + bullets inside cards */
+#what-we-do .card ul,
+#focus .card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+#what-we-do .card li,
+#focus .card li {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+#what-we-do .card li span,
+#focus .card li span {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
-/* German mode: hide English */
-html.lang-de [lang="en"] {
-  display: none !important;
-}
-
-/* German mode: show German text (inline for spans) */
-html.lang-de [lang="de"] {
-  display: inline !important;
-}
-
-/* German mode: but German LI must remain list-item to keep bullets */
-html.lang-de li[lang="de"] {
-  display: list-item !important;
+/* If some global style injects ::before bullets, neutralize inside cards */
+#what-we-do .card li::before,
+#focus .card li::before {
+  content: none !important;
 }
 
 /* -------------------------
@@ -401,12 +379,8 @@ html.lang-de li[lang="de"] {
   font-weight: 600;
   transition: background 160ms ease, transform 100ms ease;
 }
-.cta-btn:hover {
-  background: #7dc6bc;
-}
-.cta-btn:active {
-  transform: translateY(1px);
-}
+.cta-btn:hover { background: #7dc6bc; }
+.cta-btn:active { transform: translateY(1px); }
 
 /* -------------------------
    FOOTER
@@ -419,7 +393,7 @@ html.lang-de li[lang="de"] {
 }
 
 /* -------------------------
-   SKIP LINK
+   SKIP LINK (a11y)
    ------------------------- */
 .skip-link {
   position: absolute;
@@ -432,6 +406,7 @@ html.lang-de li[lang="de"] {
   background: #fff;
   padding: 8px 12px;
   border-radius: 6px;
+  z-index: 1000;
 }
 
 /* -------------------------
@@ -439,7 +414,7 @@ html.lang-de li[lang="de"] {
    ------------------------- */
 @media print {
   .site-header, .site-footer { display: none; }
-  a { color: black !important; }
+  a { color: black !important; text-decoration: underline; }
 }
 
 /* -------------------------
