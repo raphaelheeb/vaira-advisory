@@ -246,6 +246,13 @@ html.lang-de article[lang="de"] {
   text-overflow: ellipsis;              /* optional: avoid wrap on medium screens */
 }
 
+/* If the subtitle must never truncate on desktop, relax the white-space below a threshold */
+@media (max-width: 980px) {
+  .hero-sub {
+    white-space: normal;                /* allow wrap on smaller screens */
+    text-overflow: initial;
+  }
+
 /* CTA */
 .hero-ctas .cta-btn {
   background: #7dc6bc;
