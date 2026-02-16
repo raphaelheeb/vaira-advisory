@@ -92,12 +92,10 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 }
 
 /* -------------------------
-   HEADER
+   HEADER (FINAL CLEAN VERSION)
    ------------------------- */
 
-/* Perfect logo alignment with hero title */
-.site-header .site-logo
-
+/* Header container */
 .site-header {
   background: #ffffff;
   padding: 18px 0;
@@ -105,36 +103,48 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: var(--ink-strong);
 }
 
+/* Unified wrapper matching hero wrapper exactly */
 .header-wrap {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding-left: var(--page-pad);
-  padding-right: var(--page-pad);
+  padding-left: var(--page-pad);    /* <-- SAME as hero wrapper */
+  padding-right: var(--page-pad);   /* <-- SAME as hero wrapper */
 
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 48px;                        /* Space between logo and nav */
 }
 
-/* Logo */
+/* Logo container */
+.site-header .site-logo {
+  display: flex;        /* removes inline gap */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo image (works for img OR inline SVG) */
 .site-header .site-logo img,
 .site-header .site-logo svg {
-  display: block;    /* removes inline gap */
+  display: block;
+  height: 64px;          /* adjust size here */
+  width: auto;
   margin: 0;
   padding: 0;
-  height: 64px;      /* or preferred */
-  width: auto;
+
+  /* optical correction for SVG text/box imbalance */
   transform: translateX(-2px);
 }
 
-/* Navigation */
+/* Navigation container */
 .site-header nav {
+  margin-left: auto;     /* pushes nav + language switcher to right */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex: 1;
+  gap: 24px;
 }
 
+/* Nav list */
 .nav {
   list-style: none;
   display: flex;
@@ -144,14 +154,19 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   padding: 0;
 }
 
+.nav a {
+  line-height: 1.2;
+  padding-top: 2px;
+}
+
 /* Language switcher */
 .language-switcher {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 32px;
 }
 
+/* Language buttons */
 .lang-btn {
   cursor: pointer;
   font-size: 0.9rem;
@@ -160,7 +175,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   background: transparent;
   border: 1px solid rgba(14,21,20,0.25);
   color: #0e1514;
-  transition: background 130ms, color 130ms;
+  transition: background 130ms ease, color 130ms ease;
 }
 
 .lang-btn.active {
@@ -173,7 +188,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: #0A6064;
 }
 
-/* Language visibility */
+/* Language visibility logic */
 [lang="de"] { display: none; }
 html.lang-de [lang="en"] { display: none !important; }
 html.lang-de [lang="de"] { display: inline !important; }
