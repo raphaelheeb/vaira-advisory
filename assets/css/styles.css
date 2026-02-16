@@ -35,8 +35,8 @@
   --hero-col-left: 1.1fr;         /* left column (text) */
   --hero-col-right: 1.4fr;      /* right column (visual) */
   --hero-gap: 32px;
-  --hero-pad-top: 20px;
-  --hero-pad-bottom: 20px;
+  --hero-pad-top: 140px;
+  --hero-pad-bottom: 120px;
   --hero-visual-max: 420px;     /* cap for SVG width inside its column */
 }
 
@@ -122,6 +122,20 @@ p  { margin: 0 0 12px; }
 }
 .nav a[aria-current="page"] { color: #204a45; font-weight: 700; }
 
+/* Fix header layout */
+.site-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* menu left, language switch right */
+  width: 100%;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  margin-left: 24px;
+}
+
 /* -------------------------
    HERO (Option A: Large Visual)
    ------------------------- */
@@ -184,8 +198,8 @@ p  { margin: 0 0 12px; }
 .hero .hero-right {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-left: 120px;
+  justify-content: flex-end;
+  margin-left: 0;
 }
 
 /* The CAD SVG visual – responsive and capped */
@@ -195,7 +209,7 @@ p  { margin: 0 0 12px; }
   height: auto;
   display: block;
   opacity: 0.85;
-  max-width: var(--hero-visual-max);   /* cap to keep balance on very wide screens */
+  max-width: var(--hero-visual-max, 960px);   /* cap to keep balance on very wide screens */
 }
 
 /* --- HERO cartesian grid (horizontal + vertical lines) --- */
