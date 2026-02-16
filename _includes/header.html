@@ -1,24 +1,28 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <a href="{{ site.baseurl }}/" aria-label="VAIRA Advisory – Home" class="site-logo">
-      <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
-    </a>
+    <!-- LEFT GROUP: logo + nav -->
+    <div class="brand-and-nav">
+      <a href="{{ site.baseurl }}/" aria-label="VAIRA Advisory – Home" class="site-logo">
+        <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
+      </a>
 
-    <nav aria-label="Main Navigation">
-      <ul class="nav">
-        <li><a href="{{ site.baseurl }}/services/">Services</a></li>
-        <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
-        <li><a href="{{ site.baseurl }}/use-cases/">Use Cases</a></li>
-        <li><a href="{{ site.baseurl }}/about/">About</a></li>
-        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-      </ul>
+      <nav aria-label="Main Navigation">
+        <ul class="nav">
+          <li><a href="{{ site.baseurl }}/services/">Services</a></li>
+          <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
+          <li><a href="{{ site.baseurl }}/use-cases/">Use Cases</a></li>
+          <li><a href="{{ site.baseurl }}/about/">About</a></li>
+          <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      <div class="language-switcher" aria-label="Language Switch">
-        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
-      </div>
-    </nav>
+    <!-- RIGHT: language switcher (outside nav) -->
+    <div class="language-switcher" aria-label="Language Switch">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
+    </div>
 
   </div>
 </header>
