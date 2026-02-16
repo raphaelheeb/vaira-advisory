@@ -92,13 +92,13 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 }
 
 /* -------------------------
-   HEADER / NAV
+   HEADER / NAV — CLEAN + UNIFIED
    ------------------------- */
+
 .site-header {
   background: #ffffff;
-  color: var(--ink-strong);
   padding: 20px 0;
-  border-bottom: 0;
+  color: var(--ink-strong);
 }
 
 .header-wrap {
@@ -106,46 +106,48 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   margin: 0 auto;
   padding-left: var(--page-pad);
   padding-right: var(--page-pad);
-
   display: flex;
   align-items: center;
-  gap: 48px; /* Logo → Menu spacing */
+  gap: 48px; /* Logo → Menu */
 }
 
-/* Robust logo sizing */
-.site-header .site-logo,
 .site-header .site-logo img,
-.site-header .site-logo svg,
-.header-wrap img,
-.header-wrap svg {
-  height: 62px;
+.site-header .site-logo svg {
+  height: 64px;     /* adjust here */
   width: auto;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
+/* NAVIGATION */
 .site-header nav {
-  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  flex: 1;               /* expands nav across header */
 }
 
 .nav {
-  display: flex;
   list-style: none;
+  display: flex;
+  align-items: center;
   gap: 22px;
   margin: 0;
   padding: 0;
 }
-.nav a { padding-top: 2px; }
 
-/* Language switcher */
+.nav a {
+  line-height: 1.2;
+  padding-top: 2px;
+}
+
+/* LANGUAGE SWITCHER */
 .language-switcher {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 24px;
+  margin-left: 32px;
 }
 
 .lang-btn {
@@ -158,31 +160,17 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: #0e1514;
   transition: background 140ms ease, color 140ms ease;
 }
+
 .lang-btn.active {
   background: #0A6064;
-  color: #fff;
+  color: #ffffff;
   border-color: #0A6064;
 }
+
 .lang-btn:hover {
   background: #7dc6bc;
   color: #0A6064;
   border-color: #7dc6bc;
-}
-
-/* Language visibility */
-[lang="de"] { display: none; }
-html.lang-de [lang="en"] { display: none !important; }
-html.lang-de [lang="de"] { display: inline !important; }
-html.lang-de blockquote[lang="de"],
-html.lang-de div[lang="de"],
-html.lang-de p[lang="de"],
-html.lang-de li[lang="de"],
-html.lang-de h1[lang="de"],
-html.lang-de h2[lang="de"],
-html.lang-de h3[lang="de"],
-html.lang-de section[lang="de"],
-html.lang-de article[lang="de"] {
-  display: block !important;
 }
 
 /* -------------------------
