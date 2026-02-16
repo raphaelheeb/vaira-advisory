@@ -205,7 +205,7 @@ p  { margin: 0 0 12px; }
 
 .cad-contour {
   width: 100%;
-  max-width: 720px;   /* ADJUST ➜ try 600–900px depending on taste */
+  max-width: 500px;   /* ADJUST ➜ try 600–900px depending on taste */
   height: auto;
   display: block;
   opacity: 0.9;
