@@ -141,7 +141,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   margin-left: auto;     /* pushes nav + language switcher to right */
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 /* Nav list */
@@ -217,7 +217,7 @@ html.lang-de article[lang="de"] {
 /* 2 columns */
 .hero .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.0fr);
   gap: var(--hero-gap);
   align-items: center;
   position: relative;
@@ -228,9 +228,22 @@ html.lang-de article[lang="de"] {
   align-self: center;
 }
 
-.hero-title,
+.hero-title{
+  color: #ffffff;
+  font-size: clamp(30px, 5vw, 48px);   /* slightly larger max to allow 2 lines comfortably */
+  line-height: 1.15;
+  max-width: 28ch;                     /* tune until it wraps to ~2 lines on desktop */
+  word-break: normal;
+}
+
 .hero-sub {
   color: #ffffff;
+  font-size: clamp(16px, 2vw, 18.5px);
+  line-height: 1.35;
+  white-space: nowrap;                  /* try to keep it one line */
+  max-width: 38ch;                      /* safeguard if it must wrap on very narrow screens */
+  overflow: hidden;
+  text-overflow: ellipsis;              /* optional: avoid wrap on medium screens */
 }
 
 /* CTA */
