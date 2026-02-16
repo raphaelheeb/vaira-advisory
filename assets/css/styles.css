@@ -337,48 +337,27 @@ html.lang-de article[lang="de"] {
 }
 
 /* =========================================================
-   FIX LANGUAGE VISIBILITY + LIST SPACING IN CARDS
+   LANGUAGE VISIBILITY (FULLY CORRECT)
    ========================================================= */
 
-/* 1) Default: hide German text */
+/* Default: hide German */
 [lang="de"] {
   display: none;
 }
 
-/* 2) When html has .lang-de, hide English and show German */
+/* German mode: hide English */
 html.lang-de [lang="en"] {
   display: none !important;
 }
+
+/* German mode: show German text (inline for spans) */
 html.lang-de [lang="de"] {
   display: inline !important;
 }
 
-/* 3) Ensure spans inside list items never override language rules */
-#what-we-do .card li span,
-#focus .card li span {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-/* 4) Restore proper spacing between list items */
-#what-we-do .card ul,
-#focus .card ul {
-  margin: 0;
-  padding-left: 1.2rem;      /* bullet indentation */
-  list-style: disc;
-}
-
-#what-we-do .card li,
-#focus .card li {
-  margin: 0.4rem 0;          /* vertical space between items */
-  line-height: 1.5;
-}
-
-/* 5) Prevent collision with any global custom bullet styles */
-#what-we-do .card li::before,
-#focus .card li::before {
-  content: none !important;
+/* German mode: but German LI must remain list-item to keep bullets */
+html.lang-de li[lang="de"] {
+  display: list-item !important;
 }
 
 /* -------------------------
