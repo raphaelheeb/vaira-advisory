@@ -104,6 +104,7 @@ p  { margin: 0 0 12px; }
 .header-wrap {
   display: flex;
   align-items: center;
+  gap: 48px;
 }
 .site-header nav { margin-left: auto; }
 
@@ -160,12 +161,11 @@ p  { margin: 0 0 12px; }
 /* Two-column layout (right dominates, adjustable via variables) */
 .hero .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, var(--hero-col-left)) minmax(0, var(--hero-col-right));
-  gap: var(--hero-gap);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); /* Left / Right ratio */
   align-items: center;
-  position: relative;
-  z-index: 2; 
+  gap: 32px;
 }
+
 
 /* Left column: first child in the grid (no .hero-left class in HTML) */
 .hero .hero-grid > :first-child {
@@ -199,17 +199,16 @@ p  { margin: 0 0 12px; }
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 0;
 }
 
 /* The CAD SVG visual – responsive and capped */
 
 .cad-contour {
   width: 100%;
+  max-width: 720px;   /* ADJUST ➜ try 600–900px depending on taste */
   height: auto;
   display: block;
-  opacity: 0.85;
-  max-width: var(--hero-visual-max, 960px);   /* cap to keep balance on very wide screens */
+  opacity: 0.9;
 }
 
 /* --- HERO cartesian grid (horizontal + vertical lines) --- */
