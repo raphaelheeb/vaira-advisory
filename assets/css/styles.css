@@ -94,13 +94,13 @@ p  { margin: 0 0 12px; }
 /* -------------------------
    HEADER / NAV
    ------------------------- */
-.site-header {
-  padding: 20px 0;
-  background: var(--surface);
-  border-bottom: 0;
-}
-.site-header img { height: 60px; }
 
+.site-header .site-logo svg {
+  height: 62px !important;   /* try 58–72px to taste */
+  width: auto !important;
+  display: block;
+}
+ 
 .header-wrap {
   display: flex;
   align-items: center;
