@@ -166,8 +166,6 @@ p  { margin: 0 0 12px; }
   gap: 32px;
 }
 
-
-/* Left column: first child in the grid (no .hero-left class in HTML) */
 .hero .hero-grid > :first-child {
   align-self: center;
   margin: 0;
