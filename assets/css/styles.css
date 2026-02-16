@@ -323,7 +323,7 @@ html.lang-de article[lang="de"] {
 /* ✅ Prevent spans from turning block-level (fixes bullets + spacing) */
 #what-we-do .card li span,
 #focus .card li span {
-  display: inline !important;
+  display: inline;
   margin: 0;
   padding: 0;
 }
