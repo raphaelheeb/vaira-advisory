@@ -26,6 +26,7 @@
   /* Layout */
   --radius: 8px;
   --maxw: 1460px;
+  --page-pad: 32px;
 
   /* Typography */
   --font: 'Public Sans', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -86,21 +87,33 @@ p  { margin: 0 0 12px; }
 .lead, .small { color: #395753; }
 
 /* -------------------------
-   WRAPPERS
+   UNIVERSAL WRAPPERS
    ------------------------- */
-.content-wrapper,
-.header-wrap,
-.footer-grid {
+.content-wrapper {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 48px;              /* logo ↔︎ menu spacing */
 }
 
 .wrapper--narrow {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+}
+
+.hero .wrapper--wide {
+  max-width: var(--hero-wrapper-maxw);
+  margin: 0 auto;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
 }
 
 /* -------------------------
@@ -170,9 +183,6 @@ p  { margin: 0 0 12px; }
   position: relative;
    overflow: hidden;  /* prevents lattice from sticking out */
 }
-
-/* Critical: let the hero ignore the default content-wrapper width */
-.hero .content-wrapper { max-width: none; }
 
 /* Hero's own wide wrapper (controls hero overall width) */
 .hero .wrapper--wide {
