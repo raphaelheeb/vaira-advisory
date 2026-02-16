@@ -99,12 +99,14 @@ p  { margin: 0 0 12px; }
   background: var(--surface);
   border-bottom: 0;
 }
-.site-header img { height: 120px; }
+.site-header img { height: 60px; }
 
-.header-wrap {
+.header-wrap.content-wrapper {
   display: flex;
   align-items: center;
   gap: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .site-header nav { margin-left: auto; }
 
