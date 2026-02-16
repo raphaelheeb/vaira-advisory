@@ -312,6 +312,10 @@ html.lang-de article[lang="de"] {
   margin-bottom: 22px;
 }
 
+.section#CTA {
+   background: var(--brand);
+}
+   
 /* -------------------------
    CARDS
    ------------------------- */
