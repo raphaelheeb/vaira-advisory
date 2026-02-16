@@ -196,7 +196,6 @@ html.lang-de [lang="de"] { display: inline !important; }
 html.lang-de blockquote[lang="de"],
 html.lang-de div[lang="de"],
 html.lang-de p[lang="de"],
-html.lang-de li[lang="de"],
 html.lang-de h1[lang="de"],
 html.lang-de h2[lang="de"],
 html.lang-de h3[lang="de"],
@@ -321,23 +320,20 @@ html.lang-de article[lang="de"] {
     0 8px 20px rgba(6,20,19,0.04);
 }
 
+/* ✅ Prevent spans from turning block-level (fixes bullets + spacing) */
+#what-we-do .card li span,
+#focus .card li span {
+  display: inline !important;
+  margin: 0;
+  padding: 0;
+}
+
 #what-we-do .card:hover,
 #focus .card:hover {
   transform: translateY(-6px);
   box-shadow:
     0 6px 18px rgba(6,20,19,0.10),
     0 16px 30px rgba(6,20,19,0.06);
-}
-
-/* Focus section */
-section#focus .card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px,1fr));
-  gap: 24px;
-}
-
-@media (max-width: 720px) {
-  section#focus .card-grid { grid-template-columns: 1fr; }
 }
 
 /* -------------------------
