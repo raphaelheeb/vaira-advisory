@@ -126,7 +126,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
 .site-header nav {
   display: flex;
   align-items: center;
-  margin-left: 0;            /* ensure nav stays beside logo */
+  margin-left: auto !important;            /* ensure nav stays beside logo */
 }
 
 .nav {
@@ -148,7 +148,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;         /* <-- this sends it to the far right */
+  margin-left: 16px;         /* <-- this sends it to the far right */
 }
 
 .lang-btn {
