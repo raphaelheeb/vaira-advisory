@@ -1,5 +1,5 @@
 /* assets/js/lang.js */
-/* VAIRA Advisory – simple EN/DE language switcher */
+/* VAIRA Advisory – simple EN/DE language switcher with persistence */
 (function () {
   const DEFAULT_LANG = 'en';
   const STORAGE_KEY = 'vaira-lang';
