@@ -81,8 +81,8 @@ p  { margin: 0 0 12px; }
 .footer-grid {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .wrapper--narrow {
@@ -101,12 +101,10 @@ p  { margin: 0 0 12px; }
 }
 .site-header img { height: 60px; }
 
-.header-wrap.content-wrapper {
+.header-wrap {
   display: flex;
   align-items: center;
   gap: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .site-header nav { margin-left: auto; }
 
