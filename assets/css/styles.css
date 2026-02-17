@@ -585,3 +585,128 @@ html.lang-de blockquote[lang="de"] {
   color: #ffffff;
 }
 
+
+/* USE-CASES NEW PAGE
+---------- HERO ---------- */
+
+.page-hero {
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-note {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.hero-visual img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/* ---------- USE CASE GRID ---------- */
+
+.usecase-overview {
+  padding: 80px 0;
+}
+
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.usecase-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.usecase-card:hover {
+  transform: translateY(-4px);
+  border-color: #d0d0d0;
+}
+
+.usecase-card-body {
+  padding: 28px;
+}
+
+.usecase-industry {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.usecase-card h3 {
+  margin-top: 10px;
+}
+
+.usecase-card ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+
+/* ---------- USE CASE DETAIL ---------- */
+
+.usecase-detail {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+.usecase-block {
+  max-width: 900px;
+}
+
+.usecase-section {
+  margin-bottom: 32px;
+}
+
+.usecase-section h3 {
+  margin-bottom: 10px;
+}
+
+
+/* ---------- TRUST ---------- */
+
+.trust-section {
+  padding: 80px 0;
+}
+
+.trust-box {
+  max-width: 800px;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.cta-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
