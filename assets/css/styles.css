@@ -588,11 +588,6 @@ html.lang-de blockquote[lang="de"] {
 
 /* USE-CASES NEW PAGE
 ---------- HERO ---------- */
-
-.page-hero {
-  padding: 80px 0;
-}
-
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -600,14 +595,15 @@ html.lang-de blockquote[lang="de"] {
   align-items: center;
 }
 
-.hero-note {
-  margin-top: 16px;
-  font-size: 0.95rem;
-  color: #777;
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.hero-visual img {
-  width: 100%;
+.hero-right img.cad-contour {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -643,13 +639,7 @@ html.lang-de blockquote[lang="de"] {
   margin-bottom: 6px;
 }
 
-/* ---------- HERO IMAGE ---------- */
-.hero-right img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-/* ---------- TRUST SECTION ---------- */
+/* ---------- TRUST ---------- */
 .trust-section {
   padding: 80px 0;
 }
@@ -678,5 +668,9 @@ html.lang-de blockquote[lang="de"] {
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
+  }
+  .hero-right {
+    margin-top: 20px;
+    justify-content: center;
   }
 }
