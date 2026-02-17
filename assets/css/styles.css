@@ -437,3 +437,151 @@ html.lang-de blockquote[lang="de"] {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+
+/* SERVICES PAGE
+-------------------------
+   TRUST SECTION
+------------------------- */
+.trust {
+  background: #ffffff;
+  padding: 36px 0 20px;
+}
+
+.trust-line {
+  font-size: 0.95rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* -------------------------
+   PHILOSOPHY
+   ------------------------- */
+.philosophy p {
+  font-size: 1.05rem;
+  max-width: 60ch;
+  color: var(--ink);
+}
+
+.philosophy {
+  background: #ffffff;
+}
+
+/* -------------------------
+   SERVICES PAGE CARD GRID
+   ------------------------- */
+#services .content-wrapper.wrapper--narrow {
+  max-width: 1200px;
+}
+
+#services .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+#services .card {
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line-strong);
+  padding: 20px 18px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.02),
+    0 8px 20px rgba(6,20,19,0.04);
+}
+
+#services .card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 6px 18px rgba(6,20,19,0.10),
+    0 16px 30px rgba(6,20,19,0.06);
+}
+
+#services .card h3 {
+  margin-bottom: 10px;
+}
+
+#services .card p {
+  color: var(--ink);
+}
+/* -------------------------
+   USE CASES
+   ------------------------- */
+.use-cases {
+  background: #ffffff;
+}
+
+.use-case-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.use-case-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-strong);
+  font-size: 1.02rem;
+}
+
+.use-case-list li:last-child {
+  border-bottom: none;
+}
+
+/* -------------------------
+   PROCESS
+   ------------------------- */
+.process-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step;
+}
+
+.process-steps li {
+  counter-increment: step;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-strong);
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 36px;
+}
+
+.process-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.process-steps li:last-child {
+  border-bottom: none;
+}
+
+/* -------------------------
+   FINAL CTA SECTION
+   ------------------------- */
+.section.cta {
+  background: var(--accent);
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.section.cta h2 {
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+
+.section.cta .cta-btn {
+  background: #ffffff;
+  color: var(--accent);
+}
+
+.section.cta .cta-btn:hover {
+  background: #7dc6bc;
+  color: #ffffff;
+}
+
