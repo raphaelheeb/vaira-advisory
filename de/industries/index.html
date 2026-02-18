@@ -6,7 +6,7 @@ permalink: /de/industries/
 description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Branchen.
 ---
 
-<!-- ================= HEADER / LANGUAGE SWITCHER ================= -->
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="header-wrap">
     <div class="brand-and-nav">
@@ -25,9 +25,11 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
         </ul>
       </nav>
     </div>
+
+    <!-- LANGUAGE SWITCHER -->
     <div class="language-switcher">
-      <a href="{{ site.baseurl }}/industries/" class="lang-btn">EN</a>
-      <a href="{{ site.baseurl }}/de/industries/" class="lang-btn active">DE</a>
+      <a href="{{ site.baseurl }}/industries/" class="lang-btn {% if page.lang == 'en' %}active{% endif %}">EN</a>
+      <a href="{{ site.baseurl }}/de/industries/" class="lang-btn {% if page.lang == 'de' %}active{% endif %}">DE</a>
     </div>
   </div>
 </header>
@@ -42,11 +44,9 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
         <h1 class="hero-title">
           Branchen, die wir unterstützen
         </h1>
-
         <p class="hero-sub">
           Wir arbeiten mit technisch getriebenen Organisationen zusammen, um komplexe Technologien zu industrialisieren, Advanced Manufacturing zu skalieren und widerstandsfähige globale Lieferketten aufzubauen.
         </p>
-
         <div class="hero-ctas">
           <a class="cta-btn" href="{{ site.baseurl }}/services/">Unsere Leistungen</a>
           <a class="cta-btn cta-btn--ghost" href="{{ site.baseurl }}/contact/">Kontakt</a>
@@ -65,31 +65,22 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 <!-- ================= INTRO ================= -->
 <section class="section section--intro">
   <div class="content-wrapper wrapper--narrow">
-
-    <h2>
-      Branchenübergreifende Expertise
-    </h2>
-
+    <h2>Branchenübergreifende Expertise</h2>
     <p>
       VAIRA Advisory konzentriert sich auf Herausforderungen, die in Advanced Hardware- und Deep-Tech-Umgebungen häufig auftreten: Technologierisiken, Fertigbarkeit, Lieferantennetzwerke und Skalierung. Anstatt auf eine Branche beschränkt zu sein, bringen wir bewährte Industrialisierungs-Frameworks und Ingenieurskompetenz über verschiedene Sektoren hinweg ein.
     </p>
-
   </div>
 </section>
 
 <!-- ================= CORE DOMAINS ================= -->
 <section class="section section--domains">
   <div class="content-wrapper wrapper--wide">
-
     <h2>Kernkompetenzen</h2>
-
     <div class="domain-grid">
 
       <article class="domain-card">
         <h3>Advanced Manufacturing</h3>
-        <p>
-          Unterstützung beim Übergang von Prototypen zu skalierbarer Produktion in hochpräzisen und leistungsfähigen Prozessen.
-        </p>
+        <p>Unterstützung beim Übergang von Prototypen zu skalierbarer Produktion in hochpräzisen und leistungsfähigen Prozessen.</p>
         <ul class="domain-list">
           <li>Hochleistungs-Polymere und Verbundstoffe</li>
           <li>Spritzguss und Mikrofertigung</li>
@@ -100,9 +91,7 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 
       <article class="domain-card">
         <h3>Materialverarbeitung</h3>
-        <p>
-          Vom Labor zur industriellen Produktion, inklusive Lieferantenauswahl und Qualifikation.
-        </p>
+        <p>Vom Labor zur industriellen Produktion, inklusive Lieferantenauswahl und Qualifikation.</p>
         <ul class="domain-list">
           <li>Funktionale und strukturelle Materialien</li>
           <li>Batterie- und Energiematerialien</li>
@@ -113,9 +102,7 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 
       <article class="domain-card">
         <h3>Hardware & Produktengineering</h3>
-        <p>
-          Brücke zwischen F&E und Operations, um robuste Produkte für globale Märkte bereitzustellen.
-        </p>
+        <p>Brücke zwischen F&E und Operations, um robuste Produkte für globale Märkte bereitzustellen.</p>
         <ul class="domain-list">
           <li>Design for Manufacturing und Kostenoptimierung</li>
           <li>EVT / DVT / PVT Durchführung</li>
@@ -131,51 +118,37 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 <!-- ================= INDUSTRIES ================= -->
 <section class="section section--industries">
   <div class="content-wrapper wrapper--wide">
-
     <h2>Ausgewählte Branchen</h2>
-
     <div class="industry-grid">
 
       <article class="industry-card">
         <h3>Energie & Elektrifizierung</h3>
-        <p>
-          Unterstützung bei Batterie-, Elektrifizierungs- und Energietechnologien von der frühen Entwicklung bis zur Produktion.
-        </p>
+        <p>Unterstützung bei Batterie-, Elektrifizierungs- und Energietechnologien von der frühen Entwicklung bis zur Produktion.</p>
       </article>
 
       <article class="industry-card">
         <h3>Mobilität & Automotive</h3>
-        <p>
-          Leichtbau, Performance-Materialien und skalierbare Fertigung für die Mobilität der nächsten Generation.
-        </p>
+        <p>Leichtbau, Performance-Materialien und skalierbare Fertigung für die Mobilität der nächsten Generation.</p>
       </article>
 
       <article class="industry-card">
         <h3>Industrie & Automation</h3>
-        <p>
-          Ausrüstungen, Robotik und Prozesstechnologien mit starkem Fokus auf Fertigbarkeit und Zuverlässigkeit.
-        </p>
+        <p>Ausrüstungen, Robotik und Prozesstechnologien mit starkem Fokus auf Fertigbarkeit und Zuverlässigkeit.</p>
       </article>
 
       <article class="industry-card">
         <h3>Medizin & Life Sciences</h3>
-        <p>
-          Präzisionsfertigung, Materialien und regulierte Produktionsumgebungen.
-        </p>
+        <p>Präzisionsfertigung, Materialien und regulierte Produktionsumgebungen.</p>
       </article>
 
       <article class="industry-card">
         <h3>Luft- & Raumfahrt</h3>
-        <p>
-          Hochzuverlässige Komponenten, Qualifikation und komplexe Lieferketten-Ökosysteme.
-        </p>
+        <p>Hochzuverlässige Komponenten, Qualifikation und komplexe Lieferketten-Ökosysteme.</p>
       </article>
 
       <article class="industry-card">
         <h3>Konsum- & Performance-Produkte</h3>
-        <p>
-          Premium-Hardware, Sport- und Performanceprodukte mit Fokus auf Design, Kosten und Skalierbarkeit.
-        </p>
+        <p>Premium-Hardware, Sport- und Performanceprodukte mit Fokus auf Design, Kosten und Skalierbarkeit.</p>
       </article>
 
     </div>
@@ -185,9 +158,7 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 <!-- ================= VALUE ================= -->
 <section class="section section--value">
   <div class="content-wrapper wrapper--narrow">
-
     <h2>Wo wir Mehrwert schaffen</h2>
-
     <ul class="value-list">
       <li>Reduktion von Risiken neuer Technologien vor größeren Investitionsentscheidungen</li>
       <li>Beschleunigung der Industrialisierung und Skalierung</li>
@@ -200,6 +171,5 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
       <a class="cta-btn" href="{{ site.baseurl }}/use-cases/">Use Cases ansehen</a>
       <a class="cta-btn cta-btn--ghost" href="{{ site.baseurl }}/contact/">Kontakt aufnehmen</a>
     </div>
-
   </div>
 </section>
