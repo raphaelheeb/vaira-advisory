@@ -3,72 +3,58 @@ layout: default
 title: Services | VAIRA Advisory
 lang: en
 permalink: /services/
-description: Hands-on deep-tech and industrialization services.
-hero_title: "Hands-On Engineering & Industrialization Services"
-hero_sub: "From discovery to first-time-right production — we design, test, and implement with your engineers and suppliers."
-hero_ctas:
-  - text: "See Use Cases"
-    href: "/use-cases/"
-  - text: "Contact"
-    href: "/contact/"
+description: Deep-tech and industrialization services.
 ---
 
-<section class="hero" id="hero">
+<section class="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
+
       <div class="hero-left">
-        <h1 class="hero-title">{{ page.hero_title }}</h1>
-        <p class="hero-sub">{{ page.hero_sub }}</p>
-        <div class="hero-ctas">
-          {% for cta in page.hero_ctas %}
-            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
-          {% endfor %}
-        </div>
+        <h1 class="hero-title">Hands-On Engineering & Industrialization</h1>
+        <p class="hero-sub">
+          From early-stage technologies to scalable production systems.
+        </p>
       </div>
+
       <div class="hero-right">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg"
+             class="hero-visual hero-visual--technical">
       </div>
+
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>What We Do</h2>
+  <div class="content-wrapper">
 
-    <div class="card-grid">
+    <h2>Core Services</h2>
 
-      <article class="card">
-        <h3>Technology Evaluation & Due Diligence</h3>
-        <p>Assess TRL/MRL, scalability, manufacturability, and risks before major investments.</p>
+    <div class="domain-grid">
+
+      <article class="domain-card">
+        <h3>Technology Due Diligence</h3>
+        <p>Technical, operational, and scalability evaluation.</p>
       </article>
 
-      <article class="card">
-        <h3>Innovation & Technology Scouting</h3>
-        <p>Identify breakthrough technologies, suppliers, and partners globally.</p>
+      <article class="domain-card">
+        <h3>Innovation Scouting</h3>
+        <p>Identify breakthrough technologies and suppliers globally.</p>
       </article>
 
-      <article class="card">
-        <h3>R&D-to-Market</h3>
-        <p>Translate prototypes into robust products and scalable processes.</p>
+      <article class="domain-card">
+        <h3>Industrialization</h3>
+        <p>Transition from prototype to stable manufacturing.</p>
       </article>
 
-      <article class="card">
-        <h3>Industrialization & Scale-Up</h3>
-        <p>Design production lines, process windows, and quality control systems.</p>
-      </article>
-
-      <article class="card">
-        <h3>Supply Chain Optimization</h3>
-        <p>Reduce risk and cost while strengthening resilience and quality.</p>
-      </article>
-
-      <article class="card">
-        <h3>Embedded Engineering</h3>
-        <p>Hands-on support inside your team to accelerate execution.</p>
+      <article class="domain-card">
+        <h3>Supply Chain Design</h3>
+        <p>Build resilient and scalable supplier ecosystems.</p>
       </article>
 
     </div>
+
   </div>
 </section>
 
