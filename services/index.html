@@ -4,55 +4,71 @@ title: Services | VAIRA Advisory
 lang: en
 permalink: /services/
 description: Hands-on deep-tech and industrialization services.
+hero_title: "Hands-On Engineering & Industrialization Services"
+hero_sub: "From discovery to first-time-right production — we design, test, and implement with your engineers and suppliers."
+hero_ctas:
+  - text: "See Use Cases"
+    href: "/use-cases/"
+  - text: "Contact"
+    href: "/contact/"
 ---
 
-<section class="hero hero-hero--services" id="hero">
+<section class="hero" id="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
       <div class="hero-left">
-        <h1 class="hero-title">Hands-On Engineering & Industrialization Services</h1>
-        <p class="hero-sub">From discovery to first-time-right production — we design, test, and implement with your engineers and suppliers.</p>
+        <h1 class="hero-title">{{ page.hero_title }}</h1>
+        <p class="hero-sub">{{ page.hero_sub }}</p>
         <div class="hero-ctas">
-          <a class="cta-btn" href="{{ site.baseurl }}/contact/">Start a Conversation</a>
+          {% for cta in page.hero_ctas %}
+            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
+          {% endfor %}
         </div>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" alt="" class="hero-visual hero-visual--technical">
+      <div class="hero-right">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
       </div>
     </div>
   </div>
 </section>
 
-<main>
-<section class="section" id="services">
+<section class="section">
   <div class="content-wrapper wrapper--narrow">
     <h2>What We Do</h2>
+
     <div class="card-grid">
+
       <article class="card">
         <h3>Technology Evaluation & Due Diligence</h3>
-        <p>Decide with facts: TRL/MRL, DFM/DFX, feasibility, risk.</p>
+        <p>Assess TRL/MRL, scalability, manufacturability, and risks before major investments.</p>
       </article>
+
       <article class="card">
         <h3>Innovation & Technology Scouting</h3>
-        <p>Find the right tech & partners fast — supplier shortlists in EU/JP/CN.</p>
+        <p>Identify breakthrough technologies, suppliers, and partners globally.</p>
       </article>
+
       <article class="card">
-        <h3>R&D-to-Market Guidance</h3>
-        <p>Turn prototypes into robust products: requirements, DFM/DFX, EVT/DVT/PVT.</p>
+        <h3>R&D-to-Market</h3>
+        <p>Translate prototypes into robust products and scalable processes.</p>
       </article>
+
       <article class="card">
         <h3>Industrialization & Scale-Up</h3>
-        <p>Design the line, hit the yield: process windows, control plan, SOPs.</p>
+        <p>Design production lines, process windows, and quality control systems.</p>
       </article>
+
       <article class="card">
-        <h3>Supply Chain Optimization & Global Sourcing</h3>
-        <p>De-risk & reduce cost without losing quality — EU/JP/CN.</p>
+        <h3>Supply Chain Optimization</h3>
+        <p>Reduce risk and cost while strengthening resilience and quality.</p>
       </article>
+
       <article class="card">
-        <h3>Embedded Engineering Support</h3>
-        <p>Hands-on bandwidth when you need it: process/mfg/materials.</p>
+        <h3>Embedded Engineering</h3>
+        <p>Hands-on support inside your team to accelerate execution.</p>
       </article>
+
     </div>
   </div>
 </section>
-</main>
+
