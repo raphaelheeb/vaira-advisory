@@ -1,27 +1,27 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <!-- LEFT: logo + nav -->
+    <!-- LEFT GROUP: logo + nav -->
     <div class="brand-and-nav">
       <a href="{{ site.baseurl }}/" aria-label="VAIRA Advisory – Home" class="site-logo">
         <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
       </a>
 
-      <nav aria-label="Hauptnavigation">
+      <nav aria-label="Main Navigation">
         <ul class="nav">
-          <li><a href="{{ site.baseurl }}/services/">{% if page.lang == 'de' %}Leistungen{% else %}Services{% endif %}</a></li>
-          <li><a href="{{ site.baseurl }}/industries/">{% if page.lang == 'de' %}Branchen{% else %}Industries{% endif %}</a></li>
+          <li><a href="{{ site.baseurl }}/services/">Services</a></li>
+          <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
           <li><a href="{{ site.baseurl }}/use-cases/">Use Cases</a></li>
-          <li><a href="{{ site.baseurl }}/about/">{% if page.lang == 'de' %}Über VAIRA{% else %}About{% endif %}</a></li>
-          <li><a href="{{ site.baseurl }}/contact/">{% if page.lang == 'de' %}Kontakt{% else %}Contact{% endif %}</a></li>
+          <li><a href="{{ site.baseurl }}/about/">About</a></li>
+          <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- RIGHT: language switcher -->
+    <!-- RIGHT GROUP: language switcher -->
     <div class="language-switcher" aria-label="Language Switch">
-      <a href="{{ site.baseurl }}/industries/" class="lang-btn {% if page.lang == 'en' %}active{% endif %}">EN</a>
-      <a href="{{ site.baseurl }}/de/industries/" class="lang-btn {% if page.lang == 'de' %}active{% endif %}">DE</a>
+      <a href="{{ site.baseurl }}/" class="lang-btn {% if page.lang == 'en' %}active{% endif %}">EN</a>
+      <a href="{{ site.baseurl }}/de/" class="lang-btn {% if page.lang == 'de' %}active{% endif %}">DE</a>
     </div>
 
   </div>
