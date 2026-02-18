@@ -3,56 +3,74 @@ layout: default
 title: Leistungen | VAIRA Advisory
 lang: de
 permalink: /de/services/
-description: Praxisnahe Engineering- & Industrialisierungs-Services.
+description: Praxisnahe Engineering- und Industrialisierungsleistungen.
+hero_title: "Praxisnahe Engineering- & Industrialisierungsleistungen"
+hero_sub: "Von der Idee bis zur stabilen Serie — wir arbeiten eng mit Ihren Teams und Lieferanten."
+hero_ctas:
+  - text: "Use Cases ansehen"
+    href: "/de/use-cases/"
+  - text: "Kontakt"
+    href: "/de/contact/"
 ---
 
-<section class="hero hero-hero--services" id="hero">
+<section class="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
       <div class="hero-left">
-        <h1 class="hero-title">Praxisnahe Engineering- & Industrialisierungs-Services</h1>
-        <p class="hero-sub">Von der Idee bis zur fehlerfreien Serie — wir konzipieren, testen und implementieren mit Ihren Teams und Lieferanten.</p>
+        <h1 class="hero-title">{{ page.hero_title }}</h1>
+        <p class="hero-sub">{{ page.hero_sub }}</p>
+
         <div class="hero-ctas">
-          <a class="cta-btn" href="{{ site.baseurl }}/de/contact/">Kontakt aufnehmen</a>
+          {% for cta in page.hero_ctas %}
+            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
+          {% endfor %}
         </div>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" alt="" class="hero-visual hero-visual--technical">
+
+      <div class="hero-right">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
       </div>
     </div>
   </div>
 </section>
 
-<main>
-<section class="section" id="services">
+<section class="section">
   <div class="content-wrapper wrapper--narrow">
     <h2>Unsere Leistungen</h2>
+
     <div class="card-grid">
+
       <article class="card">
         <h3>Technologiebewertung & Due Diligence</h3>
-        <p>Faktenbasiert entscheiden: TRL/MRL, DFM/DFX, Machbarkeit, Risiko.</p>
+        <p>TRL/MRL, Skalierbarkeit und Risiken vor Investitionen bewerten.</p>
       </article>
+
       <article class="card">
         <h3>Innovation & Technologie-Scouting</h3>
-        <p>Schnell passende Technologien & Lieferanten finden — Shortlists in EU/JP/CN.</p>
+        <p>Neue Technologien, Partner und Lieferanten weltweit identifizieren.</p>
       </article>
+
       <article class="card">
-        <h3>R&D-zu-Markt Begleitung</h3>
-        <p>Prototypen zu robusten Produkten: Anforderungen, DFM/DFX, EVT/DVT/PVT.</p>
+        <h3>R&D-zu-Markt</h3>
+        <p>Prototypen in robuste Produkte und Prozesse überführen.</p>
       </article>
+
       <article class="card">
         <h3>Industrialisierung & Scale-Up</h3>
-        <p>Linie auslegen, Yield erreichen: Prozessfenster, Control Plan, SOPs.</p>
+        <p>Produktionslinien, Prozessfenster und Qualitätssysteme entwickeln.</p>
       </article>
+
       <article class="card">
-        <h3>Supply-Chain-Optimierung & Global Sourcing</h3>
-        <p>Risiken senken & Kosten reduzieren — ohne Qualitätsverlust (EU/JP/CN).</p>
+        <h3>Supply-Chain-Optimierung</h3>
+        <p>Risiken und Kosten reduzieren, Resilienz erhöhen.</p>
       </article>
+
       <article class="card">
-        <h3>Eingebettete Engineering-Unterstützung</h3>
-        <p>Praxisnahe Verstärkung nach Bedarf: Prozess, Fertigung, Materialien.</p>
+        <h3>Embedded Engineering</h3>
+        <p>Operative Unterstützung direkt im Team.</p>
       </article>
+
     </div>
   </div>
 </section>
-</main>
+
