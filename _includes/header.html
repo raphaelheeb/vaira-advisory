@@ -1,9 +1,11 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
+
     <div class="brand-and-nav">
       <a href="{{ site.baseurl }}/" class="site-logo">
         <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
       </a>
+
       <nav>
         <ul class="nav">
           <li><a href="{{ site.baseurl }}/services/">Services</a></li>
@@ -15,16 +17,18 @@
       </nav>
     </div>
 
-<div class="language-switcher">
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher">
 
-  {% if page.lang == "de" %}
-    <a href="{{ page.url | remove_first: '/de' | relative_url }}" class="lang-btn">EN</a>
-    <span class="lang-btn active">DE</span>
-  {% else %}
-    <span class="lang-btn active">EN</span>
-    <a href="/de{{ page.url }}" class="lang-btn">DE</a>
-  {% endif %}
+      {% if page.lang == "de" %}
+        <a href="{{ site.baseurl }}{{ page.url | remove_first: '/de' }}" class="lang-btn">EN</a>
+        <span class="lang-btn active">DE</span>
+      {% else %}
+        <span class="lang-btn active">EN</span>
+        <a href="{{ site.baseurl }}/de{{ page.url }}" class="lang-btn">DE</a>
+      {% endif %}
 
-</div>
+    </div>
 
+  </div>
 </header>
