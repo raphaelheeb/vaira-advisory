@@ -3,74 +3,57 @@ layout: default
 title: Leistungen | VAIRA Advisory
 lang: de
 permalink: /de/services/
-description: Praxisnahe Engineering- und Industrialisierungsleistungen.
-hero_title: "Praxisnahe Engineering- & Industrialisierungsleistungen"
-hero_sub: "Von der Idee bis zur stabilen Serie — wir arbeiten eng mit Ihren Teams und Lieferanten."
-hero_ctas:
-  - text: "Use Cases ansehen"
-    href: "/de/use-cases/"
-  - text: "Kontakt"
-    href: "/de/contact/"
+description: Industrialisierungs- und Engineering-Leistungen.
 ---
 
 <section class="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
-      <div class="hero-left">
-        <h1 class="hero-title">{{ page.hero_title }}</h1>
-        <p class="hero-sub">{{ page.hero_sub }}</p>
 
-        <div class="hero-ctas">
-          {% for cta in page.hero_ctas %}
-            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
-          {% endfor %}
-        </div>
+      <div class="hero-left">
+        <h1 class="hero-title">Praxisnahe Industrialisierung & Engineering</h1>
+        <p class="hero-sub">
+          Von frühen Technologien bis zur stabilen Serienproduktion.
+        </p>
       </div>
 
       <div class="hero-right">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg"
+             class="hero-visual hero-visual--technical">
       </div>
+
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Unsere Leistungen</h2>
+  <div class="content-wrapper">
 
-    <div class="card-grid">
+    <h2>Kernleistungen</h2>
 
-      <article class="card">
-        <h3>Technologiebewertung & Due Diligence</h3>
-        <p>TRL/MRL, Skalierbarkeit und Risiken vor Investitionen bewerten.</p>
+    <div class="domain-grid">
+
+      <article class="domain-card">
+        <h3>Technologie-Due-Diligence</h3>
+        <p>Technische und operative Bewertung.</p>
       </article>
 
-      <article class="card">
-        <h3>Innovation & Technologie-Scouting</h3>
-        <p>Neue Technologien, Partner und Lieferanten weltweit identifizieren.</p>
+      <article class="domain-card">
+        <h3>Innovation Scouting</h3>
+        <p>Identifikation neuer Technologien und Partner.</p>
       </article>
 
-      <article class="card">
-        <h3>R&D-zu-Markt</h3>
-        <p>Prototypen in robuste Produkte und Prozesse überführen.</p>
+      <article class="domain-card">
+        <h3>Industrialisierung</h3>
+        <p>Übergang von Prototypen zur Produktion.</p>
       </article>
 
-      <article class="card">
-        <h3>Industrialisierung & Scale-Up</h3>
-        <p>Produktionslinien, Prozessfenster und Qualitätssysteme entwickeln.</p>
-      </article>
-
-      <article class="card">
-        <h3>Supply-Chain-Optimierung</h3>
-        <p>Risiken und Kosten reduzieren, Resilienz erhöhen.</p>
-      </article>
-
-      <article class="card">
-        <h3>Embedded Engineering</h3>
-        <p>Operative Unterstützung direkt im Team.</p>
+      <article class="domain-card">
+        <h3>Supply-Chain-Aufbau</h3>
+        <p>Skalierbare globale Liefernetzwerke.</p>
       </article>
 
     </div>
+
   </div>
 </section>
-
