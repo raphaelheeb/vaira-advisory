@@ -269,3 +269,26 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   .domain-card { padding: 22px 18px; }
   .trust-block { padding: 26px; }
 }
+
+/* -------------------------
+   HERO GRID FIX
+   For industries & other custom heroes
+   ------------------------- */
+.hero-hero--industries .hero-grid,
+.hero-hero--industries .hero-left,
+.hero-hero--industries .hero-right {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  display: grid;
+  gap: var(--hero-gap);
+  align-items: center;
+}
+
+.hero-hero--industries .hero-left {
+  padding-right: 20px;
+}
+
+.hero-hero--industries .hero-right img {
+  max-width: var(--hero-visual-max);
+  height: auto;
+  object-fit: contain;
+}
