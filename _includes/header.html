@@ -1,13 +1,10 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
-
-    <!-- LEFT: logo + navigation -->
     <div class="brand-and-nav">
-      <a href="{{ site.baseurl }}/" aria-label="VAIRA Advisory – Home" class="site-logo">
+      <a href="{{ site.baseurl }}/" class="site-logo">
         <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
       </a>
-
-      <nav aria-label="Main Navigation">
+      <nav>
         <ul class="nav">
           <li><a href="{{ site.baseurl }}/services/">Services</a></li>
           <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
@@ -17,12 +14,9 @@
         </ul>
       </nav>
     </div>
-
-    <!-- RIGHT: language switcher -->
-    <div class="language-switcher" aria-label="Language Switch">
+    <div class="language-switcher">
       <a href="{{ site.baseurl }}/" class="lang-btn {% if page.lang == 'en' %}active{% endif %}">EN</a>
       <a href="{{ site.baseurl }}/de/" class="lang-btn {% if page.lang == 'de' %}active{% endif %}">DE</a>
     </div>
-
   </div>
 </header>
