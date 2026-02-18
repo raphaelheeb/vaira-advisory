@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/de' }}">
+  <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de{{ page.url | remove_first: '/de' }}">
 </head>
 <body>
   {% include header.html %}
