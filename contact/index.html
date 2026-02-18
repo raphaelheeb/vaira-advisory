@@ -3,27 +3,31 @@ layout: default
 title: Contact | VAIRA Advisory
 lang: en
 permalink: /contact/
-description: Contact VAIRA Advisory via email or LinkedIn to discuss your project.
+description: Contact VAIRA Advisory.
+hero_title: "Let’s Build Something Real"
+hero_sub: "Tell us about your product, process, and goals."
 ---
 
-<section class="hero hero-hero--contact" id="hero">
+<section class="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
       <div class="hero-left">
-        <h1 class="hero-title">Contact</h1>
-        <p class="hero-sub">Tell us about your product, process, and desired timeline.</p>
+        <h1 class="hero-title">{{ page.hero_title }}</h1>
+        <p class="hero-sub">{{ page.hero_sub }}</p>
       </div>
-      <div class="hero-right" aria-hidden="true"></div>
+      <div class="hero-right">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="contact-methods">
+<section class="section">
   <div class="content-wrapper wrapper--narrow" style="text-align:center">
     <p class="lead">
       <a class="cta-btn" href="mailto:info@vaira-advisory.com">Email</a>
-      <a class="cta-btn" href="https://www.linkedin.com/in/raphaelheeb/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="cta-btn" href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
     </p>
-    <p class="small">Based in Switzerland · Projects in EU & Asia · EN/DE</p>
+    <p>Switzerland · EU & Asia · EN / DE</p>
   </div>
 </section>
