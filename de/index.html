@@ -1,53 +1,79 @@
 ---
 layout: default
-title: VAIRA Advisory
+title: VAIRA Advisory | Von der Idee bis zur industriellen Umsetzung
+description: Innovation, Technologie und fortschrittliche Fertigung.
 lang: de
 permalink: /de/
-description: Praxisnahe Beratung an der Schnittstelle von Innovation, Engineering und Industrialisierung.
-hero_title: "Innovation. Technologie. Industrialisierung."
-hero_sub: "Wir unterstützen Sie an der Schnittstelle von Innovation, Technologie und Advanced Manufacturing — in enger Zusammenarbeit mit Ihren Teams."
-hero_ctas:
-  - text: "Leistungen ansehen"
-    href: "/de/services/"
-  - text: "Kontakt"
-    href: "/de/contact/"
 ---
 
-<section class="hero hero-hero--home" id="hero">
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
+
       <div class="hero-left">
-        <h1 class="hero-title">{{ page.hero_title }}</h1>
-        <p class="hero-sub">{{ page.hero_sub }}</p>
+        <h1 class="hero-title">Technologie. Von der Idee bis zur industriellen Umsetzung.</h1>
+        <p class="hero-sub">
+          Wir unterstützen Sie an der Schnittstelle von Innovation, Technologie und fortschrittlicher Fertigung — in enger Zusammenarbeit mit Ihren Teams.
+        </p>
         <div class="hero-ctas">
-          {% for cta in page.hero_ctas %}
-            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
-          {% endfor %}
+          <a class="cta-btn" href="{{ site.baseurl }}/de/contact/">Kontakt aufnehmen</a>
         </div>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
+
+      <div class="hero-right">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg"
+             class="hero-visual hero-visual--technical"
+             alt="Technisches Visual">
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ================= WAS WIR TUN CARDS ================= -->
 <section class="section" id="what-we-do">
   <div class="content-wrapper wrapper--narrow">
-    <h2>Unsere Leistungen</h2>
+    <h2>Was wir tun</h2>
+
     <div class="card-grid">
+
+      <!-- 1. Innovations- und Technologiestrategie -->
       <article class="card">
-        <h3>Technologiebewertung & Due Diligence</h3>
-        <p>Faktenbasiert entscheiden: TRL/MRL, DFM/DFX, Machbarkeit und Risiko.</p>
+        <h3>Innovations- und Technologiestrategie</h3>
+        <ul>
+          <li>Identifikation von relevanten Technologie- und Innovationsfeldern im Einklang mit Ihren strategischen Zielen</li>
+          <li>Bewertung neuer Technologien mit Fokus auf Markt- und Geschäftspotenzial</li>
+          <li>Technische Due Diligence bei Investitionen, Partnerschaften und Übernahmen</li>
+          <li>Entwicklung klarer und umsetzbarer Roadmaps von der Idee bis zur industriellen Umsetzung</li>
+          <li>Aufbau eines passenden Netzwerks aus Lieferanten, Partnern und Forschungseinrichtungen</li>
+        </ul>
       </article>
+
+      <!-- 2. Hands-on Technologieentwicklung -->
       <article class="card">
-        <h3>Innovation & Technologie-Scouting</h3>
-        <p>Schnell passende Technologien & Lieferanten finden — inkl. Shortlists in EU/JP/CN.</p>
+        <h3>Hands-on Technologieentwicklung</h3>
+        <ul>
+          <li>Enge Zusammenarbeit mit Ihren technischen Teams bei Konzeption, Prototyping und Validierung</li>
+          <li>Überführung von F&E-Ansätzen in skalierbare und marktfähige Produkte</li>
+          <li>Beschleunigung von Entwicklungsprojekten durch pragmatische Experimente und iterative Vorgehensweisen</li>
+          <li>Systematischer Know-how-Transfer zur nachhaltigen Stärkung Ihrer internen Kompetenzen</li>
+          <li>Überbrückung der Lücke zwischen Forschung, Engineering und Industrialisierung</li>
+        </ul>
       </article>
+
+      <!-- 3. Industrialisierung & Advanced Manufacturing -->
       <article class="card">
-        <h3>R&D‑zu‑Markt Begleitung</h3>
-        <p>Prototypen zu robusten Produkten: Anforderungen, DFM/DFX, EVT/DVT/PVT.</p>
+        <h3>Industrialisierung & Advanced Manufacturing</h3>
+        <ul>
+          <li>Entwicklung skalierbarer Produktions- und Supply-Chain-Konzepte</li>
+          <li>Reduktion von Risiken beim Übergang vom Prototyp zur Serienfertigung</li>
+          <li>Senkung von Kosten und Komplexität ohne Abstriche bei Leistung und Qualität</li>
+          <li>Optimierung von Prozessen, Anlagen und Produktionsabläufen</li>
+          <li>Unterstützung bei Auswahl, Qualifizierung und Hochlauf von Lieferanten</li>
+        </ul>
       </article>
+
     </div>
   </div>
 </section>
