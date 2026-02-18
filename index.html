@@ -1,53 +1,79 @@
 ---
 layout: default
-title: VAIRA Advisory
+title: VAIRA Advisory | From Concept to Industrial Scale
+description: Innovation, technology, and advanced manufacturing support.
 lang: en
 permalink: /
-description: Hands-on advisory bridging innovation, engineering, and industrialization.
-hero_title: "Innovation. Technology. Industrialization."
-hero_sub: "We support you at the intersection of innovation, technology, and advanced manufacturing — working closely with your teams."
-hero_ctas:
-  - text: "See Services"
-    href: "/services/"
-  - text: "Contact"
-    href: "/contact/"
 ---
 
-<section class="hero hero-hero--home" id="hero">
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
+
       <div class="hero-left">
-        <h1 class="hero-title">{{ page.hero_title }}</h1>
-        <p class="hero-sub">{{ page.hero_sub }}</p>
+        <h1 class="hero-title">Technology. From concept to industrial scale.</h1>
+        <p class="hero-sub">
+          We support you at the intersection of innovation, technology, and advanced manufacturing — working closely with your teams.
+        </p>
         <div class="hero-ctas">
-          {% for cta in page.hero_ctas %}
-            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
-          {% endfor %}
+          <a class="cta-btn" href="{{ site.baseurl }}/contact/">Get in Touch</a>
         </div>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
+
+      <div class="hero-right">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg"
+             class="hero-visual hero-visual--technical"
+             alt="Technical visual">
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ================= WHAT WE DO CARDS ================= -->
 <section class="section" id="what-we-do">
   <div class="content-wrapper wrapper--narrow">
     <h2>What We Do</h2>
+
     <div class="card-grid">
+
+      <!-- 1. Innovation & Technology Strategy -->
       <article class="card">
-        <h3>Technology Evaluation & Due Diligence</h3>
-        <p>Decide with facts: TRL/MRL, DFM/DFX, feasibility, and risk.</p>
+        <h3>Innovation & Technology Strategy</h3>
+        <ul>
+          <li>Identify high-impact technology and innovation opportunities aligned with your strategic goals</li>
+          <li>Evaluate emerging technologies with a focus on market feasibility and business impact</li>
+          <li>Conduct technical due diligence for investments, partnerships, and acquisitions</li>
+          <li>Develop pragmatic roadmaps from concept to industrial deployment</li>
+          <li>Build the right ecosystem of suppliers, partners, and research institutions</li>
+        </ul>
       </article>
+
+      <!-- 2. Hands-On Technology Development -->
       <article class="card">
-        <h3>Innovation & Technology Scouting</h3>
-        <p>Find the right tech & partners fast — incl. supplier shortlists in EU/JP/CN.</p>
+        <h3>Hands-On Technology Development</h3>
+        <ul>
+          <li>Work alongside your technical teams to design, prototype, and validate solutions</li>
+          <li>Translate R&D concepts into scalable, market-ready products</li>
+          <li>Accelerate development cycles through rapid experimentation and iteration</li>
+          <li>Transfer critical know-how to ensure long-term internal capability</li>
+          <li>Bridge the gap between research, engineering, and industrialisation</li>
+        </ul>
       </article>
+
+      <!-- 3. Industrialisation & Advanced Manufacturing -->
       <article class="card">
-        <h3>R&D-to-Market Guidance</h3>
-        <p>Turn prototypes into robust products: requirements, DFM/DFX, EVT/DVT/PVT.</p>
+        <h3>Industrialisation & Advanced Manufacturing</h3>
+        <ul>
+          <li>Develop scalable production and supply chain strategies</li>
+          <li>De-risk the transition from prototype to serial production</li>
+          <li>Reduce cost and complexity without compromising performance or quality</li>
+          <li>Optimize processes, equipment, and production workflows</li>
+          <li>Support supplier selection, qualification, and ramp-up</li>
+        </ul>
       </article>
+
     </div>
   </div>
 </section>
