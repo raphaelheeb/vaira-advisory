@@ -1,87 +1,53 @@
 ---
 layout: default
-title: VAIRA Advisory – Home
+title: VAIRA Advisory
 lang: en
 permalink: /
-description: Hands-on engineering & industrialization services.
+description: Hands-on advisory bridging innovation, engineering, and industrialization.
+hero_title: "Innovation. Technology. Industrialization."
+hero_sub: "We support you at the intersection of innovation, technology, and advanced manufacturing — working closely with your teams."
+hero_ctas:
+  - text: "See Services"
+    href: "/services/"
+  - text: "Contact"
+    href: "/contact/"
 ---
 
 <section class="hero hero-hero--home" id="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
       <div class="hero-left">
-        <h1 class="hero-title">Technology. From Idea to Industrialization.</h1>
-        <p class="hero-sub">We support you at the intersection of innovation, technology, and advanced manufacturing – working closely with your teams.</p>
+        <h1 class="hero-title">{{ page.hero_title }}</h1>
+        <p class="hero-sub">{{ page.hero_sub }}</p>
         <div class="hero-ctas">
-          <a class="cta-btn" href="{{ site.baseurl }}/services/">Our Services</a>
-          <a class="cta-btn cta-btn--ghost" href="{{ site.baseurl }}/contact/">Contact</a>
+          {% for cta in page.hero_ctas %}
+            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
+          {% endfor %}
         </div>
       </div>
       <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" alt="" class="hero-visual hero-visual--technical">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
       </div>
     </div>
   </div>
 </section>
 
-<main>
-  <!-- Services teaser cards -->
-  <section class="section" id="what-we-do">
-    <div class="content-wrapper wrapper--narrow">
-      <h2>What We Do</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Technology Evaluation & Due Diligence</h3>
-          <p>Decide with facts: TRL/MRL, DFM/DFX, feasibility, risk.</p>
-        </article>
-        <article class="card">
-          <h3>Innovation & Technology Scouting</h3>
-          <p>Find the right tech & partners fast – supplier shortlists in EU/JP/CN.</p>
-        </article>
-        <article class="card">
-          <h3>R&D-to-Market Guidance</h3>
-          <p>Turn prototypes into robust products: requirements, DFM/DFX, EVT/DVT/PVT.</p>
-        </article>
-      </div>
+<section class="section" id="what-we-do">
+  <div class="content-wrapper wrapper--narrow">
+    <h2>What We Do</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Technology Evaluation & Due Diligence</h3>
+        <p>Decide with facts: TRL/MRL, DFM/DFX, feasibility, and risk.</p>
+      </article>
+      <article class="card">
+        <h3>Innovation & Technology Scouting</h3>
+        <p>Find the right tech & partners fast — incl. supplier shortlists in EU/JP/CN.</p>
+      </article>
+      <article class="card">
+        <h3>R&D-to-Market Guidance</h3>
+        <p>Turn prototypes into robust products: requirements, DFM/DFX, EVT/DVT/PVT.</p>
+      </article>
     </div>
-  </section>
-
-  <!-- Industries teaser -->
-  <section class="section section--industries">
-    <div class="content-wrapper wrapper--wide">
-      <h2>Selected Industries</h2>
-      <div class="industry-grid">
-        <article class="industry-card">
-          <h3>Energy & Electrification</h3>
-          <p>Supporting battery, electrification, and power technologies from early development to manufacturing scale.</p>
-        </article>
-        <article class="industry-card">
-          <h3>Mobility & Automotive</h3>
-          <p>Lightweight structures, performance materials, and scalable manufacturing for next-generation mobility.</p>
-        </article>
-        <article class="industry-card">
-          <h3>Industrial & Automation</h3>
-          <p>Equipment, robotics, and process technologies with strong manufacturability and reliability focus.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Value section -->
-  <section class="section section--value">
-    <div class="content-wrapper wrapper--narrow">
-      <h2>Where We Create Value</h2>
-      <ul class="value-list">
-        <li>De-risking new technologies before major capital decisions</li>
-        <li>Accelerating industrialization and scale-up</li>
-        <li>Improving yield, quality, and cost</li>
-        <li>Building global supplier ecosystems</li>
-        <li>Creating operational transparency and governance</li>
-      </ul>
-      <div class="hero-ctas">
-        <a class="cta-btn" href="{{ site.baseurl }}/use-cases/">See Use Cases</a>
-        <a class="cta-btn cta-btn--ghost" href="{{ site.baseurl }}/contact/">Start a Conversation</a>
-      </div>
-    </div>
-  </section>
-</main>
+  </div>
+</section>
