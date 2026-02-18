@@ -6,16 +6,16 @@
    DESIGN TOKENS
    ------------------------- */
 :root {
-  --bg: #0e1514;          /* dunkel
-  --bg-soft: #0f2220;     /* dunkel
-  --ink: #0C1A1C;         /* dunkel
-  --muted: #6E7A82;       /* grau
+  --bg: #0e1514;
+  --bg-soft: #0f2220;
+  --ink: #0C1A1C;
+  --muted: #6E7A82;
   --line: rgba(184,212,208,0.20);
   --line-soft: rgba(184,212,208,0.12);
-  --brand: #9ad1c9;      /* mint (hell)
-  --accent: #0A6064;      /* teal
-  --surface: #ffffff;      /* weiss
-  --ink-strong: #0e1514;   /* dunkel
+  --brand: #9ad1c9;
+  --accent: #0A6064;
+  --surface: #ffffff;
+  --ink-strong: #0e1514;
   --line-strong: rgba(6,20,19,0.12);
 
   --card: #13201e;
@@ -185,7 +185,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
    ------------------------- */
 .hero {
   background: var(--accent);
-  padding: 36px 0 16px;
+  padding: 56px 0 36px;
   overflow: hidden;
   position: relative;
   color: #ffffff;
@@ -269,13 +269,13 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   display: inline-block;
   padding: 10px 16px;
   border-radius: 6px;
-  background: var(--brand);
-  color: #ffffff;
+  background: var(--accent);
+  color: #fff;
   font-weight: 600;
   transition: background 160ms ease, transform 100ms ease;
 }
 
-.cta-btn:hover { background: #ffffff; color: #0e1514; }
+.cta-btn:hover { background: #7dc6bc; }
 .cta-btn:active { transform: translateY(1px); }
 
 
