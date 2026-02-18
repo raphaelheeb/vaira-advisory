@@ -8,14 +8,15 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
-  <div class="header-wrap">
+  <div class="header-wrap content-wrapper">
+
+    <!-- LEFT: logo + nav -->
     <div class="brand-and-nav">
-      <div class="site-logo">
-        <a href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
-        </a>
-      </div>
-      <nav>
+      <a href="{{ site.baseurl }}/" aria-label="VAIRA Advisory – Home" class="site-logo">
+        <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
+      </a>
+
+      <nav aria-label="Hauptnavigation">
         <ul class="nav">
           <li><a href="{{ site.baseurl }}/services/">Leistungen</a></li>
           <li><a href="{{ site.baseurl }}/industries/">Branchen</a></li>
@@ -26,11 +27,12 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
       </nav>
     </div>
 
-    <!-- LANGUAGE SWITCHER -->
-    <div class="language-switcher">
+    <!-- RIGHT: language switcher -->
+    <div class="language-switcher" aria-label="Language Switch">
       <a href="{{ site.baseurl }}/industries/" class="lang-btn {% if page.lang == 'en' %}active{% endif %}">EN</a>
       <a href="{{ site.baseurl }}/de/industries/" class="lang-btn {% if page.lang == 'de' %}active{% endif %}">DE</a>
     </div>
+
   </div>
 </header>
 
@@ -55,7 +57,7 @@ description: Advanced Manufacturing, Materialverarbeitung und Hardware-Design Br
 
       <!-- RIGHT COLUMN / TECH VISUAL -->
       <div class="hero-right" aria-hidden="true">
-        <div class="hero-visual hero-visual--technical"></div>
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" alt="" class="hero-visual hero-visual--technical">
       </div>
 
     </div>
