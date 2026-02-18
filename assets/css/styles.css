@@ -232,8 +232,8 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   .hero .hero-grid { grid-template-columns: 1fr; }
 }
 
-/* Hero background grid overlay */
-.hero-hero--industries::before {
+/* Global hero grid overlay */
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
