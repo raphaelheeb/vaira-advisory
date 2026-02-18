@@ -590,7 +590,7 @@ html.lang-de blockquote[lang="de"] {
 ---------- HERO ---------- */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -602,7 +602,7 @@ html.lang-de blockquote[lang="de"] {
 }
 
 .hero-right img.cad-contour {
-  max-width: 100%;
+  max-width: 450px;
   height: auto;
   border-radius: 8px;
 }
@@ -665,7 +665,7 @@ html.lang-de blockquote[lang="de"] {
 }
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .hero-grid {
     grid-template-columns: 1fr;
   }
