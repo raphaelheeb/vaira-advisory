@@ -245,8 +245,8 @@ html.lang-de blockquote[lang="de"] {
   color: #ffffff;
   font-size: clamp(16px, 2vw, 18.5px);
   line-height: 1.35;
-  white-space: nowrap;  /* keep on 1 line when possible */
   max-width: 38ch;
+  white-space: normal; /* allow wrapping */
 }
 
 @media (max-width: 980px) {
