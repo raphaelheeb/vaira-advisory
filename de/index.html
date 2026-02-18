@@ -1,46 +1,53 @@
 ---
 layout: default
-title: Use Cases | VAIRA Advisory
+title: VAIRA Advisory
 lang: de
-permalink: /de/use-cases/
-description: Anonymisierte Use Cases, die VAIRA Advisory’s praxisnahe Engineering- und Industrialisierungsleistungen zeigen.
+permalink: /de/
+description: Praxisnahe Beratung an der Schnittstelle von Innovation, Engineering und Industrialisierung.
+hero_title: "Innovation. Technologie. Industrialisierung."
+hero_sub: "Wir unterstützen Sie an der Schnittstelle von Innovation, Technologie und Advanced Manufacturing — in enger Zusammenarbeit mit Ihren Teams."
+hero_ctas:
+  - text: "Leistungen ansehen"
+    href: "/de/services/"
+  - text: "Kontakt"
+    href: "/de/contact/"
 ---
 
-<section class="hero hero-hero--usecases" id="hero">
+<section class="hero hero-hero--home" id="hero">
   <div class="content-wrapper wrapper--wide">
     <div class="hero-grid">
       <div class="hero-left">
-        <h1 class="hero-title">Ausgewählte Use Cases</h1>
-        <p class="hero-sub">Anonymisierte Beispiele für unsere praxisnahe Unterstützung bei Engineering und Industrialisierung über verschiedene Branchen hinweg.</p>
+        <h1 class="hero-title">{{ page.hero_title }}</h1>
+        <p class="hero-sub">{{ page.hero_sub }}</p>
         <div class="hero-ctas">
-          <a class="cta-btn" href="{{ site.baseurl }}/de/contact/">Kontakt aufnehmen</a>
+          {% for cta in page.hero_ctas %}
+            <a class="cta-btn" href="{{ cta.href }}">{{ cta.text }}</a>
+          {% endfor %}
         </div>
       </div>
       <div class="hero-right" aria-hidden="true">
-        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" alt="" class="hero-visual hero-visual--technical">
+        <img src="{{ site.baseurl }}/assets/img/technical-visual.jpg" class="hero-visual hero-visual--technical" alt="">
       </div>
     </div>
   </div>
 </section>
 
-<main>
-<section class="section" id="use-cases">
+<section class="section" id="what-we-do">
   <div class="content-wrapper wrapper--narrow">
-    <h2>Projektbeispiele (anonymisiert)</h2>
+    <h2>Unsere Leistungen</h2>
     <div class="card-grid">
       <article class="card">
-        <h3>Industrialisierung von Hochleistungsmaterialien</h3>
-        <p>Unterstützung beim Hochskalieren eines Hochleistungs-Polymers von Labor zur Produktion, inklusive Lieferantenauswahl und Prozessvalidierung.</p>
+        <h3>Technologiebewertung & Due Diligence</h3>
+        <p>Faktenbasiert entscheiden: TRL/MRL, DFM/DFX, Machbarkeit und Risiko.</p>
       </article>
       <article class="card">
-        <h3>Aufbau einer Advanced Manufacturing Linie</h3>
-        <p>Konzeption und Implementierung einer Präzisionsfertigungslinie für ein neues Produkt, mit First-Time-Right-Production und Ziel-Yield.</p>
+        <h3>Innovation & Technologie-Scouting</h3>
+        <p>Schnell passende Technologien & Lieferanten finden — inkl. Shortlists in EU/JP/CN.</p>
       </article>
       <article class="card">
-        <h3>Optimierung globaler Lieferketten</h3>
-        <p>Umstrukturierung einer multi-regionalen Lieferkette zur Risikominimierung und Kostenreduktion bei gleichzeitiger Einhaltung von Qualitäts- und Regulierungsanforderungen.</p>
+        <h3>R&D‑zu‑Markt Begleitung</h3>
+        <p>Prototypen zu robusten Produkten: Anforderungen, DFM/DFX, EVT/DVT/PVT.</p>
       </article>
     </div>
   </div>
 </section>
-</main>
