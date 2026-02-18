@@ -185,7 +185,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
    ------------------------- */
 .hero {
   background: var(--accent);
-  padding: 56px 0 36px;
+  padding: 36px 0 16px;
   overflow: hidden;
   position: relative;
   color: #ffffff;
@@ -270,7 +270,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   padding: 10px 16px;
   border-radius: 6px;
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   transition: background 160ms ease, transform 100ms ease;
 }
