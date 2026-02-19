@@ -211,7 +211,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   color: #ffffff;
   font-size: clamp(16px, 2vw, 18.5px);
   line-height: 1.35;
-  max-width: 42ch;
+  max-width: 62ch;
 }
 
 .hero-right { display: flex; justify-content: flex-end; align-items: center; }
@@ -270,7 +270,7 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
   padding: 10px 16px;
   border-radius: 6px;
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   transition: background 160ms ease, transform 100ms ease;
 }
@@ -325,7 +325,6 @@ h3 { font-size: clamp(18px, 2.4vw, 20px); }
     grid-template-columns: 1fr;
   }
 }
-
 
 /* =========================================================
    DOMAINS / INDUSTRIES / VALUE LIST
