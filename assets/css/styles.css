@@ -1,3 +1,31 @@
+/* ===== RESET THE THEME'S LAYOUT CONSTRAINTS ===== */
+
+#main {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+#main .content-wrapper,
+#main .wrapper,
+#main .wrapper--wide,
+#main .wrapper--narrow {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+#main section {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header .content-wrapper {
+  max-width: 1080px !important;
+  margin: 0 auto !important;
+}
+
 /* =========================================================
    BASE
    ========================================================= */
