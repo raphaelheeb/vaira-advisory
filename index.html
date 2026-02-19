@@ -29,6 +29,7 @@ permalink: /
 
         <!-- HERO RIGHT -->
         <div class="hero-right visual--cad" aria-hidden="true">
+          <!-- Your original SVG -->
           <svg class="cad-contour" viewBox="0 0 600 600" role="img" aria-label="Technical contour illustration">
             <defs>
               <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
@@ -41,7 +42,6 @@ permalink: /
               </style>
             </defs>
 
-            <!-- Horizontal curves -->
             <g>
               <path class="c" d="M80 270 C170 150, 430 150, 520 270"/>
               <path class="c" d="M60 320 C160 210, 440 210, 540 320"/>
@@ -50,7 +50,6 @@ permalink: /
               <path class="c" d="M80 470 C190 420, 410 420, 520 470"/>
             </g>
 
-            <!-- Vertical curves -->
             <g>
               <path class="c" d="M180 180 C160 260, 160 360, 180 440"/>
               <path class="c" d="M240 160 C220 250, 220 370, 240 460"/>
@@ -59,7 +58,6 @@ permalink: /
               <path class="c" d="M420 180 C400 260, 400 360, 420 440"/>
             </g>
 
-            <!-- Frame -->
             <g opacity="0.45">
               <path class="c dash" d="M100 140 L500 140"/>
               <path class="c dash" d="M100 500 L500 500"/>
@@ -75,13 +73,13 @@ permalink: /
 
 
   <!-- ================= FULL-WIDTH VISUAL ANCHOR ================= -->
-  <section class="section" style="padding:0;">
-    <div style="width:100%; height:360px; background:url('/assets/hero-tech.jpg') center/cover no-repeat;"></div>
+  <section class="section section--tight" style="padding:0;">
+    <div class="fullwidth-image" style="background-image:url('/assets/hero-tech.jpg');"></div>
   </section>
 
 
   <!-- ================= WHO WE WORK WITH ================= -->
-  <section class="section" id="who-we-work-with">
+  <section class="section section--gradient" id="who-we-work-with">
     <div class="content-wrapper wrapper--narrow">
       <h2>Who We Work With</h2>
 
@@ -114,8 +112,8 @@ permalink: /
   </section>
 
 
-  <!-- ================= WHY VAIRA (ALT BACKGROUND) ================= -->
-  <section class="section section--alt" id="why-vaira">
+  <!-- ================= WHY VAIRA ================= -->
+  <section class="section section--alt section--grid" id="why-vaira">
     <div class="content-wrapper wrapper--narrow">
       <h2>Why VAIRA</h2>
 
@@ -124,8 +122,7 @@ permalink: /
           <h3>Founder‑Operator Experience</h3>
           <p>
             VAIRA was founded by Raphael Heeb, co‑founder and former CEO of NEMATX AG, a deep‑tech company 
-            developing high‑performance additive manufacturing systems. We bring the perspective of having 
-            built and industrialized complex technology ourselves.
+            developing high‑performance additive manufacturing systems.
           </p>
         </article>
 
@@ -133,23 +130,21 @@ permalink: /
           <h3>Hands‑On, Not Slideware</h3>
           <p>
             We work embedded with your teams — in engineering, operations and with suppliers — to diagnose 
-            real constraints, design robust solutions, and ensure they work on the line.
+            real constraints and ensure solutions work on the line.
           </p>
         </article>
 
         <article class="card">
           <h3>Deep‑Tech & Advanced Manufacturing Focus</h3>
           <p>
-            Our work sits where materials, hardware, processes and production meet. We are comfortable in 
-            complex, regulated and high‑performance environments.
+            Our work sits where materials, hardware, processes and production meet.
           </p>
         </article>
 
         <article class="card">
           <h3>Senior‑Only Delivery</h3>
           <p>
-            No leverage model, no junior teams. You work directly with senior expertise throughout — from 
-            first conversation to implementation.
+            No leverage model. No junior teams. You work directly with senior expertise throughout.
           </p>
         </article>
       </div>
@@ -157,25 +152,33 @@ permalink: /
   </section>
 
 
-  <!-- ================= EDITORIAL TEXT BLOCK ================= -->
+  <!-- ================= HOW WE WORK (EDITORIAL + SPLIT) ================= -->
   <section class="section" id="how-we-work">
-    <div class="content-wrapper wrapper--narrow">
-      <h2>How We Work</h2>
-      <p>
-        We combine engineering depth with operational pragmatism. Our work is hands‑on, collaborative and 
-        grounded in real‑world constraints — from materials and processes to equipment, suppliers and 
-        production lines.
-      </p>
-      <p>
-        We focus on solving the right problems, reducing complexity, and building scalable solutions that 
-        work reliably in industrial environments.
-      </p>
+    <div class="content-wrapper split">
+      <div>
+        <h2>How We Work</h2>
+
+        <div class="editorial">
+          <p>
+            We combine engineering depth with operational pragmatism. Our work is hands‑on, collaborative 
+            and grounded in real‑world constraints — from materials and processes to equipment, suppliers 
+            and production lines.
+          </p>
+        </div>
+
+        <p>
+          We focus on solving the right problems, reducing complexity, and building scalable solutions 
+          that work reliably in industrial environments.
+        </p>
+      </div>
+
+      <img src="/assets/process.jpg" alt="Process illustration" style="width:100%; border-radius:8px;">
     </div>
   </section>
 
 
   <!-- ================= MID-PAGE CTA ================= -->
-  <section class="section" id="cta-mid" style="text-align:center;">
+  <section class="section section--cta-dark" id="cta-mid">
     <div class="content-wrapper wrapper--narrow">
       <h2>Need support with a critical technology or scale‑up challenge?</h2>
       <a class="cta-btn" href="mailto:info@vaira-advisory.com">Start a Conversation</a>
@@ -192,33 +195,33 @@ permalink: /
         <article class="card">
           <h3>Innovation & Technology Strategy</h3>
           <ul>
-            <li>Identify high‑impact technology opportunities aligned with your strategic goals</li>
-            <li>Evaluate emerging technologies for feasibility, scalability, and business impact</li>
-            <li>Conduct technical due diligence for investments, partnerships, and acquisitions</li>
-            <li>Develop pragmatic roadmaps from concept to industrial deployment</li>
-            <li>Build a robust ecosystem of suppliers, partners, and research institutions</li>
+            <li>Identify high‑impact technology opportunities</li>
+            <li>Evaluate emerging technologies</li>
+            <li>Conduct technical due diligence</li>
+            <li>Develop pragmatic roadmaps</li>
+            <li>Build supplier & research ecosystems</li>
           </ul>
         </article>
 
         <article class="card">
           <h3>Hands‑On Technology Development</h3>
           <ul>
-            <li>Work directly with your engineering teams to design, prototype, and validate solutions</li>
-            <li>Translate R&D concepts into robust, manufacturable, market‑ready products</li>
-            <li>Accelerate development cycles through targeted experiments and iteration</li>
-            <li>Transfer critical know‑how to strengthen internal capabilities</li>
-            <li>Bridge the gap between research, engineering, and industrialization</li>
+            <li>Design, prototype & validate solutions</li>
+            <li>Translate R&D into manufacturable products</li>
+            <li>Accelerate development cycles</li>
+            <li>Transfer critical know‑how</li>
+            <li>Bridge research & industrialization</li>
           </ul>
         </article>
 
         <article class="card">
           <h3>Industrialization & Advanced Manufacturing</h3>
           <ul>
-            <li>Develop scalable production and supply‑chain strategies</li>
-            <li>De‑risk the transition from prototype to serial production</li>
-            <li>Reduce cost and complexity without compromising performance or quality</li>
-            <li>Optimize processes, equipment, and production workflows</li>
-            <li>Support supplier selection, qualification, and ramp‑up</li>
+            <li>Develop scalable production strategies</li>
+            <li>De‑risk prototype → serial transition</li>
+            <li>Reduce cost & complexity</li>
+            <li>Optimize processes & equipment</li>
+            <li>Support supplier qualification & ramp‑up</li>
           </ul>
         </article>
       </div>
@@ -230,12 +233,15 @@ permalink: /
   <section class="section section--alt" id="case">
     <div class="content-wrapper wrapper--narrow">
       <h2>Case Snapshot</h2>
-      <p><strong>High‑Performance Additive Manufacturing Scale‑Up</strong></p>
-      <p>
-        Supporting a deep‑tech startup in transitioning from prototype systems to industrial‑grade 
-        production equipment — including process development, supplier qualification, equipment 
-        architecture, and early customer deployments.
-      </p>
+
+      <div class="highlight">
+        <h3>High‑Performance Additive Manufacturing Scale‑Up</h3>
+        <p>
+          Supporting a deep‑tech startup in transitioning from prototype systems to industrial‑grade 
+          production equipment — including process development, supplier qualification, equipment 
+          architecture, and early customer deployments.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -253,3 +259,4 @@ permalink: /
   </section>
 
 </main>
+
