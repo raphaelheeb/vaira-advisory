@@ -559,3 +559,13 @@ p {
   z-index: 1;
 }
 
+/* HARD OVERRIDE: hero background + remove any theme gradients/images */
+#hero.hero.hero--clean {
+  background-color: #0d2a26 !important; /* deep teal-green */
+  background-image: none !important;
+}
+
+#hero.hero.hero--clean::before {
+  display: none !important;
+}
+
