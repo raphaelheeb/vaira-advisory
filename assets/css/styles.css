@@ -464,3 +464,15 @@ p {
     gap: 12px;
   }
 }
+
+/* FINAL HERO FIX */
+.hero.hero--clean {
+  padding: 40px 0 30px !important;
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,0.65), rgba(244,247,247,0.75)),
+    url('/assets/cad-pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
