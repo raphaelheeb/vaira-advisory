@@ -176,13 +176,7 @@ p {
 }
 
 .hero--clean {
-  padding: 60px 0 40px; /* reduced top/bottom padding */
-  background-image:
-    linear-gradient(180deg, rgba(255,255,255,0.75), rgba(244,247,247,0.85)),
-    url('/assets/cad-pattern.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: none; /* remove the white gradient */
 }
 
 
