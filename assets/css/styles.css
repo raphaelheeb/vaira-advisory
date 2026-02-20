@@ -546,7 +546,7 @@ p {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(184,212,208,0.35) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
     linear-gradient(90deg, rgba(184,212,208,0.35) 1px, transparent 1px);
   background-size: 40px 40px;
   opacity: 0.45; /* reduced for clarity */
