@@ -232,11 +232,10 @@ p {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+/* Make Why VAIRA a 2x2 grid with real vertical spacing */
 #why-vaira .card-grid {
-  row-gap: 40px;
-}
-
-#why-vaira .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
   row-gap: 40px;
 }
 
