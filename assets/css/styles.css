@@ -509,34 +509,46 @@ p {
 }
 
 /* =========================================================
-   WHY VAIRA Section - Feature Block
+   WHY VAIRA — FEATURE BLOCKS
    ========================================================= */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 32px;
+}
 
 .feature-block {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.feature-block:last-child {
-  border-bottom: none;
+  padding: 8px 0;
 }
 
 .feature-block-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--accent-light);
+  width: 36px;
+  height: 36px;
   border-radius: 6px;
+  background: var(--accent-light);
+  opacity: 0.9;
   flex-shrink: 0;
-  opacity: 0.8;
 }
 
 .feature-block h3 {
   margin: 0 0 8px 0;
+  font-weight: 600;
 }
 
 .feature-block p {
   margin: 0;
+  line-height: 1.55;
+}
+
+/* Mobile layout */
+@media (max-width: 720px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
 }
