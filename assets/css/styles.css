@@ -670,3 +670,33 @@ h3 {
     gap: 24px;
   }
 }
+
+/* =========================================================
+   SPLIT IMAGE SIZING — FINAL OVERRIDE
+   ========================================================= */
+
+/* Base split layout (keep as is if already defined earlier) */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+  padding-left: 4px;
+}
+
+/* Force consistent sizing for all split images */
+.split-right img,
+.split-left img,
+.split-image {
+  width: 100%;
+  height: auto;
+  max-width: 460px !important;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Slightly smaller for the process illustration */
+.split-image.process {
+  max-width: 420px !important;
+}
