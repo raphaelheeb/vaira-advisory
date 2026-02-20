@@ -214,7 +214,7 @@ p {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
@@ -506,9 +506,4 @@ p {
 .hero > .content-wrapper {
   position: relative;
   z-index: 1;
-}
-
-/* Ensure vertical spacing between Why VAIRA cards */
-#why-vaira .card {
-  margin-bottom: 32px;
 }
