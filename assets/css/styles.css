@@ -175,8 +175,13 @@ p {
 }
 
 .hero--clean {
-  padding: 120px 0 80px;
-  background: linear-gradient(180deg, #ffffff 0%, #f4f7f7 100%);
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,0.85), rgba(244,247,247,0.95)),
+    url('/assets/cad-pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #e8efef;
+  padding: 80px 0 60px;
 }
 
 /* =========================================================
@@ -208,8 +213,9 @@ p {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr));
   gap: 32px;
+  row-gap: 40px;
 }
 
 .card {
@@ -313,19 +319,15 @@ p {
   padding: 80px 0;
 }
 
-.section--cta-dark .cta-btn {
-  background: #ffffff;
+/* final CTA */
+
+.final-cta .cta-btn {
+  background: var(--accent-light);
   color: var(--accent);
 }
 
-.section--cta-dark .cta-btn:hover {
-  background: var(--bg-light);
-}
-
-/* final CTA */
-
-.final-cta {
-  text-align: center;
+.final-cta .cta-btn:hover {
+  background: #cfe2df;
 }
 
 /* =========================================================
@@ -390,7 +392,7 @@ p {
 
 /* Logo */
 .site-logo img {
-  height: 32px;
+  height: 42px;
   display: block;
 }
 
@@ -406,8 +408,8 @@ p {
 .nav a {
   text-decoration: none;
   color: var(--text-dark);
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .nav a:hover {
@@ -422,16 +424,16 @@ p {
 }
 
 .lang-btn {
-  font-size: 12px;
-  padding: 4px 10px;
+  font-size: 14px; /* was 12px */
+  padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid transparent;
-  text-decoration: none;
-  color: var(--text-dark);
+  background: transparent;
+  border: 1px solid var(--accent-light);
 }
 
 .lang-btn.active {
   border-color: var(--accent-light);
+  color: var(--accent);
   background: var(--bg-light);
 }
 
