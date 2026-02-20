@@ -49,20 +49,19 @@ header .content-wrapper {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-dark);
   background: #ffffff;
-  line-height: 1.6;
+  line-height: 1.7;
 }
-
-/* =========================================================
-   GLOBAL TYPOGRAPHY
-   ========================================================= */
 
 h1, h2, h3 {
   margin: 0 0 16px 0;
+  font-family: "Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
+  letter-spacing: 0.01em;
 }
+
 
 p {
   margin: 0 0 16px 0;
@@ -151,15 +150,26 @@ p {
   gap: 48px;
   align-items: center;
 }
-
 .hero-title {
-  font-size: 48px;
+  font-size: 60px;
   line-height: 1.15;
+  letter-spacing: 0.01em;
 }
 
 .hero-sub {
   font-size: 20px;
-  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.section h2 {
+  font-size: 34px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .hero-ctas {
@@ -296,16 +306,34 @@ p {
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
-  background: var(--accent-light);
-  color: #ffffff;
-  border-radius: 6px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.2s ease;
+  font-size: 16px;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  border: none;
 }
 
-.cta-btn:hover {
-  background: #1a2322;
+/* Primary CTA */
+.cta-btn--primary {
+  background: #48877F;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.cta-btn--primary:hover {
+  background: #3b6f68;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+}
+
+/* Secondary CTA */
+.cta-btn--secondary {
+  background: #B8D4D0;
+  color: #0E1514;
+}
+
+.cta-btn--secondary:hover {
+  background: #a7c6c2;
 }
 
 /* dark CTA section */
@@ -361,8 +389,16 @@ p {
   }
 
   .section {
-    padding: 40px 0;
+  padding: 72px 0;
+  background: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 48px 0;
   }
+}
+
 }
 
 /* =========================================================
@@ -546,10 +582,10 @@ p {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(184,212,208,0.35) 1px, transparent 1px);
-  background-size: 80px 80px;
-  opacity: 0.15; /* reduced for clarity */
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.18;
   pointer-events: none;
 }
 
@@ -563,4 +599,5 @@ p {
 #hero.hero.hero--clean {
   background-color: #48877F !important; /* teal-green */
   background-image: none !important;
+  padding: 120px 0 80px !important;
 }
