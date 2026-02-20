@@ -476,3 +476,7 @@ p {
   background-repeat: no-repeat;
 }
 
+/* FIX VERTICAL SPACING IN WHY VAIRA */
+#why-vaira .card-grid {
+  row-gap: 40px !important;
+}
