@@ -110,13 +110,6 @@ p {
   background: linear-gradient(180deg, #ffffff 0%, #f4f7f7 100%);
 }
 
-.section--grid {
-  background-image:
-    linear-gradient(to right, rgba(184,212,208,0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(184,212,208,0.08) 1px, transparent 1px);
-  background-size: 48px 48px;
-}
-
 .section--accent-left {
   border-left: 6px solid var(--accent-light);
   padding-left: 32px;
@@ -231,12 +224,6 @@ p {
 .card:hover {
   border-color: var(--accent-light);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-.floating-cards {
-  margin-top: -80px;
-  position: relative;
-  z-index: 2;
 }
 
 /* =========================================================
