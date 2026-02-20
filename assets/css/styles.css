@@ -296,7 +296,7 @@ p {
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
-  background: var(--accent);
+  background: var(--accent-light);
   color: #ffffff;
   border-radius: 6px;
   text-decoration: none;
