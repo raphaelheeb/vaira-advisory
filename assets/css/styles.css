@@ -507,3 +507,36 @@ p {
   position: relative;
   z-index: 1;
 }
+
+/* =========================================================
+   WHY VAIRA Section - Feature Block
+   ========================================================= */
+
+.feature-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.feature-block:last-child {
+  border-bottom: none;
+}
+
+.feature-block-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--accent-light);
+  border-radius: 6px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.feature-block h3 {
+  margin: 0 0 8px 0;
+}
+
+.feature-block p {
+  margin: 0;
+}
