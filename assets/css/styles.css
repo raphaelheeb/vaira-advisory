@@ -564,8 +564,3 @@ p {
   background-color: #48877F !important; /* teal-green */
   background-image: none !important;
 }
-
-#hero.hero.hero--clean::before {
-  display: none !important;
-}
-
