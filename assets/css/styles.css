@@ -181,6 +181,11 @@ p {
   height: auto;
 }
 
+.hero--clean {
+  padding: 120px 0 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7f7 100%);
+}
+
 /* =========================================================
    FULL-WIDTH IMAGE BAND
    ========================================================= */
