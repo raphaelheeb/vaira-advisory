@@ -177,8 +177,9 @@ h3 {
 }
 
 .hero-right svg {
-  width: 100%;
+  width: 115%;
   height: auto;
+  transform: translateY(-8px);
 }
 
 .hero--clean {
@@ -592,7 +593,7 @@ h3 {
     linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
   background-size: 56px 56px;
-  opacity: 0.15;
+  opacity: 0.18;
   pointer-events: none;
 }
 
@@ -607,7 +608,7 @@ h3 {
 #hero.hero.hero--clean {
   background-color: #48877F !important; /* teal-green */
   background-image: none !important;
-  padding: 120px 0 80px !important;
+  padding: 150px 0 96px !important;
 }
 
 .site-footer {
