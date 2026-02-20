@@ -103,7 +103,7 @@ p {
 }
 
 .section--lighter {
-  background: var(--bg-lighter);
+  background: #f8fbfb; /* ultra-light mint */
 }
 
 .section--gradient {
