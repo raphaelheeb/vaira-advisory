@@ -561,7 +561,7 @@ p {
 
 /* HARD OVERRIDE: hero background + remove any theme gradients/images */
 #hero.hero.hero--clean {
-  background-color: #0d2a26 !important; /* deep teal-green */
+  background-color: #48877F !important; /* teal-green */
   background-image: none !important;
 }
 
