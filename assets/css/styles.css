@@ -480,3 +480,36 @@ p {
 #why-vaira .card-grid {
   row-gap: 40px !important;
 }
+
+/* HERO: compact, with built-in iso/grid-style background */
+.hero {
+  padding: 48px 0 36px;
+  background-color: #0f1716;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle grid background */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(184,212,208,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,212,208,0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* keep content readable above background */
+.hero > .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure vertical spacing between Why VAIRA cards */
+#why-vaira .card {
+  margin-bottom: 32px;
+}
