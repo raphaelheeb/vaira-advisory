@@ -383,26 +383,6 @@ h3 {
   background: rgba(74, 106, 114, 0.12);
 }
 
-/* dark CTA section */
-
-.section--cta-dark {
-  background: var(--accent);
-  color: #ffffff;
-  text-align: center;
-  padding: 80px 0;
-}
-
-/* final CTA */
-
-.final-cta .cta-btn {
-  background: #4A6A72;
-  color: #ffffff;
-}
-
-.final-cta .cta-btn:hover {
-  background: #cfe2df;
-}
-
 /* =========================================================
    RESPONSIVE
    ========================================================= */
