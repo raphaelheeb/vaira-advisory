@@ -519,7 +519,7 @@ h3 {
 .lang-btn {
   font-size: 14px;
   padding: 6px 14px;
-  border-radius: 999px;
+  border-radius: 12px;
   background: transparent;
   border: 1px solid #4A6A72;
   transition: background 0.2s ease, color 0.2s ease;
