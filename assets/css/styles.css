@@ -256,6 +256,11 @@ h3 {
   max-width: var(--wrapper-wide);
 }
 
+#who-we-work-with .card-grid {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 /* =========================================================
    EDITORIAL & HIGHLIGHT
    ========================================================= */
