@@ -253,7 +253,7 @@ h3 {
 }
 
 #who-we-work-with .wrapper--narrow {
-  max-width: 1100px;
+  max-width: var(--wrapper-wide);
 }
 
 /* =========================================================
