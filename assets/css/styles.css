@@ -237,7 +237,7 @@ h3 {
 
 .card {
   background: #ffffff;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(43, 78, 90, 0.25);
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
@@ -247,6 +247,10 @@ h3 {
 .card:hover {
   border-color: #4A6A72;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card-icon svg path {
+  stroke: #4A6A72; /* Muted Steel */
 }
 
 /* Make Why VAIRA a 2x2 grid with real vertical spacing */
@@ -359,7 +363,7 @@ h3 {
 
 /* Primary CTA */
 .cta-btn--primary {
-  background: ##2B4E5A;
+  background: #2B4E5A;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
@@ -676,7 +680,8 @@ h3 {
 }
 
 .site-footer a:hover {
-  text-decoration: underline;
+  color: #B8D4D0;
+  text-decoration-color: #4A6A72;
 }
 
 .footer-brand {
