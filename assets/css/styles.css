@@ -156,7 +156,7 @@ p {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.0fr);
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.0fr);
   gap: 48px;
   align-items: center;
 }
