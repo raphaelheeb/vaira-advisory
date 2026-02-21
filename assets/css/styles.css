@@ -103,7 +103,7 @@ p {
 }
 
 .section--lighter {
-  background: #f8fbfb; /* ultra-light mint */
+  background: #f8fbfb;
 }
 
 .section--gradient {
@@ -118,13 +118,6 @@ p {
 /* subtle breathing space between sections */
 .section + .section {
   margin-top: 12px;
-}
-
-/* hero extension */
-.section--hero-extension {
-  height: 120px;
-  background: linear-gradient(180deg, #eef3f3 0%, #ffffff 100%);
-  margin-top: -40px;
 }
 
 /* section titles */
@@ -288,16 +281,20 @@ h3 {
   padding-left: 4px;
 }
 
+/* unified image styling */
 .split-image {
   width: 100%;
   height: auto;
-  max-width: 450px;
   display: block;
   margin: 8px auto 0;
   border-radius: 8px;
 }
 
-/* specific tweaks per illustration type */
+/* image sizing hierarchy */
+.split-image {
+  max-width: 450px;
+}
+
 .split-image.process {
   max-width: 400px;
 }
@@ -305,6 +302,7 @@ h3 {
 .split-image.case {
   max-width: 460px;
 }
+
 
 /* =========================================================
    CHECKLIST
