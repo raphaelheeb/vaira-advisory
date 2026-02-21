@@ -363,13 +363,13 @@ h3 {
 
 /* Primary CTA */
 .cta-btn--primary {
-  background: #2B4E5A;
+  background: #4A6A72;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .cta-btn--primary:hover {
-  background: #4A6A72;
+  background: rgba(74, 106, 114, 0.12);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
