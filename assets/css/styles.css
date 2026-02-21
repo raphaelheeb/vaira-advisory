@@ -697,7 +697,7 @@ h3 {
 }
 
 .footer-col--right {
-  text-align: left;
+  text-align: right;
 }
 
 @media (max-width: 720px) {
