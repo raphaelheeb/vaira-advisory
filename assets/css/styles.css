@@ -238,8 +238,6 @@ h3 {
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .card:hover {
@@ -428,6 +426,12 @@ h3 {
 @media (max-width: 720px) {
   .section {
     padding: 48px 0;
+  }
+}
+  
+@media (min-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
