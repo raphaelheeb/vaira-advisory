@@ -161,14 +161,15 @@ p {
   align-items: center;
 }
 .hero-title {
-  font-size: 60px;
-  line-height: 1.15;
+  font-size: 46px;
+  line-height: 1.22;
   letter-spacing: 0.01em;
 }
 
 .hero-sub {
   font-size: 20px;
   line-height: 1.6;
+  margin-top: 12px:
 }
 
 .section h2 {
