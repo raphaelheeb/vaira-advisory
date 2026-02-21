@@ -111,7 +111,7 @@ p {
 }
 
 .section--accent-left {
-  border-left: 6px solid var(--accent-light);
+  border-left: 6px solid #4A6A72;
   padding-left: 32px;
 }
 
@@ -220,7 +220,7 @@ h3 {
 
 .fullwidth-image--pattern {
   background-image:
-    linear-gradient(rgba(14,21,20,0.35), rgba(14,21,20,0.35)),
+    linear-gradient(rgba(74, 106, 114, 0.35), rgba(14,21,20,0.35)),
     url('/assets/cad-pattern.png');
   height: 420px;
 }
@@ -274,14 +274,14 @@ h3 {
    ========================================================= */
 
 .editorial {
-  border-left: 4px solid var(--accent-light);
+  border-left: 4px solid #4A6A72;
   padding-left: 20px;
   margin: 24px 0;
 }
 
 .highlight {
   background: #ffffff;
-  border-left: 4px solid var(--accent-light);
+  border-left: 4px solid #4A6A72;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -342,7 +342,7 @@ h3 {
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--accent-light);
+  color: #4A6A72;
   font-size: 20px;
 }
 
@@ -526,7 +526,7 @@ h3 {
 }
 
 .lang-btn.active {
-  border-color: var(--accent-light);
+  border-color: #4A6A72;
   color: var(--accent);
   background: var(--bg-light);
 }
@@ -580,7 +580,7 @@ h3 {
   border-radius: 8px;
   background: #4A6A72;
   opacity: 0.65;
-  border: 1px solid rgba(14,21,20,0.08);
+  border: 1px solid rgba(74, 106, 114, 0.25);
   flex-shrink: 0;
 }
 
