@@ -646,7 +646,7 @@ h3 {
 /* HARD OVERRIDE: hero background + remove any theme gradients/images */
 #hero.hero.hero--clean {
   background-color: #084442 !important; /* RAL 6004 */
-  opacity: 0.8;
+  opacity: 0.85;
   background-image: none !important;
   padding: 80px 0 68px !important;
 }
