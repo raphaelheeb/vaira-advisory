@@ -99,7 +99,7 @@ p {
 }
 
 .section--alt {
-  background: #f4f7f7;
+  background: rgba(74, 106, 114, 0.05);
 }
 
 .section--lighter {
@@ -113,6 +113,10 @@ p {
 .section--accent-left {
   border-left: 6px solid var(--accent-light);
   padding-left: 32px;
+}
+
+.section--accent-left::before {
+  background: rgba(184, 212, 208, 0.65);
 }
 
 /* subtle breathing space between sections */
@@ -241,7 +245,7 @@ h3 {
 }
 
 .card:hover {
-  border-color: var(--accent-light);
+  border-color: #4A6A72;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
@@ -355,24 +359,24 @@ h3 {
 
 /* Primary CTA */
 .cta-btn--primary {
-  background: #ffffff;
-  color: #0E1514;
+  background: ##2B4E5A;
+  color: #ffffff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .cta-btn--primary:hover {
-  background: #3b6f68;
+  background: #4A6A72;
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 /* Secondary CTA */
 .cta-btn--secondary {
-  background: #B8D4D0;
-  color: #0E1514;
+  border: 1px solid #4A6A72;
+  color: #4A6A72;
 }
 
 .cta-btn--secondary:hover {
-  background: #a7c6c2;
+  background: rgba(74, 106, 114, 0.12);
 }
 
 /* dark CTA section */
@@ -443,7 +447,6 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 }
 
 /* =========================================================
@@ -511,11 +514,15 @@ h3 {
 }
 
 .nav a:hover {
-  color: var(--accent);
+  color: #2B4E5A;
 }
 
 .nav a:hover::after {
   width: 100%;
+}
+
+.nav a.active {
+  color: #2B4E5A;
 }
 
 /* Language switcher */
