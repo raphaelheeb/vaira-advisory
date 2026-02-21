@@ -31,15 +31,28 @@ header .content-wrapper {
    ========================================================= */
 
 :root {
-  --accent: #0e1514;
-  --accent-light: #b8d4d0;
-  --bg-light: #f4f7f7;
-  --bg-lighter: #fafcfc;
-  --text-dark: #0e1514;
-  --text-light: #ffffff;
-  --line: rgba(0,0,0,0.08);
-  --line-strong: rgba(0,0,0,0.12);
+  /* Brand Core */
+  --primary: #2B4E5A;          /* Deep engineered teal (your main brand color) */
+  --primary-mid: #5F8A8E;      /* Mid-tone accent for small UI elements */
+  --primary-light: #C9DCDC;    /* Light accent for large soft backgrounds */
+
+  /* Text */
+  --text-dark: #0E1514;        /* Deep charcoal for body text */
+  --text-light: #FFFFFF;       /* White for dark backgrounds */
+
+  /* Backgrounds */
+  --bg-light: #F4F7F7;         /* Soft neutral background */
+  --bg-lighter: #FAFCFC;       /* Ultra-light background */
+
+  /* Lines & Borders */
+  --line: rgba(0,0,0,0.08);    /* Subtle dividers */
+  --line-strong: rgba(0,0,0,0.12); /* Stronger dividers */
+
+  /* Utility */
+  --shadow-light: rgba(0,0,0,0.12);
+  --shadow-strong: rgba(0,0,0,0.18);
 }
+
 
 *,
 *::before,
@@ -51,7 +64,7 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-dark);
-  background: #ffffff;
+  background: var(--text-light);
   line-height: 1.7;
 }
 
@@ -91,47 +104,61 @@ p {
 
 .section {
   padding: 80px 0 72px;
-  background: #ffffff;
+  background: var(--text-light); /* stays white */
 }
 
 .section--tight {
   padding: 48px 0;
 }
 
+/* ALT SECTION (soft contrast background)
+   Replace old rgba(74,106,114,0.05) with your new light accent */
 .section--alt {
-  background: rgba(74, 106, 114, 0.05);
+  background: var(--primary-light);
 }
+
+/* LIGHTER SECTION (ultra-light neutral)*/
 
 .section--lighter {
-  background: #f8fbfb;
+  background: var(--bg-lighter);
 }
+
+/* GRADIENT SECTION */
 
 .section--gradient {
-  background: linear-gradient(180deg, #ffffff 0%, #f4f7f7 100%);
+  background: linear-gradient(180deg, var(--text-light) 0%, var(--bg-light) 100%);
 }
 
+/* ACCENT LEFT STRIPE */
+
 .section--accent-left {
-  border-left: 6px solid #4A6A72;
+  border-left: 6px solid var(--primary-mid);
   padding-left: 32px;
 }
 
+/* ACCENT STRIPE BACKGROUND */
+
 .section--accent-left::before {
-  background: rgba(184, 212, 208, 0.65);
+  background: var(--primary-light);
 }
 
 /* subtle breathing space between sections */
+
 .section + .section {
   margin-top: 12px;
 }
 
-/* section titles */
+/* SECTION TITLES */
 .section h2 {
   position: relative;
   padding-bottom: 12px;
   margin-bottom: 36px;
   letter-spacing: 0.3px;
+  color: var(--text-dark); /* ensure consistent title color */
 }
 
+/* SECTION TITLE UNDERLINE
+   Replace #4A6A72 with mid-tone */
 .section h2::after {
   content: "";
   position: absolute;
@@ -139,19 +166,27 @@ p {
   bottom: 0;
   width: 48px;
   height: 3px;
-  background: #4A6A72;
+  background: var(--primary-mid);
   border-radius: 2px;
 }
 
-/* section text rhythm */
+/* SECTION TEXT RHYTHM */
 .section p {
   line-height: 1.55;
   margin-top: 4px;
+  color: var(--text-dark);
 }
 
 .section ul li {
   margin-bottom: 4px;
   line-height: 1.45;
+  color: var(--text-dark);
+}
+
+/* BULLET POINTS (you likely have a ::before elsewhere)
+   Should use mid-tone for visibility */
+.section ul li::before {
+  background: var(--primary-mid);
 }
 
 /* =========================================================
@@ -236,21 +271,19 @@ h3 {
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid rgba(43, 78, 90, 0.25);
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-  transition: all 0.2s ease;
+  transition: border-color 0.25s ease, 
+              box-shadow 0.25s ease, 
+              background 0.25s ease;
 }
 
 .card:hover {
-  border-color: #4A6A72;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-color: rgba(95, 138, 142, 0.35); /* primary-mid */
+  background: var(--primary-light);
+  box-shadow: 0 8px 24px var(--shadow-light);
 }
 
-.card-icon svg path {
-  stroke: #4A6A72; /* Muted Steel */
+.card:hover .card-icon svg path {
+  stroke: var(--primary);
 }
 
 /* Make Why VAIRA a 2x2 grid with real vertical spacing */
@@ -363,27 +396,25 @@ h3 {
 
 /* Primary CTA */
 .cta-btn--primary {
-  background: #4A6A72;
-  color: #ffffff;
+  background: var(--primary);
+  color: var(--text-light);
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .cta-btn--primary:hover {
-  color: var(--text-dark);
-  background: #B8D4D0;
+  background: var(--primary-mid);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 /* Secondary CTA */
 .cta-btn--secondary {
   border: 1px solid #4A6A72;
-  color: #ffffff;
-  background: #4A6A72;
+  color: var(--text-light);
+  background: var(--primary);
 }
 
 .cta-btn--secondary:hover {
-  background: #B8D4D0;
-  color: var(--text-dark);
+  background: var(--primary-mid);
 }
 
 /* =========================================================
@@ -496,12 +527,12 @@ h3 {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: #4A6A72;
+  background: var(--primary-mid);
   transition: width 0.25s ease;
 }
 
 .nav a:hover {
-  color: #2B4E5A;
+  color: var(--primary-mid);
 }
 
 .nav a:hover::after {
@@ -509,7 +540,11 @@ h3 {
 }
 
 .nav a.active {
-  color: #2B4E5A;
+  color: var(--primary);
+}
+
+.nav a.active::after {
+  color: var(--primary);
 }
 
 /* Language switcher */
@@ -581,10 +616,9 @@ h3 {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: #2B4E5A;
-  color:#2B4E5A;
+  background: var(--primary-light);
   opacity: 0.65;
-  border: 1px solid rgba(74, 106, 114, 0.25);
+  border: 1px solid rgba(95, 138, 142, 0.25); /* primary-mid at 25% */
   flex-shrink: 0;
 }
 
