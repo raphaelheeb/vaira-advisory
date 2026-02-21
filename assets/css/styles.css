@@ -90,12 +90,12 @@ p {
    ========================================================= */
 
 .section {
-  padding: 96px 0 88px;
+  padding: 80px 0 72px;
   background: #ffffff;
 }
 
 .section--tight {
-  padding: 56px 0;
+  padding: 48px 0;
 }
 
 .section--alt {
@@ -113,6 +113,11 @@ p {
 .section--accent-left {
   border-left: 6px solid var(--accent-light);
   padding-left: 32px;
+}
+
+/* subtle breathing space between sections */
+.section + .section {
+  margin-top: 12px;
 }
 
 /* hero extension */
@@ -141,9 +146,15 @@ p {
   border-radius: 2px;
 }
 
+/* section text rhythm */
 .section p {
   line-height: 1.55;
-  margin-top: 4px; /* prevents text from sticking to the title */
+  margin-top: 4px;
+}
+
+.section ul li {
+  margin-bottom: 4px;
+  line-height: 1.45;
 }
 
 /* =========================================================
@@ -266,30 +277,33 @@ h3 {
 }
 
 /* =========================================================
-   SPLIT LAYOUT — CLEAN, CONSISTENT, PREMIUM
+   SPLIT LAYOUT
    ========================================================= */
 
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 48px;
-  align-items: center;
-  padding-left: 4px; /* subtle alignment correction */
+  align-items: start;
+  padding-left: 4px;
 }
 
-/* Unified image styling for all split illustrations */
 .split-image {
   width: 100%;
   height: auto;
-  max-width: 460px; /* balanced, premium size */
+  max-width: 450px;
   display: block;
-  margin: 0 auto;
+  margin: 8px auto 0;
   border-radius: 8px;
 }
 
-/* Optional: slightly smaller blueprint/process image */
+/* specific tweaks per illustration type */
 .split-image.process {
-  max-width: 420px;
+  max-width: 400px;
+}
+
+.split-image.case {
+  max-width: 460px;
 }
 
 /* =========================================================
