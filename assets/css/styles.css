@@ -376,11 +376,12 @@ h3 {
 /* Secondary CTA */
 .cta-btn--secondary {
   border: 1px solid #4A6A72;
-  color: #4A6A72;
+  color: #ffffff;
+  background: rgba(74, 106, 114, 0.12)
 }
 
 .cta-btn--secondary:hover {
-  background: rgba(74, 106, 114, 0.12);
+  background: #4A6A72;
 }
 
 /* =========================================================
