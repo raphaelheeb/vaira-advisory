@@ -184,7 +184,7 @@ h3 {
 }
 
 .hero-ctas {
-  margin-top: 8px;
+  margin-top: 18px;
 }
 
 .hero-right svg {
@@ -336,7 +336,7 @@ h3 {
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
-  border-radius: 999px;
+  border-radius: 4px;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
