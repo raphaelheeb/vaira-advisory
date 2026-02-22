@@ -196,6 +196,15 @@ p {
   background: var(--primary-mid);
 }
 
+#what-we-do ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+#what-we-do ul li::before {
+  content: none; /* disable the custom square */
+}
+
 /* =========================================================
    HERO
    ========================================================= */
@@ -213,7 +222,7 @@ p {
 }
 
 .hero-sub {
-  color: var(--primary-mid);
+  color: var(--primary-dark);
   font-size: 18px;
   line-height: 1.6;
   margin-top: 12px:
@@ -478,7 +487,7 @@ h3 {
 }
 
 /* =========================================================
-   HEADER & NAVIGATION â€” PREMIUM CONSULTANCY VERSION
+   HEADER & NAVIGATION & PREMIUM CONSULTANCY VERSION
    ========================================================= */
 
 .site-header {
@@ -605,7 +614,7 @@ h3 {
 }
 
 /* =========================================================
-   WHY VAIRA â€” FEATURE BLOCKS
+   WHY VAIRA & FEATURE BLOCKS
    ========================================================= */
 
 .why-grid {
@@ -652,7 +661,7 @@ h3 {
 }
 
 /* =========================================================
-   FINAL HERO â€” deep-tech teal + clean grid overlay
+   FINAL HERO & deep-tech teal + clean grid overlay
    ========================================================= */
 
 .hero {
@@ -748,7 +757,6 @@ h3 {
     text-align: left;
     gap: 24px;
   }
-
 }
 
 /* =========================================================
@@ -782,7 +790,7 @@ h3 {
 }
 
 /* =========================================================
-   CASE SNAPSHOT â€” SECTION-SPECIFIC STYLING
+   CASE SNAPSHOT & SECTION-SPECIFIC STYLING
    ========================================================= */
 
 #case-snapshot .case-points {
