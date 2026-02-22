@@ -260,6 +260,13 @@ h3 {
   background: none; /* remove the white gradient */
 }
 
+#hero.hero--clean .hero-sub {
+  color: var(--text-light);
+}
+
+#hero.hero--clean {
+  padding: 72px 0 56px !important;
+}
 
 /* =========================================================
    FULL-WIDTH IMAGE BAND
