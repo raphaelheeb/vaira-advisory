@@ -196,13 +196,20 @@ p {
   background: var(--primary-mid);
 }
 
-#what-we-do ul {
-  list-style: disc;
-  padding-left: 20px;
+#what-we-do ul li {
+  position: relative;
+  padding-left: 18px;
 }
 
 #what-we-do ul li::before {
-  content: none; /* disable the custom square */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: var(--primary-mid);
+  border-radius: 2px;
 }
 
 /* =========================================================
@@ -314,6 +321,17 @@ h3 {
 
 #who-we-work-with .wrapper--narrow {
   max-width: var(--wrapper-wide);
+}
+
+#who-we-work-with .card {
+  padding: 32px;
+  border-radius: 14px;
+}
+
+#who-we-work-with .card:hover {
+  background: var(--primary-light-soft);
+  border-color: var(--primary-mid-soft);
+  transform: translateY(-2px);
 }
 
 #who-we-work-with .card-grid {
