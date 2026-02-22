@@ -382,7 +382,7 @@ h3 {
 }
 
 .checklist li::before {
-  content: "&middot;";
+  content: ".";
   position: absolute;
   left: 0;
   color: var(--primary-mid);
