@@ -712,8 +712,8 @@ h3 {
 
 /* HARD OVERRIDE: hero background + remove any theme gradients/images */
 #hero.hero.hero--clean {
-  background-color: var(--primary-dark) !important;
-  opacity: 0.95;
+  background-color: var(--primary) !important;
+  opacity: 0.85;
   background-image: none !important;
   padding: 40px 0 28px !important;
 }
