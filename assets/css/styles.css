@@ -51,6 +51,10 @@ header .content-wrapper {
   /* Utility */
   --shadow-light: rgba(0,0,0,0.12);
   --shadow-strong: rgba(0,0,0,0.18);
+  
+  --primary-dark: #084442;              /* deep-tech teal for footer / dark zones */
+  --footer-accent: rgba(184,212,208,0.15); /* footer border tone */
+
 }
 
 
@@ -111,8 +115,8 @@ p {
   padding: 48px 0;
 }
 
-/* ALT SECTION (soft contrast background)
-   Replace old rgba(74,106,114,0.05) with your new light accent */
+/* ALT SECTION (soft contrast background)*/
+
 .section--alt {
   background: var(--primary-light);
 }
@@ -255,10 +259,10 @@ h3 {
 
 .fullwidth-image--pattern {
   background-image:
-    linear-gradient(rgba(74, 106, 114, 0.35), rgba(14,21,20,0.35)),
+    linear-gradient(rgba(43, 78, 90, 0.35), rgba(14,21,20,0.35)),
     url('/assets/cad-pattern.png');
-  height: 420px;
 }
+
 
 /* =========================================================
    CARDS
@@ -307,14 +311,14 @@ h3 {
    ========================================================= */
 
 .editorial {
-  border-left: 4px solid #4A6A72;
+  border-left: 4px solid var(--primary-mid);
   padding-left: 20px;
   margin: 24px 0;
 }
 
 .highlight {
-  background: #ffffff;
-  border-left: 4px solid #4A6A72;
+  background: var(--text-light);
+  border-left: 4px solid var(--primary-mid);
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -372,10 +376,10 @@ h3 {
 }
 
 .checklist li::before {
-  content: "â€¢";
+  content: "&middot;";
   position: absolute;
   left: 0;
-  color: #4A6A72;
+  color: var(--primary-mid);
   font-size: 20px;
 }
 
@@ -408,7 +412,7 @@ h3 {
 
 /* Secondary CTA */
 .cta-btn--secondary {
-  border: 1px solid #4A6A72;
+  border: 1px solid var(--primary-mid);
   color: var(--text-light);
   background: var(--primary);
 }
@@ -559,13 +563,13 @@ h3 {
   padding: 6px 14px;
   border-radius: 12px;
   background: transparent;
-  border: 1px solid #4A6A72;
+  border: 1px solid var(--primary-mid);
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .lang-btn.active {
-  border-color: #4A6A72;
-  color: var(--accent);
+  border-color: var(--primary-mid);
+  color: var(--primary);
   background: var(--bg-light);
 }
 
@@ -646,8 +650,8 @@ h3 {
 
 .hero {
   padding: 36px 0 28px;
-  background-color: #084442; /* RAL 6004 */
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-light);
   position: relative;
   overflow: hidden;
 }
@@ -674,7 +678,7 @@ h3 {
 
 /* HARD OVERRIDE: hero background + remove any theme gradients/images */
 #hero.hero.hero--clean {
-  background-color: #2B4E5A !important; /* blue-green */
+  background-color: var(--primary) !important;
   opacity: 0.95;
   background-image: none !important;
   padding: 40px 0 28px !important;
@@ -685,21 +689,21 @@ h3 {
 ===========================*/
 
 .site-footer {
-  background: #0E1514;
-  color: #ffffff;
+  background: var(--primary-dark);
+  color: var(--text-light);
   padding: 48px 0 32px;
   font-size: 15px;
-  border-top: 1px solid rgba(184,212,208,0.15);
+  border-top: 1px solid var(--footer-accent);
 }
 
 .site-footer a {
-  color: #B8D4D0;
+  color: var(--text-light);
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #B8D4D0;
- text-decoration-color: rgba(74, 106, 114, 0.7);
+  color: var(--text-light);
+ text-decoration-color: underline;
 }
 
 .footer-brand {
