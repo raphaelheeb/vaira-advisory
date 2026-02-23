@@ -294,25 +294,6 @@ p {
   margin-bottom: 2.5rem;
 }
 
-/* ICON WRAPPER — consistent vertical zone */
-.card .card-icon {
-  height: 120px;                 /* gives icons a stable vertical rhythm */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;           /* cleaner spacing before the title */
-}
-
-/* ICONS — consistent scale + optical centering */
-.card .card-icon svg {
-  width: 72px;                   /* premium consultancy scale */
-  height: 72px;
-  stroke-width: 2.5;             /* stronger, engineered presence */
-  display: block;
-  transform: translateX(2px);    /* optical centering for left-heavy icons */
-  opacity: 0.9;
-}
-
 /* SERVICES SECTION — icon alignment and rhythm */
 
 #services .card .card-icon {
