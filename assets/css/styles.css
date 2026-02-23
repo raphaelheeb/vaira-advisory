@@ -269,15 +269,15 @@ h3 {
 }
 
 #hero.hero--clean {
-  padding: 72px 0 56px !important;
+  padding: 96px 0 72px !important;
 }
 
 /* Additional Geometric Arc Graphic for Subpages*/
 
 .cad-hero-shape {
   position: absolute;
-  right: 0;
-  top: 18%;
+  right: -40px;
+  top: 24%;
   width: 420px;
   height: 420px;
   pointer-events: none;
