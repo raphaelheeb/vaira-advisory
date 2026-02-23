@@ -239,7 +239,6 @@ p {
     url('/assets/cad-pattern.png');
 }
 
-
 /* =========================================================
    CARDS
    ========================================================= */
@@ -258,16 +257,6 @@ p {
               background 0.25s ease;
 }
 
-.card:hover {
-  border-color: var(--primary-mid-soft);
-  background: var(--primary-light-soft);
-  box-shadow: 0 8px 24px var(--shadow-light);
-}
-
-.card:hover .card-icon svg path {
-  stroke: var(--primary);
-}
-
 /* Make Why VAIRA a 2x2 grid with real vertical spacing */
 #why-vaira .card-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -275,19 +264,20 @@ p {
   row-gap: 40px;
 }
 
+/* HOMEPAGE — Who We Work With */
 #who-we-work-with .wrapper--narrow {
-  max-width: 1080px; /* matches your global content-wrapper */
+  max-width: 1080px;
 }
 
 #who-we-work-with .card {
   background: white;
-  border: 1px solid rgba(95, 138, 142, 0.15); /* subtle base border */
+  border: 1px solid rgba(95, 138, 142, 0.15);
   border-radius: 14px;
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 #who-we-work-with .card:hover {
-  background: rgba(201, 220, 220, 0.35); /* soft teal tint */
+  background: rgba(201, 220, 220, 0.35);
   border-color: rgba(95, 138, 142, 0.35);
   transform: translateY(-2px);
 }
@@ -298,30 +288,11 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
-/* SERVICES SECTION — icon alignment and rhythm */
-
-#services .card .card-icon {
-  height: 120px;                 /* stable vertical zone */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;           /* cleaner spacing before title */
-}
-
-#services .card .card-icon svg {
-  width: 72px;                   /* premium scale */
-  height: 72px;
-  stroke-width: 2.5;             /* stronger presence */
-  display: block;
-  transform: translateX(2px);    /* optical centering */
-  opacity: 0.9;
-}
-
+/* SERVICES SECTION — card styling */
 #services .card {
-  border-radius: 14px; /* slightly more premium */
+  border-radius: 14px;
   border: 1px solid rgba(95, 138, 142, 0.15);
   background: white;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 #services .card:hover {
