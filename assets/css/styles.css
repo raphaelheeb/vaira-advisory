@@ -269,7 +269,7 @@ h3 {
 }
 
 #hero.hero--clean {
-  padding: 96px 0 72px !important;
+  padding: 96px 0 72px;
 }
 
 /* Additional Geometric Arc Graphic for Subpages*/
@@ -287,6 +287,10 @@ h3 {
   height: 100%;
 }
 
+#hero.hero--clean .cad-hero-shape {
+  right: -40px;
+  top: 24%;
+}
 
 /* =========================================================
    FULL-WIDTH IMAGE BAND
