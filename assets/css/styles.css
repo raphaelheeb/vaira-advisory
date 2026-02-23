@@ -632,6 +632,7 @@ p {
   height: 420px;
   pointer-events: none;
   opacity: 0.18;
+  z-index: 1;
 }
 
 #hero.hero--clean .cad-hero-shape svg {
