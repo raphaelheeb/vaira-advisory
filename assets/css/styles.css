@@ -585,7 +585,7 @@ p {
   color: var(--text-light);
 }
 
-/* Subtle grid overlay (same as homepage) */
+/* Subtle grid overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -605,7 +605,7 @@ p {
   padding-top: 24px;
 }
 
-/* Typography inside hero */
+/* Typography */
 .hero-title {
   font-size: 46px;
   line-height: 1.22;
@@ -620,13 +620,18 @@ p {
 }
 
 /* =========================================================
-   CLEAN HERO VARIANT (used on subpages)
+   CLEAN HERO VARIANT (subpages)
    ========================================================= */
 
-/* CAD arc for subpage heroes */
-#hero.hero--clean .cad-hero-shape {
+#hero.hero--clean {
   position: relative;
-  right: -60px; /* moves it far right */
+  padding: 96px 0 72px;
+}
+
+/* CAD arc */
+#hero.hero--clean .cad-hero-shape {
+  position: absolute;
+  right: -60px;
   top: 18%;
   width: 420px;
   height: 420px;
@@ -654,11 +659,11 @@ p {
   .hero-title {
     font-size: 36px;
   }
-  }
 
   #hero.hero--clean {
     padding: 72px 0 56px;
   }
+
   #hero.hero--clean .cad-hero-shape {
     right: -120px;
     top: 32%;
@@ -672,10 +677,9 @@ p {
    ========================================================= */
 
 #hero:not(.hero--clean) {
-  padding: 48px 0 48px; /* restores original tighter height */
+  padding: 48px 0 48px;
 }
 
-/* Restore homepage grid layout */
 #hero:not(.hero--clean) .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
@@ -683,15 +687,13 @@ p {
   align-items: center;
 }
 
-/* Restore homepage SVG sizing + alignment */
 #hero:not(.hero--clean) .hero-right svg {
   width: 115%;
   height: auto;
   transform: translateY(-8px);
   position: relative;
-  right: -20px; /* prevents SVG from dropping below text */
+  right: -20px;
 }
-
 
 /* =========================================================
    WHY VAIRA & FEATURE BLOCKS
