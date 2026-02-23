@@ -93,17 +93,22 @@ permalink: /services/
   <!-- Top block (unchanged) -->
   <rect x="18" y="14" width="12" height="10" stroke="currentColor" stroke-width="2"/>
 
-  <!-- Correct, fully closed L-shaped right block -->
-  <path d="
-    M30 14
-    H38
-    V28
-    H50
-    V36
-    H38
-    V14
-    Z
-  " stroke="currentColor" stroke-width="2" fill="none"/>
+  <!-- Simple L-shaped block -->
+  <path
+    d="
+      M12 8   <!-- top-left -->
+      H28     <!-- top horizontal -->
+      V12     <!-- down -->
+      H16     <!-- left (inner corner) -->
+      V32     <!-- down -->
+      H12     <!-- left to outer edge -->
+      Z       <!-- close -->
+    "
+    stroke="currentColor"
+    stroke-width="2"
+    fill="none"
+  />
+
 </svg>
 
 
