@@ -302,6 +302,10 @@ p {
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
+#services .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 #services .card:hover {
   background: white; /* stronger tint than homepage */
   border-color: rgba(95, 138, 142, 0.45);
