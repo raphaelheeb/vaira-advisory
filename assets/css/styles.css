@@ -275,7 +275,7 @@ p {
 }
 
 #who-we-work-with .wrapper--narrow {
-  max-width: var(--wrapper-wide);
+  max-width: 1080px; /* matches your global content-wrapper */
 }
 
 #who-we-work-with .card {
@@ -310,6 +310,25 @@ p {
   stroke-width: 2.5;             /* stronger, engineered presence */
   display: block;
   transform: translateX(2px);    /* optical centering for left-heavy icons */
+  opacity: 0.9;
+}
+
+/* SERVICES SECTION — icon alignment and rhythm */
+
+#services .card .card-icon {
+  height: 120px;                 /* stable vertical zone */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;           /* cleaner spacing before title */
+}
+
+#services .card .card-icon svg {
+  width: 72px;                   /* premium scale */
+  height: 72px;
+  stroke-width: 2.5;             /* stronger presence */
+  display: block;
+  transform: translateX(2px);    /* optical centering */
   opacity: 0.9;
 }
 
