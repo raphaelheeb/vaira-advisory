@@ -626,11 +626,12 @@ p {
 /* CAD arc for subpage heroes */
 #hero.hero--clean .cad-hero-shape {
   position: absolute;
-  right: -20px;   /* adjust as needed */
-  top: 24%;       /* adjust as needed */
-  width: 420px;
-  height: 420px;
+  right: -120px; /* moves it far right */
+  top: 22%;
+  width: 480px;
+  height: 480px;
   pointer-events: none;
+  opacity: 0.18;
 }
 
 #hero.hero--clean .cad-hero-shape svg {
