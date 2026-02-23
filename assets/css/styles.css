@@ -216,81 +216,7 @@ p {
   border-radius: 2px;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.0fr);
-  gap: 48px;
-  align-items: center;
-}
-.hero-title {
-  font-size: 46px;
-  line-height: 1.22;
-  letter-spacing: 0.01em;
-}
-
-.hero-sub {
-  color: var(--primary-dark);
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 12px:
-}
-
-.section h2 {
-  font-size: 34px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 22px;
-}
-
-.hero-ctas {
-  margin-top: 18px;
-}
-
-.hero-right svg {
-  width: 115%;
-  height: auto;
-  transform: translateY(-8px);
-}
-
-.hero--clean {
-  background: none; /* remove the white gradient */
-}
-
-#hero.hero--clean .hero-sub {
-  color: var(--text-light);
-}
-
-#hero.hero--clean {
-  padding: 96px 0 72px;
-}
-
-/* Additional Geometric Arc Graphic for Subpages*/
-
-.cad-hero-shape {
-  position: absolute;
-  right: -40px;
-  top: 24%;
-  width: 420px;
-  height: 420px;
-  pointer-events: none;
-}
-.cad-hero-shape svg {
-  width: 100%;
-  height: 100%;
-}
-
-#hero.hero--clean .cad-hero-shape {
-  right: -400px;
-  top: 24%;
-}
 
 /* =========================================================
    FULL-WIDTH IMAGE BAND
@@ -490,14 +416,7 @@ h3 {
    ========================================================= */
 
 @media (max-width: 960px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 64px;
-  }
-
+  
   .floating-cards {
     margin-top: 24px;
   }
@@ -509,14 +428,7 @@ h3 {
 }
 
 @media (max-width: 720px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-sub {
-    font-size: 18px;
-  }
-
+ 
   .section {
   padding: 72px 0;
   background: #ffffff;
@@ -663,6 +575,108 @@ h3 {
 }
 
 /* =========================================================
+   HERO — Unified, Conflict-Free Version
+   ========================================================= */
+
+/* Base hero styling (applies to all heroes) */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 0 28px;
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* Subtle grid overlay (same as homepage) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 66px 66px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+/* Ensure hero text sits above overlays */
+.hero > .content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 24px;
+}
+
+/* Typography inside hero */
+.hero-title {
+  font-size: 46px;
+  line-height: 1.22;
+  letter-spacing: 0.01em;
+}
+
+.hero-sub {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 12px;
+  color: var(--text-light);
+}
+
+/* =========================================================
+   CLEAN HERO VARIANT (used on subpages)
+   ========================================================= */
+
+#hero.hero--clean {
+  background-color: var(--primary);
+  background-image: none;
+  opacity: 0.90;
+  padding: 96px 0 72px; /* final spacing */
+}
+
+/* CAD arc for subpage heroes */
+#hero.hero--clean .cad-hero-shape {
+  position: absolute;
+  right: -20px;   /* adjust as needed */
+  top: 24%;       /* adjust as needed */
+  width: 420px;
+  height: 420px;
+  pointer-events: none;
+}
+
+#hero.hero--clean .cad-hero-shape svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================================
+   RESPONSIVE HERO
+   ========================================================= */
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-sub {
+    font-size: 18px;
+  }
+  #hero.hero--clean {
+    padding: 72px 0 56px;
+  }
+  #hero.hero--clean .cad-hero-shape {
+    right: -120px;
+    top: 32%;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+/* =========================================================
    WHY VAIRA & FEATURE BLOCKS
    ========================================================= */
 
@@ -707,52 +721,6 @@ h3 {
     grid-template-columns: 1fr;
     row-gap: 24px;
   }
-}
-
-/* =========================================================
-   FINAL HERO & deep-tech teal + clean grid overlay
-   ========================================================= */
-
-.hero {
-  padding: 36px 0 28px;
-  background-color: var(--primary);
-  color: var(--text-light);
-  position: relative;
-  overflow: hidden;
-}
-
-/* subtle grid overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
-  background-size: 66px 66px;
-  opacity: 0.18;
-  pointer-events: none;
-}
-
-/* keep content readable above overlay */
-.hero > .content-wrapper {
-  position: relative;
-  z-index: 1;
-  padding-top: 24px;
-}
-
-/* HARD OVERRIDE: hero background + remove any theme gradients/images */
-
-#hero.hero--clean {
-  background-color: var(--primary);
-  opacity: 0.90;
-  background-image: none;
-  padding: 96px 0 72px; /* your intended spacing */
-}
-
-#hero.hero--clean .cad-hero-shape {
-  right: -20px;
-  top: 24%;
 }
 
 /*=========================
