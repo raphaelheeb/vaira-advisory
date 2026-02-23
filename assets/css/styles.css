@@ -631,8 +631,8 @@ p {
 /* CAD arc */
 #hero.hero--clean .cad-hero-shape {
   position: absolute;
-  right: -140px;   /* pushes it into the corner */
-  top: -40px;      /* lifts it above the hero’s top edge */
+  right: -100px;   /* pushes it into the corner */
+  top: -30px;      /* lifts it above the hero’s top edge */
   width: 360px;    /* slightly smaller for elegance */
   height: 360px;
   pointer-events: none;
