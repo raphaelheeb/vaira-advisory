@@ -452,7 +452,6 @@ p {
    ========================================================= */
 
 @media (max-width: 960px) {
-  
   .floating-cards {
     margin-top: 24px;
   }
@@ -464,10 +463,10 @@ p {
 }
 
 @media (max-width: 720px) {
- 
   .section {
-  padding: 72px 0;
-  background: #ffffff;
+    padding: 72px 0;
+    background: #ffffff;
+  }
 }
 
 @media (max-width: 720px) {
@@ -475,12 +474,11 @@ p {
     padding: 48px 0;
   }
 }
-  
+
 @media (min-width: 900px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 }
 
 /* =========================================================
