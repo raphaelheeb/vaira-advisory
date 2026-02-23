@@ -252,7 +252,7 @@ p {
 
 .card {
   padding: 28px;
-  boarder-radius: 12px;
+  border-radius: 12px;
   transition: border-color 0.25s ease, 
               box-shadow 0.25s ease, 
               background 0.25s ease;
@@ -280,13 +280,15 @@ p {
 }
 
 #who-we-work-with .card {
-  padding: 32px;
+  background: white;
+  border: 1px solid rgba(95, 138, 142, 0.15); /* subtle base border */
   border-radius: 14px;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 #who-we-work-with .card:hover {
-  background: var(--primary-light-soft);
-  border-color: var(--primary-mid-soft);
+  background: rgba(201, 220, 220, 0.35); /* soft teal tint */
+  border-color: rgba(95, 138, 142, 0.35);
   transform: translateY(-2px);
 }
 
@@ -313,6 +315,19 @@ p {
   display: block;
   transform: translateX(2px);    /* optical centering */
   opacity: 0.9;
+}
+
+#services .card {
+  border-radius: 14px; /* slightly more premium */
+  border: 1px solid rgba(95, 138, 142, 0.15);
+  background: white;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+#services .card:hover {
+  background: rgba(201, 220, 220, 0.35);
+  border-color: rgba(95, 138, 142, 0.35);
+  transform: translateY(-2px);
 }
 
 /* SERVICES SECTION — horizontal icon + title layout */
