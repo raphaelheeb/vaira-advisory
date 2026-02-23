@@ -632,7 +632,7 @@ p {
 #hero.hero--clean .cad-hero-shape {
   position: absolute;
   right: -100px;   /* pushes it into the corner */
-  top: -60px;      /* lifts it above the hero’s top edge */
+  top: -80px;      /* lifts it above the hero’s top edge */
   width: 360px;    /* slightly smaller for elegance */
   height: 360px;
   pointer-events: none;
