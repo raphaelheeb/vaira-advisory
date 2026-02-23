@@ -266,7 +266,7 @@ p {
 
 /* HOMEPAGE — Who We Work With */
 #who-we-work-with .wrapper--narrow {
-  max-width: 1080px;
+  max-width: 1100px;
 }
 
 #who-we-work-with .card {
@@ -324,6 +324,10 @@ p {
   width: 64px;
   height: 64px;
   stroke-width: 2.5;
+}
+
+#services .wrapper--narrow {
+  max-width: 1100px;
 }
 
 /* =========================================================
