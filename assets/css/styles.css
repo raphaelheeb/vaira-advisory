@@ -631,14 +631,15 @@ p {
 /* CAD arc */
 #hero.hero--clean .cad-hero-shape {
   position: absolute;
-  right: -60px;
-  top: 18%;
-  width: 420px;
-  height: 420px;
+  right: -140px;   /* pushes it into the corner */
+  top: -40px;      /* lifts it above the hero’s top edge */
+  width: 360px;    /* slightly smaller for elegance */
+  height: 360px;
   pointer-events: none;
   opacity: 0.18;
   z-index: 1;
 }
+
 
 #hero.hero--clean .cad-hero-shape svg {
   width: 100%;
