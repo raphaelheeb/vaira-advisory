@@ -196,6 +196,7 @@ p {
 
 /* BULLET POINTS (you likely have a ::before elsewhere)
    Should use mid-tone for visibility */
+
 .section ul li::before {
   background: var(--primary-mid);
 }
@@ -312,6 +313,20 @@ p {
   display: block;
   transform: translateX(2px);    /* optical centering */
   opacity: 0.9;
+}
+
+/* SERVICES SECTION — horizontal icon + title layout */
+#services .card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#services .card-header .card-icon svg {
+  width: 64px;
+  height: 64px;
+  stroke-width: 2.5;
 }
 
 /* =========================================================
