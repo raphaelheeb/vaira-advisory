@@ -315,16 +315,24 @@ p {
 /* SERVICES SECTION — horizontal icon + title layout */
 #services .card-header {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 16px;
   margin-bottom: 16px;
+}
+
+#services .card-header .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
 }
 
 #services .card-header .card-icon svg {
   width: 64px;
   height: 64px;
   stroke-width: 2.5;
-  margin-top: 4px;
+  display: block;
+  /* no margin-top here */
 }
 
 #services .wrapper--narrow {
@@ -332,8 +340,8 @@ p {
 }
 
 #services .card-header h3 {
-  line-height: 1.2;
-  margin-top: 4px;
+  line-height: 1.25;
+  margin: 0;
 }
 
 /* =========================================================
