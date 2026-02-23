@@ -625,7 +625,7 @@ p {
 
 /* CAD arc for subpage heroes */
 #hero.hero--clean .cad-hero-shape {
-  position: absolute;
+  position: relative;
   right: -60px; /* moves it far right */
   top: 18%;
   width: 420px;
