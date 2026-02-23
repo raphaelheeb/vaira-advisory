@@ -93,12 +93,16 @@ permalink: /services/
   <!-- Top block (unchanged) -->
   <rect x="18" y="14" width="12" height="10" stroke="currentColor" stroke-width="2"/>
 
-  <!-- L-shaped right block -->
-  <!-- Vertical segment: same total height as top+bottom stack (22px) -->
-  <rect x="30" y="14" width="8" height="22" stroke="currentColor" stroke-width="2"/>
-
-  <!-- Foot segment: merged visually, extending to the right -->
-  <rect x="38" y="28" width="12" height="8" stroke="currentColor" stroke-width="2"/>
+  <!-- L-shaped right block (single closed path) -->
+  <path d="
+    M30 14
+    H38
+    V28
+    H50
+    V36
+    H30
+    Z
+  " stroke="currentColor" stroke-width="2" fill="none"/>
 </svg>
 
         </div>
