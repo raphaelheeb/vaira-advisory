@@ -272,6 +272,22 @@ h3 {
   padding: 72px 0 56px !important;
 }
 
+/* Additional Geometric Arc Graphic for Subpages*/
+
+.cad-hero-shape {
+  position: absolute;
+  right: 0;
+  top: 18%;
+  width: 420px;
+  height: 420px;
+  pointer-events: none;
+}
+.cad-hero-shape svg {
+  width: 100%;
+  height: 100%;
+}
+
+
 /* =========================================================
    FULL-WIDTH IMAGE BAND
    ========================================================= */
