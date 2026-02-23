@@ -216,8 +216,6 @@ p {
   border-radius: 2px;
 }
 
-
-
 /* =========================================================
    FULL-WIDTH IMAGE BAND
    ========================================================= */
@@ -675,6 +673,31 @@ p {
   }
 }
 
+/* =========================================================
+   HOMEPAGE HERO RESTORATION (fixes height + SVG placement)
+   ========================================================= */
+
+/* Restore tighter homepage spacing */
+#hero:not(.hero--clean) {
+  padding: 48px 0 48px;
+}
+
+/* Restore homepage grid layout */
+#hero:not(.hero--clean) .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+/* Restore homepage SVG sizing + alignment */
+#hero:not(.hero--clean) .hero-right svg {
+  width: 115%;
+  height: auto;
+  transform: translateY(-8px);
+  position: relative;
+  right: -20px; /* nudges it right so it doesn’t sit under text */
+}
 
 /* =========================================================
    WHY VAIRA & FEATURE BLOCKS
