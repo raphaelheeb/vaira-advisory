@@ -742,11 +742,17 @@ h3 {
 }
 
 /* HARD OVERRIDE: hero background + remove any theme gradients/images */
-#hero.hero.hero--clean {
-  background-color: var(--primary) !important;
+
+#hero.hero--clean {
+  background-color: var(--primary);
   opacity: 0.90;
-  background-image: none !important;
-  padding: 40px 0 28px !important;
+  background-image: none;
+  padding: 96px 0 72px; /* your intended spacing */
+}
+
+#hero.hero--clean .cad-hero-shape {
+  right: -40px;
+  top: 24%;
 }
 
 /*=========================
