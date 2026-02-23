@@ -623,13 +623,6 @@ p {
    CLEAN HERO VARIANT (used on subpages)
    ========================================================= */
 
-.hero--clean {
-  background-color: var(--primary);
-  background-image: none;
-  opacity: 0.90;
-  padding: 96px 0 72px; /* final spacing */
-}
-
 /* CAD arc for subpage heroes */
 #hero.hero--clean .cad-hero-shape {
   position: absolute;
@@ -659,9 +652,8 @@ p {
   .hero-title {
     font-size: 36px;
   }
-  .hero-sub {
-    font-size: 18px;
   }
+
   #hero.hero--clean {
     padding: 72px 0 56px;
   }
