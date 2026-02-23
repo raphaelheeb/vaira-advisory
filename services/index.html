@@ -93,15 +93,15 @@ permalink: /services/
   <!-- Top block (unchanged) -->
   <rect x="18" y="14" width="12" height="10" stroke="currentColor" stroke-width="2"/>
 
-  <!-- Correct L-shaped right block (single closed path) -->
+  <!-- Correct, fully closed L-shaped right block -->
   <path d="
-    M30 14
-    H38
-    V28
-    H50
-    V36
-    H30
-    Z
+    M30 14      <!-- top-left of vertical segment -->
+    H38         <!-- top horizontal to right edge of vertical -->
+    V28         <!-- down to top of foot -->
+    H50         <!-- right across foot -->
+    V36         <!-- down right edge of foot (this was missing!) -->
+    H30         <!-- back left to bottom of vertical -->
+    Z           <!-- close shape -->
   " stroke="currentColor" stroke-width="2" fill="none"/>
 </svg>
 
