@@ -623,7 +623,7 @@ p {
    CLEAN HERO VARIANT (used on subpages)
    ========================================================= */
 
-#hero.hero--clean {
+.hero--clean {
   background-color: var(--primary);
   background-image: none;
   opacity: 0.90;
@@ -674,12 +674,11 @@ p {
 }
 
 /* =========================================================
-   HOMEPAGE HERO RESTORATION (fixes height + SVG placement)
+   HOMEPAGE HERO RESTORATION
    ========================================================= */
 
-/* Restore tighter homepage spacing */
 #hero:not(.hero--clean) {
-  padding: 48px 0 48px;
+  padding: 48px 0 48px; /* restores original tighter height */
 }
 
 /* Restore homepage grid layout */
@@ -696,8 +695,9 @@ p {
   height: auto;
   transform: translateY(-8px);
   position: relative;
-  right: -20px; /* nudges it right so it doesn’t sit under text */
+  right: -20px; /* prevents SVG from dropping below text */
 }
+
 
 /* =========================================================
    WHY VAIRA & FEATURE BLOCKS
