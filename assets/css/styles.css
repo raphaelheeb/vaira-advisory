@@ -102,7 +102,7 @@ p {
 }
 
 .wrapper--narrow {
-  max-width: 760px;
+  max-width: 960px;
 }
 
 .wrapper--wide {
@@ -298,12 +298,12 @@ p {
 #services .card {
   border-radius: 14px;
   border: 1px solid rgba(95, 138, 142, 0.15);
-  background: white;
+  background: rgba(201, 220, 220, 0.45);;
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 #services .card:hover {
-  background: rgba(201, 220, 220, 0.45); /* stronger tint than homepage */
+  background: white; /* stronger tint than homepage */
   border-color: rgba(95, 138, 142, 0.45);
   transform: translateY(-2px);
 }
