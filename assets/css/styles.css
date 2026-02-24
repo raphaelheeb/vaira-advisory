@@ -929,8 +929,8 @@ p {
 /* Title–text spacing ONLY for this section */
 #industries-why h2 {
   margin: 0;
-  padding-bottom: 8px;      /* space above underline */
-  margin-bottom: 16px;      /* tight, controlled gap to text */
+  padding-bottom: 0px;      /* space above underline */
+  margin-bottom: 0px;      /* tight, controlled gap to text */
 }
 
 #industries-why .split-left p {
