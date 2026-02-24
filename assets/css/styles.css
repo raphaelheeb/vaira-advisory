@@ -972,6 +972,6 @@ p {
   opacity: 0.9;
   display: block;
   margin-left: auto;   /* right-align */
-  margin-right: 0;
+  margin-right: 8px;
   margin-bottom: 24px; /* spacing before title */
 }
