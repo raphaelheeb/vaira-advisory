@@ -926,19 +926,6 @@ p {
   padding-bottom: 72px !important;
 }
 
-/* Industries Why — tighten title–text spacing only here */
-#industries-why h2 {
-  margin-top: 0 !important;
-  padding-bottom: 0 !important;   /* remove extra 12px under the title */
-  margin-bottom: 16px !important; /* tighter than global 24–36px */
-}
-
-#industries-why .split-left p {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-
 /* Grid layout */
 #industries-why .split {
   display: grid;
@@ -958,3 +945,33 @@ p {
 #industries-why .illustration-container {
   margin-top: -6px !important;      /* subtle lift to match text center */
 }
+
+/* Industries Why — Dedicated Split Layout */
+
+.split--industries-why {
+  display: grid;
+  grid-template-columns: 1fr auto;   /* text left, illustration right */
+  gap: 56px;                         /* generous breathing room */
+  align-items: center;               /* center illustration to text block */
+  padding-left: 0;                   /* remove global 4px nudge */
+}
+
+.split--industries-why .illustration-container svg {
+  max-width: 340px;                  /* balanced size */
+  width: 100%;
+  height: auto;
+}
+
+.split--industries-why .illustration-container {
+  margin-top: -6px;                  /* optical centering */
+}
+
+#industries-why h2 {
+  margin-bottom: 20px;               /* tight, premium spacing */
+  padding-bottom: 0;                 /* remove global underline padding */
+}
+
+#industries-why .split-left p {
+  margin: 0;
+}
+
