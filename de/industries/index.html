@@ -17,9 +17,40 @@ description: Fortschrittliche Fertigung, Materialverarbeitung und Hardwareentwic
 
   <!-- CAD ARC — repositioned to lower right -->
   <div class="cad-hero-shape cad-hero-shape--lower-right" style="bottom:-80px; top:auto; right:-120px; position:absolute;">
-    <!-- SVG unchanged -->
     <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- ... full SVG content unchanged ... -->
+      <defs>
+        <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="white" stop-opacity="0.45" />
+          <stop offset="100%" stop-color="white" stop-opacity="0.05" />
+        </linearGradient>
+      </defs>
+
+      <g transform="rotate(-140 210 210)">
+        <path d="M20 210 A190 190 0 0 1 400 210"
+              stroke="white"
+              stroke-width="1.75"
+              stroke-opacity="0.55"
+              vector-effect="non-scaling-stroke" />
+        <path d="M60 210 A150 150 0 0 1 360 210"
+              stroke="white"
+              stroke-width="1.25"
+              stroke-opacity="0.40"
+              vector-effect="non-scaling-stroke" />
+        <line x1="210" y1="210" x2="400" y2="210"
+              stroke="url(#radialFade)"
+              stroke-width="1"
+              vector-effect="non-scaling-stroke" />
+        <line x1="360" y1="205" x2="360" y2="215"
+              stroke="white"
+              stroke-width="1"
+              stroke-opacity="0.40"
+              vector-effect="non-scaling-stroke" />
+        <line x1="320" y1="205" x2="320" y2="215"
+              stroke="white"
+              stroke-width="1"
+              stroke-opacity="0.32"
+              vector-effect="non-scaling-stroke" />
+      </g>
     </svg>
   </div>
 </section>
