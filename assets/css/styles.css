@@ -109,6 +109,17 @@ p {
   max-width: 1280px;
 }
 
+.illustration-wrapper {
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.illustration-wrapper svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* =========================================================
    SECTIONS & RHYTHM
    ========================================================= */
