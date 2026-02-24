@@ -167,7 +167,7 @@ p {
 /* subtle breathing space between sections */
 
 .section + .section {
-  margin-top: 12px;
+  margin-top: 0 !important;
 }
 
 /* SECTION TITLES */
