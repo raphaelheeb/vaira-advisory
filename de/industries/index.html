@@ -141,11 +141,140 @@ description: Fortschrittliche Fertigung, Materialverarbeitung und Hardwareentwic
 
       <div class="industries-why-illustration">
         <div class="illustration-container">
-          <!-- SVG unchanged -->
-          <svg viewBox="240 120 480 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img">
-            <!-- ... full SVG content unchanged ... -->
-          </svg>
+
+  <svg viewBox="240 120 480 480"
+     xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="xMidYMid meet"
+     role="img" aria-labelledby="title desc">
+
+  <title id="title">Cross‑industry engineered VAIRA illustration</title>
+  <desc id="desc">
+    Circle divided into four orthogonal segments. Three segments contain minimal
+    engineered micro‑illustrations (dot grid, layered structure, branched process flow),
+    the fourth is intentionally empty. All motifs sit inside an inner circle.
+  </desc>
+
+  <!-- Outer circle -->
+  <circle cx="480" cy="360" r="220"
+          fill="none"
+          stroke="#2B4E5A"
+          stroke-width="3"/>
+
+  <!-- Inner content boundary -->
+  <circle cx="480" cy="360" r="150"
+          fill="none"
+          stroke="#C9DCDC"
+          stroke-width="2"/>
+
+  <!-- Segment backgrounds -->
+  <path d="M480 360 L480 210 A150 150 0 0 0 330 360 Z"
+        fill="#C9DCDC" opacity="0.22"/>
+  <path d="M480 360 L630 360 A150 150 0 0 0 480 210 Z"
+        fill="#C9DCDC" opacity="0.22"/>
+  <path d="M480 360 L480 510 A150 150 0 0 0 630 360 Z"
+        fill="#C9DCDC" opacity="0.22"/>
+
+  <!-- Construction lines -->
+  <line x1="300" y1="360" x2="660" y2="360"
+        stroke="#5F8A8E" stroke-width="2"
+        stroke-dasharray="6 6" stroke-linecap="round"/>
+  <line x1="480" y1="180" x2="480" y2="540"
+        stroke="#5F8A8E" stroke-width="2"
+        stroke-dasharray="6 6" stroke-linecap="round"/>
+
+  <!-- ========================= -->
+  <!-- SEGMENT 1: TOP-LEFT      -->
+  <!-- Dot grid                 -->
+  <!-- ========================= -->
+  <g fill="#2B4E5A">
+    <circle cx="420" cy="300" r="4"/>
+    <circle cx="440" cy="300" r="4"/>
+    <circle cx="460" cy="300" r="4"/>
+
+    <circle cx="420" cy="320" r="4"/>
+    <circle cx="440" cy="320" r="4"/>
+    <circle cx="460" cy="320" r="4"/>
+
+    <circle cx="420" cy="340" r="4"/>
+    <circle cx="440" cy="340" r="4"/>
+    <circle cx="460" cy="340" r="4"/>
+  </g>
+
+<!-- ========================= -->
+<!-- SEGMENT 2: TOP-RIGHT     -->
+<!-- Layered structure (scaled 15% + aligned left edge to x=490) -->
+<!-- ========================= -->
+
+<!-- New transform:
+     1. Scale by 1.15
+     2. Move motif so its left edge = 490
+     Original block left edge = 490 before scaling
+     After scaling, width expands, so we shift left by (scaled_width - original_width)/2
+-->
+
+<g transform="translate(533,318) scale(1.15) translate(-520,-320)">
+  <!-- Background block -->
+  <rect x="490" y="298" width="60" height="48"
+        rx="6" ry="6"
+        fill="#5F8A8E"/>
+
+  <!-- Layer 1 -->
+  <rect x="498" y="304" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
+
+  <!-- Layer 2 -->
+  <rect x="498" y="318" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
+  <line x1="508" y1="322" x2="530" y2="322"
+        stroke="#2B4E5A" stroke-width="1.5"/>
+
+  <!-- Layer 3 -->
+  <rect x="498" y="332" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
+  <g fill="#2B4E5A">
+    <circle cx="508" cy="336" r="2"/>
+    <circle cx="520" cy="336" r="2"/>
+    <circle cx="532" cy="336" r="2"/>
+  </g>
+</g>
+
+  <!-- ========================= -->
+  <!-- SEGMENT 3: BOTTOM-RIGHT  -->
+  <!-- Mirrored curved branching -->
+  <!-- ========================= -->
+  <g transform="translate(20, 0)">
+    <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M520 400 Q500 420 480 440"/>
+      <path d="M520 400 Q540 420 560 440"/>
+    </g>
+
+    <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
+      <circle cx="520" cy="400" r="10"/>
+      <circle cx="480" cy="440" r="10"/>
+      <circle cx="560" cy="440" r="10"/>
+    </g>
+  </g>
+
+  <!-- Process arc -->
+  <path d="M360 360 A120 120 0 0 1 520 260"
+        fill="none"
+        stroke="#2B4E5A"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+</svg>
+
         </div>
+      </div>
       </div>
 
     </div>
