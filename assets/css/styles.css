@@ -947,16 +947,16 @@ p {
 
 #industries-why .illustration-container {
   transform: translateY(-4px) !important;
-  margin-top: 12px;
+  margin-top: -24px;
 }
 
 #industries-why.section {
-  padding-top: 80px !important;
-  padding-bottom: 72px !important;
+  padding-top: 80px;
+  padding-bottom: 72px;
 }
 
 #industries-why h2 {
-  margin-bottom: 24px !important;
+  margin-bottom: 28px;
 }
 
 #industries-why .split-left p {
@@ -965,6 +965,8 @@ p {
 }
 
 #industries-why .split {
-  align-items: start !important;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
 }
+
 
