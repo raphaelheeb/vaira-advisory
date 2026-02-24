@@ -970,20 +970,20 @@ p {
    USE CASES SUBPAGE
    ============================================ */
 
-.micro-illustration {
-  width: 52px;
-  opacity: 0.9;
-  display: block;
-  margin-left: auto;   /* right-align */
-  margin-right: 0px;
-  margin-bottom: 20px; /* spacing before title */
-  height: auto;
+.usecase-block {
+  max-width: 620px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.usecase-block {
-  max-width: 620px;   /* matches your text measure */
-  margin: 0 auto;     /* centers the block */
-  position: relative;
+.micro-illustration {
+  width: 52px;
+  height: auto;
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 
