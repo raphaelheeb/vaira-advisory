@@ -170,7 +170,7 @@ description: Advanced manufacturing, materials processing and hardware design in
 
       <div class="split-right">
 
-        <svg viewBox="0 0 800 800"
+<svg viewBox="0 0 800 800"
      xmlns="http://www.w3.org/2000/svg"
      preserveAspectRatio="xMidYMid meet"
      role="img" aria-labelledby="title desc">
@@ -194,36 +194,24 @@ description: Advanced manufacturing, materials processing and hardware design in
           stroke-width="2"/>
 
   <!-- Segment backgrounds -->
-  <!-- TOP-LEFT -->
   <path d="M480 360 L480 210 A150 150 0 0 0 330 360 Z"
         fill="#C9DCDC" opacity="0.22"/>
-
-  <!-- TOP-RIGHT -->
   <path d="M480 360 L630 360 A150 150 0 0 0 480 210 Z"
         fill="#C9DCDC" opacity="0.22"/>
-
-  <!-- BOTTOM-RIGHT -->
   <path d="M480 360 L480 510 A150 150 0 0 0 630 360 Z"
         fill="#C9DCDC" opacity="0.22"/>
 
-  <!-- BOTTOM-LEFT empty -->
-
   <!-- Construction lines -->
   <line x1="300" y1="360" x2="660" y2="360"
-        stroke="#5F8A8E"
-        stroke-width="2"
-        stroke-dasharray="6 6"
-        stroke-linecap="round"/>
-
+        stroke="#5F8A8E" stroke-width="2"
+        stroke-dasharray="6 6" stroke-linecap="round"/>
   <line x1="480" y1="180" x2="480" y2="540"
-        stroke="#5F8A8E"
-        stroke-width="2"
-        stroke-dasharray="6 6"
-        stroke-linecap="round"/>
+        stroke="#5F8A8E" stroke-width="2"
+        stroke-dasharray="6 6" stroke-linecap="round"/>
 
   <!-- ========================= -->
   <!-- SEGMENT 1: TOP-LEFT      -->
-  <!-- Dot grid (reference)     -->
+  <!-- Dot grid                 -->
   <!-- ========================= -->
   <g fill="#2B4E5A">
     <circle cx="420" cy="300" r="4"/>
@@ -241,11 +229,10 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 2: TOP-RIGHT     -->
-  <!-- Layered structure        -->
-  <!-- Centered like Segment 1  -->
+  <!-- Layered structure (scaled + centered) -->
   <!-- ========================= -->
-  <g>
-    <!-- Background block centered around (520,320), enlarged vertically -->
+  <g transform="translate(20, 10) scale(1.12)">
+    <!-- Background block -->
     <rect x="490" y="298" width="60" height="44"
           rx="6" ry="6"
           fill="#5F8A8E"/>
@@ -281,27 +268,21 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 3: BOTTOM-RIGHT  -->
-  <!-- Mirrored curved branching -->
-  <!-- Centered like Segment 1   -->
+  <!-- Mirrored curved branching (shifted right) -->
   <!-- ========================= -->
+  <g transform="translate(20, 0)">
+    <!-- Branches -->
+    <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M520 400 Q500 420 480 440"/>
+      <path d="M520 400 Q540 420 560 440"/>
+    </g>
 
-  <!-- Branches first (perfect mirror around x=520) -->
-  <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
-    <!-- Left branch -->
-    <path d="M520 400 Q500 420 480 440"/>
-
-    <!-- Right branch (mirrored) -->
-    <path d="M520 400 Q540 420 560 440"/>
-  </g>
-
-  <!-- Nodes drawn last -->
-  <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
-    <!-- Central node on top, centered like Segment 1 but in BR quadrant -->
-    <circle cx="520" cy="400" r="10"/>
-
-    <!-- End nodes -->
-    <circle cx="480" cy="440" r="10"/>
-    <circle cx="560" cy="440" r="10"/>
+    <!-- Nodes -->
+    <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
+      <circle cx="520" cy="400" r="10"/>
+      <circle cx="480" cy="440" r="10"/>
+      <circle cx="560" cy="440" r="10"/>
+    </g>
   </g>
 
   <!-- Process arc -->
