@@ -929,8 +929,8 @@ p {
 /* Title–text spacing ONLY for this section */
 #industries-why h2 {
   margin: 0;
-  padding-bottom: 0px;      /* space above underline */
-  margin-bottom: 0px;      /* tight, controlled gap to text */
+  padding-bottom: 12px;      /* space above underline */
+  margin-bottom: -16px;      /* tight, controlled gap to text */
 }
 
 #industries-why .split-left p {
@@ -941,7 +941,7 @@ p {
 #industries-why .split--industries-why {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;  /* text a bit wider than illustration */
-  column-gap: 0px;
+  column-gap: 20px;
   align-items: center;                 /* center illustration to text block */
 }
 
