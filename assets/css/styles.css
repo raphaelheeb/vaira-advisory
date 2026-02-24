@@ -929,7 +929,7 @@ p {
 /* Left block spacing */
 #industries-why h2 {
   margin-top: 0 !important;
-  margin-bottom: 36px !important;
+  margin-bottom: 32px !important;   /* restores premium rhythm */
 }
 
 #industries-why .split-left p {
@@ -940,19 +940,19 @@ p {
 /* Grid layout */
 #industries-why .split {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* balanced columns */
-  gap: 64px !important;             /* generous breathing room */
-  align-items: start !important;    /* align text + illustration at top */
+  grid-template-columns: 1fr 1fr;    /* balanced columns */
+  gap: 56px !important;              /* breathing room */
+  align-items: start !important;     /* ensures top alignment */
 }
 
 /* Illustration sizing */
 #industries-why .illustration-container svg {
-  max-width: 460px !important;      /* strong, premium presence */
+  max-width: 440px !important;       /* premium, not overpowering */
   width: 100%;
   height: auto;
 }
 
 /* Illustration vertical alignment */
 #industries-why .illustration-container {
-  margin-top: -28px !important;     /* aligns flush with title */
+  margin-top: -48px !important;      /* THIS is the key fix */
 }
