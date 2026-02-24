@@ -937,7 +937,6 @@ p {
 }
 
 #industries-why .illustration-container {
-  transform: translateY(-10px);      /* optical lift */
   max-width: 420px;                  /* prevents oversizing */
   margin: 0 auto;
 }
