@@ -926,44 +926,34 @@ p {
   padding-bottom: 72px !important;
 }
 
-/* Illustration sizing */
-#industries-why .illustration-container svg {
-  max-width: 340px !important;      /* slightly smaller, balanced */
-  width: 100%;
-  height: auto;
-}
-
-/* Illustration vertical fine‑tuning */
-#industries-why .illustration-container {
-  margin-top: -6px !important;      /* subtle lift to match text center */
-}
-
-/* Industries Why — Dedicated Split Layout */
-
-.split--industries-why {
-  display: grid;
-  grid-template-columns: 1fr auto;   /* text left, illustration right */
-  gap: 56px;                         /* generous breathing room */
-  align-items: center;               /* center illustration to text block */
-  padding-left: 0;                   /* remove global 4px nudge */
-}
-
-.split--industries-why .illustration-container svg {
-  max-width: 340px;                  /* balanced size */
-  width: 100%;
-  height: auto;
-}
-
-.split--industries-why .illustration-container {
-  margin-top: -6px;                  /* optical centering */
-}
-
+/* Title + text rhythm for this section only */
 #industries-why h2 {
-  margin-bottom: 20px;               /* tight, premium spacing */
-  padding-bottom: 0;                 /* remove global underline padding */
+  margin-top: 0;
+  padding-bottom: 8px;   /* small space above underline */
+  margin-bottom: 16px;   /* tighter than global 36px */
 }
 
 #industries-why .split-left p {
-  margin: 0;
+  margin: 0;             /* remove extra paragraph spacing */
 }
 
+/* Dedicated split layout (overrides global .split for this section) */
+.split--industries-why {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;  /* text slightly wider than illustration */
+  gap: 40px;                            /* more cohesive than 56px */
+  align-items: center;                  /* center illustration to text block */
+  padding-left: 0;                      /* cancel global 4px nudge */
+}
+
+/* Illustration sizing for this section */
+.split--industries-why .illustration-container svg {
+  max-width: 300px;                     /* slightly smaller, more restrained */
+  width: 100%;
+  height: auto;
+}
+
+/* Let centering do the work – no manual vertical offset */
+.split--industries-why .illustration-container {
+  margin-top: 0;
+}
