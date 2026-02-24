@@ -918,7 +918,7 @@ p {
 }
 
 /* ============================================
-   FINAL — Industries Why Section (self-contained)
+   FINAL — TRUE INDEPENDENT CONTROL
    ============================================ */
 
 #industries-why.section {
@@ -926,34 +926,39 @@ p {
   padding-bottom: 72px;
 }
 
-/* Title–text spacing ONLY for this section */
+/* Layout container */
+.industries-why-layout {
+  position: relative;
+  display: block;
+}
+
+/* Left text block — fully independent */
+.industries-why-text {
+  max-width: 560px;        /* controls text block width */
+  position: relative;
+  z-index: 2;
+}
+
 #industries-why h2 {
   margin: 0;
-  padding-bottom: 12px;      /* space above underline */
-  margin-bottom: 12px;      /* tight, controlled gap to text */
+  padding-bottom: 8px;
+  margin-bottom: 16px;     /* controls title → text spacing */
 }
 
-#industries-why .split-left p {
-  margin: 0;                /* no extra paragraph margin */
+#industries-why p {
+  margin: 0;
 }
 
-/* Local split layout, independent of global .split tuning */
-#industries-why .split--industries-why {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;  /* text a bit wider than illustration */
-  column-gap: 20px;
-  align-items: top;                 /* center illustration to text block */
+/* Right illustration — fully independent */
+.industries-why-illustration {
+  position: absolute;
+  top: 0;                  /* vertical position */
+  right: 0;                /* horizontal position */
+  z-index: 1;
 }
 
-/* Illustration sizing — fully independent */
-#industries-why .illustration-container svg {
-  max-width: 300px;                    /* adjust this number to taste */
+.industries-why-illustration .illustration-container svg {
+  max-width: 300px;        /* controls illustration size */
   width: 100%;
   height: auto;
-}
-
-/* Vertical position of the illustration relative to the text block */
-#industries-why .illustration-container {
-  margin-top: 0;                       /* start neutral */
-  /* e.g. margin-top: -8px; if you want a tiny optical lift */
 }
