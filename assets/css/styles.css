@@ -966,12 +966,23 @@ p {
   margin-top: 0;                     /* vertical position control */
 }
 
+/* ============================================
+   USE CASES SUBPAGE
+   ============================================ */
+
 .micro-illustration {
   width: 52px;
-  height: auto;
   opacity: 0.9;
   display: block;
   margin-left: auto;   /* right-align */
-  margin-right: 8px;
+  margin-right: 0px;
   margin-bottom: 24px; /* spacing before title */
 }
+
+.usecase-block {
+  max-width: 620px;   /* matches your text measure */
+  margin: 0 auto;     /* centers the block */
+  position: relative;
+}
+
+
