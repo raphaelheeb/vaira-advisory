@@ -193,7 +193,7 @@ description: Advanced manufacturing, materials processing and hardware design in
           stroke="#C9DCDC"
           stroke-width="2"/>
 
-  <!-- Segment backgrounds (3 active, 1 empty) -->
+  <!-- Segment backgrounds -->
   <!-- TOP-LEFT -->
   <path d="M480 360 L480 210 A150 150 0 0 0 330 360 Z"
         fill="#C9DCDC" opacity="0.22"/>
@@ -206,10 +206,9 @@ description: Advanced manufacturing, materials processing and hardware design in
   <path d="M480 360 L480 510 A150 150 0 0 0 630 360 Z"
         fill="#C9DCDC" opacity="0.22"/>
 
-  <!-- BOTTOM-LEFT (empty) -->
-  <!-- intentionally no fill -->
+  <!-- BOTTOM-LEFT empty -->
 
-  <!-- Orthogonal construction lines (shortened) -->
+  <!-- Construction lines -->
   <line x1="300" y1="360" x2="660" y2="360"
         stroke="#5F8A8E"
         stroke-width="2"
@@ -224,7 +223,7 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 1: TOP-LEFT      -->
-  <!-- Dot grid (unchanged)     -->
+  <!-- Dot grid                 -->
   <!-- ========================= -->
   <g fill="#2B4E5A">
     <circle cx="420" cy="300" r="4"/>
@@ -242,40 +241,40 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 2: TOP-RIGHT     -->
-  <!-- Layered structure (scaled down) -->
+  <!-- Layered structure (scaled and corrected) -->
   <!-- ========================= -->
   <g>
-    <!-- Background block (smaller) -->
-    <rect x="535" y="250" width="80" height="45"
+    <!-- Background block (smaller, centered inside inner circle) -->
+    <rect x="525" y="245" width="70" height="40"
           rx="8" ry="8"
           fill="#5F8A8E"/>
 
-    <!-- Layer 1 (clean) -->
-    <rect x="545" y="258" width="60" height="10"
-          rx="5" ry="5"
+    <!-- Layer 1 -->
+    <rect x="535" y="252" width="50" height="8"
+          rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
 
-    <!-- Layer 2 (hatch) -->
-    <rect x="545" y="273" width="60" height="10"
-          rx="5" ry="5"
+    <!-- Layer 2 -->
+    <rect x="535" y="266" width="50" height="8"
+          rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
-    <line x1="558" y1="278" x2="585" y2="278"
+    <line x1="548" y1="270" x2="570" y2="270"
           stroke="#2B4E5A" stroke-width="1.5"/>
 
-    <!-- Layer 3 (dots) -->
-    <rect x="545" y="288" width="60" height="10"
-          rx="5" ry="5"
+    <!-- Layer 3 -->
+    <rect x="535" y="280" width="50" height="8"
+          rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
     <g fill="#2B4E5A">
-      <circle cx="558" cy="293" r="2"/>
-      <circle cx="573" cy="293" r="2"/>
-      <circle cx="588" cy="293" r="2"/>
+      <circle cx="548" cy="284" r="2"/>
+      <circle cx="563" cy="284" r="2"/>
+      <circle cx="578" cy="284" r="2"/>
     </g>
   </g>
 
@@ -284,18 +283,18 @@ description: Advanced manufacturing, materials processing and hardware design in
   <!-- Mirrored curved branching -->
   <!-- ========================= -->
 
-  <!-- Branches first -->
+  <!-- Branches first (identical curves, mirrored) -->
   <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
     <!-- Left branch -->
     <path d="M520 420 Q500 460 520 500"/>
 
-    <!-- Right branch (mirrored curvature) -->
+    <!-- Right branch (mirrored horizontally) -->
     <path d="M520 420 Q540 460 560 500"/>
   </g>
 
-  <!-- Nodes drawn last so they sit on top -->
+  <!-- Nodes drawn last -->
   <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
-    <!-- Central node (on top) -->
+    <!-- Central node on top -->
     <circle cx="520" cy="420" r="10"/>
 
     <!-- End nodes -->
@@ -303,9 +302,7 @@ description: Advanced manufacturing, materials processing and hardware design in
     <circle cx="560" cy="500" r="10"/>
   </g>
 
-  <!-- ========================= -->
-  <!-- Process arc (unchanged)   -->
-  <!-- ========================= -->
+  <!-- Process arc -->
   <path d="M360 360 A120 120 0 0 1 520 260"
         fill="none"
         stroke="#2B4E5A"
@@ -313,6 +310,7 @@ description: Advanced manufacturing, materials processing and hardware design in
         stroke-linecap="round"/>
 
 </svg>
+
         
       </div>
     </div>
