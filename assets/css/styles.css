@@ -930,7 +930,7 @@ p {
 #industries-why h2 {
   margin: 0;
   padding-bottom: 12px;      /* space above underline */
-  margin-bottom: -16px;      /* tight, controlled gap to text */
+  margin-bottom: 12px;      /* tight, controlled gap to text */
 }
 
 #industries-why .split-left p {
@@ -942,7 +942,7 @@ p {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;  /* text a bit wider than illustration */
   column-gap: 20px;
-  align-items: center;                 /* center illustration to text block */
+  align-items: top;                 /* center illustration to text block */
 }
 
 /* Illustration sizing — fully independent */
