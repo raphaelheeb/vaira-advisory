@@ -15,7 +15,8 @@ description: Advanced manufacturing, materials processing and hardware design in
     </p>
   </div>
 
-  <div class="cad-hero-shape">
+  <!-- CAD ARC — repositioned to lower right -->
+  <div class="cad-hero-shape cad-hero-shape--lower-right" style="bottom:-80px; top:auto; right:-120px; position:absolute;">
     <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
@@ -55,11 +56,11 @@ description: Advanced manufacturing, materials processing and hardware design in
 </section>
 
 <!-- WHERE WE CREATE VALUE -->
-<section id="industries-core" class="section">
+<section id="services" class="section">
   <div class="content-wrapper wrapper--narrow">
     <h2>Where We Create Value</h2>
 
-    <div class="card-grid">
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
       <div class="card">
         <h3>Advanced Manufacturing</h3>
         <ul>
@@ -94,65 +95,60 @@ description: Advanced manufacturing, materials processing and hardware design in
 </section>
 
 <!-- INDUSTRIES WE WORK IN -->
-<section id="industries-grid" class="section section--lighter">
+<section id="industries-list" class="section section--lighter">
   <div class="content-wrapper wrapper--narrow">
     <h2>Industries We Work In</h2>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Energy &amp; Electrification</h3>
-        <ul>
-          <li>Batteries and energy storage</li>
-          <li>Electric mobility and powertrains</li>
-          <li>Power electronics and conversion</li>
-          <li>Clean‑tech manufacturing</li>
-        </ul>
+    <div class="why-grid">
+
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>Energy & Electrification</h3>
+          <p>Batteries, EV systems, power electronics, and clean‑tech manufacturing.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>MedTech &amp; Life Sciences</h3>
-        <ul>
-          <li>Medical devices and diagnostics</li>
-          <li>Precision components and assemblies</li>
-          <li>Regulated manufacturing environments</li>
-        </ul>
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>MedTech & Life Sciences</h3>
+          <p>Devices, diagnostics, precision components, and regulated production.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Industrial &amp; Automation</h3>
-        <ul>
-          <li>Robotics and motion systems</li>
-          <li>Sensors, control, and embedded systems</li>
-          <li>High‑performance machinery</li>
-        </ul>
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>Industrial & Automation</h3>
+          <p>Robotics, motion systems, sensors, control, and high‑performance machinery.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Aerospace &amp; High‑Performance Systems</h3>
-        <ul>
-          <li>Lightweight materials and structures</li>
-          <li>Reliability, qualification, and certification</li>
-          <li>High‑precision manufacturing</li>
-        </ul>
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>Aerospace & High‑Performance Systems</h3>
+          <p>Lightweight structures, reliability, qualification, and precision manufacturing.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Consumer &amp; Performance Products</h3>
-        <ul>
-          <li>Premium hardware and devices</li>
-          <li>Sports, mobility, and outdoor equipment</li>
-          <li>Wearables and smart products</li>
-        </ul>
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>Consumer & Performance Products</h3>
+          <p>Premium hardware, sports and mobility equipment, wearables, and smart devices.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Emerging Deep‑Tech Ventures</h3>
-        <ul>
-          <li>Hardware startups and scale‑ups</li>
-          <li>Industrialization strategy and execution</li>
-          <li>Rapid prototyping to production</li>
-        </ul>
+      <div class="feature-block">
+        <div class="feature-block-icon"></div>
+        <div>
+          <h3>Emerging Deep‑Tech Ventures</h3>
+          <p>Hardware startups, scale‑ups, industrialization strategy, and rapid prototyping.</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -183,10 +179,9 @@ description: Advanced manufacturing, materials processing and hardware design in
 
 <!-- CTA -->
 <section class="section section--alt">
-  <div class="content-wrapper wrapper--narrow" style="text-align:center;">
+  <div class="content-wrapper wrapper--narrow">
     <h2>Discuss Your Technical Challenge</h2>
     <p>We support teams where complexity, precision, and speed are critical.</p>
     <a href="/contact" class="cta-btn cta-btn--primary">Start a Conversation</a>
   </div>
 </section>
-
