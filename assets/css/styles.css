@@ -946,3 +946,18 @@ p {
   max-width: 520px;
   height: auto;
 }
+
+/* Tighter vertical rhythm for the Cross-Industry section */
+#industries-why.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#industries-why h2 {
+  margin-bottom: 20px; /* was 36px */
+}
+
+#industries-why .split-left p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
