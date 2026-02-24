@@ -918,46 +918,34 @@ p {
 }
 
 /* ============================================
-   INDUSTRIES — Why Cross-Industry Experience Matters
+   Industries - Why Section
    ============================================ */
 
-#industries-why .split {
-  grid-template-columns: 1.2fr 1fr; /* 60/40 balance */
-  gap: 40px;                         /* tighter relationship */
-  align-items: center;               /* vertical cohesion */
-}
-
-#industries-why .split-left {
-  max-width: 540px;                  /* strong text column */
-}
-
-#industries-why .split-right {
-  display: flex;
-  justify-content: center;           /* centers illustration wrapper */
-}
-
-#industries-why .illustration-container {
-  max-width: 420px;                  /* prevents oversizing */
-  margin: 0 auto;
-}
-
-#industries-why .illustration-container svg {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-}
-
-/* Tighter vertical rhythm for the Cross-Industry section */
 #industries-why.section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
 
 #industries-why h2 {
-  margin-bottom: 20px; /* was 36px */
+  margin-bottom: 16px !important;
+}
+
+#industries-why .split {
+  gap: 28px !important;
+  align-items: center !important;
 }
 
 #industries-why .split-left p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#industries-why .illustration-container svg {
+  max-width: 520px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+#industries-why .illustration-container {
+  transform: translateY(-6px) !important;
 }
