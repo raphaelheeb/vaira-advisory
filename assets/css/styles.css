@@ -931,12 +931,16 @@ p {
 .industries-why-inner {
   display: grid;
   grid-template-columns: 1fr auto;   /* left text, right illustration */
-  column-gap: 40px;
+  column-gap: 28px;
   align-items: start;                /* text stays at top */
   position: relative;
 }
 
 /* Left block */
+.industries-why-text {
+  max-width: 560px;   /* adjust text block width */
+}
+
 .industries-why-text h2 {
   margin: 0;
   padding-bottom: 8px;
@@ -953,7 +957,7 @@ p {
 }
 
 .industries-why-illustration svg {
-  max-width: 300px;                  /* illustration size */
+  max-width: 260px;                  /* illustration size */
   width: 100%;
   height: auto;
   display: block;
