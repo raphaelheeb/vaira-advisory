@@ -965,3 +965,10 @@ p {
   display: block;
   margin-top: 0;                     /* vertical position control */
 }
+
+.micro-illustration {
+  width: 72px;
+  height: auto;
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
