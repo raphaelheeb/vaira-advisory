@@ -594,6 +594,7 @@ p {
 
 .lang-btn {
   font-size: 14px;
+  border-radius: 8px;
   padding: 6px 14px;
   border-radius: 12px;
   background: transparent;
