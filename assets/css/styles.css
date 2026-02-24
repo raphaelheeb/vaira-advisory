@@ -967,8 +967,11 @@ p {
 }
 
 .micro-illustration {
-  width: 72px;
+  width: 52px;
   height: auto;
-  margin-bottom: 16px;
-  opacity: 0.85;
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;   /* right-align */
+  margin-right: 0;
+  margin-bottom: 24px; /* spacing before title */
 }
