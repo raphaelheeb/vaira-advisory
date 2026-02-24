@@ -916,3 +916,13 @@ p {
 .split-image.case {
   max-width: 420px !important;
 }
+
+/* Improve cohesion in "Why Cross-Industry Experience Matters" */
+#industries-why .split {
+  align-items: center;     /* vertical alignment */
+  gap: 32px;               /* reduce horizontal separation */
+}
+
+#industries-why .split-right svg {
+  transform: translateY(-12px); /* optical correction */
+}
