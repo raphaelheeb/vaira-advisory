@@ -946,12 +946,12 @@ p {
 
 /* Illustration sizing */
 #industries-why .illustration-container svg {
-  max-width: 360px !important;      /* FIXED: slightly smaller */
+  max-width: 340px !important;      /* slightly smaller, balanced */
   width: 100%;
   height: auto;
 }
 
 /* Illustration vertical fine‑tuning */
 #industries-why .illustration-container {
-  margin-top: -8px !important;      /* subtle lift to match text center */
+  margin-top: -6px !important;      /* subtle lift to match text center */
 }
