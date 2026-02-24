@@ -169,8 +169,8 @@ description: Advanced manufacturing, materials processing and hardware design in
       </div>
 
       <div class="split-right">
-        
-<svg viewBox="0 0 800 800"
+
+        <svg viewBox="0 0 800 800"
      xmlns="http://www.w3.org/2000/svg"
      preserveAspectRatio="xMidYMid meet"
      role="img" aria-labelledby="title desc">
@@ -223,7 +223,7 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 1: TOP-LEFT      -->
-  <!-- Dot grid                 -->
+  <!-- Dot grid (reference)     -->
   <!-- ========================= -->
   <g fill="#2B4E5A">
     <circle cx="420" cy="300" r="4"/>
@@ -241,65 +241,67 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 2: TOP-RIGHT     -->
-  <!-- Layered structure (scaled + corrected) -->
+  <!-- Layered structure        -->
+  <!-- Centered like Segment 1  -->
   <!-- ========================= -->
   <g>
-    <!-- Background block (now fully inside inner circle) -->
-    <rect x="540" y="245" width="60" height="35"
+    <!-- Background block centered around (520,320), enlarged vertically -->
+    <rect x="490" y="298" width="60" height="44"
           rx="6" ry="6"
           fill="#5F8A8E"/>
 
     <!-- Layer 1 -->
-    <rect x="548" y="252" width="44" height="7"
+    <rect x="498" y="304" width="44" height="8"
           rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
 
     <!-- Layer 2 -->
-    <rect x="548" y="264" width="44" height="7"
+    <rect x="498" y="316" width="44" height="8"
           rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
-    <line x1="558" y1="268" x2="580" y2="268"
+    <line x1="508" y1="320" x2="530" y2="320"
           stroke="#2B4E5A" stroke-width="1.5"/>
 
     <!-- Layer 3 -->
-    <rect x="548" y="276" width="44" height="7"
+    <rect x="498" y="328" width="44" height="8"
           rx="4" ry="4"
           fill="#FFFFFF"
           stroke="#2B4E5A"
           stroke-width="2"/>
     <g fill="#2B4E5A">
-      <circle cx="558" cy="279" r="2"/>
-      <circle cx="570" cy="279" r="2"/>
-      <circle cx="582" cy="279" r="2"/>
+      <circle cx="508" cy="332" r="2"/>
+      <circle cx="520" cy="332" r="2"/>
+      <circle cx="532" cy="332" r="2"/>
     </g>
   </g>
 
   <!-- ========================= -->
   <!-- SEGMENT 3: BOTTOM-RIGHT  -->
-  <!-- Perfect mirrored branching -->
+  <!-- Mirrored curved branching -->
+  <!-- Centered like Segment 1   -->
   <!-- ========================= -->
 
-  <!-- Branches first -->
+  <!-- Branches first (perfect mirror around x=520) -->
   <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
     <!-- Left branch -->
-    <path d="M520 420 Q500 460 520 500"/>
+    <path d="M520 400 Q500 420 480 440"/>
 
-    <!-- Right branch (perfect mirror) -->
-    <path d="M520 420 Q540 460 560 500"/>
+    <!-- Right branch (mirrored) -->
+    <path d="M520 400 Q540 420 560 440"/>
   </g>
 
   <!-- Nodes drawn last -->
   <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
-    <!-- Central node on top -->
-    <circle cx="520" cy="420" r="10"/>
+    <!-- Central node on top, centered like Segment 1 but in BR quadrant -->
+    <circle cx="520" cy="400" r="10"/>
 
     <!-- End nodes -->
-    <circle cx="520" cy="500" r="10"/>
-    <circle cx="560" cy="500" r="10"/>
+    <circle cx="480" cy="440" r="10"/>
+    <circle cx="560" cy="440" r="10"/>
   </g>
 
   <!-- Process arc -->
