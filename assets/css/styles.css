@@ -926,14 +926,6 @@ p {
   padding-bottom: 72px !important;
 }
 
-/* Grid layout */
-#industries-why .split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px !important;
-  align-items: center !important;   /* CENTER illustration to text block */
-}
-
 /* Illustration sizing */
 #industries-why .illustration-container svg {
   max-width: 340px !important;      /* slightly smaller, balanced */
