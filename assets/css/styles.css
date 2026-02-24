@@ -947,6 +947,7 @@ p {
 
 #industries-why .illustration-container {
   transform: translateY(-4px) !important;
+  margin-top: 12px;
 }
 
 /* FINAL FIX — Industries Why Section */
@@ -966,7 +967,6 @@ p {
 }
 
 #industries-why .split {
-  gap: 24px !important;
-  align-items: center !important;
+  align-items: start !important;
 }
 
