@@ -921,44 +921,41 @@ p {
    FINAL — TRUE INDEPENDENT CONTROL
    ============================================ */
 
+/* Outer section stays the same */
 #industries-why.section {
   padding-top: 80px;
   padding-bottom: 72px;
 }
 
-/* Layout container */
-.industries-why-layout {
+/* NEW: inner layout wrapper */
+.industries-why-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;   /* left text, right illustration */
+  column-gap: 40px;
+  align-items: start;                /* text stays at top */
   position: relative;
-  display: block;
 }
 
-/* Left text block — fully independent */
-.industries-why-text {
-  max-width: 560px;        /* controls text block width */
-  position: relative;
-  z-index: 2;
-}
-
-#industries-why h2 {
+/* Left block */
+.industries-why-text h2 {
   margin: 0;
   padding-bottom: 8px;
-  margin-bottom: 16px;     /* controls title → text spacing */
+  margin-bottom: 16px;               /* title → text spacing */
 }
 
-#industries-why p {
+.industries-why-text p {
   margin: 0;
 }
 
-/* Right illustration — fully independent */
+/* Right block — fully independent */
 .industries-why-illustration {
-  position: absolute;
-  top: 0;                  /* vertical position */
-  right: 0;                /* horizontal position */
-  z-index: 1;
+  position: relative;                /* stays inside the grid cell */
 }
 
-.industries-why-illustration .illustration-container svg {
-  max-width: 300px;        /* controls illustration size */
+.industries-why-illustration svg {
+  max-width: 300px;                  /* illustration size */
   width: 100%;
   height: auto;
+  display: block;
+  margin-top: 0;                     /* vertical position control */
 }
