@@ -940,7 +940,7 @@ p {
 }
 
 #industries-why .illustration-container svg {
-  max-width: 220px !important;
+  max-width: 480px;
   width: 100%;
   height: auto;
 }
@@ -966,7 +966,7 @@ p {
 
 #industries-why .split {
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
+  gap: 48px;
 }
 
 
