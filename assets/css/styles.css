@@ -918,42 +918,42 @@ p {
 }
 
 /* ============================================
-   FINAL OVERRIDE — Industries Why Section
+   FINAL — Industries Why Section (self-contained)
    ============================================ */
 
 #industries-why.section {
-  padding-top: 80px !important;
-  padding-bottom: 72px !important;
+  padding-top: 80px;
+  padding-bottom: 72px;
 }
 
-/* Title + text rhythm for this section only */
+/* Title–text spacing ONLY for this section */
 #industries-why h2 {
-  margin-top: 0;
-  padding-bottom: 8px;   /* small space above underline */
-  margin-bottom: 16px;   /* tighter than global 36px */
+  margin: 0;
+  padding-bottom: 8px;      /* space above underline */
+  margin-bottom: 16px;      /* tight, controlled gap to text */
 }
 
 #industries-why .split-left p {
-  margin: 0;             /* remove extra paragraph spacing */
+  margin: 0;                /* no extra paragraph margin */
 }
 
-/* Dedicated split layout (overrides global .split for this section) */
-.split--industries-why {
+/* Local split layout, independent of global .split tuning */
+#industries-why .split--industries-why {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;  /* text slightly wider than illustration */
-  gap: 40px;                            /* more cohesive than 56px */
-  align-items: center;                  /* center illustration to text block */
-  padding-left: 0;                      /* cancel global 4px nudge */
+  grid-template-columns: 1.1fr 0.9fr;  /* text a bit wider than illustration */
+  column-gap: 40px;
+  align-items: center;                 /* center illustration to text block */
 }
 
-/* Illustration sizing for this section */
-.split--industries-why .illustration-container svg {
-  max-width: 300px;                     /* slightly smaller, more restrained */
+/* Illustration sizing — fully independent */
+#industries-why .illustration-container svg {
+  max-width: 300px;                    /* adjust this number to taste */
   width: 100%;
   height: auto;
 }
 
-/* Let centering do the work – no manual vertical offset */
-.split--industries-why .illustration-container {
-  margin-top: 0;
+/* Vertical position of the illustration relative to the text block */
+#industries-why .illustration-container {
+  margin-top: 0;                       /* start neutral */
+  /* e.g. margin-top: -8px; if you want a tiny optical lift */
 }
