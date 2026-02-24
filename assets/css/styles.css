@@ -940,9 +940,9 @@ p {
 }
 
 #industries-why .illustration-container svg {
-  max-width: 520px !important;
-  width: 100% !important;
-  height: auto !important;
+  max-width: 220px !important;
+  width: 100%;
+  height: auto;
 }
 
 #industries-why .illustration-container {
@@ -950,20 +950,18 @@ p {
   margin-top: 12px;
 }
 
-/* FINAL FIX — Industries Why Section */
 #industries-why.section {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
+  padding-top: 80px !important;
+  padding-bottom: 72px !important;
 }
 
 #industries-why h2 {
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 24px !important;
 }
 
 #industries-why .split-left p {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #industries-why .split {
