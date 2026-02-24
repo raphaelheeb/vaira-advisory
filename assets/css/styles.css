@@ -943,8 +943,8 @@ p {
 
 .industries-why-text h2 {
   margin: 0;
-  padding-bottom: 8px;
-  margin-bottom: 16px;               /* title → text spacing */
+  padding-bottom: 12px;
+  margin-bottom: 28px;               /* title → text spacing */
 }
 
 .industries-why-text p {
