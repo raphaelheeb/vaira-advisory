@@ -926,15 +926,18 @@ p {
   padding-bottom: 72px !important;
 }
 
-/* Left block spacing */
+/* Industries Why — tighten title–text spacing only here */
 #industries-why h2 {
   margin-top: 0 !important;
-  margin-bottom: 24px !important;   /* FIXED: consistent with your site */
+  padding-bottom: 0 !important;   /* remove extra 12px under the title */
+  margin-bottom: 16px !important; /* tighter than global 24–36px */
 }
 
 #industries-why .split-left p {
-  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
+
 
 /* Grid layout */
 #industries-why .split {
