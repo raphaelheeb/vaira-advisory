@@ -922,8 +922,8 @@ p {
    ============================================ */
 
 #industries-why {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 #industries-why h2 {
@@ -931,13 +931,12 @@ p {
 }
 
 #industries-why .split {
-  gap: 24px !important;
+  gap: 20px !important;
   align-items: center !important;
 }
 
 #industries-why .split-left p {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
 }
 
 #industries-why .illustration-container svg {
@@ -948,4 +947,6 @@ p {
 
 #industries-why .illustration-container {
   transform: translateY(-4px) !important;
+}
+
 }
