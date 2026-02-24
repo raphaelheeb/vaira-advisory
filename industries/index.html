@@ -229,9 +229,14 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 2: TOP-RIGHT     -->
-  <!-- Layered structure (scaled + centered) -->
+  <!-- Layered structure (scaled + centered at 520,320) -->
   <!-- ========================= -->
-  <g transform="translate(20, 10) scale(1.12)">
+
+  <!-- Center of motif should be at (520,320).
+       Original motif center was approx (520, 320) BEFORE scaling.
+       After scaling, we recenter using translate. -->
+
+  <g transform="translate(520,320) scale(1.12) translate(-520,-320)">
     <!-- Background block -->
     <rect x="490" y="298" width="60" height="44"
           rx="6" ry="6"
@@ -268,16 +273,14 @@ description: Advanced manufacturing, materials processing and hardware design in
 
   <!-- ========================= -->
   <!-- SEGMENT 3: BOTTOM-RIGHT  -->
-  <!-- Mirrored curved branching (shifted right) -->
+  <!-- Mirrored curved branching (already correct) -->
   <!-- ========================= -->
   <g transform="translate(20, 0)">
-    <!-- Branches -->
     <g stroke="#2B4E5A" stroke-width="3" stroke-linecap="round" fill="none">
       <path d="M520 400 Q500 420 480 440"/>
       <path d="M520 400 Q540 420 560 440"/>
     </g>
 
-    <!-- Nodes -->
     <g stroke="#2B4E5A" stroke-width="3" fill="#FFFFFF">
       <circle cx="520" cy="400" r="10"/>
       <circle cx="480" cy="440" r="10"/>
@@ -293,6 +296,7 @@ description: Advanced manufacturing, materials processing and hardware design in
         stroke-linecap="round"/>
 
 </svg>
+
 
         
       </div>
