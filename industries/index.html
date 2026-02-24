@@ -227,49 +227,52 @@ description: Advanced manufacturing, materials processing and hardware design in
     <circle cx="460" cy="340" r="4"/>
   </g>
 
-  <!-- ========================= -->
-  <!-- SEGMENT 2: TOP-RIGHT     -->
-  <!-- Layered structure (scaled + shifted right) -->
-  <!-- ========================= -->
+<!-- ========================= -->
+<!-- SEGMENT 2: TOP-RIGHT     -->
+<!-- Layered structure (scaled 15% + aligned left edge to x=490) -->
+<!-- ========================= -->
 
-  <!-- New center target: (520, 320)
-       + shift right by ~3× previous spacing
-       + scale by 1.15 -->
+<!-- New transform:
+     1. Scale by 1.15
+     2. Move motif so its left edge = 490
+     Original block left edge = 490 before scaling
+     After scaling, width expands, so we shift left by (scaled_width - original_width)/2
+-->
 
-  <g transform="translate(560,320) scale(1.15) translate(-520,-320)">
-    <!-- Background block -->
-    <rect x="490" y="298" width="60" height="48"
-          rx="6" ry="6"
-          fill="#5F8A8E"/>
+<g transform="translate(545,320) scale(1.15) translate(-520,-320)">
+  <!-- Background block -->
+  <rect x="490" y="298" width="60" height="48"
+        rx="6" ry="6"
+        fill="#5F8A8E"/>
 
-    <!-- Layer 1 -->
-    <rect x="498" y="304" width="44" height="8"
-          rx="4" ry="4"
-          fill="#FFFFFF"
-          stroke="#2B4E5A"
-          stroke-width="2"/>
+  <!-- Layer 1 -->
+  <rect x="498" y="304" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
 
-    <!-- Layer 2 -->
-    <rect x="498" y="318" width="44" height="8"
-          rx="4" ry="4"
-          fill="#FFFFFF"
-          stroke="#2B4E5A"
-          stroke-width="2"/>
-    <line x1="508" y1="322" x2="530" y2="322"
-          stroke="#2B4E5A" stroke-width="1.5"/>
+  <!-- Layer 2 -->
+  <rect x="498" y="318" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
+  <line x1="508" y1="322" x2="530" y2="322"
+        stroke="#2B4E5A" stroke-width="1.5"/>
 
-    <!-- Layer 3 -->
-    <rect x="498" y="332" width="44" height="8"
-          rx="4" ry="4"
-          fill="#FFFFFF"
-          stroke="#2B4E5A"
-          stroke-width="2"/>
-    <g fill="#2B4E5A">
-      <circle cx="508" cy="336" r="2"/>
-      <circle cx="520" cy="336" r="2"/>
-      <circle cx="532" cy="336" r="2"/>
-    </g>
+  <!-- Layer 3 -->
+  <rect x="498" y="332" width="44" height="8"
+        rx="4" ry="4"
+        fill="#FFFFFF"
+        stroke="#2B4E5A"
+        stroke-width="2"/>
+  <g fill="#2B4E5A">
+    <circle cx="508" cy="336" r="2"/>
+    <circle cx="520" cy="336" r="2"/>
+    <circle cx="532" cy="336" r="2"/>
   </g>
+</g>
 
   <!-- ========================= -->
   <!-- SEGMENT 3: BOTTOM-RIGHT  -->
