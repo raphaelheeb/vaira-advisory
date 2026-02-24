@@ -918,20 +918,20 @@ p {
 }
 
 /* ============================================
-   Industries - Why Section
+   FINAL OVERRIDE — Industries Why Section
    ============================================ */
 
-#industries-why.section {
-  padding-top: 32px !important;
-  padding-bottom: 32px !important;
+#industries-why {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
 }
 
 #industries-why h2 {
-  margin-bottom: 16px !important;
+  margin-bottom: 12px !important;
 }
 
 #industries-why .split {
-  gap: 28px !important;
+  gap: 24px !important;
   align-items: center !important;
 }
 
@@ -947,5 +947,5 @@ p {
 }
 
 #industries-why .illustration-container {
-  transform: translateY(-6px) !important;
+  transform: translateY(-4px) !important;
 }
