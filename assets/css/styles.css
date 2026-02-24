@@ -941,3 +941,10 @@ p {
   max-width: 420px;                  /* prevents oversizing */
   margin: 0 auto;
 }
+
+#industries-why .illustration-container svg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+}
