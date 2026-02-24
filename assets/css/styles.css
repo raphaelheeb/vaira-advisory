@@ -921,52 +921,38 @@ p {
    FINAL OVERRIDE — Industries Why Section
    ============================================ */
 
-#industries-why {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+#industries-why.section {
+  padding-top: 80px !important;
+  padding-bottom: 72px !important;
 }
 
+/* Left block spacing */
 #industries-why h2 {
-  margin-bottom: 12px !important;
-}
-
-#industries-why .split {
-  gap: 20px !important;
-  align-items: center !important;
+  margin-top: 0 !important;
+  margin-bottom: 36px !important;
 }
 
 #industries-why .split-left p {
-  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
+/* Grid layout */
+#industries-why .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* balanced columns */
+  gap: 64px !important;             /* generous breathing room */
+  align-items: start !important;    /* align text + illustration at top */
+}
+
+/* Illustration sizing */
 #industries-why .illustration-container svg {
-  max-width: 320px;
+  max-width: 460px !important;      /* strong, premium presence */
   width: 100%;
   height: auto;
 }
 
+/* Illustration vertical alignment */
 #industries-why .illustration-container {
-  transform: translateY(-4px) !important;
-  margin-top: -24px;
+  margin-top: -28px !important;     /* aligns flush with title */
 }
-
-#industries-why.section {
-  padding-top: 80px;
-  padding-bottom: 72px;
-}
-
-#industries-why h2 {
-  margin-bottom: 28px;
-}
-
-#industries-why .split-left p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#industries-why .split {
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
-}
-
-
