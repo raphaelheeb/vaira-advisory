@@ -976,7 +976,8 @@ p {
   display: block;
   margin-left: auto;   /* right-align */
   margin-right: 0px;
-  margin-bottom: 24px; /* spacing before title */
+  margin-bottom: 20px; /* spacing before title */
+  height: auto;
 }
 
 .usecase-block {
