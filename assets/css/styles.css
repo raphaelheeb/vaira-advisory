@@ -917,12 +917,27 @@ p {
   max-width: 420px !important;
 }
 
-/* Improve cohesion in "Why Cross-Industry Experience Matters" */
+/* ============================================
+   INDUSTRIES — Why Cross-Industry Experience Matters
+   ============================================ */
+
 #industries-why .split {
-  align-items: center;     /* vertical alignment */
-  gap: 32px;               /* reduce horizontal separation */
+  grid-template-columns: 1.35fr 1fr; /* 60/40 balance */
+  gap: 32px;                         /* tighter relationship */
+  align-items: center;               /* vertical cohesion */
 }
 
-#industries-why .split-right svg {
-  transform: translateY(-12px); /* optical correction */
+#industries-why .split-left {
+  max-width: 560px;                  /* strong text column */
+}
+
+#industries-why .split-right {
+  display: flex;
+  justify-content: center;           /* centers illustration wrapper */
+}
+
+#industries-why .illustration-container {
+  transform: translateY(-10px);      /* optical lift */
+  max-width: 420px;                  /* prevents oversizing */
+  margin: 0 auto;
 }
