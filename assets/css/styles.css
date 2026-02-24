@@ -949,4 +949,24 @@ p {
   transform: translateY(-4px) !important;
 }
 
+/* FINAL FIX — Industries Why Section */
+#industries-why.section {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
 }
+
+#industries-why h2 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+#industries-why .split-left p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#industries-why .split {
+  gap: 24px !important;
+  align-items: center !important;
+}
+
