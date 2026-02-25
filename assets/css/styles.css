@@ -982,7 +982,7 @@ p {
 
 /* 2. USE CASE ITEM — spacing between use cases */
 .use-cases-selected .usecase-item {
-  margin-bottom: 140px !important;
+  margin-bottom: 40px !important;
 }
 
 .use-cases-selected .usecase-item:last-child {
