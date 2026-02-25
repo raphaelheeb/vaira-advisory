@@ -985,10 +985,6 @@ p {
   margin-bottom: 20px;
 }
 
-.usecase-block {
-  display: block !important;
-}
-
 .usecase-block * {
   flex: none !important;
 }
