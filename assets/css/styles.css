@@ -976,7 +976,13 @@ p {
   height: auto;
   opacity: 0.75;
   display: block;
-  margin: 0 0 14px 0; /* tight, intentional spacing above title */
+  margin: 0 0 14px 0;
+}
+
+/* Ensure SVGs inside micro-illustration render at correct size */
+.use-cases .micro-illustration svg {
+  width: 48px;
+  height: 48px;
 }
 
 /* Section spacing — ONLY on this page */
@@ -990,14 +996,26 @@ body.use-cases h2 + .usecase-block {
   margin-top: 32px;
 }
 
-/* Spacing between use case blocks (inside a section) */
+/* Use case block spacing + divider */
 body.use-cases .usecase-block {
-  margin-bottom: 48px;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px; /* more breathing room for 4 blocks */
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Remove divider from last block */
+body.use-cases .usecase-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 /* Internal spacing inside each use case */
 
-/* Title → body spacing (most important refinement) */
+/* Title → body spacing */
 body.use-cases .usecase-block h3 {
   margin-bottom: 24px;
 }
@@ -1007,25 +1025,34 @@ body.use-cases .usecase-block p {
   margin-bottom: 16px;
 }
 
-/* List spacing — more breathing room after dense content */
+/* List spacing */
 body.use-cases .usecase-block ul {
   margin-bottom: 24px;
 }
 
-/* Widen text column for better readability */
-.use-cases .usecase-block {
-  max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* ============================================
+   WHERE THESE USE CASES MATTER — 2×2 GRID
+   ============================================ */
 
-/* Force wider cards so longest title fits on one line */
-.use-cases .usecase-cards .card {
-  flex: 0 0 330px;
-  max-width: 330px;
-}
-
-/* Improve spacing between cards */
-.use-cases .usecase-cards {
+.use-cases .why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
+
+/* Card width constraints */
+.use-cases .feature-block {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* Icon placeholder (you can replace with real motifs later) */
+.use-cases .feature-block-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background: var(--primary-mid);
+  opacity: 0.75;
+}
+
