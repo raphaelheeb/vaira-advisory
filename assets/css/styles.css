@@ -1010,7 +1010,7 @@ body.use-cases .usecase-block {
   margin-left: auto;
   margin-right: auto;
 
-  margin-bottom: 96px !important; /* finally works */
+  margin-bottom: 96px !important; /* now works because wrapper override is above */
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
@@ -1101,4 +1101,3 @@ body.use-cases .usecase-block ul {
     height: 40px;
   }
 }
-
