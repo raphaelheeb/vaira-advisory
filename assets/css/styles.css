@@ -979,7 +979,19 @@ body.use-cases .wrapper--narrow > * {
 }
 
 /* --------------------------------------------
-   1. MICRO-ILLUSTRATIONS
+   1. USE CASE ITEM (NEW WRAPPER)
+   Controls spacing between individual use cases
+   -------------------------------------------- */
+body.use-cases .usecase-item {
+  margin-bottom: 140px; /* ← change THIS to control spacing */
+}
+
+body.use-cases .usecase-item:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------
+   2. MICRO-ILLUSTRATIONS
    -------------------------------------------- */
 .use-cases .micro-illustration {
   width: 48px;
@@ -993,7 +1005,7 @@ body.use-cases .wrapper--narrow > * {
 }
 
 /* --------------------------------------------
-   2. SECTION SPACING (Use Cases only)
+   3. SECTION SPACING (Use Cases only)
    -------------------------------------------- */
 body.use-cases section.section {
   padding-top: 96px !important;
@@ -1001,23 +1013,22 @@ body.use-cases section.section {
 }
 
 /* --------------------------------------------
-   3. USE CASE BLOCK SPACING + DIVIDER
+   4. USE CASE BLOCK (inner content)
    -------------------------------------------- */
 body.use-cases .usecase-block {
   max-width: 660px;
-  margin: 0 auto 140px auto !important;
+  margin: 0 auto;
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-body.use-cases .usecase-block:last-child {
-  margin-bottom: 50px !important;
-  padding-bottom: 50px;
+body.use-cases .usecase-item:last-child .usecase-block {
+  padding-bottom: 0;
   border-bottom: none;
 }
 
 /* --------------------------------------------
-   4. INTERNAL TYPOGRAPHIC RHYTHM
+   5. INTERNAL TYPOGRAPHIC RHYTHM
    -------------------------------------------- */
 body.use-cases .usecase-block h3 {
   margin-bottom: 28px;
@@ -1032,7 +1043,7 @@ body.use-cases .usecase-block ul {
 }
 
 /* --------------------------------------------
-   5. WHERE THESE USE CASES MATTER — 2×2 GRID
+   6. WHERE THESE USE CASES MATTER — 2×2 GRID
    -------------------------------------------- */
 .use-cases .why-grid {
   display: grid;
@@ -1055,7 +1066,7 @@ body.use-cases .usecase-block ul {
 }
 
 /* --------------------------------------------
-   6. MOBILE REFINEMENTS
+   7. MOBILE REFINEMENTS
    -------------------------------------------- */
 @media (max-width: 768px) {
 
@@ -1064,8 +1075,11 @@ body.use-cases .usecase-block ul {
     padding-bottom: 64px !important;
   }
 
+  body.use-cases .usecase-item {
+    margin-bottom: 90px; /* mobile spacing */
+  }
+
   body.use-cases .usecase-block {
-    margin-bottom: 72px !important;
     padding-bottom: 40px;
   }
 
@@ -1097,19 +1111,3 @@ body.use-cases .usecase-block ul {
   }
 }
 
-/* Fix spacing control for Selected Use Cases */
-body.use-cases .wrapper--narrow > * {
-  margin-bottom: 0 !important;
-}
-
-body.use-cases .usecase-block {
-  margin-bottom: 140px; /* increase this to increase spacing */
-}
-
-body.use-cases .usecase-item {
-  margin-bottom: 120px; /* controls spacing between UC1 → UC2 → UC3 → UC4 */
-}
-
-body.use-cases .usecase-item:last-child {
-  margin-bottom: 0;
-}
