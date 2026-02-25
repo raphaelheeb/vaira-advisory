@@ -970,7 +970,17 @@ p {
    USE CASES SUBPAGE (scoped to body.use-cases)
    ============================================ */
 
-/* Micro-illustration refinement */
+/* --------------------------------------------
+   0. OVERRIDE GLOBAL WRAPPER SPACING
+   (This is the key fix — required for spacing to work)
+   -------------------------------------------- */
+body.use-cases .wrapper--narrow > * {
+  margin-bottom: 0 !important;
+}
+
+/* --------------------------------------------
+   1. MICRO-ILLUSTRATIONS
+   -------------------------------------------- */
 .use-cases .micro-illustration {
   width: 48px;
   height: auto;
@@ -979,66 +989,60 @@ p {
   margin: 0 0 14px 0;
 }
 
-/* Ensure SVGs inside micro-illustration render at correct size */
 .use-cases .micro-illustration svg {
   width: 48px;
   height: 48px;
 }
 
-/* Section spacing — ONLY on this page */
+/* --------------------------------------------
+   2. SECTION SPACING (Use Cases only)
+   -------------------------------------------- */
 body.use-cases section.section {
-  padding-top: 72px !important;   /* increased */
-  padding-bottom: 72px !important; /* increased */
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
 }
 
-/* Spacing between the H2 and the first use case */
-body.use-cases h2 + .usecase-block {
-  margin-top: 40px; /* slightly increased */
-}
-
-/* Use case block spacing + divider */
+/* --------------------------------------------
+   3. USE CASE BLOCK SPACING + DIVIDER
+   -------------------------------------------- */
 body.use-cases .usecase-block {
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
 
-  margin-bottom: 80px;   /* significantly increased */
-  padding-bottom: 56px;  /* increased */
+  margin-bottom: 96px !important; /* finally works */
+  padding-bottom: 56px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-/* Remove divider from last block */
 body.use-cases .usecase-block:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   padding-bottom: 0;
   border-bottom: none;
 }
 
-/* Internal spacing inside each use case */
-
-/* Title → body spacing */
+/* --------------------------------------------
+   4. INTERNAL TYPOGRAPHIC RHYTHM
+   -------------------------------------------- */
 body.use-cases .usecase-block h3 {
-  margin-bottom: 28px; /* slightly increased */
+  margin-bottom: 28px;
 }
 
-/* Paragraph spacing */
 body.use-cases .usecase-block p {
   margin-bottom: 18px;
 }
 
-/* List spacing */
 body.use-cases .usecase-block ul {
   margin-bottom: 28px;
 }
 
-/* ============================================
-   WHERE THESE USE CASES MATTER — 2×2 GRID
-   ============================================ */
-
+/* --------------------------------------------
+   5. WHERE THESE USE CASES MATTER — 2×2 GRID
+   -------------------------------------------- */
 .use-cases .why-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* increased for better breathing */
+  gap: 40px;
 }
 
 .use-cases .feature-block {
@@ -1055,19 +1059,18 @@ body.use-cases .usecase-block ul {
   opacity: 0.75;
 }
 
-/* ============================================
-   MOBILE REFINEMENTS
-   ============================================ */
-
+/* --------------------------------------------
+   6. MOBILE REFINEMENTS
+   -------------------------------------------- */
 @media (max-width: 768px) {
 
   body.use-cases section.section {
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
   }
 
   body.use-cases .usecase-block {
-    margin-bottom: 64px;
+    margin-bottom: 72px !important;
     padding-bottom: 40px;
   }
 
