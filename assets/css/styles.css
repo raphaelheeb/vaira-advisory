@@ -976,7 +976,7 @@ p {
   height: auto;
   opacity: 0.75;
   display: block;
-  margin: 0 0 14px 0;
+  margin: 0 0 14px 0; /* tight, intentional spacing above title */
 }
 
 /* Section spacing — ONLY on this page */
@@ -996,7 +996,19 @@ body.use-cases .usecase-block {
 }
 
 /* Internal spacing inside each use case */
-body.use-cases .usecase-block p,
-body.use-cases .usecase-block ul {
+
+/* Title → body spacing (most important refinement) */
+body.use-cases .usecase-block h3 {
+  margin-bottom: 24px;
+}
+
+/* Paragraph spacing */
+body.use-cases .usecase-block p {
   margin-bottom: 16px;
 }
+
+/* List spacing — more breathing room after dense content */
+body.use-cases .usecase-block ul {
+  margin-bottom: 24px;
+}
+
