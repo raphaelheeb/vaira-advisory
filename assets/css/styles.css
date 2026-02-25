@@ -967,48 +967,43 @@ p {
 }
 
 /* ============================================
-   USE CASES SUBPAGE (scoped to body.use-cases)
-   Clean, unified, conflict-free version
+   USE CASES SUBPAGE — FINAL, CLEAN VERSION
+   Scoped ONLY to the Selected Use Cases section
    ============================================ */
 
-/* --------------------------------------------
-   0. OVERRIDE GLOBAL WRAPPER SPACING
-   -------------------------------------------- */
-body.use-cases .wrapper--narrow > * {
-  margin-bottom: 50px !important;
-}
-
-/* ============================================
-   USE CASES SUBPAGE (scoped to .use-cases)
-   Clean, unified, conflict-free version
-   ============================================ */
-
-/* --------------------------------------------
-   0. OVERRIDE GLOBAL WRAPPER SPACING
-   -------------------------------------------- */
-.use-cases .wrapper--narrow > * {
-  margin-bottom: 0 !important;
-}
-
-/* ============================================
-   USE CASES SUBPAGE (scoped to .use-cases-selected)
-   ============================================ */
-
-/* 0. Neutralize wrapper spacing only inside Selected Use Cases */
+/* 0. Neutralize wrapper spacing ONLY inside Selected Use Cases */
 .use-cases-selected .wrapper--narrow > * {
   margin-bottom: 0 !important;
 }
 
-/* 1. USE CASE ITEM — controls spacing between individual use cases */
+/* 1. Title → first micro‑illustration spacing */
+.use-cases-selected h2 {
+  margin-bottom: 48px !important; /* adjust as needed */
+}
+
+/* 2. USE CASE ITEM — controls spacing between individual use cases */
 .use-cases-selected .usecase-item {
-  margin-bottom: 140px; /* ← change THIS to control spacing UC1→UC2→UC3→UC4 */
+  margin-bottom: 140px; /* spacing UC1→UC2→UC3→UC4 */
 }
 
 .use-cases-selected .usecase-item:last-child {
   margin-bottom: 0;
 }
 
-/* 2. MICRO-ILLUSTRATIONS */
+/* 3. USE CASE BLOCK (inner content) */
+.use-cases-selected .usecase-block {
+  max-width: 760px; /* wider wrapper */
+  margin: 0 auto;
+  padding-bottom: 40px; /* divider closer to Impact */
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.use-cases-selected .usecase-item:last-child .usecase-block {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* 4. MICRO-ILLUSTRATIONS */
 .use-cases-selected .micro-illustration {
   width: 48px;
   opacity: 0.75;
@@ -1020,20 +1015,7 @@ body.use-cases .wrapper--narrow > * {
   height: 48px;
 }
 
-/* 3. USE CASE BLOCK (inner content) */
-.use-cases-selected .usecase-block {
-  max-width: 660px;
-  margin: 0 auto;
-  padding-bottom: 56px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
-.use-cases-selected .usecase-item:last-child .usecase-block {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-/* 4. INTERNAL TYPOGRAPHIC RHYTHM */
+/* 5. INTERNAL TYPOGRAPHIC RHYTHM */
 .use-cases-selected .usecase-block h3 {
   margin-bottom: 28px;
 }
@@ -1046,36 +1028,42 @@ body.use-cases .wrapper--narrow > * {
   margin-bottom: 28px;
 }
 
-/* 5. WHERE THESE USE CASES MATTER — keep page-level styling */
-.use-cases .why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
+/* ============================================
+   FIX “WHERE THESE USE CASES MATTER”
+   ============================================ */
 
-.use-cases .feature-block {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
+/* Restore normal icon size */
 .use-cases .feature-block-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Keep large icons ONLY inside Selected Use Cases */
+.use-cases-selected .feature-block-icon {
   width: 48px;
   height: 48px;
-  border-radius: 4px;
-  background: var(--primary-mid);
-  opacity: 0.75;
 }
 
-/* 6. MOBILE REFINEMENTS */
+/* ============================================
+   FIX CTA SPACING
+   ============================================ */
+
+.section--lighter .cta-btn {
+  margin-top: 32px; /* adjust as needed */
+}
+
+/* ============================================
+   MOBILE REFINEMENTS
+   ============================================ */
+
 @media (max-width: 768px) {
 
   .use-cases-selected .usecase-item {
-    margin-bottom: 90px; /* mobile spacing between use cases */
+    margin-bottom: 90px;
   }
 
   .use-cases-selected .usecase-block {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   .use-cases-selected .micro-illustration svg {
@@ -1098,10 +1086,5 @@ body.use-cases .wrapper--narrow > * {
   .use-cases .why-grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .use-cases .feature-block-icon {
-    width: 40px;
-    height: 40px;
   }
 }
