@@ -78,6 +78,17 @@ p {
   margin: 0 0 16px 0;
 }
 
+/* Global links */
+a {
+  color: var(--primary-mid);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 /* =========================================================
    2. LAYOUT WRAPPERS
    ========================================================= */
@@ -181,7 +192,7 @@ p {
 }
 
 /* =========================================================
-   4. CARDS
+   4. CARDS & FEATURE BLOCKS
    ========================================================= */
 
 .card-grid {
@@ -196,15 +207,82 @@ p {
   transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
 }
 
-/* Why VAIRA */
-#why-vaira .card-grid {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 32px;
-  row-gap: 40px;
+/* Generic feature blocks */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 32px;
 }
 
-/* Homepage Cards */
+.feature-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 8px 0;
+}
+
+.feature-block-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  margin-top: 4px;
+  background: var(--primary-light);
+  opacity: 0.65;
+  border: 1px solid rgba(95,138,142,0.25);
+  flex-shrink: 0;
+}
+
+.feature-block h3 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.feature-block p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Why VAIRA — homepage */
+#why-vaira .why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+}
+
+#why-vaira .feature-block {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(95,138,142,0.15);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+#why-vaira .feature-block:hover {
+  background: rgba(201,220,220,0.35);
+  border-color: rgba(95,138,142,0.35);
+  transform: translateY(-2px);
+}
+
+#why-vaira .feature-block-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--primary-light);
+  opacity: 0.65;
+  border: 1px solid rgba(95,138,142,0.25);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Homepage — Who We Work With cards */
+#who-we-work-with .wrapper--narrow {
+  max-width: 1150px;
+}
+
 #who-we-work-with .card-grid {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -212,7 +290,7 @@ p {
   background: white;
   border: 1px solid rgba(95,138,142,0.15);
   border-radius: 14px;
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 #who-we-work-with .card:hover {
@@ -221,7 +299,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* Services Cards */
+/* Services — cards */
 #services .card {
   border-radius: 14px;
   border: 1px solid rgba(95,138,142,0.15);
@@ -256,6 +334,43 @@ p {
   max-width: 1000px;
 }
 
+/* Services — Industries We Work In grid */
+#industries-we-work-in .why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+#industries-we-work-in .feature-block-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--primary-light);
+  opacity: 0.65;
+  border: 1px solid rgba(95,138,142,0.25);
+}
+
+/* Use Cases — Where These Use Cases Matter grid */
+#use-cases-where .why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+#use-cases-where .feature-block {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(95,138,142,0.15);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+#use-cases-where .feature-block:hover {
+  background: rgba(201,220,220,0.35);
+  border-color: rgba(95,138,142,0.35);
+  transform: translateY(-2px);
+}
+
 /* =========================================================
    5. SPLIT LAYOUT
    ========================================================= */
@@ -283,6 +398,34 @@ p {
 
 .split-image.case {
   max-width: 460px;
+}
+
+/* Case Snapshot specifics */
+#case-snapshot .case-points {
+  margin: 16px 0;
+  padding-left: 20px;
+  list-style: disc;
+  opacity: 0.85;
+}
+
+#case-snapshot .case-points li {
+  margin-bottom: 6px;
+}
+
+#case-snapshot .case-note {
+  margin-top: 12px;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#case-snapshot a {
+  color: var(--primary-mid);
+  text-decoration: none;
+}
+
+#case-snapshot a:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 /* =========================================================
@@ -327,6 +470,19 @@ p {
 }
 
 .section--lighter .cta-btn {
+  margin-top: 20px !important;
+}
+
+/* Services CTA */
+#services-cta h2 {
+  margin-bottom: 32px !important;
+}
+
+#services-cta h2 + p {
+  margin-bottom: 20px !important;
+}
+
+#services-cta .cta-btn {
   margin-top: 20px !important;
 }
 
@@ -530,11 +686,43 @@ p {
   border-top: 1px solid var(--footer-accent);
 }
 
+.site-footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+.footer-brand {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  margin: 0 0 16px 0;
+  opacity: 0.75;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 1.2fr;
   gap: 40px;
   align-items: center;
+}
+
+.footer-col--center {
+  text-align: center;
+}
+
+.footer-col--right {
+  text-align: right;
 }
 
 /* =========================================================
@@ -571,6 +759,21 @@ p {
    11. PAGE BLOCKS — USE CASES (Unified Rhythm)
    ========================================================= */
 
+/* Alternating backgrounds for Use Cases page */
+.use-cases .section:nth-of-type(odd) {
+  background: var(--text-light);
+}
+
+.use-cases .section:nth-of-type(even) {
+  background: var(--bg-lighter);
+}
+
+/* Darker background for “Where These Use Cases Matter” */
+#use-cases-where.section {
+  background: var(--primary-light);
+}
+
+/* Selected Use Cases layout */
 .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 72px !important;
 }
@@ -578,12 +781,12 @@ p {
 .use-cases-selected .usecase-block {
   max-width: 760px !important;
   margin: 0 auto;
-  padding-bottom: 48px !important;
+  padding-bottom: 20px !important;
   border-bottom: 1px solid var(--line);
 }
 
 .use-cases-selected .usecase-item {
-  margin-bottom: 160px !important;
+  margin-bottom: 32px !important;
 }
 
 .use-cases-selected .usecase-item:last-child .usecase-block {
@@ -591,15 +794,16 @@ p {
   border-bottom: none !important;
 }
 
+/* Micro-illustrations */
 .use-cases-selected .micro-illustration {
   width: 48px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 16px !important;
   opacity: 0.75;
 }
 
 .use-cases-selected .micro-illustration svg {
-  width: 48px;
-  height: 48px;
+  width: 64px !important;
+  height: 64px !important;
 }
 
 /* Typography inside blocks */
@@ -615,38 +819,21 @@ p {
   margin-bottom: 28px !important;
 }
 
-/* Grid */
-.use-cases .why-grid {
-  gap: 32px !important;
-}
-
 /* Icon size consistency */
-.feature-block-icon {
-  width: 22px !important;
-  height: 22px !important;
-}
-
 .use-cases-selected .feature-block-icon {
   width: 48px !important;
   height: 48px !important;
 }
 
 /* =========================================================
-   12. HOMEPAGE BULLETS — ENGINEERED SQUARES
+   12. RESPONSIVE — UNIFIED
    ========================================================= */
 
-#who-we-work-with .feature-block-icon {
-  width: 22px !important;
-  height: 22px !important;
-  border-radius: 6px !important;
-  background: var(--primary-light) !important;
-  opacity: 0.65 !important;
-  border: 1px solid rgba(95,138,142,0.25) !important;
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 64px;
+  }
 }
-
-/* =========================================================
-   13. RESPONSIVE — UNIFIED
-   ========================================================= */
 
 @media (max-width: 768px) {
   .section h2 {
@@ -670,79 +857,28 @@ p {
     grid-template-columns: 1fr !important;
     gap: 32px !important;
   }
+
+  .header-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .brand-and-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 24px;
+  }
 }
 
-/* =========================================================
-   VAIRA DESIGN SYSTEM v1.2.4 — RESTORATION PATCH
-   ========================================================= */
-
-/* 1. HOMEPAGE — Why VAIRA: restore 2×2 grid + icon placement */
-#why-vaira .why-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 40px 32px !important;
-}
-
-#why-vaira .feature-block {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 20px !important;
-  background: white !important;
-  padding: 20px 24px !important;
-  border-radius: 12px !important;
-  border: 1px solid rgba(95,138,142,0.15) !important;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#why-vaira .feature-block:hover {
-  background: rgba(201,220,220,0.35) !important;
-  border-color: rgba(95,138,142,0.35) !important;
-  transform: translateY(-2px) !important;
-}
-
-#why-vaira .feature-block-icon {
-  width: 22px !important;
-  height: 22px !important;
-  border-radius: 6px !important;
-  background: var(--primary-light) !important;
-  opacity: 0.65 !important;
-  border: 1px solid rgba(95,138,142,0.25) !important;
-  flex-shrink: 0 !important;
-  margin-top: 4px !important;
-}
-
-/* 2. HOMEPAGE — Case Snapshot link color */
-#case-snapshot a {
-  color: var(--primary-mid) !important;
-  text-decoration: none !important;
-}
-#case-snapshot a:hover {
-  color: var(--primary) !important;
-  text-decoration: underline !important;
-}
-
-/* 3. FOOTER — right alignment + link color */
-.footer-col--right {
-  text-align: right !important;
-}
-.site-footer a {
-  color: var(--primary-light) !important;
-  text-decoration: none !important;
-}
-.site-footer a:hover {
-  color: var(--primary-light) !important;
-  text-decoration: underline !important;
-}
-
-/* 4. USE CASES — tighten spacing between items */
-.use-cases-selected .usecase-item {
-  margin-bottom: 32px !important;
-}
-.use-cases-selected .usecase-block {
-  padding-bottom: 20px !important;
-}
-
-/* 5. USE CASES — darker background for “Where These Use Cases Matter” */
-#use-cases-where.section {
-  background: var(--primary-light) !important;
-}
