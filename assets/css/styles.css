@@ -978,3 +978,22 @@ p {
   margin: 0 0 14px 0;
 }
 
+/* Only affects the Use Cases page */
+.use-cases .section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.use-cases h2 + .usecase-block {
+  margin-top: 32px;
+}
+
+.use-cases .usecase-block {
+  margin-bottom: 48px;
+}
+
+.use-cases .usecase-block p,
+.use-cases .usecase-block ul {
+  margin-bottom: 16px;
+}
+
