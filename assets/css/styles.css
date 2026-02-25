@@ -1011,8 +1011,8 @@ body.use-cases .usecase-block {
 }
 
 body.use-cases .usecase-block:last-child {
-  margin-bottom: 0 !important;
-  padding-bottom: 0;
+  margin-bottom: 50px !important;
+  padding-bottom: 50px;
   border-bottom: none;
 }
 
