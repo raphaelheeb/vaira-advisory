@@ -599,3 +599,58 @@ p {
   border: 1px solid rgba(95, 138, 142, 0.25) !important;
 }
 
+/* =========================================================
+   13. HERO RESTORATION (Homepage + Subpages)
+   ========================================================= */
+
+/* --------------------------------------------
+   Restore hero background grid overlay
+   -------------------------------------------- */
+.hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px) !important;
+  background-size: 66px 66px !important;
+  opacity: 0.18 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* --------------------------------------------
+   Restore homepage hero background color
+   -------------------------------------------- */
+#hero:not(.hero--clean) {
+  background: var(--primary) !important;
+}
+
+/* --------------------------------------------
+   Restore subpage hero padding + background
+   -------------------------------------------- */
+#hero.hero--clean {
+  padding: 96px 0 72px !important;
+  background: var(--primary) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* --------------------------------------------
+   Restore CAD arc visibility + positioning
+   -------------------------------------------- */
+#hero.hero--clean .cad-hero-shape {
+  position: absolute !important;
+  right: -120px !important;
+  top: -80px !important;
+  width: 320px !important;
+  height: 320px !important;
+  opacity: 0.18 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+#hero.hero--clean .cad-hero-shape svg {
+  width: 100% !important;
+  height: 100% !important;
+}
