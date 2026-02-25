@@ -1019,8 +1019,13 @@ body.use-cases .usecase-block ul {
   margin-right: auto;
 }
 
-/* Widen cards so longest title fits on one line */
+/* Force wider cards so longest title fits on one line */
 .use-cases .usecase-cards .card {
-  flex: 0 1 360px;  
+  flex: 0 0 360px;
   max-width: 360px;
+}
+
+/* Improve spacing between cards */
+.use-cases .usecase-cards {
+  gap: 32px;
 }
