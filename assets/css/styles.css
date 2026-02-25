@@ -970,22 +970,11 @@ p {
    USE CASES SUBPAGE
    ============================================ */
 
-.usecase-block {
-  text-align: center; /* center inline elements */
-}
-
 .micro-illustration {
-  width: 52px;
+  width: 48px;
   height: auto;
-  opacity: 0.9;
-  display: inline-block; /* allows centering */
-  margin-bottom: 20px;
-}
-
-/* Reset text alignment for the actual content */
-.usecase-block h3,
-.usecase-block p,
-.usecase-block ul {
-  text-align: left;
+  opacity: 0.75;
+  display: block;
+  margin: 0 0 14px 0;
 }
 
