@@ -1,4 +1,6 @@
-/* ===== RESET THE THEME'S LAYOUT CONSTRAINTS ===== */
+/* =========================================================
+   1. RESET & BASE TOKENS
+   ========================================================= */
 
 #main {
   padding: 0 !important;
@@ -26,40 +28,30 @@ header .content-wrapper {
   margin: 0 auto !important;
 }
 
-/* =========================================================
-   BASE
-   ========================================================= */
-
+/* Brand Tokens */
 :root {
-  /* Brand Core */
-  --primary: #2B4E5A;          /* Deep engineered teal (your main brand color) */
-  --primary-mid: #5F8A8E;      /* Mid-tone accent for small UI elements */
-  --primary-light: #C9DCDC;    /* Light accent for large soft backgrounds */
+  --primary: #2B4E5A;
+  --primary-mid: #5F8A8E;
+  --primary-light: #C9DCDC;
 
-  /* Text */
-  --text-dark: #0E1514;        /* Deep charcoal for body text */
-  --text-light: #FFFFFF;       /* White for dark backgrounds */
+  --text-dark: #0E1514;
+  --text-light: #FFFFFF;
 
-  /* Backgrounds */
-  --bg-light: #F4F7F7;         /* Soft neutral background */
-  --bg-lighter: #FAFCFC;       /* Ultra-light background */
+  --bg-light: #F4F7F7;
+  --bg-lighter: #FAFCFC;
 
-  /* Lines & Borders */
-  --line: rgba(0,0,0,0.08);    /* Subtle dividers */
-  --line-strong: rgba(0,0,0,0.12); /* Stronger dividers */
+  --line: rgba(0,0,0,0.08);
+  --line-strong: rgba(0,0,0,0.12);
 
-  /* Utility */
   --shadow-light: rgba(0,0,0,0.12);
   --shadow-strong: rgba(0,0,0,0.18);
-  
-  --primary-dark: #084442;              /* deep-tech teal for footer / dark zones */
-  --footer-accent: rgba(184,212,208,0.15); /* footer border tone */
 
-  --primary-mid-soft: rgba(95, 138, 142, 0.35);
-  --primary-light-soft: rgba(201, 220, 220, 0.55);
-  
+  --primary-dark: #084442;
+  --footer-accent: rgba(184,212,208,0.15);
+
+  --primary-mid-soft: rgba(95,138,142,0.35);
+  --primary-light-soft: rgba(201,220,220,0.55);
 }
-
 
 *,
 *::before,
@@ -69,7 +61,7 @@ header .content-wrapper {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   color: var(--text-dark);
   background: var(--text-light);
   line-height: 1.7;
@@ -77,22 +69,17 @@ body {
 
 h1, h2, h3 {
   margin: 0 0 16px 0;
-  font-family: "Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Inter Tight", system-ui, sans-serif;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
-
 
 p {
   margin: 0 0 16px 0;
 }
 
-.spacer-32 {
-  margin-top: 32px;
-}
-
 /* =========================================================
-   LAYOUT WRAPPERS
+   2. LAYOUT WRAPPERS
    ========================================================= */
 
 .content-wrapper {
@@ -121,66 +108,52 @@ p {
 }
 
 /* =========================================================
-   SECTIONS & RHYTHM
+   3. SECTIONS & TYPOGRAPHIC RHYTHM
    ========================================================= */
 
 .section {
   padding: 80px 0 72px;
-  background: var(--text-light); /* stays white */
+  background: var(--text-light);
 }
 
 .section--tight {
   padding: 48px 0;
 }
 
-/* ALT SECTION (soft contrast background)*/
-
 .section--alt {
   background: var(--primary-light);
 }
-
-/* LIGHTER SECTION (ultra-light neutral)*/
 
 .section--lighter {
   background: var(--bg-lighter);
 }
 
-/* GRADIENT SECTION */
-
 .section--gradient {
-  background: linear-gradient(180deg, var(--text-light) 0%, var(--bg-light) 100%);
+  background: linear-gradient(180deg, var(--text-light), var(--bg-light));
 }
-
-/* ACCENT LEFT STRIPE */
 
 .section--accent-left {
   border-left: 6px solid var(--primary-mid);
   padding-left: 32px;
 }
 
-/* ACCENT STRIPE BACKGROUND */
-
-.section--accent-left::before {
-  background: var(--primary-light);
-}
-
-/* subtle breathing space between sections */
-
 .section + .section {
   margin-top: 0 !important;
 }
 
-/* SECTION TITLES */
+/* Section Titles */
 .section h2 {
   position: relative;
   padding-bottom: 12px;
-  margin-bottom: 36px;
+  margin-bottom: 48px; /* unified baseline */
   letter-spacing: 0.3px;
-  color: var(--text-dark); /* ensure consistent title color */
+  color: var(--text-dark);
 }
 
-/* SECTION TITLE UNDERLINE
-   Replace #4A6A72 with mid-tone */
+.section--tight h2 {
+  margin-bottom: 32px !important;
+}
+
 .section h2::after {
   content: "";
   position: absolute;
@@ -192,66 +165,23 @@ p {
   border-radius: 2px;
 }
 
-/* SECTION TEXT RHYTHM */
+/* Text Rhythm */
 .section p {
   line-height: 1.55;
   margin-top: 4px;
-  color: var(--text-dark);
 }
 
 .section ul li {
   margin-bottom: 4px;
   line-height: 1.45;
-  color: var(--text-dark);
 }
-
-/* BULLET POINTS (you likely have a ::before elsewhere)
-   Should use mid-tone for visibility */
 
 .section ul li::before {
   background: var(--primary-mid);
 }
 
-#what-we-do ul li {
-  position: relative;
-  padding-left: 18px;
-}
-
-#what-we-do ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  background: var(--primary-mid);
-  border-radius: 2px;
-}
-
 /* =========================================================
-   FULL-WIDTH IMAGE BAND
-   ========================================================= */
-
-.fullwidth-section {
-  padding: 0;
-}
-
-.fullwidth-image {
-  width: 100%;
-  height: 360px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fullwidth-image--pattern {
-  background-image:
-    linear-gradient(rgba(43, 78, 90, 0.35), rgba(14,21,20,0.35)),
-    url('/assets/cad-pattern.png');
-}
-
-/* =========================================================
-   CARDS
+   4. CARDS
    ========================================================= */
 
 .card-grid {
@@ -263,67 +193,34 @@ p {
 .card {
   padding: 28px;
   border-radius: 12px;
-  transition: border-color 0.25s ease, 
-              box-shadow 0.25s ease, 
-              background 0.25s ease;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
 }
 
-/* Make Why VAIRA a 2x2 grid with real vertical spacing */
+/* Why VAIRA */
 #why-vaira .card-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 32px;
   row-gap: 40px;
 }
 
-/* HOMEPAGE — Who We Work With */
-#who-we-work-with .wrapper--narrow {
-  max-width: 1150px;
-}
-
-#who-we-work-with .card {
-  background: white;
-  border: 1px solid rgba(95, 138, 142, 0.15);
-  border-radius: 14px;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#who-we-work-with .card:hover {
-  background: rgba(201, 220, 220, 0.35);
-  border-color: rgba(95, 138, 142, 0.35);
-  transform: translateY(-2px);
-}
-
-#who-we-work-with .card-grid {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-@media (min-width: 900px) {
-  #who-we-work-with .card-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-/* SERVICES SECTION — card styling */
+/* Services Cards */
 #services .card {
   border-radius: 14px;
-  border: 1px solid rgba(95, 138, 142, 0.15);
-  background: rgba(201, 220, 220, 0.45);;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#services .card-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(95,138,142,0.15);
+  background: rgba(201,220,220,0.45);
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
 }
 
 #services .card:hover {
-  background: white; /* stronger tint than homepage */
-  border-color: rgba(95, 138, 142, 0.45);
+  background: white;
+  border-color: rgba(95,138,142,0.45);
   transform: translateY(-2px);
 }
 
-/* SERVICES SECTION — horizontal icon + title layout */
+#services .card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #services .card-header {
   display: flex;
   align-items: center;
@@ -331,72 +228,35 @@ p {
   margin-bottom: 16px;
 }
 
-#services .card-header .card-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-}
-
 #services .card-header .card-icon svg {
   width: 64px;
   height: 64px;
   stroke-width: 2.5;
-  display: block;
-  /* no margin-top here */
 }
 
 #services .wrapper--narrow {
   max-width: 1000px;
 }
 
-#services .card-header h3 {
-  line-height: 1.25;
-  margin: 0;
-}  
-
 /* =========================================================
-   EDITORIAL & HIGHLIGHT
-   ========================================================= */
-
-.editorial {
-  border-left: 4px solid var(--primary-mid);
-  padding-left: 20px;
-  margin: 24px 0;
-}
-
-.highlight {
-  background: var(--text-light);
-  border-left: 4px solid var(--primary-mid);
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-/* =========================================================
-   SPLIT LAYOUT
+   5. SPLIT LAYOUT
    ========================================================= */
 
 .split {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
   padding-left: 4px;
 }
 
-/* unified image styling */
 .split-image {
   width: 100%;
   height: auto;
+  max-width: 450px;
   display: block;
   margin: 8px auto 0;
   border-radius: 8px;
-}
-
-/* image sizing hierarchy */
-.split-image {
-  max-width: 450px;
 }
 
 .split-image.process {
@@ -407,33 +267,8 @@ p {
   max-width: 460px;
 }
 
-
 /* =========================================================
-   CHECKLIST
-   ========================================================= */
-
-.checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.checklist li {
-  margin-bottom: 12px;
-  padding-left: 20px;
-  position: relative;
-}
-
-.checklist li::before {
-  content: ".";
-  position: absolute;
-  left: 0;
-  color: var(--primary-mid);
-  font-size: 20px;
-}
-
-/* =========================================================
-   CTA BUTTON
+   6. CTA BUTTONS
    ========================================================= */
 
 .cta-btn {
@@ -443,23 +278,21 @@ p {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   border: none;
 }
 
-/* Primary CTA */
 .cta-btn--primary {
   background: var(--primary-mid);
   color: var(--text-light);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px var(--shadow-light);
 }
 
 .cta-btn--primary:hover {
   background: var(--primary);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 24px var(--shadow-strong);
 }
 
-/* Secondary CTA */
 .cta-btn--secondary {
   border: 1px solid var(--primary-mid);
   color: var(--text-light);
@@ -470,42 +303,18 @@ p {
   background: var(--primary-mid);
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 960px) {
-  .floating-cards {
-    margin-top: 24px;
-  }
-
-  .section--accent-left {
-    border-left: none;
-    padding-left: 0;
-  }
+/* CTA Rhythm */
+.section--lighter h2 + p {
+  margin-top: 16px !important;
+  margin-bottom: 20px !important;
 }
 
-@media (max-width: 720px) {
-  .section {
-    padding: 72px 0;
-    background: #ffffff;
-  }
-}
-
-@media (max-width: 720px) {
-  .section {
-    padding: 48px 0;
-  }
-}
-
-@media (min-width: 900px) {
-  #who-we-work-with .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.section--lighter .cta-btn {
+  margin-top: 20px !important;
 }
 
 /* =========================================================
-   HEADER & NAVIGATION & PREMIUM CONSULTANCY VERSION
+   7. HEADER & NAVIGATION
    ========================================================= */
 
 .site-header {
@@ -524,27 +333,23 @@ p {
   padding: 18px 0;
 }
 
-/* Brand + nav group */
 .brand-and-nav {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-/* Logo */
 .site-logo img {
-  height: 64px; /* increased for presence */
-  display: block;
+  height: 64px;
   border-radius: 8px;
 }
 
-/* Main nav */
 .nav {
-  list-style: none;
   display: flex;
   gap: 28px;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav a {
@@ -554,10 +359,9 @@ p {
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 2px;
-  transition: color 0.2s ease;
+  transition: color 0.2s;
 }
 
-/* Underline hover animation */
 .nav a::after {
   content: "";
   position: absolute;
@@ -566,7 +370,7 @@ p {
   width: 0;
   height: 2px;
   background: var(--primary-mid);
-  transition: width 0.25s ease;
+  transition: width 0.25s;
 }
 
 .nav a:hover {
@@ -581,232 +385,9 @@ p {
   color: var(--primary);
 }
 
-.nav a.active::after {
-  color: var(--primary);
-}
-
-/* Language switcher */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.lang-btn {
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  background: transparent;
-  border: 1px solid var(--primary-mid);
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.lang-btn.active {
-  border-color: var(--primary-mid);
-  color: var(--primary);
-  background: var(--bg-light);
-}
-
-/* Mobile tweaks */
-@media (max-width: 720px) {
-  .header-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .brand-and-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-}
-
-/* FIX VERTICAL SPACING IN WHY VAIRA */
-#why-vaira .card-grid {
-  row-gap: 40px !important;
-}
-
 /* =========================================================
-   HERO — Unified, Conflict-Free Version
+   8. FOOTER
    ========================================================= */
-
-/* Base hero styling (applies to all heroes) */
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 36px 0 28px;
-  background-color: var(--primary);
-  color: var(--text-light);
-}
-
-/* Subtle grid overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
-  background-size: 66px 66px;
-  opacity: 0.18;
-  pointer-events: none;
-}
-
-/* Ensure hero text sits above overlays */
-.hero > .content-wrapper {
-  position: relative;
-  z-index: 1;
-  padding-top: 24px;
-}
-
-/* Typography */
-.hero-title {
-  font-size: 46px;
-  line-height: 1.22;
-  letter-spacing: 0.01em;
-}
-
-.hero-sub {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 12px;
-  color: var(--text-light);
-}
-
-/* =========================================================
-   CLEAN HERO VARIANT (subpages)
-   ========================================================= */
-
-#hero.hero--clean {
-  position: relative;
-  padding: 96px 0 72px;
-}
-
-/* CAD arc */
-#hero.hero--clean .cad-hero-shape {
-  position: absolute;
-  right: -120px;   /* pushes it into the corner */
-  top: -80px;      /* lifts it above the hero’s top edge */
-  width: 320px;    /* slightly smaller for elegance */
-  height: 320px;
-  pointer-events: none;
-  opacity: 0.18;
-  z-index: 1;
-}
-
-
-#hero.hero--clean .cad-hero-shape svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* =========================================================
-   RESPONSIVE HERO
-   ========================================================= */
-
-@media (max-width: 960px) {
-  .hero {
-    padding-top: 64px;
-  }
-}
-
-@media (max-width: 720px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  #hero.hero--clean {
-    padding: 72px 0 56px;
-  }
-
-  #hero.hero--clean .cad-hero-shape {
-    right: -120px;
-    top: 32%;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-/* =========================================================
-   HOMEPAGE HERO RESTORATION
-   ========================================================= */
-
-#hero:not(.hero--clean) {
-  padding: 48px 0 48px;
-}
-
-#hero:not(.hero--clean) .hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: center;
-}
-
-#hero:not(.hero--clean) .hero-right svg {
-  width: 115%;
-  height: auto;
-  transform: translateY(-8px);
-  position: relative;
-  right: -20px;
-}
-
-/* =========================================================
-   WHY VAIRA & FEATURE BLOCKS
-   ========================================================= */
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 40px;
-  row-gap: 32px;
-}
-
-.feature-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 8px 0;
-}
-
-.feature-block-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  margin-top: 4px;
-  background: var(--primary-light);
-  opacity: 0.65;
-  border: 1px solid rgba(95, 138, 142, 0.25); /* primary-mid at 25% */
-  flex-shrink: 0;
-}
-
-.feature-block h3 {
-  margin: 0 0 8px 0;
-  font-weight: 600;
-}
-
-.feature-block p {
-  margin: 0;
-  line-height: 1.55;
-}
-
-/* Mobile layout */
-@media (max-width: 720px) {
-  .why-grid {
-    grid-template-columns: 1fr;
-    row-gap: 24px;
-  }
-}
-
-/*=========================
-   FOOTER
-===========================*/
 
 .site-footer {
   background: var(--primary-dark);
@@ -816,30 +397,6 @@ p {
   border-top: 1px solid var(--footer-accent);
 }
 
-.site-footer a {
-  color: var(--text-light);
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: var(--text-light);
- text-decoration-color: underline;
-}
-
-.footer-brand {
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
-.footer-tagline {
-  margin: 0 0 16px 0;
-  opacity: 0.75;
-}
-
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 1.2fr;
@@ -847,316 +404,53 @@ p {
   align-items: center;
 }
 
-.footer-col--center {
-  text-align: center;
-}
-
-.footer-col--right {
-  text-align: right;
-}
-
-@media (max-width: 720px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: left;
-    gap: 24px;
-  }
-}
-
 /* =========================================================
-   SPLIT IMAGE SIZING â€” FINAL OVERRIDE
+   9. PAGE BLOCKS — INDUSTRIES
    ========================================================= */
 
-/* Base split layout (keep as is if already defined earlier) */
-.split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: center;
-  padding-left: 4px;
-}
-
-/* Force consistent sizing for all split images */
-.split-right img,
-.split-left img,
-.split-image {
-  width: 100%;
-  height: auto;
-  max-width: 420px !important;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-/* Slightly smaller for the process illustration */
-.split-image.process {
-  max-width: 430px !important;
-}
-
-/* =========================================================
-   CASE SNAPSHOT & SECTION-SPECIFIC STYLING
-   ========================================================= */
-
-#case-snapshot .case-points {
-  margin: 16px 0 16px 0;
-  padding-left: 20px;
-  list-style: disc;
-  opacity: 0.85;
-}
-
-#case-snapshot .case-points li {
-  margin-bottom: 6px;
-}
-
-#case-snapshot .case-note {
-  margin-top: 12px;
-  font-size: 15px;
-  opacity: 0.7;
-}
-
-/* Slightly stronger image presence for this section */
-.split-image.case {
-  max-width: 420px !important;
-}
-
-/* ============================================
-   FINAL — TRUE INDEPENDENT CONTROL
-   ============================================ */
-
-/* Outer section stays the same */
 #industries-why.section {
   padding-top: 80px;
   padding-bottom: 72px;
 }
 
-/* NEW: inner layout wrapper */
 .industries-why-inner {
   display: grid;
-  grid-template-columns: 1fr auto;   /* left text, right illustration */
-  column-gap: 28px;
-  align-items: start;                /* text stays at top */
-  position: relative;
+  grid-template-columns: 1fr auto;
+  column-gap: 48px;
+  align-items: start;
 }
 
-/* Left block */
 .industries-why-text {
-  max-width: 560px;   /* adjust text block width */
+  max-width: 560px;
 }
 
 .industries-why-text h2 {
-  margin: 0;
-  padding-bottom: 12px;
-  margin-bottom: 28px;               /* title → text spacing */
-}
-
-.industries-why-text p {
-  margin: 0;
-}
-
-/* Right block — fully independent */
-.industries-why-illustration {
-  position: relative;                /* stays inside the grid cell */
+  margin-bottom: 28px !important;
 }
 
 .industries-why-illustration svg {
-  max-width: 260px;                  /* illustration size */
+  max-width: 260px;
   width: 100%;
   height: auto;
-  display: block;
-  margin-top: 0;                     /* vertical position control */
-}
-
-/* ============================================
-   USE CASES SUBPAGE — FINAL AUTHORITATIVE BLOCK
-   ============================================ */
-
-/* 0. Neutralize wrapper spacing ONLY inside Selected Use Cases */
-.use-cases-selected .wrapper--narrow > * {
-  margin-bottom: 0 !important;
-}
-
-/* 1. Title → first micro‑illustration spacing */
-.use-cases-selected h2 {
-  margin-bottom: 68px !important;
-}
-
-/* 2. USE CASE ITEM — spacing between use cases */
-.use-cases-selected .usecase-item {
-  margin-bottom: 40px !important;
-}
-
-.use-cases-selected .usecase-item:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* 3. USE CASE BLOCK — width + divider spacing */
-.use-cases-selected .usecase-block {
-  max-width: 760px !important;   /* ← wider */
-  margin: 0 auto !important;
-  padding-bottom: 40px !important; /* ← divider closer to Impact */
-  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
-}
-
-.use-cases-selected .usecase-item:last-child .usecase-block {
-  padding-bottom: 0 !important;
-  border-bottom: none !important;
-}
-
-/* 4. MICRO‑ILLUSTRATIONS */
-.use-cases-selected .micro-illustration {
-  width: 48px !important;
-  opacity: 0.75 !important;
-  margin-bottom: 14px !important;
-}
-
-.use-cases-selected .micro-illustration svg {
-  width: 48px !important;
-  height: 48px !important;
-}
-
-/* 5. INTERNAL TYPOGRAPHIC RHYTHM */
-.use-cases-selected .usecase-block h3 {
-  margin-bottom: 28px !important;
-}
-
-.use-cases-selected .usecase-block p {
-  margin-bottom: 18px !important;
-}
-
-.use-cases-selected .usecase-block ul {
-  margin-bottom: 28px !important;
-}
-
-/* ============================================
-   FIX “WHERE THESE USE CASES MATTER”
-   ============================================ */
-
-/* Restore normal icon size */
-.use-cases .feature-block-icon {
-  width: 22px !important;
-  height: 22px !important;
-}
-
-/* Keep large icons ONLY inside Selected Use Cases */
-.use-cases-selected .feature-block-icon {
-  width: 48px !important;
-  height: 48px !important;
-}
-
-/* ============================================
-   FIX CTA SPACING
-   ============================================ */
-
-.section--lighter .cta-btn {
-  margin-top: 24px !important;
-}
-
-/* ============================================
-   MOBILE REFINEMENTS
-   ============================================ */
-
-@media (max-width: 768px) {
-
-  .use-cases-selected .usecase-item {
-    margin-bottom: 90px !important;
-  }
-
-  .use-cases-selected .usecase-block {
-    padding-bottom: 32px !important;
-  }
-
-  .use-cases-selected .micro-illustration svg {
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  .use-cases-selected .usecase-block h3 {
-    margin-bottom: 22px !important;
-  }
-
-  .use-cases-selected .usecase-block p {
-    margin-bottom: 14px !important;
-  }
-
-  .use-cases-selected .usecase-block ul {
-    margin-bottom: 22px !important;
-  }
-
-  .use-cases .why-grid {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
-  }
-}
-
-.use-cases-selected .wrapper--narrow > h2 {
-  margin-bottom: 72px !important; /* adjust to taste */
 }
 
 /* =========================================================
-   VAIRA — UNIFIED VERTICAL RHYTHM SYSTEM
-   Applies consistent spacing across Services, Industries,
-   and Use Cases without breaking existing layout logic.
+   10. PAGE BLOCKS — USE CASES (Unified Rhythm)
    ========================================================= */
 
-/* --------------------------------------------
-   1. SECTION TITLES — unified spacing
-   -------------------------------------------- */
-.section h2 {
-  margin-bottom: 48px !important; /* global baseline */
-}
-
-/* Tighter titles where needed */
-.section--tight h2 {
-  margin-bottom: 32px !important;
-}
-
-/* Use Cases override (needs more breathing room) */
 .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 72px !important;
 }
 
-/* --------------------------------------------
-   2. ICON → TITLE SPACING (Services + Use Cases)
-   -------------------------------------------- */
-#services .card-header .card-icon,
-.use-cases-selected .micro-illustration {
-  margin-bottom: 20px !important;
-}
-
-/* --------------------------------------------
-   3. INTERNAL BLOCK RHYTHM
-   -------------------------------------------- */
-
-/* Headings inside blocks */
-#services .card h3,
-.use-cases-selected .usecase-block h3 {
-  margin-bottom: 28px !important;
-}
-
-/* Paragraph rhythm */
-#services .card p,
-.use-cases-selected .usecase-block p {
-  margin-bottom: 18px !important;
-}
-
-/* Lists */
-#services .card ul,
-.use-cases-selected .usecase-block ul {
-  margin-bottom: 28px !important;
-}
-
-/* --------------------------------------------
-   4. USE CASES — block width + divider rhythm
-   -------------------------------------------- */
 .use-cases-selected .usecase-block {
   max-width: 760px !important;
-  margin: 0 auto !important;
-  padding-bottom: 48px !important; /* Impact → divider */
-  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+  margin: 0 auto;
+  padding-bottom: 48px !important;
+  border-bottom: 1px solid var(--line);
 }
 
 .use-cases-selected .usecase-item {
-  margin-bottom: 160px !important; /* divider → next icon */
+  margin-bottom: 160px !important;
 }
 
 .use-cases-selected .usecase-item:last-child .usecase-block {
@@ -1164,47 +458,36 @@ p {
   border-bottom: none !important;
 }
 
-/* --------------------------------------------
-   5. INDUSTRIES — split layout rhythm
-   -------------------------------------------- */
-.industries-why-inner {
-  column-gap: 48px !important;
+.use-cases-selected .micro-illustration {
+  width: 48px !important;
+  margin-bottom: 20px !important;
+  opacity: 0.75;
 }
 
-.industries-why-text h2 {
+.use-cases-selected .micro-illustration svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Typography inside blocks */
+.use-cases-selected .usecase-block h3 {
   margin-bottom: 28px !important;
 }
 
-/* --------------------------------------------
-   6. CTA SECTIONS — unified hierarchy
-   -------------------------------------------- */
-.section--lighter h2 + p {
-  margin-top: 16px !important;
-  margin-bottom: 20px !important;
+.use-cases-selected .usecase-block p {
+  margin-bottom: 18px !important;
 }
 
-.section--lighter .cta-btn {
-  margin-top: 20px !important;
+.use-cases-selected .usecase-block ul {
+  margin-bottom: 28px !important;
 }
 
-/* --------------------------------------------
-   7. GRID RHYTHM (Services, Industries, Use Cases)
-   -------------------------------------------- */
-.why-grid,
-#services .card-grid,
-#why-vaira .card-grid {
-  row-gap: 32px !important;
-  column-gap: 32px !important;
-}
-
-/* Use Cases grid specifically */
+/* Grid */
 .use-cases .why-grid {
   gap: 32px !important;
 }
 
-/* --------------------------------------------
-   8. ICON SIZE CONSISTENCY
-   -------------------------------------------- */
+/* Icon size consistency */
 .feature-block-icon {
   width: 22px !important;
   height: 22px !important;
@@ -1215,11 +498,11 @@ p {
   height: 48px !important;
 }
 
-/* --------------------------------------------
-   9. MOBILE REFINEMENTS — unified
-   -------------------------------------------- */
-@media (max-width: 768px) {
+/* =========================================================
+   11. RESPONSIVE — UNIFIED
+   ========================================================= */
 
+@media (max-width: 768px) {
   .section h2 {
     margin-bottom: 40px !important;
   }
@@ -1233,8 +516,8 @@ p {
   }
 
   .use-cases-selected .micro-illustration svg {
-    width: 40px !important;
-    height: 40px !important;
+    width: 40px;
+    height: 40px;
   }
 
   .why-grid {
@@ -1242,4 +525,5 @@ p {
     gap: 32px !important;
   }
 }
+
 
