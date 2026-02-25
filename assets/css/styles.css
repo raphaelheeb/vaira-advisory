@@ -968,11 +968,11 @@ p {
 
 /* ============================================
    USE CASES SUBPAGE (scoped to body.use-cases)
+   Clean, unified, conflict-free version
    ============================================ */
 
 /* --------------------------------------------
    0. OVERRIDE GLOBAL WRAPPER SPACING
-   (This is the key fix — required for spacing to work)
    -------------------------------------------- */
 body.use-cases .wrapper--narrow > * {
   margin-bottom: 0 !important;
@@ -983,10 +983,8 @@ body.use-cases .wrapper--narrow > * {
    -------------------------------------------- */
 .use-cases .micro-illustration {
   width: 48px;
-  height: auto;
   opacity: 0.75;
-  display: block;
-  margin: 0 0 14px 0;
+  margin-bottom: 14px;
 }
 
 .use-cases .micro-illustration svg {
@@ -1007,10 +1005,7 @@ body.use-cases section.section {
    -------------------------------------------- */
 body.use-cases .usecase-block {
   max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
-
-  margin-bottom: 96px !important; /* now works because wrapper override is above */
+  margin: 0 auto 96px auto !important;
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
@@ -1101,3 +1096,4 @@ body.use-cases .usecase-block ul {
     height: 40px;
   }
 }
+
