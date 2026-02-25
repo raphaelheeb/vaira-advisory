@@ -1097,3 +1097,12 @@ body.use-cases .usecase-block ul {
   }
 }
 
+/* Fix spacing control for Selected Use Cases */
+body.use-cases .wrapper--narrow > * {
+  margin-bottom: 0 !important;
+}
+
+body.use-cases .usecase-block {
+  margin-bottom: 96px; /* increase this to increase spacing */
+}
+
