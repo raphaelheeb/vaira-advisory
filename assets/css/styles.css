@@ -467,7 +467,7 @@ a:hover {
 
 .cta-btn--primary:hover {
   background: var(--primary);
-   color: var(--text-light);
+  color: var(--text-light);
   box-shadow: 0 8px 24px var(--shadow-strong);
 }
 
@@ -696,7 +696,7 @@ a:hover {
    ========================================================= */
 
 .site-footer {
-  background: var(--primary-dark);
+  background: var(--primary);
   color: var(--text-light);
   padding: 48px 0 32px;
   font-size: 15px;
