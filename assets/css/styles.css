@@ -984,3 +984,7 @@ p {
   margin-right: 0;
   margin-bottom: 20px;
 }
+
+.usecase-block {
+  display: block !important;
+}
