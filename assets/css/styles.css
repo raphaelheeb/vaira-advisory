@@ -1106,3 +1106,10 @@ body.use-cases .usecase-block {
   margin-bottom: 140px; /* increase this to increase spacing */
 }
 
+body.use-cases .usecase-item {
+  margin-bottom: 120px; /* controls spacing between UC1 → UC2 → UC3 → UC4 */
+}
+
+body.use-cases .usecase-item:last-child {
+  margin-bottom: 0;
+}
