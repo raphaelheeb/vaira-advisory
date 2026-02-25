@@ -1023,7 +1023,3 @@ body.use-cases .usecase-block ul {
 .use-cases .usecase-cards .card {
   max-width: 360px;
 }
-
-.use-cases .usecase-cards-section {
-  margin-top: 48px;
-}
