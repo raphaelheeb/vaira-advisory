@@ -947,3 +947,34 @@ a:hover {
   font-size: 20px;
   opacity: 0.92;
 }
+
+/* CONTACT CARD GRID */
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+/* CONTACT CARDS */
+.contact-card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border: 1px solid rgba(95,138,142,0.15);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px var(--shadow-light);
+  border-color: rgba(95,138,142,0.35);
+}
+
+/* ICON SIZE ALIGNMENT */
+.contact-card .card-icon svg {
+  width: 40px;
+  height: 40px;
+}
