@@ -978,15 +978,27 @@ body.use-cases .wrapper--narrow > * {
   margin-bottom: 50px !important;
 }
 
+/* ============================================
+   USE CASES SUBPAGE (scoped to .use-cases)
+   Clean, unified, conflict-free version
+   ============================================ */
+
+/* --------------------------------------------
+   0. OVERRIDE GLOBAL WRAPPER SPACING
+   -------------------------------------------- */
+.use-cases .wrapper--narrow > * {
+  margin-bottom: 0 !important;
+}
+
 /* --------------------------------------------
    1. USE CASE ITEM (NEW WRAPPER)
    Controls spacing between individual use cases
    -------------------------------------------- */
-body.use-cases .usecase-item {
-  margin-bottom: 140px; /* ← change THIS to control spacing */
+.use-cases .usecase-item {
+  margin-bottom: 140px; /* ← change THIS to control spacing between UC1→UC2→UC3→UC4 */
 }
 
-body.use-cases .usecase-item:last-child {
+.use-cases .usecase-item:last-child {
   margin-bottom: 0;
 }
 
@@ -1007,7 +1019,7 @@ body.use-cases .usecase-item:last-child {
 /* --------------------------------------------
    3. SECTION SPACING (Use Cases only)
    -------------------------------------------- */
-body.use-cases section.section {
+.use-cases section.section {
   padding-top: 96px !important;
   padding-bottom: 96px !important;
 }
@@ -1015,14 +1027,14 @@ body.use-cases section.section {
 /* --------------------------------------------
    4. USE CASE BLOCK (inner content)
    -------------------------------------------- */
-body.use-cases .usecase-block {
+.use-cases .usecase-block {
   max-width: 660px;
   margin: 0 auto;
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-body.use-cases .usecase-item:last-child .usecase-block {
+.use-cases .usecase-item:last-child .usecase-block {
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -1030,15 +1042,15 @@ body.use-cases .usecase-item:last-child .usecase-block {
 /* --------------------------------------------
    5. INTERNAL TYPOGRAPHIC RHYTHM
    -------------------------------------------- */
-body.use-cases .usecase-block h3 {
+.use-cases .usecase-block h3 {
   margin-bottom: 28px;
 }
 
-body.use-cases .usecase-block p {
+.use-cases .usecase-block p {
   margin-bottom: 18px;
 }
 
-body.use-cases .usecase-block ul {
+.use-cases .usecase-block ul {
   margin-bottom: 28px;
 }
 
@@ -1070,16 +1082,16 @@ body.use-cases .usecase-block ul {
    -------------------------------------------- */
 @media (max-width: 768px) {
 
-  body.use-cases section.section {
+  .use-cases section.section {
     padding-top: 64px !important;
     padding-bottom: 64px !important;
   }
 
-  body.use-cases .usecase-item {
-    margin-bottom: 90px; /* mobile spacing */
+  .use-cases .usecase-item {
+    margin-bottom: 90px; /* mobile spacing between use cases */
   }
 
-  body.use-cases .usecase-block {
+  .use-cases .usecase-block {
     padding-bottom: 40px;
   }
 
@@ -1088,15 +1100,15 @@ body.use-cases .usecase-block ul {
     height: 40px;
   }
 
-  body.use-cases .usecase-block h3 {
+  .use-cases .usecase-block h3 {
     margin-bottom: 22px;
   }
 
-  body.use-cases .usecase-block p {
+  .use-cases .usecase-block p {
     margin-bottom: 14px;
   }
 
-  body.use-cases .usecase-block ul {
+  .use-cases .usecase-block ul {
     margin-bottom: 22px;
   }
 
