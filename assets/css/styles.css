@@ -987,13 +987,13 @@ p {
 
 /* Section spacing — ONLY on this page */
 body.use-cases section.section {
-  padding-top: 56px !important;
-  padding-bottom: 56px !important;
+  padding-top: 72px !important;   /* increased */
+  padding-bottom: 72px !important; /* increased */
 }
 
 /* Spacing between the H2 and the first use case */
 body.use-cases h2 + .usecase-block {
-  margin-top: 32px;
+  margin-top: 40px; /* slightly increased */
 }
 
 /* Use case block spacing + divider */
@@ -1001,8 +1001,9 @@ body.use-cases .usecase-block {
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 64px; /* more breathing room for 4 blocks */
-  padding-bottom: 48px;
+
+  margin-bottom: 80px;   /* significantly increased */
+  padding-bottom: 56px;  /* increased */
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
@@ -1017,17 +1018,17 @@ body.use-cases .usecase-block:last-child {
 
 /* Title → body spacing */
 body.use-cases .usecase-block h3 {
-  margin-bottom: 24px;
+  margin-bottom: 28px; /* slightly increased */
 }
 
 /* Paragraph spacing */
 body.use-cases .usecase-block p {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 /* List spacing */
 body.use-cases .usecase-block ul {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 /* ============================================
@@ -1037,22 +1038,64 @@ body.use-cases .usecase-block ul {
 .use-cases .why-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 40px; /* increased for better breathing */
 }
 
-/* Card width constraints */
 .use-cases .feature-block {
   display: flex;
   gap: 16px;
   align-items: flex-start;
 }
 
-/* Icon placeholder (you can replace with real motifs later) */
 .use-cases .feature-block-icon {
   width: 48px;
   height: 48px;
   border-radius: 4px;
   background: var(--primary-mid);
   opacity: 0.75;
+}
+
+/* ============================================
+   MOBILE REFINEMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  body.use-cases section.section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  body.use-cases .usecase-block {
+    margin-bottom: 64px;
+    padding-bottom: 40px;
+  }
+
+  .use-cases .micro-illustration svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  body.use-cases .usecase-block h3 {
+    margin-bottom: 22px;
+  }
+
+  body.use-cases .usecase-block p {
+    margin-bottom: 14px;
+  }
+
+  body.use-cases .usecase-block ul {
+    margin-bottom: 22px;
+  }
+
+  .use-cases .why-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .use-cases .feature-block-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
