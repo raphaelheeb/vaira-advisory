@@ -526,4 +526,83 @@ p {
   }
 }
 
+/* =========================================================
+   12. HOMEPAGE RESTORATION (Hero, Cards, Bullets, Language)
+   ========================================================= */
+
+/* --------------------------------------------
+   HOMEPAGE HERO — restore original layout
+   -------------------------------------------- */
+#hero:not(.hero--clean) {
+  padding: 48px 0 48px !important;
+}
+
+#hero:not(.hero--clean) .hero-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) !important;
+  gap: 48px !important;
+  align-items: center !important;
+}
+
+#hero:not(.hero--clean) .hero-right svg {
+  width: 115% !important;
+  height: auto !important;
+  transform: translateY(-8px) !important;
+  position: relative !important;
+  right: -20px !important;
+}
+
+
+/* --------------------------------------------
+   HOMEPAGE CARDS — restore correct widths
+   -------------------------------------------- */
+#who-we-work-with .card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+}
+
+
+/* --------------------------------------------
+   LANGUAGE SWITCHER — restore layout + styling
+   -------------------------------------------- */
+.language-switcher {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.lang-btn {
+  font-size: 14px !important;
+  padding: 6px 14px !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--primary-mid) !important;
+  background: transparent !important;
+  color: var(--text-dark) !important;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--bg-light) !important;
+  color: var(--primary) !important;
+  border-color: var(--primary-mid) !important;
+}
+
+
+/* --------------------------------------------
+   SQUARE BULLETS — restore engineered bullets
+   -------------------------------------------- */
+#what-we-do ul li {
+  position: relative !important;
+  padding-left: 18px !important;
+}
+
+#what-we-do ul li::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 9px !important;
+  width: 6px !important;
+  height: 6px !important;
+  background: var(--primary-mid) !important;
+  border-radius: 2px !important;
+}
 
