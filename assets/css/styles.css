@@ -967,10 +967,11 @@ p {
 }
 
 /* ============================================
-   USE CASES SUBPAGE
+   USE CASES SUBPAGE (scoped to body.use-cases)
    ============================================ */
 
-.micro-illustration {
+/* Micro-illustration refinement */
+.use-cases .micro-illustration {
   width: 48px;
   height: auto;
   opacity: 0.75;
@@ -978,22 +979,24 @@ p {
   margin: 0 0 14px 0;
 }
 
-/* Only affects the Use Cases page */
-.use-cases .section {
-  padding-top: 56px;
-  padding-bottom: 56px;
+/* Section spacing — ONLY on this page */
+body.use-cases section.section {
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
 }
 
-.use-cases h2 + .usecase-block {
+/* Spacing between the H2 and the first use case */
+body.use-cases h2 + .usecase-block {
   margin-top: 32px;
 }
 
-.use-cases .usecase-block {
+/* Spacing between use case blocks (inside a section) */
+body.use-cases .usecase-block {
   margin-bottom: 48px;
 }
 
-.use-cases .usecase-block p,
-.use-cases .usecase-block ul {
+/* Internal spacing inside each use case */
+body.use-cases .usecase-block p,
+body.use-cases .usecase-block ul {
   margin-bottom: 16px;
 }
-
