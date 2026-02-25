@@ -967,8 +967,7 @@ p {
 }
 
 /* ============================================
-   USE CASES SUBPAGE — FINAL, CLEAN VERSION
-   Scoped ONLY to the Selected Use Cases section
+   USE CASES SUBPAGE — FINAL AUTHORITATIVE BLOCK
    ============================================ */
 
 /* 0. Neutralize wrapper spacing ONLY inside Selected Use Cases */
@@ -978,54 +977,54 @@ p {
 
 /* 1. Title → first micro‑illustration spacing */
 .use-cases-selected h2 {
-  margin-bottom: 48px !important; /* adjust as needed */
+  margin-bottom: 48px !important;
 }
 
-/* 2. USE CASE ITEM — controls spacing between individual use cases */
+/* 2. USE CASE ITEM — spacing between use cases */
 .use-cases-selected .usecase-item {
-  margin-bottom: 140px; /* spacing UC1→UC2→UC3→UC4 */
+  margin-bottom: 140px !important;
 }
 
 .use-cases-selected .usecase-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
-/* 3. USE CASE BLOCK (inner content) */
+/* 3. USE CASE BLOCK — width + divider spacing */
 .use-cases-selected .usecase-block {
-  max-width: 760px; /* wider wrapper */
-  margin: 0 auto;
-  padding-bottom: 40px; /* divider closer to Impact */
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  max-width: 760px !important;   /* ← wider */
+  margin: 0 auto !important;
+  padding-bottom: 40px !important; /* ← divider closer to Impact */
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
 }
 
 .use-cases-selected .usecase-item:last-child .usecase-block {
-  padding-bottom: 0;
-  border-bottom: none;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
 }
 
-/* 4. MICRO-ILLUSTRATIONS */
+/* 4. MICRO‑ILLUSTRATIONS */
 .use-cases-selected .micro-illustration {
-  width: 48px;
-  opacity: 0.75;
-  margin-bottom: 14px;
+  width: 48px !important;
+  opacity: 0.75 !important;
+  margin-bottom: 14px !important;
 }
 
 .use-cases-selected .micro-illustration svg {
-  width: 48px;
-  height: 48px;
+  width: 48px !important;
+  height: 48px !important;
 }
 
 /* 5. INTERNAL TYPOGRAPHIC RHYTHM */
 .use-cases-selected .usecase-block h3 {
-  margin-bottom: 28px;
+  margin-bottom: 28px !important;
 }
 
 .use-cases-selected .usecase-block p {
-  margin-bottom: 18px;
+  margin-bottom: 18px !important;
 }
 
 .use-cases-selected .usecase-block ul {
-  margin-bottom: 28px;
+  margin-bottom: 28px !important;
 }
 
 /* ============================================
@@ -1034,14 +1033,14 @@ p {
 
 /* Restore normal icon size */
 .use-cases .feature-block-icon {
-  width: 22px;
-  height: 22px;
+  width: 22px !important;
+  height: 22px !important;
 }
 
 /* Keep large icons ONLY inside Selected Use Cases */
 .use-cases-selected .feature-block-icon {
-  width: 48px;
-  height: 48px;
+  width: 48px !important;
+  height: 48px !important;
 }
 
 /* ============================================
@@ -1049,7 +1048,7 @@ p {
    ============================================ */
 
 .section--lighter .cta-btn {
-  margin-top: 32px; /* adjust as needed */
+  margin-top: 24px !important;
 }
 
 /* ============================================
@@ -1059,32 +1058,32 @@ p {
 @media (max-width: 768px) {
 
   .use-cases-selected .usecase-item {
-    margin-bottom: 90px;
+    margin-bottom: 90px !important;
   }
 
   .use-cases-selected .usecase-block {
-    padding-bottom: 32px;
+    padding-bottom: 32px !important;
   }
 
   .use-cases-selected .micro-illustration svg {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .use-cases-selected .usecase-block h3 {
-    margin-bottom: 22px;
+    margin-bottom: 22px !important;
   }
 
   .use-cases-selected .usecase-block p {
-    margin-bottom: 14px;
+    margin-bottom: 14px !important;
   }
 
   .use-cases-selected .usecase-block ul {
-    margin-bottom: 22px;
+    margin-bottom: 22px !important;
   }
 
   .use-cases .why-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 }
