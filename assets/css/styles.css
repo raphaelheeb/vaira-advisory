@@ -145,7 +145,7 @@ p {
 .section h2 {
   position: relative;
   padding-bottom: 12px;
-  margin-bottom: 48px; /* unified baseline */
+  margin-bottom: 48px;
   letter-spacing: 0.3px;
   color: var(--text-dark);
 }
@@ -201,6 +201,24 @@ p {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 32px;
   row-gap: 40px;
+}
+
+/* Homepage Cards */
+#who-we-work-with .card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+#who-we-work-with .card {
+  background: white;
+  border: 1px solid rgba(95,138,142,0.15);
+  border-radius: 14px;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+#who-we-work-with .card:hover {
+  background: rgba(201,220,220,0.35);
+  border-color: rgba(95,138,142,0.35);
+  transform: translateY(-2px);
 }
 
 /* Services Cards */
@@ -303,7 +321,6 @@ p {
   background: var(--primary-mid);
 }
 
-/* CTA Rhythm */
 .section--lighter h2 + p {
   margin-top: 16px !important;
   margin-bottom: 20px !important;
@@ -385,8 +402,124 @@ p {
   color: var(--primary);
 }
 
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-mid);
+  background: transparent;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--bg-light);
+  color: var(--primary);
+  border-color: var(--primary-mid);
+}
+
 /* =========================================================
-   8. FOOTER
+   8. HERO SYSTEM (Homepage + Subpages)
+   ========================================================= */
+
+/* Base Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 0 28px;
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* Background Grid Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 66px 66px;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure hero content sits above overlay */
+.hero > .content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 24px;
+}
+
+/* Typography */
+.hero-title {
+  font-size: 46px;
+  line-height: 1.22;
+  letter-spacing: 0.01em;
+}
+
+.hero-sub {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* Homepage Hero */
+#hero:not(.hero--clean) {
+  padding: 48px 0 48px;
+  background: var(--primary);
+}
+
+#hero:not(.hero--clean) .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+#hero:not(.hero--clean) .hero-right svg {
+  width: 115%;
+  height: auto;
+  transform: translateY(-8px);
+  position: relative;
+  right: -20px;
+}
+
+/* Subpage Hero */
+#hero.hero--clean {
+  padding: 96px 0 72px;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* CAD Arc */
+#hero.hero--clean .cad-hero-shape {
+  position: absolute;
+  right: -120px;
+  top: -80px;
+  width: 320px;
+  height: 320px;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#hero.hero--clean .cad-hero-shape svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================================
+   9. FOOTER
    ========================================================= */
 
 .site-footer {
@@ -405,7 +538,7 @@ p {
 }
 
 /* =========================================================
-   9. PAGE BLOCKS — INDUSTRIES
+   10. PAGE BLOCKS — INDUSTRIES
    ========================================================= */
 
 #industries-why.section {
@@ -435,7 +568,7 @@ p {
 }
 
 /* =========================================================
-   10. PAGE BLOCKS — USE CASES (Unified Rhythm)
+   11. PAGE BLOCKS — USE CASES (Unified Rhythm)
    ========================================================= */
 
 .use-cases-selected .wrapper--narrow > h2 {
@@ -499,7 +632,20 @@ p {
 }
 
 /* =========================================================
-   11. RESPONSIVE — UNIFIED
+   12. HOMEPAGE BULLETS — ENGINEERED SQUARES
+   ========================================================= */
+
+#who-we-work-with .feature-block-icon {
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 6px !important;
+  background: var(--primary-light) !important;
+  opacity: 0.65 !important;
+  border: 1px solid rgba(95,138,142,0.25) !important;
+}
+
+/* =========================================================
+   13. RESPONSIVE — UNIFIED
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -524,133 +670,4 @@ p {
     grid-template-columns: 1fr !important;
     gap: 32px !important;
   }
-}
-
-/* =========================================================
-   12. HOMEPAGE RESTORATION (Hero, Cards, Bullets, Language)
-   ========================================================= */
-
-/* --------------------------------------------
-   HOMEPAGE HERO — restore original layout + background
-   -------------------------------------------- */
-#hero:not(.hero--clean) {
-  padding: 48px 0 48px !important;
-  background: var(--primary) !important;
-}
-
-#hero:not(.hero--clean) .hero-grid {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) !important;
-  gap: 48px !important;
-  align-items: center !important;
-}
-
-#hero:not(.hero--clean) .hero-right svg {
-  width: 115% !important;
-  height: auto !important;
-  transform: translateY(-8px) !important;
-  position: relative !important;
-  right: -20px !important;
-}
-
-
-/* --------------------------------------------
-   HOMEPAGE CARDS — restore correct widths
-   -------------------------------------------- */
-#who-we-work-with .card-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-}
-
-
-/* --------------------------------------------
-   LANGUAGE SWITCHER — restore layout + styling
-   -------------------------------------------- */
-.language-switcher {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-}
-
-.lang-btn {
-  font-size: 14px !important;
-  padding: 6px 14px !important;
-  border-radius: 12px !important;
-  border: 1px solid var(--primary-mid) !important;
-  background: transparent !important;
-  color: var(--text-dark) !important;
-}
-
-.lang-btn.active {
-  background: var(--bg-light) !important;
-  color: var(--primary) !important;
-  border-color: var(--primary-mid) !important;
-}
-
-
-/* --------------------------------------------
-   HOMEPAGE BULLETS — restore engineered squares
-   -------------------------------------------- */
-#who-we-work-with .feature-block-icon {
-  width: 22px !important;
-  height: 22px !important;
-  border-radius: 6px !important;
-  background: var(--primary-light) !important;
-  opacity: 0.65 !important;
-  border: 1px solid rgba(95, 138, 142, 0.25) !important;
-}
-
-/* =========================================================
-   13. HERO RESTORATION (Homepage + Subpages)
-   ========================================================= */
-
-/* --------------------------------------------
-   Restore hero background grid overlay
-   -------------------------------------------- */
-.hero::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px) !important;
-  background-size: 66px 66px !important;
-  opacity: 0.18 !important;
-  pointer-events: none !important;
-  z-index: 0 !important;
-}
-
-/* --------------------------------------------
-   Restore homepage hero background color
-   -------------------------------------------- */
-#hero:not(.hero--clean) {
-  background: var(--primary) !important;
-}
-
-/* --------------------------------------------
-   Restore subpage hero padding + background
-   -------------------------------------------- */
-#hero.hero--clean {
-  padding: 96px 0 72px !important;
-  background: var(--primary) !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-/* --------------------------------------------
-   Restore CAD arc visibility + positioning
-   -------------------------------------------- */
-#hero.hero--clean .cad-hero-shape {
-  position: absolute !important;
-  right: -120px !important;
-  top: -80px !important;
-  width: 320px !important;
-  height: 320px !important;
-  opacity: 0.18 !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
-}
-
-#hero.hero--clean .cad-hero-shape svg {
-  width: 100% !important;
-  height: 100% !important;
 }
