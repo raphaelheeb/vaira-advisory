@@ -192,6 +192,22 @@ a:hover {
 }
 
 /* =========================================================
+   CTA COMPONENT — VAIRA Design System v1.3
+   ========================================================= */
+
+.section--cta h2 {
+  margin-bottom: 16px !important;   /* Tight: title → tagline */
+}
+
+.section--cta h2 + p {
+  margin-bottom: 32px !important;   /* Spacious: tagline → CTA */
+}
+
+.section--cta .cta-btn {
+  margin-top: 0 !important;         /* Controlled by spacing above */
+}
+
+/* =========================================================
    4. CARDS & FEATURE BLOCKS
    ========================================================= */
 
