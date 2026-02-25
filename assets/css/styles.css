@@ -899,3 +899,42 @@ a:hover {
   }
 }
 
+/* HOW WE WORK — Blueprint Grid Background */
+.how-we-work-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 32px 0;
+}
+
+.how-we-work-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* HOW WE WORK — Card Enhancements */
+.how-card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border: 1px solid rgba(95,138,142,0.15);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px var(--shadow-light);
+  border-color: rgba(95,138,142,0.35);
+}
+
