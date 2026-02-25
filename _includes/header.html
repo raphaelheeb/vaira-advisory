@@ -2,7 +2,7 @@
   <div class="header-wrap content-wrapper">
 
     <div class="brand-and-nav">
-      <a href="{{ site.baseurl }}/" class="site-logo">
+        <a href="{% if page.lang == 'de' %}{{ site.baseurl }}/de/{% else %}{{ site.baseurl }}/{% endif %}" class="site-logo">
         <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
       </a>
 
