@@ -1092,3 +1092,154 @@ p {
   margin-bottom: 72px !important; /* adjust to taste */
 }
 
+/* =========================================================
+   VAIRA — UNIFIED VERTICAL RHYTHM SYSTEM
+   Applies consistent spacing across Services, Industries,
+   and Use Cases without breaking existing layout logic.
+   ========================================================= */
+
+/* --------------------------------------------
+   1. SECTION TITLES — unified spacing
+   -------------------------------------------- */
+.section h2 {
+  margin-bottom: 48px !important; /* global baseline */
+}
+
+/* Tighter titles where needed */
+.section--tight h2 {
+  margin-bottom: 32px !important;
+}
+
+/* Use Cases override (needs more breathing room) */
+.use-cases-selected .wrapper--narrow > h2 {
+  margin-bottom: 72px !important;
+}
+
+/* --------------------------------------------
+   2. ICON → TITLE SPACING (Services + Use Cases)
+   -------------------------------------------- */
+#services .card-header .card-icon,
+.use-cases-selected .micro-illustration {
+  margin-bottom: 20px !important;
+}
+
+/* --------------------------------------------
+   3. INTERNAL BLOCK RHYTHM
+   -------------------------------------------- */
+
+/* Headings inside blocks */
+#services .card h3,
+.use-cases-selected .usecase-block h3 {
+  margin-bottom: 28px !important;
+}
+
+/* Paragraph rhythm */
+#services .card p,
+.use-cases-selected .usecase-block p {
+  margin-bottom: 18px !important;
+}
+
+/* Lists */
+#services .card ul,
+.use-cases-selected .usecase-block ul {
+  margin-bottom: 28px !important;
+}
+
+/* --------------------------------------------
+   4. USE CASES — block width + divider rhythm
+   -------------------------------------------- */
+.use-cases-selected .usecase-block {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding-bottom: 48px !important; /* Impact → divider */
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+.use-cases-selected .usecase-item {
+  margin-bottom: 160px !important; /* divider → next icon */
+}
+
+.use-cases-selected .usecase-item:last-child .usecase-block {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+/* --------------------------------------------
+   5. INDUSTRIES — split layout rhythm
+   -------------------------------------------- */
+.industries-why-inner {
+  column-gap: 48px !important;
+}
+
+.industries-why-text h2 {
+  margin-bottom: 28px !important;
+}
+
+/* --------------------------------------------
+   6. CTA SECTIONS — unified hierarchy
+   -------------------------------------------- */
+.section--lighter h2 + p {
+  margin-top: 16px !important;
+  margin-bottom: 20px !important;
+}
+
+.section--lighter .cta-btn {
+  margin-top: 20px !important;
+}
+
+/* --------------------------------------------
+   7. GRID RHYTHM (Services, Industries, Use Cases)
+   -------------------------------------------- */
+.why-grid,
+#services .card-grid,
+#why-vaira .card-grid {
+  row-gap: 32px !important;
+  column-gap: 32px !important;
+}
+
+/* Use Cases grid specifically */
+.use-cases .why-grid {
+  gap: 32px !important;
+}
+
+/* --------------------------------------------
+   8. ICON SIZE CONSISTENCY
+   -------------------------------------------- */
+.feature-block-icon {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.use-cases-selected .feature-block-icon {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+/* --------------------------------------------
+   9. MOBILE REFINEMENTS — unified
+   -------------------------------------------- */
+@media (max-width: 768px) {
+
+  .section h2 {
+    margin-bottom: 40px !important;
+  }
+
+  .use-cases-selected .usecase-item {
+    margin-bottom: 90px !important;
+  }
+
+  .use-cases-selected .usecase-block {
+    padding-bottom: 32px !important;
+  }
+
+  .use-cases-selected .micro-illustration svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
