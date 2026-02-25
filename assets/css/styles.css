@@ -673,91 +673,62 @@ p {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v1.2.2 — RESTORATION PATCH
+   VAIRA DESIGN SYSTEM v1.2.3 — RESTORATION PATCH
    ========================================================= */
 
-/* 1. Why VAIRA — restore card grid look */
-#why-vaira .feature-block {
-  background: white;
-  padding: 20px 24px;
-  border-radius: 12px;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-#why-vaira .feature-block:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
-/* 2. Use Cases — tighten spacing */
-.use-cases-selected .usecase-item {
-  margin-bottom: 72px !important;
-}
-.use-cases-selected .usecase-block {
-  padding-bottom: 32px !important;
-}
-
-/* 3. Use Cases — micro-illustration sizing */
-.use-cases-selected .micro-illustration svg {
-  width: 64px !important;
-  height: 64px !important;
-}
-.use-cases-selected .micro-illustration {
-  margin-bottom: 16px !important;
-}
-
-/* 4. Use Cases — 2×2 card grid */
-.use-cases .why-grid {
+/* 1. HOMEPAGE — Why VAIRA: restore 2×2 card grid */
+#why-vaira .why-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 32px !important;
-}
-.use-cases .feature-block {
-  background: white;
-  padding: 20px 24px;
-  border-radius: 12px;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-.use-cases .feature-block:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
+  gap: 40px 32px !important;
 }
 
-/* 5. Services — restore Industries grid */
-#industries-we-work-in .why-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 32px !important;
-}
-#industries-we-work-in .feature-block-icon {
+/* HOMEPAGE — Why VAIRA: restore engineered bullets */
+#why-vaira .feature-block-icon {
   width: 22px !important;
   height: 22px !important;
   border-radius: 6px !important;
   background: var(--primary-light) !important;
   opacity: 0.65 !important;
   border: 1px solid rgba(95,138,142,0.25) !important;
+  flex-shrink: 0 !important;
 }
 
-/* 6. Services CTA — unify spacing */
-#services-cta h2 {
-  margin-bottom: 32px !important;
+/* 2. USE CASES — tighten spacing between items */
+.use-cases-selected .usecase-item {
+  margin-bottom: 48px !important;
 }
-#services-cta h2 + p {
-  margin-bottom: 20px !important;
-}
-#services-cta .cta-btn {
-  margin-top: 20px !important;
+.use-cases-selected .usecase-block {
+  padding-bottom: 24px !important;
 }
 
-/* 7. Global link color fix */
-a {
-  color: var(--primary-mid);
-  text-decoration: none;
+/* 3. USE CASES — darker background for “Where These Use Cases Matter” */
+#use-cases-where.section {
+  background: var(--bg-light) !important;
 }
-a:hover {
-  color: var(--primary);
-  text-decoration: underline;
+
+/* USE CASES — 2×2 card grid */
+#use-cases-where .why-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+}
+
+#use-cases-where .feature-block {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(95,138,142,0.15);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+#use-cases-where .feature-block:hover {
+  background: rgba(201,220,220,0.35);
+  border-color: rgba(95,138,142,0.35);
+  transform: translateY(-2px);
+}
+
+/* 4. FOOTER — restore right alignment */
+.footer-col--right {
+  text-align: right !important;
 }
