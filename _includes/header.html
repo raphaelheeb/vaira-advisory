@@ -27,18 +27,12 @@
 
     </div>
 
-   <!-- LANGUAGE SWITCHER -->
+ <!-- LANGUAGE SWITCHER -->
 <div class="language-switcher">
 
-  {% comment %}
-    Compute default EN/DE URLs
-  {% endcomment %}
   {% assign en_url = page.url | remove_first: '/de' %}
   {% assign de_url = '/de' | append: page.url %}
 
-  {% comment %}
-    Manual mapping for pages with different slugs
-  {% endcomment %}
   {% if page.url == '/de/datenschutz/' %}
     {% assign en_url = '/privacy/' %}
   {% endif %}
