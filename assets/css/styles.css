@@ -985,6 +985,10 @@ p {
   margin-bottom: 40px !important;
 }
 
+.use-cases-selected .usecase-item:first-child {
+  margin-top: 96px !important;
+}
+
 .use-cases-selected .usecase-item:last-child {
   margin-bottom: 0 !important;
 }
