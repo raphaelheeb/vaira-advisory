@@ -1012,3 +1012,14 @@ body.use-cases .usecase-block ul {
   margin-bottom: 24px;
 }
 
+/* Widen text column for better readability */
+.use-cases .usecase-block {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Widen cards so longest title fits on one line */
+.use-cases .usecase-cards .card {
+  max-width: 360px;
+}
