@@ -971,18 +971,21 @@ p {
    ============================================ */
 
 .usecase-block {
-  max-width: 620px;
-  margin: 0 auto;
-  display: block !important;
+  text-align: center; /* center inline elements */
 }
 
 .micro-illustration {
   width: 52px;
+  height: auto;
   opacity: 0.9;
-  display: block;
-  margin: 0 0 20px 0; /* top 0, right 0, bottom 20, left 0 */
+  display: inline-block; /* allows centering */
+  margin-bottom: 20px;
 }
 
-.usecase-block * {
-  flex: none !important;
+/* Reset text alignment for the actual content */
+.usecase-block h3,
+.usecase-block p,
+.usecase-block ul {
+  text-align: left;
 }
+
