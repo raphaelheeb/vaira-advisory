@@ -673,17 +673,33 @@ p {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v1.2.3 — RESTORATION PATCH
+   VAIRA DESIGN SYSTEM v1.2.4 — RESTORATION PATCH
    ========================================================= */
 
-/* 1. HOMEPAGE — Why VAIRA: restore 2×2 card grid */
+/* 1. HOMEPAGE — Why VAIRA: restore 2×2 grid + icon placement */
 #why-vaira .why-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 40px 32px !important;
 }
 
-/* HOMEPAGE — Why VAIRA: restore engineered bullets */
+#why-vaira .feature-block {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  background: white !important;
+  padding: 20px 24px !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(95,138,142,0.15) !important;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+#why-vaira .feature-block:hover {
+  background: rgba(201,220,220,0.35) !important;
+  border-color: rgba(95,138,142,0.35) !important;
+  transform: translateY(-2px) !important;
+}
+
 #why-vaira .feature-block-icon {
   width: 22px !important;
   height: 22px !important;
@@ -692,43 +708,41 @@ p {
   opacity: 0.65 !important;
   border: 1px solid rgba(95,138,142,0.25) !important;
   flex-shrink: 0 !important;
+  margin-top: 4px !important;
 }
 
-/* 2. USE CASES — tighten spacing between items */
-.use-cases-selected .usecase-item {
-  margin-bottom: 48px !important;
+/* 2. HOMEPAGE — Case Snapshot link color */
+#case-snapshot a {
+  color: var(--primary-mid) !important;
+  text-decoration: none !important;
 }
-.use-cases-selected .usecase-block {
-  padding-bottom: 24px !important;
-}
-
-/* 3. USE CASES — darker background for “Where These Use Cases Matter” */
-#use-cases-where.section {
-  background: var(--bg-light) !important;
+#case-snapshot a:hover {
+  color: var(--primary) !important;
+  text-decoration: underline !important;
 }
 
-/* USE CASES — 2×2 card grid */
-#use-cases-where .why-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 32px !important;
-}
-
-#use-cases-where .feature-block {
-  background: white;
-  padding: 20px 24px;
-  border-radius: 12px;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#use-cases-where .feature-block:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
-/* 4. FOOTER — restore right alignment */
+/* 3. FOOTER — right alignment + link color */
 .footer-col--right {
   text-align: right !important;
+}
+.site-footer a {
+  color: var(--primary-light) !important;
+  text-decoration: none !important;
+}
+.site-footer a:hover {
+  color: var(--primary-light) !important;
+  text-decoration: underline !important;
+}
+
+/* 4. USE CASES — tighten spacing between items */
+.use-cases-selected .usecase-item {
+  margin-bottom: 32px !important;
+}
+.use-cases-selected .usecase-block {
+  padding-bottom: 20px !important;
+}
+
+/* 5. USE CASES — darker background for “Where These Use Cases Matter” */
+#use-cases-where.section {
+  background: var(--primary-light) !important;
 }
