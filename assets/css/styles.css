@@ -975,7 +975,7 @@ p {
    0. OVERRIDE GLOBAL WRAPPER SPACING
    -------------------------------------------- */
 body.use-cases .wrapper--narrow > * {
-  margin-bottom: 0 !important;
+  margin-bottom: 50px !important;
 }
 
 /* --------------------------------------------
@@ -983,7 +983,7 @@ body.use-cases .wrapper--narrow > * {
    Controls spacing between individual use cases
    -------------------------------------------- */
 body.use-cases .usecase-item {
-  margin-bottom: 280px; /* ← change THIS to control spacing */
+  margin-bottom: 140px; /* ← change THIS to control spacing */
 }
 
 body.use-cases .usecase-item:last-child {
