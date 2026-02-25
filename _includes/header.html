@@ -27,18 +27,44 @@
 
     </div>
 
-    <!-- LANGUAGE SWITCHER -->
-    <div class="language-switcher">
+   <!-- LANGUAGE SWITCHER -->
+<div class="language-switcher">
 
-      {% if page.lang == "de" %}
-        <a href="{{ site.baseurl }}{{ page.url | remove_first: '/de' }}" class="lang-btn">EN</a>
-        <span class="lang-btn active">DE</span>
-      {% else %}
-        <span class="lang-btn active">EN</span>
-        <a href="{{ site.baseurl }}/de{{ page.url }}" class="lang-btn">DE</a>
-      {% endif %}
+  {% comment %}
+    Compute default EN/DE URLs
+  {% endcomment %}
+  {% assign en_url = page.url | remove_first: '/de' %}
+  {% assign de_url = '/de' | append: page.url %}
 
-    </div>
+  {% comment %}
+    Manual mapping for pages with different slugs
+  {% endcomment %}
+  {% if page.url == '/de/datenschutz/' %}
+    {% assign en_url = '/privacy/' %}
+  {% endif %}
+
+  {% if page.url == '/privacy/' %}
+    {% assign de_url = '/de/datenschutz/' %}
+  {% endif %}
+
+  {% if page.url == '/de/impressum/' %}
+    {% assign en_url = '/impressum/' %}
+  {% endif %}
+
+  {% if page.url == '/impressum/' %}
+    {% assign de_url = '/de/impressum/' %}
+  {% endif %}
+
+  {% if page.lang == "de" %}
+    <a href="{{ site.baseurl }}{{ en_url }}" class="lang-btn">EN</a>
+    <span class="lang-btn active">DE</span>
+  {% else %}
+    <span class="lang-btn active">EN</span>
+    <a href="{{ site.baseurl }}{{ de_url }}" class="lang-btn">DE</a>
+  {% endif %}
+
+</div>
+
 
   </div>
 </header>
