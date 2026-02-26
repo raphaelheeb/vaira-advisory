@@ -1080,3 +1080,34 @@ a:hover {
   pointer-events: none;
   z-index: 0;
 }
+
+/* =========================================================
+   HOMEPAGE — SPLIT IMAGE ALIGNMENT REFINEMENTS
+   ========================================================= */
+
+/* 1) Center image vertically relative to text block */
+#what-we-do .split,
+#how-we-work .split,
+#case-snapshot .split {
+  align-items: center !important;
+}
+
+/* 2) Remove auto-centering that made images float */
+.split-image {
+  margin: 0 !important;
+}
+
+/* 3) Slightly reduce image width for calmer balance */
+.split-image {
+  max-width: 420px !important;
+}
+
+/* 4) Increase spacing above "See more examples" link */
+.case-snapshot-cta {
+  margin-top: 32px !important;
+}
+
+/* 5) Ensure section title spacing in Example Engagement matches global rhythm */
+#case-snapshot .section-title {
+  margin-bottom: var(--section-space) !important;
+}
