@@ -633,6 +633,7 @@ p {
 
 .nav a:hover {
   color: var(--primary-mid);
+  text-decoration: none;
 }
 
 .nav a:hover::after {
