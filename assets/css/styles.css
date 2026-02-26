@@ -1039,3 +1039,38 @@ a:hover {
   pointer-events: none;
   z-index: 0;
 }
+
+/* =========================================================
+   UNIFIED VERTICAL SPACING SYSTEM (Homepage + Subpages)
+   ========================================================= */
+
+/* Global spacing token */
+:root {
+  --section-space: 4rem;
+}
+
+/* Ensure all sections breathe consistently */
+.section {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+/* Uniform spacing below section titles */
+.section h2 {
+  margin-bottom: var(--section-space) !important;
+}
+
+/* Uniform spacing between intro text and grids/splits/lists */
+.section p + .card-grid,
+.section p + .why-grid,
+.section p + .split,
+.section p + ul {
+  margin-top: var(--section-space);
+}
+
+/* Uniform spacing inside split sections */
+.split > div,
+.split > img {
+  margin-top: var(--section-space);
+  margin-bottom: var(--section-space);
+}
