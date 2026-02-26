@@ -487,6 +487,8 @@ p {
 .cta-btn--secondary:hover {
   background: var(--primary-mid);
   color: var(--text-light);
+  text-decoration: none;
+  border: 1px solid;
 }
 
 /* CTA section spacing refinements */
