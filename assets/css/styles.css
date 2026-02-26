@@ -169,6 +169,7 @@ p {
 
 .section--alt {
   background: var(--primary-light);
+  padding-top: calc(var(--section-space) - 12px);
 }
 
 .section--lighter {
@@ -197,7 +198,7 @@ p {
   margin-top: var(--section-space);
 }
 
-/* Base list rhythm (components refine this) */
+/* Base list rhythm */
 .section ul li {
   margin-bottom: 8px;
   line-height: 1.45;
@@ -207,7 +208,6 @@ p {
    VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
    LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
    ========================================================= */
-
 
 /* ------------------------------
    Core Grid Utilities
@@ -230,35 +230,29 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-
 /* ------------------------------
-   Split Layout (Global)
-   Asymmetric 1.2fr / 0.8fr
-   CENTER‑ALIGNED VERSION
+   Split Layout (Technical Balanced)
    ------------------------------ */
 
 .split {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 48px;
-  align-items: center; /* ← center alignment */
-  padding-left: 4px;
+  gap: 56px;
+  align-items: center;
+  padding-left: 0;
 }
 
-/* Text column */
 .split-left {
-  max-width: 540px;
-  align-self: center; /* ← center text block */
+  max-width: 480px;
+  align-self: center;
 }
 
-/* Image column */
 .split-right {
-  align-self: center; /* ← center image block */
+  align-self: center;
   display: flex;
   flex-direction: column;
 }
 
-/* Image itself */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
@@ -266,22 +260,16 @@ p {
   object-fit: cover;
   border-radius: 8px;
   max-width: 420px;
-  margin: 0; /* ← remove offsets */
-  align-self: center; /* ← center image inside column */
+  align-self: center;
 }
 
-/* Uniform title → paragraph spacing everywhere */
+/* Uniform title → paragraph spacing */
 .section h2,
 .wrapper--narrow h2,
 .split h2,
 .split-left h2,
 .section-title {
   margin-bottom: 20px;
-}
-
-/* First paragraph sits directly under title */
-.split-left > p:first-of-type {
-  margin-top: 0;
 }
 
 /* Paragraph → list spacing */
@@ -295,7 +283,6 @@ p {
   margin-bottom: 10px;
   line-height: 1.55;
 }
-
 
 /* ------------------------------
    Manual Alternation System
@@ -313,9 +300,8 @@ p {
   order: 1;
 }
 
-
 /* ------------------------------
-   Mobile Behavior (Text → Image)
+   Mobile Behavior
    ------------------------------ */
 
 @media (max-width: 768px) {
@@ -324,7 +310,6 @@ p {
     gap: 32px;
   }
 
-  /* Always text first, image second */
   .split > div {
     order: 1;
   }
@@ -334,7 +319,6 @@ p {
     max-width: 100%;
   }
 
-  /* Reverse mode still respects text-first mobile rule */
   .split--reverse .split > div:first-child {
     order: 1;
   }
@@ -350,9 +334,8 @@ p {
    COMPONENTS: Cards, Feature Blocks, CTA, Hero, Header, Footer
    ========================================================= */
 
-
 /* ------------------------------
-   Cards (Generic + Services + Contact)
+   Cards
    ------------------------------ */
 
 .card-grid {
@@ -429,9 +412,8 @@ p {
   height: 40px;
 }
 
-
 /* ------------------------------
-   Feature Blocks (Why VAIRA, Use Cases)
+   Feature Blocks (Why VAIRA)
    ------------------------------ */
 
 .why-grid {
@@ -444,18 +426,18 @@ p {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 8px 0;
+  padding: 20px 24px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(95,138,142,0.15);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  margin-bottom: 32px;
 }
 
-.feature-block-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  background: var(--primary-light);
-  opacity: 0.65;
-  border: 1px solid rgba(95,138,142,0.25);
-  flex-shrink: 0;
-  margin-top: 4px;
+.feature-block:hover {
+  background: rgba(201,220,220,0.35);
+  border-color: rgba(95,138,142,0.35);
+  transform: translateY(-2px);
 }
 
 .feature-block h3 {
@@ -467,22 +449,6 @@ p {
   margin: 0;
   line-height: 1.55;
 }
-
-/* Why VAIRA hover refinement */
-#why-vaira .feature-block {
-  background: white;
-  padding: 20px 24px;
-  border-radius: 12px;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#why-vaira .feature-block:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
 
 /* ------------------------------
    CTA Buttons
@@ -529,18 +495,17 @@ p {
 }
 
 /* ------------------------------
-   Hero System (Homepage + Subpages)
+   Hero System
    ------------------------------ */
 
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 96px 0 72px; /* premium spacious hero */
+  padding: 96px 0 72px;
   background-color: var(--primary);
   color: var(--text-light);
 }
 
-/* Background grid overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -574,7 +539,6 @@ p {
   max-width: 50ch;
 }
 
-/* Ensure hero text stays white */
 .hero h1,
 .hero .hero-title,
 .hero h2,
@@ -582,30 +546,26 @@ p {
   color: var(--text-light) !important;
 }
 
-/* Homepage hero grid — premium, balanced, spacious */
 #hero:not(.hero--clean) .hero-grid {
   display: grid;
-  grid-template-columns: 2.1fr 1.1fr; /* more room for text, strong illustration */
-  gap: 64px; /* more breathing room */
-  align-items: center; /* keep both vertically centered */
+  grid-template-columns: 2.1fr 1.1fr;
+  gap: 64px;
+  align-items: center;
 }
 
-/* Vertical alignment */
 #hero:not(.hero--clean) .hero-left {
-  align-self: center; /* no shrinking */
+  align-self: center;
 }
 
 #hero:not(.hero--clean) .hero-right {
   align-self: center;
 }
 
-/* Illustration scaling — keep it large and confident */
 #hero:not(.hero--clean) .hero-right svg {
   width: 115%;
-  transform: translateY(-6px); /* subtle optical centering */
+  transform: translateY(-6px);
 }
 
-/* Subpage hero */
 #hero.hero--clean {
   padding: 96px 0 72px;
 }
@@ -614,7 +574,6 @@ p {
   font-size: 20px;
   opacity: 0.92;
 }
-
 
 /* ------------------------------
    Header & Navigation
@@ -706,7 +665,6 @@ p {
   color: var(--primary);
 }
 
-
 /* ------------------------------
    Footer
    ------------------------------ */
@@ -773,7 +731,6 @@ p {
    PAGE BLOCKS + RESPONSIVE SYSTEM
    ========================================================= */
 
-
 /* ------------------------------
    Industries Page Blocks
    ------------------------------ */
@@ -804,7 +761,6 @@ p {
   height: auto;
 }
 
-
 /* ------------------------------
    Use Cases — Alternating Backgrounds
    ------------------------------ */
@@ -820,7 +776,6 @@ p {
 #use-cases-where.section {
   background: var(--primary-light);
 }
-
 
 /* ------------------------------
    Use Cases — Selected Use Cases Blocks
@@ -871,7 +826,6 @@ p {
   margin-bottom: 28px;
 }
 
-
 /* ------------------------------
    Contact Page — Blueprint Background
    ------------------------------ */
@@ -892,7 +846,6 @@ p {
   pointer-events: none;
   z-index: 0;
 }
-
 
 /* ------------------------------
    Responsive System (Unified)
