@@ -429,7 +429,7 @@ a:hover {
 }
 
 .split-image {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -466,6 +466,23 @@ a:hover {
   text-decoration: underline;
 }
 
+#case-snapshot .split {
+  align-items: center;
+}
+
+#case-snapshot .section-title {
+  margin-bottom: var(--section-space) !important;
+}
+
+#what-we-do .split {
+  align-items: center;
+}
+
+#what-we-do .split-image {
+  max-width: 420px;
+}
+
+
 /* =========================================================
    6. CTA BUTTONS
    ========================================================= */
@@ -501,6 +518,10 @@ a:hover {
 
 .cta-btn--secondary:hover {
   background: var(--primary-mid);
+}
+
+.case-snapshot-cta {
+  margin-top: 24px !important;
 }
 
 .section--lighter h2 + p {
@@ -659,12 +680,15 @@ a:hover {
   font-size: 46px;
   line-height: 1.22;
   letter-spacing: 0.01em;
+  margin-bottom: 24px !important;
 }
 
 .hero-sub {
   font-size: 18px;
   line-height: 1.6;
   margin-top: 12px;
+  margin-bottom: 36px !important;
+  max-width: 50ch;
 }
 
 /* Homepage Hero */
