@@ -517,7 +517,6 @@ p {
   margin-bottom: 32px;
 }
 
-
 /* ------------------------------
    Hero System (Homepage + Subpages)
    ------------------------------ */
@@ -525,7 +524,7 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 48px 0;
+  padding: 96px 0 72px; /* premium spacious hero */
   background-color: var(--primary);
   color: var(--text-light);
 }
@@ -564,6 +563,7 @@ p {
   max-width: 50ch;
 }
 
+/* Ensure hero text stays white */
 .hero h1,
 .hero .hero-title,
 .hero h2,
@@ -571,25 +571,27 @@ p {
   color: var(--text-light) !important;
 }
 
-/* Homepage hero grid */
+/* Homepage hero grid — premium, balanced, spacious */
 #hero:not(.hero--clean) .hero-grid {
   display: grid;
-  grid-template-columns: 2.3fr 0.9fr;
-  gap: 48px;
-  align-items: center; /* baseline */
+  grid-template-columns: 2.1fr 1.1fr; /* more room for text, strong illustration */
+  gap: 64px; /* more breathing room */
+  align-items: center; /* keep both vertically centered */
 }
 
-/* Vertical alignment tuning */
+/* Vertical alignment */
 #hero:not(.hero--clean) .hero-left {
-  align-self: start;
+  align-self: center; /* no shrinking */
 }
 
 #hero:not(.hero--clean) .hero-right {
   align-self: center;
 }
 
+/* Illustration scaling — keep it large and confident */
 #hero:not(.hero--clean) .hero-right svg {
-  transform: translateY(12px);
+  width: 115%;
+  transform: translateY(-6px); /* subtle optical centering */
 }
 
 /* Subpage hero */
@@ -601,6 +603,7 @@ p {
   font-size: 20px;
   opacity: 0.92;
 }
+
 
 /* ------------------------------
    Header & Navigation
