@@ -270,9 +270,13 @@ p {
   align-self: center; /* ← center image inside column */
 }
 
-/* Title → text spacing (12px) */
-.split-left h2 {
-  margin-bottom: 12px;
+/* Uniform title → paragraph spacing everywhere */
+.section h2,
+.wrapper--narrow h2,
+.split h2,
+.split-left h2,
+.section-title {
+  margin-bottom: 20px;
 }
 
 /* First paragraph sits directly under title */
