@@ -167,7 +167,7 @@ p {
 .wrapper--narrow h2,
 .split-left h2,
 .split h2 {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* global, stable, predictable */
 }
 
 .section ul {
@@ -192,7 +192,7 @@ p {
   padding-left: 32px;
 }
 
-/* Ensure no accidental stacking gaps */
+/* Remove accidental stacking gaps */
 .section + .section {
   margin-top: 0;
 }
@@ -211,38 +211,10 @@ p {
   line-height: 1.45;
 }
 
+
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
-   LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
+   SPLIT LAYOUT (FINAL)
    ========================================================= */
-
-
-/* ------------------------------
-   Core Grid Utilities
-   ------------------------------ */
-
-.grid {
-  display: grid;
-  gap: 32px;
-}
-
-.grid--2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--auto {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-
-/* ------------------------------
-   Split Layout (Global)
-   Asymmetric 1.2fr / 0.8fr
-   ------------------------------ */
 
 .split {
   display: grid;
@@ -256,6 +228,12 @@ p {
 .split-left {
   max-width: 540px;
   align-self: start;
+  margin: 0; /* ensure no drift */
+}
+
+/* Text block wrapper */
+.split-body {
+  margin-top: 0; /* title spacing handled globally */
 }
 
 /* Image column */
@@ -273,13 +251,10 @@ p {
   object-fit: cover;
   border-radius: 8px;
   max-width: 420px;
-  margin-top: 20px; /* aligns with .split-body start */
   align-self: start;
-}
 
-/* Text block wrapper */
-.split-body {
-  margin-top: 0; /* title spacing handled globally */
+  /* This is the key: matches global title spacing */
+  margin-top: 20px;
 }
 
 /* Paragraph → list spacing */
