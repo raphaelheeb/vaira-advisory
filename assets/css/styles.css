@@ -244,38 +244,49 @@ p {
   padding-left: 4px;
 }
 
-.split > div {
+/* Text column */
+.split-left {
   max-width: 540px;
   align-self: start;
 }
 
-/* Text block wrapper (everything after the title) */
-.split-body {
-  margin-top: 12px; /* title → text spacing */
+/* Image column */
+.split-right {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Image aligned to the start of the text block */
+/* Image itself */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  display: block;
-  margin: 0;
   max-width: 420px;
+  margin: 0;
   align-self: start;
-  margin-top: 12px; /* aligns image top with .split-body top */
 }
 
-/* Paragraph → list spacing inside split sections */
-.split p + ul,
-.split p + .checklist {
+/* Title → text spacing (12px) */
+.split-left h2 {
+  margin-bottom: 12px;
+}
+
+/* First paragraph sits directly under title */
+.split-left > p:first-of-type {
+  margin-top: 0;
+}
+
+/* Paragraph → list spacing */
+.split-left p + ul,
+.split-left p + .checklist {
   margin-top: 24px;
 }
 
-/* List item rhythm inside split sections */
-.split ul li {
+/* List item rhythm */
+.split-left ul li {
   margin-bottom: 10px;
   line-height: 1.55;
 }
@@ -283,21 +294,20 @@ p {
 
 /* ------------------------------
    Manual Alternation System
-   (Used via .split--reverse)
    ------------------------------ */
 
 .split--reverse .split {
   grid-template-columns: 0.8fr 1.2fr;
 }
 
-.split--reverse .split > div:first-child {
+.split--reverse .split-left {
   order: 2;
 }
 
-.split--reverse .split > div:last-child,
-.split--reverse .split-image {
+.split--reverse .split-right {
   order: 1;
 }
+
 
 
 /* ------------------------------
