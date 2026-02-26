@@ -258,7 +258,17 @@ p {
   display: block;
   margin: 0;
   max-width: 420px;
-  align-self: start; /* align image top to text top */
+  align-self: start; /* align image top to start of text block */
+}
+
+/* Title → text spacing inside split sections (12px) */
+.split h2 {
+  margin-bottom: 12px !important;
+}
+
+/* Ensure first paragraph sits directly under the title */
+.split > div > p:first-of-type {
+  margin-top: 0 !important;
 }
 
 /* Paragraph → list spacing inside split sections */
@@ -272,7 +282,6 @@ p {
   margin-bottom: 10px;
   line-height: 1.55;
 }
-
 
 /* ------------------------------
    Manual Alternation System
@@ -291,17 +300,6 @@ p {
 .split--reverse .split-image {
   order: 1;
 }
-
-/* Tighter title → text spacing inside split sections */
-.split h2 {
-  margin-bottom: 24px !important;
-}
-
-/* Tighter paragraph rhythm inside split sections */
-.split > div > p:first-of-type {
-  margin-top: 0 !important;
-}
-
 
 /* ------------------------------
    Mobile Behavior (Text → Image)
