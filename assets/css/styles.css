@@ -240,13 +240,13 @@ p {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 48px;
-  align-items: start;
+  align-items: start; /* top-align both sides */
   padding-left: 4px;
 }
 
 .split > div {
   max-width: 540px;
-  align-self: start;
+  align-self: start; /* ensure text column starts at top */
 }
 
 .split-image {
@@ -258,9 +258,7 @@ p {
   display: block;
   margin: 0;
   max-width: 420px;
-
-  /* Offset image down so its top aligns with first paragraph */
-  margin-top: 40px; /* tweak between 36–44px to taste */
+  align-self: start; /* align image top to text column top */
 }
 
 /* Title → text spacing inside split sections (12px) */
