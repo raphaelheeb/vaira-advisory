@@ -283,6 +283,7 @@ p {
   line-height: 1.55;
 }
 
+
 /* ------------------------------
    Manual Alternation System
    (Used via .split--reverse)
@@ -300,6 +301,7 @@ p {
 .split--reverse .split-image {
   order: 1;
 }
+
 
 /* ------------------------------
    Mobile Behavior (Text → Image)
