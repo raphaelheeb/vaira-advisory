@@ -240,15 +240,21 @@ p {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 48px;
-  align-items: start; /* top-align both sides */
+  align-items: start;
   padding-left: 4px;
 }
 
 .split > div {
   max-width: 540px;
-  align-self: start; /* ensure text column starts at top */
+  align-self: start;
 }
 
+/* Text block wrapper (everything after the title) */
+.split-body {
+  margin-top: 12px; /* title → text spacing */
+}
+
+/* Image aligned to the start of the text block */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
@@ -258,17 +264,8 @@ p {
   display: block;
   margin: 0;
   max-width: 420px;
-  align-self: start; /* align image top to text column top */
-}
-
-/* Title → text spacing inside split sections (12px) */
-.split h2 {
-  margin-bottom: 12px;
-}
-
-/* Ensure first paragraph sits directly under the title */
-.split > div > p:first-of-type {
-  margin-top: 0;
+  align-self: start;
+  margin-top: 12px; /* aligns image top with .split-body top */
 }
 
 /* Paragraph → list spacing inside split sections */
