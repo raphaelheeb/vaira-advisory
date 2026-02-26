@@ -247,6 +247,7 @@ p {
 /* Text block rhythm inside all split sections */
 .split > div {
   max-width: 540px;
+  align-self: start;
 }
 
 /* Image behavior inside split sections */
@@ -259,6 +260,7 @@ p {
   display: block;
   margin: 0;
   max-width: 420px;
+  align-self: center:
 }
 
 /* Paragraph → list spacing inside split sections */
