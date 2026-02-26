@@ -157,17 +157,9 @@ p {
    ------------------------------ */
 
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
   background: var(--text-light);
-}
-
-/* Consistent title → paragraph spacing across ALL sections */
-.section h2,
-.wrapper--narrow h2,
-.split-left h2,
-.split h2 {
-  margin-bottom: 20px; /* global, stable, predictable */
 }
 
 .section ul {
@@ -192,7 +184,7 @@ p {
   padding-left: 32px;
 }
 
-/* Remove accidental stacking gaps */
+/* Ensure no accidental stacking gaps */
 .section + .section {
   margin-top: 0;
 }
@@ -205,45 +197,68 @@ p {
   margin-top: var(--section-space);
 }
 
-/* Base list rhythm */
+/* Base list rhythm (components refine this) */
 .section ul li {
   margin-bottom: 8px;
   line-height: 1.45;
 }
 
-
 /* =========================================================
-   SPLIT LAYOUT (FINAL)
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
+   LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
    ========================================================= */
+
+
+/* ------------------------------
+   Core Grid Utilities
+   ------------------------------ */
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+
+/* ------------------------------
+   Split Layout (Global)
+   Asymmetric 1.2fr / 0.8fr
+   CENTER‑ALIGNED VERSION
+   ------------------------------ */
 
 .split {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 48px;
-  align-items: start;
+  align-items: center; /* ← center alignment */
   padding-left: 4px;
 }
 
 /* Text column */
 .split-left {
   max-width: 540px;
-  align-self: start;
-  margin: 0; /* ensure no drift */
-}
-
-/* Text block wrapper */
-.split-body {
-  margin-top: 0; /* title spacing handled globally */
+  align-self: center; /* ← center text block */
 }
 
 /* Image column */
 .split-right {
-  align-self: start;
+  align-self: center; /* ← center image block */
   display: flex;
   flex-direction: column;
 }
 
-/* Image aligned with first paragraph */
+/* Image itself */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
@@ -251,20 +266,28 @@ p {
   object-fit: cover;
   border-radius: 8px;
   max-width: 420px;
-  align-self: start;
+  margin: 0; /* ← remove offsets */
+  align-self: center; /* ← center image inside column */
+}
 
-  /* This is the key: matches global title spacing */
-  margin-top: 20px;
+/* Title → text spacing (12px) */
+.split-left h2 {
+  margin-bottom: 12px;
+}
+
+/* First paragraph sits directly under title */
+.split-left > p:first-of-type {
+  margin-top: 0;
 }
 
 /* Paragraph → list spacing */
-.split-body p + ul,
-.split-body p + .checklist {
+.split-left p + ul,
+.split-left p + .checklist {
   margin-top: 24px;
 }
 
 /* List item rhythm */
-.split-body ul li {
+.split-left ul li {
   margin-bottom: 10px;
   line-height: 1.55;
 }
@@ -285,6 +308,7 @@ p {
 .split--reverse .split-right {
   order: 1;
 }
+
 
 /* ------------------------------
    Mobile Behavior (Text → Image)
