@@ -157,9 +157,17 @@ p {
    ------------------------------ */
 
 .section {
-  padding-top: var(--section-space);
-  padding-bottom: var(--section-space);
+  padding-top: 96px;
+  padding-bottom: 96px;
   background: var(--text-light);
+}
+
+/* Consistent title → paragraph spacing across ALL sections */
+.section h2,
+.wrapper--narrow h2,
+.split-left h2,
+.split h2 {
+  margin-bottom: 20px;
 }
 
 .section ul {
@@ -197,7 +205,7 @@ p {
   margin-top: var(--section-space);
 }
 
-/* Base list rhythm (components refine this) */
+/* Base list rhythm */
 .section ul li {
   margin-bottom: 8px;
   line-height: 1.45;
@@ -257,7 +265,7 @@ p {
   flex-direction: column;
 }
 
-/* Image itself */
+/* Image aligned with first paragraph */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
@@ -265,28 +273,23 @@ p {
   object-fit: cover;
   border-radius: 8px;
   max-width: 420px;
-  margin: 0;
+  margin-top: 20px; /* aligns with .split-body start */
   align-self: start;
 }
 
-/* Title → text spacing (12px) */
-.split-left h2 {
-  margin-bottom: 12px;
-}
-
-/* First paragraph sits directly under title */
-.split-left > p:first-of-type {
-  margin-top: 0;
+/* Text block wrapper */
+.split-body {
+  margin-top: 0; /* title spacing handled globally */
 }
 
 /* Paragraph → list spacing */
-.split-left p + ul,
-.split-left p + .checklist {
+.split-body p + ul,
+.split-body p + .checklist {
   margin-top: 24px;
 }
 
 /* List item rhythm */
-.split-left ul li {
+.split-body ul li {
   margin-bottom: 10px;
   line-height: 1.55;
 }
@@ -307,8 +310,6 @@ p {
 .split--reverse .split-right {
   order: 1;
 }
-
-
 
 /* ------------------------------
    Mobile Behavior (Text → Image)
