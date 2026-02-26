@@ -1,38 +1,73 @@
 /* =========================================================
-   1. RESET & BASE TOKENS
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 1/4
+   FOUNDATIONS: Reset, Tokens, Typography, Wrappers, Sections
    ========================================================= */
 
-#main {
-  padding: 0 !important;
-  margin: 0 !important;
-  max-width: none !important;
+/* ------------------------------
+   Modern Reset (clean, minimal)
+   ------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-#main .content-wrapper,
-#main .wrapper,
-#main .wrapper--wide,
-#main .wrapper--narrow {
-  max-width: none !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-#main section {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text-dark);
+  background: var(--text-light);
+  line-height: 1.7;
 }
 
-header .content-wrapper {
-  max-width: 1080px !important;
-  margin: 0 auto !important;
+/* Remove default margins */
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, figure {
+  margin: 0;
+  padding: 0;
 }
 
-/* Brand Tokens */
+/* Remove list styles globally (components reintroduce them intentionally) */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Anchor defaults */
+a {
+  color: var(--primary-mid);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------------
+   Brand Tokens
+   ------------------------------ */
+
 :root {
   --primary: #2B4E5A;
   --primary-mid: #5F8A8E;
   --primary-light: #C9DCDC;
+  --primary-dark: #084442;
+
+  --primary-mid-soft: rgba(95,138,142,0.35);
+  --primary-light-soft: rgba(201,220,220,0.55);
 
   --text-dark: #0E1514;
   --text-light: #FFFFFF;
@@ -46,52 +81,62 @@ header .content-wrapper {
   --shadow-light: rgba(0,0,0,0.12);
   --shadow-strong: rgba(0,0,0,0.18);
 
-  --primary-dark: #084442;
   --footer-accent: rgba(184,212,208,0.15);
 
-  --primary-mid-soft: rgba(95,138,142,0.35);
-  --primary-light-soft: rgba(201,220,220,0.55);
+  /* Unified vertical spacing system */
+  --section-space: 4rem;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", system-ui, sans-serif;
-  color: var(--text-dark);
-  background: var(--text-light);
-  line-height: 1.7;
-}
+/* ------------------------------
+   Typography
+   ------------------------------ */
 
 h1, h2, h3 {
-  margin: 0 0 16px 0;
   font-family: "Inter Tight", system-ui, sans-serif;
   font-weight: 600;
   letter-spacing: 0.01em;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.22;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.28;
+  margin-bottom: var(--section-space);
+  position: relative;
+  padding-bottom: 12px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 3px;
+  background: var(--primary-mid);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: 12px;
 }
 
 p {
-  margin: 0 0 16px 0;
+  font-size: 17px;
+  line-height: 1.55;
+  margin-bottom: 16px;
 }
 
-/* Global links */
-a {
-  color: var(--primary-mid);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-/* =========================================================
-   2. LAYOUT WRAPPERS
-   ========================================================= */
+/* ------------------------------
+   Layout Wrappers
+   ------------------------------ */
 
 .content-wrapper {
   width: 90%;
@@ -107,28 +152,14 @@ a:hover {
   max-width: 1280px;
 }
 
-.illustration-wrapper {
-  max-width: 480px;
-  margin-left: auto;
-}
-
-.illustration-wrapper svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* =========================================================
-   3. SECTIONS & TYPOGRAPHIC RHYTHM
-   ========================================================= */
+/* ------------------------------
+   Sections & Global Rhythm
+   ------------------------------ */
 
 .section {
-  padding: 80px 0 72px;
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
   background: var(--text-light);
-}
-
-.section--tight {
-  padding: 48px 0;
 }
 
 .section--alt {
@@ -148,54 +179,12 @@ a:hover {
   padding-left: 32px;
 }
 
+/* Ensure no accidental stacking gaps */
 .section + .section {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
-/* Section Titles */
-.section h2 {
-  position: relative;
-  padding-bottom: 12px;
-  margin-bottom: 48px;
-  letter-spacing: 0.3px;
-  color: var(--text-dark);
-}
-
-.section--tight h2 {
-  margin-bottom: 32px !important;
-}
-
-.section h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 48px;
-  height: 3px;
-  background: var(--primary-mid);
-  border-radius: 2px;
-}
-
-/* =========================================================
-   UNIFIED VERTICAL SPACING SYSTEM (Homepage + Subpages)
-   ========================================================= */
-
-:root {
-  --section-space: 4rem;
-}
-
-/* Consistent breathing room for all sections */
-.section {
-  padding-top: var(--section-space);
-  padding-bottom: var(--section-space);
-}
-
-/* Uniform spacing below section titles */
-.section h2 {
-  margin-bottom: var(--section-space) !important;
-}
-
-/* Uniform spacing between intro text and grids/splits/lists */
+/* Paragraph → grid/list/split spacing */
 .section p + .card-grid,
 .section p + .why-grid,
 .section p + .split,
@@ -203,48 +192,142 @@ a:hover {
   margin-top: var(--section-space);
 }
 
-/* Uniform spacing inside split sections */
-.split > div,
-.split > img {
-  margin-top: var(--section-space);
-  margin-bottom: var(--section-space);
-}
-
-
-/* Text Rhythm */
-.section p {
-  line-height: 1.55;
-  margin-top: 4px;
-}
-
+/* Base list rhythm (components refine this) */
 .section ul li {
   margin-bottom: 4px;
   line-height: 1.45;
 }
 
-.section ul li::before {
-  background: var(--primary-mid);
+/* =========================================================
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
+   LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
+   ========================================================= */
+
+
+/* ------------------------------
+   Core Grid Utilities
+   ------------------------------ */
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+
+/* ------------------------------
+   Split Layout (Global)
+   Asymmetric 1.2fr / 0.8fr
+   ------------------------------ */
+
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+  padding-left: 4px;
+}
+
+/* Text block rhythm inside all split sections */
+.split > div {
+  max-width: 540px;
+}
+
+/* Image behavior inside split sections */
+.split-image {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0;
+  max-width: 420px;
+}
+
+/* Paragraph → list spacing inside split sections */
+.split p + ul,
+.split p + .checklist {
+  margin-top: 24px;
+}
+
+/* List item rhythm inside split sections */
+.split ul li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
+
+/* ------------------------------
+   Manual Alternation System
+   (Used via .split--reverse)
+   ------------------------------ */
+
+.split--reverse .split {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.split--reverse .split > div:first-child {
+  order: 2;
+}
+
+.split--reverse .split > div:last-child,
+.split--reverse .split-image {
+  order: 1;
+}
+
+
+/* ------------------------------
+   Mobile Behavior (Text → Image)
+   ------------------------------ */
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Always text first, image second */
+  .split > div {
+    order: 1;
+  }
+
+  .split-image {
+    order: 2;
+    max-width: 100%;
+  }
+
+  /* Reverse mode still respects text-first mobile rule */
+  .split--reverse .split > div:first-child {
+    order: 1;
+  }
+
+  .split--reverse .split > div:last-child,
+  .split--reverse .split-image {
+    order: 2;
+  }
 }
 
 /* =========================================================
-   CTA COMPONENT — VAIRA Design System v1.3
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
+   COMPONENTS: Cards, Feature Blocks, CTA, Hero, Header, Footer
    ========================================================= */
 
-.section--cta h2 {
-  margin-bottom: 16px !important;   /* Tight: title → tagline */
-}
 
-.section--cta h2 + p {
-  margin-bottom: 32px !important;   /* Spacious: tagline → CTA */
-}
-
-.section--cta .cta-btn {
-  margin-top: 0 !important;         /* Controlled by spacing above */
-}
-
-/* =========================================================
-   4. CARDS & FEATURE BLOCKS
-   ========================================================= */
+/* ------------------------------
+   Cards (Generic + Services + Contact)
+   ------------------------------ */
 
 .card-grid {
   display: grid;
@@ -255,107 +338,25 @@ a:hover {
 .card {
   padding: 28px;
   border-radius: 12px;
-  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
-}
-
-/* Generic feature blocks */
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 40px;
-  row-gap: 32px;
-}
-
-.feature-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 8px 0;
-}
-
-.feature-block-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  margin-top: 4px;
-  background: var(--primary-light);
-  opacity: 0.65;
-  border: 1px solid rgba(95,138,142,0.25);
-  flex-shrink: 0;
-}
-
-.feature-block h3 {
-  margin: 0 0 8px 0;
-  font-weight: 600;
-}
-
-.feature-block p {
-  margin: 0;
-  line-height: 1.55;
-}
-
-/* Why VAIRA — homepage */
-#why-vaira .why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 32px;
-}
-
-#why-vaira .feature-block {
   background: white;
-  padding: 20px 24px;
-  border-radius: 12px;
   border: 1px solid rgba(95,138,142,0.15);
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
-#why-vaira .feature-block:hover {
+.card:hover {
   background: rgba(201,220,220,0.35);
   border-color: rgba(95,138,142,0.35);
   transform: translateY(-2px);
 }
 
-#why-vaira .feature-block-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  background: var(--primary-light);
-  opacity: 0.65;
-  border: 1px solid rgba(95,138,142,0.25);
-  flex-shrink: 0;
-  margin-top: 4px;
-}
-
-/* Homepage — Who We Work With cards */
-#who-we-work-with .wrapper--narrow {
-  max-width: 1150px;
-}
-
-#who-we-work-with .card {
-  background: white;
-  border: 1px solid rgba(95,138,142,0.15);
-  border-radius: 14px;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-#who-we-work-with .card:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
-/* Services — cards */
+/* Services cards */
 #services .card {
-  border-radius: 14px;
-  border: 1px solid rgba(95,138,142,0.15);
   background: rgba(201,220,220,0.45);
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
 }
 
 #services .card:hover {
   background: white;
   border-color: rgba(95,138,142,0.45);
-  transform: translateY(-2px);
 }
 
 #services .card-grid {
@@ -375,34 +376,74 @@ a:hover {
   stroke-width: 2.5;
 }
 
-#services .wrapper--narrow {
-  max-width: 1000px;
-}
-
-/* Services — Industries We Work In grid */
-#industries-we-work-in .why-grid {
+/* Contact cards */
+.contact-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 36px;
+  margin-top: 32px;
 }
 
-#industries-we-work-in .feature-block-icon {
+.contact-card {
+  background: white;
+  border: 1px solid rgba(95,138,142,0.15);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px var(--shadow-light);
+  border-color: rgba(95,138,142,0.35);
+}
+
+.contact-card .card-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* ------------------------------
+   Feature Blocks (Why VAIRA, Use Cases)
+   ------------------------------ */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+}
+
+.feature-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 8px 0;
+}
+
+.feature-block-icon {
   width: 22px;
   height: 22px;
   border-radius: 6px;
   background: var(--primary-light);
   opacity: 0.65;
   border: 1px solid rgba(95,138,142,0.25);
+  flex-shrink: 0;
+  margin-top: 4px;
 }
 
-/* Use Cases — Where These Use Cases Matter grid */
-#use-cases-where .why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+.feature-block h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-#use-cases-where .feature-block {
+.feature-block p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Why VAIRA hover refinement */
+#why-vaira .feature-block {
   background: white;
   padding: 20px 24px;
   border-radius: 12px;
@@ -410,87 +451,25 @@ a:hover {
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
-#use-cases-where .feature-block:hover {
+#why-vaira .feature-block:hover {
   background: rgba(201,220,220,0.35);
   border-color: rgba(95,138,142,0.35);
   transform: translateY(-2px);
 }
 
-/* =========================================================
-   5. SPLIT LAYOUT
-   ========================================================= */
 
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
-  padding-left: 4px;
-}
-
-.split-image {
-  aspect-ratio: 4 / 3;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-
-/* Case Snapshot specifics */
-#case-snapshot .case-points {
-  margin: 16px 0;
-  padding-left: 20px;
-  list-style: disc;
-  opacity: 0.85;
-}
-
-#case-snapshot .case-points li {
-  margin-bottom: 6px;
-}
-
-#case-snapshot .case-note {
-  margin-top: 12px;
-  font-size: 15px;
-  opacity: 0.7;
-}
-
-#case-snapshot a {
-  color: var(--primary-mid);
-  text-decoration: none;
-}
-
-#case-snapshot a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-#case-snapshot .split {
-  align-items: center;
-}
-
-#case-snapshot .section-title {
-  margin-bottom: var(--section-space) !important;
-}
-
-#what-we-do .split {
-  align-items: center;
-}
-
-/* =========================================================
-   6. CTA BUTTONS
-   ========================================================= */
+/* ------------------------------
+   CTA Buttons
+   ------------------------------ */
 
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 12px;
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   border: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .cta-btn--primary {
@@ -501,49 +480,104 @@ a:hover {
 
 .cta-btn--primary:hover {
   background: var(--primary);
-  color: var(--text-light);
   box-shadow: 0 8px 24px var(--shadow-strong);
 }
 
 .cta-btn--secondary {
   border: 1px solid var(--primary-mid);
-  color: var(--text-light);
   background: var(--primary);
+  color: var(--text-light);
 }
 
 .cta-btn--secondary:hover {
   background: var(--primary-mid);
 }
 
-.case-snapshot-cta {
-  margin-top: 24px !important;
+/* CTA section spacing refinements */
+.section--cta h2 {
+  margin-bottom: 16px;
 }
 
-.section--lighter h2 + p {
-  margin-top: 16px !important;
-  margin-bottom: 20px !important;
+.section--cta h2 + p {
+  margin-bottom: 32px;
 }
 
-.section--lighter .cta-btn {
-  margin-top: 20px !important;
+
+/* ------------------------------
+   Hero System (Homepage + Subpages)
+   ------------------------------ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0;
+  background-color: var(--primary);
+  color: var(--text-light);
 }
 
-/* Services CTA */
-#services-cta h2 {
-  margin-bottom: 32px !important;
+/* Background grid overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 66px 66px;
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
 }
 
-#services-cta h2 + p {
-  margin-bottom: 20px !important;
+.hero > .content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 24px;
 }
 
-#services-cta .cta-btn {
-  margin-top: 20px !important;
+.hero-title {
+  font-size: 46px;
+  line-height: 1.22;
+  margin-bottom: 24px;
 }
 
-/* =========================================================
-   7. HEADER & NAVIGATION
-   ========================================================= */
+.hero-sub {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 12px;
+  margin-bottom: 36px;
+  max-width: 50ch;
+}
+
+/* Homepage hero grid */
+#hero:not(.hero--clean) .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+#hero:not(.hero--clean) .hero-right svg {
+  width: 115%;
+  transform: translateY(-8px);
+  position: relative;
+  right: -20px;
+}
+
+/* Subpage hero */
+#hero.hero--clean {
+  padding: 96px 0 72px;
+}
+
+#hero.hero--clean .hero-sub {
+  font-size: 20px;
+  opacity: 0.92;
+}
+
+
+/* ------------------------------
+   Header & Navigation
+   ------------------------------ */
 
 .site-header {
   background: rgba(255,255,255,0.96);
@@ -575,18 +609,14 @@ a:hover {
 .nav {
   display: flex;
   gap: 28px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav a {
   position: relative;
-  text-decoration: none;
-  color: var(--text-dark);
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 2px;
+  color: var(--text-dark);
   transition: color 0.2s;
 }
 
@@ -613,7 +643,7 @@ a:hover {
   color: var(--primary);
 }
 
-/* Language Switcher */
+/* Language switcher */
 .language-switcher {
   display: flex;
   align-items: center;
@@ -633,108 +663,12 @@ a:hover {
 .lang-btn.active {
   background: var(--bg-light);
   color: var(--primary);
-  border-color: var(--primary-mid);
 }
 
-/* =========================================================
-   8. HERO SYSTEM (Homepage + Subpages)
-   ========================================================= */
 
-/* Base Hero */
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 36px 0 28px;
-  background-color: var(--primary);
-  color: var(--text-light);
-}
-
-/* Background Grid Overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
-  background-size: 66px 66px;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Ensure hero content sits above overlay */
-.hero > .content-wrapper {
-  position: relative;
-  z-index: 1;
-  padding-top: 24px;
-}
-
-/* Typography */
-.hero-title {
-  font-size: 46px;
-  line-height: 1.22;
-  letter-spacing: 0.01em;
-  margin-bottom: 24px !important;
-}
-
-.hero-sub {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 12px;
-  margin-bottom: 36px !important;
-  max-width: 50ch;
-}
-
-/* Homepage Hero */
-#hero:not(.hero--clean) {
-  padding: 48px 0 48px;
-  background: var(--primary);
-}
-
-#hero:not(.hero--clean) .hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: center;
-}
-
-#hero:not(.hero--clean) .hero-right svg {
-  width: 115%;
-  height: auto;
-  transform: translateY(-8px);
-  position: relative;
-  right: -20px;
-}
-
-/* Subpage Hero */
-#hero.hero--clean {
-  padding: 96px 0 72px;
-  background: var(--primary);
-  position: relative;
-  overflow: hidden;
-}
-
-/* CAD Arc */
-#hero.hero--clean .cad-hero-shape {
-  position: absolute;
-  right: -120px;
-  top: -80px;
-  width: 320px;
-  height: 320px;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 1;
-}
-
-#hero.hero--clean .cad-hero-shape svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* =========================================================
-   9. FOOTER
-   ========================================================= */
+/* ------------------------------
+   Footer
+   ------------------------------ */
 
 .site-footer {
   background: var(--primary);
@@ -746,12 +680,6 @@ a:hover {
 
 .site-footer a {
   color: var(--primary-light);
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: var(--primary-light);
-  text-decoration: underline;
 }
 
 .footer-brand {
@@ -764,7 +692,7 @@ a:hover {
 }
 
 .footer-tagline {
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
   opacity: 0.75;
 }
 
@@ -790,20 +718,6 @@ a:hover {
   opacity: 0.75;
 }
 
-.footer-legal a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer-legal a:hover {
-  text-decoration: underline;
-}
-
-.footer-legal .divider {
-  margin: 0 8px;
-  opacity: 0.5;
-}
-
 .footer-legal-bar {
   text-align: center;
   font-size: 13px;
@@ -813,22 +727,15 @@ a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.footer-legal-bar a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer-legal-bar a:hover {
-  text-decoration: underline;
-}
-
-.footer-legal-bar span {
-  margin: 0 6px;
-}
-
 /* =========================================================
-   10. PAGE BLOCKS — INDUSTRIES
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 4/4
+   PAGE BLOCKS + RESPONSIVE SYSTEM
    ========================================================= */
+
+
+/* ------------------------------
+   Industries Page Blocks
+   ------------------------------ */
 
 #industries-why.section {
   padding-top: 80px;
@@ -847,7 +754,7 @@ a:hover {
 }
 
 .industries-why-text h2 {
-  margin-bottom: 28px !important;
+  margin-bottom: 28px;
 }
 
 .industries-why-illustration svg {
@@ -856,11 +763,11 @@ a:hover {
   height: auto;
 }
 
-/* =========================================================
-   11. PAGE BLOCKS — USE CASES (Unified Rhythm)
-   ========================================================= */
 
-/* Alternating backgrounds for Use Cases page */
+/* ------------------------------
+   Use Cases — Alternating Backgrounds
+   ------------------------------ */
+
 .use-cases .section:nth-of-type(odd) {
   background: var(--text-light);
 }
@@ -869,201 +776,65 @@ a:hover {
   background: var(--bg-lighter);
 }
 
-/* Darker background for “Where These Use Cases Matter” */
 #use-cases-where.section {
   background: var(--primary-light);
 }
 
-/* Selected Use Cases layout */
+
+/* ------------------------------
+   Use Cases — Selected Use Cases Blocks
+   ------------------------------ */
+
 .use-cases-selected .wrapper--narrow > h2 {
-  margin-bottom: 72px !important;
+  margin-bottom: 72px;
 }
 
 .use-cases-selected .usecase-block {
-  max-width: 760px !important;
+  max-width: 760px;
   margin: 0 auto;
-  padding-bottom: 20px !important;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--line);
 }
 
 .use-cases-selected .usecase-item {
-  margin-bottom: 32px !important;
+  margin-bottom: 32px;
 }
 
 .use-cases-selected .usecase-item:last-child .usecase-block {
-  padding-bottom: 0 !important;
-  border-bottom: none !important;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 /* Micro-illustrations */
 .use-cases-selected .micro-illustration {
-  width: 48px !important;
-  margin-bottom: 16px !important;
+  width: 48px;
+  margin-bottom: 16px;
   opacity: 0.75;
 }
 
 .use-cases-selected .micro-illustration svg {
-  width: 64px !important;
-  height: 64px !important;
+  width: 64px;
+  height: 64px;
 }
 
 /* Typography inside blocks */
 .use-cases-selected .usecase-block h3 {
-  margin-bottom: 28px !important;
+  margin-bottom: 28px;
 }
 
 .use-cases-selected .usecase-block p {
-  margin-bottom: 18px !important;
+  margin-bottom: 18px;
 }
 
 .use-cases-selected .usecase-block ul {
-  margin-bottom: 28px !important;
+  margin-bottom: 28px;
 }
 
-/* Icon size consistency */
-.use-cases-selected .feature-block-icon {
-  width: 48px !important;
-  height: 48px !important;
-}
 
-/* =========================================================
-   12. RESPONSIVE — UNIFIED
-   ========================================================= */
+/* ------------------------------
+   Contact Page — Blueprint Background
+   ------------------------------ */
 
-@media (max-width: 960px) {
-  .hero {
-    padding-top: 64px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section h2 {
-    margin-bottom: 40px !important;
-  }
-
-  .use-cases-selected .usecase-item {
-    margin-bottom: 90px !important;
-  }
-
-  .use-cases-selected .usecase-block {
-    padding-bottom: 32px !important;
-  }
-
-  .use-cases-selected .micro-illustration svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
-  }
-
-  .header-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .brand-and-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: left;
-    gap: 24px;
-  }
-}
-
-/* HOW WE WORK — Blueprint Grid Background */
-.how-we-work-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  padding: 32px 0;
-}
-
-.how-we-work-grid::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* HOW WE WORK — Card Enhancements */
-.how-card {
-  position: relative;
-  z-index: 1;
-  background: white;
-  border: 1px solid rgba(95,138,142,0.15);
-  border-radius: 14px;
-  padding: 28px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.how-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px var(--shadow-light);
-  border-color: rgba(95,138,142,0.35);
-}
-
-/* About Page Hero Refinements */
-#hero.hero--clean {
-  padding: 96px 0 72px !important;
-}
-
-#hero.hero--clean .hero-sub {
-  font-size: 20px;
-  opacity: 0.92;
-}
-
-/* CONTACT CARD GRID */
-.contact-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
-  margin-top: 32px;
-}
-
-/* CONTACT CARDS */
-.contact-card {
-  position: relative;
-  z-index: 1;
-  background: white;
-  border: 1px solid rgba(95,138,142,0.15);
-  border-radius: 14px;
-  padding: 28px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px var(--shadow-light);
-  border-color: rgba(95,138,142,0.35);
-}
-
-/* ICON SIZE ALIGNMENT */
-.contact-card .card-icon svg {
-  width: 40px;
-  height: 40px;
-}
-
-/* Blueprint background for contact section */
 .section--lighter.contact-blueprint {
   position: relative;
 }
@@ -1081,33 +852,72 @@ a:hover {
   z-index: 0;
 }
 
-/* =========================================================
-   HOMEPAGE — SPLIT IMAGE ALIGNMENT REFINEMENTS
-   ========================================================= */
 
-/* 1) Center image vertically relative to text block */
-#what-we-do .split,
-#how-we-work .split,
-#case-snapshot .split {
-  align-items: center !important;
+/* ------------------------------
+   Responsive System (Unified)
+   ------------------------------ */
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 64px;
+  }
 }
 
-/* 2) Remove auto-centering that made images float */
-.split-image {
-  margin: 0 !important;
+@media (max-width: 768px) {
+
+  /* Section titles tighten slightly */
+  .section h2 {
+    margin-bottom: 40px;
+  }
+
+  /* Why-grid collapses */
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Contact cards stack */
+  .contact-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer stacks */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 24px;
+  }
+
+  /* Header collapses */
+  .header-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .brand-and-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  /* Use cases spacing refinement */
+  .use-cases-selected .usecase-item {
+    margin-bottom: 90px;
+  }
+
+  .use-cases-selected .usecase-block {
+    padding-bottom: 32px;
+  }
+
+  .use-cases-selected .micro-illustration svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-/* 3) Slightly reduce image width for calmer balance */
-.split-image {
-  max-width: 420px !important;
-}
-
-/* 4) Increase spacing above "See more examples" link */
-.case-snapshot-cta {
-  margin-top: 32px !important;
-}
-
-/* 5) Ensure section title spacing in Example Engagement matches global rhythm */
-#case-snapshot .section-title {
-  margin-bottom: var(--section-space) !important;
-}
