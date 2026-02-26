@@ -472,6 +472,7 @@ p {
 
 .cta-btn--primary:hover {
   background: var(--primary);
+  border: 1px solid var(--primary-light);
   box-shadow: 0 8px 24px var(--shadow-strong);
 }
 
