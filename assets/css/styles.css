@@ -962,3 +962,59 @@ p {
   }
 }
 
+/* =========================================================
+   COMPACT–TECHNICAL REFINEMENTS (VAIRA)
+   ========================================================= */
+
+/* 1) Tighter, more engineered text measure in split sections */
+.split-left {
+  max-width: 480px;
+}
+
+/* 2) Slightly wider gap for balanced center alignment */
+.split {
+  gap: 56px;
+  padding-left: 0; /* remove subtle misalignment */
+}
+
+/* 3) Center alignment for a stable, technical split layout */
+.split,
+.split-left,
+.split-right {
+  align-items: center;
+  align-self: center;
+}
+
+/* 4) Remove all image offsets for clean centering */
+.split-image {
+  margin-top: 0;
+  align-self: center;
+}
+
+/* 5) Compact, technical line-height system */
+.section p,
+.split-body p,
+.wrapper--narrow p {
+  line-height: 1.48;
+}
+
+.section ul li,
+.split-body ul li {
+  line-height: 1.42;
+}
+
+/* 6) Slightly reduce top padding for .section--alt 
+      (Organizations We Support) to avoid visual heaviness */
+.section--alt {
+  padding-top: calc(var(--section-space) - 16px);
+}
+
+/* 7) Improve vertical rhythm in Why VAIRA feature blocks */
+.feature-block {
+  margin-bottom: 32px;
+}
+
+/* 8) Remove inline spacing override in Case Snapshot title */
+.section-title {
+  margin-bottom: 20px !important;
+}
