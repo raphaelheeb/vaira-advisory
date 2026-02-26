@@ -292,6 +292,16 @@ p {
   order: 1;
 }
 
+/* Tighter title → text spacing inside split sections */
+.split h2 {
+  margin-bottom: 24px !important;
+}
+
+/* Tighter paragraph rhythm inside split sections */
+.split > div > p:first-of-type {
+  margin-top: 0 !important;
+}
+
 
 /* ------------------------------
    Mobile Behavior (Text → Image)
@@ -564,7 +574,7 @@ p {
 /* Homepage hero grid */
 #hero:not(.hero--clean) .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  grid-template-columns: 2.3fr 0.9fr;
   gap: 48px;
   align-items: center;
 }
