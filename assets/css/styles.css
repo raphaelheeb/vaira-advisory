@@ -859,30 +859,25 @@ p {
 
 @media (max-width: 768px) {
 
-  /* Section titles tighten slightly */
   .section h2 {
     margin-bottom: 40px;
   }
 
-  /* Why-grid collapses */
   .why-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  /* Contact cards stack */
   .contact-card-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Footer stacks */
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: left;
     gap: 24px;
   }
 
-  /* Header collapses */
   .header-wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -900,7 +895,6 @@ p {
     gap: 14px;
   }
 
-  /* Use cases spacing refinement */
   .use-cases-selected .usecase-item {
     margin-bottom: 90px;
   }
