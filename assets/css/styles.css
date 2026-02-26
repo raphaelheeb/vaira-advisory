@@ -238,19 +238,17 @@ p {
 
 .split {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 48px;
-  align-items: center;
+  align-items: start; /* top-align both sides */
   padding-left: 4px;
 }
 
-/* Text block rhythm inside all split sections */
 .split > div {
   max-width: 540px;
-  align-self: start;
+  align-self: start; /* ensure text starts at top */
 }
 
-/* Image behavior inside split sections */
 .split-image {
   aspect-ratio: 4 / 3;
   width: 100%;
@@ -260,7 +258,7 @@ p {
   display: block;
   margin: 0;
   max-width: 420px;
-  align-self: center:
+  align-self: start; /* align image top to text top */
 }
 
 /* Paragraph → list spacing inside split sections */
