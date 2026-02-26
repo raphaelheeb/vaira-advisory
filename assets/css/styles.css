@@ -1018,3 +1018,23 @@ p {
 .section-title {
   margin-bottom: 20px !important;
 }
+
+/* =========================================================
+   COMPACT–TECHNICAL REFINEMENTS — CORRECTIONS
+   ========================================================= */
+
+/* 1) Enforce compact line-height globally */
+p {
+  line-height: 1.48 !important;
+}
+
+/* 2) Normalize split alignment */
+.split {
+  padding-left: 0 !important;
+}
+
+/* 3) Improve Why VAIRA vertical rhythm */
+#why-vaira .feature-block {
+  margin-bottom: 40px !important;
+}
+
