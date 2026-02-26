@@ -152,6 +152,10 @@ p {
   max-width: 1280px;
 }
 
+#who-we-work-with .wrapper--narrow {
+  max-width: 1040px;
+}
+
 /* ------------------------------
    Sections & Global Rhythm
    ------------------------------ */
