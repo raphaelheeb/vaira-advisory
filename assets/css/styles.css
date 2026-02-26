@@ -576,14 +576,20 @@ p {
   display: grid;
   grid-template-columns: 2.3fr 0.9fr;
   gap: 48px;
-  align-items: center;
+  align-items: center; /* baseline */
+}
+
+/* Vertical alignment tuning */
+#hero:not(.hero--clean) .hero-left {
+  align-self: start;
+}
+
+#hero:not(.hero--clean) .hero-right {
+  align-self: center;
 }
 
 #hero:not(.hero--clean) .hero-right svg {
-  width: 115%;
-  transform: translateY(-8px);
-  position: relative;
-  right: -20px;
+  transform: translateY(12px);
 }
 
 /* Subpage hero */
