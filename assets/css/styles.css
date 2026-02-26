@@ -1038,3 +1038,43 @@ p {
   margin-bottom: 40px !important;
 }
 
+/* =========================================================
+   COMPACT–TECHNICAL REFINEMENTS — FINAL OVERRIDES
+   ========================================================= */
+
+/* 1) Enforce compact line-height globally */
+body p {
+  line-height: 1.48 !important;
+}
+
+/* 2) Normalize split alignment */
+body .split {
+  gap: 56px !important;
+  padding-left: 0 !important;
+}
+
+/* 3) Tighter text measure */
+body .split-left {
+  max-width: 480px !important;
+}
+
+/* 4) Center image cleanly */
+body .split-image {
+  margin-top: 0 !important;
+  align-self: center !important;
+}
+
+/* 5) Improve Why VAIRA vertical rhythm */
+body #why-vaira .feature-block {
+  margin-bottom: 40px !important;
+}
+
+/* 6) Reduce top padding for Organizations We Support */
+body .section--alt {
+  padding-top: calc(var(--section-space) - 16px) !important;
+}
+
+/* 7) Fix Case Snapshot title spacing */
+body .section-title {
+  margin-bottom: 20px !important;
+}
