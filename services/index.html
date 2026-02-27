@@ -155,14 +155,29 @@ permalink: /services/
     </div>
 
     <div class="split-right">
+
       <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
-  <rect x="40" y="150" width="60" height="50"
+  <!-- Left block -->
+  <rect x="40" y="150" width="50" height="40"
         stroke="currentColor" stroke-width="3"/>
-  <rect x="100" y="110" width="60" height="50"
+
+  <!-- Middle block (accent) -->
+  <rect x="90" y="110" width="50" height="40"
         fill="var(--primary-light)"
         stroke="currentColor" stroke-width="3"/>
-  <rect x="160" y="70" width="60" height="130"
-        stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- Right L-shape (true geometry) -->
+  <path d="
+    M150 70
+    H210
+    V150
+    H240
+    V190
+    H150
+    Z"
+    stroke="currentColor"
+    stroke-width="3"
+    fill="none"/>
 </svg>
 
       </div>
@@ -201,19 +216,24 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
+        
         <!-- Micro‑illustration 2 -->
-        <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+       <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+  <!-- Vertical + horizontal axes -->
   <line x1="130" y1="40" x2="130" y2="220"
         stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
   <line x1="40" y1="130" x2="220" y2="130"
         stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Accent arrow -->
+  <!-- Diagonal arrow (accent) -->
   <line x1="130" y1="130" x2="180" y2="80"
         stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="170,80 185,80 185,95"
+
+  <!-- Arrowhead perfectly aligned -->
+  <polyline points="180,80 195,80 195,95"
             stroke="var(--primary)" stroke-width="3" fill="none"/>
 </svg>
+
 
       </div>
 
@@ -252,7 +272,7 @@ permalink: /services/
     <div class="split-right">
       <div class="micro-illustration">
         <!-- Micro‑illustration 3 -->
-       <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
   <line x1="80" y1="80" x2="220" y2="80"
         stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
   <line x1="60" y1="130" x2="200" y2="130"
@@ -298,21 +318,19 @@ permalink: /services/
     <div class="split-right">
       <div class="micro-illustration">
         <!-- Micro‑illustration 4 -->
-        <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
-  <!-- Accent node -->
-  <circle cx="130" cy="130" r="12"
-          fill="var(--primary-light)"/>
-
-  <line x1="130" y1="130" x2="130" y2="220"
-        stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-  <line x1="130" y1="40" x2="130" y2="110"
-        stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+     <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+  <!-- Outer structure -->
+  <line x1="130" y1="40" x2="130" y2="220"
+        stroke="currentColor" stroke-width="3"/>
   <line x1="40" y1="130" x2="110" y2="130"
-        stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        stroke="currentColor" stroke-width="3"/>
   <line x1="150" y1="130" x2="220" y2="130"
-        stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-</svg>
+        stroke="currentColor" stroke-width="3"/>
 
+  <!-- Center node (accent) drawn last -->
+  <circle cx="130" cy="130" r="12"
+          fill="var(--primary-light)" stroke="currentColor" stroke-width="3"/>
+</svg>
 
       </div>
 
@@ -350,16 +368,24 @@ permalink: /services/
     <div class="split-right">
       <div class="micro-illustration">
         <!-- Micro‑illustration 5 -->
-        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="40" y="110" width="40" height="80" stroke="currentColor" stroke-width="2"/>
-          <rect x="90" y="110" width="40" height="80" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
-          <rect x="140" y="110" width="40" height="80" stroke
-          <rect x="140" y="110" width="40" height="80" stroke="currentColor" stroke-width="2"/>
+       <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+  <!-- Radar arcs -->
+  <circle cx="130" cy="130" r="90"
+          stroke="currentColor" stroke-width="3" opacity="0.35"/>
+  <circle cx="130" cy="130" r="60"
+          stroke="currentColor" stroke-width="3" opacity="0.35"/>
+  <circle cx="130" cy="130" r="30"
+          stroke="currentColor" stroke-width="3" opacity="0.35"/>
 
-          <!-- Forward arrow -->
-          <line x1="180" y1="150" x2="220" y2="150" stroke="currentColor" stroke-width="2"/>
-          <polygon points="215,140 230,150 215,160" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
-        </svg>
+  <!-- Sweep line -->
+  <line x1="130" y1="130" x2="200" y2="70"
+        stroke="currentColor" stroke-width="3"/>
+
+  <!-- Accent signal -->
+  <circle cx="200" cy="70" r="10"
+          fill="var(--primary-light)" stroke="currentColor" stroke-width="3"/>
+</svg>
+
       </div>
 
       <p>
