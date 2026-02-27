@@ -216,24 +216,28 @@ permalink: /services/
     <div class="split-right">
       <div class="micro-illustration">
         <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
-          <g transform="translate(0,-12)">
-            <line x1="130" y1="40" x2="130" y2="220"
-                  stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-            <line x1="40" y1="130" x2="220" y2="130"
-                  stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(0,-12)">
+    <line x1="130" y1="40" x2="130" y2="220"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
 
-            <line x1="130" y1="130" x2="180" y2="80"
-                  stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="40" y1="130" x2="220" y2="130"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Diagonal line -->
+    <line x1="130" y1="130" x2="180" y2="80"
+          stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Open arrowhead, now correctly aligned -->
+    <g transform="translate(180,80) rotate(-45)">
+      <line x1="0" y1="0" x2="-12" y2="6"
+            stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-12" y2="-6"
+            stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
   </g>
-            <g transform="translate(180,80) rotate(-45)">
-  <line x1="0" y1="0" x2="-12" y2="6"
-        stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
-  <line x1="0" y1="0" x2="-12" y2="-6"
-        stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
-</g>
+</svg>
 
-        
-        </svg>
       </div>
 
       <p style="margin-top:1.25rem;">
