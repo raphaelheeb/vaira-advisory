@@ -18,8 +18,27 @@ permalink: /services/
   </div>
 
   <div class="cad-hero-shape">
-    <!-- (keep your existing SVG unchanged) -->
-    {{ your existing hero SVG }}
+    <!-- Existing hero SVG preserved exactly -->
+    <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="white" stop-opacity="0.45" />
+          <stop offset="100%" stop-color="white" stop-opacity="0.05" />
+        </linearGradient>
+      </defs>
+      <g transform="rotate(-140 210 210)">
+        <path d="M20 210 A190 190 0 0 1 400 210"
+              stroke="white" stroke-width="1.75" stroke-opacity="0.55" vector-effect="non-scaling-stroke"/>
+        <path d="M60 210 A150 150 0 0 1 360 210"
+              stroke="white" stroke-width="1.25" stroke-opacity="0.40" vector-effect="non-scaling-stroke"/>
+        <line x1="210" y1="210" x2="400" y2="210"
+              stroke="url(#radialFade)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+        <line x1="360" y1="205" x2="360" y2="215"
+              stroke="white" stroke-width="1" stroke-opacity="0.40" vector-effect="non-scaling-stroke"/>
+        <line x1="320" y1="205" x2="320" y2="215"
+              stroke="white" stroke-width="1" stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+      </g>
+    </svg>
   </div>
 </section>
 
@@ -37,7 +56,13 @@ permalink: /services/
       <div class="card">
         <div class="card-header">
           <div class="card-icon">
-            {{ icon 1 }}
+            <!-- Deep‑Tech Advisory Icon -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="26" width="12" height="10" stroke="currentColor" stroke-width="2"/>
+              <rect x="18" y="14" width="12" height="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 14 H38 V28 H46 V36 H30 V14 Z"
+                    stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
           </div>
           <h3>Deep‑Tech Advisory & Venture Building</h3>
         </div>
@@ -47,7 +72,13 @@ permalink: /services/
       <div class="card">
         <div class="card-header">
           <div class="card-icon">
-            {{ icon 2 }}
+            <!-- Technology & Product Strategy Icon -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="24" y1="12" x2="24" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="24" x2="36" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="24" x2="32" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <polyline points="29,16 32,16 32,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
           </div>
           <h3>Technology & Product Strategy</h3>
         </div>
@@ -57,7 +88,12 @@ permalink: /services/
       <div class="card">
         <div class="card-header">
           <div class="card-icon">
-            {{ icon 3 }}
+            <!-- Engineering Execution Icon -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="16" x2="40" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="24" x2="36" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
           </div>
           <h3>Engineering Execution & Architecture</h3>
         </div>
@@ -67,7 +103,14 @@ permalink: /services/
       <div class="card">
         <div class="card-header">
           <div class="card-icon">
-            {{ icon 4 }}
+            <!-- Innovation Scouting Icon -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              <line x1="24" y1="24" x2="24" y2="39" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="9" x2="24" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="9" y1="24" x2="18" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="30" y1="24" x2="39" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
           </div>
           <h3>Innovation Scouting & Due Diligence</h3>
         </div>
@@ -102,7 +145,13 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        {{ micro‑illustration 1 }}
+        <!-- Micro‑illustration 1 -->
+        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="40" y1="200" x2="220" y2="80" stroke="currentColor" stroke-width="2"/>
+          <rect x="40" y="160" width="80" height="40" stroke="currentColor" stroke-width="2"/>
+          <rect x="80" y="120" width="80" height="40" stroke="currentColor" stroke-width="2"/>
+          <rect x="120" y="80" width="80" height="40" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+        </svg>
       </div>
 
       <p>
@@ -139,7 +188,14 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        {{ micro‑illustration 2 }}
+        <!-- Micro‑illustration 2 -->
+        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 130 A70 70 0 0 1 200 130" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+          <line x1="130" y1="60" x2="130" y2="200" stroke="currentColor" stroke-width="2"/>
+          <line x1="60" y1="130" x2="200" y2="130" stroke="currentColor" stroke-width="2"/>
+          <line x1="130" y1="130" x2="180" y2="80" stroke="currentColor" stroke-width="2"/>
+          <polygon points="175,80 190,80 190,95" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+        </svg>
       </div>
 
       <p>
@@ -176,7 +232,14 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        {{ micro‑illustration 3 }}
+        <!-- Micro‑illustration 3 -->
+        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="110" width="30" height="30" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+          <line x1="70" y1="125" x2="220" y2="125" stroke="currentColor" stroke-width="2"/>
+          <line x1="60" y1="160" x2="210" y2="160" stroke="currentColor" stroke-width="2"/>
+          <line x1="50" y1="195" x2="200" y2="195" stroke="currentColor" stroke-width="2"/>
+          <line x1="40" y1="80" x2="40" y2="220" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        </svg>
       </div>
 
       <p>
@@ -213,7 +276,15 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        {{ micro‑illustration 4 }}
+        <!-- Micro‑illustration 4 -->
+        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="130" cy="130" r="90" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+          <line x1="130" y1="40" x2="130" y2="90" stroke="currentColor" stroke-width="2"/>
+          <line x1="130" y1="170" x2="130" y2="220" stroke="currentColor" stroke-width="2"/>
+          <line x1="40" y1="130" x2="90" y2="130" stroke="currentColor" stroke-width="2"/>
+          <line x1="170" y1="130" x2="220" y2="130" stroke="currentColor" stroke-width="2"/>
+          <circle cx="130" cy="130" r="14" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+        </svg>
       </div>
 
       <p>
@@ -249,7 +320,17 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        {{ micro‑illustration 5 }}
+        <!-- Micro‑illustration 5 -->
+        <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="110" width="40" height="80" stroke="currentColor" stroke-width="2"/>
+          <rect x="90" y="110" width="40" height="80" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+          <rect x="140" y="110" width="40" height="80" stroke
+          <rect x="140" y="110" width="40" height="80" stroke="currentColor" stroke-width="2"/>
+
+          <!-- Forward arrow -->
+          <line x1="180" y1="150" x2="220" y2="150" stroke="currentColor" stroke-width="2"/>
+          <polygon points="215,140 230,150 215,160" fill="var(--primary-light)" stroke="currentColor" stroke-width="2"/>
+        </svg>
       </div>
 
       <p>
