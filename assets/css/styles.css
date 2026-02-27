@@ -584,6 +584,14 @@ p {
   opacity: 0.92;
 }
 
+.hero--subpage {
+  padding: 56px 0 40px !important;
+}
+
+.hero--subpage::before {
+  opacity: 0.10; /* optional: lighter grid if you want it */
+}
+
 /* ------------------------------
    Header & Navigation
    ------------------------------ */
