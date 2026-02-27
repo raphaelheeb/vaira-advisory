@@ -596,6 +596,10 @@ p {
   margin-bottom: 24px;
 }
 
+#hero.hero--clean.hero--subpage {
+  padding: 56px 0 40px;
+}
+
 /* ------------------------------
    Header & Navigation
    ------------------------------ */
