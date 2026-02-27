@@ -218,9 +218,7 @@ permalink: /services/
 
     <div class="split-right">
       <div class="micro-illustration">
-        
-        <!-- Micro‑illustration 2 -->
-  <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+<svg width="260" height="260" viewBox="0 0 260 260" fill="none">
   <!-- Axes -->
   <line x1="130" y1="40" x2="130" y2="220"
         stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
@@ -231,12 +229,14 @@ permalink: /services/
   <line x1="130" y1="130" x2="180" y2="80"
         stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Arrowhead centered on (180,80) -->
-<polygon points="
-  185.66,75.66
-  185.66,89.66
-  174.34,80
-" fill="none" stroke="var(--primary)" stroke-width="3"/>
+  <!-- Correct arrowhead -->
+  <polygon
+    points="0,0 -12,6 -12,-6"
+    fill="none"
+    stroke="var(--primary)"
+    stroke-width="3"
+    transform="translate(180,80) rotate(-45)"
+  />
 </svg>
 
       </div>
