@@ -156,41 +156,30 @@ permalink: /services/
 
     <div class="split-right">
 
-    <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+   <svg width="260" height="260" viewBox="0 0 260 260" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
 
   <!-- Left block -->
   <rect x="40" y="150" width="50" height="40"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Middle block (accent), shifted left for ~30% overlap -->
+  <!-- Middle block (accent), ~30% overlap -->
   <rect x="75" y="110" width="50" height="40"
         fill="var(--primary-light)"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Right block -->
-  <rect x="125" y="110" width="50" height="40"
-        stroke="currentColor" stroke-width="3"/>
-
-  <!-- L-shape attached to bottom-right of right block -->
- <svg width="260" height="260" viewBox="0 0 260 260" fill="none"
-     xmlns="http://www.w3.org/2000/svg">
-  <!-- Outer rectangle -->
+  <!-- L-shape (scaled, fillable), touching middle block at x=125 -->
   <path d="
-    M40 40
-    H180
-    V220
-    H40
-    Z
-
-    M70 70
-    H150
+    M125 110
+    H205
     V190
-    H70
-    Z
-  "
-  fill-rule="evenodd"
-  fill="var(--primary-light)"/>
+    H125
+    Z"
+    fill="var(--primary-light)"
+    stroke="currentColor"
+    stroke-width="3"/>
 </svg>
+
 
       </div>
 
