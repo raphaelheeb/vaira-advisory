@@ -588,8 +588,12 @@ p {
   padding: 56px 0 40px !important;
 }
 
-.hero--subpage::before {
-  opacity: 0.10; /* optional: lighter grid if you want it */
+.hero--subpage .hero-title {
+  margin-bottom: 16px;
+}
+
+.hero--subpage .hero-sub {
+  margin-bottom: 24px;
 }
 
 /* ------------------------------
