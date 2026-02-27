@@ -576,7 +576,7 @@ p {
 }
 
 #hero.hero--clean {
-  padding: 56px 0 40px;
+  padding: 56px 0 40px !important;
 }
 
 #hero.hero--clean .hero-sub {
