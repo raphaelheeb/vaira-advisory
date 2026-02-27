@@ -156,28 +156,31 @@ permalink: /services/
 
     <div class="split-right">
 
-     <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+    <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
   <!-- Left block -->
   <rect x="40" y="150" width="50" height="40"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Middle block (accent), shifted left for 30% overlap -->
+  <!-- Middle block (accent), ~30% overlap -->
   <rect x="75" y="110" width="50" height="40"
         fill="var(--primary-light)"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Right L-shape: width=50, height=80, touching middle block -->
+  <!-- Right block -->
+  <rect x="125" y="110" width="50" height="40"
+        stroke="currentColor" stroke-width="3"/>
+
+  <!-- L-shape attached bottom-right of right block -->
   <path d="
-    M125 110
-    H175
+    M175 150
+    H215
     V190
-    H125
+    H175
     Z"
     stroke="currentColor"
     stroke-width="3"
     fill="none"/>
 </svg>
-
 
       </div>
 
@@ -217,7 +220,7 @@ permalink: /services/
       <div class="micro-illustration">
         
         <!-- Micro‑illustration 2 -->
-    <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+  <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
   <!-- Axes -->
   <line x1="130" y1="40" x2="130" y2="220"
         stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
@@ -228,12 +231,10 @@ permalink: /services/
   <line x1="130" y1="130" x2="180" y2="80"
         stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Arrowhead perfectly centered on (180,80) -->
-  <polyline points="180,80 195,80 195,95"
-            stroke="var(--primary)" stroke-width="3" fill="none"/>
+  <!-- Arrowhead centered on (180,80) -->
+  <polygon points="180,80 190,92 170,92"
+           fill="none" stroke="var(--primary)" stroke-width="3"/>
 </svg>
-
-
 
       </div>
 
@@ -318,7 +319,7 @@ permalink: /services/
     <div class="split-right">
       <div class="micro-illustration">
         <!-- Micro‑illustration 4 -->
-    <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
+  <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
   <!-- Left -->
   <line x1="40" y1="130" x2="110" y2="130"
         stroke="currentColor" stroke-width="3"/>
@@ -327,11 +328,15 @@ permalink: /services/
   <line x1="150" y1="130" x2="220" y2="130"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Top (same length and offset) -->
+  <!-- Top -->
   <line x1="130" y1="40" x2="130" y2="110"
         stroke="currentColor" stroke-width="3"/>
 
-  <!-- Center node (accent) drawn last -->
+  <!-- Bottom (same length as top) -->
+  <line x1="130" y1="150" x2="130" y2="220"
+        stroke="currentColor" stroke-width="3"/>
+
+  <!-- Center node (accent) on top -->
   <circle cx="130" cy="130" r="12"
           fill="var(--primary-light)" stroke="currentColor" stroke-width="3"/>
 </svg>
@@ -383,7 +388,7 @@ permalink: /services/
 
   <!-- Sweep line (accent) -->
   <line x1="130" y1="130" x2="200" y2="70"
-        stroke="var(--primary)" stroke-width="3"/>
+        stroke="var(--primary-light)" stroke-width="3"/>
 
   <!-- Signal (accent) -->
   <circle cx="200" cy="70" r="10"
