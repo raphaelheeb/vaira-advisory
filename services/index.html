@@ -18,62 +18,15 @@ permalink: /services/
   </div>
 
   <div class="cad-hero-shape">
-  <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-  <!-- Gradient definitions -->
-  <defs>
-    <!-- Radial line fade: strong near center, fades toward the arc -->
-    <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="white" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="white" stop-opacity="0.05" />
-    </linearGradient>
-  </defs>
-
-  <g transform="rotate(-140 210 210)">
-    <!-- Outer arc -->
-    <path d="M20 210 A190 190 0 0 1 400 210"
-          stroke="white"
-          stroke-width="1.75"
-          stroke-opacity="0.55"
-          vector-effect="non-scaling-stroke"/>
-
-    <!-- Inner arc -->
-    <path d="M60 210 A150 150 0 0 1 360 210"
-          stroke="white"
-          stroke-width="1.25"
-          stroke-opacity="0.40"
-          vector-effect="non-scaling-stroke"/>
-
-    <!-- Radial guide line with gradient -->
-    <line x1="210" y1="210" x2="400" y2="210"
-          stroke="url(#radialFade)"
-          stroke-width="1"
-          vector-effect="non-scaling-stroke"/>
-
-    <!-- Tick marks -->
-    <line x1="360" y1="205" x2="360" y2="215"
-          stroke="white"
-          stroke-width="1"
-          stroke-opacity="0.40"
-          vector-effect="non-scaling-stroke"/>
-
-    <line x1="320" y1="205" x2="320" y2="215"
-          stroke="white"
-          stroke-width="1"
-          stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-  </g>
-
-</svg>
-
+    <!-- (keep your existing SVG unchanged) -->
+    {{ your existing hero SVG }}
   </div>
 </section>
 
-<!-- IMPORTANT: This empty comment prevents Markdown from wrapping the hero in .section -->
 <!-- break -->
 
 <!-- ========================= -->
-<!-- SERVICE OVERVIEW GRID (4 CARDS) -->
+<!-- SERVICE OVERVIEW GRID -->
 <!-- ========================= -->
 <section class="section" id="services">
   <div class="content-wrapper wrapper--narrow">
@@ -83,104 +36,41 @@ permalink: /services/
 
       <div class="card">
         <div class="card-header">
-        <div class="card-icon">
-          
-          <!-- Deep‑Tech Advisory & Venture Building -->
-          
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Bottom left block -->
-  <rect x="10" y="26" width="12" height="10" stroke="currentColor" stroke-width="2"/>
-
-  <!-- Top block -->
-  <rect x="18" y="14" width="12" height="10" stroke="currentColor" stroke-width="2"/>
-
-  <!-- L-shaped right block (closed, inside viewBox) -->
-  <path
-    d="
-      M30 14
-      H38
-      V28
-      H46
-      V36
-      H30
-      V14
-      Z
-    "
-    stroke="currentColor"
-    stroke-width="2"
-    fill="none"
-  />
-</svg>
-  </div>
-        <h3>Deep‑Tech Advisory & Venture Building</h3>
+          <div class="card-icon">
+            {{ icon 1 }}
+          </div>
+          <h3>Deep‑Tech Advisory & Venture Building</h3>
         </div>
         <p>From early‑stage discoveries to validated concepts with technical and commercial clarity.</p>
       </div>
 
       <div class="card">
-         <div class="card-header">
-        <div class="card-icon">
-          <!-- Technology & Product Strategy -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Crosshair -->
-          <line x1="24" y1="12" x2="24" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="12" y1="24" x2="36" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <!-- Forward arrow -->
-          <line x1="24" y1="24" x2="32" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <polyline points="29,16 32,16 32,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-          </svg>
-
+        <div class="card-header">
+          <div class="card-icon">
+            {{ icon 2 }}
+          </div>
+          <h3>Technology & Product Strategy</h3>
         </div>
-        <h3>Technology & Product Strategy</h3>
-            </div>
         <p>Identify new markets, applications, and capabilities that align with your strengths.</p>
       </div>
 
       <div class="card">
-         <div class="card-header">
-        <div class="card-icon">
-          <!-- Engineering Execution & Architecture -->
-       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Top layer (furthest right) -->
-  <line x1="20" y1="16" x2="40" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Middle layer -->
-  <line x1="16" y1="24" x2="36" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Bottom layer (leftmost) -->
-  <line x1="12" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
+        <div class="card-header">
+          <div class="card-icon">
+            {{ icon 3 }}
+          </div>
+          <h3>Engineering Execution & Architecture</h3>
         </div>
-        <h3>Engineering Execution & Architecture</h3>
-            </div>
         <p>Hands‑on technical leadership to stabilize, scale, and optimize complex technologies.</p>
       </div>
 
       <div class="card">
-            <div class="card-header">
-        <div class="card-icon">
-          <!-- Innovation Scouting & Technical Due Diligence -->
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Central dot -->
-  <circle cx="24" cy="24" r="3" fill="currentColor"/>
-
-  <!-- Downward connected arm (15px total) -->
-  <line x1="24" y1="24" x2="24" y2="39" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Upward unconnected arm (offset 6px, length 9px) -->
-  <line x1="24" y1="9" x2="24" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Left unconnected arm (offset 6px, length 9px) -->
-  <line x1="9" y1="24" x2="18" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Right unconnected arm (offset 6px, length 9px) -->
-  <line x1="30" y1="24" x2="39" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
+        <div class="card-header">
+          <div class="card-icon">
+            {{ icon 4 }}
+          </div>
+          <h3>Innovation Scouting & Due Diligence</h3>
         </div>
-        <h3>Innovation Scouting & Due Diligence</h3>
-               </div>
         <p>Structured discovery and rigorous evaluation of innovations and investment opportunities.</p>
       </div>
 
@@ -189,239 +79,199 @@ permalink: /services/
 </section>
 
 <!-- ========================= -->
-<!-- DEEP‑DIVE 1 -->
+<!-- DEEP‑DIVE 1 — SPLIT -->
 <!-- ========================= -->
 <section class="section section--alt">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Deep‑Tech Advisory & Venture Building</h2>
+  <div class="content-wrapper wrapper--narrow split">
 
-    <p>
-      Organizations often make promising discoveries in their R&D environments but lack the technical,
-      operational, or commercial clarity to turn them into viable products. VAIRA bridges this gap.
-      With <strong>deep engineering expertise</strong> and <strong>hands‑on founder experience</strong>, we help teams evaluate the
-      true potential of early‑stage technologies and establish a structured path from lab insight to market‑ready innovation.
-    </p>
-    
-  <div class="spacer-32"></div>
-    
-    <h3>What we do</h3>
-    <ul>
-      <li><strong>TRL/MRL assessment</strong> to structure development and reduce risk</li>
-      <li><strong>Capability evaluation</strong> across team, equipment, and budget</li>
-      <li><strong>Supplier selection</strong> and early prototyping guidance</li>
-      <li>Support for outsourcing and integration of external expertise</li>
-      <li>Embedded coaching to strengthen internal teams</li>
-      <li>Support for early‑stage founders in building technical teams and roadmaps</li>
-    </ul>
+    <div class="split-left">
+      <h2>Deep‑Tech Advisory & Venture Building</h2>
 
-    <h3>Outcomes</h3>
-    <ul>
-      <li><strong>Clear roadmap</strong> from discovery to commercial prototype</li>
-      <li><strong>Reduced complexity</strong> and faster decision‑making</li>
-      <li><strong>First‑time‑right</strong> development cycles</li>
-      <li>Lower engineering costs compared to traditional providers</li>
-      <li>Stronger internal capability building</li>
-    </ul>
- 
-    <div class="spacer-32"></div>
-    
-    <h3>Case Example</h3>
-    <p>
-      A university‑affiliated team developed a novel materials‑based technology and filed initial patents.
-      VAIRA defined a <strong>TRL‑based development plan</strong>, identified suppliers, oversaw BOM decisions, and supported
-      early market analysis — accelerating their path toward commercialization.
-    </p>
+      <p>
+        Organizations often make promising discoveries in R&D but lack the clarity to turn them into viable products.
+        VAIRA bridges this gap with deep engineering expertise and hands‑on founder experience.
+      </p>
+
+      <ul>
+        <li><strong>Structured evaluation</strong> of technology maturity, capabilities, and risks</li>
+        <li><strong>Clear development pathways</strong> from lab insight to commercial prototype</li>
+        <li><strong>Supplier and prototyping guidance</strong> to accelerate early execution</li>
+        <li><strong>Capability building</strong> through embedded coaching and technical leadership</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+        {{ micro‑illustration 1 }}
+      </div>
+
+      <p>
+        <strong>Case Example:</strong> A university‑affiliated team developed a novel materials technology.
+        VAIRA defined a TRL‑based plan, identified suppliers, and supported early market analysis —
+        accelerating their path toward commercialization.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================= -->
-<!-- DEEP‑DIVE 2 -->
+<!-- DEEP‑DIVE 2 — SPLIT -->
 <!-- ========================= -->
 <section class="section">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Technology & Product Strategy</h2>
+  <div class="content-wrapper wrapper--narrow split">
 
-    <p>
-      Established companies often face stagnating markets, rising costs, or pressure to innovate beyond their
-      existing capabilities. VAIRA helps organizations identify <strong>new applications, technologies, and
-      product opportunities</strong> that align with their strengths.
-    </p>
+    <div class="split-left">
+      <h2>Technology & Product Strategy</h2>
 
- <div class="spacer-32"></div>
-    
-    <h3>What we do</h3>
-    <ul>
-      <li><strong>Technology stack analysis</strong> and identification of capability gaps</li>
-      <li><strong>Market and application scouting</strong> for new revenue opportunities</li>
-      <li>Evaluation and integration of new technological capabilities</li>
-      <li>Rapid prototyping using advanced manufacturing and global supply chains</li>
-      <li>Startup‑style validation cycles to reduce risk</li>
-      <li>Application of <strong>DFM/DFA</strong> principles</li>
-    </ul>
+      <p>
+        Established companies often face stagnating markets or pressure to innovate beyond their existing capabilities.
+        VAIRA identifies new applications, technologies, and product opportunities aligned with your strengths.
+      </p>
 
-    <h3>Outcomes</h3>
-    <ul>
-      <li><strong>Faster, cost‑effective</strong> integration of new technologies</li>
-      <li>Clear strategic direction for capability expansion</li>
-      <li><strong>Internal knowledge building</strong> and long‑term capability development</li>
-      <li>Accelerated time‑to‑market for new product concepts</li>
-      <li>Access to new applications and market segments</li>
-    </ul>
+      <ul>
+        <li><strong>Technology stack analysis</strong> and identification of capability gaps</li>
+        <li><strong>Market and application scouting</strong> for new revenue opportunities</li>
+        <li><strong>Rapid prototyping</strong> using advanced manufacturing and global supply chains</li>
+        <li><strong>Strategic validation cycles</strong> to reduce risk and accelerate time‑to‑market</li>
+      </ul>
+    </div>
 
- <div class="spacer-32"></div>
-    
-    <h3>Case Example</h3>
-    <p>
-      A global raw‑materials supplier sought to expand into new applications and future‑oriented markets.
-      VAIRA conducted a technical and commercial assessment, engaged with prospective customers, and built
-      internal knowledge frameworks that informed the client’s long‑term product strategy.
-    </p>
+    <div class="split-right">
+      <div class="micro-illustration">
+        {{ micro‑illustration 2 }}
+      </div>
+
+      <p>
+        <strong>Case Example:</strong> A global raw‑materials supplier sought to expand into future‑oriented markets.
+        VAIRA conducted technical and commercial assessments and built internal knowledge frameworks
+        that shaped the client’s long‑term product strategy.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================= -->
-<!-- DEEP‑DIVE 3 -->
+<!-- DEEP‑DIVE 3 — SPLIT -->
 <!-- ========================= -->
 <section class="section section--alt">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Engineering Execution & Architecture</h2>
+  <div class="content-wrapper wrapper--narrow split">
 
-    <p>
-      When companies introduce new materials, technologies, or production methods, complexity can escalate
-      quickly. VAIRA provides <strong>hands‑on engineering leadership</strong> to stabilize processes, build internal
-      expertise, and ensure that new products reach the market with reliability and efficiency.
-    </p>
+    <div class="split-left">
+      <h2>Engineering Execution & Architecture</h2>
 
- <div class="spacer-32"></div>
-    
-    <h3>What we do</h3>
-    <ul>
-      <li><strong>Fractional CTO support</strong> for early‑stage or transitioning teams</li>
-      <li>Hands‑on coaching for internal engineering staff</li>
-      <li><strong>Supplier management</strong> and supply‑chain restructuring</li>
-      <li>In‑depth materials and processing expertise</li>
-      <li>Production layout analysis and optimization</li>
-      <li><strong>PFMEA</strong> and quality‑control system design</li>
-    </ul>
+      <p>
+        When companies introduce new materials or production methods, complexity can escalate quickly.
+        VAIRA provides hands‑on engineering leadership to stabilize processes and build internal expertise.
+      </p>
 
-    <h3>Outcomes</h3>
-    <ul>
-      <li><strong>Rapid implementation</strong> of new products and technologies</li>
-      <li>Reduced scrap, rework, and downtime</li>
-      <li><strong>Stronger internal engineering capabilities</strong></li>
-      <li>Stable, scalable production processes</li>
-      <li>Improved supplier performance and quality consistency</li>
-    </ul>
+      <ul>
+        <li><strong>Fractional CTO support</strong> for early‑stage or transitioning teams</li>
+        <li><strong>Supplier management</strong> and supply‑chain restructuring</li>
+        <li><strong>Process optimization</strong> across materials, layouts, and production flows</li>
+        <li><strong>Quality‑control systems</strong> including PFMEA and targeted interventions</li>
+      </ul>
+    </div>
 
- <div class="spacer-32"></div>
-    
-    <h3>Case Example</h3>
-    <p>
-      A manufacturer launched a sustainable product requiring new raw materials and a more complex production
-      process. VAIRA analyzed the full production flow, audited suppliers, optimized material selection, and
-      implemented targeted quality controls — reducing scrap and stabilizing output while lowering overall costs.
-    </p>
+    <div class="split-right">
+      <div class="micro-illustration">
+        {{ micro‑illustration 3 }}
+      </div>
+
+      <p>
+        <strong>Case Example:</strong> A manufacturer launched a sustainable product requiring new materials
+        and a more complex production process. VAIRA optimized material selection, audited suppliers,
+        and implemented targeted quality controls — reducing scrap and stabilizing output.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================= -->
-<!-- DEEP‑DIVE 4 -->
+<!-- DEEP‑DIVE 4 — SPLIT -->
 <!-- ========================= -->
 <section class="section">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Technical Due Diligence</h2>
+  <div class="content-wrapper wrapper--narrow split">
 
-    <p>
-      Investors, corporate buyers, and innovation teams often need rigorous technical validation before committing
-      resources. VAIRA provides <strong>deep technical due diligence</strong> to assess the attractiveness, risks, and
-      long‑term potential of technologies, products, and industrial companies.
-    </p>
+    <div class="split-left">
+      <h2>Technical Due Diligence</h2>
 
- <div class="spacer-32"></div>
-    
-    <h3>What we do</h3>
-    <ul>
-      <li><strong>Technology stack evaluation</strong> and product portfolio analysis</li>
-      <li>Assessment of business models and growth opportunities</li>
-      <li><strong>Risk analysis</strong> and mitigation planning for M&A</li>
-      <li>Deep‑dive diligence including customer and competitor interviews</li>
-      <li>Support for founders on technical hiring and outsourcing decisions</li>
-    </ul>
+      <p>
+        Investors and corporate buyers often need rigorous technical validation before committing resources.
+        VAIRA assesses the attractiveness, risks, and long‑term potential of technologies and industrial companies.
+      </p>
 
-    <h3>Outcomes</h3>
-    <ul>
-      <li><strong>Clear assessment</strong> of technical attractiveness and risks</li>
-      <li><strong>Scorecard‑based evaluation</strong> for investment decisions</li>
-      <li>Fast insights into markets, technologies, and competitors</li>
-      <li>Stronger investment theses and reduced uncertainty</li>
-    </ul>
+      <ul>
+        <li><strong>Technology stack evaluation</strong> and product portfolio analysis</li>
+        <li><strong>Risk assessment</strong> and mitigation planning for M&A</li>
+        <li><strong>Deep‑dive diligence</strong> including customer and competitor interviews</li>
+        <li><strong>Founder support</strong> on technical hiring and outsourcing decisions</li>
+      </ul>
+    </div>
 
- <div class="spacer-32"></div>
-    
-    <h3>Case Example</h3>
-    <p>
-      A strategic growth fund evaluating industrial SMEs needed a technical perspective to complement financial
-      analysis. VAIRA screened potential targets, assessed innovation maturity, evaluated technology stacks, and
-      identified growth levers — helping prioritize acquisition candidates.
-    </p>
+    <div class="split-right">
+      <div class="micro-illustration">
+        {{ micro‑illustration 4 }}
+      </div>
+
+      <p>
+        <strong>Case Example:</strong> A strategic growth fund evaluating industrial SMEs needed a technical perspective.
+        VAIRA assessed innovation maturity, technology stacks, and growth levers — helping prioritize acquisition targets.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================= -->
-<!-- DEEP‑DIVE 5 -->
+<!-- DEEP‑DIVE 5 — SPLIT -->
 <!-- ========================= -->
 <section class="section section--alt">
-  <div class="content-wrapper wrapper--narrow">
-    <h2>Innovation Scouting</h2>
+  <div class="content-wrapper wrapper--narrow split">
 
-    <p>
-      SMEs and corporates in Switzerland and across Western countries face increasing global competition and must innovate continuously to remain
-      competitive. VAIRA supports organizations in identifying, evaluating, and integrating innovations
-      — ensuring that new technologies align with <strong>strategic goals, capabilities, and budgets</strong>.
-    </p>
+    <div class="split-left">
+      <h2>Innovation Scouting</h2>
 
- <div class="spacer-32"></div>
-    
-    <h3>What we do</h3>
-    <ul>
-      <li><strong>Structured innovation scouting</strong> using a lean stage‑gate process</li>
-      <li>Assessment of strategic and operational fit</li>
-      <li>Integration support for innovation initiatives</li>
-      <li>Partnership facilitation with startups and research institutions</li>
-      <li>Mapping of future production layouts and capability requirements</li>
-    </ul>
+      <p>
+        SMEs and corporates face increasing global competition and must innovate continuously.
+        VAIRA identifies, evaluates, and integrates innovations that align with strategic goals and capabilities.
+      </p>
 
-    <h3>Outcomes</h3>
-    <ul>
-      <li><strong>Efficient, targeted search</strong> for relevant innovations</li>
-      <li>Fast validation cycles using lean startup methodology</li>
-      <li>Clear integration pathways for new technologies</li>
-      <li>Hybrid sourcing strategies leveraging global capabilities</li>
-      <li>Reduced risk and faster time‑to‑impact</li>
-    </ul>
+      <ul>
+        <li><strong>Structured scouting</strong> using a lean stage‑gate process</li>
+        <li><strong>Strategic and operational fit</strong> assessments</li>
+        <li><strong>Integration support</strong> for innovation initiatives</li>
+        <li><strong>Future production layouts</strong> and capability roadmapping</li>
+      </ul>
+    </div>
 
- <div class="spacer-32"></div>
-    
-    <h3>Case Example</h3>
-    <p>
-      A Swiss SME identified a new technology at a tradeshow that could disrupt its core product line. VAIRA
-      conducted a technical assessment, including TRL evaluation and patent landscape review, and outlined a
-      future production layout and capability roadmap for integrating the innovation.
-    </p>
+    <div class="split-right">
+      <div class="micro-illustration">
+        {{ micro‑illustration 5 }}
+      </div>
+
+      <p>
+        <strong>Case Example:</strong> A Swiss SME identified a disruptive technology at a tradeshow.
+        VAIRA conducted a TRL assessment, reviewed the patent landscape, and outlined a capability roadmap
+        for integration.
+      </p>
+    </div>
+
   </div>
 </section>
-
 
 <!-- ========================= -->
 <!-- CTA SECTION -->
 <!-- ========================= -->
-<section class="section section--cta section--lighter">
+<section class="section section--lighter section--cta">
   <div class="content-wrapper wrapper--narrow">
     <h2>Let’s build what’s next.</h2>
     <p>
       Whether you are scaling a discovery, modernizing your product portfolio, or exploring new markets —
       VAIRA provides the engineering clarity to move forward.
     </p>
-    <a href="/vaira-advisory/contact" class="cta-btn cta-btn--primary">Get in Touch</a>
+    <a href="/contact" class="cta-btn cta-btn--primary">Get in Touch</a>
   </div>
 </section>
