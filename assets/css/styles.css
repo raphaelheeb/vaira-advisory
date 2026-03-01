@@ -1037,3 +1037,31 @@ p {
     padding-bottom: calc(var(--section-space) * 1.2);
   }
 }
+
+/* =========================================================
+   VAIRA Industries Page — Equal Column Fix
+   ========================================================= */
+
+/* Force equal-width columns in the industries grid */
+#industries-list .why-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+/* =========================================================
+   VAIRA Industries Page — Fix for "Advanced Manufacturing" card overflow
+   ========================================================= */
+
+/* Force equal-height cards in the "Wo wir Wert schaffen" section */
+#services .card-grid {
+  align-items: stretch;
+}
+
+#services .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#services .card ul {
+  flex-grow: 1;
+}
