@@ -1039,12 +1039,24 @@ p {
 }
 
 /* =========================================================
-   VAIRA Industries Page — Equal Column Fix
+   VAIRA Industries Page — Fix for overflowing text in cards
    ========================================================= */
 
-/* Force equal-width columns in the industries grid */
+/* 1) Force equal-width columns */
 #industries-list .why-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+/* 2) Prevent text from overflowing card boundaries */
+#industries-list .feature-block {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* 3) Stabilize icon column width */
+#industries-list .feature-block-icon {
+  width: 64px;
+  flex-shrink: 0;
 }
 
 /* =========================================================
