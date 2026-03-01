@@ -1063,10 +1063,15 @@ p {
    VAIRA Industries Page — Fix for overflow in Value Cards
    ========================================================= */
 
-/* 1) Force equal-width columns in the 3-column card grid */
 #services .card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  #services .card-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* 2) Prevent text from overflowing card boundaries */
