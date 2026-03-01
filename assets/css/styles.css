@@ -1087,3 +1087,8 @@ p {
 #services .card ul {
   flex-grow: 1;
 }
+
+/* Restore 3-column layout in "Wo wir Wert schaffen" */
+#services .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
