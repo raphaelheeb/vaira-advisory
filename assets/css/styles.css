@@ -1206,3 +1206,26 @@ p {
 .privacy-page p + ul {
   margin-top: 0 !important;
 }
+
+/* =========================================================
+   VAIRA IMPRESSUM PAGE — improved text rhythm
+   ========================================================= */
+
+.impressum-page h1 {
+  margin-bottom: 24px;
+}
+
+.impressum-page h2 {
+  margin-top: 56px;
+  margin-bottom: 20px;
+}
+
+.impressum-page p {
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+
+/* Reduce gap between paragraph and next paragraph */
+.impressum-page p + p {
+  margin-top: -4px;
+}
