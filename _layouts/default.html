@@ -6,18 +6,19 @@
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.title }}">
   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove_first: '/de' }}">
   <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de{{ page.url | remove_first: '/de' }}">
 </head>
-<body>
+
+<body class="{{ page.bodyClass }}">
   {% include header.html %}
- {{ content }}
+  {{ content }}
   {% include footer.html %}
 </body>
 </html>
