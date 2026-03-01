@@ -1194,7 +1194,7 @@ p {
 
 .privacy-page ul {
   margin-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   padding-left: 20px;
 }
 
@@ -1203,3 +1203,6 @@ p {
   line-height: 1.55;
 }
 
+.privacy-page p + ul {
+  margin-top: 0 !important;
+}
