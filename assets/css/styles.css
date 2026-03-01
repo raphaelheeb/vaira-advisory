@@ -1132,3 +1132,8 @@ p {
   max-width: 720px;
   opacity: 0.9;
 }
+
+#about-leadership ul {
+  margin-top: 12px;   /* reduce space above the list */
+}
+
