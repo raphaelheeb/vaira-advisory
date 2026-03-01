@@ -1060,20 +1060,25 @@ p {
 }
 
 /* =========================================================
-   VAIRA Industries Page — Fix for "Advanced Manufacturing" card overflow
+   VAIRA Industries Page — Fix for overflow in Value Cards
    ========================================================= */
 
-/* Force equal-height cards in the "Wo wir Wert schaffen" section */
+/* 1) Force equal-width columns in the 3-column card grid */
 #services .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   align-items: stretch;
 }
 
+/* 2) Prevent text from overflowing card boundaries */
 #services .card {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
+/* 3) Ensure UL grows and keeps card height stable */
 #services .card ul {
   flex-grow: 1;
 }
