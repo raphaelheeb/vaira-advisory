@@ -1208,14 +1208,14 @@ p {
 }
 
 .privacy-page .section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 @media (min-width: 1200px) {
   .privacy-page .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -1243,13 +1243,13 @@ p {
 }
 
 .impressum-page .section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 @media (min-width: 1200px) {
   .impressum-page .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
