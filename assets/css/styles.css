@@ -918,3 +918,122 @@ p {
     height: 40px;
   }
 }
+
+/* =========================================================
+   VAIRA Industries Page — Mobile Enhancements
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .hero-sub {
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #services .card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+
+  .feature-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
+  }
+
+  .feature-block-icon {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-why-inner {
+    grid-template-columns: 1fr !important;
+    row-gap: 40px;
+  }
+
+  .industries-why-illustration {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+/* =========================================================
+   VAIRA Industries Page — Desktop Enhancements
+   ========================================================= */
+
+@media (min-width: 1200px) {
+  .hero-sub {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #services .card {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-block {
+    padding: 28px 32px;
+    min-height: 180px;
+  }
+
+  .feature-block-icon svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .industries-why-illustration {
+    max-width: 380px;
+    margin-top: 8px;
+  }
+
+  .industries-why-text {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-block p {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: calc(var(--section-space) * 1.2);
+    padding-bottom: calc(var(--section-space) * 1.2);
+  }
+}
