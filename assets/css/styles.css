@@ -1137,3 +1137,25 @@ p {
   margin-top: 36px;   /* reduce space above the list */
 }
 
+/* =========================================================
+   VAIRA CONTACT PAGE — tighter vertical rhythm
+   ========================================================= */
+
+.contact-page .section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1200px) {
+  .contact-page .section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* CONTACT PAGE — tighten hero spacing */
+.contact-page #hero.hero--clean {
+  padding-top: 56px !important;
+  padding-bottom: 40px !important;
+}
+
