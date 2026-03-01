@@ -1193,13 +1193,13 @@ p {
 }
 
 .privacy-page ul {
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin-top: 4px;
+  margin-bottom: 8px;
   padding-left: 20px;
 }
 
 .privacy-page ul li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   line-height: 1.55;
 }
 
