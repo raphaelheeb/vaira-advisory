@@ -1159,3 +1159,7 @@ p {
   padding-bottom: 40px !important;
 }
 
+.contact-page .hero-sub {
+  max-width: 720px;
+}
+
