@@ -1280,3 +1280,20 @@ p {
   padding-top: calc(var(--section-space) * 0.9);
   padding-bottom: calc(var(--section-space) * 0.9);
 }
+
+/* Use Cases — fix H2 spacing in accent-left section */
+.use-cases .section--accent-left h2 {
+  margin-bottom: 32px !important;
+}
+
+/* Use Cases — tighten spacing before the list of use cases */
+.use-cases-selected .wrapper--narrow > h2 {
+  margin-bottom: 48px;
+}
+
+/* Use Cases — unified micro-illustration sizing */
+.use-cases-selected .micro-illustration svg {
+  width: 48px;
+  height: 48px;
+}
+
