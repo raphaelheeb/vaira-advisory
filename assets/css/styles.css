@@ -1349,17 +1349,18 @@ p {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
   position: relative;
-  background: var(--primary-light); /* subtle structure */
+  background: rgba(0,0,0,0.04); /* improved subtle panel */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .usecase-block:hover {
-  background: rgba(255,255,255,0.05); /* slight lift */
+  background: rgba(0,0,0,0.06); /* slightly stronger lift */
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
+
 
 /* ---------------------------------------------
    HEADER BAR
