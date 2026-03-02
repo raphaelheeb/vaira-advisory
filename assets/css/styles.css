@@ -1691,6 +1691,8 @@ p {
 
 @media (min-width: 900px) {
   #use-cases-where .why-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 420px);
+    justify-content: center; /* centers the 2 columns inside the wrapper */
+    gap: 48px 48px; /* horizontal, vertical */
   }
 }
