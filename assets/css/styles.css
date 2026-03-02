@@ -1326,7 +1326,8 @@ p {
   padding: 18px;
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 10px;
-  background: rgba(255,255,255,0.04);
+  background: none;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1353,6 +1354,7 @@ p {
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  padding: 0 32px 0 28px !important;
 }
 
 .usecase-block:hover {
