@@ -1505,3 +1505,91 @@ p {
 .usecase-block ul + p {
   margin-top: 24px;
 }
+
+/* Section breathing room */
+#use-cases-where.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Title alignment + spacing */
+#use-cases-where .section-title {
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+/* Grid layout */
+#use-cases-where .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 36px;
+  row-gap: 40px;
+  justify-items: start;
+  align-items: stretch; /* equal heights across all cards */
+}
+
+/* Card container */
+.why-grid .why-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 420px;
+  width: 100%;
+  padding: 32px;
+  background: rgba(0,0,0,0.025);
+  border-radius: 10px;
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  text-align: left;
+}
+
+/* Hover state */
+.why-grid .why-item:hover {
+  background: rgba(0,0,0,0.055);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Inner wrapper for equal-height stability */
+.why-item-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+/* Icon block with fixed baseline */
+.why-icon {
+  height: 64px;
+  display: flex;
+  align-items: flex-start;
+  color: rgba(0,0,0,1); /* full-strength icons */
+}
+
+/* Icon sizing + micro-interaction */
+.why-icon svg {
+  width: 52px;
+  height: 52px;
+}
+
+.why-icon svg * {
+  stroke-width: 2.1;
+  transition: stroke-width 0.18s ease;
+}
+
+.why-grid .why-item:hover svg * {
+  stroke-width: 2.2;
+}
+
+/* Typography */
+.why-item-inner h3 {
+  margin-top: 14px; /* icon → title rhythm */
+  margin-bottom: 12px;
+  color: rgba(0,0,0,0.90);
+}
+
+.why-grid .why-item p {
+  max-width: 38ch; /* controlled reading width */
+  line-height: 1.55;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.82);
+}
