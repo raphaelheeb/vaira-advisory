@@ -1304,22 +1304,23 @@ p {
    USE CASE BLOCKS — NEW PREMIUM DESIGN
    ========================================================= */
 
+/* Floating icon tile — larger, more visible */
 .micro-illustration-tile {
-  width: 72px;
-  height: 72px;
-  padding: 14px;
+  width: 88px;
+  height: 88px;
+  padding: 18px;
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 10px;
   background: rgba(255,255,255,0.04);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .micro-illustration-tile svg {
-  width: 52px;
-  height: 52px;
+  width: 64px;
+  height: 64px;
 }
 
 .micro-illustration-tile svg * {
@@ -1333,7 +1334,7 @@ p {
   position: relative;
   background: transparent;
   overflow: hidden;
-  border-radius: 10px; /* NEW */
+  border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1352,7 +1353,7 @@ p {
   margin-bottom: 16px;
 }
 
-/* Case numbers (01–04) */
+/* Case numbers (01–04) — left side */
 .usecase-item {
   position: relative;
   margin-bottom: 48px;
@@ -1361,12 +1362,11 @@ p {
 .usecase-item::before {
   content: attr(data-case);
   position: absolute;
-  top: -8px;
-  left: 0; /* moved back to left */
-  transform: translateX(-60px); /* shifts number left of the spine */
-  font-size: 64px;
+  top: 0;
+  left: -56px; /* clean offset left of spine */
+  font-size: 72px;
   font-weight: 600;
-  opacity: 0.04;
+  opacity: 0.05;
   pointer-events: none;
   line-height: 1;
 }
@@ -1395,25 +1395,25 @@ p {
 }
 
 .usecase-block p {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
+/* Lists — improved indentation + spacing */
 .usecase-block ul {
   margin: 16px 0 20px 0;
-  padding-left: 24px; /* NEW indent */
+  padding-left: 28px;
   line-height: 1.55;
 }
 
 .usecase-block li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
-/* Optional: support bold keywords in lists */
+/* Optional: bold keywords */
 .usecase-block li strong {
   font-weight: 600;
   color: var(--text);
 }
-
 
 /* Engineering grid (fine 8px, top-right quadrant) */
 .usecase-block::after {
