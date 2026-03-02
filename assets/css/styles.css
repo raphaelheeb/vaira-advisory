@@ -1261,7 +1261,7 @@ p {
 }
 
 /* =========================================================
-   VAIRA USE-CASES PAGE — FINAL CONSOLIDATED DESIGN SYSTEM
+   VAIRA USE-CASES PAGE — CONSOLIDATED DESIGN SYSTEM (FINAL)
    ========================================================= */
 
 /* ---------------------------------------------
@@ -1282,23 +1282,25 @@ p {
 }
 
 /* ---------------------------------------------
-   SECTION TITLES
+   SECTION TITLES (GLOBAL SPINE)
 --------------------------------------------- */
 .use-cases-page .section-title {
   margin-bottom: 48px !important;
+  padding-left: 24px; /* GLOBAL LEFT SPINE */
 }
 
 .use-cases-page .use-cases-selected .section-title--usecases-list {
   margin-bottom: 64px !important;
 }
 
-.use-cases-page .section--accent-left h2 {
-  margin-bottom: 48px !important;
-}
-
 /* ---------------------------------------------
    ACCENT-LEFT SECTION (How We Create Impact)
+   — FIX TITLE MISALIGNMENT
 --------------------------------------------- */
+.use-cases-page .section--accent-left .section-title {
+  padding-left: 24px; /* ALIGN TO GLOBAL SPINE */
+}
+
 .use-cases-page .section--accent-left .split {
   align-items: start;
 }
@@ -1318,16 +1320,13 @@ p {
    ========================================================= */
 
 /* ---------------------------------------------
-   ICON TILE (large, centered, premium)
+   ICON TILE
 --------------------------------------------- */
 .micro-illustration-tile {
   width: 88px;
   height: 88px;
   padding: 18px;
-  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 10px;
-  background: none;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1348,24 +1347,21 @@ p {
 --------------------------------------------- */
 .usecase-block {
   border-left: 3px solid var(--accent-color);
-  padding-left: 28px;
-  position: relative;
-  background: rgba(0,0,0,0.065); /* visible, premium panel */
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   padding: 0 32px 0 28px !important;
+  background: rgba(0,0,0,0.065);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .usecase-block:hover {
-  background: rgba(0,0,0,0.10); /* elegant elevation */
+  background: rgba(0,0,0,0.10);
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-/* ---------------------------------------------
-   HEADER BAR
---------------------------------------------- */
+/* Header bar */
 .usecase-block::before {
   content: "";
   display: block;
@@ -1374,9 +1370,7 @@ p {
   margin-bottom: 16px;
 }
 
-/* ---------------------------------------------
-   CASE NUMBERS (left side, architectural)
---------------------------------------------- */
+/* Case numbers */
 .usecase-item {
   position: relative;
   margin-bottom: 48px;
@@ -1394,40 +1388,34 @@ p {
   pointer-events: none;
 }
 
-/* Divider between cases */
+/* Divider */
 .usecase-item + .usecase-item {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding-top: 48px;
   margin-top: 48px;
 }
 
-/* ---------------------------------------------
-   MICRO-LABELS
---------------------------------------------- */
+/* Micro-labels */
 .usecase-label,
 .usecase-outcome-label {
   display: block;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(0,0,0,0.45); /* FIXED: visible on new card background */
+  color: rgba(0,0,0,0.50);
   margin-bottom: 4px;
 }
 
-/* ---------------------------------------------
-   TYPOGRAPHY RHYTHM
---------------------------------------------- */
+/* Typography rhythm */
 .usecase-block h3 {
   margin-bottom: 12px;
 }
 
 .usecase-block p {
-  margin-bottom: 20px; /* unified paragraph rhythm */
+  margin-bottom: 20px;
 }
 
-/* ---------------------------------------------
-   LISTS — indentation, spacing, readability
---------------------------------------------- */
+/* Lists */
 .usecase-block ul {
   margin: 16px 0 20px 0;
   padding-left: 28px;
@@ -1443,7 +1431,7 @@ p {
   color: var(--text);
 }
 
-/* Fix spacing between paragraph and list */
+/* Paragraph after list */
 .use-cases-page .use-cases-selected .usecase-block p + ul {
   margin-top: 20px !important;
 }
@@ -1453,9 +1441,7 @@ p {
   margin-top: 48px;
 }
 
-/* ---------------------------------------------
-   ENGINEERING GRID (top-right quadrant)
---------------------------------------------- */
+/* Engineering grid overlay */
 .usecase-block::after {
   content: "";
   position: absolute;
@@ -1488,110 +1474,8 @@ p {
   margin-top: 0;
 }
 
-/* Micro-label contrast */
-.usecase-label,
-.usecase-outcome-label {
-  color: rgba(0,0,0,0.50);
-}
-
-/* Outcome paragraph spacing */
-.usecase-block ul + p {
-  margin-top: 24px;
-}
-
-/* Section breathing room */
-#use-cases-where.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-/* Title alignment + spacing */
-#use-cases-where .section-title {
-  text-align: left;
-  margin-bottom: 56px;
-}
-
-/* Card container */
-.why-grid .why-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 420px;
-  width: 100%;
-  padding: 32px;
-  background: rgba(0,0,0,0.025);
-  border-radius: 10px;
-  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-  text-align: left;
-}
-
-/* Hover state */
-.why-grid .why-item:hover {
-  background: rgba(0,0,0,0.055);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-/* Inner wrapper for equal-height stability */
-.why-item-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-grow: 1;
-}
-
-/* Icon block with fixed baseline */
-.why-icon {
-  height: 64px;
-  display: flex;
-  align-items: flex-start;
-  color: rgba(0,0,0,1); /* full-strength icons */
-}
-
-/* Icon sizing + micro-interaction */
-.why-icon svg {
-  width: 52px;
-  height: 52px;
-}
-
-.why-icon svg * {
-  stroke-width: 2.1;
-  transition: stroke-width 0.18s ease;
-}
-
-.why-grid .why-item:hover svg * {
-  stroke-width: 2.2;
-}
-
-/* Typography */
-.why-item-inner h3 {
-  margin-top: 14px; /* icon → title rhythm */
-  margin-bottom: 12px;
-  color: rgba(0,0,0,0.90);
-}
-
-.why-grid .why-item p {
-  max-width: 38ch; /* controlled reading width */
-  line-height: 1.55;
-  margin-bottom: 0;
-  color: rgba(0,0,0,0.82);
-}
-
-#use-cases-where .container {
-  max-width: 1200px; /* matches use-case cards */
-}
-
-#use-cases-where .why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 36px;
-  row-gap: 40px;
-  justify-items: start;
-  align-items: stretch;
-}
-
 /* =========================================================
-   WHERE THESE USE CASES APPLY — CLEAN CONSOLIDATED SYSTEM
+   WHERE THESE USE CASES APPLY — FINAL SYSTEM
    ========================================================= */
 
 /* Section spacing */
@@ -1600,27 +1484,24 @@ p {
   padding-bottom: 120px;
 }
 
-/* Title alignment */
+/* Title alignment (GLOBAL SPINE) */
 #use-cases-where .section-title {
-  text-align: left;
   margin-bottom: 56px;
+  padding-left: 24px; /* MATCH GLOBAL SPINE */
 }
 
-/* Wide wrapper (must sit OUTSIDE .container in HTML) */
+/* Wide wrapper */
 #use-cases-where .why-grid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 24px; /* MATCH GLOBAL SPINE */
 }
 
-/* Grid layout */
+/* Grid layout (mobile default) */
 #use-cases-where .why-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 36px;
-  row-gap: 40px;
-  justify-items: start;
-  align-items: stretch;
+  grid-template-columns: 1fr;
+  row-gap: 48px;
   margin-top: 16px;
 }
 
@@ -1631,21 +1512,21 @@ p {
   justify-content: flex-start;
   max-width: 420px;
   width: 100%;
-  padding: 32px;
+  padding: 24px;
   background: rgba(0,0,0,0.025);
   border-radius: 10px;
   transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
   text-align: left;
 }
 
-/* Hover state */
+/* Hover */
 .why-grid .why-item:hover {
   background: rgba(0,0,0,0.055);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* Inner wrapper for equal-height stability */
+/* Inner wrapper */
 .why-item-inner {
   display: flex;
   flex-direction: column;
@@ -1653,15 +1534,14 @@ p {
   flex-grow: 1;
 }
 
-/* Icon block with fixed baseline */
+/* Icon */
 .why-icon {
   height: 64px;
   display: flex;
   align-items: flex-start;
-  color: rgba(0,0,0,1); /* full-strength icons */
+  color: rgba(0,0,0,1);
 }
 
-/* Icon sizing + micro-interaction */
 .why-icon svg {
   width: 52px;
   height: 52px;
@@ -1678,25 +1558,29 @@ p {
 
 /* Typography */
 .why-item-inner h3 {
-  margin-top: 14px; /* icon → title rhythm */
+  margin-top: 14px;
   margin-bottom: 12px;
   color: rgba(0,0,0,0.90);
 }
 
 .why-grid .why-item p {
-  max-width: 38ch; /* controlled reading width */
+  max-width: 38ch;
   line-height: 1.55;
   margin-bottom: 0;
   color: rgba(0,0,0,0.82);
 }
 
+/* ---------------------------------------------
+   DESKTOP 2×2 GRID
+--------------------------------------------- */
 @media (min-width: 900px) {
   #use-cases-where .why-grid {
     grid-template-columns: repeat(2, 420px);
-    justify-content: center; /* centers the 2 columns inside the wrapper */
-    gap: 48px 48px; /* horizontal, vertical */
+    justify-content: center;
+    gap: 48px 48px;
   }
 }
+
 
 /* =========================================================
    WHERE THESE USE CASES APPLY — MOBILE REFINEMENTS
