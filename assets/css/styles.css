@@ -1291,10 +1291,6 @@ p {
   align-items: start;
 }
 
-.use-cases-page .section--accent-left .illustration-wrapper svg {
-  transform: translateY(-28px);
-}
-
 /* Tighter spacing before the list of use cases (title → first block) */
 .use-cases-page .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 40px !important;
