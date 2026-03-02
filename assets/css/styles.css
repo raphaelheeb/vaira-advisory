@@ -1304,23 +1304,26 @@ p {
    USE CASE BLOCKS — NEW PREMIUM DESIGN
    ========================================================= */
 
-/* Floating icon tile */
 .micro-illustration-tile {
-  width: 48px;
-  height: 48px;
-  padding: 8px;
+  width: 72px;
+  height: 72px;
+  padding: 14px;
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 6px;
-  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
-/* Increase icon stroke weight */
+.micro-illustration-tile svg {
+  width: 52px;
+  height: 52px;
+}
+
 .micro-illustration-tile svg * {
-  stroke-width: 2 !important;
+  stroke-width: 2.25 !important;
 }
 
 /* Use case block container */
@@ -1330,10 +1333,10 @@ p {
   position: relative;
   background: transparent;
   overflow: hidden;
+  border-radius: 10px; /* NEW */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Hover elevation */
 .usecase-block:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
@@ -1359,11 +1362,13 @@ p {
   content: attr(data-case);
   position: absolute;
   top: -8px;
-  right: 12px;
+  left: 0; /* moved back to left */
+  transform: translateX(-60px); /* shifts number left of the spine */
   font-size: 64px;
   font-weight: 600;
   opacity: 0.04;
   pointer-events: none;
+  line-height: 1;
 }
 
 /* Divider between cases */
@@ -1394,8 +1399,21 @@ p {
 }
 
 .usecase-block ul {
-  margin: 12px 0 16px 0;
+  margin: 16px 0 20px 0;
+  padding-left: 24px; /* NEW indent */
+  line-height: 1.55;
 }
+
+.usecase-block li {
+  margin-bottom: 6px;
+}
+
+/* Optional: support bold keywords in lists */
+.usecase-block li strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
 
 /* Engineering grid (fine 8px, top-right quadrant) */
 .usecase-block::after {
@@ -1432,3 +1450,4 @@ p {
   display: block;
   margin-top: 0;
 }
+
