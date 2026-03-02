@@ -1264,54 +1264,36 @@ p {
    VAIRA USE-CASES PAGE — tighter spacing
    ========================================================= */
 
-/* Use Cases — unified micro-illustration sizing */
-.use-cases-selected .micro-illustration svg {
-  width: 48px;
-  height: 48px;
-}
-
-/* Use Cases — tighter vertical rhythm */
-.use-cases-selected .usecase-item {
-  margin-bottom: 48px;
-}
-
-/* Use Cases — consistent section rhythm */
-#use-cases-where.section {
-  padding-top: calc(var(--section-space) * 0.9);
-  padding-bottom: calc(var(--section-space) * 0.9);
-}
-
-/* Use Cases — fix H2 spacing in accent-left section */
-.use-cases .section--accent-left h2 {
-  margin-bottom: 32px !important;
-}
-
-/* Use Cases — tighten spacing before the list of use cases */
-.use-cases-selected .wrapper--narrow > h2 {
-  margin-bottom: 48px;
-}
-
-/* Use Cases — unified micro-illustration sizing */
-.use-cases-selected .micro-illustration svg {
-  width: 48px;
-  height: 48px;
-}
-
-/* Use Cases — keep hero subtitle on a single line on desktop */
-@media (min-width: 960px) {
-  .hero-sub--use-cases {
+/* Page-specific hero behavior (mirrors Contact page) */
+@media (min-width: 1100px) {
+  .use-cases-page .hero-sub {
     white-space: nowrap;
   }
 }
 
-/* Use Cases — compact section title in accent-left block */
-.section--accent-left .section-title--compact {
-  margin-bottom: 32px !important;
+/* Micro-illustration sizing (single, non-duplicated rule) */
+.use-cases-page .use-cases-selected .micro-illustration svg {
+  width: 48px;
+  height: 48px;
 }
 
-/* Use Cases — tighter spacing before the list of use cases */
-.section-title--usecases-list {
-  margin-bottom: 40px !important;
+/* Tighter vertical rhythm between use case blocks */
+.use-cases-page .use-cases-selected .usecase-item {
+  margin-bottom: 48px;
 }
 
+/* Compact title spacing in the accent-left section */
+.use-cases-page .section--accent-left h2 {
+  margin-bottom: 32px;
+}
 
+/* Tighter spacing before the list of use cases */
+.use-cases-page .use-cases-selected .wrapper--narrow > h2 {
+  margin-bottom: 40px;
+}
+
+/* Slightly tighter rhythm for the “Where These Use Cases Apply” section */
+.use-cases-page #use-cases-where.section {
+  padding-top: calc(var(--section-space) * 0.9);
+  padding-bottom: calc(var(--section-space) * 0.9);
+}
