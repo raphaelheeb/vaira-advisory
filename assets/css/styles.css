@@ -1291,6 +1291,10 @@ p {
   align-items: start;
 }
 
+.use-cases-page .section--accent-left .illustration-wrapper svg {
+  transform: translateY(-20px);
+}
+
 /* Tighter spacing before the list of use cases (title → first block) */
 .use-cases-page .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 40px !important;
@@ -1318,5 +1322,5 @@ p {
 
 /* Reduce the huge gap between paragraph and bullet list inside use case blocks */
 .use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 16px !important;
+  margin-top: 20px !important;
 }
