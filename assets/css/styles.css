@@ -1453,7 +1453,6 @@ p {
   margin-top: 48px;
 }
 
-
 /* ---------------------------------------------
    ENGINEERING GRID (top-right quadrant)
 --------------------------------------------- */
@@ -1591,23 +1590,23 @@ p {
   align-items: stretch;
 }
 
-/* ---------------------------------------------
-   WHERE THESE USE CASES APPLY — FINAL BLOCK
---------------------------------------------- */
+/* =========================================================
+   WHERE THESE USE CASES APPLY — CLEAN CONSOLIDATED SYSTEM
+   ========================================================= */
 
-/* Section breathing room */
+/* Section spacing */
 #use-cases-where.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* Title alignment + spacing */
+/* Title alignment */
 #use-cases-where .section-title {
   text-align: left;
   margin-bottom: 56px;
 }
 
-/* Wide wrapper matching use-case cards */
+/* Wide wrapper (must sit OUTSIDE .container in HTML) */
 #use-cases-where .why-grid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -1658,7 +1657,7 @@ p {
   height: 64px;
   display: flex;
   align-items: flex-start;
-  color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1); /* full-strength icons */
 }
 
 /* Icon sizing + micro-interaction */
@@ -1678,13 +1677,13 @@ p {
 
 /* Typography */
 .why-item-inner h3 {
-  margin-top: 14px;
+  margin-top: 14px; /* icon → title rhythm */
   margin-bottom: 12px;
   color: rgba(0,0,0,0.90);
 }
 
 .why-grid .why-item p {
-  max-width: 38ch;
+  max-width: 38ch; /* controlled reading width */
   line-height: 1.55;
   margin-bottom: 0;
   color: rgba(0,0,0,0.82);
