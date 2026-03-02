@@ -1340,3 +1340,9 @@ p {
   margin-top: 0; /* ensures no internal offset */
 }
 
+.use-cases-page .section--accent-left .illustration-wrapper svg {
+  width: 85%;
+  height: auto;
+  transform: translateY(-24px);
+}
+
