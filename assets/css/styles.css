@@ -1696,3 +1696,44 @@ p {
     gap: 48px 48px; /* horizontal, vertical */
   }
 }
+
+/* =========================================================
+   WHERE THESE USE CASES APPLY — MOBILE REFINEMENTS
+   ========================================================= */
+
+/* 1) Add horizontal breathing room on small screens */
+@media (max-width: 600px) {
+  #use-cases-where .why-grid-wrapper {
+    padding: 0 20px;
+  }
+}
+
+/* 2) Increase vertical spacing between cards for better rhythm */
+@media (max-width: 600px) {
+  #use-cases-where .why-grid {
+    row-gap: 48px; /* more vertical breathing room */
+  }
+}
+
+/* 3) Slightly reduce card padding to avoid heaviness on mobile */
+@media (max-width: 600px) {
+  .why-grid .why-item {
+    padding: 24px;
+  }
+}
+
+/* 4) Ensure icon/title/paragraph rhythm stays balanced on smaller cards */
+@media (max-width: 600px) {
+  .why-item-inner h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* 5) Maintain controlled reading width but allow natural wrapping */
+@media (max-width: 600px) {
+  .why-grid .why-item p {
+    max-width: 100%; /* prevents awkward narrow columns on small screens */
+  }
+}
+
