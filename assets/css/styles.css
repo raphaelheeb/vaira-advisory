@@ -1320,3 +1320,23 @@ p {
 .use-cases-page .use-cases-selected .usecase-block p + ul {
   margin-top: 20px !important;
 }
+
+/* USE CASES — independent alignment for title and illustration */
+.split--usecases {
+  align-items: start;
+}
+
+.split--usecases .split-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.split--usecases .split-left-top {
+  margin-bottom: 24px; /* adjust as needed */
+}
+
+.split--usecases .split-right .illustration-wrapper svg {
+  display: block;
+  margin-top: 0; /* ensures no internal offset */
+}
+
