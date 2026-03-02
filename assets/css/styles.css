@@ -1481,3 +1481,33 @@ p {
   display: block;
   margin-top: 0;
 }
+
+/* Slightly stronger card background */
+.usecase-block {
+  background: rgba(0,0,0,0.045) !important;
+}
+
+.usecase-block:hover {
+  background: rgba(0,0,0,0.06) !important;
+}
+
+/* Micro-label contrast */
+.usecase-label,
+.usecase-outcome-label {
+  color: rgba(0,0,0,0.50);
+}
+
+/* More breathing room before first card */
+.use-cases-selected .usecase-item:first-of-type {
+  margin-top: 16px;
+}
+
+/* Breathing room in "Where These Use Cases Apply" */
+#use-cases-where .why-grid {
+  margin-top: 16px;
+}
+
+/* Outcome paragraph spacing */
+.usecase-block ul + p {
+  margin-top: 24px;
+}
