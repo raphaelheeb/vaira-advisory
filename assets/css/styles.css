@@ -1253,3 +1253,30 @@ p {
     padding-bottom: 3rem;
   }
 }
+
+/* Use Cases — tighter hero spacing */
+.use-cases #hero.hero--clean {
+  padding-top: 56px !important;
+  padding-bottom: 40px !important;
+}
+
+/* =========================================================
+   VAIRA USE-CASES PAGE — tighter spacing
+   ========================================================= */
+
+/* Use Cases — unified micro-illustration sizing */
+.use-cases-selected .micro-illustration svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Use Cases — tighter vertical rhythm */
+.use-cases-selected .usecase-item {
+  margin-bottom: 48px;
+}
+
+/* Use Cases — consistent section rhythm */
+#use-cases-where.section {
+  padding-top: calc(var(--section-space) * 0.9);
+  padding-bottom: calc(var(--section-space) * 0.9);
+}
