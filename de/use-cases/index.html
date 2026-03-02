@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Anwendungsfälle | VAIRA Advisory
+title: Use Cases | VAIRA Advisory
 lang: de
 permalink: /de/use-cases/
-description: Ausgewählte Projekte, die zeigen, wie VAIRA mit klarer Systematik und technischer Tiefe produktionskritische Herausforderungen in der Fertigung und industriellen Technologie löst.
+bodyClass: use-cases-page
+description: Ausgewählte Projekte, die zeigen, wie VAIRA technische Klarheit und ingenieurwissenschaftliche Strenge einsetzt, um komplexe, produktionskritische Herausforderungen in der fortgeschrittenen Fertigung und industriellen Technologie zu lösen.
 ---
 
 <div class="use-cases">
@@ -11,14 +12,14 @@ description: Ausgewählte Projekte, die zeigen, wie VAIRA mit klarer Systematik 
 <!-- HERO -->
 <section id="hero" class="hero hero--clean">
   <div class="content-wrapper">
-    <h1 class="hero-title">Anwendungen und Projekte aus der Praxis.</h1>
-    <p class="hero-sub">
-      Beispiele dafür, wie wir komplexe technische Herausforderungen lösen.
+    <h1 class="hero-title">Engineering in der Praxis</h1>
+    <p class="hero-sub hero-sub--use-cases">
+      Unsere Arbeit in der fortgeschrittenen Fertigung, industriellen Technologie und Deep‑Tech‑Entwicklung.
     </p>
   </div>
 
-  <!-- CAD ARC — same as EN version -->
-  <div class="cad-hero-shape" style="top:-60px; left:-120px; right:auto; bottom:auto; position:absolute;">
+  <div class="cad-hero-shape" style="top:-60px; left:-120px; position:absolute; opacity: 0.18">
+    <!-- SVG bleibt unverändert -->
     <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
@@ -43,33 +44,42 @@ description: Ausgewählte Projekte, die zeigen, wie VAIRA mit klarer Systematik 
 </section>
 
 <!-- SECTION 1: HOW WE CREATE IMPACT -->
-<section class="section section">
+<section class="section section--accent-left">
   <div class="content-wrapper wrapper--narrow">
-    <div class="split">
-      <div>
-        <h2>Wie wir Wirkung erzielen</h2>
-        <p>
-          Jeder Auftrag beginnt mit strukturierter Klarheit. Wir kombinieren Systems Engineering,
-          Datenarchitektur und operatives Engineering, um produktionskritische Herausforderungen
-          in der fortgeschrittenen Fertigung und industriellen Technologie zu lösen.
-        </p>
-        <p>
-          Unsere branchenübergreifende Erfahrung ermöglicht es uns, bewährte Lösungen zu übertragen,
-          Entwicklungszeiten zu verkürzen und bekannte Fallstricke zu vermeiden – insbesondere in
-          komplexen technischen Umgebungen.
-        </p>
+
+    <div class="split split--usecases">
+
+      <div class="split-left">
+        <div class="split-left-top">
+          <h2 class="section-title section-title--compact">
+            Wie Wir Wirkung Erzielen
+          </h2>
+        </div>
+
+        <div class="split-left-bottom">
+          <p>
+            Jede Zusammenarbeit beginnt mit technischer Klarheit. Wir nutzen Systems Engineering, strukturierte Daten und disziplinierte Umsetzung, um produktionskritische und technologisch anspruchsvolle Herausforderungen in der fortgeschrittenen Fertigung und industriellen Technologie zu lösen.
+          </p>
+          <p>
+            Unsere branchenübergreifende Erfahrung ermöglicht es uns, bewährte Ansätze zu übertragen, Entwicklung zu beschleunigen und typische Fehler zu vermeiden – insbesondere in komplexen und risikoreichen Umgebungen.
+          </p>
+        </div>
       </div>
 
-      <div class="illustration-wrapper">
-        <!-- Placeholder illustration -->
-        <svg viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="80" stroke="#5F8A8E" stroke-width="3" fill="none"/>
-          <rect x="60" y="60" width="80" height="20" fill="#C9DCDC"/>
-          <rect x="60" y="90" width="80" height="20" fill="#C9DCDC"/>
-          <rect x="60" y="120" width="80" height="20" fill="#C9DCDC"/>
-        </svg>
+      <div class="split-right">
+        <div class="illustration-wrapper">
+          <!-- SVG bleibt unverändert -->
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="80" stroke="#5F8A8E" stroke-width="3" fill="none"/>
+            <rect x="60" y="60" width="80" height="20" fill="#C9DCDC"/>
+            <rect x="60" y="90" width="80" height="20" fill="#C9DCDC"/>
+            <rect x="60" y="120" width="80" height="20" fill="#C9DCDC"/>
+          </svg>
+        </div>
       </div>
+
     </div>
+
   </div>
 </section>
 
@@ -77,197 +87,448 @@ description: Ausgewählte Projekte, die zeigen, wie VAIRA mit klarer Systematik 
 <section class="section section--lighter use-cases-selected">
   <div class="content-wrapper wrapper--narrow">
 
-    <h2>Ausgewählte Anwendungsfälle</h2>
+    <h2 class="section-title section-title--usecases-list" style="margin-bottom: 64px;">
+      Ausgewählte Use Cases
+    </h2>
 
     <!-- USE CASE 1 -->
-    <div class="usecase-item">
+    <div class="usecase-item" data-case="01">
       <div class="usecase-block">
-        <div class="micro-illustration">
-          <!-- Advanced Manufacturing motif -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="12" width="20" height="4"
-                  stroke="currentColor" stroke-width="1.5" rx="1"/>
-            <rect x="12" y="20" width="24" height="4"
-                  stroke="currentColor" stroke-width="1.5" rx="1"/>
-            <rect x="14" y="28" width="26" height="4"
-                  stroke="currentColor" stroke-width="1.5" rx="1"/>
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <rect x="8" y="10" width="28" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
+            <rect x="10" y="20" width="26" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
+            <rect x="12" y="30" width="24" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
           </svg>
         </div>
 
-        <h3>Digitale Fertigungsarchitektur für einen Präzisionskomponenten‑Hersteller</h3>
-        <p><strong>Industrie 4.0 · MES‑Integration · Datenarchitektur</strong></p>
+        <span class="usecase-label">Deep‑Tech Venture Architecture</span>
+        <h3>Aufbau eines skalierbaren Deep‑Tech‑Ventures aus akademischer Forschung</h3>
 
-        <p>Ein Hersteller von Präzisionskomponenten benötigte eine einheitliche digitale Fertigungsarchitektur, um fragmentierte Shopfloor‑Datenflüsse und inkonsistente Berichte zu ersetzen.</p>
+        <p>Ein Forschungsteam hatte einen vielversprechenden Fertigungsprozess entwickelt, jedoch keinen strukturierten Weg von der akademischen Experimentierphase zu einem skalierbaren Hardwareprodukt. Es benötigte Klarheit zur technischen Machbarkeit, frühe Marktvalidierung und eine Venture‑Architektur, die Laborergebnisse in ein produzierbares, kommerziell relevantes Produkt überführt.</p>
 
         <ul>
-          <li>Modulare Datenarchitektur für Shopfloor‑Systeme</li>
-          <li>MES–ERP‑Integrationsmuster</li>
-          <li>Einheitliches Telemetriemodell für CNC‑ und Prüfsysteme</li>
-          <li>Daten­governance für Qualität und Rückverfolgbarkeit</li>
+          <li><strong>Digitale Fertigungsarchitektur</strong> – strukturierte Prozessfenster und Parameterinteraktionen für hochpräzise Produktion</li>
+          <li><strong>Lean Hardware Development</strong> – Stage‑Gate‑Ansätze und Rapid Prototyping zur frühen Validierung von Technologie‑ und Produktannahmen</li>
+          <li><strong>Root‑Cause‑Analyse</strong> – Ishikawa, 5‑Why und PFMEA zur Stabilisierung früher Prozessphasen</li>
+          <li><strong>Prozess‑ und Datenmodellierung</strong> – Abbildung kritischer Variablen für vorhersehbares Materialverhalten</li>
+          <li><strong>Industry‑4.0‑Readiness</strong> – frühe Digital‑Twin‑ und Datenerfassungskonzepte für skalierbare Produktion</li>
         </ul>
 
-        <p><strong>Wirkung:</strong> Schnellere Ursachenanalyse und weniger manueller Reporting‑Aufwand.</p>
+        <p><strong>Ergebnis:</strong> Ein stabiles Prozessfenster und ein strukturierter Entwicklungsansatz ermöglichten den Übergang von der akademischen Forschung zu einem produzierbaren Hardwareprototypen innerhalb weniger Monate und mit begrenztem Budget.</p>
+
       </div>
     </div>
 
     <!-- USE CASE 2 -->
-    <div class="usecase-item">
+    <div class="usecase-item" data-case="02">
       <div class="usecase-block">
-        <div class="micro-illustration">
-          <!-- Industrial & Automation motif -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="6"
-                    stroke="currentColor" stroke-width="1.5"/>
-            <line x1="30" y1="24" x2="36" y2="24"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="36" y="22" width="4" height="4"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <line x1="24" y1="18" x2="24" y2="12"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="22" y="8" width="4" height="4"
-                  stroke="currentColor" stroke-width="1.5"/>
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="32" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="2.75"/>
+            <rect x="40" y="22" width="4" height="4" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="24" y1="16" x2="24" y2="8" stroke="currentColor" stroke-width="2.75"/>
+            <rect x="22" y="4" width="4" height="4" stroke="currentColor" stroke-width="2.75"/>
           </svg>
         </div>
 
-        <h3>Predictive‑Maintenance‑Framework für einen Industrieanlagen‑Hersteller</h3>
-        <p><strong>AI/ML · Sensorfusion · Zuverlässigkeitsengineering</strong></p>
+        <span class="usecase-label">Produkt‑ & Fertigungsstrategie</span>
+        <h3>Definition einer wettbewerbsfähigen Produkt‑ und Fertigungsstrategie für Präzisionskomponenten</h3>
 
-        <p>Ein Anlagenhersteller wollte von reaktiven Serviceprozessen auf vorausschauende Wartung umstellen.</p>
+        <p>Ein europäischer Hersteller stand unter steigendem Kostendruck und verlor Wettbewerbsfähigkeit bei kleinen, hochpräzisen Komponenten. Um neue Märkte wie AR/VR und automobilnahe Optik zu erschliessen, benötigte das Unternehmen ein neues Produktionskonzept, eine differenzierte Produktstrategie und Klarheit darüber, welche Technologien und Materialien eine wirtschaftliche Massenproduktion in Europa ermöglichen.</p>
 
         <ul>
-          <li>Sensorfusion aus Vibrations‑, Thermo‑ und Betriebsdaten</li>
-          <li>Skalierbare Analytics‑Pipeline für Anomalieerkennung</li>
-          <li>Feature Engineering für mechanische Degradation</li>
-          <li>Reliability‑Centered‑Maintenance‑Modell</li>
+          <li><strong>Produkt‑ und Marktinnovation</strong> – Identifikation tragfähiger Anwendungen in AR/VR, Automobiloptik und Mikrooptik</li>
+          <li><strong>NPI & Equipment‑Übersetzung</strong> – Übertragung branchenfremder Fertigungstechnologien auf optische Komponenten</li>
+          <li><strong>Materialinnovation</strong> – neue Prozessansätze durch funktionale Materialien</li>
+          <li><strong>Semi‑automatisierte Produktionskonzepte</strong> – skalierbare Architekturen für Mikrooptikfertigung in Europa</li>
+          <li><strong>Technologie‑Roadmap</strong> – strukturierter Kompetenzaufbau entlang der Produktstrategie</li>
         </ul>
 
-        <p><strong>Wirkung:</strong> Früherkennung von Ausfallmustern und weniger ungeplante Stillstände.</p>
+        <p><strong>Ergebnis:</strong> Eine differenzierte Produkt‑ und Fertigungsstrategie ermöglichte wettbewerbsfähige europäische Produktion und eröffnete Zugang zu neuen Wachstumsmärkten.</p>
+
       </div>
     </div>
 
     <!-- USE CASE 3 -->
-    <div class="usecase-item">
+    <div class="usecase-item" data-case="03">
       <div class="usecase-block">
-        <div class="micro-illustration">
-          <!-- Materials & Process Engineering motif -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" y="12" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="21" y="12" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="30" y="12" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
 
-            <rect x="12" y="21" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="21" y="21" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <line x1="21" y1="21" x2="27" y2="27"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="30" y="21" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-
-            <rect x="12" y="30" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="21" y="30" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <rect x="30" y="30" width="6" height="6"
-                  stroke="currentColor" stroke-width="1.5"/>
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <rect x="10" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="10" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <line x1="20" y1="20" x2="28" y2="28" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="10" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
           </svg>
         </div>
 
-        <h3>End‑to‑End‑Prozessoptimierung für eine High‑Mix‑Low‑Volume‑Fertigung</h3>
-        <p><strong>Operations Engineering · Digitale Zwillinge · Flussoptimierung</strong></p>
+        <span class="usecase-label">Präzisions‑Engineering & Automatisierung</span>
+        <h3>Engineering einer automatisierten Präzisionsmontagelinie zur Reduktion manueller Arbeit</h3>
 
-        <p>Ein Elektronikhersteller mit hoher Variantenvielfalt kämpfte mit langen Rüstzeiten und schwankenden Takten.</p>
+        <p>Ein Hersteller von Präzisionsmodulen war auf manuelle Montageschritte angewiesen, die Durchsatz, Stabilität und Skalierbarkeit begrenzten. Um steigende Nachfrage zu bedienen und Kosten pro Teil zu senken, benötigte das Unternehmen ein integriertes Automatisierungskonzept, qualifizierte Lieferanten und eine robuste Engineering‑Umsetzung, die mehrere Präzisionsprozesse in eine stabile, hochpräzise Linie integriert.</p>
 
         <ul>
-          <li>Digitaler Zwilling des Produktionsflusses</li>
-          <li>Wartezeit‑ und Durchsatzanalyse</li>
-          <li>Neue Planungslogik für High‑Mix‑Fertigung</li>
-          <li>Datenbasierte Rüststrategien</li>
+          <li><strong>Automatisierungsarchitektur</strong> – Integration von Reinigung, Fügen, Beschichtung und Inspektion in eine einheitliche Linie</li>
+          <li><strong>Lieferantenqualifikation</strong> – technische Bewertung und Abstimmung mit Partnern in Europa und Asien</li>
+          <li><strong>MES–ERP‑Integration</strong> – Rückverfolgbarkeit, Datenerfassung und Transparenz über alle Prozessschritte</li>
+          <li><strong>Operations Engineering</strong> – OEE‑Optimierung, WIP‑Management und Taktzeitstabilisierung</li>
+          <li><strong>Wissensaufbau</strong> – Training und Dokumentation für nachhaltige Kompetenz im Team</li>
         </ul>
 
-        <p><strong>Wirkung:</strong> Höherer Durchsatz und stabilere Lieferperformance.</p>
+        <p><strong>Ergebnis:</strong> Das integrierte Automatisierungskonzept reduzierte manuelle Handhabung um 90 %, stabilisierte den Ertrag und senkte die Kosten pro Teil um über 70 %.</p>
+
       </div>
     </div>
 
     <!-- USE CASE 4 -->
-    <div class="usecase-item">
+    <div class="usecase-item" data-case="04">
       <div class="usecase-block">
-        <div class="micro-illustration">
-          <!-- Technical Due Diligence motif -->
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <circle cx="14" cy="24" r="5"
-                    stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="34" cy="24" r="5"
-                    stroke="currentColor" stroke-width="1.5"/>
-            <line x1="19" y1="24" x2="29" y2="24"
-                  stroke="currentColor" stroke-width="1.5"/>
-            <path d="M20 18 L24 14 L28 18"
-                  stroke="currentColor" stroke-width="1.5" fill="none"/>
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <circle cx="14" cy="24" r="7" stroke="currentColor" stroke-width="2.75"/>
+            <circle cx="34" cy="24" r="7" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="21" y1="24" x2="27" y2="24" stroke="currentColor" stroke-width="2.75"/>
+            <path d="M20 16 L24 12 L28 16" stroke="currentColor" stroke-width="2.75" fill="none"/>
           </svg>
         </div>
 
-        <h3>Technische Due Diligence für Fertigungs‑orientierte M&A</h3>
-        <p><strong>Lieferantenbewertung · Technologieanalyse · Cross‑Border‑Fertigung</strong></p>
+        <span class="usecase-label">Technologie‑ & Innovationsbewertung</span>
+        <h3>Bewertung von Technologie‑ und Innovationspotenzial für industrielle M&A‑Ziele</h3>
 
-        <p>Investoren und Produktunternehmen benötigten eine fundierte technische Bewertung von Fertigungspartnern und Produktionsfähigkeiten – inklusive Lieferanten in China.</p>
+        <p>Ein Investmentteam benötigte eine konsistente, technologieorientierte Bewertungsmethodik, um Unternehmen mit unterschiedlichen Produktportfolios, Reifegraden und Innovationspfaden vergleichbar zu machen. Ziel war eine strukturierte Einschätzung technologischer Attraktivität, Wettbewerbsposition und langfristiger Skalierbarkeit.</p>
 
         <ul>
-          <li>Bewertung von Technologie und Prozessfähigkeit</li>
-          <li>Analyse von Lieferantenreife und Skalierbarkeit</li>
-          <li>Risikoanalyse für internationale Fertigung</li>
-          <li>Kostenbasierte Produktionsstrategien</li>
+          <li><strong>Technologiebewertung</strong> – Reifegrad, Skalierbarkeit und Differenzierung industrieller Technologien</li>
+          <li><strong>Innovations‑Roadmap</strong> – Identifikation von Lücken, Risiken und Wachstumschancen</li>
+          <li><strong>Cross‑Industry‑Benchmarking</strong> – Vergleich von Produkt‑, Technologie‑ und IP‑Portfolios</li>
+          <li><strong>Markt‑ & Ökosystemanalyse</strong> – strukturierte Bewertung mittels Porter’s Five Forces und angrenzender Märkte</li>
+          <li><strong>Decision Support</strong> – klare Scorecards für Investment‑Entscheidungen</li>
         </ul>
 
-        <p><strong>Wirkung:</strong> Reduziertes Akquisitionsrisiko und schnellere Markteinführung durch fundierte Fertigungsentscheidungen.</p>
+        <p><strong>Ergebnis:</strong> Eine strukturierte, technologiegetriebene Bewertung ermöglichte klare Vergleiche zwischen M&A‑Zielen und fundierte Investitionsentscheidungen.</p>
+
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- WHERE THESE USE CASES MATTER -->
-<section class="section" id="use-cases-where">
+---
+layout: default
+title: Use Cases | VAIRA Advisory
+lang: de
+permalink: /de/use-cases/
+bodyClass: use-cases-page
+description: Ausgewählte Projekte, die zeigen, wie VAIRA technische Klarheit und ingenieurwissenschaftliche Strenge einsetzt, um komplexe, produktionskritische Herausforderungen in der fortgeschrittenen Fertigung und industriellen Technologie zu lösen.
+---
+
+<div class="use-cases">
+
+<!-- HERO -->
+<section id="hero" class="hero hero--clean">
+  <div class="content-wrapper">
+    <h1 class="hero-title">Engineering in der Praxis</h1>
+    <p class="hero-sub hero-sub--use-cases">
+      Unsere Arbeit in der fortgeschrittenen Fertigung, industriellen Technologie und Deep‑Tech‑Entwicklung.
+    </p>
+  </div>
+
+  <div class="cad-hero-shape" style="top:-60px; left:-120px; position:absolute; opacity: 0.18">
+    <!-- SVG bleibt unverändert -->
+    <svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="white" stop-opacity="0.45" />
+          <stop offset="100%" stop-color="white" stop-opacity="0.05" />
+        </linearGradient>
+      </defs>
+      <g transform="rotate(125 210 210)">
+        <path d="M20 210 A190 190 0 0 1 400 210"
+              stroke="white" stroke-width="1.75" stroke-opacity="0.55" vector-effect="non-scaling-stroke" />
+        <path d="M60 210 A150 150 0 0 1 360 210"
+              stroke="white" stroke-width="1.25" stroke-opacity="0.40" vector-effect="non-scaling-stroke" />
+        <line x1="210" y1="210" x2="400" y2="210"
+              stroke="url(#radialFade)" stroke-width="1" vector-effect="non-scaling-stroke" />
+        <line x1="360" y1="205" x2="360" y2="215"
+              stroke="white" stroke-width="1" stroke-opacity="0.40" vector-effect="non-scaling-stroke" />
+        <line x1="320" y1="205" x2="320" y2="215"
+              stroke="white" stroke-width="1" stroke-opacity="0.32" vector-effect="non-scaling-stroke" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- SECTION 1: HOW WE CREATE IMPACT -->
+<section class="section section--accent-left">
   <div class="content-wrapper wrapper--narrow">
-    <h2>Wo diese Anwendungsfälle relevant sind</h2>
 
-    <div class="why-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+    <div class="split split--usecases">
 
-      <div class="feature-block">
-        <div class="feature-block-icon"></div>
-        <div>
-          <h3>Advanced Manufacturing</h3>
-          <p>Hochpräzise Fertigung, digitale Produktion und Prozessoptimierung.</p>
+      <div class="split-left">
+        <div class="split-left-top">
+          <h2 class="section-title section-title--compact">
+            Wie Wir Wirkung Erzielen
+          </h2>
+        </div>
+
+        <div class="split-left-bottom">
+          <p>
+            Jede Zusammenarbeit beginnt mit technischer Klarheit. Wir nutzen Systems Engineering, strukturierte Daten und disziplinierte Umsetzung, um produktionskritische und technologisch anspruchsvolle Herausforderungen in der fortgeschrittenen Fertigung und industriellen Technologie zu lösen.
+          </p>
+          <p>
+            Unsere branchenübergreifende Erfahrung ermöglicht es uns, bewährte Ansätze zu übertragen, Entwicklung zu beschleunigen und typische Fehler zu vermeiden – insbesondere in komplexen und risikoreichen Umgebungen.
+          </p>
         </div>
       </div>
 
-      <div class="feature-block">
-        <div class="feature-block-icon"></div>
-        <div>
-          <h3>Industrie & Automation</h3>
-          <p>Robotik, Antriebstechnik, Sensorik und Hochleistungsmaschinen.</p>
+      <div class="split-right">
+        <div class="illustration-wrapper">
+          <!-- SVG bleibt unverändert -->
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="80" stroke="#5F8A8E" stroke-width="3" fill="none"/>
+            <rect x="60" y="60" width="80" height="20" fill="#C9DCDC"/>
+            <rect x="60" y="90" width="80" height="20" fill="#C9DCDC"/>
+            <rect x="60" y="120" width="80" height="20" fill="#C9DCDC"/>
+          </svg>
         </div>
       </div>
 
-      <div class="feature-block">
-        <div class="feature-block-icon"></div>
-        <div>
-          <h3>Material‑ & Prozessechnik</h3>
-          <p>Funktionale Materialien, Beschichtungen und strukturierte Prozesse.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 2: SELECTED USE CASES -->
+<section class="section section--lighter use-cases-selected">
+  <div class="content-wrapper wrapper--narrow">
+
+    <h2 class="section-title section-title--usecases-list" style="margin-bottom: 64px;">
+      Ausgewählte Use Cases
+    </h2>
+
+    <!-- USE CASE 1 -->
+    <div class="usecase-item" data-case="01">
+      <div class="usecase-block">
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <rect x="8" y="10" width="28" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
+            <rect x="10" y="20" width="26" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
+            <rect x="12" y="30" width="24" height="4" rx="1" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <span class="usecase-label">Deep‑Tech Venture Architecture</span>
+        <h3>Aufbau eines skalierbaren Deep‑Tech‑Ventures aus akademischer Forschung</h3>
+
+        <p>Ein Forschungsteam hatte einen vielversprechenden Fertigungsprozess entwickelt, jedoch keinen strukturierten Weg von der akademischen Experimentierphase zu einem skalierbaren Hardwareprodukt. Es benötigte Klarheit zur technischen Machbarkeit, frühe Marktvalidierung und eine Venture‑Architektur, die Laborergebnisse in ein produzierbares, kommerziell relevantes Produkt überführt.</p>
+
+        <ul>
+          <li><strong>Digitale Fertigungsarchitektur</strong> – strukturierte Prozessfenster und Parameterinteraktionen für hochpräzise Produktion</li>
+          <li><strong>Lean Hardware Development</strong> – Stage‑Gate‑Ansätze und Rapid Prototyping zur frühen Validierung von Technologie‑ und Produktannahmen</li>
+          <li><strong>Root‑Cause‑Analyse</strong> – Ishikawa, 5‑Why und PFMEA zur Stabilisierung früher Prozessphasen</li>
+          <li><strong>Prozess‑ und Datenmodellierung</strong> – Abbildung kritischer Variablen für vorhersehbares Materialverhalten</li>
+          <li><strong>Industry‑4.0‑Readiness</strong> – frühe Digital‑Twin‑ und Datenerfassungskonzepte für skalierbare Produktion</li>
+        </ul>
+
+        <p><strong>Ergebnis:</strong> Ein stabiles Prozessfenster und ein strukturierter Entwicklungsansatz ermöglichten den Übergang von der akademischen Forschung zu einem produzierbaren Hardwareprototypen innerhalb weniger Monate und mit begrenztem Budget.</p>
+
+      </div>
+    </div>
+
+    <!-- USE CASE 2 -->
+    <div class="usecase-item" data-case="02">
+      <div class="usecase-block">
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="32" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="2.75"/>
+            <rect x="40" y="22" width="4" height="4" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="24" y1="16" x2="24" y2="8" stroke="currentColor" stroke-width="2.75"/>
+            <rect x="22" y="4" width="4" height="4" stroke="currentColor" stroke-width="2.75"/>
+          </svg>
+        </div>
+
+        <span class="usecase-label">Produkt‑ & Fertigungsstrategie</span>
+        <h3>Definition einer wettbewerbsfähigen Produkt‑ und Fertigungsstrategie für Präzisionskomponenten</h3>
+
+        <p>Ein europäischer Hersteller stand unter steigendem Kostendruck und verlor Wettbewerbsfähigkeit bei kleinen, hochpräzisen Komponenten. Um neue Märkte wie AR/VR und automobilnahe Optik zu erschliessen, benötigte das Unternehmen ein neues Produktionskonzept, eine differenzierte Produktstrategie und Klarheit darüber, welche Technologien und Materialien eine wirtschaftliche Massenproduktion in Europa ermöglichen.</p>
+
+        <ul>
+          <li><strong>Produkt‑ und Marktinnovation</strong> – Identifikation tragfähiger Anwendungen in AR/VR, Automobiloptik und Mikrooptik</li>
+          <li><strong>NPI & Equipment‑Übersetzung</strong> – Übertragung branchenfremder Fertigungstechnologien auf optische Komponenten</li>
+          <li><strong>Materialinnovation</strong> – neue Prozessansätze durch funktionale Materialien</li>
+          <li><strong>Semi‑automatisierte Produktionskonzepte</strong> – skalierbare Architekturen für Mikrooptikfertigung in Europa</li>
+          <li><strong>Technologie‑Roadmap</strong> – strukturierter Kompetenzaufbau entlang der Produktstrategie</li>
+        </ul>
+
+        <p><strong>Ergebnis:</strong> Eine differenzierte Produkt‑ und Fertigungsstrategie ermöglichte wettbewerbsfähige europäische Produktion und eröffnete Zugang zu neuen Wachstumsmärkten.</p>
+
+      </div>
+    </div>
+
+    <!-- USE CASE 3 -->
+    <div class="usecase-item" data-case="03">
+      <div class="usecase-block">
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <rect x="10" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="10" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="10" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <line x1="20" y1="20" x2="28" y2="28" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="20" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="10" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="30" y="30" width="8" height="8" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+
+        <span class="usecase-label">Präzisions‑Engineering & Automatisierung</span>
+        <h3>Engineering einer automatisierten Präzisionsmontagelinie zur Reduktion manueller Arbeit</h3>
+
+        <p>Ein Hersteller von Präzisionsmodulen war auf manuelle Montageschritte angewiesen, die Durchsatz, Stabilität und Skalierbarkeit begrenzten. Um steigende Nachfrage zu bedienen und Kosten pro Teil zu senken, benötigte das Unternehmen ein integriertes Automatisierungskonzept, qualifizierte Lieferanten und eine robuste Engineering‑Umsetzung, die mehrere Präzisionsprozesse in eine stabile, hochpräzise Linie integriert.</p>
+
+        <ul>
+          <li><strong>Automatisierungsarchitektur</strong> – Integration von Reinigung, Fügen, Beschichtung und Inspektion in eine einheitliche Linie</li>
+          <li><strong>Lieferantenqualifikation</strong> – technische Bewertung und Abstimmung mit Partnern in Europa und Asien</li>
+          <li><strong>MES–ERP‑Integration</strong> – Rückverfolgbarkeit, Datenerfassung und Transparenz über alle Prozessschritte</li>
+          <li><strong>Operations Engineering</strong> – OEE‑Optimierung, WIP‑Management und Taktzeitstabilisierung</li>
+          <li><strong>Wissensaufbau</strong> – Training und Dokumentation für nachhaltige Kompetenz im Team</li>
+        </ul>
+
+        <p><strong>Ergebnis:</strong> Das integrierte Automatisierungskonzept reduzierte manuelle Handhabung um 90 %, stabilisierte den Ertrag und senkte die Kosten pro Teil um über 70 %.</p>
+
+      </div>
+    </div>
+
+    <!-- USE CASE 4 -->
+    <div class="usecase-item" data-case="04">
+      <div class="usecase-block">
+
+        <div class="micro-illustration-tile">
+          <!-- SVG unverändert -->
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+            <circle cx="14" cy="24" r="7" stroke="currentColor" stroke-width="2.75"/>
+            <circle cx="34" cy="24" r="7" stroke="currentColor" stroke-width="2.75"/>
+            <line x1="21" y1="24" x2="27" y2="24" stroke="currentColor" stroke-width="2.75"/>
+            <path d="M20 16 L24 12 L28 16" stroke="currentColor" stroke-width="2.75" fill="none"/>
+          </svg>
+        </div>
+
+        <span class="usecase-label">Technologie‑ & Innovationsbewertung</span>
+        <h3>Bewertung von Technologie‑ und Innovationspotenzial für industrielle M&A‑Ziele</h3>
+
+        <p>Ein Investmentteam benötigte eine konsistente, technologieorientierte Bewertungsmethodik, um Unternehmen mit unterschiedlichen Produktportfolios, Reifegraden und Innovationspfaden vergleichbar zu machen. Ziel war eine strukturierte Einschätzung technologischer Attraktivität, Wettbewerbsposition und langfristiger Skalierbarkeit.</p>
+
+        <ul>
+          <li><strong>Technologiebewertung</strong> – Reifegrad, Skalierbarkeit und Differenzierung industrieller Technologien</li>
+          <li><strong>Innovations‑Roadmap</strong> – Identifikation von Lücken, Risiken und Wachstumschancen</li>
+          <li><strong>Cross‑Industry‑Benchmarking</strong> – Vergleich von Produkt‑, Technologie‑ und IP‑Portfolios</li>
+          <li><strong>Markt‑ & Ökosystemanalyse</strong> – strukturierte Bewertung mittels Porter’s Five Forces und angrenzender Märkte</li>
+          <li><strong>Decision Support</strong> – klare Scorecards für Investment‑Entscheidungen</li>
+        </ul>
+
+        <p><strong>Ergebnis:</strong> Eine strukturierte, technologiegetriebene Bewertung ermöglichte klare Vergleiche zwischen M&A‑Zielen und fundierte Investitionsentscheidungen.</p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHERE THESE USE CASES APPLY -->
+<section id="use-cases-where" class="section">
+
+  <div class="why-grid-wrapper">
+    <div class="content-wrapper wrapper--narrow">
+      <h2 class="section-title">Wo Diese Use Cases Wirken</h2>
+    </div>
+
+    <div class="why-grid">
+
+      <!-- CARD 1 -->
+      <div class="why-item">
+        <div class="why-item-inner">
+          <div class="why-icon">
+            <!-- SVG unverändert -->
+            <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="14" stroke="currentColor" fill="none"/>
+              <path d="M26 8v6M26 38v6M8 26h6M38 26h6" stroke="currentColor" stroke-linecap="round"/>
+              <path d="M20 26h12M26 20v12" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
+          </div>
+                   <h3>Neue Produktentwicklung & Deep‑Tech‑Innovation</h3>
+          <p>Wo Teams klare Richtung, praktische Validierung und einen belastbaren Weg vom Konzept zum realen Produkt benötigen.</p>
         </div>
       </div>
 
-      <div class="feature-block">
-        <div class="feature-block-icon"></div>
-        <div>
-          <h3>Technische Due Diligence & Partnerschaften</h3>
-          <p>Technologiebewertung, Lieferantenqualifikation und globale Fertigungsstrategie.</p>
+      <!-- CARD 2 -->
+      <div class="why-item">
+        <div class="why-item-inner">
+          <div class="why-icon">
+            <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="12" width="32" height="10" rx="2" stroke="currentColor" fill="none"/>
+              <rect x="10" y="24" width="32" height="10" rx="2" stroke="currentColor" fill="none"/>
+              <rect x="10" y="36" width="32" height="10" rx="2" stroke="currentColor" fill="none"/>
+              <path d="M26 22v2M26 34v2" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Engineering‑intensive Systeme & komplexe Architekturen</h3>
+          <p>Wo Erfolg davon abhängt, unterschiedliche Technologien zusammenzuführen und die richtigen technischen Entscheidungen zu treffen.</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="why-item">
+        <div class="why-item-inner">
+          <div class="why-icon">
+            <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 34h32v8H10z" stroke="currentColor" fill="none"/>
+              <path d="M14 34v-8l8 4v-4l8 4v-4l8 4v8" stroke="currentColor" fill="none" stroke-linejoin="round"/>
+              <circle cx="18" cy="42" r="2" stroke="currentColor" fill="none"/>
+              <circle cx="26" cy="42" r="2" stroke="currentColor" fill="none"/>
+              <circle cx="34" cy="42" r="2" stroke="currentColor" fill="none"/>
+            </svg>
+          </div>
+          <h3>Fertigung, Industrialisierung & Supply Chain</h3>
+          <p>Wo physische Produkte zuverlässig, wiederholbar und wirtschaftlich skaliert werden müssen.</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="why-item">
+        <div class="why-item-inner">
+          <div class="why-icon">
+            <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36l8-10 6 6 12-16" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="38" cy="14" r="4" stroke="currentColor" fill="none"/>
+              <path d="M12 40h28" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Operations, Skalierung & technische Due Diligence</h3>
+          <p>Wo Organisationen Struktur, Risikoreduktion und technische Klarheit benötigen, um nachhaltig zu wachsen.</p>
         </div>
       </div>
 
@@ -278,8 +539,10 @@ description: Ausgewählte Projekte, die zeigen, wie VAIRA mit klarer Systematik 
 <!-- CTA -->
 <section class="section section--cta section--lighter">
   <div class="content-wrapper wrapper--narrow">
-    <h2>Ihre technische Herausforderung besprechen</h2>
-    <p>Wir unterstützen Teams dort, wo Komplexität, Präzision und Geschwindigkeit entscheidend sind.</p>
+    <h2>Besprechen Sie Ihre technische Herausforderung</h2>
+    <p style="margin-top: 12px; margin-bottom: 24px;">
+      Wir unterstützen Teams dort, wo Komplexität, Präzision und Geschwindigkeit entscheidend sind.
+    </p>
     <a href="/de/kontakt" class="cta-btn cta-btn--primary">Gespräch starten</a>
   </div>
 </section>
