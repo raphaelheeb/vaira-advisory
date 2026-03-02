@@ -1287,7 +1287,7 @@ p {
   margin-bottom: 32px !important;
 }
 
-/* Tighter spacing before the list of use cases */
+/* Tighter spacing before the list of use cases (title → first block) */
 .use-cases-page .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 40px !important;
 }
@@ -1308,3 +1308,11 @@ p {
   margin-bottom: 40px !important;
 }
 
+/* =========================================================
+   CRITICAL FIX — override global `.section p + ul` spacing
+   ========================================================= */
+
+/* Reduce the huge gap between paragraph and bullet list inside use case blocks */
+.use-cases-page .use-cases-selected .usecase-block p + ul {
+  margin-top: 16px !important;
+}
