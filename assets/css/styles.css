@@ -1346,3 +1346,23 @@ p {
   transform: translateY(-24px);
 }
 
+/* 1. Reduce title → paragraph spacing in “How We Create Impact” */
+.split--usecases .split-left-top {
+  margin-bottom: 12px;
+}
+
+/* 2. Increase icon size for better balance */
+.use-cases-page .use-cases-selected .micro-illustration svg {
+  width: 56px;
+  height: 56px;
+}
+
+/* 3. Improve internal rhythm of each use case block */
+.use-cases-page .use-cases-selected h3 {
+  margin-bottom: 12px;
+}
+
+.use-cases-page .use-cases-selected ul + p {
+  margin-top: 12px;
+}
+
