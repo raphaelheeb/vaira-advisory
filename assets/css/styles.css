@@ -208,6 +208,16 @@ p {
   line-height: 1.45;
 }
 
+/* Fix vertical spacing in "How We Create Impact" */
+.section--accent-left .section-title {
+  margin-bottom: 24px !important; /* tighter, matches other sections visually */
+}
+
+.split--usecases .split-left-top {
+  margin-bottom: 0; /* remove extra gap */
+}
+
+
 /* =========================================================
    VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
    LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
@@ -1302,7 +1312,7 @@ p {
 }
 
 .split--usecases .split-left-top {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .use-cases-page .section--accent-left .illustration-wrapper svg {
