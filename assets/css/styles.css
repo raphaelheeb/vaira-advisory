@@ -1287,6 +1287,10 @@ p {
   margin-bottom: 32px !important;
 }
 
+.use-cases-page .section--accent-left .split {
+  align-items: start;
+}
+
 /* Tighter spacing before the list of use cases (title → first block) */
 .use-cases-page .use-cases-selected .wrapper--narrow > h2 {
   margin-bottom: 40px !important;
