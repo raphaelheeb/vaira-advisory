@@ -1297,3 +1297,21 @@ p {
   height: 48px;
 }
 
+/* Use Cases — keep hero subtitle on a single line on desktop */
+@media (min-width: 960px) {
+  .hero-sub--use-cases {
+    white-space: nowrap;
+  }
+}
+
+/* Use Cases — compact section title in accent-left block */
+.section--accent-left .section-title--compact {
+  margin-bottom: 32px !important;
+}
+
+/* Use Cases — tighter spacing before the list of use cases */
+.section-title--usecases-list {
+  margin-bottom: 40px !important;
+}
+
+
