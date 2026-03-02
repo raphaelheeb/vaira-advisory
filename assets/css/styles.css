@@ -1688,3 +1688,9 @@ p {
   margin-bottom: 0;
   color: rgba(0,0,0,0.82);
 }
+
+@media (min-width: 900px) {
+  #use-cases-where .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
