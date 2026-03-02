@@ -1261,30 +1261,36 @@ p {
 }
 
 /* =========================================================
-   VAIRA USE-CASES PAGE — enhanced layout (Option 2 + A1-b)
+   VAIRA USE-CASES PAGE — FINAL CONSOLIDATED DESIGN SYSTEM
    ========================================================= */
 
-/* Hero behavior */
+/* ---------------------------------------------
+   HERO
+--------------------------------------------- */
 @media (min-width: 1100px) {
   .use-cases-page .hero-sub {
     white-space: nowrap !important;
   }
 }
 
-/* Section title spacing */
+/* ---------------------------------------------
+   SECTION TITLES
+--------------------------------------------- */
 .use-cases-page h2 {
   margin-bottom: 32px !important;
 }
 
 .use-cases-page .use-cases-selected h2 {
-  margin-bottom: 40px !important;
+  margin-bottom: 64px !important; /* increased spacing before first use case */
 }
 
-/* Accent-left section spacing */
 .use-cases-page .section--accent-left h2 {
   margin-bottom: 32px !important;
 }
 
+/* ---------------------------------------------
+   ACCENT-LEFT SECTION (How We Create Impact)
+--------------------------------------------- */
 .use-cases-page .section--accent-left .split {
   align-items: start;
 }
@@ -1293,7 +1299,6 @@ p {
   margin-bottom: 12px;
 }
 
-/* Illustration sizing in accent-left section */
 .use-cases-page .section--accent-left .illustration-wrapper svg {
   width: 85%;
   height: auto;
@@ -1301,10 +1306,12 @@ p {
 }
 
 /* =========================================================
-   USE CASE BLOCKS — NEW PREMIUM DESIGN
+   USE CASE BLOCKS — PREMIUM ENGINEERED DESIGN
    ========================================================= */
 
-/* Floating icon tile — larger, more visible */
+/* ---------------------------------------------
+   ICON TILE (large, centered, premium)
+--------------------------------------------- */
 .micro-illustration-tile {
   width: 88px;
   height: 88px;
@@ -1324,10 +1331,12 @@ p {
 }
 
 .micro-illustration-tile svg * {
-  stroke-width: 2.25 !important;
+  stroke-width: 2.5 !important;
 }
 
-/* Use case block container */
+/* ---------------------------------------------
+   USE CASE BLOCK CONTAINER
+--------------------------------------------- */
 .usecase-block {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
@@ -1343,7 +1352,9 @@ p {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-/* Header bar above each case */
+/* ---------------------------------------------
+   HEADER BAR
+--------------------------------------------- */
 .usecase-block::before {
   content: "";
   display: block;
@@ -1353,7 +1364,9 @@ p {
   margin-bottom: 16px;
 }
 
-/* Case numbers (01–04) — left side */
+/* ---------------------------------------------
+   CASE NUMBERS (left side, architectural)
+--------------------------------------------- */
 .usecase-item {
   position: relative;
   margin-bottom: 48px;
@@ -1362,13 +1375,13 @@ p {
 .usecase-item::before {
   content: attr(data-case);
   position: absolute;
-  top: 0;
-  left: -56px; /* clean offset left of spine */
+  top: -12px;
+  left: -56px;
   font-size: 72px;
   font-weight: 600;
   opacity: 0.05;
-  pointer-events: none;
   line-height: 1;
+  pointer-events: none;
 }
 
 /* Divider between cases */
@@ -1378,7 +1391,9 @@ p {
   margin-top: 48px;
 }
 
-/* Micro-labels */
+/* ---------------------------------------------
+   MICRO-LABELS
+--------------------------------------------- */
 .usecase-label,
 .usecase-outcome-label {
   display: block;
@@ -1389,7 +1404,9 @@ p {
   margin-bottom: 4px;
 }
 
-/* Typography rhythm */
+/* ---------------------------------------------
+   TYPOGRAPHY RHYTHM
+--------------------------------------------- */
 .usecase-block h3 {
   margin-bottom: 12px;
 }
@@ -1398,7 +1415,9 @@ p {
   margin-bottom: 14px;
 }
 
-/* Lists — improved indentation + spacing */
+/* ---------------------------------------------
+   LISTS — indentation, spacing, readability
+--------------------------------------------- */
 .usecase-block ul {
   margin: 16px 0 20px 0;
   padding-left: 28px;
@@ -1409,13 +1428,19 @@ p {
   margin-bottom: 8px;
 }
 
-/* Optional: bold keywords */
 .usecase-block li strong {
   font-weight: 600;
   color: var(--text);
 }
 
-/* Engineering grid (fine 8px, top-right quadrant) */
+/* Fix spacing between paragraph and list */
+.use-cases-page .use-cases-selected .usecase-block p + ul {
+  margin-top: 20px !important;
+}
+
+/* ---------------------------------------------
+   ENGINEERING GRID (top-right quadrant)
+--------------------------------------------- */
 .usecase-block::after {
   content: "";
   position: absolute;
@@ -1431,12 +1456,9 @@ p {
   pointer-events: none;
 }
 
-/* Fix spacing between paragraph and list */
-.use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 20px !important;
-}
-
-/* Ensure independent alignment for title + illustration */
+/* ---------------------------------------------
+   SPLIT LAYOUT ALIGNMENT
+--------------------------------------------- */
 .split--usecases {
   align-items: start;
 }
@@ -1450,4 +1472,3 @@ p {
   display: block;
   margin-top: 0;
 }
-
