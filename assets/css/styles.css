@@ -1366,3 +1366,40 @@ p {
   margin-top: 12px;
 }
 
+/* Vertical spine */
+.usecase-block {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 28px;
+}
+
+/* Micro-labels */
+.usecase-label,
+.usecase-outcome-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+/* Spacing rhythm */
+.usecase-block p {
+  margin-bottom: 12px;
+}
+
+.usecase-block ul {
+  margin: 12px 0 16px 0;
+}
+
+/* Divider between cases */
+.usecase-item + .usecase-item {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+/* Icon weight */
+.usecase-block svg * {
+  stroke-width: 2 !important;
+}
