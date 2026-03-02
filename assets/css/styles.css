@@ -1594,6 +1594,10 @@ p {
   color: rgba(0,0,0,0.82);
 }
 
+#use-cases-where .container {
+  max-width: 1200px; /* matches use-case cards */
+}
+
 #use-cases-where .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
