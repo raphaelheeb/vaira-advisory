@@ -1349,7 +1349,7 @@ p {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
   position: relative;
-  background: rgba(255,255,255,0.03); /* subtle structure */
+  background: rgba(255,255,255,0.03) !important; /* subtle structure */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
