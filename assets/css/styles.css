@@ -1593,3 +1593,12 @@ p {
   margin-bottom: 0;
   color: rgba(0,0,0,0.82);
 }
+
+#use-cases-where .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 36px;
+  row-gap: 40px;
+  justify-items: start;
+  align-items: stretch;
+}
