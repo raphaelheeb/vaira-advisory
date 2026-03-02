@@ -1349,7 +1349,7 @@ p {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
   position: relative;
-  background: var(--text-light); /* subtle structure */
+  background: var(--primary-light); /* subtle structure */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
@@ -1369,7 +1369,6 @@ p {
   display: block;
   height: 3px;
   width: 48px;
-  background: var(--accent-color);
   margin-bottom: 16px;
 }
 
