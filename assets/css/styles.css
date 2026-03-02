@@ -1286,7 +1286,6 @@ p {
 --------------------------------------------- */
 .use-cases-page .section-title {
   margin-bottom: 48px !important;
-  padding-left: 24px; /* GLOBAL LEFT SPINE */
 }
 
 .use-cases-page .use-cases-selected .section-title--usecases-list {
@@ -1297,9 +1296,6 @@ p {
    ACCENT-LEFT SECTION (How We Create Impact)
    — FIX TITLE MISALIGNMENT
 --------------------------------------------- */
-.use-cases-page .section--accent-left .section-title {
-  padding-left: 24px; /* ALIGN TO GLOBAL SPINE */
-}
 
 .use-cases-page .section--accent-left .split {
   align-items: start;
@@ -1484,10 +1480,8 @@ p {
   padding-bottom: 120px;
 }
 
-/* Title alignment (GLOBAL SPINE) */
 #use-cases-where .section-title {
   margin-bottom: 56px;
-  padding-left: 24px; /* MATCH GLOBAL SPINE */
 }
 
 /* Wide wrapper */
