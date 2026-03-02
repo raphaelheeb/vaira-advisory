@@ -1349,18 +1349,17 @@ p {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
   position: relative;
-  background: rgba(0,0,0,0.04); /* improved subtle panel */
+  background: rgba(0,0,0,0.065); /* visible, premium panel */
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .usecase-block:hover {
-  background: rgba(0,0,0,0.06); /* slightly stronger lift */
+  background: rgba(0,0,0,0.10); /* elegant elevation */
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
-
 
 /* ---------------------------------------------
    HEADER BAR
@@ -1482,14 +1481,6 @@ p {
   margin-top: 0;
 }
 
-/* Slightly stronger card background */
-.usecase-block {
-  background: rgba(0,0,0,0.045) !important;
-}
-
-.usecase-block:hover {
-  background: rgba(0,0,0,0.06) !important;
-}
 
 /* Micro-label contrast */
 .usecase-label,
