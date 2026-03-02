@@ -1274,18 +1274,26 @@ p {
 }
 
 /* ---------------------------------------------
-   SECTION TITLES
+   GLOBAL SECTION SPACING
 --------------------------------------------- */
-.use-cases-page h2 {
-  margin-bottom: 32px !important;
+.use-cases-page .section {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.use-cases-page .use-cases-selected h2 {
-  margin-bottom: 64px !important; /* increased spacing before first use case */
+/* ---------------------------------------------
+   SECTION TITLES
+--------------------------------------------- */
+.use-cases-page .section-title {
+  margin-bottom: 48px !important;
+}
+
+.use-cases-page .use-cases-selected .section-title--usecases-list {
+  margin-bottom: 64px !important;
 }
 
 .use-cases-page .section--accent-left h2 {
-  margin-bottom: 32px !important;
+  margin-bottom: 48px !important;
 }
 
 /* ---------------------------------------------
@@ -1296,7 +1304,7 @@ p {
 }
 
 .split--usecases .split-left-top {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .use-cases-page .section--accent-left .illustration-wrapper svg {
@@ -1341,13 +1349,14 @@ p {
   border-left: 3px solid var(--accent-color);
   padding-left: 28px;
   position: relative;
-  background: transparent;
+  background: rgba(255,255,255,0.03); /* subtle structure */
   overflow: hidden;
   border-radius: 10px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .usecase-block:hover {
+  background: rgba(255,255,255,0.05); /* slight lift */
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
@@ -1412,7 +1421,7 @@ p {
 }
 
 .usecase-block p {
-  margin-bottom: 14px;
+  margin-bottom: 20px; /* unified paragraph rhythm */
 }
 
 /* ---------------------------------------------
