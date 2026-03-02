@@ -1448,6 +1448,12 @@ p {
   margin-top: 20px !important;
 }
 
+.use-cases-selected .usecase-item:first-of-type {
+  padding-top: 48px;
+  margin-top: 48px;
+}
+
+
 /* ---------------------------------------------
    ENGINEERING GRID (top-right quadrant)
 --------------------------------------------- */
