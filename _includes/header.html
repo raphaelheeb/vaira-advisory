@@ -1,11 +1,23 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
+    <!-- MOBILE HAMBURGER (left-aligned) -->
+    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- LOGO + DESKTOP NAV WRAPPER -->
     <div class="brand-and-nav">
-      <a href="{% if page.lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-logo">
+
+      <!-- LOGO -->
+      <a href="{% if page.lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"
+         class="site-logo">
         <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="VAIRA Advisory">
       </a>
 
+      <!-- DESKTOP NAV -->
       <nav>
         <ul class="nav">
 
@@ -89,7 +101,6 @@
       </nav>
     </div>
 
-
     <!-- LANGUAGE SWITCHER -->
     <div class="language-switcher">
 
@@ -123,4 +134,28 @@
     </div>
 
   </div>
+
+  <!-- MOBILE MENU (auto-switches EN/DE) -->
+  <nav class="mobile-menu">
+
+    {% if page.lang == "de" %}
+
+      <a href="{{ '/de/services/' | relative_url }}">Dienstleistungen</a>
+      <a href="{{ '/de/industries/' | relative_url }}">Branchen</a>
+      <a href="{{ '/de/use-cases/' | relative_url }}">Anwendungen</a>
+      <a href="{{ '/de/about/' | relative_url }}">Über Uns</a>
+      <a href="{{ '/de/contact/' | relative_url }}">Kontakt</a>
+
+    {% else %}
+
+      <a href="{{ '/services/' | relative_url }}">Services</a>
+      <a href="{{ '/industries/' | relative_url }}">Industries</a>
+      <a href="{{ '/use-cases/' | relative_url }}">Use Cases</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact Us</a>
+
+    {% endif %}
+
+  </nav>
+
 </header>
