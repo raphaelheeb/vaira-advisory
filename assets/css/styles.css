@@ -1738,15 +1738,17 @@ nav ul.nav {
 }
 
 /* =========================================================
-   HEADER — MOBILE LAYOUT
+   HEADER — MOBILE LAYOUT (FINAL, CONSOLIDATED)
    ========================================================= */
 
 @media (max-width: 768px) {
 
+  /* Hide desktop nav */
   nav ul.nav {
     display: none !important;
   }
 
+  /* Header container */
   .site-header .header-wrap {
     display: flex;
     flex-direction: row;
@@ -1757,16 +1759,18 @@ nav ul.nav {
     gap: 16px;
   }
 
+  /* Logo + brand */
   .brand-and-nav {
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
+  /* Right cluster: language + hamburger */
   .header-right {
     display: flex;
     align-items: center;
-    gap: 28px; /* increased spacing */
+    gap: 28px; /* premium spacing */
   }
 
   .language-switcher {
@@ -1776,39 +1780,55 @@ nav ul.nav {
   }
 
   .lang-btn {
-    padding: 5px 12px;
-    font-size: 13px;
+    padding: 5px 12px;     /* lighter footprint */
+    font-size: 13px;       /* balanced with hamburger */
+    border-radius: 10px;   /* more engineered geometry */
   }
 
+  /* Hamburger */
   .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 7px;
-    width: 36px;
+    width: 36px;           /* increased presence */
     height: 26px;
     cursor: pointer;
   }
 
   .hamburger span {
-    height: 3.5px;
+    height: 3.5px;         /* stronger visual weight */
     width: 100%;
     background: var(--text-dark);
     border-radius: 999px;
   }
 
+  /* Mobile menu — right-aligned dropdown */
   .mobile-menu {
     display: none;
     flex-direction: column;
+    align-items: flex-end;     /* right-align items */
+    text-align: right;         /* right-align text */
     background: rgba(255,255,255,0.98);
     border-bottom: 1px solid var(--line);
     padding: 12px 5%;
+    width: auto;               /* shrink to content */
+    margin-left: auto;         /* push to right */
+    max-width: 260px;          /* elegant width */
   }
 
   .mobile-menu.open {
     display: flex;
   }
+
+  .mobile-menu a {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
 }
+
 
 /* =========================================================
    FOOTER — MOBILE
