@@ -1595,7 +1595,7 @@ nav ul.nav {
   height: 52px;
 }
 
-.why-icon svg * {
+.why-icon svg {
   stroke-width: 2.1;
   transition: stroke-width 0.18s ease;
 }
