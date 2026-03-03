@@ -40,18 +40,25 @@
     });
   </script>
 
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", function() {
-  const addresses = document.querySelectorAll(".protected-address");
-  addresses.forEach(el => {
-    const l1 = el.getAttribute("data-line1");
-    const l2 = el.getAttribute("data-line2");
-    const l3 = el.getAttribute("data-line3");
-    el.innerHTML = `${l1}<br>${l2}<br>${l3}`;
-  });
+  const trigger = document.getElementById("reveal-address");
+  const target = document.getElementById("vaira-address");
+
+  if (trigger && target) {
+    trigger.addEventListener("click", function() {
+      const a = [
+        "Hegianwandweg 106",
+        "8045 Zürich",
+        "Schweiz"
+      ];
+      target.innerHTML = a.join("<br>");
+      target.style.display = "inline";
+      trigger.style.display = "none";
+    });
+  }
 });
 </script>
-
 
 </body>
 </html>
