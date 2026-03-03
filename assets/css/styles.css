@@ -27,20 +27,17 @@ body {
   line-height: 1.7;
 }
 
-/* Remove default margins */
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, figure {
   margin: 0;
   padding: 0;
 }
 
-/* Remove list styles globally (components reintroduce them intentionally) */
 ul, ol {
   list-style: none;
   padding-left: 0;
 }
 
-/* Anchor defaults */
 a {
   color: var(--primary-mid);
   text-decoration: none;
@@ -50,7 +47,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Images */
 img {
   max-width: 100%;
   display: block;
@@ -119,7 +115,6 @@ img {
 
   --footer-accent: rgba(184,212,208,0.15);
 
-  /* Unified vertical spacing system */
   --section-space: 7rem;
 }
 
@@ -225,12 +220,10 @@ p {
   padding-left: 32px;
 }
 
-/* Ensure no accidental stacking gaps */
 .section + .section {
   margin-top: 0;
 }
 
-/* Paragraph → grid/list/split spacing */
 .section p + .card-grid,
 .section p + .why-grid,
 .section p + .split,
@@ -238,30 +231,23 @@ p {
   margin-top: var(--section-space);
 }
 
-/* Base list rhythm */
 .section ul li {
   margin-bottom: 8px;
   line-height: 1.45;
 }
 
-/* Fix vertical spacing in "How We Create Impact" */
 .section--accent-left .section-title {
-  margin-bottom: 24px !important; /* tighter, matches other sections visually */
+  margin-bottom: 24px !important;
 }
 
 .split--usecases .split-left-top {
-  margin-bottom: 0; /* remove extra gap */
+  margin-bottom: 0;
 }
-
 
 /* =========================================================
    VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
    LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
    ========================================================= */
-
-/* ------------------------------
-   Core Grid Utilities
-   ------------------------------ */
 
 .grid {
   display: grid;
@@ -281,7 +267,7 @@ p {
 }
 
 /* ------------------------------
-   Split Layout (Technical Balanced)
+   Split Layout
    ------------------------------ */
 
 .split {
@@ -313,7 +299,6 @@ p {
   align-self: center;
 }
 
-/* Uniform title → paragraph spacing */
 .section h2,
 .wrapper--narrow h2,
 .split h2,
@@ -322,20 +307,18 @@ p {
   margin-bottom: 32px;
 }
 
-/* Paragraph → list spacing */
 .split-left p + ul,
 .split-left p + .checklist {
   margin-top: 24px;
 }
 
-/* List item rhythm */
 .split-left ul li {
   margin-bottom: 10px;
   line-height: 1.55;
 }
 
 /* ------------------------------
-   Manual Alternation System
+   Manual Alternation
    ------------------------------ */
 
 .split--reverse .split {
@@ -351,573 +334,7 @@ p {
 }
 
 /* ------------------------------
-   Mobile Behavior
-   ------------------------------ */
-
-@media (max-width: 768px) {
-  .split {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .split > div {
-    order: 1;
-  }
-
-  .split-image {
-    order: 2;
-    max-width: 100%;
-  }
-
-  .split--reverse .split > div:first-child {
-    order: 1;
-  }
-
-  .split--reverse .split > div:last-child,
-  .split--reverse .split-image {
-    order: 2;
-  }
-}
-
-/* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
-   COMPONENTS: Cards, Feature Blocks, CTA, Hero, Header, Footer
-   ========================================================= */
-
-/* ------------------------------
-   Cards
-   ------------------------------ */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-}
-
-.card {
-  padding: 28px;
-  border-radius: 12px;
-  background: white;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-
-.card:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
-/* Services cards */
-#services .card {
-  background: rgba(201,220,220,0.45);
-}
-
-#services .card:hover {
-  background: white;
-  border-color: rgba(95,138,142,0.45);
-}
-
-#services .card-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#services .card-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-#services .card-header .card-icon svg {
-  width: 64px;
-  height: 64px;
-  stroke-width: 2.5;
-}
-
-/* Contact cards */
-.contact-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
-  margin-top: 32px;
-}
-
-.contact-card {
-  background: white;
-  border: 1px solid rgba(95,138,142,0.15);
-  border-radius: 14px;
-  padding: 28px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px var(--shadow-light);
-  border-color: rgba(95,138,142,0.35);
-}
-
-.contact-card .card-icon svg {
-  width: 40px;
-  height: 40px;
-}
-
-/* ------------------------------
-   Feature Blocks (Why VAIRA)
-   ------------------------------ */
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 32px;
-}
-
-.feature-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px 24px;
-  background: white;
-  border-radius: 12px;
-  border: 1px solid rgba(95,138,142,0.15);
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-  margin-bottom: 32px;
-}
-
-.feature-block:hover {
-  background: rgba(201,220,220,0.35);
-  border-color: rgba(95,138,142,0.35);
-  transform: translateY(-2px);
-}
-
-.feature-block h3 {
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.feature-block p {
-  margin: 0;
-  line-height: 1.55;
-}
-
-/* ------------------------------
-   CTA Buttons
-   ------------------------------ */
-
-.cta-btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-.cta-btn--primary {
-  background: var(--primary-mid);
-  color: var(--text-light);
-  box-shadow: 0 4px 12px var(--shadow-light);
-}
-
-.cta-btn--primary:hover {
-  background: var(--primary-mid);
-  color: var(--text-light);
-  border: 1px solid;
-  box-shadow: 0 8px 24px var(--shadow-strong);
-  text-decoration: none;
-}
-
-.cta-btn--secondary {
-  border: 1px solid var(--primary-mid);
-  background: var(--primary);
-  color: var(--text-light);
-}
-
-.cta-btn--secondary:hover {
-  background: var(--primary-mid);
-  color: var(--text-light);
-  text-decoration: none;
-  border: 1px solid;
-}
-
-/* CTA section spacing refinements */
-.section--cta h2 {
-  margin-bottom: 16px;
-}
-
-.section--cta h2 + p {
-  margin-bottom: 32px;
-}
-
-/* ------------------------------
-   Hero System
-   ------------------------------ */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 96px 0 72px;
-  background-color: var(--primary);
-  color: var(--text-light);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
-  background-size: 66px 66px;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero > .content-wrapper {
-  position: relative;
-  z-index: 1;
-  padding-top: 24px;
-}
-
-.hero-title {
-  font-size: 46px;
-  line-height: 1.22;
-  margin-bottom: 24px;
-}
-
-.hero-sub {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 12px;
-  margin-bottom: 36px;
-}
-
-.hero h1,
-.hero .hero-title,
-.hero h2,
-.hero .hero-sub {
-  color: var(--text-light) !important;
-}
-
-#hero:not(.hero--clean) .hero-grid {
-  display: grid;
-  grid-template-columns: 2.1fr 1.1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-#hero:not(.hero--clean) .hero-left {
-  align-self: center;
-}
-
-#hero:not(.hero--clean) .hero-right {
-  align-self: center;
-}
-
-#hero:not(.hero--clean) .hero-right svg {
-  width: 115%;
-  transform: translateY(-6px);
-}
-
-#hero.hero--clean {
-  padding: 56px 0 40px !important;
-}
-
-#hero.hero--clean .hero-sub {
-  font-size: 20px;
-  opacity: 0.92;
-}
-
-/* ------------------------------
-   Header & Navigation
-   ------------------------------ */
-
-.site-header {
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 0;
-}
-
-.brand-and-nav {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.site-logo img {
-  height: 64px;
-  border-radius: 8px;
-}
-
-.nav {
-  display: flex;
-  gap: 28px;
-}
-
-.nav a {
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 2px;
-  color: var(--text-dark);
-  transition: color 0.2s;
-}
-
-/* Underline animation base */
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: var(--primary-mid);
-  transition: width 0.25s;
-}
-
-/* Hover state */
-.nav a:hover {
-  color: var(--primary-mid);
-  text-decoration: none;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
-
-/* ACTIVE STATE — permanent underline + color */
-.nav a.active {
-  color: var(--primary-mid);
-}
-
-.nav a.active::after {
-  width: 100%;
-  background: var(--primary-mid);
-}
-
-/* Prevent hover from overriding active color */
-.nav a.active:hover {
-  color: var(--primary-mid);
-}
-
-/* Language switcher */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.lang-btn {
-  font-size: 14px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--primary-mid);
-  background: transparent;
-  color: var(--text-dark);
-  cursor: pointer;
-}
-
-.lang-btn.active {
-  background: var(--bg-light);
-  color: var(--primary);
-}
-
-/* ------------------------------
-   Footer
-   ------------------------------ */
-
-.site-footer {
-  background: var(--primary);
-  color: var(--text-light);
-  padding: 48px 0 32px;
-  font-size: 15px;
-  border-top: 1px solid var(--footer-accent);
-}
-
-.site-footer a {
-  color: var(--primary-light);
-}
-
-.footer-brand {
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
-.footer-tagline {
-  margin-bottom: 16px;
-  opacity: 0.75;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 1.2fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.footer-col--center {
-  text-align: center;
-}
-
-.footer-col--right {
-  text-align: right;
-}
-
-.footer-legal {
-  text-align: center;
-  margin-top: 24px;
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-.footer-legal-bar {
-  text-align: center;
-  font-size: 13px;
-  opacity: 0.55;
-  margin-top: 48px;
-  padding-top: 6px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-/* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 4/4
-   PAGE BLOCKS + RESPONSIVE SYSTEM
-   ========================================================= */
-
-/* ------------------------------
-   Industries Page Blocks
-   ------------------------------ */
-
-#industries-why.section {
-  padding-top: 80px;
-  padding-bottom: 72px;
-}
-
-.industries-why-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 48px;
-  align-items: start;
-}
-
-.industries-why-text {
-  max-width: 560px;
-}
-
-.industries-why-text h2 {
-  margin-bottom: 28px;
-}
-
-.industries-why-illustration svg {
-  max-width: 260px;
-  width: 100%;
-  height: auto;
-}
-
-/* ------------------------------
-   Use Cases — Alternating Backgrounds
-   ------------------------------ */
-
-.use-cases .section:nth-of-type(odd) {
-  background: var(--text-light);
-}
-
-.use-cases .section:nth-of-type(even) {
-  background: var(--bg-lighter);
-}
-
-#use-cases-where.section {
-  background: var(--primary-light);
-}
-
-/* ------------------------------
-   Use Cases — Selected Use Cases Blocks
-   ------------------------------ */
-
-.use-cases-selected .wrapper--narrow > h2 {
-  margin-bottom: 72px;
-}
-
-.use-cases-selected .usecase-block {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--line);
-}
-
-.use-cases-selected .usecase-item {
-  margin-bottom: 32px;
-}
-
-.use-cases-selected .usecase-item:last-child .usecase-block {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-/* Micro-illustrations */
-.use-cases-selected .micro-illustration {
-  width: 48px;
-  margin-bottom: 16px;
-  opacity: 0.75;
-}
-
-.use-cases-selected .micro-illustration svg {
-  width: 64px;
-  height: 64px;
-}
-
-/* Typography inside blocks */
-.use-cases-selected .usecase-block h3 {
-  margin-bottom: 28px;
-}
-
-.use-cases-selected .usecase-block p {
-  margin-bottom: 18px;
-}
-
-.use-cases-selected .usecase-block ul {
-  margin-bottom: 28px;
-}
-
-/* ------------------------------
-   Contact Page — Blueprint Background
-   ------------------------------ */
-
-.section--lighter.contact-blueprint {
-  position: relative;
-}
-
-.section--lighter.contact-blueprint::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(to right, rgba(95,138,142,0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(95,138,142,0.12) 1px, transparent 1px);
-  background-size: 32px 32px;
-  opacity: 0.12;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* ------------------------------
-   Responsive System (Unified)
+   Desktop Refinements (kept)
    ------------------------------ */
 
 @media (max-width: 960px) {
@@ -926,751 +343,833 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-
-  .section h2 {
-    margin-bottom: 40px;
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .contact-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: left;
-    gap: 24px;
-  }
-
-  .header-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .brand-and-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .use-cases-selected .usecase-item {
-    margin-bottom: 90px;
-  }
-
-  .use-cases-selected .usecase-block {
-    padding-bottom: 32px;
-  }
-
-  .use-cases-selected .micro-illustration svg {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-/* =========================================================
-   VAIRA Industries Page — Mobile Enhancements
-   ========================================================= */
-
-@media (max-width: 600px) {
-  .hero-sub {
-    font-size: 17px;
-    line-height: 1.55;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  #services .card {
-    padding: 24px;
-  }
-}
-
-@media (max-width: 600px) {
-  .why-grid {
-    grid-template-columns: 1fr !important;
-    gap: 28px;
-  }
-
-  .feature-block {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 20px;
-  }
-
-  .feature-block-icon {
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .industries-why-inner {
-    grid-template-columns: 1fr !important;
-    row-gap: 40px;
-  }
-
-  .industries-why-illustration {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 26px;
-    line-height: 1.3;
-    margin-bottom: 28px;
-  }
-}
-
-@media (max-width: 600px) {
-  .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-}
-/* =========================================================
-   VAIRA Industries Page — Desktop Enhancements
-   ========================================================= */
-
-@media (min-width: 1200px) {
-  .hero-sub {
-    max-width: 680px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #services .card {
-    padding: 32px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .feature-block {
-    padding: 28px 32px;
-    min-height: 180px;
-  }
-
-  .feature-block-icon svg {
-    width: 64px;
-    height: 64px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .industries-why-illustration {
-    max-width: 380px;
-    margin-top: 8px;
-  }
-
-  .industries-why-text {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 1200px) {
-  h2 {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .feature-block p {
-    max-width: 420px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section {
-    padding-top: calc(var(--section-space) * 1.2);
-    padding-bottom: calc(var(--section-space) * 1.2);
-  }
-}
-
-/* =========================================================
-   VAIRA Industries Page — Fix for overflowing text in cards
-   ========================================================= */
-
-/* 1) Force equal-width columns */
-#industries-list .why-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-}
-
-/* 2) Prevent text from overflowing card boundaries */
-#industries-list .feature-block {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-/* 3) Stabilize icon column width */
-#industries-list .feature-block-icon {
-  width: 64px;
-  flex-shrink: 0;
-}
-
-/* =========================================================
-   VAIRA Industries Page — Fix for overflow in Value Cards
-   ========================================================= */
-
-.services-page #services .card-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-}
-
-.industries-page #services .card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-}
-
-
-@media (max-width: 768px) {
-  #services .card-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* 2) Prevent text from overflowing card boundaries */
-#services .card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-/* 3) Ensure UL grows and keeps card height stable */
-#services .card ul {
-  flex-grow: 1;
-}
-
-/* =========================================================
-   VAIRA ABOUT PAGE — tighter vertical rhythm
-   ========================================================= */
-
-.about-page .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (min-width: 1200px) {
-  .about-page .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-/* HOW WE WORK — force single column */
-#about-how .card-grid {
-  grid-template-columns: 1fr !important;
-}
-
-/* EXPERIENCE — spacing + hierarchy */
-#about-experience ul {
-  margin-bottom: 32px;
-}
-
-#about-experience p:last-of-type {
-  margin-top: 24px;
-  opacity: 0.9;
-}
-
-/* CLOSING LINE — stronger presence */
-.closing-line {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1.45;
-  max-width: 720px;
-  opacity: 0.9;
-}
-
-#about-leadership ul {
-  margin-top: 36px;   /* reduce space above the list */
-}
-
-/* =========================================================
-   VAIRA CONTACT PAGE — tighter vertical rhythm
-   ========================================================= */
-
-.contact-page .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (min-width: 1200px) {
-  .contact-page .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-/* CONTACT PAGE — tighten hero spacing */
-.contact-page #hero.hero--clean {
-  padding-top: 56px !important;
-  padding-bottom: 40px !important;
-}
-
-.contact-page .hero-sub {
-  max-width: 720px;
-}
-
-/* CONTACT — keep hero subtitle on a single line on desktop */
-@media (min-width: 1100px) {
-  .contact-page .hero-sub {
-    white-space: nowrap;
-  }
-}
-
-/* =========================================================
-   VAIRA PRIVACY PAGE — improved text rhythm
-   ========================================================= */
-
-.privacy-page h1 {
-  margin-bottom: 24px;
-}
-
-.privacy-page h2 {
-  margin-top: 56px;
-  margin-bottom: 20px;
-}
-
-.privacy-page h3 {
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
-
-.privacy-page p {
-  margin-bottom: 16px;
-}
-
-.privacy-page ul {
-  margin-top: 4px;
-  margin-bottom: 16px;
-  padding-left: 20px;
-}
-
-.privacy-page ul li {
-  margin-bottom: 4px;
-  line-height: 1.55;
-}
-
-.privacy-page p + ul {
-  margin-top: 0 !important;
-}
-
-.privacy-page .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (min-width: 1200px) {
-  .privacy-page .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-/* =========================================================
-   VAIRA IMPRESSUM PAGE — improved text rhythm
-   ========================================================= */
-
-.impressum-page h1 {
-  margin-bottom: 24px;
-}
-
-.impressum-page h2 {
-  margin-top: 56px;
-  margin-bottom: 20px;
-}
-
-.impressum-page p {
-  margin-bottom: 16px;
-  line-height: 1.55;
-}
-
-/* Reduce gap between paragraph and next paragraph */
-.impressum-page p + p {
-  margin-top: -4px;
-}
-
-.impressum-page .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (min-width: 1200px) {
-  .impressum-page .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-/* Use Cases — tighter hero spacing */
-.use-cases #hero.hero--clean {
-  padding-top: 56px !important;
-  padding-bottom: 40px !important;
-}
-
-/* =========================================================
-   VAIRA USE-CASES PAGE — CONSOLIDATED DESIGN SYSTEM (FINAL)
-   ========================================================= */
-
-/* ---------------------------------------------
-   HERO
---------------------------------------------- */
-@media (min-width: 1100px) {
+@media (max-width: 1100px) {
   .use-cases-page .hero-sub {
     white-space: nowrap !important;
   }
 }
 
-/* ---------------------------------------------
-   GLOBAL SECTION SPACING
---------------------------------------------- */
-.use-cases-page .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+@media (max-width: 768px) {
+  .section h2 {
+    margin-bottom: 40px;
+  }
 }
-
-/* ---------------------------------------------
-   SECTION TITLES (GLOBAL SPINE)
---------------------------------------------- */
-.use-cases-page .section-title {
-  margin-bottom: 48px !important;
-}
-
-.use-cases-page .use-cases-selected .section-title--usecases-list {
-  margin-bottom: 64px !important;
-}
-
-/* ---------------------------------------------
-   ACCENT-LEFT SECTION (How We Create Impact)
-   — FIX TITLE MISALIGNMENT
---------------------------------------------- */
-
-.use-cases-page .section--accent-left .split {
-  align-items: start;
-}
-
-.split--usecases .split-left-top {
-  margin-bottom: 0px;
-}
-
-.use-cases-page .section--accent-left .illustration-wrapper svg {
-  width: 85%;
-  height: auto;
-  transform: translateY(-24px);
-}
-
 /* =========================================================
-   USE CASE BLOCKS — PREMIUM ENGINEERED DESIGN
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
+   COMPONENTS: Header, Hero, Cards, Footer, Buttons
    ========================================================= */
 
-/* ---------------------------------------------
-   ICON TILE
---------------------------------------------- */
-.micro-illustration-tile {
-  width: 88px;
-  height: 88px;
-  padding: 18px;
-  border-radius: 10px;
+/* ------------------------------
+   Header
+   ------------------------------ */
+
+header {
+  width: 100%;
+  background: var(--text-light);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 24px;
+  justify-content: space-between;
+  height: 84px;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.micro-illustration-tile svg {
-  width: 64px;
-  height: 64px;
+.logo {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-dark);
 }
 
-.micro-illustration-tile svg * {
-  stroke-width: 1.75 !important;
+nav ul {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
-/* ---------------------------------------------
-   USE CASE BLOCK CONTAINER
---------------------------------------------- */
-.usecase-block {
-  border-left: 3px solid var(--accent-color);
-  padding: 0 32px 0 28px !important;
-  background: rgba(0,0,0,0.065);
-  border-radius: 10px;
+nav a {
   position: relative;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  padding-bottom: 4px;
+  font-size: 16px;
+  color: var(--text-dark);
 }
 
-.usecase-block:hover {
-  background: rgba(0,0,0,0.10);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-}
-
-/* Header bar */
-.usecase-block::before {
+nav a::after {
   content: "";
-  display: block;
-  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-mid);
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 900px) {
+  .header-wrap {
+    gap: 18px;
+  }
+}
+
+/* ------------------------------
+   Hero
+   ------------------------------ */
+
+.hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: var(--bg-light);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 46px;
+  line-height: 1.22;
+  max-width: 640px;
+}
+
+.hero-sub {
+  font-size: 20px;
+  line-height: 1.45;
+  margin-top: 20px;
+  max-width: 520px;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 900px) {
+  .hero-title {
+    max-width: 600px;
+  }
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
+
+/* ------------------------------
+   Cards
+   ------------------------------ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.card {
+  background: var(--text-light);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow-strong);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card-icon {
   width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 880px) {
+  .card-grid {
+    gap: 28px;
+  }
+}
+
+/* ------------------------------
+   Buttons
+   ------------------------------ */
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--primary-mid);
+  color: var(--text-light);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-mid);
+  color: var(--primary-mid);
+}
+
+.btn-outline:hover {
+  background: var(--primary-mid);
+  color: var(--text-light);
+}
+
+/* ------------------------------
+   Footer
+   ------------------------------ */
+
+footer {
+  background: var(--footer-accent);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  font-size: 18px;
   margin-bottom: 16px;
 }
 
-/* Case numbers */
-.usecase-item {
-  position: relative;
-  margin-bottom: 48px;
-}
-
-.usecase-item::before {
-  content: attr(data-case);
-  position: absolute;
-  top: -12px;
-  left: -56px;
-  font-size: 72px;
-  font-weight: 600;
-  opacity: 0.05;
-  line-height: 1;
-  pointer-events: none;
-}
-
-/* Divider */
-.usecase-item + .usecase-item {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding-top: 48px;
-  margin-top: 48px;
-}
-
-/* Micro-labels */
-.usecase-label,
-.usecase-outcome-label {
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(0,0,0,0.50);
-  margin-bottom: 4px;
-}
-
-/* Typography rhythm */
-.usecase-block h3 {
-  margin-bottom: 12px;
-}
-
-.usecase-block p {
-  margin-bottom: 20px;
-}
-
-/* Lists */
-.usecase-block ul {
-  margin: 16px 0 20px 0;
-  padding-left: 28px;
+.footer-col p,
+.footer-col a {
+  font-size: 16px;
   line-height: 1.55;
 }
 
-.usecase-block li {
-  margin-bottom: 8px;
+.footer-col a:hover {
+  text-decoration: underline;
 }
 
-.usecase-block li strong {
-  font-weight: 600;
-  color: var(--text);
-}
-
-/* Paragraph after list */
-.use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 20px !important;
-}
-
-.use-cases-selected .usecase-item:first-of-type {
-  padding-top: 48px;
+.legal-bar {
   margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  opacity: 0.75;
 }
 
-/* Engineering grid overlay */
-.usecase-block::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45%;
-  height: 45%;
-  background-image:
-    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
-  background-size: 8px 8px;
-  opacity: 0.25;
-  pointer-events: none;
+/* Desktop refinement (keep) */
+@media (max-width: 880px) {
+  .footer-grid {
+    gap: 40px;
+  }
 }
 
-/* ---------------------------------------------
-   SPLIT LAYOUT ALIGNMENT
---------------------------------------------- */
-.split--usecases {
-  align-items: start;
+/* ------------------------------
+   Page-specific refinements
+   ------------------------------ */
+
+@media (max-width: 1100px) {
+  .use-cases-page .hero-sub {
+    white-space: nowrap !important;
+  }
 }
 
-.split--usecases .split-left {
-  display: flex;
-  flex-direction: column;
-}
-
-.split--usecases .split-right .illustration-wrapper svg {
-  display: block;
-  margin-top: 0;
+/* Keep the single 768px h2 refinement */
+@media (max-width: 768px) {
+  .section h2 {
+    margin-bottom: 40px;
+  }
 }
 
 /* =========================================================
-   WHERE THESE USE CASES APPLY — FINAL SYSTEM
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 4/4
+   PAGE BLOCKS: Use Cases, About, Contact, Legal Pages
    ========================================================= */
 
-/* Section spacing */
-#use-cases-where.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+/* ------------------------------
+   Use Cases Page
+   ------------------------------ */
+
+.use-cases-page .hero {
+  background: var(--bg-lighter);
 }
 
-#use-cases-where .section-title {
-  margin-bottom: 56px;
+.use-cases-page .hero-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
 }
 
-/* Wide wrapper */
-#use-cases-where .why-grid-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px; /* MATCH GLOBAL SPINE */
+.use-cases-page .hero-title {
+  max-width: 620px;
 }
 
-/* Grid layout (mobile default) */
-#use-cases-where .why-grid {
+.use-cases-page .hero-sub {
+  font-size: 20px;
+  line-height: 1.45;
+  margin-top: 20px;
+  max-width: 520px;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 1100px) {
+  .use-cases-page .hero-sub {
+    white-space: nowrap !important;
+  }
+}
+
+/* ------------------------------
+   Use Case Blocks
+   ------------------------------ */
+
+.usecase-block {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+  border-bottom: 1px solid var(--line);
+}
+
+.usecase-block:last-of-type {
+  border-bottom: none;
+}
+
+.usecase-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.usecase-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 48px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.usecase-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px var(--shadow-light);
+}
+
+.usecase-grid p + ul {
+  margin-top: 20px;
+}
+
+.usecase-grid ul li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 900px) {
+  .usecase-grid {
+    gap: 40px;
+  }
+}
+
+/* ------------------------------
+   About Page
+   ------------------------------ */
+
+.about-hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: var(--bg-light);
+}
+
+.about-hero h1 {
+  max-width: 720px;
+}
+
+.about-hero p {
+  max-width: 620px;
+  margin-top: 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-top: var(--section-space);
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px var(--shadow-light);
+}
+
+.about-grid p + p {
   margin-top: 16px;
 }
 
-/* Card container */
-.why-grid .why-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 420px;
-  width: 100%;
-  padding: 24px;
-  background: rgba(0,0,0,0.025);
-  border-radius: 10px;
-  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
-  text-align: left;
-}
-
-/* Hover */
-.why-grid .why-item:hover {
-  background: rgba(0,0,0,0.055);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-/* Inner wrapper */
-.why-item-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-grow: 1;
-}
-
-/* Icon */
-.why-icon {
-  height: 64px;
-  display: flex;
-  align-items: flex-start;
-  color: rgba(0,0,0,1);
-}
-
-.why-icon svg {
-  width: 52px;
-  height: 52px;
-}
-
-.why-icon svg * {
-  stroke-width: 2.1;
-  transition: stroke-width 0.18s ease;
-}
-
-.why-grid .why-item:hover svg * {
-  stroke-width: 2.2;
-}
-
-/* Typography */
-.why-item-inner h3 {
-  margin-top: 14px;
-  margin-bottom: 12px;
-  color: rgba(0,0,0,0.90);
-}
-
-.why-grid .why-item p {
-  max-width: 38ch;
-  line-height: 1.55;
-  margin-bottom: 0;
-  color: rgba(0,0,0,0.82);
-}
-
-/* ---------------------------------------------
-   DESKTOP 2×2 GRID
---------------------------------------------- */
-@media (min-width: 900px) {
-  #use-cases-where .why-grid {
-    grid-template-columns: repeat(2, 420px);
-    justify-content: center;
-    gap: 48px 48px;
+/* Desktop refinement (keep) */
+@media (max-width: 900px) {
+  .about-grid {
+    gap: 44px;
   }
 }
+
+/* ------------------------------
+   Contact Page
+   ------------------------------ */
+
+.contact-hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: var(--bg-lighter);
+}
+
+.contact-hero h1 {
+  max-width: 680px;
+}
+
+.contact-hero p {
+  max-width: 540px;
+  margin-top: 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: var(--section-space);
+}
+
+.contact-card {
+  background: var(--text-light);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.contact-card h3 {
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  margin-bottom: 0;
+}
+
+.contact-card .protected-address {
+  margin-top: 12px;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 880px) {
+  .contact-grid {
+    gap: 40px;
+  }
+}
+
+/* ------------------------------
+   Legal Pages (Impressum, Privacy)
+   ------------------------------ */
+
+.legal-page {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: var(--text-light);
+}
+
+.legal-page h1 {
+  margin-bottom: 32px;
+}
+
+.legal-page h2 {
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.legal-page p {
+  margin-bottom: 16px;
+}
+
+.legal-page ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.legal-page ul li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+/* ------------------------------
+   Legal Page Layout Refinements
+   ------------------------------ */
+
+.legal-wrapper {
+  width: 90%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.legal-page p + h2 {
+  margin-top: 56px;
+}
+
+.legal-page h2 + p {
+  margin-top: 12px;
+}
+
+/* Desktop refinement (keep) */
+@media (max-width: 900px) {
+  .legal-wrapper {
+    max-width: 820px;
+  }
+}
+
+/* ------------------------------
+   End of VAIRA Desktop Stylesheet
+   ------------------------------ */
 
 
 /* =========================================================
-   WHERE THESE USE CASES APPLY — MOBILE REFINEMENTS
+   VAIRA — MOBILE SYSTEM (COMPACT PREMIUM)
    ========================================================= */
 
-/* 1) Add horizontal breathing room on small screens */
-@media (max-width: 600px) {
-  #use-cases-where .why-grid-wrapper {
-    padding: 0 20px;
+/* =========================================================
+   1) MOBILE HEADER — LEFT-ALIGNED HAMBURGER
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .header-wrap {
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-and-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  /* Hide desktop nav */
+  .nav {
+    display: none !important;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 3px;
+    background: var(--text-dark);
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 0 8px;
+    background: white;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mobile-menu a {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 4px 0;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  /* Language switcher stays right-aligned */
+  .language-switcher {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
   }
 }
 
-/* 2) Increase vertical spacing between cards for better rhythm */
-@media (max-width: 600px) {
-  #use-cases-where .why-grid {
-    row-gap: 48px; /* more vertical breathing room */
+/* =========================================================
+   2) MOBILE HERO — HOMEPAGE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  #hero .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+
+  #hero .hero-right svg {
+    max-width: 100%;
+    height: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 64px 0 48px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    line-height: 1.25;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 28px;
   }
 }
 
-/* 3) Slightly reduce card padding to avoid heaviness on mobile */
-@media (max-width: 600px) {
-  .why-grid .why-item {
-    padding: 24px;
+/* =========================================================
+   3) MOBILE HERO — SUBPAGES
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero--clean {
+    padding: 48px 0 32px !important;
+  }
+
+  .hero--clean .hero-title {
+    font-size: 32px;
+    line-height: 1.28;
+  }
+
+  .hero--clean .hero-sub {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-top: 8px;
+  }
+
+  /* Decorative SVG scaling */
+  .cad-hero-shape {
+    width: 180px !important;
+    height: 180px !important;
+    top: -60px !important;
+    right: -20px !important;
+    opacity: 0.18 !important;
+  }
+
+  .cad-hero-shape svg {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
-/* 4) Ensure icon/title/paragraph rhythm stays balanced on smaller cards */
-@media (max-width: 600px) {
-  .why-item-inner h3 {
-    margin-top: 12px;
-    margin-bottom: 10px;
+/* =========================================================
+   4) MOBILE SPLIT LAYOUT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .split {
+    gap: 32px;
+  }
+
+  .split-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .split-left h2 {
+    margin-bottom: 24px;
+  }
+
+  .split-left p {
+    margin-bottom: 14px;
+  }
+
+  .split-left ul {
+    margin-top: 16px;
   }
 }
 
-/* 5) Maintain controlled reading width but allow natural wrapping */
-@media (max-width: 600px) {
-  .why-grid .why-item p {
-    max-width: 100%; /* prevents awkward narrow columns on small screens */
+/* =========================================================
+   5) MOBILE CARDS (Services, Why-grid, Use-cases)
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .card {
+    padding: 22px !important;
+  }
+
+  .card-header {
+    gap: 12px !important;
+  }
+
+  .card-header .card-icon svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .card-grid {
+    gap: 24px !important;
+  }
+
+  /* Why-grid */
+  .feature-block {
+    padding: 18px 20px !important;
+    gap: 16px !important;
+  }
+
+  .feature-block-icon svg {
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
+/* =========================================================
+   6) MOBILE FOOTER — COMPACT PREMIUM
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .site-footer {
+    padding: 36px 0 28px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    text-align: left !important;
+  }
+
+  .footer-col--center,
+  .footer-col--right {
+    text-align: left !important;
+  }
+
+  .footer-brand {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .footer-tagline {
+    opacity: 0.75;
+    display: block;
+    margin-top: 2px;
+    line-height: 1.45;
+  }
+
+  .footer-col--center {
+    margin-top: 4px;
+  }
+
+  .footer-legal-bar {
+    margin-top: 32px !important;
+    padding-top: 8px;
+    font-size: 13px;
+    opacity: 0.65;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    text-align: left !important;
+  }
+
+  .footer-legal-bar a {
+    color: var(--primary-light);
+  }
+}
+
+/* =========================================================
+   7) SMALL PHONE TUNING (≤ 600px)
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .hero-title {
+    font-size: 30px !important;
+  }
+
+  .hero-sub {
+    font-size: 16px !important;
+  }
+
+  .card {
+    padding: 20px !important;
+  }
+
+  .feature-block {
+    padding: 16px 18px !important;
+  }
+
+  .site-footer {
+    padding: 32px 0 24px;
+  }
+
+  .footer-grid {
+    gap: 20px !important;
+  }
+
+  .footer-tagline {
+    font-size: 14px;
+  }
+}
