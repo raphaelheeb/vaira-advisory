@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html class="no-js" lang="{{ page.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,28 @@
 </head>
 
 <body class="{{ page.bodyClass }}">
+
+  <!-- Remove no-js class if JS is enabled -->
+  <script>
+    document.documentElement.classList.remove('no-js');
+  </script>
+
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
+
+  <!-- Email reconstruction script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const emails = document.querySelectorAll(".protected-email");
+      emails.forEach(el => {
+        const user = el.getAttribute("data-user");
+        const domain = el.getAttribute("data-domain");
+        const email = `${user}@${domain}`;
+        el.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+      });
+    });
+  </script>
+
 </body>
 </html>
