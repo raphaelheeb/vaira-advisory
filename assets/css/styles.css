@@ -1,5 +1,5 @@
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 1/4
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 1/4
    FOUNDATIONS: Reset, Tokens, Typography, Wrappers, Sections
    ========================================================= */
 
@@ -34,7 +34,7 @@ p, ul, ol, figure {
   padding: 0;
 }
 
-/* Remove list styles globally (components reintroduce them intentionally) */
+/* Remove list styles globally */
 ul, ol {
   list-style: none;
   padding-left: 0;
@@ -230,7 +230,7 @@ p {
   margin-top: 0;
 }
 
-/* Paragraph â†’ grid/list/split spacing */
+/* Paragraph → grid/list/split spacing */
 .section p + .card-grid,
 .section p + .why-grid,
 .section p + .split,
@@ -246,16 +246,15 @@ p {
 
 /* Fix vertical spacing in "How We Create Impact" */
 .section--accent-left .section-title {
-  margin-bottom: 24px !important; /* tighter, matches other sections visually */
+  margin-bottom: 24px !important;
 }
 
 .split--usecases .split-left-top {
-  margin-bottom: 0; /* remove extra gap */
+  margin-bottom: 0;
 }
 
-
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 2/4
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
    LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
    ========================================================= */
 
@@ -313,7 +312,7 @@ p {
   align-self: center;
 }
 
-/* Uniform title â†’ paragraph spacing */
+/* Uniform title → paragraph spacing */
 .section h2,
 .wrapper--narrow h2,
 .split h2,
@@ -322,7 +321,7 @@ p {
   margin-bottom: 32px;
 }
 
-/* Paragraph â†’ list spacing */
+/* Paragraph → list spacing */
 .split-left p + ul,
 .split-left p + .checklist {
   margin-top: 24px;
@@ -380,7 +379,7 @@ p {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 3/4
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
    COMPONENTS: Cards, Feature Blocks, CTA, Hero, Header, Footer
    ========================================================= */
 
@@ -792,7 +791,7 @@ nav ul.nav {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 4/4
+   VAIRA DESIGN SYSTEM v2.0 — BLOCK 4/4
    PAGE BLOCKS + RESPONSIVE SYSTEM
    ========================================================= */
 
@@ -827,7 +826,7 @@ nav ul.nav {
 }
 
 /* ------------------------------
-   Use Cases â€” Alternating Backgrounds
+   Use Cases — Alternating Backgrounds
    ------------------------------ */
 
 .use-cases .section:nth-of-type(odd) {
@@ -843,7 +842,7 @@ nav ul.nav {
 }
 
 /* ------------------------------
-   Use Cases â€” Selected Use Cases Blocks
+   Use Cases — Selected Use Cases Blocks
    ------------------------------ */
 
 .use-cases-selected .wrapper--narrow > h2 {
@@ -892,7 +891,7 @@ nav ul.nav {
 }
 
 /* ------------------------------
-   Contact Page â€” Blueprint Background
+   Contact Page — Blueprint Background
    ------------------------------ */
 
 .section--lighter.contact-blueprint {
@@ -975,7 +974,7 @@ nav ul.nav {
 }
 
 /* =========================================================
-   VAIRA Industries Page â€” Mobile Enhancements
+   VAIRA Industries Page — Mobile Enhancements
    ========================================================= */
 
 @media (max-width: 600px) {
@@ -1035,8 +1034,9 @@ nav ul.nav {
     padding-bottom: 64px;
   }
 }
+
 /* =========================================================
-   VAIRA Industries Page â€” Desktop Enhancements
+   VAIRA Industries Page — Desktop Enhancements
    ========================================================= */
 
 @media (min-width: 1200px) {
@@ -1094,28 +1094,25 @@ nav ul.nav {
 }
 
 /* =========================================================
-   VAIRA Industries Page â€” Fix for overflowing text in cards
+   VAIRA Industries Page — Fix for overflowing text in cards
    ========================================================= */
 
-/* 1) Force equal-width columns */
 #industries-list .why-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
-/* 2) Prevent text from overflowing card boundaries */
 #industries-list .feature-block {
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
-/* 3) Stabilize icon column width */
 #industries-list .feature-block-icon {
   width: 64px;
   flex-shrink: 0;
 }
 
 /* =========================================================
-   VAIRA Industries Page â€” Fix for overflow in Value Cards
+   VAIRA Industries Page — Fix for overflow in Value Cards
    ========================================================= */
 
 .services-page #services .card-grid {
@@ -1126,14 +1123,12 @@ nav ul.nav {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
-
 @media (max-width: 768px) {
   #services .card-grid {
     grid-template-columns: 1fr !important;
   }
 }
 
-/* 2) Prevent text from overflowing card boundaries */
 #services .card {
   display: flex;
   flex-direction: column;
@@ -1142,13 +1137,12 @@ nav ul.nav {
   word-break: break-word;
 }
 
-/* 3) Ensure UL grows and keeps card height stable */
 #services .card ul {
   flex-grow: 1;
 }
 
 /* =========================================================
-   VAIRA ABOUT PAGE â€” tighter vertical rhythm
+   VAIRA ABOUT PAGE — tighter vertical rhythm
    ========================================================= */
 
 .about-page .section {
@@ -1163,12 +1157,10 @@ nav ul.nav {
   }
 }
 
-/* HOW WE WORK â€” force single column */
 #about-how .card-grid {
   grid-template-columns: 1fr !important;
 }
 
-/* EXPERIENCE â€” spacing + hierarchy */
 #about-experience ul {
   margin-bottom: 32px;
 }
@@ -1178,7 +1170,6 @@ nav ul.nav {
   opacity: 0.9;
 }
 
-/* CLOSING LINE â€” stronger presence */
 .closing-line {
   font-size: 22px;
   font-weight: 500;
@@ -1188,11 +1179,11 @@ nav ul.nav {
 }
 
 #about-leadership ul {
-  margin-top: 36px;   /* reduce space above the list */
+  margin-top: 36px;
 }
 
 /* =========================================================
-   VAIRA CONTACT PAGE â€” tighter vertical rhythm
+   VAIRA CONTACT PAGE — tighter vertical rhythm
    ========================================================= */
 
 .contact-page .section {
@@ -1207,7 +1198,6 @@ nav ul.nav {
   }
 }
 
-/* CONTACT PAGE â€” tighten hero spacing */
 .contact-page #hero.hero--clean {
   padding-top: 56px !important;
   padding-bottom: 40px !important;
@@ -1217,7 +1207,6 @@ nav ul.nav {
   max-width: 720px;
 }
 
-/* CONTACT â€” keep hero subtitle on a single line on desktop */
 @media (min-width: 1100px) {
   .contact-page .hero-sub {
     white-space: nowrap;
@@ -1225,7 +1214,7 @@ nav ul.nav {
 }
 
 /* =========================================================
-   VAIRA PRIVACY PAGE â€” improved text rhythm
+   VAIRA PRIVACY PAGE — improved text rhythm
    ========================================================= */
 
 .privacy-page h1 {
@@ -1274,7 +1263,7 @@ nav ul.nav {
 }
 
 /* =========================================================
-   VAIRA IMPRESSUM PAGE â€” improved text rhythm
+   VAIRA IMPRESSUM PAGE — improved text rhythm
    ========================================================= */
 
 .impressum-page h1 {
@@ -1291,7 +1280,6 @@ nav ul.nav {
   line-height: 1.55;
 }
 
-/* Reduce gap between paragraph and next paragraph */
 .impressum-page p + p {
   margin-top: -4px;
 }
@@ -1308,36 +1296,26 @@ nav ul.nav {
   }
 }
 
-/* Use Cases â€” tighter hero spacing */
 .use-cases #hero.hero--clean {
   padding-top: 56px !important;
   padding-bottom: 40px !important;
 }
 
 /* =========================================================
-   VAIRA USE-CASES PAGE â€” CONSOLIDATED DESIGN SYSTEM (FINAL)
+   USE-CASES PAGE — CONSOLIDATED DESIGN SYSTEM
    ========================================================= */
 
-/* ---------------------------------------------
-   HERO
---------------------------------------------- */
 @media (min-width: 1100px) {
   .use-cases-page .hero-sub {
     white-space: nowrap !important;
   }
 }
 
-/* ---------------------------------------------
-   GLOBAL SECTION SPACING
---------------------------------------------- */
 .use-cases-page .section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
-/* ---------------------------------------------
-   SECTION TITLES (GLOBAL SPINE)
---------------------------------------------- */
 .use-cases-page .section-title {
   margin-bottom: 48px !important;
 }
@@ -1345,11 +1323,6 @@ nav ul.nav {
 .use-cases-page .use-cases-selected .section-title--usecases-list {
   margin-bottom: 64px !important;
 }
-
-/* ---------------------------------------------
-   ACCENT-LEFT SECTION (How We Create Impact)
-   â€” FIX TITLE MISALIGNMENT
---------------------------------------------- */
 
 .use-cases-page .section--accent-left .split {
   align-items: start;
@@ -1366,12 +1339,9 @@ nav ul.nav {
 }
 
 /* =========================================================
-   USE CASE BLOCKS â€” PREMIUM ENGINEERED DESIGN
+   USE CASE BLOCKS — PREMIUM ENGINEERED DESIGN
    ========================================================= */
 
-/* ---------------------------------------------
-   ICON TILE
---------------------------------------------- */
 .micro-illustration-tile {
   width: 88px;
   height: 88px;
@@ -1392,9 +1362,6 @@ nav ul.nav {
   stroke-width: 1.75 !important;
 }
 
-/* ---------------------------------------------
-   USE CASE BLOCK CONTAINER
---------------------------------------------- */
 .usecase-block {
   border-left: 3px solid var(--accent-color);
   padding: 0 32px 0 28px !important;
@@ -1411,7 +1378,6 @@ nav ul.nav {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-/* Header bar */
 .usecase-block::before {
   content: "";
   display: block;
@@ -1420,7 +1386,6 @@ nav ul.nav {
   margin-bottom: 16px;
 }
 
-/* Case numbers */
 .usecase-item {
   position: relative;
   margin-bottom: 48px;
@@ -1438,14 +1403,12 @@ nav ul.nav {
   pointer-events: none;
 }
 
-/* Divider */
 .usecase-item + .usecase-item {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding-top: 48px;
   margin-top: 48px;
 }
 
-/* Micro-labels */
 .usecase-label,
 .usecase-outcome-label {
   display: block;
@@ -1456,7 +1419,6 @@ nav ul.nav {
   margin-bottom: 4px;
 }
 
-/* Typography rhythm */
 .usecase-block h3 {
   margin-bottom: 12px;
 }
@@ -1465,7 +1427,6 @@ nav ul.nav {
   margin-bottom: 20px;
 }
 
-/* Lists */
 .usecase-block ul {
   margin: 16px 0 20px 0;
   padding-left: 28px;
@@ -1481,7 +1442,6 @@ nav ul.nav {
   color: var(--text);
 }
 
-/* Paragraph after list */
 .use-cases-page .use-cases-selected .usecase-block p + ul {
   margin-top: 20px !important;
 }
@@ -1491,7 +1451,6 @@ nav ul.nav {
   margin-top: 48px;
 }
 
-/* Engineering grid overlay */
 .usecase-block::after {
   content: "";
   position: absolute;
@@ -1510,6 +1469,7 @@ nav ul.nav {
 /* ---------------------------------------------
    SPLIT LAYOUT ALIGNMENT
 --------------------------------------------- */
+
 .split--usecases {
   align-items: start;
 }
@@ -1525,10 +1485,9 @@ nav ul.nav {
 }
 
 /* =========================================================
-   WHERE THESE USE CASES APPLY â€” FINAL SYSTEM
+   WHERE THESE USE CASES APPLY — FINAL SYSTEM
    ========================================================= */
 
-/* Section spacing */
 #use-cases-where.section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1538,14 +1497,12 @@ nav ul.nav {
   margin-bottom: 56px;
 }
 
-/* Wide wrapper */
 #use-cases-where .why-grid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px; /* MATCH GLOBAL SPINE */
+  padding: 0 24px;
 }
 
-/* Grid layout (mobile default) */
 #use-cases-where .why-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1553,7 +1510,6 @@ nav ul.nav {
   margin-top: 16px;
 }
 
-/* Card container */
 .why-grid .why-item {
   display: flex;
   flex-direction: column;
@@ -1567,129 +1523,13 @@ nav ul.nav {
   text-align: left;
 }
 
-/* Hover */
 .why-grid .why-item:hover {
   background: rgba(0,0,0,0.055);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* Inner wrapper */
 .why-item-inner {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  flex-grow: 1;
-}
-
-/* Icon */
-.why-icon {
-  height: 64px;
-  display: flex;
-  align-items: flex-start;
-  color: rgba(0,0,0,1);
-}
-
-.why-icon svg {
-  width: 52px;
-  height: 52px;
-}
-
-.why-icon svg * {
-  stroke-width: 2.1;
-  transition: stroke-width 0.18s ease;
-}
-
-.why-grid .why-item:hover svg * {
-  stroke-width: 2.2;
-}
-
-/* Typography */
-.why-item-inner h3 {
-  margin-top: 14px;
-  margin-bottom: 12px;
-  color: rgba(0,0,0,0.90);
-}
-
-.why-grid .why-item p {
-  max-width: 38ch;
-  line-height: 1.55;
-  margin-bottom: 0;
-  color: rgba(0,0,0,0.82);
-}
-
-/* ---------------------------------------------
-   DESKTOP 2×2 GRID
---------------------------------------------- */
-@media (min-width: 900px) {
-  #use-cases-where .why-grid {
-    grid-template-columns: repeat(2, 420px);
-    justify-content: center;
-    gap: 48px 48px;
-  }
-}
-
-/* =========================================================
-   WHERE THESE USE CASES APPLY — MOBILE REFINEMENTS
-   ========================================================= */
-
-/* 1) Add horizontal breathing room on small screens */
-@media (max-width: 600px) {
-  #use-cases-where .why-grid-wrapper {
-    padding: 0 20px;
-  }
-}
-
-/* 2) Increase vertical spacing between cards for better rhythm */
-@media (max-width: 600px) {
-  #use-cases-where .why-grid {
-    row-gap: 48px; /* more vertical breathing room */
-  }
-}
-
-/* 3) Slightly reduce card padding to avoid heaviness on mobile */
-@media (max-width: 600px) {
-  .why-grid .why-item {
-    padding: 24px;
-  }
-}
-
-/* 4) Ensure icon/title/paragraph rhythm stays balanced on smaller cards */
-@media (max-width: 600px) {
-  .why-item-inner h3 {
-    margin-top: 12px;
-    margin-bottom: 10px;
-  }
-}
-
-/* 5) Maintain controlled reading width but allow natural wrapping */
-@media (max-width: 600px) {
-  .why-grid .why-item p {
-    max-width: 100%; /* prevents awkward narrow columns on small screens */
-  }
-}
-
-/* Hide mobile menu on desktop */
-.mobile-menu {
-  display: none;
-}
-
-/* Restore desktop header layout */
-@media (min-width: 769px) {
-  .header-wrap {
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
-  }
-
-  .brand-and-nav {
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .nav {
-    flex-wrap: nowrap;
-    gap: 32px;
-  }
-}
+  gap
