@@ -1595,7 +1595,7 @@ nav ul.nav {
   height: 52px;
 }
 
-.why-icon svg {
+.why-icon svg * {
   stroke-width: 2.1;
   transition: stroke-width 0.18s ease;
 }
@@ -1619,7 +1619,7 @@ nav ul.nav {
 }
 
 /* ---------------------------------------------
-   DESKTOP 2Ã—2 GRID
+   DESKTOP 2×2 GRID
 --------------------------------------------- */
 @media (min-width: 900px) {
   #use-cases-where .why-grid {
@@ -1629,9 +1629,8 @@ nav ul.nav {
   }
 }
 
-
 /* =========================================================
-   WHERE THESE USE CASES APPLY â€” MOBILE REFINEMENTS
+   WHERE THESE USE CASES APPLY — MOBILE REFINEMENTS
    ========================================================= */
 
 /* 1) Add horizontal breathing room on small screens */
@@ -1674,4 +1673,3 @@ nav ul.nav {
 .mobile-menu {
   display: none;
 }
-
