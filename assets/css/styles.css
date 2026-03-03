@@ -2089,6 +2089,55 @@ nav ul.nav {
   }
 }
 
+/* =========================================================
+   MOBILE HEADER — SINGLE ROW (LOGO LEFT, HAMBURGER + LANG RIGHT)
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Header becomes a single horizontal row */
+  .header-wrap {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: auto;
+    padding: 12px 0;
+    gap: 0 !important;
+  }
+
+  /* Logo stays left */
+  .brand-and-nav {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  /* Hide desktop nav */
+  nav ul.nav {
+    display: none !important;
+  }
+
+  /* Hamburger visible and next to logo */
+  .hamburger {
+    display: flex !important;
+    margin-left: 12px;
+  }
+
+  /* Language switcher on the right */
+  .language-switcher {
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Mobile menu full width below header */
+  .mobile-menu {
+    width: 100%;
+    padding: 12px 5%;
+  }
+}
+
 
 /* =========================================================
    FOOTER — MOBILE
