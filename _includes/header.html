@@ -1,13 +1,6 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <!-- MOBILE HAMBURGER (left-aligned) -->
-    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
     <!-- LOGO + DESKTOP NAV WRAPPER -->
     <div class="brand-and-nav">
 
@@ -101,7 +94,14 @@
       </nav>
     </div>
 
-    <!-- LANGUAGE SWITCHER -->
+    <!-- MOBILE HAMBURGER (now correctly placed AFTER logo/nav) -->
+    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- LANGUAGE SWITCHER (always last) -->
     <div class="language-switcher">
 
       {% assign en_url = page.url | remove_first: '/de' %}
@@ -159,3 +159,4 @@
   </nav>
 
 </header>
+
