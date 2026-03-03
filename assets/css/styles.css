@@ -1743,12 +1743,10 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
-  /* Hide desktop nav */
   nav ul.nav {
     display: none !important;
   }
 
-  /* Header container */
   .site-header .header-wrap {
     display: flex;
     flex-direction: row;
@@ -1759,18 +1757,16 @@ nav ul.nav {
     gap: 16px;
   }
 
-  /* Logo + brand */
   .brand-and-nav {
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
-  /* Right cluster: language + hamburger */
   .header-right {
     display: flex;
     align-items: center;
-    gap: 24px; /* increased spacing */
+    gap: 28px; /* increased spacing */
   }
 
   .language-switcher {
@@ -1779,25 +1775,28 @@ nav ul.nav {
     gap: 8px;
   }
 
-  /* Hamburger */
+  .lang-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
-    width: 32px;
-    height: 24px;
+    gap: 7px;
+    width: 36px;
+    height: 26px;
     cursor: pointer;
   }
 
   .hamburger span {
-    height: 3px;
+    height: 3.5px;
     width: 100%;
     background: var(--text-dark);
     border-radius: 999px;
   }
 
-  /* Mobile menu */
   .mobile-menu {
     display: none;
     flex-direction: column;
@@ -1810,7 +1809,6 @@ nav ul.nav {
     display: flex;
   }
 }
-
 
 /* =========================================================
    FOOTER — MOBILE
