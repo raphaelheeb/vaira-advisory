@@ -2095,6 +2095,7 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
+  /* Header in one row */
   .header-wrap {
     display: flex;
     flex-direction: row;
@@ -2103,20 +2104,30 @@ nav ul.nav {
     width: 90%;
     margin: 0 auto;
     padding: 12px 0;
+    height: auto;
+  }
+
+  /* Left: logo only (desktop nav hidden) */
+  .brand-and-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 12px;
   }
 
-  /* Hide desktop nav on mobile */
+  .brand-and-nav nav,
   nav ul.nav {
     display: none;
   }
 
-  /* Hamburger visible */
-  .hamburger {
+  /* Right: language + hamburger */
+  .header-right {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
   }
 
-  /* Language switcher visible */
   .language-switcher {
     display: flex;
     flex-direction: row;
@@ -2124,7 +2135,10 @@ nav ul.nav {
     gap: 8px;
   }
 
-  /* Mobile menu full width */
+  .hamburger {
+    display: flex;
+  }
+
   .mobile-menu {
     width: 100%;
     padding: 12px 5%;
