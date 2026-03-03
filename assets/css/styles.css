@@ -2090,58 +2090,20 @@ nav ul.nav {
 }
 
 /* =========================================================
-   MOBILE HEADER — SINGLE ROW, FORCED ORDER (MATCHES YOUR HTML)
+   MOBILE HEADER & NAV BAR
    ========================================================= */
 
 @media (max-width: 768px) {
-
-  /* Header: one horizontal row */
   .header-wrap {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 90% !important;
-    margin: 0 auto !important;
-    padding: 12px 0 !important;
-    gap: 12px !important;
-    height: auto !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
-
-  /* FORCE VISUAL ORDER */
-  .brand-and-nav {
-    order: 1 !important;   /* LOGO FIRST */
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
-
-  .hamburger {
-    order: 2 !important;   /* HAMBURGER SECOND */
-    display: flex !important;
-  }
-
-  .language-switcher {
-    order: 3 !important;   /* LANGUAGE LAST */
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-  }
-
-  /* Hide desktop nav */
-  nav ul.nav {
-    display: none !important;
-  }
-
-  /* Mobile menu full width below header */
-  .mobile-menu {
-    width: 100% !important;
-    padding: 12px 5% !important;
-  }
+  nav ul.nav { display: none; }
+  .hamburger { display: flex; }
+  .language-switcher { display: flex; }
 }
-
 
 /* =========================================================
    FOOTER — MOBILE
