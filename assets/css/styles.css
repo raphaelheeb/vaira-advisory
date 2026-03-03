@@ -872,31 +872,21 @@ footer {
    ========================================================= */
 
 /* =========================================================
-   1) MOBILE HEADER — LEFT-ALIGNED HAMBURGER
+   MOBILE HEADER — MATCHING YOUR EXISTING HTML STRUCTURE
    ========================================================= */
 
 @media (max-width: 768px) {
 
+  /* Header container */
   .header-wrap {
+    height: auto;
     padding: 14px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .brand-and-nav {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-direction: row;
-  }
-
-  /* Hide desktop nav */
-  .nav {
-    display: none !important;
-  }
-
-  /* Hamburger */
+  /* Hamburger stays left */
   .hamburger {
     width: 28px;
     height: 22px;
@@ -911,6 +901,24 @@ footer {
     background: var(--text-dark);
     border-radius: 2px;
     width: 100%;
+  }
+
+  /* Desktop nav hidden on mobile */
+  .brand-and-nav nav {
+    display: none !important;
+  }
+
+  /* Logo stays visible */
+  .site-logo img {
+    height: 28px;
+    width: auto;
+  }
+
+  /* Language switcher stays right-aligned */
+  .language-switcher {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
   }
 
   /* Mobile menu */
@@ -932,13 +940,6 @@ footer {
 
   .mobile-menu.open {
     display: flex;
-  }
-
-  /* Language switcher stays right-aligned */
-  .language-switcher {
-    margin-left: auto;
-    display: flex;
-    gap: 8px;
   }
 }
 
