@@ -55,12 +55,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const noiseChars = ["\u200B", "\u200C", "\u200D", "\u2060"];
 
-      const obfuscated = addressLines.map(line =>
-        line.split("").map(char => {
+      const obfuscated = addressLines.map(line => {
+        const chars = line.split("");
+
+        // DOM-Reihenfolge zufällig mischen
+        const shuffled = chars
+          .map((c, i) => ({ c, i }))
+          .sort(() => Math.random() - 0.5);
+
+        // Visuelle Reihenfolge über CSS wiederherstellen
+        return shuffled.map(({ c, i }) => {
           const noise = noiseChars[Math.floor(Math.random() * noiseChars.length)];
-          return `<span class="addr-char" data-noise="${noise}">${char}</span>`;
-        }).join("")
-      ).join("<br>");
+          return `<span class="addr-char" style="order:${i}" data-noise="${noise}">${c}</span>`;
+        }).join("");
+      }).join("<br>");
 
       target.innerHTML = obfuscated;
       target.style.display = "inline";
