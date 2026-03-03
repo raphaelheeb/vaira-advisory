@@ -2094,16 +2094,43 @@ nav ul.nav {
    ========================================================= */
 
 @media (max-width: 768px) {
+
   .header-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 0;
+    gap: 12px;
   }
-  nav ul.nav { display: none; }
-  .hamburger { display: flex; }
-  .language-switcher { display: flex; }
+
+  /* Hide desktop nav on mobile */
+  nav ul.nav {
+    display: none;
+  }
+
+  /* Hamburger visible */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Language switcher visible */
+  .language-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Mobile menu full width */
+  .mobile-menu {
+    width: 100%;
+    padding: 12px 5%;
+  }
 }
+
 
 /* =========================================================
    FOOTER — MOBILE
