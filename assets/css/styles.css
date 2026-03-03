@@ -2094,8 +2094,6 @@ nav ul.nav {
    ========================================================= */
 
 @media (max-width: 768px) {
-
-  /* FORCE header into one horizontal row */
   .header-wrap {
     display: flex !important;
     flex-direction: row !important;
@@ -2107,21 +2105,11 @@ nav ul.nav {
     gap: 16px !important;
   }
 
-  /* Left: logo only */
-  .brand-and-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
-
-  /* Hide desktop nav */
   .brand-and-nav nav,
   nav ul.nav {
     display: none !important;
   }
 
-  /* Right: language first, hamburger second */
   .header-right {
     display: flex !important;
     flex-direction: row !important;
@@ -2139,13 +2127,7 @@ nav ul.nav {
   .hamburger {
     display: flex !important;
   }
-
-  .mobile-menu {
-    width: 100% !important;
-    padding: 12px 5% !important;
-  }
 }
-
 
 /* =========================================================
    FOOTER — MOBILE
