@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <!-- 1) LOGO + DESKTOP NAV -->
+    <!-- LOGO + DESKTOP NAV -->
     <div class="brand-and-nav">
 
       <!-- LOGO -->
@@ -94,14 +94,7 @@
       </nav>
     </div>
 
-    <!-- 2) HAMBURGER (MIDDLE) -->
-    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- 3) LANGUAGE SWITCHER (RIGHT) -->
+    <!-- LANGUAGE SWITCHER -->
     <div class="language-switcher">
 
       {% assign en_url = page.url | remove_first: '/de' %}
@@ -131,6 +124,13 @@
         <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
       {% endif %}
 
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
   </div>
