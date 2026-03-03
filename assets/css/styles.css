@@ -2090,7 +2090,7 @@ nav ul.nav {
 }
 
 /* =========================================================
-   FINAL MOBILE HEADER — SINGLE ROW, FULL CONTROL
+   FINAL MOBILE HEADER — SINGLE ROW WITH CORRECT ORDER
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -2104,37 +2104,36 @@ nav ul.nav {
     width: 90% !important;
     margin: 0 auto !important;
     padding: 12px 0 !important;
-    gap: 0 !important;
+    gap: 12px !important;
     height: auto !important;
   }
 
-  /* Logo + hamburger grouped on the left */
+  /* Correct element order */
   .brand-and-nav {
+    order: 1 !important;
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
     gap: 12px !important;
-    margin: 0 !important;
+  }
+
+  .hamburger {
+    order: 2 !important;
+    display: flex !important;
+  }
+
+  .language-switcher {
+    order: 3 !important;
+    margin-left: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
   }
 
   /* Hide desktop nav */
   nav ul.nav {
     display: none !important;
-  }
-
-  /* Hamburger visible and inline next to logo */
-  .hamburger {
-    display: flex !important;
-    margin-left: 8px !important;
-  }
-
-  /* Language switcher on the right */
-  .language-switcher {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-left: auto !important;
   }
 
   /* Mobile menu full width below header */
