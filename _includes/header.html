@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <!-- LEFT: LOGO + DESKTOP NAV -->
+    <!-- 1) LOGO + DESKTOP NAV -->
     <div class="brand-and-nav">
 
       <!-- LOGO -->
@@ -94,53 +94,48 @@
       </nav>
     </div>
 
-    <!-- RIGHT: HAMBURGER + LANGUAGE SWITCHER -->
-    <div class="header-right">
+    <!-- 2) HAMBURGER (MIDDLE) -->
+    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-      <!-- MOBILE HAMBURGER -->
-      <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <!-- 3) LANGUAGE SWITCHER (RIGHT) -->
+    <div class="language-switcher">
 
-      <!-- LANGUAGE SWITCHER -->
-      <div class="language-switcher">
+      {% assign en_url = page.url | remove_first: '/de' %}
+      {% assign de_url = '/de' | append: page.url %}
 
-        {% assign en_url = page.url | remove_first: '/de' %}
-        {% assign de_url = '/de' | append: page.url %}
+      {% if page.url == '/de/datenschutz/' %}
+        {% assign en_url = '/privacy/' %}
+      {% endif %}
 
-        {% if page.url == '/de/datenschutz/' %}
-          {% assign en_url = '/privacy/' %}
-        {% endif %}
+      {% if page.url == '/privacy/' %}
+        {% assign de_url = '/de/datenschutz/' %}
+      {% endif %}
 
-        {% if page.url == '/privacy/' %}
-          {% assign de_url = '/de/datenschutz/' %}
-        {% endif %}
+      {% if page.url == '/de/impressum/' %}
+        {% assign en_url = '/impressum/' %}
+      {% endif %}
 
-        {% if page.url == '/de/impressum/' %}
-          {% assign en_url = '/impressum/' %}
-        {% endif %}
+      {% if page.url == '/impressum/' %}
+        {% assign de_url = '/de/impressum/' %}
+      {% endif %}
 
-        {% if page.url == '/impressum/' %}
-          {% assign de_url = '/de/impressum/' %}
-        {% endif %}
-
-        {% if page.lang == "de" %}
-          <a href="{{ en_url | relative_url }}" class="lang-btn">EN</a>
-          <span class="lang-btn active">DE</span>
-        {% else %}
-          <span class="lang-btn active">EN</span>
-          <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
-        {% endif %}
-
-      </div>
+      {% if page.lang == "de" %}
+        <a href="{{ en_url | relative_url }}" class="lang-btn">EN</a>
+        <span class="lang-btn active">DE</span>
+      {% else %}
+        <span class="lang-btn active">EN</span>
+        <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
+      {% endif %}
 
     </div>
 
   </div>
 
-  <!-- MOBILE MENU (auto-switches EN/DE) -->
+  <!-- MOBILE MENU -->
   <nav class="mobile-menu">
 
     {% if page.lang == "de" %}
@@ -164,4 +159,3 @@
   </nav>
 
 </header>
-
