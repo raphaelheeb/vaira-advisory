@@ -2,63 +2,125 @@
   <div class="header-wrap content-wrapper">
 
     <div class="brand-and-nav">
-        <a href="{% if page.lang == 'de' %}{{ site.baseurl }}/de/{% else %}{{ site.baseurl }}/{% endif %}" class="site-logo">
-        <img src="{{ site.baseurl }}/assets/img/logo.svg" alt="VAIRA Advisory">
+      <a href="{% if page.lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-logo">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="VAIRA Advisory">
       </a>
 
-     <nav>
-    <ul class="nav">
-    {% if page.lang == "de" %}
-      <li><a href="{{ site.baseurl }}/de/services/">Dienstleistungen</a></li>
-      <li><a href="{{ site.baseurl }}/de/industries/">Branchen</a></li>
-      <li><a href="{{ site.baseurl }}/de/use-cases/">Anwendungen</a></li>
-      <li><a href="{{ site.baseurl }}/de/about/">Über Uns</a></li>
-      <li><a href="{{ site.baseurl }}/de/contact/">Kontakt</a></li>
+      <nav>
+        <ul class="nav">
 
-    {% else %}
-      <li><a href="{{ site.baseurl }}/services/">Services</a></li>
-      <li><a href="{{ site.baseurl }}/industries/">Industries</a></li>
-      <li><a href="{{ site.baseurl }}/use-cases/">Use Cases</a></li>
-      <li><a href="{{ site.baseurl }}/about/">About</a></li>
-      <li><a href="{{ site.baseurl }}/contact/">Contact Us</a></li>
-    {% endif %}
-    </ul>
-    </nav>
+        {% if page.lang == "de" %}
 
+          <li>
+            <a href="{{ '/de/services/' | relative_url }}"
+               class="{% if page.url == '/de/services/' %}active{% endif %}">
+              Dienstleistungen
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/de/industries/' | relative_url }}"
+               class="{% if page.url == '/de/industries/' %}active{% endif %}">
+              Branchen
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/de/use-cases/' | relative_url }}"
+               class="{% if page.url == '/de/use-cases/' %}active{% endif %}">
+              Anwendungen
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/de/about/' | relative_url }}"
+               class="{% if page.url == '/de/about/' %}active{% endif %}">
+              Über Uns
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/de/contact/' | relative_url }}"
+               class="{% if page.url == '/de/contact/' %}active{% endif %}">
+              Kontakt
+            </a>
+          </li>
+
+        {% else %}
+
+          <li>
+            <a href="{{ '/services/' | relative_url }}"
+               class="{% if page.url == '/services/' %}active{% endif %}">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/industries/' | relative_url }}"
+               class="{% if page.url == '/industries/' %}active{% endif %}">
+              Industries
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/use-cases/' | relative_url }}"
+               class="{% if page.url == '/use-cases/' %}active{% endif %}">
+              Use Cases
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/about/' | relative_url }}"
+               class="{% if page.url == '/about/' %}active{% endif %}">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="{{ '/contact/' | relative_url }}"
+               class="{% if page.url == '/contact/' %}active{% endif %}">
+              Contact Us
+            </a>
+          </li>
+
+        {% endif %}
+
+        </ul>
+      </nav>
     </div>
 
- <!-- LANGUAGE SWITCHER -->
-<div class="language-switcher">
 
-  {% assign en_url = page.url | remove_first: '/de' %}
-  {% assign de_url = '/de' | append: page.url %}
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher">
 
-  {% if page.url == '/de/datenschutz/' %}
-    {% assign en_url = '/privacy/' %}
-  {% endif %}
+      {% assign en_url = page.url | remove_first: '/de' %}
+      {% assign de_url = '/de' | append: page.url %}
 
-  {% if page.url == '/privacy/' %}
-    {% assign de_url = '/de/datenschutz/' %}
-  {% endif %}
+      {% if page.url == '/de/datenschutz/' %}
+        {% assign en_url = '/privacy/' %}
+      {% endif %}
 
-  {% if page.url == '/de/impressum/' %}
-    {% assign en_url = '/impressum/' %}
-  {% endif %}
+      {% if page.url == '/privacy/' %}
+        {% assign de_url = '/de/datenschutz/' %}
+      {% endif %}
 
-  {% if page.url == '/impressum/' %}
-    {% assign de_url = '/de/impressum/' %}
-  {% endif %}
+      {% if page.url == '/de/impressum/' %}
+        {% assign en_url = '/impressum/' %}
+      {% endif %}
 
-  {% if page.lang == "de" %}
-    <a href="{{ site.baseurl }}{{ en_url }}" class="lang-btn">EN</a>
-    <span class="lang-btn active">DE</span>
-  {% else %}
-    <span class="lang-btn active">EN</span>
-    <a href="{{ site.baseurl }}{{ de_url }}" class="lang-btn">DE</a>
-  {% endif %}
+      {% if page.url == '/impressum/' %}
+        {% assign de_url = '/de/impressum/' %}
+      {% endif %}
 
-</div>
+      {% if page.lang == "de" %}
+        <a href="{{ en_url | relative_url }}" class="lang-btn">EN</a>
+        <span class="lang-btn active">DE</span>
+      {% else %}
+        <span class="lang-btn active">EN</span>
+        <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
+      {% endif %}
 
+    </div>
 
   </div>
 </header>
