@@ -1529,11 +1529,6 @@ nav ul.nav {
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-.why-item-inner {
-  display: flex;
-  flex-direction: column;
-  gap
-
    
    /* Restore desktop header layout */
 @media (min-width: 769px) {
@@ -1853,6 +1848,138 @@ nav ul.nav {
 
   .why-grid .why-item p {
     max-width: 100%;
+  }
+}
+.why-item-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================================================
+   WHERE THESE USE CASES APPLY — ICONS + GRID
+   ========================================================= */
+
+.why-icon svg {
+  width: 52px;
+  height: 52px;
+}
+
+.why-icon svg * {
+  stroke-width: 2.1;
+  transition: stroke-width 0.18s ease;
+}
+
+.why-grid .why-item:hover svg * {
+  stroke-width: 2.2;
+}
+
+@media (min-width: 900px) {
+  #use-cases-where .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 420px));
+    justify-content: center;
+    gap: 48px 48px;
+  }
+}
+
+/* =========================================================
+   HEADER — DESKTOP + MOBILE
+   ========================================================= */
+
+@media (min-width: 769px) {
+  .header-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+    padding: 0;
+  }
+
+  .brand-and-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav ul.nav {
+    display: flex !important;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+
+  .hamburger,
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-dark);
+  border-radius: 999px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(255,255,255,0.98);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 5%;
+}
+
+.mobile-menu a {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul.nav {
+    display: none !important;
+  }
+
+  .header-wrap {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* =========================================================
+   FOOTER — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .footer-col--center,
+  .footer-col--right {
+    text-align: left;
   }
 }
 
