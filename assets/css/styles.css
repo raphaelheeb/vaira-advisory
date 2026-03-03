@@ -56,6 +56,12 @@ img {
   display: block;
 }
 
+/* Email Protection */
+.no-js .protected-email::after {
+  content: "info [at] vaira-advisory [dot] com";
+}
+
+
 /* ------------------------------
    Brand Tokens
    ------------------------------ */
