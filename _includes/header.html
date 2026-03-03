@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header-wrap content-wrapper">
 
-    <!-- LOGO + DESKTOP NAV -->
+    <!-- LEFT: LOGO + DESKTOP NAV -->
     <div class="brand-and-nav">
 
       <!-- LOGO -->
@@ -94,48 +94,53 @@
       </nav>
     </div>
 
-    <!-- LANGUAGE SWITCHER -->
-    <div class="language-switcher">
+    <!-- RIGHT: LANGUAGE SWITCHER + HAMBURGER -->
+    <div class="header-right">
 
-      {% assign en_url = page.url | remove_first: '/de' %}
-      {% assign de_url = '/de' | append: page.url %}
+      <!-- LANGUAGE SWITCHER (FIRST ON THE RIGHT) -->
+      <div class="language-switcher">
 
-      {% if page.url == '/de/datenschutz/' %}
-        {% assign en_url = '/privacy/' %}
-      {% endif %}
+        {% assign en_url = page.url | remove_first: '/de' %}
+        {% assign de_url = '/de' | append: page.url %}
 
-      {% if page.url == '/privacy/' %}
-        {% assign de_url = '/de/datenschutz/' %}
-      {% endif %}
+        {% if page.url == '/de/datenschutz/' %}
+          {% assign en_url = '/privacy/' %}
+        {% endif %}
 
-      {% if page.url == '/de/impressum/' %}
-        {% assign en_url = '/impressum/' %}
-      {% endif %}
+        {% if page.url == '/privacy/' %}
+          {% assign de_url = '/de/datenschutz/' %}
+        {% endif %}
 
-      {% if page.url == '/impressum/' %}
-        {% assign de_url = '/de/impressum/' %}
-      {% endif %}
+        {% if page.url == '/de/impressum/' %}
+          {% assign en_url = '/impressum/' %}
+        {% endif %}
 
-      {% if page.lang == "de" %}
-        <a href="{{ en_url | relative_url }}" class="lang-btn">EN</a>
-        <span class="lang-btn active">DE</span>
-      {% else %}
-        <span class="lang-btn active">EN</span>
-        <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
-      {% endif %}
+        {% if page.url == '/impressum/' %}
+          {% assign de_url = '/de/impressum/' %}
+        {% endif %}
 
-    </div>
+        {% if page.lang == "de" %}
+          <a href="{{ en_url | relative_url }}" class="lang-btn">EN</a>
+          <span class="lang-btn active">DE</span>
+        {% else %}
+          <span class="lang-btn active">EN</span>
+          <a href="{{ de_url | relative_url }}" class="lang-btn">DE</a>
+        {% endif %}
 
-    <!-- HAMBURGER -->
-    <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
-      <span></span>
-      <span></span>
-      <span></span>
+      </div>
+
+      <!-- MOBILE HAMBURGER (LAST ON THE RIGHT) -->
+      <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </div>
 
   </div>
 
-  <!-- MOBILE MENU -->
+  <!-- MOBILE MENU (auto-switches EN/DE) -->
   <nav class="mobile-menu">
 
     {% if page.lang == "de" %}
