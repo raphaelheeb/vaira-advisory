@@ -1743,6 +1743,12 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
+  /* Hide desktop nav */
+  nav ul.nav {
+    display: none !important;
+  }
+
+  /* Header container */
   .site-header .header-wrap {
     display: flex;
     flex-direction: row;
@@ -1753,20 +1759,18 @@ nav ul.nav {
     gap: 16px;
   }
 
+  /* Logo + brand */
   .brand-and-nav {
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
-  nav ul.nav {
-    display: none !important;
-  }
-
+  /* Right cluster: language + hamburger */
   .header-right {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px; /* increased spacing */
   }
 
   .language-switcher {
@@ -1775,6 +1779,7 @@ nav ul.nav {
     gap: 8px;
   }
 
+  /* Hamburger */
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -1786,13 +1791,26 @@ nav ul.nav {
   }
 
   .hamburger span {
-    display: block;
     height: 3px;
     width: 100%;
     background: var(--text-dark);
     border-radius: 999px;
   }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(255,255,255,0.98);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 5%;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
 }
+
 
 /* =========================================================
    FOOTER — MOBILE
