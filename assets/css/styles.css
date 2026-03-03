@@ -2090,12 +2090,12 @@ nav ul.nav {
 }
 
 /* =========================================================
-   MOBILE HEADER — SINGLE ROW, TWO-ZONE LAYOUT
+   MOBILE HEADER — SINGLE ROW, FORCED ORDER (MATCHES YOUR HTML)
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  /* Header: logo left, header-right (hamburger + language) right */
+  /* Header: one horizontal row */
   .header-wrap {
     display: flex !important;
     flex-direction: row !important;
@@ -2108,21 +2108,9 @@ nav ul.nav {
     height: auto !important;
   }
 
-  /* Left zone: logo (desktop nav hidden) */
+  /* FORCE VISUAL ORDER */
   .brand-and-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
-
-  .brand-and-nav nav,
-  nav ul.nav {
-    display: none !important;
-  }
-
-  /* Right zone: hamburger + language switcher */
-  .header-right {
+    order: 1 !important;   /* LOGO FIRST */
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
@@ -2130,14 +2118,21 @@ nav ul.nav {
   }
 
   .hamburger {
+    order: 2 !important;   /* HAMBURGER SECOND */
     display: flex !important;
   }
 
   .language-switcher {
+    order: 3 !important;   /* LANGUAGE LAST */
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
     gap: 8px !important;
+  }
+
+  /* Hide desktop nav */
+  nav ul.nav {
+    display: none !important;
   }
 
   /* Mobile menu full width below header */
@@ -2146,6 +2141,7 @@ nav ul.nav {
     padding: 12px 5% !important;
   }
 }
+
 
 /* =========================================================
    FOOTER — MOBILE
