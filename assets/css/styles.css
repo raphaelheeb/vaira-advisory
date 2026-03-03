@@ -1966,62 +1966,6 @@ nav ul.nav {
   }
 }
 
- /* =========================================================
-   MOBILE HEADER — CLEAN 2-ROW LAYOUT
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-  /* Header container becomes vertical but with controlled rows */
-  .header-wrap {
-    width: 90%;
-    margin: 0 auto;
-    padding: 12px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    height: auto;
-  }
-
-  /* Row 1: logo + language switcher */
-  .brand-and-nav {
-    order: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  /* Hide desktop nav on mobile */
-  nav ul.nav {
-    display: none !important;
-  }
-
-  /* Language switcher stays right */
-  .language-switcher {
-    margin-left: auto;
-  }
-
-  /* Row 2: hamburger left */
-  .hamburger {
-    order: 2;
-    display: flex;
-    align-self: flex-start;
-  }
-
-  /* Row 3: mobile menu full width */
-  .mobile-menu {
-    order: 3;
-    width: 100%;
-    padding: 10px 0 12px;
-  }
-
-  .mobile-menu a {
-    padding: 8px 5%;
-  }
-}
 
 /* =========================================================
    HOMEPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
