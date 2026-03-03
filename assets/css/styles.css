@@ -1670,3 +1670,8 @@ nav ul.nav {
   }
 }
 
+/* Hide mobile menu on desktop */
+.mobile-menu {
+  display: none;
+}
+
