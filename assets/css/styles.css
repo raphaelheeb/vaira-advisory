@@ -61,15 +61,13 @@ img {
   content: "info [at] vaira-advisory [dot] com";
 }
 
-.reveal-address {
-  cursor: pointer;
-  color: var(--primary-mid);
-  text-decoration: underline;
-  opacity: 0.85;
+.protected-address {
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.reveal-address:hover {
-  opacity: 1;
+.protected-address br {
+  display: block;
 }
 
 .addr-char {
@@ -81,6 +79,17 @@ img {
   content: attr(data-noise);
   opacity: 0;
   pointer-events: none;
+}
+
+.reveal-address {
+  cursor: pointer;
+  color: var(--primary-mid);
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.reveal-address:hover {
+  opacity: 1;
 }
 
 /* ------------------------------
