@@ -660,8 +660,11 @@ p {
 }
 
 .nav a.active {
-  color: var(--primary);
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 3px;
 }
+
 
 /* Language switcher */
 .language-switcher {
