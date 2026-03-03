@@ -47,12 +47,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (trigger && target) {
     trigger.addEventListener("click", function() {
-      const a = [
+      const addressLines = [
         "Hegianwandweg 106",
         "8045 Zürich",
         "Schweiz"
       ];
-      target.innerHTML = a.join("<br>");
+
+      const noiseChars = ["\u200B", "\u200C", "\u200D", "\u2060"];
+
+      const obfuscated = addressLines.map(line =>
+        line.split("").map(char => {
+          const noise = noiseChars[Math.floor(Math.random() * noiseChars.length)];
+          return `<span class="addr-char" data-noise="${noise}">${char}</span>`;
+        }).join("")
+      ).join("<br>");
+
+      target.innerHTML = obfuscated;
       target.style.display = "inline";
       trigger.style.display = "none";
     });
