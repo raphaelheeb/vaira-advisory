@@ -2095,19 +2095,20 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
+  /* Header in one clean row */
   .header-wrap {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 90%;
     margin: 0 auto;
     padding: 12px 0;
-    column-gap: 12px;
+    gap: 16px;
   }
 
-  /* Explicit placement: LOGO | spacer | EN/DE | ☰ */
+  /* Left: logo only (desktop nav hidden) */
   .brand-and-nav {
-    grid-column: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2116,11 +2117,18 @@ nav ul.nav {
 
   .brand-and-nav nav,
   nav ul.nav {
-    display: none;
+    display: none !important;
+  }
+
+  /* Right: language first, hamburger second */
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
   }
 
   .language-switcher {
-    grid-column: 3;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2128,15 +2136,16 @@ nav ul.nav {
   }
 
   .hamburger {
-    grid-column: 4;
     display: flex;
   }
 
+  /* Mobile menu full width */
   .mobile-menu {
     width: 100%;
     padding: 12px 5%;
   }
 }
+
 
 
 
