@@ -40,5 +40,18 @@
     });
   </script>
 
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const addresses = document.querySelectorAll(".protected-address");
+  addresses.forEach(el => {
+    const l1 = el.getAttribute("data-line1");
+    const l2 = el.getAttribute("data-line2");
+    const l3 = el.getAttribute("data-line3");
+    el.innerHTML = `${l1}<br>${l2}<br>${l3}`;
+  });
+});
+</script>
+
+
 </body>
 </html>
