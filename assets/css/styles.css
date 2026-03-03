@@ -1533,3 +1533,25 @@ nav ul.nav {
   display: flex;
   flex-direction: column;
   gap
+
+   
+   /* Restore desktop header layout */
+@media (min-width: 769px) {
+  .header-wrap {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .brand-and-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+}
+
