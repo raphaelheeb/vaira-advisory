@@ -60,9 +60,6 @@ img {
 .no-js .protected-email::after {
   content: "info [at] vaira-advisory [dot] com";
 }
-.no-js .protected-address::after {
-  content: "Hegianwandweg 106, 8045 Zürich (address protected)";
-}
 
 .reveal-address {
   cursor: pointer;
@@ -73,6 +70,17 @@ img {
 
 .reveal-address:hover {
   opacity: 1;
+}
+
+.addr-char {
+  display: inline-block;
+  position: relative;
+}
+
+.addr-char::after {
+  content: attr(data-noise);
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* ------------------------------
