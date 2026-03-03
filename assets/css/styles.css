@@ -1,5 +1,5 @@
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 1/4
+   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 1/4
    FOUNDATIONS: Reset, Tokens, Typography, Wrappers, Sections
    ========================================================= */
 
@@ -245,7 +245,7 @@ p {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 2/4
+   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 2/4
    LAYOUT SYSTEMS: Grids, Splits, Alternation, Rhythm
    ========================================================= */
 
@@ -262,10 +262,8 @@ p {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 768px) {
-  .grid--auto {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 /* ------------------------------
@@ -357,7 +355,7 @@ p {
   }
 }
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
+   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 3/4
    COMPONENTS: Header, Hero, Cards, Footer, Buttons
    ========================================================= */
 
@@ -626,7 +624,7 @@ footer {
 }
 
 /* =========================================================
-   VAIRA DESIGN SYSTEM v2.0 — BLOCK 4/4
+   VAIRA DESIGN SYSTEM v2.0 â€” BLOCK 4/4
    PAGE BLOCKS: Use Cases, About, Contact, Legal Pages
    ========================================================= */
 
@@ -870,25 +868,35 @@ footer {
 
 
 /* =========================================================
-   VAIRA — MOBILE SYSTEM (COMPACT PREMIUM)
+   VAIRA â€” MOBILE SYSTEM (COMPACT PREMIUM)
    ========================================================= */
 
 /* =========================================================
-   MOBILE HEADER — MATCHING YOUR EXISTING HTML STRUCTURE
+   1) MOBILE HEADER â€” LEFT-ALIGNED HAMBURGER
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  /* Header container */
   .header-wrap {
-    height: auto;
     padding: 14px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  /* Hamburger stays left */
+  .brand-and-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  /* Hide desktop nav */
+  .nav {
+    display: none !important;
+  }
+
+  /* Hamburger */
   .hamburger {
     width: 28px;
     height: 22px;
@@ -903,24 +911,6 @@ footer {
     background: var(--text-dark);
     border-radius: 2px;
     width: 100%;
-  }
-
-  /* Desktop nav hidden on mobile */
-  .brand-and-nav nav {
-    display: none !important;
-  }
-
-  /* Logo stays visible */
-  .site-logo img {
-    height: 28px;
-    width: auto;
-  }
-
-  /* Language switcher stays right-aligned */
-  .language-switcher {
-    display: flex;
-    gap: 8px;
-    margin-left: auto;
   }
 
   /* Mobile menu */
@@ -943,10 +933,17 @@ footer {
   .mobile-menu.open {
     display: flex;
   }
+
+  /* Language switcher stays right-aligned */
+  .language-switcher {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+  }
 }
 
 /* =========================================================
-   2) MOBILE HERO — HOMEPAGE
+   2) MOBILE HERO â€” HOMEPAGE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -980,7 +977,7 @@ footer {
 }
 
 /* =========================================================
-   3) MOBILE HERO — SUBPAGES
+   3) MOBILE HERO â€” SUBPAGES
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -1079,7 +1076,7 @@ footer {
 }
 
 /* =========================================================
-   6) MOBILE FOOTER — COMPACT PREMIUM
+   6) MOBILE FOOTER â€” COMPACT PREMIUM
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -1133,7 +1130,7 @@ footer {
 }
 
 /* =========================================================
-   7) SMALL PHONE TUNING (≤ 600px)
+   7) SMALL PHONE TUNING (â‰¤ 600px)
    ========================================================= */
 
 @media (max-width: 600px) {
