@@ -631,120 +631,17 @@ p {
 }
 
 /* ------------------------------
-   Header & Navigation
+   Header & Navigation (CLEAN)
    ------------------------------ */
 
 .site-header {
+  width: 100%;
   background: rgba(255,255,255,0.96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 0;
-}
-
-.brand-and-nav {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.site-logo img {
-  height: 64px;
-  border-radius: 8px;
-}
-
-.nav {
-  display: flex;
-  gap: 28px;
-}
-
-.nav a {
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 2px;
-  color: var(--text-dark);
-  transition: color 0.2s;
-}
-
-/* Underline animation base */
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: var(--primary-mid);
-  transition: width 0.25s;
-}
-
-/* Hover state */
-.nav a:hover {
-  color: var(--primary-mid);
-  text-decoration: none;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
-
-/* ACTIVE STATE â€” permanent underline + color */
-.nav a.active {
-  color: var(--primary-mid);
-}
-
-.nav a.active::after {
-  width: 100%;
-  background: var(--primary-mid);
-}
-
-/* Prevent hover from overriding active color */
-.nav a.active:hover {
-  color: var(--primary-mid);
-}
-
-/* Language switcher */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.lang-btn {
-  font-size: 14px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--primary-mid);
-  background: transparent;
-  color: var(--text-dark);
-  cursor: pointer;
-}
-
-.lang-btn.active {
-  background: var(--bg-light);
-  color: var(--primary);
-}
-
-/* ============================
-   DESKTOP HEADER RESTORE
-   ============================ */
-
-header.site-header {
-  width: 100%;
-  background: var(--text-light);
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  z-index: 50;
 }
 
 .header-wrap {
@@ -769,16 +666,68 @@ nav ul.nav {
   align-items: center;
 }
 
+.site-logo img {
+  height: 64px;
+  border-radius: 8px;
+}
+
+.nav a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 2px;
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+
+/* Underline animation */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-mid);
+  transition: width 0.25s;
+}
+
+.nav a:hover {
+  color: var(--primary-mid);
+  text-decoration: none;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a.active {
+  color: var(--primary-mid);
+}
+
+.nav a.active::after {
+  width: 100%;
+}
+
 .language-switcher {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 84px;
+.lang-btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-mid);
+  background: transparent;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--bg-light);
+  color: var(--primary);
 }
 
 /* ------------------------------
