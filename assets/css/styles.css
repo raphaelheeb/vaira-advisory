@@ -1966,6 +1966,130 @@ nav ul.nav {
   }
 }
 
+ /* =========================================================
+   MOBILE HEADER — CLEAN 2-ROW LAYOUT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Header container becomes vertical but with controlled rows */
+  .header-wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    height: auto;
+  }
+
+  /* Row 1: logo + language switcher */
+  .brand-and-nav {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Hide desktop nav on mobile */
+  nav ul.nav {
+    display: none !important;
+  }
+
+  /* Language switcher stays right */
+  .language-switcher {
+    margin-left: auto;
+  }
+
+  /* Row 2: hamburger left */
+  .hamburger {
+    order: 2;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  /* Row 3: mobile menu full width */
+  .mobile-menu {
+    order: 3;
+    width: 100%;
+    padding: 10px 0 12px;
+  }
+
+  .mobile-menu a {
+    padding: 8px 5%;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Collapse grid into a single column */
+  .home-page #hero .hero-grid {
+    display: block;
+  }
+
+  /* Full-width text */
+  .home-page #hero .hero-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-page #hero .hero-title,
+  .home-page #hero .hero-sub {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  /* Hide the separate illustration column */
+  .home-page #hero .hero-right {
+    display: none;
+  }
+
+  /* Add illustration as background */
+  .home-page #hero.hero--bg-illustration {
+    background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80%;
+    background-blend-mode: screen;
+  }
+}
+
+/* =========================================================
+   HOW WE WORK — MOBILE STACKED LAYOUT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  #how-we-work .split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Image first */
+  #how-we-work .split-right {
+    order: 1;
+    width: 100%;
+  }
+
+  /* Text second */
+  #how-we-work .split-left {
+    order: 2;
+    width: 100%;
+  }
+
+  #how-we-work .split-left p {
+    max-width: 100%;
+  }
+}
+
+
 /* =========================================================
    FOOTER — MOBILE
    ========================================================= */
