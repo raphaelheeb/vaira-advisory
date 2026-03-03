@@ -639,6 +639,7 @@ p {
   transition: color 0.2s;
 }
 
+/* Underline animation base */
 .nav a::after {
   content: "";
   position: absolute;
@@ -650,6 +651,7 @@ p {
   transition: width 0.25s;
 }
 
+/* Hover state */
 .nav a:hover {
   color: var(--primary-mid);
   text-decoration: none;
@@ -659,12 +661,20 @@ p {
   width: 100%;
 }
 
+/* ACTIVE STATE — permanent underline + color */
 .nav a.active {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
-  padding-bottom: 3px;
+  color: var(--primary-mid);
 }
 
+.nav a.active::after {
+  width: 100%;
+  background: var(--primary-mid);
+}
+
+/* Prevent hover from overriding active color */
+.nav a.active:hover {
+  color: var(--primary-mid);
+}
 
 /* Language switcher */
 .language-switcher {
