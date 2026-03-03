@@ -1555,3 +1555,149 @@ nav ul.nav {
   }
 }
 
+   /* =========================================================
+   HEADER — RESTORE ORIGINAL DESKTOP LAYOUT
+   ========================================================= */
+
+/* Desktop header restored */
+@media (min-width: 769px) {
+  .header-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .brand-and-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav ul.nav {
+    display: flex !important;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+
+  /* Hide mobile elements on desktop */
+  .hamburger {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   HEADER — MOBILE NAV SYSTEM
+   ========================================================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-dark);
+  border-radius: 999px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(255,255,255,0.98);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 5%;
+}
+
+.mobile-menu a {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul.nav {
+    display: none !important;
+  }
+
+  .header-wrap {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+   /* =========================================================
+   WHERE THESE USE CASES APPLY — RESTORE ORIGINAL DESIGN
+   ========================================================= */
+
+/* Icon sizing + micro-animation */
+.why-icon svg {
+  width: 52px;
+  height: 52px;
+}
+
+.why-icon svg * {
+  stroke-width: 2.1;
+  transition: stroke-width 0.18s ease;
+}
+
+.why-grid .why-item:hover svg * {
+  stroke-width: 2.2;
+}
+
+/* Desktop 2×2 grid */
+@media (min-width: 900px) {
+  #use-cases-where .why-grid {
+    grid-template-columns: repeat(2, 420px);
+    justify-content: center;
+    gap: 48px 48px;
+  }
+}
+
+/* Mobile refinements */
+@media (max-width: 600px) {
+  #use-cases-where .why-grid-wrapper {
+    padding: 0 20px;
+  }
+
+  #use-cases-where .why-grid {
+    row-gap: 48px;
+  }
+
+  .why-grid .why-item {
+    padding: 24px;
+  }
+
+  .why-item-inner h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+
+  .why-grid .why-item p {
+    max-width: 100%;
+  }
+}
+
