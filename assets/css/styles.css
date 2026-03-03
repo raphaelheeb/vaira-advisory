@@ -774,6 +774,13 @@ nav ul.nav {
   gap: 8px;
 }
 
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+
 /* ------------------------------
    Footer
    ------------------------------ */
