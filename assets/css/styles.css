@@ -734,6 +734,46 @@ p {
   color: var(--primary);
 }
 
+/* ============================
+   DESKTOP HEADER RESTORE
+   ============================ */
+
+header.site-header {
+  width: 100%;
+  background: var(--text-light);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.brand-and-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav ul.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+}
+
 /* ------------------------------
    Footer
    ------------------------------ */
