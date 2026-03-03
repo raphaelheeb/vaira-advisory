@@ -56,11 +56,24 @@ img {
   display: block;
 }
 
-/* Email Protection */
+/* Email & Address Protection */
 .no-js .protected-email::after {
   content: "info [at] vaira-advisory [dot] com";
 }
+.no-js .protected-address::after {
+  content: "Hegianwandweg 106, 8045 Zürich (address protected)";
+}
 
+.reveal-address {
+  cursor: pointer;
+  color: var(--primary-mid);
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.reveal-address:hover {
+  opacity: 1;
+}
 
 /* ------------------------------
    Brand Tokens
