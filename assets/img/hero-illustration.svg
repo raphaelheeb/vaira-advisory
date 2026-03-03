@@ -16,6 +16,7 @@
     </style>
   </defs>
 
+     <g opacity="0.3">
   <g>
     <path class="c" d="M80 270 C170 150, 430 150, 520 270"/>
     <path class="c" d="M60 320 C160 210, 440 210, 540 320"/>
@@ -38,5 +39,5 @@
     <path class="c dash" d="M120 120 L120 520"/>
     <path class="c dash" d="M480 120 L480 520"/>
   </g>
-
+</g>
 </svg>
