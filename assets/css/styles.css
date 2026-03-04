@@ -1725,8 +1725,6 @@ nav ul.nav {
   z-index: 1; /* ensures content stays above both layers */
 }
 
-
-
 }
 
 /* =========================================================
@@ -1849,7 +1847,6 @@ nav ul.nav {
   }
 }
 
-
 /* =========================================================
    FOOTER — MOBILE
    ========================================================= */
@@ -1864,6 +1861,55 @@ nav ul.nav {
   .footer-col--center,
   .footer-col--right {
     text-align: left;
+  }
+}
+
+/* =========================================================
+   SUBPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Collapse grid into a single column */
+  .subpage #hero .hero-grid {
+    display: block;
+  }
+
+  /* Full-width text */
+  .subpage #hero .hero-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Hide the inline SVG on mobile */
+  .subpage #hero .cad-hero-shape {
+    display: none;
+  }
+
+  /* Background illustration for mobile */
+  .subpage #hero.hero--bg-illustration {
+    position: relative;
+    z-index: 0;
+  }
+
+  .subpage #hero.hero--bg-illustration::after {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    background-image: url("/vaira-advisory/assets/img/subpage-hero-illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .subpage #hero .hero-grid {
+    position: relative;
+    z-index: 1;
   }
 }
 
