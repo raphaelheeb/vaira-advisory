@@ -1699,27 +1699,29 @@ nav ul.nav {
     display: none;
   }
 
-  /* Add illustration as background */
+ /* 1. The hero becomes a stacking context */
 .home-page #hero.hero--bg-illustration {
   position: relative;
-  z-index: 0;
+  z-index: 0; /* critical */
 }
 
+/* 2. The pseudo-element sits behind the hero */
 .home-page #hero.hero--bg-illustration::before {
   content: "";
   position: absolute;
-  top: -100px;      /* move background up */
-  right: -40px;     /* move background right */
+  top: -200px;
+  right: -40px;
   width: 140%;
-  height: 400px;    /* controls how much background is visible */
+  height: 500px;
   background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-blend-mode: screen;
   pointer-events: none;
-  z-index: -1;
+  z-index: -1; /* now works because parent has z-index:0 */
 }
 
+/* 3. The hero content sits above everything */
 .home-page #hero.hero--bg-illustration .hero-grid {
   position: relative;
   z-index: 1;
