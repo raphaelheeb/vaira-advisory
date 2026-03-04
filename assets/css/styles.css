@@ -1879,7 +1879,7 @@ nav ul.nav {
   body.subpage #hero.hero--bg-illustration::after {
     content: "";
     position: absolute;
-    top: -160px;
+    top: -60px;
     right: -120px;
     width: 420px;
     height: 420px;
