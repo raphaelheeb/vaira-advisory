@@ -1700,14 +1700,30 @@ nav ul.nav {
   }
 
   /* Add illustration as background */
-  .home-page #hero.hero--bg-illustration .hero-grid{
-    padding-top: 120px;
-    background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
-    background-repeat: no-repeat;
-    background-position: right calc(0% - 180px)
-    background-size: 130%;
-    background-blend-mode: screen;
-  }
+.home-page #hero.hero--bg-illustration {
+  position: relative;
+}
+
+.home-page #hero.hero--bg-illustration::before {
+  content: "";
+  position: absolute;
+  top: -200px;      /* move background up */
+  right: -40px;     /* move background right */
+  width: 140%;
+  height: 500px;    /* controls how much background is visible */
+  background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: screen;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-page #hero.hero--bg-illustration .hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
 }
 
 /* =========================================================
