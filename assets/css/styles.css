@@ -1868,31 +1868,15 @@ nav ul.nav {
    SUBPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
    ========================================================= */
 
+/* SUBPAGE HERO — MOBILE */
 @media (max-width: 768px) {
 
-  /* Collapse grid into a single column */
-  .subpage #hero .hero-grid {
-    display: block;
-  }
-
-  /* Full-width text */
-  .subpage #hero .hero-left {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* Hide the inline SVG on mobile */
-  .subpage #hero .cad-hero-shape {
-    display: none;
-  }
-
-  /* Background illustration for mobile */
-  .subpage #hero.hero--bg-illustration {
+  body.subpage #hero.hero--bg-illustration {
     position: relative;
     z-index: 0;
   }
 
-  .subpage #hero.hero--bg-illustration::after {
+  body.subpage #hero.hero--bg-illustration::after {
     content: "";
     position: absolute;
     top: -160px;
@@ -1907,9 +1891,12 @@ nav ul.nav {
     z-index: -1;
   }
 
-  .subpage #hero .hero-grid {
+  body.subpage .cad-hero-shape {
+    display: none;
+  }
+
+  body.subpage #hero .hero-grid {
     position: relative;
     z-index: 1;
   }
 }
-
