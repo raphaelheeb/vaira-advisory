@@ -1702,6 +1702,7 @@ nav ul.nav {
   /* Add illustration as background */
 .home-page #hero.hero--bg-illustration {
   position: relative;
+  z-index: 0;
 }
 
 .home-page #hero.hero--bg-illustration::before {
