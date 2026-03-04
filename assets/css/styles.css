@@ -1708,7 +1708,7 @@ nav ul.nav {
 #hero.hero--bg-illustration::after {
   content: "";
   position: absolute;
-  top: -100px;      /* move up */
+  top: -110px;      /* move up */
   right: -100px;     /* move right */
   width: 140%;
   height: 500px;
