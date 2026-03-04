@@ -1703,7 +1703,7 @@ nav ul.nav {
   .home-page #hero.hero--bg-illustration {
     background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
     background-repeat: no-repeat;
-    background-position: calc(100% + 20px) calc(0% - 60px)
+    background-position: calc(100% + 20px) calc(0% - 80px)
     background-size: 80%;
     background-blend-mode: screen;
   }
