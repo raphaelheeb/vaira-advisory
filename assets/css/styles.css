@@ -1701,6 +1701,7 @@ nav ul.nav {
 
   /* Add illustration as background */
   .home-page #hero.hero--bg-illustration .hero-grid{
+    padding-top: 120px;
     background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
     background-repeat: no-repeat;
     background-position: calc(100% + 20px) calc(0% - 80px)
