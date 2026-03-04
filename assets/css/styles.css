@@ -1708,8 +1708,8 @@ nav ul.nav {
 #hero.hero--bg-illustration::after {
   content: "";
   position: absolute;
-  top: -180px;      /* move up */
-  right: -80px;     /* move right */
+  top: -100px;      /* move up */
+  right: -100px;     /* move right */
   width: 140%;
   height: 500px;
   background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
