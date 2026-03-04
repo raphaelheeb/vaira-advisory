@@ -1707,10 +1707,10 @@ nav ul.nav {
 .home-page #hero.hero--bg-illustration::before {
   content: "";
   position: absolute;
-  top: -200px;      /* move background up */
+  top: -100px;      /* move background up */
   right: -40px;     /* move background right */
   width: 140%;
-  height: 500px;    /* controls how much background is visible */
+  height: 400px;    /* controls how much background is visible */
   background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
   background-repeat: no-repeat;
   background-size: contain;
