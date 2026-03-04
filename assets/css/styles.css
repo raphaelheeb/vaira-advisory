@@ -1716,7 +1716,7 @@ nav ul.nav {
   background-size: contain;
   background-blend-mode: screen;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 .home-page #hero.hero--bg-illustration .hero-grid {
