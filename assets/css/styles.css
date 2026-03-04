@@ -1700,7 +1700,7 @@ nav ul.nav {
   }
 
   /* Add illustration as background */
-  .home-page #hero.hero--bg-illustration {
+  .home-page #hero.hero--bg-illustration .hero-grid{
     background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
     background-repeat: no-repeat;
     background-position: calc(100% + 20px) calc(0% - 120px)
