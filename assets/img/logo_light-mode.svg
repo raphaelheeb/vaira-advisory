@@ -1,7 +1,19 @@
 <svg width="200mm" height="200mm" viewBox="-5 -5 210 210"
      xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="200" rx="20" ry="20"
-        fill="#ffffff" stroke="#2b4e5a" stroke-width="3"/>
+  <path d="
+    M 16 0
+    H 184
+    A 16 16 0 0 1 200 16
+    V 184
+    A 16 16 0 0 1 184 200
+    H 16
+    A 16 16 0 0 1 0 184
+    V 16
+    A 16 16 0 0 1 16 0
+    Z"
+    fill="#ffffff"
+    stroke="#2b4e5a"
+    stroke-width="4"/>
   <text x="100" y="104"
         font-family="Public Sans"
         font-size="48"
