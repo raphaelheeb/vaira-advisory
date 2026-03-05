@@ -1,11 +1,11 @@
-<svg width="200mm" height="200mm" viewBox="0 0 200 200"
+<svg width="400mm" height="200mm" viewBox="0 0 400 200"
      xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Background -->
-  <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+  <!-- LEFT PANEL: Grounded version -->
+  <rect x="0" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
-  <!-- VAIRA (slightly airier optical centering) -->
-  <text x="100" y="105"
+  <!-- VAIRA (grounded) -->
+  <text x="100" y="107"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
@@ -14,8 +14,32 @@
     VAIRA
   </text>
 
-  <!-- Descriptor (airy, readable, compact) -->
+  <!-- Descriptor (grounded) -->
   <text x="100" y="129"
+        font-family="Public Sans"
+        font-size="12"
+        letter-spacing="0.8"
+        text-anchor="middle"
+        fill="#ffffff">
+    TECHNOLOGY PARTNERS
+  </text>
+
+
+  <!-- RIGHT PANEL: Airier version -->
+  <rect x="200" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+
+  <!-- VAIRA (airier) -->
+  <text x="300" y="105"
+        font-family="Public Sans"
+        font-size="48"
+        letter-spacing="7"
+        text-anchor="middle"
+        fill="#ffffff">
+    VAIRA
+  </text>
+
+  <!-- Descriptor (airier) -->
+  <text x="300" y="129"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
