@@ -3,8 +3,8 @@
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
   <text x="100" y="118"
         font-family="Public Sans"
-        font-size="54"
-        letter-spacing="6.2"
+        font-size="53"
+        letter-spacing="6.3"
         text-anchor="middle"
         fill="#ffffff">
     VAIRA
