@@ -1,12 +1,25 @@
-<svg width="200mm" height="200mm" viewBox="0 0 200 200"
+<svg width="200mm" height="200mm" viewBox="-5 -5 210 210"
      xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-  <text x="100" y="118"
+  <path d="
+    M 14 0
+    H 186
+    A 14 14 0 0 1 200 14
+    V 186
+    A 14 14 0 0 1 186 200
+    H 14
+    A 14 14 0 0 1 0 186
+    V 14
+    A 14 14 0 0 1 14 0
+    Z"
+    fill="#ffffff"
+    stroke="#2b4e5a"
+    stroke-width="4"/>
+  <text x="100" y="123"
         font-family="Public Sans"
-        font-size="53"
-        letter-spacing="6.3"
+        font-size="50"
+        letter-spacing="2.6"
         text-anchor="middle"
-        fill="#ffffff">
+        fill="#2b4e5a">
     VAIRA
   </text>
 </svg>
