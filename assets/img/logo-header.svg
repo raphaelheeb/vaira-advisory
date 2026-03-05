@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150">
-  <rect x="0" y="0" width="640" height="150" rx="14" ry="14" fill="#2b4e5a"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120">
+  <!-- Teal background, tightly wrapped -->
+  <rect x="0" y="0" width="260" height="120" rx="14" ry="14" fill="#2b4e5a"/>
 
-  <text x="320" y="72"
+  <!-- VAIRA: forced width 220px (slightly wider) -->
+  <text x="130" y="58"
         font-family="Public Sans"
-        font-size="48"
-        letter-spacing="13"
+        font-size="32"
         text-anchor="middle"
-        fill="#ffffff">VAIRA</text>
+        fill="#ffffff"
+        textLength="220"
+        lengthAdjust="spacingAndGlyphs">VAIRA</text>
 
-  <text x="320" y="108"
+  <!-- Descriptor: forced width 210px (slightly narrower) -->
+  <text x="130" y="90"
         font-family="Public Sans"
-        font-size="18"
-        letter-spacing="-0.05"
+        font-size="14"
         text-anchor="middle"
-        fill="#ffffff">TECHNOLOGY PARTNERS</text>
+        fill="#ffffff"
+        textLength="210"
+        lengthAdjust="spacingAndGlyphs">TECHNOLOGY PARTNERS</text>
 </svg>
