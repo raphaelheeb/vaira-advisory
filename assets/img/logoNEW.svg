@@ -1,56 +1,74 @@
-<svg width="440mm" height="200mm" viewBox="0 0 440 200"
+<svg width="440mm" height="440mm" viewBox="0 0 440 440"
      xmlns="http://www.w3.org/2000/svg">
 
-  <!-- LEFT PANEL: Grounded version -->
+  <!-- === TOP LEFT: VAIRA 104 / DESC 128 === -->
   <rect x="0" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-
-  <!-- VAIRA (grounded) -->
-  <text x="100" y="107"
+  <text x="100" y="104"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
         text-anchor="middle"
-        fill="#ffffff">
-    VAIRA
-  </text>
-
-  <!-- Descriptor (grounded) -->
-  <text x="100" y="129"
+        fill="#ffffff">VAIRA</text>
+  <text x="100" y="128"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
         text-anchor="middle"
-        fill="#ffffff">
-    TECHNOLOGY PARTNERS
-  </text>
+        fill="#ffffff">TECHNOLOGY PARTNERS</text>
 
-
-  <!-- WHITE SPACE SEPARATOR -->
+  <!-- WHITE SPACE -->
   <rect x="200" y="0" width="40" height="200" fill="#ffffff"/>
 
-
-  <!-- RIGHT PANEL: Airier version -->
+  <!-- === TOP RIGHT: VAIRA 106 / DESC 128 === -->
   <rect x="240" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-
-  <!-- VAIRA (airier) -->
-  <text x="340" y="105"
+  <text x="340" y="106"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
         text-anchor="middle"
-        fill="#ffffff">
-    VAIRA
-  </text>
-
-  <!-- Descriptor (airier) -->
-  <text x="340" y="129"
+        fill="#ffffff">VAIRA</text>
+  <text x="340" y="128"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
         text-anchor="middle"
-        fill="#ffffff">
-    TECHNOLOGY PARTNERS
-  </text>
+        fill="#ffffff">TECHNOLOGY PARTNERS</text>
+
+  <!-- HORIZONTAL WHITE SPACE -->
+  <rect x="0" y="200" width="440" height="40" fill="#ffffff"/>
+
+  <!-- === BOTTOM LEFT: VAIRA 104 / DESC 129 === -->
+  <rect x="0" y="240" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+  <text x="100" y="104+240"
+        font-family="Public Sans"
+        font-size="48"
+        letter-spacing="7"
+        text-anchor="middle"
+        fill="#ffffff">VAIRA</text>
+  <text x="100" y="129+240"
+        font-family="Public Sans"
+        font-size="12"
+        letter-spacing="0.8"
+        text-anchor="middle"
+        fill="#ffffff">TECHNOLOGY PARTNERS</text>
+
+  <!-- WHITE SPACE -->
+  <rect x="200" y="240" width="40" height="200" fill="#ffffff"/>
+
+  <!-- === BOTTOM RIGHT: VAIRA 106 / DESC 129 === -->
+  <rect x="240" y="240" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+  <text x="340" y="106+240"
+        font-family="Public Sans"
+        font-size="48"
+        letter-spacing="7"
+        text-anchor="middle"
+        fill="#ffffff">VAIRA</text>
+  <text x="340" y="129+240"
+        font-family="Public Sans"
+        font-size="12"
+        letter-spacing="0.8"
+        text-anchor="middle"
+        fill="#ffffff">TECHNOLOGY PARTNERS</text>
 
 </svg>
 
