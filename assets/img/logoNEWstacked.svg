@@ -1,56 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1024"
-    height="1024"
-    viewBox="0 0 1024 1024"
->
-  <rect
-    x="0"
-    y="0"
-    width="1024"
-    height="1024"
-    rx="8"
-    ry="8"
-    fill="#0F3B46"
-  />
+<svg width="200mm" height="200mm" viewBox="0 0 200 200"
+     xmlns="http://www.w3.org/2000/svg">
 
-  <!-- VAIRA: larger, slightly tighter tracking, a bit lower -->
-  <text
-    x="50%"
-    y="36%"
-    text-anchor="middle"
-    fill="#FFFFFF"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="170"
-    letter-spacing="14"
-  >
+  <!-- Background -->
+  <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+
+  <!-- VAIRA (slightly above center, +5 tracking) -->
+  <text x="100" y="92"
+        font-family="Public Sans"
+        font-size="44"
+        letter-spacing="5"
+        text-anchor="middle"
+        fill="#ffffff">
     VAIRA
   </text>
 
-  <!-- TECHNOLOGY: closer to VAIRA -->
-  <text
-    x="50%"
-    y="53%"
-    text-anchor="middle"
-    fill="#FFFFFF"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="72"
-    letter-spacing="8"
-  >
+  <!-- TECHNOLOGY (narrower, tight tracking, optically centered) -->
+  <text x="100" y="122"
+        font-family="Public Sans"
+        font-size="20"
+        letter-spacing="1"
+        text-anchor="middle"
+        fill="#ffffff">
     TECHNOLOGY
   </text>
 
-  <!-- PARTNERS: same size, equal-ish gap -->
-  <text
-    x="50%"
-    y="64%"
-    text-anchor="middle"
-    fill="#FFFFFF"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="72"
-    letter-spacing="8"
-  >
+  <!-- PARTNERS (≈5% smaller, tighter gap, slightly lower baseline) -->
+  <text x="100" y="142"
+        font-family="Public Sans"
+        font-size="19"
+        letter-spacing="1"
+        text-anchor="middle"
+        fill="#ffffff">
     PARTNERS
   </text>
+
 </svg>
