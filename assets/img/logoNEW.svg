@@ -39,13 +39,13 @@
 
   <!-- === BOTTOM LEFT: VAIRA 104 / DESC 129 === -->
   <rect x="0" y="240" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-  <text x="100" y="104+240"
+  <text x="100" y="344"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
         text-anchor="middle"
         fill="#ffffff">VAIRA</text>
-  <text x="100" y="129+240"
+  <text x="100" y="369"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
@@ -57,13 +57,13 @@
 
   <!-- === BOTTOM RIGHT: VAIRA 106 / DESC 129 === -->
   <rect x="240" y="240" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-  <text x="340" y="106+240"
+  <text x="340" y="346"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
         text-anchor="middle"
         fill="#ffffff">VAIRA</text>
-  <text x="340" y="129+240"
+  <text x="340" y="369"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
@@ -71,4 +71,3 @@
         fill="#ffffff">TECHNOLOGY PARTNERS</text>
 
 </svg>
-
