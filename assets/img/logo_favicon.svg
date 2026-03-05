@@ -14,10 +14,10 @@
     fill="#2b4e5a"
     stroke="#2b4e5a"
     stroke-width="4"/>
-  <text x="100" y="136"
+  <text x="100" y="121"
         font-family="Public Sans"
-        font-size="90"
-        letter-spacing="1.4"
+        font-size="44"
+        letter-spacing="2.4"
         text-anchor="middle"
         fill="#ffffff">
     VAIRA
