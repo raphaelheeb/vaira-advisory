@@ -4,8 +4,8 @@
   <!-- Background -->
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
-  <!-- VAIRA (slightly above center, +5 tracking) -->
-  <text x="100" y="92"
+  <!-- VAIRA (hero, slightly above center, +5 tracking) -->
+  <text x="100" y="90"
         font-family="Public Sans"
         font-size="44"
         letter-spacing="5"
@@ -14,20 +14,20 @@
     VAIRA
   </text>
 
-  <!-- TECHNOLOGY (narrower, tight tracking, optically centered) -->
-  <text x="100" y="122"
+  <!-- TECHNOLOGY (moderately reduced, clear gap below VAIRA, weighted lift start) -->
+  <text x="100" y="130"
         font-family="Public Sans"
-        font-size="20"
+        font-size="17"
         letter-spacing="1"
         text-anchor="middle"
         fill="#ffffff">
     TECHNOLOGY
   </text>
 
-  <!-- PARTNERS (≈5% smaller, tighter gap, slightly lower baseline) -->
-  <text x="100" y="142"
+  <!-- PARTNERS (≈5% smaller, tighter gap, slight baseline drop preserved) -->
+  <text x="100" y="146"
         font-family="Public Sans"
-        font-size="19"
+        font-size="16"
         letter-spacing="1"
         text-anchor="middle"
         fill="#ffffff">
