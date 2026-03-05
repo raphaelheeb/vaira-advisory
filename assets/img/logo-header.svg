@@ -1,18 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="110" viewBox="0 0 260 110">
-  <!-- Teal background, tight and calm -->
-  <rect x="0" y="0" width="260" height="110" rx="14" ry="14" fill="#2b4e5a"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120">
+  <rect x="0" y="0" width="260" height="120" rx="14" ry="14" fill="#2b4e5a"/>
 
-  <!-- VAIRA (natural geometry, no distortion) -->
-  <text x="130" y="52"
+  <!-- VAIRA: widened naturally to ~225–230px -->
+  <text x="130" y="55"
         font-family="Public Sans"
         font-size="32"
+        letter-spacing="1.8"
         text-anchor="middle"
         fill="#ffffff">VAIRA</text>
 
-  <!-- Descriptor (natural, slightly smaller, calm) -->
-  <text x="130" y="82"
+  <!-- Descriptor: tightened naturally to ~215–218px -->
+  <text x="130" y="88"
         font-family="Public Sans"
-        font-size="13"
+        font-size="14"
+        letter-spacing="-0.3"
         text-anchor="middle"
         fill="#ffffff">TECHNOLOGY PARTNERS</text>
 </svg>
+
