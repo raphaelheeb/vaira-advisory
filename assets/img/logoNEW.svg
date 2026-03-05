@@ -4,8 +4,8 @@
   <!-- Background -->
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
-  <!-- VAIRA (optically centered) -->
-  <text x="100" y="106"
+  <!-- VAIRA (optically centered, slightly more grounded) -->
+  <text x="100" y="107"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
@@ -15,7 +15,7 @@
   </text>
 
   <!-- Descriptor (airier, readable, moved closer) -->
-  <text x="100" y="130"
+  <text x="100" y="129"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
@@ -25,4 +25,3 @@
   </text>
 
 </svg>
-
