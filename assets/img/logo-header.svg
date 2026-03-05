@@ -1,7 +1,7 @@
 <svg width="200mm" height="200mm" viewBox="0 0 200 200"
      xmlns="http://www.w3.org/2000/svg">
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
-  <text x="100" y="104"
+  <text x="100" y="100"
         font-family="Public Sans"
         font-size="52"
         letter-spacing="6.2"
