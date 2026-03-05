@@ -1,0 +1,108 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Light vertical background gradient -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9DCDC" />
+      <stop offset="100%" stop-color="rgba(201,220,220,0.55)" />
+    </linearGradient>
+
+    <!-- Grid line colors -->
+    <style>
+      .grid-line { stroke: rgba(0,0,0,0.08); stroke-width: 1; }
+      .grid-line-strong { stroke: rgba(0,0,0,0.12); stroke-width: 1; }
+    </style>
+
+    <!-- CAD stroke gradient -->
+    <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <style>
+      .cad { fill: none; stroke: url(#cadStroke); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+      .cad-dash { stroke-dasharray: 6 8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1584" height="396" fill="url(#bgGradient)" />
+
+  <!-- Subtle grid (vertical lines) -->
+  <g opacity="0.12">
+    <line class="grid-line" x1="200" y1="0" x2="200" y2="396" />
+    <line class="grid-line" x1="300" y1="0" x2="300" y2="396" />
+    <line class="grid-line" x1="400" y1="0" x2="400" y2="396" />
+    <line class="grid-line" x1="500" y1="0" x2="500" y2="396" />
+    <line class="grid-line" x1="600" y1="0" x2="600" y2="396" />
+    <line class="grid-line" x1="700" y1="0" x2="700" y2="396" />
+    <line class="grid-line" x1="800" y1="0" x2="800" y2="396" />
+    <line class="grid-line" x1="900" y1="0" x2="900" y2="396" />
+    <line class="grid-line" x1="1000" y1="0" x2="1000" y2="396" />
+    <line class="grid-line" x1="1100" y1="0" x2="1100" y2="396" />
+    <line class="grid-line" x1="1200" y1="0" x2="1200" y2="396" />
+    <line class="grid-line" x1="1300" y1="0" x2="1300" y2="396" />
+  </g>
+
+  <!-- Subtle grid (horizontal lines) -->
+  <g opacity="0.12">
+    <line class="grid-line" x1="0" y1="60" x2="1584" y2="60" />
+    <line class="grid-line" x1="0" y1="120" x2="1584" y2="120" />
+    <line class="grid-line" x1="0" y1="180" x2="1584" y2="180" />
+    <line class="grid-line" x1="0" y1="240" x2="1584" y2="240" />
+    <line class="grid-line" x1="0" y1="300" x2="1584" y2="300" />
+    <line class="grid-line" x1="0" y1="360" x2="1584" y2="360" />
+  </g>
+
+  <!-- CAD hero illustration (right-shifted, subtle) -->
+  <g opacity="0.18" transform="translate(950, -20) scale(0.8)">
+    <g>
+      <path class="cad" d="M80 270 C170 150, 430 150, 520 270"/>
+      <path class="cad" d="M60 320 C160 210, 440 210, 540 320"/>
+      <path class="cad" d="M50 370 C160 280, 440 280, 550 370"/>
+      <path class="cad" d="M60 420 C170 350, 430 350, 540 420"/>
+      <path class="cad" d="M80 470 C190 420, 410 420, 520 470"/>
+    </g>
+
+    <g>
+      <path class="cad" d="M180 180 C160 260, 160 360, 180 440"/>
+      <path class="cad" d="M240 160 C220 250, 220 370, 240 460"/>
+      <path class="cad" d="M300 150 C280 250, 280 380, 300 480"/>
+      <path class="cad" d="M360 160 C340 250, 340 370, 360 460"/>
+      <path class="cad" d="M420 180 C400 260, 400 360, 420 440"/>
+    </g>
+
+    <g opacity="0.45">
+      <path class="cad cad-dash" d="M100 140 L500 140"/>
+      <path class="cad cad-dash" d="M100 500 L500 500"/>
+      <path class="cad cad-dash" d="M120 120 L120 520"/>
+      <path class="cad cad-dash" d="M480 120 L480 520"/>
+    </g>
+  </g>
+
+  <!-- Two-line message (slightly above center, center-left) -->
+  <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+     font-weight="500"
+     font-size="52"
+     letter-spacing="0.8"
+     fill="#FFFFFF">
+    <text x="520" y="160">Technology from Early Concept</text>
+    <text x="520" y="225">to Industrial Scale</text>
+  </g>
+
+  <!-- VAIRA emblem (medium, top-right) -->
+  <g transform="translate(1424, 40)">
+    <!-- Frame -->
+    <rect x="0" y="0" width="120" height="120" rx="14" ry="14"
+          fill="#2B4E5A" />
+
+    <!-- Wordmark -->
+    <text x="60" y="72"
+          font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+          font-size="50"
+          letter-spacing="3.6"
+          text-anchor="middle"
+          fill="#FFFFFF">
+      VAIRA
+    </text>
+  </g>
+</svg>
