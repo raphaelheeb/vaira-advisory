@@ -66,23 +66,3 @@
     <text x="520" y="230">to Industrial Scale</text>
   </g>
 </svg>
-
-  <!-- Tagline line 1 -->
-  <text x="520" y="170"
-        font-size="52"
-        font-weight="500"
-        letter-spacing="0.8">
-    Technology from Early Concept
-  </text>
-
-  <!-- Tagline line 2 -->
-  <text x="520" y="235"
-        font-size="52"
-        font-weight="500"
-        letter-spacing="0.8">
-    to Industrial Scale
-  </text>
-
-</g>
-
-</svg>
