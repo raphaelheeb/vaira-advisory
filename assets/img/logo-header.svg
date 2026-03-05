@@ -3,10 +3,11 @@
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
   <text x="100" y="119"
         font-family="Public Sans"
-        font-size="55"
-        letter-spacing="5.6"
+        font-size="54"
+        letter-spacing="6.0"
         text-anchor="middle"
         fill="#ffffff">
     VAIRA
   </text>
 </svg>
+
