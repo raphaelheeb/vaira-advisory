@@ -1,68 +1,114 @@
 <svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Solid teal background -->
-    <style>
-      .bg { fill: #2B4E5A; }
-    </style>
-
-    <!-- Extremely smooth global fade -->
+    <!-- Smooth global fade -->
     <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%"   stop-color="white" stop-opacity="0.10" />
       <stop offset="40%"  stop-color="white" stop-opacity="0.04" />
       <stop offset="100%" stop-color="white" stop-opacity="0.00" />
     </linearGradient>
 
-    <!-- CAD stroke gradient (VAIRA website gradient) -->
+    <!-- CAD stroke gradient -->
     <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.7"/>
       <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.3"/>
     </linearGradient>
-
-    <style>
-      .cad { fill: none; stroke: url(#cadStroke); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-      .cad-dash { stroke-dasharray: 6 8; }
-    </style>
   </defs>
 
-  <!-- Background -->
-  <rect class="bg" x="0" y="0" width="1584" height="396"/>
+  <!-- Solid teal background -->
+  <rect x="0" y="0" width="1584" height="396" fill="#2B4E5A"/>
 
   <!-- Smooth atmospheric fade -->
   <rect x="0" y="0" width="1584" height="396" fill="url(#heroFade)" opacity="0.20"/>
 
-  <!-- CAD illustration (right side, subtly present) -->
-  <g opacity="0.16" transform="translate(1080, 10) scale(1.05)">
-    <g>
-      <path class="cad" d="M80 270 C170 150, 430 150, 520 270"/>
-      <path class="cad" d="M60 320 C160 210, 440 210, 540 320"/>
-      <path class="cad" d="M50 370 C160 280, 440 280, 550 370"/>
-      <path class="cad" d="M60 420 C170 350, 430 350, 540 420"/>
-      <path class="cad" d="M80 470 C190 420, 410 420, 520 470"/>
-    </g>
+  <!-- CAD illustration (right side, subtly present, solid lines) -->
+  <g transform="translate(1080, 10) scale(1.05)">
+    <!-- Horizontal-ish curves -->
+    <path d="M80 270 C170 150, 430 150, 520 270"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M60 320 C160 210, 440 210, 540 320"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M50 370 C160 280, 440 280, 550 370"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M60 420 C170 350, 430 350, 540 420"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M80 470 C190 420, 410 420, 520 470"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
 
-    <g>
-      <path class="cad" d="M180 180 C160 260, 160 360, 180 440"/>
-      <path class="cad" d="M240 160 C220 250, 220 370, 240 460"/>
-      <path class="cad" d="M300 150 C280 250, 280 380, 300 480"/>
-      <path class="cad" d="M360 160 C340 250, 340 370, 360 460"/>
-      <path class="cad" d="M420 180 C400 260, 400 360, 420 440"/>
-    </g>
+    <!-- Vertical-ish curves -->
+    <path d="M180 180 C160 260, 160 360, 180 440"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M240 160 C220 250, 220 370, 240 460"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M300 150 C280 250, 280 380, 300 480"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M360 160 C340 250, 340 370, 360 460"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
+    <path d="M420 180 C400 260, 400 360, 420 440"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.16" />
 
-    <g opacity="0.40">
-      <path class="cad cad-dash" d="M100 140 L500 140"/>
-      <path class="cad cad-dash" d="M100 500 L500 500"/>
-      <path class="cad cad-dash" d="M120 120 L120 520"/>
-      <path class="cad cad-dash" d="M480 120 L480 520"/>
-    </g>
+    <!-- Framing lines (now solid, very subtle) -->
+    <path d="M100 140 L500 140"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.14" />
+    <path d="M100 500 L500 500"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.14" />
+    <path d="M120 120 L120 520"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.14" />
+    <path d="M480 120 L480 520"
+          fill="none"
+          stroke="url(#cadStroke)"
+          stroke-width="1.5"
+          stroke-opacity="0.14" />
   </g>
 
   <!-- Tagline block (only text in the banner) -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
      font-weight="500"
      font-size="52"
-     letter-spacing="0.8"
      fill="#FFFFFF">
-    <text x="520" y="165">Technology from Early Concept</text>
-    <text x="520" y="230">to Industrial Scale</text>
+    <text x="520" y="165" letter-spacing="0.8">
+      Technology from Early Concept
+    </text>
+    <text x="520" y="230" letter-spacing="0.8">
+      to Industrial Scale
+    </text>
   </g>
 </svg>
