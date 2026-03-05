@@ -14,25 +14,26 @@
     VAIRA
   </text>
 
-  <!-- TECHNOLOGY (moderately reduced, moved closer to VAIRA, weighted lift retained) -->
-  <text x="100" y="122"
+  <!-- TECHNOLOGY (further reduced, closer to VAIRA, weighted lift preserved) -->
+  <text x="100" y="118"
         font-family="Public Sans"
-        font-size="17"
-        letter-spacing="1"
+        font-size="15"
+        letter-spacing="0.8"
         text-anchor="middle"
         fill="#ffffff">
     TECHNOLOGY
   </text>
 
   <!-- PARTNERS (≈5% smaller, tight gap, slight baseline drop) -->
-  <text x="100" y="138"
+  <text x="100" y="132"
         font-family="Public Sans"
-        font-size="16"
-        letter-spacing="1"
+        font-size="14"
+        letter-spacing="0.8"
         text-anchor="middle"
         fill="#ffffff">
     PARTNERS
   </text>
 
 </svg>
+
 
