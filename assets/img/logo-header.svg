@@ -1,15 +1,10 @@
 <svg width="200mm" height="200mm" viewBox="0 0 200 200"
      xmlns="http://www.w3.org/2000/svg">
-  <!-- Main field -->
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
-  <!-- Bottom band -->
-  <rect x="0" y="140" width="200" height="60" fill="#223c46"/>
-
-  <!-- VAIRA centered in upper area -->
-  <text x="100" y="100"
+  <text x="100" y="86"
         font-family="Public Sans"
-        font-size="42"
+        font-size="40"
         font-weight="700"
         letter-spacing="6"
         text-anchor="middle"
@@ -17,14 +12,24 @@
     VAIRA
   </text>
 
-  <!-- Descriptor in band, large and calm -->
-  <text x="100" y="176"
+  <text x="100" y="122"
         font-family="Public Sans"
-        font-size="18"
+        font-size="16"
         font-weight="500"
-        letter-spacing="2"
+        letter-spacing="1.6"
         text-anchor="middle"
         fill="#ffffff">
-    TECHNOLOGY PARTNERS
+    TECHNOLOGY
+  </text>
+
+  <text x="100" y="146"
+        font-family="Public Sans"
+        font-size="16"
+        font-weight="500"
+        letter-spacing="1.6"
+        text-anchor="middle"
+        fill="#ffffff">
+    PARTNERS
   </text>
 </svg>
+
