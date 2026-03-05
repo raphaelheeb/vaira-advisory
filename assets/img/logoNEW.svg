@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1600"
+    height="900"
+    viewBox="0 0 1600 900"
+>
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#0F3B46"/>
+
+  <!-- VAIRA -->
+  <text
+    x="50%"
+    y="45%"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="180"
+    letter-spacing="24"
+  >
+    VAIRA
+  </text>
+
+  <!-- TECHNOLOGY PARTNERS -->
+  <text
+    x="50%"
+    y="60%"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="60"
+    letter-spacing="14"
+  >
+    TECHNOLOGY PARTNERS
+  </text>
+</svg>
