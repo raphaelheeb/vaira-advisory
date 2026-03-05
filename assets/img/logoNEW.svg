@@ -5,7 +5,7 @@
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
   <!-- VAIRA (larger + wider via tracking) -->
-  <text x="100" y="90"
+  <text x="100" y="92"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
@@ -14,8 +14,8 @@
     VAIRA
   </text>
 
-  <!-- Single-line descriptor (quiet, narrow, subordinate) -->
-  <text x="100" y="132"
+  <!-- Single-line descriptor (quiet, narrow, moved closer) -->
+  <text x="100" y="124"
         font-family="Public Sans"
         font-size="13"
         letter-spacing="0.6"
