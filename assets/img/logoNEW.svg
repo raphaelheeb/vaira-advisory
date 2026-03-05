@@ -4,8 +4,8 @@
   <!-- Background -->
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
-  <!-- VAIRA (large + wide, shifted downward) -->
-  <text x="100" y="102"
+  <!-- VAIRA (optically centered on geometric centerline) -->
+  <text x="100" y="106"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
@@ -14,8 +14,8 @@
     VAIRA
   </text>
 
-  <!-- Descriptor (airier tracking, readable size, compact spacing) -->
-  <text x="100" y="129"
+  <!-- Descriptor (airy, readable, compact, subordinate) -->
+  <text x="100" y="133"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
