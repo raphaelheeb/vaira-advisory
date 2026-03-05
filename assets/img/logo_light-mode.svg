@@ -14,17 +14,14 @@
     fill="#ffffff"
     stroke="#2b4e5a"
     stroke-width="4"/>
-  <text x="100" y="104"
+  <text x="100" y="118"
         font-family="Public Sans"
-        font-size="48"
-        letter-spacing="7"
+        font-size="53"
+        letter-spacing="6.3"
         text-anchor="middle"
-        fill="#2b4e5a">VAIRA</text>
-  <text x="100" y="129"
-        font-family="Public Sans"
-        font-size="12"
-        letter-spacing="0.8"
-        text-anchor="middle"
-        fill="#2b4e5a">TECHNOLOGY PARTNERS</text>
+        fill="#2b4e5a">
+    VAIRA
+  </text>
 </svg>
+
 
