@@ -11,15 +11,15 @@
     V 14
     A 14 14 0 0 1 14 0
     Z"
-    fill="#a9c3ca"
-    stroke="#a9c3ca"
+    fill="#2b4e5a"
+    stroke="#2b4e5a"
     stroke-width="4"/>
   <text x="100" y="123"
         font-family="Public Sans"
         font-size="50"
         letter-spacing="2.6"
         text-anchor="middle"
-        fill="#1a1a1a">
+        fill="#ffffff">
     VAIRA
   </text>
 </svg>
