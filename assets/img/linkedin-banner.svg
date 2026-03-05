@@ -1,11 +1,21 @@
 <svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Solid teal background -->
-    <style>
-      .bg { fill: #2B4E5A; }
-    </style>
+    <!-- Solid teal -->
+    <style>.bg { fill: #2B4E5A; }</style>
 
-    <!-- CAD stroke gradient (your exact website gradient) -->
+    <!-- Website radial fade -->
+    <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Vertical softening band behind text -->
+    <linearGradient id="textFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- CAD stroke gradient -->
     <linearGradient id="cadStroke" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#B8D4D0" stop-opacity="0.7"/>
       <stop offset="1" stop-color="#B8D4D0" stop-opacity="0.3"/>
@@ -20,8 +30,14 @@
   <!-- Background -->
   <rect class="bg" x="0" y="0" width="1584" height="396"/>
 
-  <!-- CAD illustration (right side only) -->
-  <g opacity="0.22" transform="translate(950, -40) scale(0.8)">
+  <!-- Full hero atmospheric fade -->
+  <rect x="0" y="0" width="1584" height="396" fill="url(#radialFade)" opacity="0.22"/>
+
+  <!-- Vertical soft fade behind text -->
+  <rect x="480" y="0" width="600" height="396" fill="url(#textFade)" opacity="0.18"/>
+
+  <!-- CAD illustration (right side, refined placement) -->
+  <g opacity="0.24" transform="translate(980, -20) scale(0.85)">
     <g>
       <path class="cad" d="M80 270 C170 150, 430 150, 520 270"/>
       <path class="cad" d="M60 320 C160 210, 440 210, 540 320"/>
@@ -52,11 +68,11 @@
      font-size="52"
      letter-spacing="0.8"
      fill="#FFFFFF">
-    <text x="520" y="160">Technology from Early Concept</text>
-    <text x="520" y="225">to Industrial Scale</text>
+    <text x="520" y="155">Technology from Early Concept</text>
+    <text x="520" y="220">to Industrial Scale</text>
   </g>
 
-  <!-- VAIRA emblem (top-right, medium) -->
+  <!-- VAIRA emblem (top-right) -->
   <g transform="translate(1424, 40)">
     <rect x="0" y="0" width="120" height="120" rx="14" ry="14" fill="#2B4E5A"/>
     <text x="60" y="72"
