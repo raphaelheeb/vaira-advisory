@@ -14,11 +14,11 @@
     VAIRA
   </text>
 
-  <!-- Single-line descriptor (quiet, compact, subordinate) -->
-  <text x="100" y="132"
+  <!-- Single-line descriptor (quiet, narrow, subordinate) -->
+  <text x="100" y="128"
         font-family="Public Sans"
-        font-size="15"
-        letter-spacing="1"
+        font-size="13"
+        letter-spacing="0.6"
         text-anchor="middle"
         fill="#ffffff">
     TECHNOLOGY PARTNERS
