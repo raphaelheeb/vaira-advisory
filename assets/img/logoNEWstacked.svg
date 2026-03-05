@@ -1,11 +1,12 @@
 <svg width="200mm" height="200mm" viewBox="0 0 200 200"
+<svg width="200mm" height="200mm" viewBox="0 0 200 200"
      xmlns="http://www.w3.org/2000/svg">
 
   <!-- Background -->
   <rect width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
   <!-- VAIRA (hero, slightly above center, +5 tracking) -->
-  <text x="100" y="90"
+  <text x="100" y="92"
         font-family="Public Sans"
         font-size="44"
         letter-spacing="5"
@@ -14,8 +15,8 @@
     VAIRA
   </text>
 
-  <!-- TECHNOLOGY (moderately reduced, clear gap below VAIRA, weighted lift start) -->
-  <text x="100" y="130"
+  <!-- TECHNOLOGY (moderately reduced, moved closer to VAIRA, weighted lift retained) -->
+  <text x="100" y="122"
         font-family="Public Sans"
         font-size="17"
         letter-spacing="1"
@@ -24,8 +25,8 @@
     TECHNOLOGY
   </text>
 
-  <!-- PARTNERS (≈5% smaller, tighter gap, slight baseline drop preserved) -->
-  <text x="100" y="146"
+  <!-- PARTNERS (≈5% smaller, tight gap, slight baseline drop) -->
+  <text x="100" y="138"
         font-family="Public Sans"
         font-size="16"
         letter-spacing="1"
@@ -35,3 +36,4 @@
   </text>
 
 </svg>
+
