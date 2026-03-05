@@ -58,27 +58,32 @@
 
   <!-- VAIRA wordmark + two-line promise as one block -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
-     fill="#FFFFFF">
-    <!-- VAIRA header -->
-    <text x="520" y="120"
-          font-size="26"
-          font-weight="600"
-          letter-spacing="4">
-      VAIRA
-    </text>
+   fill="#FFFFFF">
 
-    <!-- Two-line message -->
-    <text x="520" y="165"
-          font-size="52"
-          font-weight="500"
-          letter-spacing="0.8">
-      Technology from Early Concept
-    </text>
-    <text x="520" y="230"
-          font-size="52"
-          font-weight="500"
-          letter-spacing="0.8">
-      to Industrial Scale
-    </text>
-  </g>
+  <!-- VAIRA (proper scale + authority) -->
+  <text x="520" y="135"
+        font-size="34"
+        font-weight="600"
+        letter-spacing="4">
+    VAIRA
+  </text>
+
+  <!-- Tagline line 1 -->
+  <text x="520" y="170"
+        font-size="52"
+        font-weight="500"
+        letter-spacing="0.8">
+    Technology from Early Concept
+  </text>
+
+  <!-- Tagline line 2 -->
+  <text x="520" y="235"
+        font-size="52"
+        font-weight="500"
+        letter-spacing="0.8">
+    to Industrial Scale
+  </text>
+
+</g>
+
 </svg>
