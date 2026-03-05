@@ -1,4 +1,4 @@
-<svg width="400mm" height="200mm" viewBox="0 0 400 200"
+<svg width="440mm" height="200mm" viewBox="0 0 440 200"
      xmlns="http://www.w3.org/2000/svg">
 
   <!-- LEFT PANEL: Grounded version -->
@@ -25,11 +25,15 @@
   </text>
 
 
+  <!-- WHITE SPACE SEPARATOR -->
+  <rect x="200" y="0" width="40" height="200" fill="#ffffff"/>
+
+
   <!-- RIGHT PANEL: Airier version -->
-  <rect x="200" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
+  <rect x="240" y="0" width="200" height="200" rx="8" ry="8" fill="#2b4e5a"/>
 
   <!-- VAIRA (airier) -->
-  <text x="300" y="105"
+  <text x="340" y="105"
         font-family="Public Sans"
         font-size="48"
         letter-spacing="7"
@@ -39,7 +43,7 @@
   </text>
 
   <!-- Descriptor (airier) -->
-  <text x="300" y="129"
+  <text x="340" y="129"
         font-family="Public Sans"
         font-size="12"
         letter-spacing="0.8"
@@ -49,3 +53,4 @@
   </text>
 
 </svg>
+
