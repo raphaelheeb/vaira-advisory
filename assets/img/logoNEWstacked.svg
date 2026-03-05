@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1024"
+    height="1024"
+    viewBox="0 0 1024 1024"
+>
+  <!-- Background square with 8px corner radius -->
+  <rect
+    x="0"
+    y="0"
+    width="1024"
+    height="1024"
+    rx="8"
+    ry="8"
+    fill="#0F3B46"
+  />
+
+  <!-- VAIRA (primary wordmark) -->
+  <text
+    x="50%"
+    y="38%"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="150"
+    letter-spacing="20"
+  >
+    VAIRA
+  </text>
+
+  <!-- TECHNOLOGY (first descriptor line) -->
+  <text
+    x="50%"
+    y="55%"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="70"
+    letter-spacing="10"
+  >
+    TECHNOLOGY
+  </text>
+
+  <!-- PARTNERS (second descriptor line) -->
+  <text
+    x="50%"
+    y="67%"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="70"
+    letter-spacing="10"
+  >
+    PARTNERS
+  </text>
+</svg>
