@@ -58,20 +58,6 @@
     <path d="M420 180 C400 260, 400 360, 420 440"
           fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
           stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
-
-    <!-- Framing lines -->
-    <path d="M100 140 L500 140"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
-          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
-    <path d="M100 500 L500 500"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
-          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
-    <path d="M120 120 L120 520"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
-          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
-    <path d="M480 120 L480 520"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
-          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
   </g>
 
   <!-- Tagline -->
