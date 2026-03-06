@@ -14,6 +14,7 @@
     </clipPath>
   </defs>
 
+  <!-- Background -->
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
@@ -26,10 +27,10 @@
     <circle cx="210" cy="210" r="150"
             stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
 
-    <!-- Radial line + ticks rotated into the quadrant -->
+    <!-- Radial line + ticks -->
     <g transform="rotate(225 210 210)">
 
-      <!-- Radial line (now visible) -->
+      <!-- Radial line (now definitely visible) -->
       <line x1="210" y1="210" x2="210" y2="420"
             stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
