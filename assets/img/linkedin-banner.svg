@@ -27,22 +27,30 @@
     <circle cx="210" cy="210" r="150"
             stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
 
-    <!-- Radial line + ticks -->
-    <g transform="rotate(225 210 210)">
+    <!-- TRUE radial line at 45° inside the bottom-left quadrant -->
+    <!-- 45° down-left = 225° absolute -->
+    <!-- Endpoint computed directly: -->
+    <!-- x = 210 + cos(225°) * 190 -->
+    <!-- y = 210 + sin(225°) * 190 -->
+    <!-- = (210 - 134.35, 210 + 134.35) -->
+    <line x1="210" y1="210"
+          x2="75.65" y2="344.35"
+          stroke="red" stroke-width="6"/>
 
-      <!-- DEBUG: Radial line in bright red and thick -->
-      <line x1="210" y1="210" x2="210" y2="420"
-            stroke="red" stroke-width="6" stroke-opacity="1"/>
+    <!-- INNER tick (larger) at 30% radius -->
+    <!-- 30% of 190 = 57 -->
+    <!-- tick center at 210 + cos(225°)*57, 210 + sin(225°)*57 -->
+    <!-- = (210 - 40.3, 210 + 40.3) -->
+    <line x1="160.3" y1="250.3"
+          x2="190.3" y2="280.3"
+          stroke="red" stroke-width="4"/>
 
-      <!-- INNER tick (larger) -->
-      <line x1="192" y1="153" x2="228" y2="153"
-            stroke="red" stroke-width="4" stroke-opacity="1"/>
-
-      <!-- OUTER tick (smaller) -->
-      <line x1="198" y1="96" x2="222" y2="96"
-            stroke="red" stroke-width="3" stroke-opacity="1"/>
-
-    </g>
+    <!-- OUTER tick (smaller) at 60% radius -->
+    <!-- 60% of 190 = 114 -->
+    <!-- = (210 - 80.6, 210 + 80.6) -->
+    <line x1="129.4" y1="290.6"
+          x2="150.4" y2="311.6"
+          stroke="red" stroke-width="3"/>
 
   </g>
 
