@@ -8,7 +8,7 @@
       <stop offset="100%" stop-color="white" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- TOP-RIGHT QUADRANT CLIP (after rotation + flip) -->
+    <!-- TOP-RIGHT QUADRANT CLIP -->
     <clipPath id="topRight">
       <rect x="210" y="0" width="210" height="210"/>
     </clipPath>
@@ -18,33 +18,42 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Rotated + horizontally flipped motif -->
-  <g transform="
-        rotate(-90 210 210)
-        translate(420,0) scale(-1,1)
-        translate(1280,16)
-        scale(0.50)
+  <!-- Compact technical motif -->
+  <!-- translate Y = 16 gives the correct breathing margin -->
+  <g transform="translate(1280, 16) scale(0.50)" fill="none" clip-path="url(#topRight)">
+
+    <!-- OUTER ARC (60° sweep, 0° → 60°) -->
+    <path d="
+      M 210 20
+      A 190 190 0 0 1
+        374.64 115
       "
-     fill="none" clip-path="url(#topRight)">
+      stroke="white" stroke-width="1.4" stroke-opacity="0.50"
+      fill="none"/>
 
-    <!-- OUTER ARC (60° sweep) -->
-    <path d="M 210 20 A 190 190 0 0 1 374.64 115"
-          stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
-
-    <!-- INNER ARC (45° sweep) -->
-    <path d="M 210 60 A 150 150 0 0 1 316.06 103.94"
-          stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
+    <!-- INNER ARC (45° sweep, 0° → 45°) -->
+    <path d="
+      M 210 60
+      A 150 150 0 0 1
+        316.06 103.94
+      "
+      stroke="white" stroke-width="1.0" stroke-opacity="0.35"
+      fill="none"/>
 
     <!-- RADIAL LINE at 45° -->
-    <line x1="210" y1="210" x2="316.06" y2="103.94"
+    <line x1="210" y1="210"
+          x2="316.06" y2="103.94"
           stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <!-- INNER TICK (center at 250.3,169.7; half-length 18) -->
-    <line x1="237.6" y1="182.4" x2="263.0" y2="157.0"
+    <!-- TICKS (×3 size), centered on radial line) -->
+    <!-- INNER TICK (larger) -->
+    <line x1="157.0" y1="237.6"
+          x2="182.4" y2="263.0"
           stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-    <!-- OUTER TICK (center at 290.6,129.4; half-length 12) -->
-    <line x1="282.1" y1="137.9" x2="299.1" y2="120.9"
+    <!-- OUTER TICK (smaller) -->
+    <line x1="121.9" y1="283.1"
+          x2="136.9" y2="298.1"
           stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
 
   </g>
