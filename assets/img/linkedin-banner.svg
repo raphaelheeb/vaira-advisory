@@ -19,7 +19,7 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Quadrant motif (bottom-left of full circle) -->
+  <!-- Quadrant motif -->
   <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#bottomLeft)">
 
     <!-- Outer circle -->
@@ -32,21 +32,21 @@
             stroke="white" stroke-width="1.0" stroke-opacity="0.35"
             vector-effect="non-scaling-stroke"/>
 
-    <!-- Radial line + ticks at ~45° inside the quadrant -->
+    <!-- Radial line + ticks at 45° inside the quadrant -->
     <g transform="rotate(225 210 210)">
 
-      <!-- Main radial line -->
+      <!-- Main radial line (now visible) -->
       <line x1="210" y1="210" x2="210" y2="420"
             stroke="white" stroke-width="1.0" stroke-opacity="0.40"
             vector-effect="non-scaling-stroke"/>
 
-      <!-- Tick at 30% radius (2× length) -->
-      <line x1="198" y1="153" x2="222" y2="153"
+      <!-- INNER tick (closer to center) — now LARGER -->
+      <line x1="192" y1="153" x2="228" y2="153"
             stroke="white" stroke-width="0.9" stroke-opacity="0.35"
             vector-effect="non-scaling-stroke"/>
 
-      <!-- Tick at 60% radius (3× length) -->
-      <line x1="192" y1="96" x2="228" y2="96"
+      <!-- OUTER tick (further from center) — now SMALLER -->
+      <line x1="198" y1="96" x2="222" y2="96"
             stroke="white" stroke-width="0.8" stroke-opacity="0.28"
             vector-effect="non-scaling-stroke"/>
 
@@ -61,3 +61,4 @@
   </g>
 
 </svg>
+
