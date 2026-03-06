@@ -18,32 +18,52 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Quadrant motif -->
+  <!-- Compact technical motif -->
   <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#bottomLeft)">
 
-    <!-- Circles -->
-    <circle cx="210" cy="210" r="190"
-            stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
-    <circle cx="210" cy="210" r="150"
-            stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
+    <!-- OUTER ARC (60°) -->
+    <path d="
+      M 210 20
+      A 190 190 0 0 1
+        210 + 190*sin(60°),
+        210 - 190*cos(60°)
+      "
+      stroke="white" stroke-width="1.4" stroke-opacity="0.50"
+      fill="none"
+      transform="translate(0,0)
+                 rotate(0 210 210)"
+    />
 
-    <!-- Radial line (explicit coordinates) -->
+    <!-- INNER ARC (45°) -->
+    <path d="
+      M 210 60
+      A 150 150 0 0 1
+        210 + 150*sin(45°),
+        210 - 150*cos(45°)
+      "
+      stroke="white" stroke-width="1.0" stroke-opacity="0.35"
+      fill="none"
+    />
+
+    <!-- RADIAL LINE at 45° (endpoint of inner arc) -->
+    <!-- Endpoint: (210 + 150*sin45°, 210 - 150*cos45°) -->
     <line x1="210" y1="210"
-          x2="75.65" y2="344.35"
+          x2="316.06" y2="103.94"
           stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <!-- INNER tick (3× larger) -->
-    <!-- Original half-length = 6 → now 18 -->
-    <!-- Tick center: (169.7, 250.3) -->
-    <line x1="157.0" y1="237.6"
-          x2="182.4" y2="263.0"
+    <!-- TICKS (×3 size), centered on radial line -->
+    <!-- Perpendicular angle = 45° + 90° = 135° -->
+
+    <!-- INNER TICK (larger) at 30% of radius -->
+    <!-- Tick center: 210 + 57*sin45°, 210 - 57*cos45° -->
+    <line x1="210 + 40.3 - 12.7" y1="210 - 40.3 + 12.7"
+          x2="210 + 40.3 + 12.7" y2="210 - 40.3 - 12.7"
           stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-    <!-- OUTER tick (3× larger) -->
-    <!-- Original half-length = 4 → now 12 -->
-    <!-- Tick center: (129.4, 290.6) -->
-    <line x1="121.9" y1="283.1"
-          x2="136.9" y2="298.1"
+    <!-- OUTER TICK (smaller) at 60% of radius -->
+    <!-- Tick center: 210 + 114*sin45°, 210 - 114*cos45° -->
+    <line x1="210 + 80.6 - 8.5" y1="210 - 80.6 + 8.5"
+          x2="210 + 80.6 + 8.5" y2="210 - 80.6 - 8.5"
           stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
 
   </g>
