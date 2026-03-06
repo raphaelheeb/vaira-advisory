@@ -1,57 +1,59 @@
 <svg width="1584" height="396" viewBox="0 0 1584 396"
      xmlns="http://www.w3.org/2000/svg">
 
+  <!-- Background -->
+  <rect width="1584" height="396" fill="#2B4E5A"/>
+
+  <!-- Optional subtle left-to-right fade -->
   <defs>
-    <!-- Background fade -->
     <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="white" stop-opacity="0.24"/>
       <stop offset="20%" stop-color="white" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="white" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Radial line fade -->
-    <linearGradient id="radialFade" x1="210" y1="210" x2="400" y2="210" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="white" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="white" stop-opacity="0.05" />
-    </linearGradient>
+    <!-- Clip for bottom-left quadrant -->
+    <clipPath id="bottomLeft">
+      <rect x="0" y="210" width="210" height="210"/>
+    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-<!-- Full circle + diagonal radial line + extended perpendicular ticks -->
-<g transform="translate(1280, -60) scale(0.50)" fill="none">
+  <!-- Quadrant motif (scaled + positioned for LinkedIn crop) -->
+  <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#bottomLeft)">
 
-  <!-- Full circles -->
-  <circle cx="210" cy="210" r="190"
-          stroke="white" stroke-width="1.4" stroke-opacity="0.50"
-          vector-effect="non-scaling-stroke"/>
-  <circle cx="210" cy="210" r="150"
-          stroke="white" stroke-width="1.0" stroke-opacity="0.35"
-          vector-effect="non-scaling-stroke"/>
+    <!-- Outer circle -->
+    <circle cx="210" cy="210" r="190"
+            stroke="white" stroke-width="1.4" stroke-opacity="0.50"
+            vector-effect="non-scaling-stroke"/>
 
-  <!-- Diagonal radial line + ticks (rotate entire group) -->
-  <g transform="rotate(-35 210 210)">
+    <!-- Inner circle -->
+    <circle cx="210" cy="210" r="150"
+            stroke="white" stroke-width="1.0" stroke-opacity="0.35"
+            vector-effect="non-scaling-stroke"/>
 
-    <!-- Main diagonal line (vertical before rotation) -->
-    <line x1="210" y1="0" x2="210" y2="420"
-          stroke="white" stroke-width="1.0" stroke-opacity="0.40"
-          vector-effect="non-scaling-stroke"/>
+    <!-- Diagonal radial line + ticks -->
+    <g transform="rotate(-35 210 210)">
 
-    <!-- Tick at 30% of radius (190 * 0.3 = 57px from center) -->
-    <!-- Original tick length = 12px → now 24px -->
-    <line x1="198" y1="153" x2="222" y2="153"
-          stroke="white" stroke-width="0.9" stroke-opacity="0.35"
-          vector-effect="non-scaling-stroke"/>
+      <!-- Main diagonal line -->
+      <line x1="210" y1="0" x2="210" y2="420"
+            stroke="white" stroke-width="1.0" stroke-opacity="0.40"
+            vector-effect="non-scaling-stroke"/>
 
-    <!-- Tick at 60% of radius (190 * 0.6 = 114px from center) -->
-    <!-- Original tick length = 12px → now 36px -->
-    <line x1="192" y1="96" x2="228" y2="96"
-          stroke="white" stroke-width="0.8" stroke-opacity="0.28"
-          vector-effect="non-scaling-stroke"/>
+      <!-- Tick at 30% radius (extended 2×) -->
+      <line x1="198" y1="153" x2="222" y2="153"
+            stroke="white" stroke-width="0.9" stroke-opacity="0.35"
+            vector-effect="non-scaling-stroke"/>
+
+      <!-- Tick at 60% radius (extended 3×) -->
+      <line x1="192" y1="96" x2="228" y2="96"
+            stroke="white" stroke-width="0.8" stroke-opacity="0.28"
+            vector-effect="non-scaling-stroke"/>
+
+    </g>
+
   </g>
-</g>
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
