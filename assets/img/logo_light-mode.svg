@@ -1,6 +1,6 @@
 <svg viewBox="2 2 206 206" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Rounded badge with corrected stroke weight and darker outline -->
+  <!-- Light badge -->
   <path
     d="
       M 20 5
@@ -26,7 +26,4 @@
   </g>
 
 </svg>
-
-
-
 
