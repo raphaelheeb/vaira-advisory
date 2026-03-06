@@ -19,15 +19,12 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Rotated + horizontally flipped compact technical motif -->
-  <!-- translate(1280,16) = small top margin -->
-  <!-- rotate(-90 210 210) = arcs extend downward -->
-  <!-- translate(420,0) scale(-1,1) = horizontal flip around center -->
+  <!-- Order: rotate → flip → translate → scale → clip -->
   <g transform="
+        rotate(-90 210 210)
+        translate(420,0) scale(-1,1)
         translate(1280,16)
         scale(0.50)
-        rotate(-90 210 210)
-        translate(420,0)
-        scale(-1,1)
       "
      fill="none" clip-path="url(#topRight)">
 
