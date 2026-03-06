@@ -32,17 +32,18 @@
           x2="75.65" y2="344.35"
           stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <!-- INNER tick (larger, centered on radial line) -->
+    <!-- INNER tick (3× larger) -->
+    <!-- Original half-length = 6 → now 18 -->
     <!-- Tick center: (169.7, 250.3) -->
-    <!-- Perpendicular angle = 315° -->
-    <line x1="165.46" y1="246.06"
-          x2="173.94" y2="254.54"
+    <line x1="157.0" y1="237.6"
+          x2="182.4" y2="263.0"
           stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-    <!-- OUTER tick (smaller, centered on radial line) -->
+    <!-- OUTER tick (3× larger) -->
+    <!-- Original half-length = 4 → now 12 -->
     <!-- Tick center: (129.4, 290.6) -->
-    <line x1="126.57" y1="287.77"
-          x2="132.23" y2="293.43"
+    <line x1="121.9" y1="283.1"
+          x2="136.9" y2="298.1"
           stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
 
   </g>
