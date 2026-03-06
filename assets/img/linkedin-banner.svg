@@ -2,53 +2,44 @@
      xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <!-- Subtle background fade -->
     <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="white" stop-opacity="0.24"/>
       <stop offset="20%" stop-color="white" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="white" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Bottom-left quadrant clip -->
+    <!-- Bottom-left quadrant -->
     <clipPath id="bottomLeft">
       <rect x="0" y="210" width="210" height="210"/>
     </clipPath>
   </defs>
 
-  <!-- Background -->
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Quadrant motif -->
   <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#bottomLeft)">
 
-    <!-- Outer circle -->
+    <!-- Circles -->
     <circle cx="210" cy="210" r="190"
-            stroke="white" stroke-width="1.4" stroke-opacity="0.50"
-            vector-effect="non-scaling-stroke"/>
-
-    <!-- Inner circle -->
+            stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
     <circle cx="210" cy="210" r="150"
-            stroke="white" stroke-width="1.0" stroke-opacity="0.35"
-            vector-effect="non-scaling-stroke"/>
+            stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
 
-    <!-- Radial line + ticks at 45° inside the quadrant -->
+    <!-- Radial line + ticks rotated into the quadrant -->
     <g transform="rotate(225 210 210)">
 
-      <!-- Main radial line (now visible) -->
+      <!-- Radial line (now visible) -->
       <line x1="210" y1="210" x2="210" y2="420"
-            stroke="white" stroke-width="1.0" stroke-opacity="0.40"
-            vector-effect="non-scaling-stroke"/>
+            stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-      <!-- INNER tick (closer to center) — now LARGER -->
+      <!-- INNER tick (larger) -->
       <line x1="192" y1="153" x2="228" y2="153"
-            stroke="white" stroke-width="0.9" stroke-opacity="0.35"
-            vector-effect="non-scaling-stroke"/>
+            stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-      <!-- OUTER tick (further from center) — now SMALLER -->
+      <!-- OUTER tick (smaller) -->
       <line x1="198" y1="96" x2="222" y2="96"
-            stroke="white" stroke-width="0.8" stroke-opacity="0.28"
-            vector-effect="non-scaling-stroke"/>
+            stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
 
     </g>
 
@@ -61,4 +52,3 @@
   </g>
 
 </svg>
-
