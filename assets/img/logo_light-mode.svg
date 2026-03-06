@@ -1,6 +1,6 @@
 <svg viewBox="0 0 210 210" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Light badge: white fill, teal outline -->
+  <!-- Light badge: white fill, darker/stronger outline -->
   <path
     d="
       M 20 5
@@ -14,8 +14,8 @@
       A 15 15 0 0 1 20 5
       Z"
     fill="#ffffff"
-    stroke="#2b4e5a"
-    stroke-width="4"
+    stroke="#1f3a43"
+    stroke-width="5"
   />
 
   <!-- VAIRA wordmark: teal -->
@@ -26,7 +26,6 @@
   </g>
 
 </svg>
-
 
 
 
