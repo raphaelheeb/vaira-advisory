@@ -30,17 +30,17 @@
     <!-- Radial line + ticks -->
     <g transform="rotate(225 210 210)">
 
-      <!-- Radial line (now definitely visible) -->
+      <!-- DEBUG: Radial line in bright red and thick -->
       <line x1="210" y1="210" x2="210" y2="420"
-            stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
+            stroke="red" stroke-width="6" stroke-opacity="1"/>
 
       <!-- INNER tick (larger) -->
       <line x1="192" y1="153" x2="228" y2="153"
-            stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
+            stroke="red" stroke-width="4" stroke-opacity="1"/>
 
       <!-- OUTER tick (smaller) -->
       <line x1="198" y1="96" x2="222" y2="96"
-            stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
+            stroke="red" stroke-width="3" stroke-opacity="1"/>
 
     </g>
 
