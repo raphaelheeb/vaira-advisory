@@ -60,11 +60,10 @@
           stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
   </g>
 
-  <!-- Tagline (lowered by 16px) -->
+  <!-- Tagline (font-size reduced to 48px, lowered slightly) -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
-     font-weight="400" font-size="54" fill="#FFFFFF" letter-spacing="0.8">
-    <text x="360" y="192">Technology from Early Concept</text>
-    <text x="360" y="252">to Industrial Scale</text>
+     font-weight="400" font-size="48" fill="#FFFFFF" letter-spacing="0.8">
+    <text x="360" y="188">Technology from Early Concept</text>
+    <text x="360" y="244">to Industrial Scale</text>
   </g>
 </svg>
-
