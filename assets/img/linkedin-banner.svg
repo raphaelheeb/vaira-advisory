@@ -19,7 +19,7 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Quadrant motif (original geometry, clipped) -->
+  <!-- Quadrant motif (bottom-left of full circle) -->
   <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#bottomLeft)">
 
     <!-- Outer circle -->
@@ -32,11 +32,11 @@
             stroke="white" stroke-width="1.0" stroke-opacity="0.35"
             vector-effect="non-scaling-stroke"/>
 
-    <!-- Diagonal line + ticks (original Inkscape angle preserved) -->
-    <g transform="rotate(-82.197455 210 210)">
+    <!-- Radial line + ticks at ~45° inside the quadrant -->
+    <g transform="rotate(225 210 210)">
 
-      <!-- Main diagonal line -->
-      <line x1="210" y1="-50" x2="210" y2="460"
+      <!-- Main radial line -->
+      <line x1="210" y1="210" x2="210" y2="420"
             stroke="white" stroke-width="1.0" stroke-opacity="0.40"
             vector-effect="non-scaling-stroke"/>
 
