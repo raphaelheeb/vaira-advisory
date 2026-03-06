@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-   width="76.20237mm"
-   height="76.202354mm"
-   viewBox="0 0 76.20237 76.202354"
-   version="1.1"
-   id="svg1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <g
-     id="layer1"
-     transform="translate(-66.939767,-110.33112)">
-    <path
-       style="color:#000000;vector-effect:non-scaling-stroke;fill:#00000f;fill-opacity:0.376471;-inkscape-stroke:none"
-       d="m -132.79883,86.123047 c -21.03859,0 -38.0957,17.057103 -38.0957,38.095703 0,21.0386 17.05711,38.09766 38.0957,38.09766 21.0386,0 38.097658,-17.05906 38.097658,-38.09766 0,-21.0386 -17.059058,-38.095703 -38.097658,-38.095703 z m 0,0.279297 c 20.88745,0 37.818361,16.928966 37.818361,37.816406 0,20.88744 -16.930911,37.81836 -37.818361,37.81836 -20.88744,0 -37.8164,-16.93092 -37.8164,-37.81836 0,-20.88744 16.92896,-37.816406 37.8164,-37.816406 z"
-       id="circle6"
-       transform="rotate(-82.197455)" />
-    <path
-       style="color:#000000;vector-effect:non-scaling-stroke;fill:#00000f;fill-opacity:0.376471;-inkscape-stroke:none"
-       d="m -162.82031,50.900391 c -16.60374,0 -30.06641,13.460717 -30.06641,30.064453 0,16.603736 13.46267,30.066406 30.06641,30.066406 16.60373,0 30.0664,-13.46267 30.0664,-30.066406 0,-16.603736 -13.46267,-30.064453 -30.0664,-30.064453 z m 0,0.199218 c 16.49577,0 29.86719,13.369464 29.86719,29.865235 0,16.49577 -13.37142,29.867186 -29.86719,29.867186 -16.49577,0 -29.86524,-13.371416 -29.86524,-29.867186 0,-16.495771 13.36947,-29.865235 29.86524,-29.865235 z"
-       id="circle7"
-       transform="rotate(-98.845963)" />
-    <path
-       style="color:#000000;vector-effect:non-scaling-stroke;fill:#00000f;fill-opacity:0.376471;-inkscape-stroke:none"
-       d="m 135.23437,119.29883 -57.607417,55.33203 0.132813,0.13672 57.607424,-55.33203 z"
-       id="line7" />
-    <path
-       style="color:#000000;vector-effect:non-scaling-stroke;fill:#00000f;fill-opacity:0.376471;-inkscape-stroke:none"
-       d="m 93.113281,153.25 -0.257812,0.24805 6.621093,6.89257 0.257813,-0.24804 z"
-       id="line8" />
-    <path
-       style="color:#000000;vector-effect:non-scaling-stroke;fill:#00000f;fill-opacity:0.376471;-inkscape-stroke:none"
-       d="m 87.886719,162.41406 -0.06055,0.0566 2.585937,2.69336 0.06055,-0.0586 z"
-       id="line9" />
+<svg width="76.2mm" height="76.2mm" viewBox="0 0 420 420"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Clip to bottom-left quadrant -->
+  <defs>
+    <clipPath id="bottomLeft">
+      <rect x="0" y="210" width="210" height="210"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#bottomLeft)" fill="none" stroke="white">
+
+    <!-- Outer circle -->
+    <circle cx="210" cy="210" r="190"
+            stroke-width="1.75" stroke-opacity="0.55"/>
+
+    <!-- Inner circle -->
+    <circle cx="210" cy="210" r="150"
+            stroke-width="1.25" stroke-opacity="0.40"/>
+
+    <!-- Diagonal line (your original direction preserved) -->
+    <g transform="rotate(-35 210 210)">
+      <line x1="210" y1="0" x2="210" y2="420"
+            stroke-width="1.0" stroke-opacity="0.40"/>
+
+      <!-- Tick at 30% radius -->
+      <line x1="198" y1="153" x2="222" y2="153"
+            stroke-width="0.9" stroke-opacity="0.35"/>
+
+      <!-- Tick at 60% radius -->
+      <line x1="192" y1="96" x2="228" y2="96"
+            stroke-width="0.8" stroke-opacity="0.28"/>
+    </g>
+
   </g>
+
 </svg>
