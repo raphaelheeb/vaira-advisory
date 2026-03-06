@@ -19,7 +19,8 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Compact technical motif -->
-  <g transform="translate(1280, -40) scale(0.50)" fill="none" clip-path="url(#topRight)">
+  <!-- translate Y = 16 gives the correct breathing margin -->
+  <g transform="translate(1280, 16) scale(0.50)" fill="none" clip-path="url(#topRight)">
 
     <!-- OUTER ARC (60° sweep, 0° → 60°) -->
     <path d="
@@ -44,15 +45,13 @@
           x2="316.06" y2="103.94"
           stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <!-- TICKS (×3 size), centered on radial line -->
-    <!-- Perpendicular angle = 45° + 90° = 135° -->
-
-    <!-- INNER TICK (larger) at 30% radius -->
+    <!-- TICKS (×3 size), centered on radial line) -->
+    <!-- INNER TICK (larger) -->
     <line x1="157.0" y1="237.6"
           x2="182.4" y2="263.0"
           stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-    <!-- OUTER TICK (smaller) at 60% radius -->
+    <!-- OUTER TICK (smaller) -->
     <line x1="121.9" y1="283.1"
           x2="136.9" y2="298.1"
           stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
