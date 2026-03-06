@@ -1,4 +1,8 @@
-<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg" overflow="visible" style="overflow:visible">
+<svg width="1584" height="396" viewBox="0 0 1584 396"
+     xmlns="http://www.w3.org/2000/svg"
+     overflow="visible"
+     style="overflow:visible">
+
   <defs>
     <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="white" stop-opacity="0.24"/>
@@ -15,40 +19,59 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- CAD hero: NO transforms that leave the viewBox -->
-  <g opacity="1">
-    <!-- Horizontal curves (extended beyond right edge by coordinates) -->
-    <path d="M900 180 C1100 80, 1500 80, 1700 180"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M880 230 C1080 130, 1520 130, 1720 230"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M870 280 C1080 200, 1520 200, 1730 280"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M880 330 C1100 260, 1500 260, 1720 330"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
+  <!-- ORIGINAL CAD HERO SHAPE RESTORED -->
+  <g transform="translate(980, -10) scale(0.78)"
+     overflow="visible"
+     style="overflow:visible"
+     clip-path="none">
+
+    <!-- Horizontal curves -->
+    <path d="M80 270 C170 150, 430 150, 520 270"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M60 320 C160 210, 440 210, 540 320"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M50 370 C160 280, 440 280, 550 370"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M60 420 C170 350, 430 350, 540 420"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M80 470 C190 420, 410 420, 520 470"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
 
     <!-- Vertical curves -->
-    <path d="M1050 120 C1030 200, 1030 300, 1050 380"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M1120 100 C1100 200, 1100 320, 1120 400"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M1190 90 C1170 200, 1170 330, 1190 420"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
+    <path d="M180 180 C160 260, 160 360, 180 440"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M240 160 C220 250, 220 370, 240 460"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M300 150 C280 250, 280 380, 300 480"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M360 160 C340 250, 340 370, 360 460"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
+    <path d="M420 180 C400 260, 400 360, 420 440"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
 
     <!-- Framing lines -->
-    <path d="M900 140 L1500 140"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.28"
-          vector-effect="non-scaling-stroke"/>
-    <path d="M900 360 L1500 360"
-          fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.28"
-          vector-effect="non-scaling-stroke"/>
+    <path d="M100 140 L500 140"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
+    <path d="M100 500 L500 500"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
+    <path d="M120 120 L120 520"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
+    <path d="M480 120 L480 520"
+          fill="none" stroke="url(#cadStroke)" stroke-width="1.8"
+          stroke-opacity="0.28" vector-effect="non-scaling-stroke"/>
   </g>
 
   <!-- Tagline -->
