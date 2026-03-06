@@ -20,7 +20,7 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-<!-- Full circle + diagonal radial line + visible ticks -->
+<!-- Full circle + diagonal radial line + perpendicular ticks -->
 <g transform="translate(1280, -60) scale(0.50)" fill="none">
 
   <!-- Full circles -->
@@ -31,7 +31,7 @@
           stroke="white" stroke-width="1.25" stroke-opacity="0.40"
           vector-effect="non-scaling-stroke"/>
 
-  <!-- Diagonal radial line + ticks -->
+  <!-- Diagonal radial line + ticks (rotate entire group) -->
   <g transform="rotate(-35 210 210)">
 
     <!-- Main diagonal line (vertical before rotation) -->
@@ -40,18 +40,19 @@
           vector-effect="non-scaling-stroke"/>
 
     <!-- Tick at 30% of radius (190 * 0.3 = 57px from center) -->
-    <line x1="204" y1="210 - 57" x2="216" y2="210 - 57"
+    <line x1="204" y1="153" x2="216" y2="153"
           stroke="white" stroke-width="1" stroke-opacity="0.40"
           vector-effect="non-scaling-stroke"/>
 
     <!-- Tick at 60% of radius (190 * 0.6 = 114px from center) -->
-    <line x1="204" y1="210 - 114" x2="216" y2="210 - 114"
+    <line x1="204" y1="96" x2="216" y2="96"
           stroke="white" stroke-width="1" stroke-opacity="0.32"
           vector-effect="non-scaling-stroke"/>
 
   </g>
 
 </g>
+
 
 
 
