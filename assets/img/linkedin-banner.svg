@@ -19,8 +19,8 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- CAD HERO -->
-  <g transform="translate(980, -10) scale(0.78)"
+  <!-- CAD HERO (lowered to sit safer in viewport) -->
+  <g transform="translate(980, 12) scale(0.78)"
      overflow="visible"
      style="overflow:visible"
      clip-path="none">
@@ -60,10 +60,11 @@
           stroke-opacity="0.32" vector-effect="non-scaling-stroke"/>
   </g>
 
-  <!-- Tagline (font-size reduced to 48px, lowered slightly) -->
+  <!-- Tagline (smaller and slightly higher to clear lower edge) -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
-     font-weight="400" font-size="48" fill="#FFFFFF" letter-spacing="0.8">
-    <text x="360" y="188">Technology from Early Concept</text>
-    <text x="360" y="244">to Industrial Scale</text>
+     font-weight="400" font-size="44" fill="#FFFFFF" letter-spacing="0.8">
+    <text x="360" y="172">Technology from Early Concept</text>
+    <text x="360" y="228">to Industrial Scale</text>
   </g>
 </svg>
+
