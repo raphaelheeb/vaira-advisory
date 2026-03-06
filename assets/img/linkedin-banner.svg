@@ -20,8 +20,8 @@
   <!-- Smooth atmospheric fade -->
   <rect x="0" y="0" width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- CAD illustration (scaled down, moved up, shifted right) -->
-  <g transform="translate(1080, -60) scale(0.58)">
+  <!-- CAD illustration (scaled up, shifted right, extended beyond canvas) -->
+  <g transform="translate(1120, -40) scale(0.62)">
     <!-- Horizontal-ish curves -->
     <path d="M80 270 C170 150, 430 150, 520 270"
           fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.12"/>
@@ -57,13 +57,12 @@
           fill="none" stroke="url(#cadStroke)" stroke-width="1.8" stroke-opacity="0.10"/>
   </g>
 
-  <!-- Tagline block (centered vertically, left-aligned, airy weight) -->
+  <!-- Tagline block (centered vertically, left-aligned, airy weight, 260px margin) -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
      font-weight="400" font-size="50" fill="#FFFFFF"
      letter-spacing="0.8">
-    <text x="140" y="190">Technology from Early Concept</text>
-    <text x="140" y="250">to Industrial Scale</text>
+    <text x="260" y="190">Technology from Early Concept</text>
+    <text x="260" y="250">to Industrial Scale</text>
   </g>
 
 </svg>
-
