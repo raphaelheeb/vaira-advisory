@@ -19,39 +19,39 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Rotated + horizontally flipped motif -->
+
 <g fill="none" stroke="white" stroke-linecap="round">
 
-  <!-- OUTER ARC: 120° → 180° -->
+  <!-- OUTER ARC: 120° → 180°, R = 165 -->
   <path d="
-    M 1494.0 155.9
-    A 180 180 0 0 1 1404.0 0
+    M 1499.25 142.8
+    A 165 165 0 0 1 1419 0
   "
-    stroke-width="1.4" stroke-opacity="0.50"/>
+    stroke-width="1.4" stroke-opacity="0.55"/>
 
-  <!-- INNER ARC: 135° → 180° -->
+  <!-- INNER ARC: 135° → 180°, R = 125 -->
   <path d="
-    M 1485.0 98.99
-    A 140 140 0 0 1 1444.0 0
+    M 1495.6 88.39
+    A 125 125 0 0 1 1459 0
   "
-    stroke-width="1.0" stroke-opacity="0.35"/>
+    stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- RADIAL LINE to inner arc start (unchanged) -->
+  <!-- RADIAL LINE (unchanged) -->
   <line x1="1584" y1="0"
         x2="1485.0" y2="98.99"
-        stroke-width="1.0" stroke-opacity="0.40"/>
+        stroke-width="1.0" stroke-opacity="0.45"/>
 
-  <!-- INNER TICK (unchanged) -->
-  <line x1="1545.8" y1="21.2"
-        x2="1562.8" y2="38.2"
-        stroke-width="0.9" stroke-opacity="0.35"/>
+  <!-- INNER TICK (shorter, denser, more precise) -->
+  <line x1="1550.4" y1="24.3"
+        x2="1564.0" y2="37.9"
+        stroke-width="0.9" stroke-opacity="0.40"/>
 
-  <!-- OUTER TICK (unchanged) -->
-  <line x1="1518.9" y1="53.7"
-        x2="1530.3" y2="65.1"
-        stroke-width="0.8" stroke-opacity="0.28"/>
+  <!-- OUTER TICK (shorter, subtle) -->
+  <line x1="1521.6" y1="56.0"
+        x2="1530.9" y2="65.3"
+        stroke-width="0.8" stroke-opacity="0.33"/>
 
 </g>
-
 
 
   <!-- Tagline -->
