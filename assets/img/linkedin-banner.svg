@@ -19,38 +19,39 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Rotated + horizontally flipped motif -->
- <!-- Rotated + horizontally flipped motif -->
-<g transform="
-      rotate(-90 210 210)
-      scale(-1,1) translate(-420,0)
-      translate(1280,16)
-      scale(0.50)
-    "
-   fill="none" clip-path="url(#topRight)">
+<g fill="none" stroke="white" stroke-linecap="round">
 
-  <!-- OUTER ARC (60° sweep) -->
-  <path d="M 210 20 A 190 190 0 0 1 374.64 115"
-        stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
+  <!-- OUTER ARC: 150° → 90° -->
+  <path d="
+    M 1428.1 90
+    A 180 180 0 0 1 1584 180
+  "
+    stroke-width="1.4" stroke-opacity="0.50"/>
 
-  <!-- INNER ARC (45° sweep) -->
-  <path d="M 210 60 A 150 150 0 0 1 316.06 103.94"
-        stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
+  <!-- INNER ARC: 135° → 90° -->
+  <path d="
+    M 1485.0 98.99
+    A 140 140 0 0 1 1584 140
+  "
+    stroke-width="1.0" stroke-opacity="0.35"/>
 
-  <!-- RADIAL LINE (correct final orientation) -->
-  <line x1="210" y1="210" x2="316.06" y2="103.94"
-        stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
+  <!-- RADIAL LINE to inner arc start -->
+  <line x1="1584" y1="0"
+        x2="1485.0" y2="98.99"
+        stroke-width="1.0" stroke-opacity="0.40"/>
 
   <!-- INNER TICK (perpendicular, centered) -->
-  <line x1="237.6" y1="157.0"
-        x2="263.0" y2="182.4"
-        stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
+  <line x1="1545.8" y1="21.2"
+        x2="1562.8" y2="38.2"
+        stroke-width="0.9" stroke-opacity="0.35"/>
 
   <!-- OUTER TICK (perpendicular, centered) -->
-  <line x1="282.1" y1="120.9"
-        x2="299.1" y2="137.9"
-        stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
+  <line x1="1518.9" y1="53.7"
+        x2="1530.3" y2="65.1"
+        stroke-width="0.8" stroke-opacity="0.28"/>
 
 </g>
+
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
