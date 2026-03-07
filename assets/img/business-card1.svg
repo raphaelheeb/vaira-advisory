@@ -19,11 +19,11 @@
 
   <!-- Full-width grid lines with horizontal gradient via per-line opacity -->
   <g stroke="url(#vfade)" stroke-width="0.25">
-    <line x1="20" y1="0" x2="20" y2="50" stroke-opacity="0.04"/>
-    <line x1="30" y1="0" x2="30" y2="50" stroke-opacity="0.06"/>
-    <line x1="40" y1="0" x2="40" y2="50" stroke-opacity="0.08"/>
-    <line x1="50" y1="0" x2="50" y2="50" stroke-opacity="0.06"/>
-    <line x1="60" y1="0" x2="60" y2="50" stroke-opacity="0.04"/>
+    <line x1="20" y1="0" x2="20" y2="50" stroke-opacity="0.14"/>
+    <line x1="30" y1="0" x2="30" y2="50" stroke-opacity="0.16"/>
+    <line x1="40" y1="0" x2="40" y2="50" stroke-opacity="0.18"/>
+    <line x1="50" y1="0" x2="50" y2="50" stroke-opacity="0.16"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke-opacity="0.14"/>
   </g>
 
   <!-- Wordmark -->
