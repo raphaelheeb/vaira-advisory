@@ -18,7 +18,7 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Rotated + horizontally flipped motif -->
+  <!-- To-right corner arc motif -->
 
 <g fill="none" stroke="white" stroke-linecap="round">
 
@@ -28,13 +28,6 @@
     A 155 155 0 0 1 1429 0
   "
     stroke-width="1.35" stroke-opacity="0.55"/>
-
-  <!-- MICRO ARC: 128° → 180°, R = 140 -->
-  <path d="
-    M 1497.7 110.3
-    A 140 140 0 0 1 1444 0
-  "
-    stroke-width="0.6" stroke-opacity="0.32"/>
 
   <!-- INNER ARC: 135° → 180°, R = 115 -->
   <path d="
@@ -47,16 +40,18 @@
   <line x1="1584" y1="0"
         x2="1488.4" y2="94.2"
         stroke-width="1.15" stroke-opacity="0.48"/>
+  <line x1="1510" y1="70"
+        x2="1488.4" y2="94.2"
+        stroke-width="0.7" stroke-opacity="0.40"/>
 
-
-  <!-- TICK 1 (outer, longest) -->
-  <line x1="1523.0" y1="54.8"
-        x2="1531.0" y2="62.8"
+  <!-- TICK 1 (outer, symmetric) -->
+  <line x1="1522.4" y1="55.4"
+        x2="1530.4" y2="63.4"
         stroke-width="0.85" stroke-opacity="0.36"/>
 
-  <!-- TICK 2 (middle, slightly closer than geometric center) -->
-  <line x1="1547.0" y1="25.8"
-        x2="1559.0" y2="37.8"
+  <!-- TICK 2 (inner, symmetric) -->
+  <line x1="1548.8" y1="28.0"
+        x2="1560.8" y2="40.0"
         stroke-width="0.85" stroke-opacity="0.38"/>
 
 </g>
