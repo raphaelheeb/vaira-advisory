@@ -37,19 +37,45 @@
       to Industrial Scale
     </text>
 
-    <!-- Top-right motif: compact, controlled -->
-    <g transform="translate(80,0)" stroke="#FFFFFF" stroke-width="0.4" stroke-opacity="0.22" fill="none">
-      <!-- Outer arc (approx. 60° sweep) -->
-      <path d="M -4 4 A 18 18 0 0 1 -16 0"/>
-      <!-- Inner arc (shorter, ~45°) -->
-      <path d="M -3 5 A 14 14 0 0 1 -13 1"/>
-      <!-- Radial line from outer arc end -->
-      <line x1="-4" y1="4" x2="-1" y2="7"/>
-      <!-- Three small ticks along outer arc -->
-      <line x1="-7" y1="3" x2="-6" y2="4"/>
-      <line x1="-9" y1="2" x2="-8" y2="3"/>
-      <line x1="-11" y1="1" x2="-10" y2="2"/>
-    </g>
+  <!-- Top‑right corner motif (scaled from LinkedIn banner) -->
+<g fill="none" stroke="white" stroke-linecap="round" transform="translate(80,0)">
+
+  <!-- OUTER ARC: 120° → 180°, scaled R = 22 -->
+  <path d="
+    M -1.9 4.7
+    A 22 22 0 0 1 -22 0
+  "
+    stroke-width="0.55" stroke-opacity="0.55"/>
+
+  <!-- INNER ARC: 135° → 180°, scaled R = 16 -->
+  <path d="
+    M -1.4 3.3
+    A 16 16 0 0 1 -16 0
+  "
+    stroke-width="0.40" stroke-opacity="0.40"/>
+
+  <!-- RADIAL LINE (scaled) -->
+  <line x1="0" y1="0"
+        x2="-6.5" y2="6.5"
+        stroke-width="0.40" stroke-opacity="0.50"/>
+
+  <!-- TICK 1 (scaled outward) -->
+  <line x1="-4.5" y1="2.0"
+        x2="-5.5" y2="3.0"
+        stroke-width="0.32" stroke-opacity="0.42"/>
+
+  <!-- TICK 2 (scaled outward) -->
+  <line x1="-7.0" y1="0.8"
+        x2="-9.0" y2="2.8"
+        stroke-width="0.36" stroke-opacity="0.50"/>
+
+  <!-- TICK 3 (scaled outward) -->
+  <line x1="-9.5" y1="0.2"
+        x2="-11.0" y2="1.7"
+        stroke-width="0.32" stroke-opacity="0.42"/>
+
+</g>
+
   </g>
 
   <!-- ========================================= -->
