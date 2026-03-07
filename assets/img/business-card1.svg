@@ -7,29 +7,33 @@
 
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Vertical fade for non-center lines -->
+  <!-- Medium vertical fade (Option B) -->
   <defs>
     <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
-      <stop offset="35%" stop-color="rgba(255,255,255,0.14)"/>
-      <stop offset="65%" stop-color="rgba(255,255,255,0.14)"/>
-      <stop offset="100%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="35%"  stop-color="rgba(255,255,255,0.20)"/>
+      <stop offset="65%"  stop-color="rgba(255,255,255,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
     </linearGradient>
   </defs>
 
-  <!-- Full-width grid lines -->
+  <!-- 8-line full-width grid (10mm spacing) -->
   <g stroke-width="0.25">
 
     <!-- Outer lines -->
-    <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.08)"/>
-    <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.08)"/>
+    <line x1="10" y1="0" x2="10" y2="50" stroke="rgba(255,255,255,0.08)"/>
+    <line x1="70" y1="0" x2="70" y2="50" stroke="rgba(255,255,255,0.08)"/>
+
+    <!-- Mid-outer lines -->
+    <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.10)"/>
 
     <!-- Mid lines -->
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.12)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
-    <!-- Center line (visible but not dominant) -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.17)"/>
+    <!-- Center line (gradient, strongest alpha) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)"/>
   </g>
 
   <!-- Wordmark -->
