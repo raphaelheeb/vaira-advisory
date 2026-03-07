@@ -41,16 +41,16 @@
 
     <!-- TICKS (recomputed AFTER rotation + flip) -->
 
-    <!-- INNER TICK (30% radius) -->
-    <line x1="182.4" y1="237.6"
-      x2="157.0" y2="263.0"
+  <!-- INNER TICK -->
+<line x1="237.6" y1="182.4"
+      x2="263.0" y2="157.0"
       stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-
-    <!-- OUTER TICK (60% radius) -->
-    <line x1="137.9" y1="282.1"
-      x2="120.9" y2="299.1"
+<!-- OUTER TICK -->
+<line x1="282.1" y1="137.9"
+      x2="299.1" y2="120.9"
       stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
+
 
   </g>
 
