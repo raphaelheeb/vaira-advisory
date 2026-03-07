@@ -21,36 +21,37 @@
   <!-- Rotated + horizontally flipped motif -->
 <g fill="none" stroke="white" stroke-linecap="round">
 
-  <!-- OUTER ARC: 150° → 90° -->
+  <!-- OUTER ARC: 120° → 180° -->
   <path d="
-    M 1428.1 90
-    A 180 180 0 0 1 1584 180
+    M 1494.0 155.9
+    A 180 180 0 0 1 1404.0 0
   "
     stroke-width="1.4" stroke-opacity="0.50"/>
 
-  <!-- INNER ARC: 135° → 90° -->
+  <!-- INNER ARC: 135° → 180° -->
   <path d="
     M 1485.0 98.99
-    A 140 140 0 0 1 1584 140
+    A 140 140 0 0 1 1444.0 0
   "
     stroke-width="1.0" stroke-opacity="0.35"/>
 
-  <!-- RADIAL LINE to inner arc start -->
+  <!-- RADIAL LINE to inner arc start (unchanged) -->
   <line x1="1584" y1="0"
         x2="1485.0" y2="98.99"
         stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- INNER TICK (perpendicular, centered) -->
+  <!-- INNER TICK (unchanged) -->
   <line x1="1545.8" y1="21.2"
         x2="1562.8" y2="38.2"
         stroke-width="0.9" stroke-opacity="0.35"/>
 
-  <!-- OUTER TICK (perpendicular, centered) -->
+  <!-- OUTER TICK (unchanged) -->
   <line x1="1518.9" y1="53.7"
         x2="1530.3" y2="65.1"
         stroke-width="0.8" stroke-opacity="0.28"/>
 
 </g>
+
 
 
   <!-- Tagline -->
