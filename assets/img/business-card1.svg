@@ -7,13 +7,13 @@
 
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Medium vertical fade -->
+  <!-- Softened vertical fade (Decision B) -->
   <defs>
     <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="rgba(255,255,255,0.05)"/>
-      <stop offset="35%"  stop-color="rgba(255,255,255,0.20)"/>
-      <stop offset="65%"  stop-color="rgba(255,255,255,0.20)"/>
-      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="35%"  stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="65%"  stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.10)"/>
     </linearGradient>
 
     <!-- Stronger elliptical radial fade -->
@@ -43,7 +43,7 @@
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.12)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
-    <!-- Center line (base opacity 0.28, gradient applied) -->
+    <!-- Center line (base opacity 0.28, softened vertical fade) -->
     <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)" stroke-opacity="0.28"/>
   </g>
 
