@@ -28,36 +28,46 @@
     </mask>
   </defs>
 
-  <!-- Grid lines (split for quiet zone) -->
+  <!-- Grid lines (3-region split) -->
   <g stroke-width="0.25" mask="url(#gridMask)">
 
+    <!-- Helper: function to generate segments -->
+    <!-- Regions: [0–4.8], [18.6–39.5], [45.9–50] -->
+
     <!-- x = 10 -->
-    <line x1="10" y1="0"    x2="10" y2="3.0"   stroke="rgba(255,255,255,0.08)"/>
-    <line x1="10" y1="47.8" x2="10" y2="50"    stroke="rgba(255,255,255,0.08)"/>
+    <line x1="10" y1="0"    x2="10" y2="4.8"   stroke="rgba(255,255,255,0.08)"/>
+    <line x1="10" y1="18.6" x2="10" y2="39.5"  stroke="rgba(255,255,255,0.08)"/>
+    <line x1="10" y1="45.9" x2="10" y2="50"    stroke="rgba(255,255,255,0.08)"/>
 
     <!-- x = 20 -->
-    <line x1="20" y1="0"    x2="20" y2="3.0"   stroke="rgba(255,255,255,0.10)"/>
-    <line x1="20" y1="47.8" x2="20" y2="50"    stroke="rgba(255,255,255,0.10)"/>
+    <line x1="20" y1="0"    x2="20" y2="4.8"   stroke="rgba(255,255,255,0.10)"/>
+    <line x1="20" y1="18.6" x2="20" y2="39.5"  stroke="rgba(255,255,255,0.10)"/>
+    <line x1="20" y1="45.9" x2="20" y2="50"    stroke="rgba(255,255,255,0.10)"/>
 
     <!-- x = 30 -->
-    <line x1="30" y1="0"    x2="30" y2="3.0"   stroke="rgba(255,255,255,0.12)"/>
-    <line x1="30" y1="47.8" x2="30" y2="50"    stroke="rgba(255,255,255,0.12)"/>
+    <line x1="30" y1="0"    x2="30" y2="4.8"   stroke="rgba(255,255,255,0.12)"/>
+    <line x1="30" y1="18.6" x2="30" y2="39.5"  stroke="rgba(255,255,255,0.12)"/>
+    <line x1="30" y1="45.9" x2="30" y2="50"    stroke="rgba(255,255,255,0.12)"/>
 
     <!-- x = 40 (center line) -->
-    <line x1="40" y1="0"    x2="40" y2="3.0"   stroke="url(#vfade)" stroke-opacity="0.28"/>
-    <line x1="40" y1="47.8" x2="40" y2="50"    stroke="url(#vfade)" stroke-opacity="0.28"/>
+    <line x1="40" y1="0"    x2="40" y2="4.8"   stroke="url(#vfade)" stroke-opacity="0.28"/>
+    <line x1="40" y1="18.6" x2="40" y2="39.5"  stroke="url(#vfade)" stroke-opacity="0.28"/>
+    <line x1="40" y1="45.9" x2="40" y2="50"    stroke="url(#vfade)" stroke-opacity="0.28"/>
 
     <!-- x = 50 -->
-    <line x1="50" y1="0"    x2="50" y2="3.0"   stroke="rgba(255,255,255,0.12)"/>
-    <line x1="50" y1="47.8" x2="50" y2="50"    stroke="rgba(255,255,255,0.12)"/>
+    <line x1="50" y1="0"    x2="50" y2="4.8"   stroke="rgba(255,255,255,0.12)"/>
+    <line x1="50" y1="18.6" x2="50" y2="39.5"  stroke="rgba(255,255,255,0.12)"/>
+    <line x1="50" y1="45.9" x2="50" y2="50"    stroke="rgba(255,255,255,0.12)"/>
 
     <!-- x = 60 -->
-    <line x1="60" y1="0"    x2="60" y2="3.0"   stroke="rgba(255,255,255,0.10)"/>
-    <line x1="60" y1="47.8" x2="60" y2="50"    stroke="rgba(255,255,255,0.10)"/>
+    <line x1="60" y1="0"    x2="60" y2="4.8"   stroke="rgba(255,255,255,0.10)"/>
+    <line x1="60" y1="18.6" x2="60" y2="39.5"  stroke="rgba(255,255,255,0.10)"/>
+    <line x1="60" y1="45.9" x2="60" y2="50"    stroke="rgba(255,255,255,0.10)"/>
 
     <!-- x = 70 -->
-    <line x1="70" y1="0"    x2="70" y2="3.0"   stroke="rgba(255,255,255,0.08)"/>
-    <line x1="70" y1="47.8" x2="70" y2="50"    stroke="rgba(255,255,255,0.08)"/>
+    <line x1="70" y1="0"    x2="70" y2="4.8"   stroke="rgba(255,255,255,0.08)"/>
+    <line x1="70" y1="18.6" x2="70" y2="39.5"  stroke="rgba(255,255,255,0.08)"/>
+    <line x1="70" y1="45.9" x2="70" y2="50"    stroke="rgba(255,255,255,0.08)"/>
   </g>
 
   <!-- Wordmark (shifted +0.6 mm right) -->
