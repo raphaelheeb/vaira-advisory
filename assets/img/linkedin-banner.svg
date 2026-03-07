@@ -35,22 +35,23 @@
   "
     stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- RADIAL LINE (single, clean) -->
+  <!-- RADIAL LINE -->
   <line x1="1584" y1="0"
         x2="1488.4" y2="94.2"
-        stroke-width="1.0" stroke-opacity="0.45"/>
+        stroke-width="1.0" stroke-opacity="0.50"/>
 
-  <!-- TICK 1 (outer, now the smaller tick) -->
-  <line x1="1530.3" y1="48.1"
-        x2="1535.9" y2="53.7"
-        stroke-width="0.8" stroke-opacity="0.38"/>
+  <!-- TICK 1 (outer, smaller, shifted outward) -->
+  <line x1="1517.6" y1="60.8"
+        x2="1523.2" y2="66.4"
+        stroke-width="0.8" stroke-opacity="0.42"/>
 
-  <!-- TICK 2 (inner, now the larger tick) -->
-  <line x1="1557.1" y1="12.7"
-        x2="1571.3" y2="26.9"
-        stroke-width="0.9" stroke-opacity="0.40"/>
+  <!-- TICK 2 (inner, larger, shifted outward) -->
+  <line x1="1545.1" y1="24.7"
+        x2="1559.3" y2="38.9"
+        stroke-width="0.9" stroke-opacity="0.50"/>
 
 </g>
+
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
