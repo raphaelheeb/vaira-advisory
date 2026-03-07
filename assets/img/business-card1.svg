@@ -8,17 +8,21 @@
   <!-- Background -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Tuned engineering grid (10mm spacing, aligned to wordmark center, light weight) -->
-  <!-- Wordmark center is at x = 40mm -->
-  <g stroke="white" stroke-width="0.25" stroke-opacity="0.035">
-    <line x1="20" y1="0" x2="20" y2="50"/>
-    <line x1="30" y1="0" x2="30" y2="50"/>
-    <line x1="40" y1="0" x2="40" y2="50"/> <!-- centerline -->
-    <line x1="50" y1="0" x2="50" y2="50"/>
-    <line x1="60" y1="0" x2="60" y2="50"/>
+  <!-- Gradient-weighted engineering grid (aligned to wordmark) -->
+  <g stroke="white" stroke-width="0.25">
+    <!-- Outer lines (softest) -->
+    <line x1="20" y1="0" x2="20" y2="50" stroke-opacity="0.015"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke-opacity="0.015"/>
+
+    <!-- Mid lines -->
+    <line x1="30" y1="0" x2="30" y2="50" stroke-opacity="0.025"/>
+    <line x1="50" y1="0" x2="50" y2="50" stroke-opacity="0.025"/>
+
+    <!-- Centerline (strongest) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke-opacity="0.035"/>
   </g>
 
-  <!-- VAIRA wordmark (scaled + lowered) -->
+  <!-- VAIRA wordmark -->
   <g transform="translate(40,17.2)">
     <g transform="translate(-16.5,-11) scale(0.159)">
       <g transform="translate(7,16) scale(1.01)">
