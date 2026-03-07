@@ -1,0 +1,44 @@
+<svg width="160mm" height="50mm" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- LEFT: FRONT SIDE (identical to minimal version) -->
+  <g transform="translate(0,0)">
+    <rect width="80" height="50" fill="#2B4E5A"/>
+
+    <!-- VAIRA badge centered -->
+    <g transform="translate(40,22)">
+      <g transform="translate(-15,-15) scale(0.145)">
+        <path d="M 20 5 H 190 A 15 15 0 0 1 205 20 V 190 A 15 15 0 0 1 190 205 H 20 A 15 15 0 0 1 5 190 V 20 A 15 15 0 0 1 20 5 Z"
+              fill="#2b4e5a" stroke="#ffffff" stroke-width="6"/>
+        <g transform="translate(7, 16) scale(1.01)">
+          <path fill="#ffffff"
+            d="M 26.957886,97.719615 ... (same VAIRA wordmark path) ..."/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Subtle outer arc motif -->
+    <path d="M 70 10 A 22 22 0 0 1 60 0"
+          fill="none" stroke="white" stroke-width="0.4" stroke-opacity="0.20"/>
+  </g>
+
+  <!-- RIGHT: BACK SIDE WITH QR -->
+  <g transform="translate(80,0)">
+    <rect width="80" height="50" fill="white"/>
+
+    <!-- Text block -->
+    <g font-family="Public Sans" fill="#2B4E5A">
+      <text x="6" y="12" font-size="4.2" font-weight="500" letter-spacing="0.2">Dr. Raphael Heeb</text>
+      <text x="6" y="18" font-size="3.4" font-weight="400">Founder & Managing Partner</text>
+
+      <text x="6" y="27" font-size="3.0">+41 76 463 06 83</text>
+      <text x="6" y="32" font-size="3.0">raphael.heeb@vaira.ch</text>
+      <text x="6" y="37" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
+    </g>
+
+    <!-- QR code placeholder (14 mm ≈ 14 units here) -->
+    <rect x="62" y="32" width="14" height="14" fill="#000000"/>
+    <text x="69" y="40" font-size="2.2" fill="white" text-anchor="middle">QR</text>
+
+  </g>
+
+</svg>
