@@ -41,20 +41,17 @@
         x2="1488.4" y2="94.2"
         stroke-width="1.0" stroke-opacity="0.45"/>
 
-  <!-- TICK 1 (outer, symmetric, centered) -->
-  <line x1="1530.3" y1="43.9"
-        x2="1540.1" y2="53.7"
-        stroke-width="0.85" stroke-opacity="0.36"/>
+  <!-- TICK 1 (outer, longer, farther) -->
+  <line x1="1527.4" y1="45.2"
+        x2="1538.8" y2="56.6"
+        stroke-width="0.9" stroke-opacity="0.38"/>
 
-  <!-- TICK 2 (inner, symmetric, centered) -->
-  <line x1="1554.6" y1="19.4"
-        x2="1564.6" y2="29.4"
-        stroke-width="0.85" stroke-opacity="0.38"/>
+  <!-- TICK 2 (inner, shorter, closer) -->
+  <line x1="1560.7" y1="16.3"
+        x2="1567.7" y2="23.3"
+        stroke-width="0.8" stroke-opacity="0.40"/>
 
 </g>
-
-
-
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
