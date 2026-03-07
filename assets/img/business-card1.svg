@@ -8,13 +8,12 @@
   <!-- Background -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Tuned engineering grid (10mm spacing, aligned to wordmark center) -->
+  <!-- Tuned engineering grid (10mm spacing, aligned to wordmark center, light weight) -->
   <!-- Wordmark center is at x = 40mm -->
-  <!-- Grid lines at 20, 30, 40, 50, 60 mm -->
   <g stroke="white" stroke-width="0.25" stroke-opacity="0.035">
     <line x1="20" y1="0" x2="20" y2="50"/>
     <line x1="30" y1="0" x2="30" y2="50"/>
-    <line x1="40" y1="0" x2="40" y2="50"/> <!-- centerline through wordmark -->
+    <line x1="40" y1="0" x2="40" y2="50"/> <!-- centerline -->
     <line x1="50" y1="0" x2="50" y2="50"/>
     <line x1="60" y1="0" x2="60" y2="50"/>
   </g>
