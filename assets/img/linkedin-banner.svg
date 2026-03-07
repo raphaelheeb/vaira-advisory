@@ -29,6 +29,13 @@
   "
     stroke-width="1.35" stroke-opacity="0.55"/>
 
+  <!-- MICRO ARC: 128° → 180°, R = 140 -->
+  <path d="
+    M 1497.7 110.3
+    A 140 140 0 0 1 1444 0
+  "
+    stroke-width="0.6" stroke-opacity="0.32"/>
+
   <!-- INNER ARC: 135° → 180°, R = 115 -->
   <path d="
     M 1502.7 81.3
@@ -36,27 +43,31 @@
   "
     stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- RADIAL LINE (slightly steeper, 132°) -->
+  <!-- RADIAL LINE (dual-weight pointer) -->
   <line x1="1584" y1="0"
         x2="1488.4" y2="94.2"
-        stroke-width="1.0" stroke-opacity="0.45"/>
+        stroke-width="1.15" stroke-opacity="0.48"/>
+  <line x1="1510" y1="70"
+        x2="1488.4" y2="94.2"
+        stroke-width="0.7" stroke-opacity="0.40"/>
 
   <!-- TICK 1 (outer, longest) -->
   <line x1="1523.0" y1="54.8"
         x2="1531.0" y2="62.8"
         stroke-width="0.85" stroke-opacity="0.36"/>
 
-  <!-- TICK 2 (middle) -->
-  <line x1="1549.0" y1="27.8"
-        x2="1561.0" y2="39.8"
+  <!-- TICK 2 (middle, slightly closer than geometric center) -->
+  <line x1="1547.0" y1="25.8"
+        x2="1559.0" y2="37.8"
         stroke-width="0.85" stroke-opacity="0.38"/>
 
-  <!-- TICK 3 (inner, micro‑tick) -->
-  <line x1="1563.5" y1="13.3"
-        x2="1571.0" y2="20.8"
-        stroke-width="0.75" stroke-opacity="0.42"/>
+  <!-- TICK 3 (inner micro‑tick, shortest) -->
+  <line x1="1564.5" y1="12.3"
+        x2="1570.8" y2="18.6"
+        stroke-width="0.70" stroke-opacity="0.44"/>
 
 </g>
+
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
