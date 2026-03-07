@@ -5,9 +5,10 @@
     }
   </style>
 
+  <!-- Background -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Medium vertical fade (Option B) -->
+  <!-- Vertical fade (medium) -->
   <defs>
     <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="rgba(255,255,255,0.05)"/>
@@ -15,10 +16,21 @@
       <stop offset="65%"  stop-color="rgba(255,255,255,0.20)"/>
       <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
     </linearGradient>
+
+    <!-- Elliptical radial fade mask (medium intensity) -->
+    <radialGradient id="radialMask" cx="0.5" cy="0.58" r="0.75" fx="0.5" fy="0.58" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="white" stop-opacity="1.0"/>
+      <stop offset="60%"  stop-color="white" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.40"/>
+    </radialGradient>
+
+    <mask id="gridMask">
+      <rect width="80" height="50" fill="url(#radialMask)"/>
+    </mask>
   </defs>
 
-  <!-- 8-line full-width grid (10mm spacing) -->
-  <g stroke-width="0.25">
+  <!-- Grid lines (masked by radial fade) -->
+  <g stroke-width="0.25" mask="url(#gridMask)">
 
     <!-- Outer lines -->
     <line x1="10" y1="0" x2="10" y2="50" stroke="rgba(255,255,255,0.08)"/>
@@ -32,8 +44,8 @@
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.12)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
-    <!-- Center line (gradient, strongest alpha) -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)"/>
+    <!-- Center line (gradient, base alpha 0.22) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)" stroke-opacity="0.22"/>
   </g>
 
   <!-- Wordmark -->
@@ -47,11 +59,11 @@
     </g>
   </g>
 
-  <!-- Tagline -->
-  <text x="40" y="39.2" font-size="3.2" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
+  <!-- Tagline (adjusted for print) -->
+  <text x="40" y="40.4" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
     Technology from Early Concept
   </text>
-  <text x="40" y="44.0" font-size="3.2" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
+  <text x="40" y="45.0" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
     to Industrial Scale
   </text>
 
