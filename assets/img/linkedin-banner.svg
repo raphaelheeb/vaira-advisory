@@ -42,16 +42,17 @@
         stroke-width="1.0" stroke-opacity="0.45"/>
 
   <!-- TICK 1 (outer, longer, farther) -->
-  <line x1="1527.4" y1="45.2"
-        x2="1538.8" y2="56.6"
+  <line x1="1526.0" y1="43.8"
+        x2="1540.2" y2="58.0"
         stroke-width="0.9" stroke-opacity="0.38"/>
 
   <!-- TICK 2 (inner, shorter, closer) -->
-  <line x1="1560.7" y1="16.3"
-        x2="1567.7" y2="23.3"
+  <line x1="1561.4" y1="17.0"
+        x2="1567.0" y2="22.6"
         stroke-width="0.8" stroke-opacity="0.40"/>
 
 </g>
+
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
