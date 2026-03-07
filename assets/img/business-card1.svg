@@ -1,18 +1,15 @@
 <svg width="160mm" height="50mm" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
-
   <style>
     text {
       font-family: -apple-system, system-ui, "Public Sans", sans-serif;
     }
   </style>
 
-  <!-- ========================================= -->
-  <!-- LEFT: FRONT (TAGLINE + CLEAN MOTIF)       -->
-  <!-- ========================================= -->
-  <g id="front-alt" transform="translate(0,0)">
+  <!-- ================= FRONT ================= -->
+  <g id="front">
     <rect width="80" height="50" fill="#2B4E5A"/>
 
-    <!-- VAIRA badge, slightly above center -->
+    <!-- VAIRA badge -->
     <g transform="translate(40,18)">
       <g transform="translate(-15,-15) scale(0.145)">
         <path
@@ -37,52 +34,45 @@
       to Industrial Scale
     </text>
 
-  <!-- Top‑right corner motif (scaled from LinkedIn banner) -->
-<!-- Exact LinkedIn motif, scaled and re‑anchored for business card -->
-<g fill="none" stroke="white" stroke-linecap="round"
-   transform="translate(80,0) scale(0.12626)">
+    <!-- Exact LinkedIn motif, rebased + scaled to card top-right -->
+    <g fill="none" stroke="white" stroke-linecap="round"
+       transform="translate(80,0) scale(0.12626) translate(-1584,0)">
 
-  <!-- OUTER ARC -->
-  <path d="
-    M 1504.75 134.2
-    A 155 155 0 0 1 1429 0
-  "
-    stroke-width="1.35" stroke-opacity="0.55"/>
+      <!-- OUTER ARC -->
+      <path d="
+        M 1504.75 134.2
+        A 155 155 0 0 1 1429 0
+      "
+        stroke-width="1.35" stroke-opacity="0.55"/>
 
-  <!-- INNER ARC -->
-  <path d="
-    M 1502.7 81.3
-    A 115 115 0 0 1 1469 0
-  "
-    stroke-width="1.0" stroke-opacity="0.40"/>
+      <!-- INNER ARC -->
+      <path d="
+        M 1502.7 81.3
+        A 115 115 0 0 1 1469 0
+      "
+        stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- RADIAL LINE -->
-  <line x1="1584" y1="0"
-        x2="1488.4" y2="94.2"
-        stroke-width="1.0" stroke-opacity="0.50"/>
+      <!-- RADIAL LINE -->
+      <line x1="1584" y1="0"
+            x2="1488.4" y2="94.2"
+            stroke-width="1.0" stroke-opacity="0.50"/>
 
-  <!-- TICK 1 -->
-  <line x1="1517.6" y1="60.8"
-        x2="1523.2" y2="66.4"
-        stroke-width="0.8" stroke-opacity="0.42"/>
+      <!-- TICK 1 -->
+      <line x1="1517.6" y1="60.8"
+            x2="1523.2" y2="66.4"
+            stroke-width="0.8" stroke-opacity="0.42"/>
 
-  <!-- TICK 2 -->
-  <line x1="1545.1" y1="24.7"
-        x2="1559.3" y2="38.9"
-        stroke-width="0.9" stroke-opacity="0.50"/>
-
-</g>
-
-
+      <!-- TICK 2 -->
+      <line x1="1545.1" y1="24.7"
+            x2="1559.3" y2="38.9"
+            stroke-width="0.9" stroke-opacity="0.50"/>
+    </g>
   </g>
 
-  <!-- ========================================= -->
-  <!-- RIGHT: BACK WITH QR PLACEHOLDER           -->
-  <!-- ========================================= -->
-  <g id="back-qr" transform="translate(80,0)">
+  <!-- ================= BACK ================= -->
+  <g id="back" transform="translate(80,0)">
     <rect width="80" height="50" fill="#FFFFFF"/>
 
-    <!-- Text block -->
     <g fill="#2B4E5A">
       <text x="6" y="12" font-size="4.2" font-weight="500" letter-spacing="0.2">
         Dr. Raphael Heeb
@@ -111,6 +101,5 @@
       </text>
     </g>
   </g>
-
 </svg>
 
