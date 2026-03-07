@@ -28,8 +28,8 @@
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.12)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
-    <!-- CENTER LINE — SOLID, HIGH ALPHA -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.28)"/>
+    <!-- Center line (visible but not dominant) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.17)"/>
   </g>
 
   <!-- Wordmark -->
@@ -52,4 +52,3 @@
   </text>
 
 </svg>
-
