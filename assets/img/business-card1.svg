@@ -65,24 +65,21 @@
   </mask>
 </defs>
 
-
-
   <!-- Center line + grid lines all under the same mask -->
   <g mask="url(#gridFadeMask)" stroke-width="0.25">
-    <!-- Center line (same color as before) -->
+
+    <!-- Center line -->
     <line x1="40" y1="0" x2="40" y2="50"
           stroke="rgba(255,255,255,0.28)"/>
 
-    <!-- Grid lines -->
-    <g stroke="rgba(255,255,255,0.10)">
-      <line x1="10" y1="0" x2="10" y2="50"/>
-      <line x1="20" y1="0" x2="20" y2="50"/>
-      <line x1="30" y1="0" x2="30" y2="50"/>
-      <line x1="40" y1="0" x2="40" y2="50"/>
-      <line x1="50" y1="0" x2="50" y2="50"/>
-      <line x1="60" y1="0" x2="60" y2="50"/>
-      <line x1="70" y1="0" x2="70" y2="50"/>
-    </g>
+    <!-- Grid lines (flattened, no nested <g>) -->
+    <line x1="10" y1="0" x2="10" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.10)"/>
+    <line x1="70" y1="0" x2="70" y2="50" stroke="rgba(255,255,255,0.10)"/>
   </g>
 
   <!-- Wordmark -->
@@ -99,5 +96,4 @@
     to Industrial Scale
   </text>
 </svg>
-
 
