@@ -14,53 +14,57 @@
   <!-- Fade width: 1 mm -->
 
   <defs>
-    <!-- White = visible, black = hidden -->
-    <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
-      <!-- Top region -->
-      <stop offset="0"    stop-color="white" stop-opacity="0.10"/>
-      <stop offset="17.06" stop-color="white" stop-opacity="0.10"/>
+  <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
 
-      <!-- Wordmark fade-out -->
-      <stop offset="17.06" stop-color="white" stop-opacity="0.05"/>
-      <stop offset="18.06" stop-color="black" stop-opacity="0.00"/>
+    <!-- Top region -->
+    <stop offset="0"      stop-color="white" stop-opacity="1"/>
+    <stop offset="17.06"  stop-color="white" stop-opacity="1"/>
 
-      <!-- Wordmark quiet zone -->
-      <stop offset="25.24" stop-color="black" stop-opacity="0.00"/>
+    <!-- Wordmark fade-out -->
+    <stop offset="17.06"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="18.06"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Wordmark fade-in -->
-      <stop offset="26.24" stop-color="white" stop-opacity="0.10"/>
+    <!-- Wordmark quiet zone -->
+    <stop offset="25.24"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Gap region -->
-      <stop offset="36.33" stop-color="white" stop-opacity="0.10"/>
+    <!-- Wordmark fade-in -->
+    <stop offset="26.24"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="26.24"  stop-color="white" stop-opacity="1"/>
 
-      <!-- Upper tagline fade-out -->
-      <stop offset="36.33" stop-color="white" stop-opacity="0.05"/>
-      <stop offset="37.33" stop-color="black" stop-opacity="0.00"/>
+    <!-- Gap region -->
+    <stop offset="36.33"  stop-color="white" stop-opacity="1"/>
 
-      <!-- Upper tagline quiet zone -->
-      <stop offset="41.83" stop-color="black" stop-opacity="0.00"/>
+    <!-- Upper tagline fade-out -->
+    <stop offset="36.33"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="37.33"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Upper tagline fade-in -->
-      <stop offset="42.83" stop-color="white" stop-opacity="0.10"/>
+    <!-- Upper tagline quiet zone -->
+    <stop offset="41.83"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Lower tagline fade-out -->
-      <stop offset="40.93" stop-color="white" stop-opacity="0.05"/>
-      <stop offset="41.93" stop-color="black" stop-opacity="0.00"/>
+    <!-- Upper tagline fade-in -->
+    <stop offset="42.83"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="42.83"  stop-color="white" stop-opacity="1"/>
 
-      <!-- Lower tagline quiet zone -->
-      <stop offset="46.43" stop-color="black" stop-opacity="0.00"/>
+    <!-- Lower tagline fade-out -->
+    <stop offset="40.93"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="41.93"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Lower tagline fade-in -->
-      <stop offset="47.43" stop-color="white" stop-opacity="0.10"/>
+    <!-- Lower tagline quiet zone -->
+    <stop offset="46.43"  stop-color="black" stop-opacity="1"/>
 
-      <!-- Bottom region -->
-      <stop offset="50" stop-color="white" stop-opacity="0.10"/>
-    </linearGradient>
+    <!-- Lower tagline fade-in -->
+    <stop offset="47.43"  stop-color="white" stop-opacity="0.5"/>
+    <stop offset="47.43"  stop-color="white" stop-opacity="1"/>
 
-    <mask id="gridFadeMask">
-      <rect width="80" height="50" fill="url(#fadeMask)"/>
-    </mask>
-  </defs>
+    <!-- Bottom region -->
+    <stop offset="50"     stop-color="white" stop-opacity="1"/>
+  </linearGradient>
+
+  <mask id="gridFadeMask">
+    <rect width="80" height="50" fill="url(#fadeMask)"/>
+  </mask>
+</defs>
+
 
   <!-- Center line + grid lines all under the same mask -->
   <g mask="url(#gridFadeMask)" stroke-width="0.25">
