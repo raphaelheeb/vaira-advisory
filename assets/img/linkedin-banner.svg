@@ -61,11 +61,6 @@
         x2="1559.0" y2="37.8"
         stroke-width="0.85" stroke-opacity="0.38"/>
 
-  <!-- TICK 3 (inner micro‑tick, shortest) -->
-  <line x1="1564.5" y1="12.3"
-        x2="1570.8" y2="18.6"
-        stroke-width="0.70" stroke-opacity="0.44"/>
-
 </g>
 
 
