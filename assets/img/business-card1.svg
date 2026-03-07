@@ -14,39 +14,54 @@
   <!-- Wordmark quiet zone: 17.06–25.24 mm -->
   <!-- Upper tagline quiet zone: 36.33–41.83 mm -->
   <!-- Lower tagline quiet zone: 40.93–46.43 mm -->
+  <!-- Fade width: 1.0 mm -->
 
   <!-- ========================= -->
-  <!-- Fade Masks                -->
+  <!-- Fade Mask (mm-accurate)   -->
   <!-- ========================= -->
   <defs>
-    <!-- Generic vertical fade mask template -->
     <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
       <!-- Top region -->
-      <stop offset="0%" stop-opacity="0.10"/>
-      <stop offset="34.12%" stop-opacity="0.10"/> <!-- 17.06mm / 50mm -->
+      <stop offset="0" stop-opacity="0.10"/>
+      <stop offset="17.06" stop-opacity="0.10"/>
+
+      <!-- Wordmark fade-out -->
+      <stop offset="17.06" stop-opacity="0.00"/>
+      <stop offset="18.06" stop-opacity="0.00"/>
 
       <!-- Wordmark quiet zone -->
-      <stop offset="34.12%" stop-opacity="0.00"/>
-      <stop offset="50.48%" stop-opacity="0.00"/> <!-- 25.24mm / 50mm -->
+      <stop offset="25.24" stop-opacity="0.00"/>
+
+      <!-- Wordmark fade-in -->
+      <stop offset="26.24" stop-opacity="0.10"/>
 
       <!-- Gap region -->
-      <stop offset="50.48%" stop-opacity="0.10"/>
-      <stop offset="72.66%" stop-opacity="0.10"/> <!-- 36.33mm / 50mm -->
+      <stop offset="36.33" stop-opacity="0.10"/>
+
+      <!-- Upper tagline fade-out -->
+      <stop offset="36.33" stop-opacity="0.00"/>
+      <stop offset="37.33" stop-opacity="0.00"/>
 
       <!-- Upper tagline quiet zone -->
-      <stop offset="72.66%" stop-opacity="0.00"/>
-      <stop offset="83.66%" stop-opacity="0.00"/> <!-- 41.83mm / 50mm -->
+      <stop offset="41.83" stop-opacity="0.00"/>
+
+      <!-- Upper tagline fade-in -->
+      <stop offset="42.83" stop-opacity="0.10"/>
+
+      <!-- Lower tagline fade-out -->
+      <stop offset="40.93" stop-opacity="0.00"/>
+      <stop offset="41.93" stop-opacity="0.00"/>
 
       <!-- Lower tagline quiet zone -->
-      <stop offset="81.86%" stop-opacity="0.00"/> <!-- 40.93mm / 50mm -->
-      <stop offset="92.86%" stop-opacity="0.00"/> <!-- 46.43mm / 50mm -->
+      <stop offset="46.43" stop-opacity="0.00"/>
+
+      <!-- Lower tagline fade-in -->
+      <stop offset="47.43" stop-opacity="0.10"/>
 
       <!-- Bottom region -->
-      <stop offset="92.86%" stop-opacity="0.10"/>
-      <stop offset="100%" stop-opacity="0.10"/>
+      <stop offset="50" stop-opacity="0.10"/>
     </linearGradient>
 
-    <!-- Mask object -->
     <mask id="gridFadeMask">
       <rect width="80" height="50" fill="url(#fadeMask)"/>
     </mask>
@@ -91,3 +106,4 @@
   </text>
 
 </svg>
+
