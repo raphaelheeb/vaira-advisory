@@ -7,13 +7,13 @@
 
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Vertical fade using RGBA color interpolation -->
+  <!-- Vertical fade for non-center lines -->
   <defs>
     <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
       <stop offset="35%" stop-color="rgba(255,255,255,0.14)"/>
       <stop offset="65%" stop-color="rgba(255,255,255,0.14)"/>
-      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.08)"/>
     </linearGradient>
   </defs>
 
@@ -21,15 +21,15 @@
   <g stroke-width="0.25">
 
     <!-- Outer lines -->
-    <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.06)"/>
-    <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.06)"/>
+    <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.08)"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.08)"/>
 
     <!-- Mid lines -->
-    <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.09)"/>
-    <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.09)"/>
+    <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.12)"/>
+    <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
-    <!-- Center line (solid, no gradient, fully visible) -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.18)"/>
+    <!-- CENTER LINE — SOLID, HIGH ALPHA -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.28)"/>
   </g>
 
   <!-- Wordmark -->
@@ -52,3 +52,4 @@
   </text>
 
 </svg>
+
