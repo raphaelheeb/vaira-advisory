@@ -7,7 +7,7 @@
 
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Stronger vertical fade using RGBA color interpolation -->
+  <!-- Vertical fade using RGBA color interpolation -->
   <defs>
     <linearGradient id="vfade" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
@@ -17,8 +17,9 @@
     </linearGradient>
   </defs>
 
-  <!-- Full-width grid lines with horizontal gradient via color alpha -->
+  <!-- Full-width grid lines -->
   <g stroke-width="0.25">
+
     <!-- Outer lines -->
     <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.06)"/>
     <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.06)"/>
@@ -27,8 +28,8 @@
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.09)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.09)"/>
 
-    <!-- Center line with vertical gradient -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)"/>
+    <!-- Center line (solid, no gradient, fully visible) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.18)"/>
   </g>
 
   <!-- Wordmark -->
