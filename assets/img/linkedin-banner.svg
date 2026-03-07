@@ -19,40 +19,38 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
   <!-- Rotated + horizontally flipped motif -->
-  <g transform="
-        translate(1280,16)
-        scale(0.50)
-        rotate(-90 210 210)
-        translate(420,0) scale(-1,1)
-      "
-     fill="none" clip-path="url(#topRight)">
+ <!-- Rotated + horizontally flipped motif -->
+<g transform="
+      rotate(-90 210 210)
+      scale(-1,1) translate(-420,0)
+      translate(1280,16)
+      scale(0.50)
+    "
+   fill="none" clip-path="url(#topRight)">
 
-    <!-- OUTER ARC (60° sweep) -->
-    <path d="M 210 20 A 190 190 0 0 1 374.64 115"
-          stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
+  <!-- OUTER ARC (60° sweep) -->
+  <path d="M 210 20 A 190 190 0 0 1 374.64 115"
+        stroke="white" stroke-width="1.4" stroke-opacity="0.50"/>
 
-    <!-- INNER ARC (45° sweep) -->
-    <path d="M 210 60 A 150 150 0 0 1 316.06 103.94"
-          stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
+  <!-- INNER ARC (45° sweep) -->
+  <path d="M 210 60 A 150 150 0 0 1 316.06 103.94"
+        stroke="white" stroke-width="1.0" stroke-opacity="0.35"/>
 
-    <!-- RADIAL LINE (now pointing down-left after transforms) -->
-    <line x1="210" y1="210" x2="316.06" y2="103.94"
-          stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
+  <!-- RADIAL LINE (correct final orientation) -->
+  <line x1="210" y1="210" x2="316.06" y2="103.94"
+        stroke="white" stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <!-- TICKS (recomputed AFTER rotation + flip) -->
+  <!-- INNER TICK (perpendicular, centered) -->
+  <line x1="237.6" y1="157.0"
+        x2="263.0" y2="182.4"
+        stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
 
-  <!-- INNER TICK -->
-<line x1="237.6" y1="182.4"
-      x2="263.0" y2="157.0"
-      stroke="white" stroke-width="0.9" stroke-opacity="0.35"/>
+  <!-- OUTER TICK (perpendicular, centered) -->
+  <line x1="282.1" y1="120.9"
+        x2="299.1" y2="137.9"
+        stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
 
-<!-- OUTER TICK -->
-<line x1="282.1" y1="137.9"
-      x2="299.1" y2="120.9"
-      stroke="white" stroke-width="0.8" stroke-opacity="0.28"/>
-
-
-  </g>
+</g>
 
   <!-- Tagline -->
   <g font-family="Public Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
