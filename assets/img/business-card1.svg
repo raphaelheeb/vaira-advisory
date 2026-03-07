@@ -44,7 +44,7 @@
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.12)"/>
 
     <!-- Center line (base opacity 0.28, gradient applied) -->
-    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)" stroke-opacity="0.38"/>
+    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#vfade)" stroke-opacity="0.18"/>
   </g>
 
   <!-- Wordmark -->
