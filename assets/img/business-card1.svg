@@ -38,43 +38,41 @@
     </text>
 
   <!-- Top‑right corner motif (scaled from LinkedIn banner) -->
-<g fill="none" stroke="white" stroke-linecap="round" transform="translate(80,0)">
+<!-- Exact LinkedIn motif, scaled and re‑anchored for business card -->
+<g fill="none" stroke="white" stroke-linecap="round"
+   transform="translate(80,0) scale(0.12626)">
 
-  <!-- OUTER ARC: 120° → 180°, scaled R = 22 -->
+  <!-- OUTER ARC -->
   <path d="
-    M -1.9 4.7
-    A 22 22 0 0 1 -22 0
+    M 1504.75 134.2
+    A 155 155 0 0 1 1429 0
   "
-    stroke-width="0.55" stroke-opacity="0.55"/>
+    stroke-width="1.35" stroke-opacity="0.55"/>
 
-  <!-- INNER ARC: 135° → 180°, scaled R = 16 -->
+  <!-- INNER ARC -->
   <path d="
-    M -1.4 3.3
-    A 16 16 0 0 1 -16 0
+    M 1502.7 81.3
+    A 115 115 0 0 1 1469 0
   "
-    stroke-width="0.40" stroke-opacity="0.40"/>
+    stroke-width="1.0" stroke-opacity="0.40"/>
 
-  <!-- RADIAL LINE (scaled) -->
-  <line x1="0" y1="0"
-        x2="-6.5" y2="6.5"
-        stroke-width="0.40" stroke-opacity="0.50"/>
+  <!-- RADIAL LINE -->
+  <line x1="1584" y1="0"
+        x2="1488.4" y2="94.2"
+        stroke-width="1.0" stroke-opacity="0.50"/>
 
-  <!-- TICK 1 (scaled outward) -->
-  <line x1="-4.5" y1="2.0"
-        x2="-5.5" y2="3.0"
-        stroke-width="0.32" stroke-opacity="0.42"/>
+  <!-- TICK 1 -->
+  <line x1="1517.6" y1="60.8"
+        x2="1523.2" y2="66.4"
+        stroke-width="0.8" stroke-opacity="0.42"/>
 
-  <!-- TICK 2 (scaled outward) -->
-  <line x1="-7.0" y1="0.8"
-        x2="-9.0" y2="2.8"
-        stroke-width="0.36" stroke-opacity="0.50"/>
-
-  <!-- TICK 3 (scaled outward) -->
-  <line x1="-9.5" y1="0.2"
-        x2="-11.0" y2="1.7"
-        stroke-width="0.32" stroke-opacity="0.42"/>
+  <!-- TICK 2 -->
+  <line x1="1545.1" y1="24.7"
+        x2="1559.3" y2="38.9"
+        stroke-width="0.9" stroke-opacity="0.50"/>
 
 </g>
+
 
   </g>
 
