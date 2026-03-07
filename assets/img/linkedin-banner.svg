@@ -47,9 +47,7 @@
   <line x1="1584" y1="0"
         x2="1488.4" y2="94.2"
         stroke-width="1.15" stroke-opacity="0.48"/>
-  <line x1="1510" y1="70"
-        x2="1488.4" y2="94.2"
-        stroke-width="0.7" stroke-opacity="0.40"/>
+
 
   <!-- TICK 1 (outer, longest) -->
   <line x1="1523.0" y1="54.8"
