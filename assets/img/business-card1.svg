@@ -13,10 +13,10 @@
   <!-- Lower tagline: 40.93–46.43 -->
   <!-- Fade width: 1 mm -->
 
-  <defs>
+ <defs>
   <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
 
-    <!-- Top region -->
+    <!-- Visible region -->
     <stop offset="0"      stop-color="white" stop-opacity="1"/>
     <stop offset="17.06"  stop-color="white" stop-opacity="1"/>
 
@@ -64,6 +64,7 @@
     <rect width="80" height="50" fill="url(#fadeMask)"/>
   </mask>
 </defs>
+
 
 
   <!-- Center line + grid lines all under the same mask -->
