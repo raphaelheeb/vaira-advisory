@@ -1,105 +1,63 @@
-<svg width="160mm" height="50mm" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+<svg width="80mm" height="50mm" viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
       font-family: -apple-system, system-ui, "Public Sans", sans-serif;
     }
   </style>
 
-  <!-- ================= FRONT ================= -->
-  <g id="front">
-    <rect width="80" height="50" fill="#2B4E5A"/>
+  <!-- Background -->
+  <rect width="80" height="50" fill="#2B4E5A"/>
 
-    <!-- VAIRA badge -->
-    <g transform="translate(40,18)">
-      <g transform="translate(-15,-15) scale(0.145)">
-        <path
-          d="M 20 5 H 190 A 15 15 0 0 1 205 20 V 190 A 15 15 0 0 1 190 205 H 20 A 15 15 0 0 1 5 190 V 20 A 15 15 0 0 1 20 5 Z"
-          fill="#2B4E5A"
-          stroke="#FFFFFF"
-          stroke-width="6"
+  <!-- VAIRA badge (raised ~2.5mm) -->
+  <g transform="translate(40,15.5)">
+    <g transform="translate(-15,-15) scale(0.145)">
+      <path
+        d="M 20 5 H 190 A 15 15 0 0 1 205 20 V 190 A 15 15 0 0 1 190 205 H 20 A 15 15 0 0 1 5 190 V 20 A 15 15 0 0 1 20 5 Z"
+        fill="#2B4E5A"
+        stroke="#FFFFFF"
+        stroke-width="6"
+      />
+      <g transform="translate(7,16) scale(1.01)">
+        <path fill="#FFFFFF"
+          d="M 26.957886,97.719615 11.306715,64.411182 h 5.561484 L 30.331245,92.882294 43.794292,64.411182 h 5.561484 L 33.734995,97.719615 Z m 21.850224,0 15.894295,-33.308433 h 6.351641 L 86.948342,97.719615 H 81.204514 L 76.889046,88.5978 h -18.02164 l -4.34586,9.121815 z M 60.356547,84.681874 H 75.339124 L 67.863031,68.580495 Z M 90.746442,97.719615 V 64.411182 h 5.622266 v 33.308433 z m 15.815008,0 V 64.411182 h 17.01875 q 4.74093,0 7.93195,1.105674 3.19101,1.08264 4.77133,3.132744 1.58031,2.027068 1.58031,4.860358 0,2.718116 -1.27641,4.514836 -1.24601,1.79672 -3.19102,2.902395 -1.94499,1.082638 -4.04195,1.681545 l 8.63094,15.110881 h -5.95656 l -8.02313,-14.350729 h -11.82195 v 14.350729 z m 5.62226,-17.875066 h 9.57305 q 4.95367,0 7.65844,-1.520302 2.70476,-1.543336 2.70476,-4.560905 0,-2.948465 -2.43125,-4.399662 -2.40086,-1.474232 -6.59477,-1.474232 h -10.91023 z m 30.82793,17.875066 15.8943,-33.308433 h 6.35164 l 15.8943,33.308433 h -5.74383 L 171.09258,88.5978 h -18.02164 l -4.34586,9.121815 z m 11.54844,-13.037741 h 14.98258 l -7.4761,-16.101379 z"
         />
-        <g transform="translate(7,16) scale(1.01)">
-          <path fill="#FFFFFF"
-            d="M 26.957886,97.719615 11.306715,64.411182 h 5.561484 L 30.331245,92.882294 43.794292,64.411182 h 5.561484 L 33.734995,97.719615 Z m 21.850224,0 15.894295,-33.308433 h 6.351641 L 86.948342,97.719615 H 81.204514 L 76.889046,88.5978 h -18.02164 l -4.34586,9.121815 z M 60.356547,84.681874 H 75.339124 L 67.863031,68.580495 Z M 90.746442,97.719615 V 64.411182 h 5.622266 v 33.308433 z m 15.815008,0 V 64.411182 h 17.01875 q 4.74093,0 7.93195,1.105674 3.19101,1.08264 4.77133,3.132744 1.58031,2.027068 1.58031,4.860358 0,2.718116 -1.27641,4.514836 -1.24601,1.79672 -3.19102,2.902395 -1.94499,1.082638 -4.04195,1.681545 l 8.63094,15.110881 h -5.95656 l -8.02313,-14.350729 h -11.82195 v 14.350729 z m 5.62226,-17.875066 h 9.57305 q 4.95367,0 7.65844,-1.520302 2.70476,-1.543336 2.70476,-4.560905 0,-2.948465 -2.43125,-4.399662 -2.40086,-1.474232 -6.59477,-1.474232 h -10.91023 z m 30.82793,17.875066 15.8943,-33.308433 h 6.35164 l 15.8943,33.308433 h -5.74383 L 171.09258,88.5978 h -18.02164 l -4.34586,9.121815 z m 11.54844,-13.037741 h 14.98258 l -7.4761,-16.101379 z"
-          />
-        </g>
       </g>
     </g>
-
-    <!-- Tagline -->
-    <text x="40" y="40" font-size="3.0" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">
-      Technology from Early Concept
-    </text>
-    <text x="40" y="44" font-size="3.0" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">
-      to Industrial Scale
-    </text>
-
-    <!-- Exact LinkedIn motif, rebased + scaled to card top-right -->
-    <g fill="none" stroke="white" stroke-linecap="round"
-       transform="translate(80,0) scale(0.12626) translate(-1584,0)">
-
-      <!-- OUTER ARC -->
-      <path d="
-        M 1504.75 134.2
-        A 155 155 0 0 1 1429 0
-      "
-        stroke-width="1.35" stroke-opacity="0.55"/>
-
-      <!-- INNER ARC -->
-      <path d="
-        M 1502.7 81.3
-        A 115 115 0 0 1 1469 0
-      "
-        stroke-width="1.0" stroke-opacity="0.40"/>
-
-      <!-- RADIAL LINE -->
-      <line x1="1584" y1="0"
-            x2="1488.4" y2="94.2"
-            stroke-width="1.0" stroke-opacity="0.50"/>
-
-      <!-- TICK 1 -->
-      <line x1="1517.6" y1="60.8"
-            x2="1523.2" y2="66.4"
-            stroke-width="0.8" stroke-opacity="0.42"/>
-
-      <!-- TICK 2 -->
-      <line x1="1545.1" y1="24.7"
-            x2="1559.3" y2="38.9"
-            stroke-width="0.9" stroke-opacity="0.50"/>
-    </g>
   </g>
 
-  <!-- ================= BACK ================= -->
-  <g id="back" transform="translate(80,0)">
-    <rect width="80" height="50" fill="#FFFFFF"/>
+  <!-- Tagline (improved line spacing) -->
+  <text x="40" y="40" font-size="3.0" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">
+    Technology from Early Concept
+  </text>
+  <text x="40" y="44.8" font-size="3.0" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">
+    to Industrial Scale
+  </text>
 
-    <g fill="#2B4E5A">
-      <text x="6" y="12" font-size="4.2" font-weight="500" letter-spacing="0.2">
-        Dr. Raphael Heeb
-      </text>
-      <text x="6" y="18" font-size="3.4">
-        Founder &amp; Managing Partner
-      </text>
+  <!-- Exact LinkedIn motif, rebased + scaled + softened -->
+  <g fill="none" stroke="white" stroke-linecap="round"
+     transform="translate(80,0) scale(0.12626) translate(-1584,0)">
 
-      <text x="6" y="27" font-size="3.0">
-        +41 76 463 06 83
-      </text>
-      <text x="6" y="32" font-size="3.0">
-        raphael.heeb@vaira.ch
-      </text>
-      <text x="6" y="37" font-size="3.0" letter-spacing="0.3">
-        www.vaira.ch
-      </text>
-    </g>
+    <!-- OUTER ARC -->
+    <path d="M 1504.75 134.2 A 155 155 0 0 1 1429 0"
+          stroke-width="1.35" stroke-opacity="0.38"/>
 
-    <!-- QR placeholder (replace with rounded QR geometry) -->
-    <g id="qr-placeholder" transform="translate(60,30)">
-      <rect x="0" y="0" width="14" height="14" rx="2" ry="2"
-            fill="#2B4E5A" fill-opacity="0.08" stroke="#2B4E5A" stroke-width="0.3"/>
-      <text x="7" y="8" font-size="3" text-anchor="middle" fill="#2B4E5A">
-        QR
-      </text>
-    </g>
+    <!-- INNER ARC -->
+    <path d="M 1502.7 81.3 A 115 115 0 0 1 1469 0"
+          stroke-width="1.0" stroke-opacity="0.28"/>
+
+    <!-- RADIAL LINE -->
+    <line x1="1584" y1="0" x2="1488.4" y2="94.2"
+          stroke-width="1.0" stroke-opacity="0.34"/>
+
+    <!-- TICK 1 -->
+    <line x1="1517.6" y1="60.8" x2="1523.2" y2="66.4"
+          stroke-width="0.8" stroke-opacity="0.30"/>
+
+    <!-- TICK 2 -->
+    <line x1="1545.1" y1="24.7" x2="1559.3" y2="38.9"
+          stroke-width="0.9" stroke-opacity="0.34"/>
   </g>
+
 </svg>
+
 
