@@ -1185,6 +1185,14 @@ nav ul.nav {
   }
 }
 
+@media (max-width: 768px) {
+  .contact-methods-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 24px; /* matches your mobile rhythm */
+  }
+}
+
 /* =========================================================
    VAIRA PRIVACY PAGE — improved text rhythm
    ========================================================= */
