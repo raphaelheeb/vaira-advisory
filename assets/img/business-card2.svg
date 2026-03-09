@@ -9,7 +9,7 @@
   <!-- Background -->
   <rect width="80" height="50" fill="#FFFFFF"/>
 
-  <!-- ZONE 1: NAME + TITLE -->
+  <!-- NAME + TITLE -->
   <text x="21" y="16" font-size="4.2" font-weight="500" letter-spacing="0.2">
     Dr. Raphael Heeb
   </text>
@@ -18,21 +18,19 @@
     Founder &amp; Managing Partner
   </text>
 
-  <!-- ZONE 2: CONTACT -->
+  <!-- CONTACT BLOCK -->
   <text x="21" y="32" font-size="3.0">+41 76 463 06 83</text>
   <text x="21" y="36" font-size="3.0">raphael.heeb@vaira.ch</text>
   <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
 
-  <!-- ZONE 3: QR CODE (BOTTOM-RIGHT, 14×14 mm) -->
-  <!-- This group scales your QR SVG automatically -->
-  <g id="qr" transform="translate(45, 28)">
-    <!-- Placeholder frame (delete if you want) -->
+  <!-- QR CODE (BOTTOM-RIGHT, SAFE POSITION) -->
+  <g id="qr" transform="translate(45, 34)">
+    <!-- Placeholder frame -->
     <rect width="14" height="14" fill="#FFFFFF" stroke="#2B4E5A" stroke-width="0.6" rx="2" ry="2"/>
 
-    <!-- Paste your QR SVG here.  
-         It will be auto-scaled to 14×14 mm. -->
-    <g transform="scale(0.014)">
-      <!-- YOUR QR SVG CONTENT GOES HERE -->
+    <!-- Paste your QR SVG inside this group -->
+    <g id="qr-content" transform="scale(0.014)">
+      <!-- YOUR QR SVG GOES HERE -->
     </g>
   </g>
 
