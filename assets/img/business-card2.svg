@@ -24,19 +24,19 @@
   <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
 	
 <!-- QR CODE: right-aligned, vertically centered on contact block -->
-<g id="qr" transform="translate(60, 29)">
+<g id="qr" transform="translate(59, 27)">
   
-  <!-- 14×14 mm frame with rounded corners -->
-  <rect width="14" height="14"
+  <!-- 15×15 mm frame with rounded corners -->
+  <rect width="15" height="15"
         fill="#FFFFFF"
         stroke="#2B4E5A"
         stroke-width="0.6"
-        rx="1.2" ry="1.2"/>
+        rx="1.6" ry="1.6"/>
 
-  <!-- Center the 12×12 mm QR inside the 14×14 frame -->
-  <g transform="translate(1, 1)">
-    <!-- Scale 370×370 QR to 12 mm -->
-    <g id="qr-content" transform="scale(0.0324)" fill="#2B4E5A">
+  <!-- Center the 11×11 mm QR inside the 15×15 frame -->
+  <g transform="translate(2, 2)">
+    <!-- Scale 370×370 QR to 11 mm -->
+    <g id="qr-content" transform="scale(0.0297)" fill="#2B4E5A">
    
 		<!-- PASTE ONLY THE INNER CONTENT OF YOUR QR SVG HERE -->
 	  
