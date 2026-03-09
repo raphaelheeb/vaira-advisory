@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: https://www.vaira-advisory.com/sitemap.xml
+Allow: /
+
+Sitemap: https://vaira.ch/sitemap.xml
