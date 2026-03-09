@@ -962,31 +962,35 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
-  /* Override inline flexbox */
+  /* Override ALL inline flexbox behavior */
   .industries-why-inner {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important; /* THIS is the key */
+    gap: 32px !important;
   }
 
-  /* Reset the forced widths */
+  /* Reset forced widths */
   .industries-why-text,
   .industries-why-illustration {
-    min-width: 0 !important;
     width: 100% !important;
+    min-width: 0 !important;
     flex: none !important;
   }
 
-  /* Make the illustration behave like a block */
+  /* Make the illustration behave like a centered block */
   .industries-why-illustration {
-    margin: 32px auto !important;
-    max-width: 280px !important; /* elegant mobile size */
+    max-width: 280px !important;
+    margin: 0 auto !important;
   }
 
   .industries-why-illustration svg {
     width: 100% !important;
     height: auto !important;
-    display: block;
+    display: block !important;
   }
 }
+
 
 @media (max-width: 600px) {
   h2 {
