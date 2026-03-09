@@ -953,18 +953,14 @@ nav ul.nav {
 
 @media (max-width: 600px) {
   .why-grid {
-    grid-template-columns: 1fr !important;
-    gap: 28px;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 28px !important;
   }
 
   .feature-block {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 20px;
-  }
-
-  .feature-block-icon {
-    margin-bottom: 12px;
+    width: 100% !important;
   }
 }
 
