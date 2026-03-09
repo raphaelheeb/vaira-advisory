@@ -40,7 +40,7 @@
    
 		<!-- PASTE ONLY THE INNER CONTENT OF YOUR QR SVG HERE -->
 	  
-		<g id="elements" fill="#000000" stroke="none">
+		<g id="elements" fill="#2B4E5A" stroke="none">
 		<rect x="0" y="0" width="10" height="10" />
 		<rect x="10" y="0" width="10" height="10" />
 		<rect x="20" y="0" width="10" height="10" />
