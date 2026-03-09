@@ -382,7 +382,7 @@ p {
 
   /* Increase vertical spacing for Core Capabilities */
   #what-we-do .split-body > * {
-    margin-bottom: 1.8rem; /* adjust 1.2–1.8rem to taste */
+    margin-bottom: 1.5rem; /* adjust 1.2–1.8rem to taste */
   }
 
   #what-we-do .split-body > *:last-child {
@@ -1417,6 +1417,14 @@ nav ul.nav {
   opacity: 0.25;
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .usecase-item::before {
+    display: block;
+    margin-bottom: 1.25rem; /* adjust 1.0–1.75rem to taste */
+  }
+}
+
 
 /* ---------------------------------------------
    SPLIT LAYOUT ALIGNMENT
