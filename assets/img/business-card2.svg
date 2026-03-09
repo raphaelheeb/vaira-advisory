@@ -23,15 +23,19 @@
   <text x="21" y="36" font-size="3.0">raphael.heeb@vaira.ch</text>
   <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
 
-  <!-- QR CODE: right-aligned, vertically centered on contact block -->
- <!-- QR CODE: right-aligned, vertically centered on contact block -->
+<!-- QR CODE: right-aligned, vertically centered on contact block -->
 <g id="qr" transform="translate(60, 29)">
-  <!-- Square frame (recommended for QR clarity) -->
+  
+  <!-- Frame stays 14×14 mm -->
   <rect width="14" height="14" fill="#FFFFFF" stroke="#2B4E5A" stroke-width="0.6"/>
 
- 
-  <!-- Correct scale for a 370x370 QR: 14/370 ≈ 0.038 -->
-  <g id="qr-content" transform="scale(0.038)">
+  <!-- Center the 12×12 mm QR inside the 14×14 frame -->
+  <!-- Offset = (14 - 12) / 2 = 1 mm -->
+  <g transform="translate(1, 1)">
+    <!-- Correct scale for a 370×370 QR to 12 mm: 12/370 ≈ 0.0324 -->
+    <g id="qr-content" transform="scale(0.0324)">
+		
+      <!-- PASTE ONLY THE INNER CONTENT OF YOUR QR SVG HERE -->
 	  
 		<g id="elements" fill="#000000" stroke="none">
 		<rect x="0" y="0" width="10" height="10" />
