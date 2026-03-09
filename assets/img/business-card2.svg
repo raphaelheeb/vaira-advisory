@@ -1,25 +1,24 @@
 <svg width="80mm" height="50mm" viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    text {
-      font-family: -apple-system, system-ui, "Public Sans", sans-serif;
-    }
-  </style>
 
   <!-- Background -->
-  <rect width="80" height="50" fill="#FFFFFF"/>
+  <rect width="80" height="50" fill="#ffffff"/>
 
-  <!-- 1) NAME + TITLE ZONE (IDENTITY) -->
+  <!-- ZONE 1: NAME + TITLE -->
   <!-- Left column, upper band -->
-  <rect x="21" y="10" width="34" height="14" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
-  <text x="22" y="15" font-size="3" fill="#2B4E5A">1. Name + Title</text>
+  <rect x="21" y="10" width="34" height="14"
+        fill="none" stroke="#2B4E5A" stroke-width="0.4"/>
+  <text x="22" y="18" font-size="3" fill="#2B4E5A">ZONE 1</text>
 
-  <!-- 2) CONTACT DETAILS ZONE -->
+  <!-- ZONE 2: CONTACT BLOCK -->
   <!-- Left column, lower band -->
-  <rect x="21" y="28" width="34" height="16" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
-  <text x="22" y="33" font-size="3" fill="#2B4E5A">2. Contact block</text>
+  <rect x="21" y="28" width="34" height="14"
+        fill="none" stroke="#2B4E5A" stroke-width="0.4"/>
+  <text x="22" y="36" font-size="3" fill="#2B4E5A">ZONE 2</text>
 
-  <!-- 3) QR CODE ZONE -->
-  <!-- Right column, vertically centered between identity and contact -->
-  <rect x="45" y="16" width="14" height="14" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
-  <text x="52" y="14" font-size="3" fill="#2B4E5A" text-anchor="middle">3. QR</text>
+  <!-- ZONE 3: QR CODE -->
+  <!-- Right column, vertically centered between Zone 1 and Zone 2 -->
+  <rect x="45" y="16" width="14" height="14"
+        fill="none" stroke="#2B4E5A" stroke-width="0.4"/>
+  <text x="52" y="14" font-size="3" fill="#2B4E5A" text-anchor="middle">ZONE 3</text>
+
 </svg>
