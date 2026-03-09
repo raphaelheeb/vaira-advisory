@@ -382,7 +382,7 @@ p {
 
   /* Increase vertical spacing for Core Capabilities */
   #what-we-do .split-body > * {
-    margin-bottom: 1.4rem; /* adjust 1.2–1.8rem to taste */
+    margin-bottom: 1.8rem; /* adjust 1.2–1.8rem to taste */
   }
 
   #what-we-do .split-body > *:last-child {
