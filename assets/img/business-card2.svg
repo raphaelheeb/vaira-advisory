@@ -30,7 +30,6 @@
 	  
  
     <!-- Correct scale for a 370x370 QR: 14/370 = 0.0378378 -->
-    <g id="qr-content" transform="scale(0.038)">
 
 		<g id="elements" fill="#000000" stroke="none">
 		<rect x="0" y="0" width="10" height="10" />
