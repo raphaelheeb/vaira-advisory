@@ -5,94 +5,55 @@
     }
   </style>
 
+  <!-- Background -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Quiet zones (mm) -->
-  <!-- Wordmark: 17.06–25.24 -->
-  <!-- Upper tagline: 36.33–41.83 -->
-  <!-- Lower tagline: 40.93–46.43 -->
-  <!-- Fade width: 1 mm -->
-
- <defs>
-  <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
-
-    <!-- Visible region -->
-    <stop offset="0"      stop-color="white" stop-opacity="1"/>
-    <stop offset="17.06"  stop-color="white" stop-opacity="1"/>
-
-    <!-- Wordmark fade-out -->
-    <stop offset="17.06"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="18.06"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Wordmark quiet zone -->
-    <stop offset="25.24"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Wordmark fade-in -->
-    <stop offset="26.24"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="26.24"  stop-color="white" stop-opacity="1"/>
-
-    <!-- Gap region -->
-    <stop offset="36.33"  stop-color="white" stop-opacity="1"/>
-
-    <!-- Upper tagline fade-out -->
-    <stop offset="36.33"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="37.33"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Upper tagline quiet zone -->
-    <stop offset="41.83"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Upper tagline fade-in -->
-    <stop offset="42.83"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="42.83"  stop-color="white" stop-opacity="1"/>
-
-    <!-- Lower tagline fade-out -->
-    <stop offset="40.93"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="41.93"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Lower tagline quiet zone -->
-    <stop offset="46.43"  stop-color="black" stop-opacity="1"/>
-
-    <!-- Lower tagline fade-in -->
-    <stop offset="47.43"  stop-color="white" stop-opacity="0.5"/>
-    <stop offset="47.43"  stop-color="white" stop-opacity="1"/>
-
-    <!-- Bottom region -->
-    <stop offset="50"     stop-color="white" stop-opacity="1"/>
-  </linearGradient>
-
-  <mask id="gridFadeMask">
-    <rect width="80" height="50" fill="url(#fadeMask)"/>
-  </mask>
-</defs>
-
-  <!-- Center line + grid lines all under the same mask -->
-  <g mask="url(#gridFadeMask)" stroke-width="0.25">
-
-    <!-- Center line -->
-    <line x1="40" y1="0" x2="40" y2="50"
-          stroke="rgba(255,255,255,0.28)"/>
-
-    <!-- Grid lines (flattened, no nested <g>) -->
+  <!-- ========================= -->
+  <!-- Grid Lines (full height)  -->
+  <!-- ========================= -->
+  <g stroke-width="0.25">
+    <!-- Regular grid lines -->
     <line x1="10" y1="0" x2="10" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.10)"/>
-    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="50" y1="0" x2="50" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="60" y1="0" x2="60" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="70" y1="0" x2="70" y2="50" stroke="rgba(255,255,255,0.10)"/>
+
+    <!-- Center line (stronger) -->
+    <line x1="40" y1="0" x2="40" y2="50" stroke="rgba(255,255,255,0.28)"/>
   </g>
 
-  <!-- Wordmark -->
+  <!-- ========================= -->
+  <!-- Quiet Zone Rectangles     -->
+  <!-- (sit IN FRONT of grid)    -->
+  <!-- ========================= -->
+
+  <!-- Wordmark quiet zone: 17.06–25.24 -->
+  <rect x="0" y="17.06" width="80" height="8.18" fill="#2B4E5A"/>
+
+  <!-- Upper tagline quiet zone: 36.33–41.83 -->
+  <rect x="0" y="36.33" width="80" height="5.50" fill="#2B4E5A"/>
+
+  <!-- Lower tagline quiet zone: 40.93–46.43 -->
+  <rect x="0" y="40.93" width="80" height="5.50" fill="#2B4E5A"/>
+
+  <!-- ========================= -->
+  <!-- Wordmark                  -->
+  <!-- ========================= -->
   <path fill="#FFFFFF"
         transform="translate(40,23) scale(0.188) translate(-85,-80)"
         d="M 26.957886,97.719615 11.306715,64.411182 h 5.561484 L 30.331245,92.882294 43.794292,64.411182 h 5.561484 L 33.734995,97.719615 Z m 21.850224,0 15.894295,-33.308433 h 6.351641 L 86.948342,97.719615 H 81.204514 L 76.889046,88.5978 h -18.02164 l -4.34586,9.121815 z M 60.356547,84.681874 H 75.339124 L 67.863031,68.580495 Z M 90.746442,97.719615 V 64.411182 h 5.622266 v 33.308433 z m 15.815008,0 V 64.411182 h 17.01875 q 4.74093,0 7.93195,1.105674 3.19101,1.08264 4.77133,3.132744 1.58031,2.027068 1.58031,4.860358 0,2.718116 -1.27641,4.514836 -1.24601,1.79672 -3.19102,2.902395 -1.94499,1.082638 -4.04195,1.681545 l 8.63094,15.110881 h -5.95656 l -8.02313,-14.350729 h -11.82195 v 14.350729 z m 5.62226,-17.875066 h 9.57305 q 4.95367,0 7.65844,-1.520302 2.70476,-1.543336 2.70476,-4.560905 0,-2.948465 -2.43125,-4.399662 -2.40086,-1.474232 -6.59477,-1.474232 h -10.91023 z m 30.82793,17.875066 15.8943,-33.308433 h 6.35164 l 15.8943,33.308433 h -5.74383 L 171.09258,88.5978 h -18.02164 l -4.34586,9.121815 z m 11.54844,-13.037741 h 14.98258 l -7.4761,-16.101379 z"
   />
 
-  <!-- Tagline -->
+  <!-- ========================= -->
+  <!-- Tagline                   -->
+  <!-- ========================= -->
   <text x="40" y="40.4" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
     Technology from Early Concept
   </text>
   <text x="40" y="45.0" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
     to Industrial Scale
   </text>
+
 </svg>
