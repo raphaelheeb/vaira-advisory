@@ -7,12 +7,6 @@
 
   <rect width="80" height="50" fill="#2B4E5A"/>
 
-  <!-- Quiet zones (mm) -->
-  <!-- Wordmark: 17.06–25.24 -->
-  <!-- Upper tagline: 36.33–41.83 -->
-  <!-- Lower tagline: 40.93–46.43 -->
-  <!-- Fade width: 1 mm -->
-
  <defs>
   <linearGradient id="fadeMask" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="0" y2="50">
 
@@ -60,19 +54,20 @@
     <stop offset="50"     stop-color="white" stop-opacity="1"/>
   </linearGradient>
 
-  <mask id="gridFadeMask">
+  <!-- ⭐ THIS IS THE FIX -->
+  <mask id="gridFadeMask" mask-type="luminance">
     <rect width="80" height="50" fill="url(#fadeMask)"/>
   </mask>
 </defs>
 
-  <!-- Center line + grid lines all under the same mask -->
+  <!-- Masked grid -->
   <g mask="url(#gridFadeMask)" stroke-width="0.25">
 
     <!-- Center line -->
     <line x1="40" y1="0" x2="40" y2="50"
           stroke="rgba(255,255,255,0.28)"/>
 
-    <!-- Grid lines (flattened, no nested <g>) -->
+    <!-- Grid lines -->
     <line x1="10" y1="0" x2="10" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="20" y1="0" x2="20" y2="50" stroke="rgba(255,255,255,0.10)"/>
     <line x1="30" y1="0" x2="30" y2="50" stroke="rgba(255,255,255,0.10)"/>
