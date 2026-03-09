@@ -24,7 +24,7 @@
   <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
 	
 <!-- QR CODE: right-aligned, vertically centered on contact block -->
-<g id="qr" transform="translate(59, 27)">
+<g id="qr" transform="translate(59, 27.5)">
   
   <!-- 15×15 mm frame with rounded corners -->
   <rect width="15" height="15"
