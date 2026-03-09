@@ -8,7 +8,7 @@
   <!-- Background -->
   <rect width="80" height="50" fill="#FFFFFF"/>
 
-  <!-- Text block (left column) -->
+  <!-- LEFT COLUMN: Text block -->
   <g fill="#2B4E5A">
     <!-- Name -->
     <text x="21" y="16" font-size="4.2" font-weight="500" letter-spacing="0.2">
@@ -20,27 +20,17 @@
       Founder &amp; Managing Partner
     </text>
 
-    <!-- Phone -->
-    <text x="21" y="30" font-size="3.0" font-weight="400">
-      +41 76 463 06 83
-    </text>
-
-    <!-- Email -->
-    <text x="21" y="34" font-size="3.0" font-weight="400">
-      raphael.heeb@vaira.ch
-    </text>
-
-    <!-- Website -->
-    <text x="21" y="38" font-size="3.0" font-weight="400" letter-spacing="0.3">
-      www.vaira.ch
-    </text>
+    <!-- Contact block -->
+    <text x="21" y="32" font-size="3.0">+41 76 463 06 83</text>
+    <text x="21" y="36" font-size="3.0">raphael.heeb@vaira.ch</text>
+    <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
   </g>
 
-  <!-- QR block (right column) -->
-  <!-- Frame (optional, matches brand teal) -->
+  <!-- RIGHT COLUMN: QR code -->
+  <!-- Frame (optional, brand-consistent) -->
   <rect
     x="45"
-    y="16"
+    y="20"
     width="14"
     height="14"
     fill="none"
@@ -50,6 +40,6 @@
     ry="2"
   />
 
-  <!-- QR code placeholder (replace with actual QR image) -->
-  <rect x="45" y="16" width="14" height="14" fill="#FFFFFF"/>
+  <!-- QR placeholder (replace with actual QR image) -->
+  <rect x="45" y="20" width="14" height="14" fill="#FFFFFF"/>
 </svg>
