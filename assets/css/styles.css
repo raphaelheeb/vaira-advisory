@@ -58,7 +58,7 @@ img {
 
 /* Email & Address Protection */
 .no-js .protected-email::after {
-  content: "info [at] vaira-advisory [dot] com";
+  content: "info [at] vaira [dot] ch";
 }
 
 .protected-address {
@@ -1712,7 +1712,7 @@ nav ul.nav {
   right: -105px;     /* move right */
   width: 140%;
   height: 500px;
-  background-image: url("/vaira-advisory/assets/img/hero-illustration.svg");
+  background-image: url("/assets/img/hero-illustration.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-blend-mode: screen;
@@ -1883,7 +1883,7 @@ nav ul.nav {
     right: -120px;
     width: 420px;
     height: 420px;
-    background-image: url("/vaira-advisory/assets/img/subpage-hero-illustration.svg");
+    background-image: url("/assets/img/subpage-hero-illustration.svg");
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.25;
