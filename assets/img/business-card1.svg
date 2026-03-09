@@ -51,10 +51,10 @@
   />
 
   <!-- Tagline -->
-  <text x="40" y="40.4" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
+  <text x="40" y="40.4" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.35">
     Technology from Early Concept
   </text>
-  <text x="40" y="45.0" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">
+  <text x="40" y="45.0" font-size="3.6" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.35">
     to Industrial Scale
   </text>
 
