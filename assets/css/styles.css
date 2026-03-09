@@ -1419,9 +1419,17 @@ nav ul.nav {
 }
 
 @media (max-width: 768px) {
+
+  /* Push the card down so the number has space */
+  .usecase-item {
+    padding-top: 64px; /* adjust 48–80px depending on taste */
+  }
+
+  /* Optionally reduce the number size on mobile */
   .usecase-item::before {
-    display: block;
-    margin-bottom: 1.25rem; /* adjust 1.0–1.75rem to taste */
+    top: 0;
+    left: 0;
+    font-size: 48px;
   }
 }
 
