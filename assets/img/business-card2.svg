@@ -27,9 +27,7 @@
   <g id="qr" transform="translate(60, 29)">
     <!-- Placeholder frame -->
     <rect width="14" height="14" fill="#FFFFFF" stroke="#2B4E5A" stroke-width="0.6" rx="2" ry="2"/>
-
-<svg viewBox="0 0 370 370" width="370" height="370" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<desc>https://www.aptika.com/</desc><title>Aptika - FREE QR Code Generator</title>
+	  
 	<g id="elements" fill="#000000" stroke="none">
 		<rect x="0" y="0" width="10" height="10" />
 		<rect x="10" y="0" width="10" height="10" />
@@ -748,7 +746,7 @@
 		<rect x="350" y="360" width="10" height="10" />
 		<rect x="360" y="360" width="10" height="10" />
 	</g>
-</svg>
+
  
     <!-- Correct scale for a 370x370 QR: 14/370 = 0.0378378 -->
     <g id="qr-content" transform="scale(0.038)">
