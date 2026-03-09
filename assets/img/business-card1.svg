@@ -5,7 +5,7 @@
     }
   </style>
 
-  <!-- Background (CMYK-safe teal) -->
+  <!-- Background -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
   <!-- ========================= -->
@@ -13,22 +13,22 @@
   <!-- ========================= -->
   <defs>
 
-    <!-- Combined vertical + horizontal fade for regular grid lines -->
+    <!-- Regular grid fade (optimized for print) -->
     <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
-      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
-      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.015"/>
+      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
+      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
+      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.015"/>
     </linearGradient>
 
-    <!-- Combined fade for center line (stronger) -->
+    <!-- Center line fade (optimized for print) -->
     <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.06"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
-      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
       <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
     </linearGradient>
 
   </defs>
@@ -47,7 +47,7 @@
   </g>
 
   <!-- ========================= -->
-  <!-- Quiet Zones (solid teal)  -->
+  <!-- Quiet Zones               -->
   <!-- ========================= -->
 
   <!-- Wordmark quiet zone (capsule, 4mm radius, +10% vertical padding) -->
@@ -78,4 +78,3 @@
   </text>
 
 </svg>
-
