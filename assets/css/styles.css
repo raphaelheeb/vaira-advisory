@@ -1091,6 +1091,17 @@ nav ul.nav {
   flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+  #industries-list .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  #industries-list .feature-block {
+    padding: 20px 24px;
+    border-radius: 12px;
+  }
+}
+
 /* =========================================================
    VAIRA Industries Page — Fix for overflow in Value Cards
    ========================================================= */
