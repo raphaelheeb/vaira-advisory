@@ -1,0 +1,34 @@
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- CUT LINES (hairline) -->
+  <g stroke="#000000" stroke-width="0.1" stroke-dasharray="2,2" opacity="0.4">
+    <!-- Vertical cuts -->
+    <line x1="25" y1="0" x2="25" y2="297"/>
+    <line x1="105" y1="0" x2="105" y2="297"/>
+    <line x1="185" y1="0" x2="185" y2="297"/>
+
+    <!-- Horizontal cuts -->
+    <line x1="0" y1="10" x2="210" y2="10"/>
+    <line x1="0" y1="60" x2="210" y2="60"/>
+    <line x1="0" y1="120" x2="210" y2="120"/>
+    <line x1="0" y1="180" x2="210" y2="180"/>
+    <line x1="0" y1="240" x2="210" y2="240"/>
+    <line x1="0" y1="290" x2="210" y2="290"/>
+  </g>
+
+  <!-- CARD POSITIONS (paste your FRONT SVG inside each <g>) -->
+  <!-- Column 1 -->
+  <g transform="translate(25, 10)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(25, 70)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(25, 130)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(25, 190)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(25, 250)"><g id="CARD_FRONT"></g></g>
+
+  <!-- Column 2 -->
+  <g transform="translate(105, 10)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(105, 70)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(105, 130)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(105, 190)"><g id="CARD_FRONT"></g></g>
+  <g transform="translate(105, 250)"><g id="CARD_FRONT"></g></g>
+
+</svg>
