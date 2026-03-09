@@ -22,7 +22,9 @@
   <!-- Quiet Zones (solid teal, in front of grid) -->
 
   <!-- Wordmark quiet zone -->
-  <rect x="19.24" y="17.06" width="41.52" height="8.18" fill="#2B4E5A"/>
+  <!-- Wordmark quiet zone (centered, narrower) -->
+<rect x="21" y="17.08" width="38" height="8.14" fill="#2B4E5A"/>
+
 
   <!-- Upper tagline quiet zone (clamped to card width) -->
   <rect x="0" y="36.33" width="80" height="5.50" fill="#2B4E5A"/>
