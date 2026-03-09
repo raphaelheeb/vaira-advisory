@@ -961,22 +961,28 @@ nav ul.nav {
 }
 
 @media (max-width: 768px) {
+
+  /* Force the grid to stack vertically */
   .industries-why-inner {
     grid-template-columns: 1fr !important;
     row-gap: 40px;
   }
 
-  
+  /* Force the illustration to behave like a block in the text flow */
   .industries-why-illustration {
-    max-width: 100%;
     width: 100%;
-    overflow: hidden;
+    max-width: 100%;
+    justify-self: center;   /* ensures it centers in the grid */
+    margin: 0 auto 24px;    /* spacing below the image */
   }
 
+  /* Make the SVG responsive */
   .industries-why-illustration svg {
-    max-width: 100%;
     width: 100%;
+    max-width: 260px;       /* keeps it elegant, not full-width */
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
 
