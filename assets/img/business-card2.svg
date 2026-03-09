@@ -8,38 +8,18 @@
   <!-- Background -->
   <rect width="80" height="50" fill="#FFFFFF"/>
 
-  <!-- LEFT COLUMN: Text block -->
-  <g fill="#2B4E5A">
-    <!-- Name -->
-    <text x="21" y="16" font-size="4.2" font-weight="500" letter-spacing="0.2">
-      Dr. Raphael Heeb
-    </text>
+  <!-- 1) NAME + TITLE ZONE (IDENTITY) -->
+  <!-- Left column, upper band -->
+  <rect x="21" y="10" width="34" height="14" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
+  <text x="22" y="15" font-size="3" fill="#2B4E5A">1. Name + Title</text>
 
-    <!-- Title -->
-    <text x="21" y="22" font-size="3.4" font-weight="400">
-      Founder &amp; Managing Partner
-    </text>
+  <!-- 2) CONTACT DETAILS ZONE -->
+  <!-- Left column, lower band -->
+  <rect x="21" y="28" width="34" height="16" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
+  <text x="22" y="33" font-size="3" fill="#2B4E5A">2. Contact block</text>
 
-    <!-- Contact block -->
-    <text x="21" y="32" font-size="3.0">+41 76 463 06 83</text>
-    <text x="21" y="36" font-size="3.0">raphael.heeb@vaira.ch</text>
-    <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
-  </g>
-
-  <!-- RIGHT COLUMN: QR code -->
-  <!-- Frame (optional, brand-consistent) -->
-  <rect
-    x="45"
-    y="18"
-    width="14"
-    height="14"
-    fill="none"
-    stroke="#2B4E5A"
-    stroke-width="0.6"
-    rx="2"
-    ry="2"
-  />
-
-  <!-- QR placeholder (replace with actual QR image) -->
-  <rect x="45" y="18" width="14" height="14" fill="#FFFFFF"/>
+  <!-- 3) QR CODE ZONE -->
+  <!-- Right column, vertically centered between identity and contact -->
+  <rect x="45" y="16" width="14" height="14" fill="none" stroke="#2B4E5A" stroke-width="0.3"/>
+  <text x="52" y="14" font-size="3" fill="#2B4E5A" text-anchor="middle">3. QR</text>
 </svg>
