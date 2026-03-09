@@ -379,19 +379,17 @@ p {
 }
 
 @media (max-width: 768px) {
-  #what-we-do .split-body h3 {
-    margin-top: 1.75rem;
-    margin-bottom: 0.5rem;
+
+  /* Increase vertical spacing for Core Capabilities */
+  #what-we-do .split-body > * {
+    margin-bottom: 1.4rem; /* adjust 1.2–1.8rem to taste */
   }
 
-  #what-we-do .split-body p {
-    margin-bottom: 1.25rem;
-  }
-
-  #what-we-do .split-body h3:first-child {
-    margin-top: 0;
+  #what-we-do .split-body > *:last-child {
+    margin-bottom: 0;
   }
 }
+
 
 /* =========================================================
    VAIRA DESIGN SYSTEM v2.0 — BLOCK 3/4
