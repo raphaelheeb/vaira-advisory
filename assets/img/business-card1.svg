@@ -23,7 +23,7 @@
 
   <!-- Wordmark quiet zone -->
   <!-- Wordmark quiet zone (centered, narrower) -->
-<rect x="21" y="19.08" width="35" height="10.14" fill="#2B4E5A"/>
+<rect x="21" y="19.08" width="35" height="12" fill="#2B4E5A"/>
 
 
   <!-- Upper tagline quiet zone (clamped to card width) -->
