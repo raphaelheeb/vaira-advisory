@@ -474,6 +474,14 @@ p {
   height: 40px;
 }
 
+@media (max-width: 768px) {
+  .contact-card-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+}
+
 /* ------------------------------
    Feature Blocks (Why VAIRA)
    ------------------------------ */
