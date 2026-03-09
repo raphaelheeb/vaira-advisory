@@ -962,27 +962,29 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
-  /* Force the grid to stack vertically */
+  /* Override inline flexbox */
   .industries-why-inner {
-    grid-template-columns: 1fr !important;
-    row-gap: 40px;
+    display: block !important;
   }
 
-  /* Force the illustration to behave like a block in the text flow */
+  /* Reset the forced widths */
+  .industries-why-text,
   .industries-why-illustration {
-    width: 100%;
-    max-width: 100%;
-    justify-self: center;   /* ensures it centers in the grid */
-    margin: 0 auto 24px;    /* spacing below the image */
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
   }
 
-  /* Make the SVG responsive */
+  /* Make the illustration behave like a block */
+  .industries-why-illustration {
+    margin: 32px auto !important;
+    max-width: 280px !important; /* elegant mobile size */
+  }
+
   .industries-why-illustration svg {
-    width: 100%;
-    max-width: 260px;       /* keeps it elegant, not full-width */
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     display: block;
-    margin: 0 auto;
   }
 }
 
