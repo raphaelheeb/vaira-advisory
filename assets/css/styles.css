@@ -966,9 +966,17 @@ nav ul.nav {
     row-gap: 40px;
   }
 
+  
   .industries-why-illustration {
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .industries-why-illustration svg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
