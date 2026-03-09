@@ -1,0 +1,36 @@
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- CUT LINES -->
+  <g stroke="#000" stroke-width="0.1" stroke-dasharray="2,2" opacity="0.4">
+    <line x1="25" y1="0" x2="25" y2="297"/>
+    <line x1="105" y1="0" x2="105" y2="297"/>
+    <line x1="185" y1="0" x2="185" y2="297"/>
+
+    <line x1="0" y1="7.8" x2="210" y2="7.8"/>
+    <line x1="0" y1="57.8" x2="210" y2="57.8"/>
+    <line x1="0" y1="115.6" x2="210" y2="115.6"/>
+    <line x1="0" y1="173.4" x2="210" y2="173.4"/>
+    <line x1="0" y1="231.2" x2="210" y2="231.2"/>
+    <line x1="0" y1="289.0" x2="210" y2="289.0"/>
+  </g>
+
+  <!-- MIRROR FOR PERFECT ALIGNMENT -->
+  <g transform="translate(210,0) scale(-1,1)">
+
+    <!-- Column 1 -->
+    <g transform="translate(25, 7.8)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(25, 65.6)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(25, 123.4)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(25, 181.2)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(25, 239.0)"><g id="CARD_BACK"></g></g>
+
+    <!-- Column 2 -->
+    <g transform="translate(105, 7.8)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(105, 65.6)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(105, 123.4)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(105, 181.2)"><g id="CARD_BACK"></g></g>
+    <g transform="translate(105, 239.0)"><g id="CARD_BACK"></g></g>
+
+  </g>
+
+</svg>
