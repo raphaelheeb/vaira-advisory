@@ -13,31 +13,7 @@
   <!-- ========================= -->
   <defs>
 
-    <!-- Vertical fade for regular grid lines -->
-    <linearGradient id="gridVerticalFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
-      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-
-    <!-- Vertical fade for center line -->
-    <linearGradient id="centerVerticalFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.08"/>
-      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
-      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
-    </linearGradient>
-
-    <!-- Horizontal fade (print-safe) -->
-    <linearGradient id="gridHorizontalFade" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
-      <stop offset="40%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="60%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
-    </linearGradient>
-
-    <!-- Combined fade for regular grid lines -->
+    <!-- Combined vertical + horizontal fade for regular grid lines -->
     <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
@@ -46,7 +22,7 @@
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
     </linearGradient>
 
-    <!-- Combined fade for center line -->
+    <!-- Combined fade for center line (stronger) -->
     <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.08"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -74,11 +50,8 @@
   <!-- Quiet Zones (solid teal)  -->
   <!-- ========================= -->
 
-  <!-- Wordmark inner highlight (print-safe) -->
-<rect x="21.6" y="17.0" width="33.8" height="12.0"
-      rx="3.4" ry="3.4"
-      fill="#4F7C8A" fill-opacity="0.12"/>
-
+  <!-- Wordmark quiet zone (capsule, 4mm radius, +10% vertical padding) -->
+  <rect x="21" y="16.4" width="35" height="13.2" rx="4" ry="4" fill="#2B4E5A"/>
 
   <!-- Upper tagline quiet zone -->
   <rect x="0" y="36.33" width="80" height="5.50" fill="#2B4E5A"/>
@@ -105,3 +78,4 @@
   </text>
 
 </svg>
+
