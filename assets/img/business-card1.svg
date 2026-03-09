@@ -46,8 +46,8 @@
   <!-- Quiet Zones (solid teal)  -->
   <!-- ========================= -->
 
-  <!-- Wordmark quiet zone (your adjusted version) -->
-  <rect x="21" y="17" width="35" height="12" fill="#2B4E5A"/>
+  <!-- Wordmark quiet zone (capsule, 4mm radius) -->
+  <rect x="21" y="17" width="35" height="12" rx="4" ry="4" fill="#2B4E5A"/>
 
   <!-- Upper tagline quiet zone -->
   <rect x="0" y="36.33" width="80" height="5.50" fill="#2B4E5A"/>
