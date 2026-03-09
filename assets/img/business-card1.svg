@@ -5,41 +5,69 @@
     }
   </style>
 
-  <!-- Background -->
+  <!-- Background (CMYK-safe teal) -->
   <rect width="80" height="50" fill="#2B4E5A"/>
 
   <!-- ========================= -->
-  <!-- Grid Fade Definitions     -->
+  <!-- Fade Definitions          -->
   <!-- ========================= -->
   <defs>
+
     <!-- Vertical fade for regular grid lines -->
-    <linearGradient id="gridStrokeFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="gridVerticalFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
-      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.08"/>
-      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
     </linearGradient>
 
-    <!-- Vertical fade for the center line (stronger) -->
-    <linearGradient id="centerStrokeFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.10"/>
-      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.28"/>
-      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.10"/>
+    <!-- Vertical fade for center line -->
+    <linearGradient id="centerVerticalFade" x1="0" y1="0" x2="0" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
     </linearGradient>
+
+    <!-- Horizontal fade (print-safe) -->
+    <linearGradient id="gridHorizontalFade" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="40%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="60%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Combined fade for regular grid lines -->
+    <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Combined fade for center line -->
+    <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="80%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+
   </defs>
 
   <!-- ========================= -->
-  <!-- Grid Lines (with fade)    -->
+  <!-- Grid Lines (with fades)   -->
   <!-- ========================= -->
   <g stroke-width="0.25">
-    <line x1="10" y1="0" x2="10" y2="50" stroke="url(#gridStrokeFade)"/>
-    <line x1="20" y1="0" x2="20" y2="50" stroke="url(#gridStrokeFade)"/>
-    <line x1="30" y1="0" x2="30" y2="50" stroke="url(#gridStrokeFade)"/>
-    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#centerStrokeFade)"/> <!-- center -->
-    <line x1="50" y1="0" x2="50" y2="50" stroke="url(#gridStrokeFade)"/>
-    <line x1="60" y1="0" x2="60" y2="50" stroke="url(#gridStrokeFade)"/>
-    <line x1="70" y1="0" x2="70" y2="50" stroke="url(#gridStrokeFade)"/>
+    <line x1="10" y1="0" x2="10" y2="50" stroke="url(#gridCombinedFade)"/>
+    <line x1="20" y1="0" x2="20" y2="50" stroke="url(#gridCombinedFade)"/>
+    <line x1="30" y1="0" x2="30" y2="50" stroke="url(#gridCombinedFade)"/>
+    <line x1="40" y1="0" x2="40" y2="50" stroke="url(#centerCombinedFade)"/> <!-- center -->
+    <line x1="50" y1="0" x2="50" y2="50" stroke="url(#gridCombinedFade)"/>
+    <line x1="60" y1="0" x2="60" y2="50" stroke="url(#gridCombinedFade)"/>
+    <line x1="70" y1="0" x2="70" y2="50" stroke="url(#gridCombinedFade)"/>
   </g>
 
   <!-- ========================= -->
