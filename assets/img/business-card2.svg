@@ -22,9 +22,7 @@
   <text x="21" y="32" font-size="3.0">+41 76 463 06 83</text>
   <text x="21" y="36" font-size="3.0">raphael.heeb@vaira.ch</text>
   <text x="21" y="40" font-size="3.0" letter-spacing="0.3">www.vaira.ch</text>
-
-<!-- QR CODE: right-aligned, vertically centered on contact block -->
-<g id="qr" transform="translate(60, 29)">
+	
   
   <!-- Frame stays 14×14 mm -->
   <rect width="14" height="14" fill="#FFFFFF" stroke="#2B4E5A" stroke-width="0.6"/>
