@@ -1778,7 +1778,13 @@ nav ul.nav {
     display: none;
   }
 
+  /* Hide the background illustration pseudo-element */
+  #hero.hero--bg-illustration::after {
+    display: none !important;
+    content: none !important;
+  }
 }
+
 
 /* =========================================================
    HOW WE WORK — MOBILE STACKED LAYOUT
