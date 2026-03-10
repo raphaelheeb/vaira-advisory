@@ -1797,9 +1797,15 @@ nav ul.nav {
   z-index: 1; /* ensures content stays above both layers */
 }
 
+  #hero.hero--bg-illustration {
+    background: none !important;
+  }
+
+  #hero.hero--bg-illustration::before,
   #hero.hero--bg-illustration::after {
-    display: none !important;
     content: none !important;
+    background: none !important;
+    display: none !important;
   }
 }
 
