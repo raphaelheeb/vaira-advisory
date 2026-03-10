@@ -1744,7 +1744,7 @@ nav ul.nav {
 
 
 /* =========================================================
-   HOMEPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
+   HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -1766,48 +1766,26 @@ nav ul.nav {
     text-align: left;
   }
 
-  /* Hide the separate illustration column */
+  /* Keep the CAD contour visible on mobile */
   .home-page #hero .hero-right {
+    display: block;
+    max-width: 280px;
+    margin: 32px auto 0;
+  }
+
+  /* 🔥 Hide ONLY the grid lines inside the SVG */
+  /* These are the dashed lines inside <g opacity="0.45"> */
+  .home-page #hero .cad-contour g[opacity="0.45"] {
     display: none;
   }
 
+  /* Optional: slightly soften the remaining contour lines */
+  /* .home-page #hero .cad-contour .c {
+    stroke-opacity: 0.75;
+  } */
 
-#hero.hero--bg-illustration {
-  position: relative;
-  z-index: 0; /* creates stacking context */
 }
 
-#hero.hero--bg-illustration::after {
-  content: "";
-  position: absolute;
-  top: -120px;      /* move up */
-  right: -105px;     /* move right */
-  width: 140%;
-  height: 500px;
-  background-image: url("/assets/img/hero-illustration.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-blend-mode: screen;
-  pointer-events: none;
-  z-index: -1; /* sits behind content but above ::before grid */
-}
-
-#hero .hero-grid {
-  position: relative;
-  z-index: 1; /* ensures content stays above both layers */
-}
-
-  #hero.hero--bg-illustration {
-    background: none !important;
-  }
-
-  #hero.hero--bg-illustration::before,
-  #hero.hero--bg-illustration::after {
-    content: none !important;
-    background: none !important;
-    display: none !important;
-  }
-}
 
 
 /* =========================================================
