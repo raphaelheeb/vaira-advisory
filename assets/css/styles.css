@@ -1766,24 +1766,14 @@ nav ul.nav {
     text-align: left;
   }
 
-  /* Keep the CAD contour visible on mobile */
+  /* OPTION B: Hide the inline CAD contour */
   .home-page #hero .hero-right {
-    display: block;
-    max-width: 280px;
-    margin: 32px auto 0;
-  }
-
-  /* Hide ONLY the grid lines inside the SVG */
-  .home-page #hero .cad-contour g[opacity="0.45"] {
-    display: none;
-  }
-
-  /* Hide the background illustration pseudo-element */
-  #hero.hero--bg-illustration::after {
     display: none !important;
-    content: none !important;
   }
+
+  /* No SVG grid hiding here — background SVG must be edited or replaced */
 }
+
 
 
 /* =========================================================
