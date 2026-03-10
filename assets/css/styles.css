@@ -1915,38 +1915,31 @@ nav ul.nav {
 }
 
 /* =========================================================
-   SUBPAGE HERO — MOBILE FULL-WIDTH + BACKGROUND ILLUSTRATION
+   SUBPAGE HERO — MOBILE FULL-WIDTH (TEXT ONLY)
    ========================================================= */
 
-/* SUBPAGE HERO — MOBILE */
 @media (max-width: 768px) {
 
-  body.subpage #hero.hero--bg-illustration {
-    position: relative;
-    z-index: 0;
-  }
-
-  body.subpage #hero.hero--bg-illustration::after {
-    content: "";
-    position: absolute;
-    top: -60px;
-    right: -120px;
-    width: 420px;
-    height: 420px;
-    background-image: url("/assets/img/subpage-hero-illustration.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.25;
-    pointer-events: none;
-    z-index: -1;
-  }
-
+  /* 1. Hide the inline CAD shape */
   body.subpage .cad-hero-shape {
-    display: none;
+    display: none !important;
   }
 
+  /* 2. Hide the background illustration pseudo-element */
+  body.subpage #hero.hero--bg-illustration::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* 3. Ensure the hero-grid stays visible and above everything */
   body.subpage #hero .hero-grid {
     position: relative;
     z-index: 1;
   }
+
+  /* 4. Optional: remove any leftover positioning */
+  body.subpage #hero.hero--bg-illustration {
+    background: none !important;
+  }
 }
+
