@@ -1,4 +1,4 @@
-<svg width="80mm" height="50mm" viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg">
+<svg width="85mm" height="55mm" viewBox="0 0 85 55" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
       font-family: -apple-system, system-ui, "Public Sans", sans-serif;
@@ -6,11 +6,11 @@
   </style>
 
   <!-- Background (CMYK-safe teal) -->
-  <rect width="80" height="50" fill="#2B4E5A"/>
+  <rect width="85" height="55" fill="#2B4E5A"/>
 
   <defs>
     <!-- Regular grid fade (optimized for print) -->
-    <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="85" y2="55" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.015"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
       <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
@@ -19,7 +19,7 @@
     </linearGradient>
 
     <!-- Center line fade (optimized for print) -->
-    <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="80" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="85" y2="55" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.06"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
       <stop offset="50%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
