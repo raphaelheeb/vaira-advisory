@@ -1742,9 +1742,8 @@ nav ul.nav {
   }
 }
 
-
 /* =========================================================
-   HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
+   HOMEPAGE HERO — MOBILE FULL-WIDTH (OPTION B)
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -1766,14 +1765,16 @@ nav ul.nav {
     text-align: left;
   }
 
-  /* OPTION B: Hide the inline CAD contour */
+  /* OPTION B: Hide the inline CAD contour entirely */
   .home-page #hero .hero-right {
     display: none !important;
   }
 
-  /* No SVG grid hiding here — background SVG must be edited or replaced */
-}
+  /* No pseudo-element overrides here */
+  /* No SVG grid hiding here */
+  /* Background illustration stays active */
 
+}
 
 
 /* =========================================================
