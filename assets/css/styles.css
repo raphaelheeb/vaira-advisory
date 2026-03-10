@@ -1747,6 +1747,10 @@ nav ul.nav {
    HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
    ========================================================= */
 
+/* =========================================================
+   HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
+   ========================================================= */
+
 @media (max-width: 768px) {
 
   /* Collapse grid into a single column */
@@ -1771,7 +1775,7 @@ nav ul.nav {
     display: block;
     max-width: 280px;
     margin: 32px auto 0;
-  }
+  } /* ← THIS BRACE WAS MISSING */
 
   /* Hide ONLY the grid lines inside the SVG */
   .home-page #hero .cad-contour g[opacity="0.45"] {
@@ -1804,8 +1808,7 @@ nav ul.nav {
     z-index: 1;
   }
 
-} /* ← THIS closes the media query correctly */
-
+} /* ← closes the media query correctly */
 
 
 
