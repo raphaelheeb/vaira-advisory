@@ -1920,26 +1920,27 @@ nav ul.nav {
 
 @media (max-width: 768px) {
 
-  /* 1. Hide the inline CAD shape */
+  /* Hide inline CAD shapes (if any) */
   body.subpage .cad-hero-shape {
     display: none !important;
   }
 
-  /* 2. Hide the background illustration pseudo-element */
+  /* Hide background illustration */
   body.subpage #hero.hero--bg-illustration::after {
     display: none !important;
     content: none !important;
   }
 
-  /* 3. Ensure the hero-grid stays visible and above everything */
+  /* Hide background grid (if it exists as ::before) */
+  body.subpage #hero.hero--bg-illustration::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* Keep only the hero-grid visible */
   body.subpage #hero .hero-grid {
     position: relative;
     z-index: 1;
-  }
-
-  /* 4. Optional: remove any leftover positioning */
-  body.subpage #hero.hero--bg-illustration {
-    background: none !important;
   }
 }
 
