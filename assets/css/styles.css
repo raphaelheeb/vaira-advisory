@@ -1773,18 +1773,39 @@ nav ul.nav {
     margin: 32px auto 0;
   }
 
-  /* 🔥 Hide ONLY the grid lines inside the SVG */
-  /* These are the dashed lines inside <g opacity="0.45"> */
+  /* Hide ONLY the grid lines inside the SVG */
   .home-page #hero .cad-contour g[opacity="0.45"] {
     display: none;
   }
 
-  /* Optional: slightly soften the remaining contour lines */
-  /* .home-page #hero .cad-contour .c {
-    stroke-opacity: 0.75;
-  } */
+  /* Keep the background illustration layer intact */
+  #hero.hero--bg-illustration {
+    position: relative;
+    z-index: 0;
+  }
 
-}
+  #hero.hero--bg-illustration::after {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -105px;
+    width: 140%;
+    height: 500px;
+    background-image: url("/assets/img/hero-illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: screen;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  #hero .hero-grid {
+    position: relative;
+    z-index: 1;
+  }
+
+} /* ← THIS closes the media query correctly */
+
 
 
 
