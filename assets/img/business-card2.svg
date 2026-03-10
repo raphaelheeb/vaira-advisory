@@ -33,11 +33,11 @@
           stroke-width="0.6"
           rx="1.6" ry="1.6"/>
 
-    <!-- Center the 11×11 mm QR inside the 15×15 frame -->
-    <g transform="translate(2, 2)">
-      <!-- Scale 370×370 QR to 11 mm -->
-      <g id="qr-content" transform="scale(0.0297)" fill="#2B4E5A">
-		  
+    <!-- Center the 12.5×12.5 mm QR inside the 15×15 frame -->
+    <g transform="translate(1.25, 1.25)">
+      <!-- Scale 370×370 QR to 12.5 mm -->
+      <g id="qr-content" transform="scale(0.0338)" fill="#2B4E5A">
+        
         <!-- PASTE ONLY THE INNER CONTENT OF YOUR QR SVG HERE -->
 	  
 		<g id="elements" fill="#000000" stroke="none">
