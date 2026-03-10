@@ -1747,10 +1747,6 @@ nav ul.nav {
    HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
    ========================================================= */
 
-/* =========================================================
-   HOMEPAGE HERO — MOBILE FULL-WIDTH + CLEAN VISUALS
-   ========================================================= */
-
 @media (max-width: 768px) {
 
   /* Collapse grid into a single column */
@@ -1775,42 +1771,14 @@ nav ul.nav {
     display: block;
     max-width: 280px;
     margin: 32px auto 0;
-  } /* ← THIS BRACE WAS MISSING */
+  }
 
   /* Hide ONLY the grid lines inside the SVG */
   .home-page #hero .cad-contour g[opacity="0.45"] {
     display: none;
   }
 
-  /* Keep the background illustration layer intact */
-  #hero.hero--bg-illustration {
-    position: relative;
-    z-index: 0;
-  }
-
-  #hero.hero--bg-illustration::after {
-    content: "";
-    position: absolute;
-    top: -120px;
-    right: -105px;
-    width: 140%;
-    height: 500px;
-    background-image: url("/assets/img/hero-illustration.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode: screen;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  #hero .hero-grid {
-    position: relative;
-    z-index: 1;
-  }
-
-} /* ← closes the media query correctly */
-
-
+}
 
 /* =========================================================
    HOW WE WORK — MOBILE STACKED LAYOUT
