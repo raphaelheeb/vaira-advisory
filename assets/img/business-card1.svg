@@ -5,10 +5,11 @@
     }
   </style>
 
-  <!-- Background -->
+  <!-- Background (CMYK-safe teal) -->
   <rect width="85" height="55" fill="#2B4E5A"/>
 
   <defs>
+    <!-- Regular grid fade (optimized for print) -->
     <linearGradient id="gridCombinedFade" x1="0" y1="0" x2="85" y2="55" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.015"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.045"/>
@@ -17,6 +18,7 @@
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.015"/>
     </linearGradient>
 
+    <!-- Center line fade (optimized for print) -->
     <linearGradient id="centerCombinedFade" x1="0" y1="0" x2="85" y2="55" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.06"/>
       <stop offset="20%"  stop-color="#FFFFFF" stop-opacity="0.16"/>
@@ -26,7 +28,7 @@
     </linearGradient>
   </defs>
 
-  <!-- Grid (re-centered on 42.5mm) -->
+  <!-- Grid Lines (centered on 42.5) -->
   <g stroke-width="0.25">
     <line x1="12.5" y1="0" x2="12.5" y2="50" stroke="url(#gridCombinedFade)"/>
     <line x1="22.5" y1="0" x2="22.5" y2="50" stroke="url(#gridCombinedFade)"/>
@@ -37,14 +39,12 @@
     <line x1="72.5" y1="0" x2="72.5" y2="50" stroke="url(#gridCombinedFade)"/>
   </g>
 
-  <!-- Quiet Zones (re-centered on 42.5mm) -->
-  <!-- Main capsule: width 35, centered => x = 42.5 - 17.5 = 25 -->
+  <!-- Quiet Zones (centered on 42.5) -->
+  <!-- Capsule: width 35 → x = 42.5 - 17.5 = 25 -->
   <rect x="25" y="16.4" width="35" height="13.2" rx="4" ry="4" fill="#2B4E5A"/>
-
-  <!-- Lower bar: width 80, centered => x = 42.5 - 40 = 2.5 -->
+  <!-- Lower bar: width 80 → x = 42.5 - 40 = 2.5 -->
   <rect x="2.5" y="36.33" width="80" height="5.50" fill="#2B4E5A"/>
-
-  <!-- Bottom quiet bar: width 50.47, centered => x = 42.5 - 25.235 ≈ 17.27 -->
+  <!-- Bottom bar: width 50.47 → x = 42.5 - 25.235 ≈ 17.27 -->
   <rect x="17.27" y="40.93" width="50.47" height="5.50" fill="#2B4E5A"/>
 
   <!-- Wordmark: centered at (42.5, 23) -->
@@ -54,7 +54,7 @@
     />
   </g>
 
-  <!-- Tagline: directly centered at x = 42.5 -->
+  <!-- Tagline: centered at x = 42.5 -->
   <text x="42.5" y="40.4" font-size="3.8" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.35">
     Technology from Early Concept
   </text>
@@ -63,3 +63,4 @@
   </text>
 
 </svg>
+
