@@ -361,6 +361,66 @@ p {
   margin-bottom: 32px; /* or 40px / 48px for more space */
 }
 
+/* =========================================================
+   CORE CAPABILITIES — PREMIUM ENGINEERED LAYOUT REFINEMENT
+   ========================================================= */
+
+/* 1. Strengthen H2 hierarchy */
+#what-we-do h2 {
+  margin-bottom: 48px;
+  letter-spacing: 0.01em;
+}
+
+/* 2. Normalize vertical rhythm inside the capability list */
+#what-we-do .split-body h3 {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.88);
+  letter-spacing: 0.01em;
+}
+
+#what-we-do .split-body p {
+  margin-bottom: 36px;
+  line-height: 1.55;
+}
+
+#what-we-do .split-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* 3. Slightly reduce text column width for better readability */
+#what-we-do .split-left {
+  max-width: 520px;
+}
+
+/* 4. Balance visual weight by enlarging the right image */
+#what-we-do .split-right .split-image {
+  width: 115%;
+  margin-top: 12px;
+  object-fit: cover;
+}
+
+/* 5. Add a subtle structural anchor (architectural brand cue) */
+#what-we-do .split-left {
+  border-left: 2px solid rgba(0,0,0,0.08);
+  padding-left: 24px;
+}
+
+/* 6. Improve micro-typography */
+#what-we-do .split-body h3 {
+  font-size: 1.15rem;
+}
+
+#what-we-do .split-body p {
+  font-size: 1rem;
+  color: rgba(0,0,0,0.92);
+}
+
+/* 7. Slightly increase bottom padding for a cleaner section ending */
+#what-we-do.section {
+  padding-bottom: 120px;
+}
+
 
 /* ------------------------------
    Mobile Behavior
