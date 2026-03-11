@@ -1436,11 +1436,11 @@ nav ul.nav {
 }
 
 .usecase-block p {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 
 .usecase-block ul {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0 !important;
   padding-left: 28px;
   line-height: 1.55;
 }
