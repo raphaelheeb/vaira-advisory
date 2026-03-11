@@ -353,6 +353,12 @@ p {
   align-items: center;
 }
 
+
+#core-capabilities p + h3 {
+  margin-top: 32px; /* adjust to taste */
+}
+
+
 /* ------------------------------
    Mobile Behavior
    ------------------------------ */
