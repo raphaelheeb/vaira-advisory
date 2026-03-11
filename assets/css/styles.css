@@ -1986,16 +1986,20 @@ nav ul.nav {
   /* ---------------------------------------------
      USE CASES
      --------------------------------------------- */
-  body.subpage--use-cases .cad-hero-shape {
-    opacity: 0.12 !important;
-    transform: scale(0.65);
-    right: -30px;
+   body.subpage--use-cases #hero.hero--bg-illustration::after {
+    display: block !important;   /* override global hide */
+    content: "" !important;      /* restore content */
+    opacity: 0.12;               /* your chosen opacity */
+    transform: scale(0.65);      /* scale the illustration */
+    right: -30px;                /* reposition */
     bottom: -70px;
   }
-  /* Example: hide background illustration but keep shape */
-  body.subpage--use-cases #hero.hero--bg-illustration::after {
-    display: none !important;
-    content: none !important;
+
+  /* Optional: if you want ::before too */
+  body.subpage--use-cases #hero.hero--bg-illustration::before {
+    display: block !important;
+    content: "";
+    opacity: 0.05;
   }
 
 
