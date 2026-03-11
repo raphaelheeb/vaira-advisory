@@ -1918,6 +1918,23 @@ nav ul.nav {
    SUBPAGE HERO — MOBILE PER-PAGE CONTROL
    ========================================================= */
 
+/* =========================================================
+   GLOBAL MOBILE SUBPAGE RESET
+   ========================================================= */
+@media (max-width: 768px) {
+  body.subpage .cad-hero-shape {
+    display: none !important;
+  }
+  body.subpage #hero.hero--bg-illustration::after {
+    display: none !important;
+    content: none !important;
+  }
+  body.subpage #hero.hero--bg-illustration::before {
+    display: none !important;
+    content: none !important;
+  }
+}
+
 @media (max-width: 768px) {
 
   /* ---------------------------------------------
@@ -1930,7 +1947,7 @@ nav ul.nav {
     bottom: -80px;
   }
   /* Example: keep the background illustration */
-  body.subpage--industries #hero.hero--bg-illustration::after {
+  body.subpage--industries -illustration::after {
     display: block !important;
     opacity: 0.15;
   }
@@ -1946,7 +1963,7 @@ nav ul.nav {
     bottom: -80px;
   }
   /* Example: keep the background illustration */
-  body.subpage--services #hero.hero--bg-illustration::after {
+  body.subpage--services -illustration::after {
     display: block !important;
     opacity: 0.15;
   }
