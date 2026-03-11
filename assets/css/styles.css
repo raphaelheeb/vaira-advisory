@@ -1975,7 +1975,7 @@ nav ul.nav {
     position: absolute !important;
     top: auto !important;
     bottom: -40px !important;
-    right: -20px !important;
+    left: -20px !important;
     opacity: 0.10 !important;
     transform: scale(0.55);
     pointer-events: none;
