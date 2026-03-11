@@ -1436,11 +1436,11 @@ nav ul.nav {
 }
 
 .usecase-block p {
-  margin-bottom: 8px !important;
+  margin-bottom: 12px !important;
 }
 
 .usecase-block ul {
-  margin: 10px 0 20px 0 !important;
+  margin: 12px 0 20px 0 !important;
   padding-left: 28px;
   line-height: 1.55;
 }
@@ -1455,7 +1455,7 @@ nav ul.nav {
 }
 
 .use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 8px !important;
+  margin-top: 12px !important;
 }
 
 .use-cases-selected .usecase-item:first-of-type {
