@@ -1973,12 +1973,12 @@ nav ul.nav {
   body.subpage--about .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: 0px !important;
-    right: 0px !important;
+    top: -30px !important;
+    right: -30px !important;
     bottom: auto !important;
     left: auto !important;
     opacity: 0.10 !important;
-    transform: scale(0.55) rotate(90deg);
+    transform: scale(0.55) rotate(135deg);
     pointer-events: none;
     z-index: 1;
   }
