@@ -1011,6 +1011,22 @@ nav ul.nav {
   }
 }
 
+@media (max-width: 768px) {
+  .subpage--industries .cad-hero-shape img {
+    content: url('/assets/img/subpage-hero-illustration--industries.svg');
+  }
+}
+@media (max-width: 768px) {
+  .subpage--industries .cad-hero-shape {
+    width: 180px;
+    height: 180px;
+    right: -40px;
+    bottom: -60px;
+    opacity: 0.15;
+  }
+}
+
+
 /* =========================================================
    VAIRA Industries Page — Desktop Enhancements
    ========================================================= */
