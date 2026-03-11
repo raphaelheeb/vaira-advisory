@@ -354,7 +354,7 @@ p {
 }
 
 #core-capabilities .split-left .split-body p {
-  margin-bottom: 32px; /* or 40px / 48px for more air */
+  margin-bottom: 32px !important; /* or 40px / 48px for more air */
 }
 
 /* ------------------------------
