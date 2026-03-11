@@ -1455,7 +1455,7 @@ nav ul.nav {
 }
 
 .use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 20px !important;
+  margin-top: 8px !important;
 }
 
 .use-cases-selected .usecase-item:first-of-type {
