@@ -1977,8 +1977,8 @@ nav ul.nav {
   body.subpage--about .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: -30px !important;
-    right: -30px !important;
+    top: -130px !important;
+    right: -130px !important;
     bottom: auto !important;
     left: auto !important;
     opacity: 0.10 !important;
