@@ -2004,7 +2004,16 @@ nav ul.nav {
      CONTACT — KEEP CLEAN (NO ILLUSTRATION)
      --------------------------------------------- */
   body.subpage--contact .cad-hero-shape {
-    display: none !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    right: auto !important;
+    opacity: 0.12 !important;
+    transform: scale(0.65);
+    pointer-events: none;
+    z-index: 1;
   }
 }
 
