@@ -357,6 +357,11 @@ p {
   margin-top: 40px !important; /* adjust to taste */
 }
 
+#case-snapshot .case-points {
+  margin-bottom: 32px; /* or 40px / 48px for more space */
+}
+
+
 /* ------------------------------
    Mobile Behavior
    ------------------------------ */
