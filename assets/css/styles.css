@@ -1981,11 +1981,11 @@ nav ul.nav {
   body.subpage--about .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: -180px !important;
-    right: -180px !important;
+    top: -200px !important;
+    right: -200px !important;
     bottom: auto !important;
     left: auto !important;
-    opacity: 0.10 !important;
+    opacity: 0.15 !important;
     transform: scale(0.55) rotate(150deg);
     pointer-events: none;
     z-index: 1;
