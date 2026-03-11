@@ -1974,8 +1974,9 @@ nav ul.nav {
     display: block !important;
     position: absolute !important;
     top: 0px !important;
-    bottom: auto !important;
     right: 0px !important;
+    bottom: auto !important;
+    left: auto !important;
     opacity: 0.10 !important;
     transform: scale(0.55) rotate(90deg);
     pointer-events: none;
