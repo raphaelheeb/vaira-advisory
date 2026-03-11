@@ -2034,9 +2034,10 @@ nav ul.nav {
   body.subpage--services .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: auto !important;
-    bottom: -80px !important;
-    right: -40px !important;
+    top: -200px !important;
+    right: -200px !important;
+    bottom: auto !important;
+    left: auto !important;
     opacity: 0.15 !important;
     transform: scale(0.75);
     pointer-events: none;
@@ -2055,7 +2056,7 @@ nav ul.nav {
     bottom: auto !important;
     left: auto !important;
     opacity: 0.15 !important;
-    transform: scale(0.55) rotate(150deg);
+    transform: scale(0.55) rotate(120deg);
     pointer-events: none;
     z-index: 1;
   }
@@ -2067,11 +2068,12 @@ nav ul.nav {
   body.subpage--use-cases .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: auto !important;
-    bottom: -70px !important;
-    right: -30px !important;
-    opacity: 0.12 !important;
-    transform: scale(0.65);
+    top: -200px !important;
+    right: -200px !important;
+    bottom: auto !important;
+    left: auto !important;
+    opacity: 0.15 !important;
+    transform: scale(0.65) rotate(-180deg);
     pointer-events: none;
     z-index: 1;
   }
@@ -2083,12 +2085,12 @@ nav ul.nav {
   body.subpage--contact .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
+    top: -200px !important;
+    right: -200px !important;
     bottom: auto !important;
-    right: auto !important;
-    opacity: 0.12 !important;
-    transform: scale(0.65);
+    left: auto !important;
+    opacity: 0.15 !important;
+    transform: scale(0.65) rotate(30deg);
     pointer-events: none;
     z-index: 1;
   }
