@@ -925,7 +925,7 @@ nav ul.nav {
 }
 
 .usecase-block p:first-of-type {
-  margin-bottom: 16px; /* or 12px / 20px depending on your rhythm */
+  margin-bottom: 18px; /* or 12px / 20px depending on your rhythm */
 }
 
 /* ------------------------------
@@ -1436,11 +1436,11 @@ nav ul.nav {
 }
 
 .usecase-block p {
-  margin-bottom: 12px !important;
+  margin-bottom: 18px !important;
 }
 
 .usecase-block ul {
-  margin: 12px 0 20px 0 !important;
+  margin: 18px 0 20px 0 !important;
   padding-left: 28px;
   line-height: 1.55;
 }
@@ -1455,7 +1455,7 @@ nav ul.nav {
 }
 
 .use-cases-page .use-cases-selected .usecase-block p + ul {
-  margin-top: 12px !important;
+  margin-top: 18px !important;
 }
 
 .use-cases-selected .usecase-item:first-of-type {
