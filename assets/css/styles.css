@@ -353,8 +353,8 @@ p {
   align-items: center;
 }
 
-#core-capabilities .split-left .split-body p {
-  margin-bottom: 32px !important; /* or 40px / 48px for more air */
+#what-we-do .split-left .split-body p + h3 {
+  margin-top: 40px !important; /* adjust to taste */
 }
 
 /* ------------------------------
