@@ -354,7 +354,7 @@ p {
 }
 
 
-#core-capabilities p + h3 {
+#core-capabilities .split-left p + h3 {
   margin-top: 32px; /* adjust to taste */
 }
 
@@ -1983,12 +1983,12 @@ nav ul.nav {
   body.subpage--about .cad-hero-shape {
     display: block !important;
     position: absolute !important;
-    top: -130px !important;
-    right: -130px !important;
+    top: -160px !important;
+    right: -160px !important;
     bottom: auto !important;
     left: auto !important;
     opacity: 0.10 !important;
-    transform: scale(0.55) rotate(135deg);
+    transform: scale(0.55) rotate(170deg);
     pointer-events: none;
     z-index: 1;
   }
