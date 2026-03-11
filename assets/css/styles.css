@@ -1915,103 +1915,95 @@ nav ul.nav {
 }
 
 /* =========================================================
-   SUBPAGE HERO — MOBILE PER-PAGE CONTROL
+   SUBPAGE HERO — MOBILE CONTROL (CLEAN + CORRECT)
    ========================================================= */
 
 /* =========================================================
    GLOBAL MOBILE SUBPAGE RESET
    ========================================================= */
 @media (max-width: 768px) {
+
+  /* Hide ALL hero illustrations on subpages by default */
   body.subpage .cad-hero-shape {
     display: none !important;
   }
-  body.subpage #hero.hero--bg-illustration::after {
-    display: none !important;
-    content: none !important;
-  }
-  body.subpage #hero.hero--bg-illustration::before {
-    display: none !important;
-    content: none !important;
-  }
 }
 
+
+/* =========================================================
+   PER-PAGE MOBILE OVERRIDES
+   ========================================================= */
 @media (max-width: 768px) {
 
   /* ---------------------------------------------
-     INDUSTRIES
+     INDUSTRIES — SHOW + CONTROL INLINE SVG
      --------------------------------------------- */
-   body.subpage--industries .cad-hero-shape {
+  body.subpage--industries .cad-hero-shape {
+    display: block !important;       /* override global hide */
+    position: absolute !important;   /* required for repositioning */
+    top: auto !important;
+    bottom: -80px !important;
+    right: -40px !important;
     opacity: 0.15 !important;
     transform: scale(0.75);
-    right: -40px;
-    bottom: -80px;
-  }
-  /* Example: keep the background illustration */
-  body.subpage--industries -illustration::after {
-    display: block !important;
-    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
   }
 
 
   /* ---------------------------------------------
-     SERVICES
+     SERVICES — SHOW + CONTROL INLINE SVG
      --------------------------------------------- */
   body.subpage--services .cad-hero-shape {
+    display: block !important;
+    position: absolute !important;
+    top: auto !important;
+    bottom: -80px !important;
+    right: -40px !important;
     opacity: 0.15 !important;
     transform: scale(0.75);
-    right: -40px;
-    bottom: -80px;
-  }
-  /* Example: keep the background illustration */
-  body.subpage--services -illustration::after {
-    display: block !important;
-    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
   }
 
 
   /* ---------------------------------------------
-     ABOUT
+     ABOUT — SUBTLE, SMALLER
      --------------------------------------------- */
   body.subpage--about .cad-hero-shape {
+    display: block !important;
+    position: absolute !important;
+    top: auto !important;
+    bottom: -40px !important;
+    right: -20px !important;
     opacity: 0.10 !important;
     transform: scale(0.55);
-    right: -20px;
-    bottom: -40px;
-  }
-  body.subpage--about #hero.hero--bg-illustration::before {
-    display: none !important;
+    pointer-events: none;
+    z-index: 1;
   }
 
 
   /* ---------------------------------------------
-     USE CASES
+     USE CASES — CUSTOM POSITION + OPACITY
      --------------------------------------------- */
-   body.subpage--use-cases #hero.hero--bg-illustration::after {
-    display: block !important;   /* override global hide */
-    content: "" !important;      /* restore content */
-    opacity: 0.12;               /* your chosen opacity */
-    transform: scale(0.65);      /* scale the illustration */
-    right: -30px;                /* reposition */
-    bottom: -70px;
-  }
-
-  /* Optional: if you want ::before too */
-  body.subpage--use-cases #hero.hero--bg-illustration::before {
+  body.subpage--use-cases .cad-hero-shape {
     display: block !important;
-    content: "";
-    opacity: 0.05;
+    position: absolute !important;
+    top: auto !important;
+    bottom: -70px !important;
+    right: -30px !important;
+    opacity: 0.12 !important;
+    transform: scale(0.65);
+    pointer-events: none;
+    z-index: 1;
   }
 
 
   /* ---------------------------------------------
-     CONTACT
+     CONTACT — KEEP CLEAN (NO ILLUSTRATION)
      --------------------------------------------- */
   body.subpage--contact .cad-hero-shape {
-    display: none !important; /* contact pages often benefit from clarity */
-  }
-  body.subpage--contact #hero.hero--bg-illustration::before,
-  body.subpage--contact #hero.hero--bg-illustration::after {
     display: none !important;
-    content: none !important;
   }
 }
+
