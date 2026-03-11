@@ -1921,32 +1921,31 @@ nav ul.nav {
 @media (max-width: 768px) {
 
   /* ---------------------------------------------
-     INDUSTRIES PAGE
+     INDUSTRIES
      --------------------------------------------- */
-  body.subpage--industries .cad-hero-shape {
-    /* Example: fully hide */
-    display: none !important;
-  }
-
-  body.subpage--industries #hero.hero--bg-illustration::after,
-  body.subpage--industries #hero.hero--bg-illustration::before {
-    display: none !important;
-    content: none !important;
-  }
-
-
-  /* ---------------------------------------------
-     SERVICES PAGE
-     --------------------------------------------- */
-  body.subpage--services .cad-hero-shape {
-    /* Example: keep but reduce presence */
+   body.subpage--industries .cad-hero-shape {
     opacity: 0.15 !important;
     transform: scale(0.75);
     right: -40px;
     bottom: -80px;
   }
+  /* Example: keep the background illustration */
+  body.subpage--industries #hero.hero--bg-illustration::after {
+    display: block !important;
+    opacity: 0.15;
+  }
 
-  /* If you want the background illustration visible: */
+
+  /* ---------------------------------------------
+     SERVICES
+     --------------------------------------------- */
+  body.subpage--services .cad-hero-shape {
+    opacity: 0.15 !important;
+    transform: scale(0.75);
+    right: -40px;
+    bottom: -80px;
+  }
+  /* Example: keep the background illustration */
   body.subpage--services #hero.hero--bg-illustration::after {
     display: block !important;
     opacity: 0.15;
@@ -1954,19 +1953,44 @@ nav ul.nav {
 
 
   /* ---------------------------------------------
-     ABOUT PAGE
+     ABOUT
      --------------------------------------------- */
   body.subpage--about .cad-hero-shape {
-    /* Example: subtle, centered, smaller */
     opacity: 0.10 !important;
     transform: scale(0.55);
     right: -20px;
     bottom: -40px;
   }
-
-  /* Hide background grid but keep shape */
   body.subpage--about #hero.hero--bg-illustration::before {
     display: none !important;
   }
-}
 
+
+  /* ---------------------------------------------
+     USE CASES
+     --------------------------------------------- */
+  body.subpage--use-cases .cad-hero-shape {
+    opacity: 0.12 !important;
+    transform: scale(0.65);
+    right: -30px;
+    bottom: -70px;
+  }
+  /* Example: hide background illustration but keep shape */
+  body.subpage--use-cases #hero.hero--bg-illustration::after {
+    display: none !important;
+    content: none !important;
+  }
+
+
+  /* ---------------------------------------------
+     CONTACT
+     --------------------------------------------- */
+  body.subpage--contact .cad-hero-shape {
+    display: none !important; /* contact pages often benefit from clarity */
+  }
+  body.subpage--contact #hero.hero--bg-illustration::before,
+  body.subpage--contact #hero.hero--bg-illustration::after {
+    display: none !important;
+    content: none !important;
+  }
+}
