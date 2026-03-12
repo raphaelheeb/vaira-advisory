@@ -54,7 +54,6 @@
   <meta name="twitter:image" content="{{ site.url }}/assets/img/social-preview.png">
 {% endif %}
 
-
   <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -63,6 +62,71 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vuhgyfya54");
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "VAIRA Technology",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}/assets/img/logo.png",
+  "image": [
+    "{{ site.url }}/assets/img/social-preview.png",
+    "{{ site.url }}/assets/img/social-preview-de.png"
+  ],
+  "description": "{{ page.description | default: site.description }}",
+  "founder": {
+    "@type": "Person",
+    "name": "Raphael"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CH"
+  },
+  "areaServed": [
+    "CH",
+    "DE",
+    "AT",
+    "EU"
+  ],
+  "knowsLanguage": [
+    "en",
+    "de"
+  ],
+  "sameAs": [
+    "https://vaira.ch"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Consulting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Deep‑Tech Consulting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Advanced Manufacturing Consulting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Automation & Industrialization"
+        }
+      }
+    ]
+  },
+  "inLanguage": "{% if page.lang == 'de' %}de{% else %}en{% endif %}"
+}
+</script>
+  
 </head>
 
 <body class="{{ page.bodyClass }}">
