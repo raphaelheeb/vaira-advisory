@@ -5,7 +5,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+ <title>
+  {% if page.title %}
+    {{ page.title }} | VAIRA Technology
+  {% else %}
+    VAIRA Technology
+  {% endif %}
+</title>
   <meta name="description" content="{{ page.description | default: site.title }}">
   <meta name="robots" content="index, follow">
 
