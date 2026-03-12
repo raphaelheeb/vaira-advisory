@@ -24,6 +24,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=3005' | relative_url }}">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
 
+  <!-- Open Graph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.title }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ site.url }}/assets/img/social-preview.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.description | default: site.title }}">
+<meta name="twitter:image" content="{{ site.url }}/assets/img/social-preview.png"
+
   <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
