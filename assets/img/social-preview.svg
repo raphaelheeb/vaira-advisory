@@ -1,10 +1,10 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Visible deep-tech gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="100%" stop-color="#000000"/>
-    </linearGradient>
+    <!-- Radial glow behind the logo -->
+    <radialGradient id="logoGlow" cx="0.18" cy="0.42" r="0.55">
+      <stop offset="0%" stop-color="#0F141A" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
 
     <!-- Subtle grid pattern -->
     <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -12,13 +12,13 @@
     </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
-  <rect width="1200" height="630" fill="url(#grid)" opacity="0.15"/>
+  <!-- Background with radial glow -->
+  <rect width="1200" height="630" fill="url(#logoGlow)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.10"/>
 
-  <!-- VAIRA logo (scaled and positioned) -->
-  <g transform="translate(80, 150) scale(1.6)">
-    <!-- Dark badge -->
+  <!-- VAIRA logo block -->
+  <g transform="translate(80, 140) scale(1.45)">
+    <!-- Badge -->
     <path
       d="M 20 5 H 190 A 15 15 0 0 1 205 20 V 190 A 15 15 0 0 1 190 205 H 20 A 15 15 0 0 1 5 190 V 20 A 15 15 0 0 1 20 5 Z"
       fill="#2b4e5a"
@@ -34,8 +34,8 @@
     </g>
   </g>
 
-  <!-- Right-side text block -->
-  <text x="520" y="260"
+  <!-- Right-side headline -->
+  <text x="520" y="280"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="42"
@@ -43,7 +43,7 @@
     Deep‑Tech &amp; Advanced
   </text>
 
-  <text x="520" y="315"
+  <text x="520" y="335"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="42"
@@ -51,7 +51,8 @@
     Manufacturing Consulting
   </text>
 
-  <text x="520" y="380"
+  <!-- Subline -->
+  <text x="520" y="400"
         fill="#C4C7D4"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="24"
@@ -59,7 +60,8 @@
     From early concept to industrial scale.
   </text>
 
-  <text x="520" y="430"
+  <!-- Secondary line -->
+  <text x="520" y="450"
         fill="#7C8194"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="16"
@@ -71,4 +73,3 @@
   <circle cx="1080" cy="120" r="10" fill="none" stroke="#00D1FF" stroke-width="2"/>
   <circle cx="1080" cy="120" r="4" fill="#00D1FF"/>
 </svg>
-
