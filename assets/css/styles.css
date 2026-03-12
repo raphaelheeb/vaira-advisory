@@ -2008,16 +2008,16 @@ nav ul.nav {
 
 
 /* =========================================================
-   PER-PAGE MOBILE OVERRIDES
+   PER-PAGE MOBILE OVERRIDES — BASELINE (EN VALUES)
    ========================================================= */
 @media (max-width: 768px) {
 
   /* ---------------------------------------------
-     INDUSTRIES — SHOW + CONTROL INLINE SVG
+     INDUSTRIES — BASELINE (EN)
      --------------------------------------------- */
   body.subpage--industries .cad-hero-shape {
-    display: block !important;       /* override global hide */
-    position: absolute !important;   /* required for repositioning */
+    display: block !important;
+    position: absolute !important;
     top: -200px !important;
     right: -200px !important;
     bottom: auto !important;
@@ -2028,9 +2028,8 @@ nav ul.nav {
     z-index: 1;
   }
 
-
   /* ---------------------------------------------
-     SERVICES — SHOW + CONTROL INLINE SVG
+     SERVICES — BASELINE (EN)
      --------------------------------------------- */
   body.subpage--services .cad-hero-shape {
     display: block !important;
@@ -2045,9 +2044,8 @@ nav ul.nav {
     z-index: 1;
   }
 
-
   /* ---------------------------------------------
-     ABOUT — SUBTLE, SMALLER
+     ABOUT — BASELINE (EN)
      --------------------------------------------- */
   body.subpage--about .cad-hero-shape {
     display: block !important;
@@ -2062,9 +2060,8 @@ nav ul.nav {
     z-index: 1;
   }
 
-
   /* ---------------------------------------------
-     USE CASES — CUSTOM POSITION + OPACITY
+     USE CASES — BASELINE (EN)
      --------------------------------------------- */
   body.subpage--use-cases .cad-hero-shape {
     display: block !important;
@@ -2079,9 +2076,8 @@ nav ul.nav {
     z-index: 1;
   }
 
-
   /* ---------------------------------------------
-     CONTACT — KEEP CLEAN (NO ILLUSTRATION)
+     CONTACT — BASELINE (EN)
      --------------------------------------------- */
   body.subpage--contact .cad-hero-shape {
     display: block !important;
@@ -2096,4 +2092,57 @@ nav ul.nav {
     z-index: 1;
   }
 }
+
+/* =========================================================
+   PER-PAGE MOBILE LANGUAGE OVERRIDES — DE
+   ========================================================= */
+@media (max-width: 768px) {
+
+  /* ---------------------------------------------
+     INDUSTRIES — DE OVERRIDES
+     --------------------------------------------- */
+  html[lang="de"] body.subpage--industries .cad-hero-shape {
+    /* Example placeholders — adjust as needed */
+    /* top: -XXXpx !important; */
+    /* right: -XXXpx !important; */
+    /* transform: scale(0.XX); */
+  }
+
+  /* ---------------------------------------------
+     SERVICES — DE OVERRIDES
+     --------------------------------------------- */
+  html[lang="de"] body.subpage--services .cad-hero-shape {
+    /* top: -XXXpx !important; */
+    /* right: -XXXpx !important; */
+    /* transform: scale(0.XX); */
+  }
+
+  /* ---------------------------------------------
+     ABOUT — DE OVERRIDES
+     --------------------------------------------- */
+  html[lang="de"] body.subpage--about .cad-hero-shape {
+    /* top: -XXXpx !important; */
+    /* right: -XXXpx !important; */
+    /* transform: scale(0.XX) rotate(120deg); */
+  }
+
+  /* ---------------------------------------------
+     USE CASES — DE OVERRIDES
+     --------------------------------------------- */
+  html[lang="de"] body.subpage--use-cases .cad-hero-shape {
+    /* top: -XXXpx !important; */
+    /* right: -XXXpx !important; */
+    /* transform: scale(0.XX) rotate(-180deg); */
+  }
+
+  /* ---------------------------------------------
+     CONTACT — DE OVERRIDES
+     --------------------------------------------- */
+  html[lang="de"] body.subpage--contact .cad-hero-shape {
+    /* top: -XXXpx !important; */
+    /* right: -XXXpx !important; */
+    /* transform: scale(0.XX); */
+  }
+}
+
 
