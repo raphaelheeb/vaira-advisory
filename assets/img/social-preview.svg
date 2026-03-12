@@ -1,12 +1,10 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background gradient (very subtle) -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050509"/>
       <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
 
-    <!-- Subtle grid pattern -->
     <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1A1A1F" stroke-width="1"/>
     </pattern>
@@ -14,49 +12,19 @@
 
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bgGrad)"/>
-
-  <!-- Grid overlay (very subtle) -->
   <rect width="1200" height="630" fill="url(#grid)" opacity="0.18"/>
 
-  <!-- Left panel for logo -->
-  <rect x="80" y="115" width="360" height="400" fill="none"/>
-
-   <!-- Dark badge -->
-  <path
-    d="
-      M 20 5
-      H 190
-      A 15 15 0 0 1 205 20
-      V 190
-      A 15 15 0 0 1 190 205
-      H 20
-      A 15 15 0 0 1 5 190
-      V 20
-      A 15 15 0 0 1 20 5
-      Z"
-    fill="#2b4e5a"
-    stroke="#2b4e5a"
-    stroke-width="6"
-  />
-
-  <!-- VAIRA wordmark -->
-  <g transform="translate(7, 16) scale(1.01)">
-    <path fill="#ffffff"
-      d="M 26.957886,97.719615 11.306715,64.411182 h 5.561484 L 30.331245,92.882294 43.794292,64.411182 h 5.561484 L 33.734995,97.719615 Z m 21.850224,0 15.894295,-33.308433 h 6.351641 L 86.948342,97.719615 H 81.204514 L 76.889046,88.5978 h -18.02164 l -4.34586,9.121815 z M 60.356547,84.681874 H 75.339124 L 67.863031,68.580495 Z M 90.746442,97.719615 V 64.411182 h 5.622266 v 33.308433 z m 15.815008,0 V 64.411182 h 17.01875 q 4.74093,0 7.93195,1.105674 3.19101,1.08264 4.77133,3.132744 1.58031,2.027068 1.58031,4.860358 0,2.718116 -1.27641,4.514836 -1.24601,1.79672 -3.19102,2.902395 -1.94499,1.082638 -4.04195,1.681545 l 8.63094,15.110881 h -5.95656 l -8.02313,-14.350729 h -11.82195 v 14.350729 z m 5.62226,-17.875066 h 9.57305 q 4.95367,0 7.65844,-1.520302 2.70476,-1.543336 2.70476,-4.560905 0,-2.948465 -2.43125,-4.399662 -2.40086,-1.474232 -6.59477,-1.474232 h -10.91023 z m 30.82793,17.875066 15.8943,-33.308433 h 6.35164 l 15.8943,33.308433 h -5.74383 L 171.09258,88.5978 h -18.02164 l -4.34586,9.121815 z m 11.54844,-13.037741 h 14.98258 l -7.4761,-16.101379 z"
-    />
-  </g>
-
-  <!-- Wordmark-style placeholder -->
-  <text x="80" y="260"
+  <!-- Left block -->
+  <text x="80" y="300"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-        font-size="54"
+        font-size="48"
         font-weight="700"
         letter-spacing="0.18em">
     VAIRA
   </text>
 
-  <text x="80" y="305"
+  <text x="80" y="340"
         fill="#9FA3B2"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="20"
@@ -65,12 +33,10 @@
     TECHNOLOGY
   </text>
 
-  <!-- Accent bar under logo -->
-  <rect x="80" y="330" width="120" height="4" fill="#00D1FF"/>
+  <rect x="80" y="360" width="120" height="4" fill="#00D1FF"/>
 
-  <!-- Right side content block -->
-  <!-- Headline -->
-  <text x="520" y="250"
+  <!-- Right block -->
+  <text x="520" y="290"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="40"
@@ -78,7 +44,7 @@
     Deep‑Tech &amp; Advanced
   </text>
 
-  <text x="520" y="300"
+  <text x="520" y="340"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="40"
@@ -86,8 +52,7 @@
     Manufacturing Consulting
   </text>
 
-  <!-- Subline -->
-  <text x="520" y="360"
+  <text x="520" y="400"
         fill="#C4C7D4"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="22"
@@ -95,8 +60,7 @@
     From early concept to industrial scale.
   </text>
 
-  <!-- Optional subtle tag line at bottom right -->
-  <text x="520" y="420"
+  <text x="520" y="450"
         fill="#7C8194"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="16"
@@ -104,8 +68,7 @@
     Deep‑tech, automation &amp; advanced manufacturing consulting based in Switzerland.
   </text>
 
-  <!-- Small accent circle (tech detail) -->
   <circle cx="1080" cy="120" r="10" fill="none" stroke="#00D1FF" stroke-width="2"/>
   <circle cx="1080" cy="120" r="4" fill="#00D1FF"/>
-
 </svg>
+
