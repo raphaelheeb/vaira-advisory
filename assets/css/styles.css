@@ -2018,9 +2018,10 @@ nav ul.nav {
   body.subpage--industries .cad-hero-shape {
     display: block !important;       /* override global hide */
     position: absolute !important;   /* required for repositioning */
-    top: auto !important;
-    bottom: -80px !important;
-    right: -40px !important;
+    top: -200px !important;
+    right: -200px !important;
+    bottom: auto !important;
+    left: auto !important;
     opacity: 0.15 !important;
     transform: scale(0.75);
     pointer-events: none;
@@ -2090,7 +2091,7 @@ nav ul.nav {
     bottom: auto !important;
     left: auto !important;
     opacity: 0.15 !important;
-    transform: scale(0.65) rotate(30deg);
+    transform: scale(0.65) rotate(0deg);
     pointer-events: none;
     z-index: 1;
   }
