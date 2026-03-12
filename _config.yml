@@ -3,3 +3,5 @@ url: "https://vaira.ch"
 baseurl: ""
 theme: null
 markdown: kramdown
+include:
+  - de
