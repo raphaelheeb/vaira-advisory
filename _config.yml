@@ -4,15 +4,7 @@ baseurl: ""
 theme: null
 markdown: kramdown
 
-include:
-  - de
-
-collections:
-  pages:
-    output: true
-
-defaults:
-  - scope:
-      path: "de"
-    values:
-      sitemap: true
+# GitHub Pages does NOT allow custom plugins like jekyll-sitemap.
+# We will provide our own sitemap.xml manually.
+exclude:
+  - sitemap.xml
