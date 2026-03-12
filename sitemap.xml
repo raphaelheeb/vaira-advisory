@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://vaira.ch/</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://vaira.ch/about.html</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://vaira.ch/services.html</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://vaira.ch/industries.html</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://vaira.ch/contact.html</loc><lastmod>2026-02-14</lastmod></url>
+
+  <!-- English pages -->
+  <url><loc>https://vaira.ch/</loc></url>
+  <url><loc>https://vaira.ch/about/</loc></url>
+  <url><loc>https://vaira.ch/services/</loc></url>
+  <url><loc>https://vaira.ch/industries/</loc></url>
+  <url><loc>https://vaira.ch/contact/</loc></url>
+
+  <!-- German pages -->
+  <url><loc>https://vaira.ch/de/</loc></url>
+  <url><loc>https://vaira.ch/de/about/</loc></url>
+  <url><loc>https://vaira.ch/de/services/</loc></url>
+  <url><loc>https://vaira.ch/de/industries/</loc></url>
+  <url><loc>https://vaira.ch/de/contact/</loc></url>
+  <url><loc>https://vaira.ch/de/datenschutz/</loc></url>
+  <url><loc>https://vaira.ch/de/impressum/</loc></url>
+  <url><loc>https://vaira.ch/de/use-cases/</loc></url>
+
 </urlset>
