@@ -41,7 +41,7 @@
       <!-- LANGUAGE SWITCHER -->
       <div class="language-switcher">
 
-        {% assign current = page.url %}
+     {% assign current = page.url %}
 
 {% if current | slice: 0, 4 == '/de/' %}
   {% assign en_url = current | remove_first: '/de' %}
@@ -64,7 +64,6 @@
 {% if current == '/impressum/' %}
   {% assign de_url = '/de/impressum/' %}
 {% endif %}
-
 
         {% if page.lang == "de" %}
           <a href="{{ en_url }}" class="lang-btn">EN</a>
