@@ -29,8 +29,8 @@
     </g>
   </g>
 
-  <!-- Right-side headline (slightly raised) -->
-  <text x="520" y="280"
+  <!-- Right-side headline (aligned to logo bottom) -->
+  <text x="520" y="253"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="42"
@@ -38,7 +38,7 @@
     Deep‑Tech &amp; Advanced
   </text>
 
-  <text x="520" y="335"
+  <text x="520" y="308"
         fill="#FFFFFF"
         font-family="Inter Tight, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="42"
@@ -46,8 +46,8 @@
     Manufacturing Beratung
   </text>
 
-  <!-- Subline (raised) -->
-  <text x="520" y="400"
+  <!-- Subline -->
+  <text x="520" y="373"
         fill="#C4C7D4"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="24"
@@ -55,8 +55,8 @@
     Von der frühen Idee bis zur industriellen Skalierung.
   </text>
 
-  <!-- Secondary line (raised) -->
-  <text x="520" y="450"
+  <!-- Secondary line -->
+  <text x="520" y="423"
         fill="#7C8194"
         font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
         font-size="16"
