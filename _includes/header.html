@@ -41,29 +41,74 @@
       <!-- LANGUAGE SWITCHER -->
       <div class="language-switcher">
 
-        {% assign current = page.url %}
+        {% comment %}
+        Hard mapping EN <-> DE for all relevant pages.
+        No dynamic magic, no /de/de/, no guessing.
+        {% endcomment %}
 
-        {% if current | slice: 0, 4 == '/de/' %}
-          {% assign en_url = current | remove_first: '/de' %}
-          {% assign de_url = current %}
-        {% else %}
-          {% assign en_url = current %}
-          {% assign de_url = '/de' | append: current %}
-        {% endif %}
+        {% assign en_url  = '/' %}
+        {% assign de_url  = '/de/' %}
 
-        <!-- Special cases -->
-        {% if current == '/de/datenschutz/' %}
-          {% assign en_url = '/privacy/' %}
-        {% endif %}
-        {% if current == '/privacy/' %}
-          {% assign de_url = '/de/datenschutz/' %}
-        {% endif %}
-        {% if current == '/de/impressum/' %}
-          {% assign en_url = '/impressum/' %}
-        {% endif %}
-        {% if current == '/impressum/' %}
-          {% assign de_url = '/de/impressum/' %}
-        {% endif %}
+        {% case page.url %}
+
+          {% when '/' %}
+            {% assign en_url = '/' %}
+            {% assign de_url = '/de/' %}
+
+          {% when '/de/' %}
+            {% assign en_url = '/' %}
+            {% assign de_url = '/de/' %}
+
+          {% when '/services/' %}
+            {% assign en_url = '/services/' %}
+            {% assign de_url = '/de/services/' %}
+          {% when '/de/services/' %}
+            {% assign en_url = '/services/' %}
+            {% assign de_url = '/de/services/' %}
+
+          {% when '/industries/' %}
+            {% assign en_url = '/industries/' %}
+            {% assign de_url = '/de/industries/' %}
+          {% when '/de/industries/' %}
+            {% assign en_url = '/industries/' %}
+            {% assign de_url = '/de/industries/' %}
+
+          {% when '/use-cases/' %}
+            {% assign en_url = '/use-cases/' %}
+            {% assign de_url = '/de/use-cases/' %}
+          {% when '/de/use-cases/' %}
+            {% assign en_url = '/use-cases/' %}
+            {% assign de_url = '/de/use-cases/' %}
+
+          {% when '/about/' %}
+            {% assign en_url = '/about/' %}
+            {% assign de_url = '/de/about/' %}
+          {% when '/de/about/' %}
+            {% assign en_url = '/about/' %}
+            {% assign de_url = '/de/about/' %}
+
+          {% when '/contact/' %}
+            {% assign en_url = '/contact/' %}
+            {% assign de_url = '/de/contact/' %}
+          {% when '/de/contact/' %}
+            {% assign en_url = '/contact/' %}
+            {% assign de_url = '/de/contact/' %}
+
+          {% when '/privacy/' %}
+            {% assign en_url = '/privacy/' %}
+            {% assign de_url = '/de/datenschutz/' %}
+          {% when '/de/datenschutz/' %}
+            {% assign en_url = '/privacy/' %}
+            {% assign de_url = '/de/datenschutz/' %}
+
+          {% when '/impressum/' %}
+            {% assign en_url = '/impressum/' %}
+            {% assign de_url = '/de/impressum/' %}
+          {% when '/de/impressum/' %}
+            {% assign en_url = '/impressum/' %}
+            {% assign de_url = '/de/impressum/' %}
+
+        {% endcase %}
 
         {% if page.lang == "de" %}
           <a href="{{ en_url }}" class="lang-btn">EN</a>
@@ -102,3 +147,4 @@
   </nav>
 
 </header>
+
