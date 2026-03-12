@@ -36,6 +36,13 @@
   <meta property="og:image" content="{{ site.url }}/assets/img/social-preview.png">
 {% endif %}
 
+<!-- Optional locale improvement -->
+{% if page.lang == "de" %}
+  <meta property="og:locale" content="de_CH">
+{% else %}
+  <meta property="og:locale" content="en_US">
+{% endif %}
+
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title | default: site.title }}">
@@ -46,6 +53,7 @@
 {% else %}
   <meta name="twitter:image" content="{{ site.url }}/assets/img/social-preview.png">
 {% endif %}
+
 
   <!-- Microsoft Clarity -->
 <script type="text/javascript">
