@@ -43,27 +43,28 @@
 
         {% assign current = page.url %}
 
-        {% if current startswith '/de/' %}
-          {% assign en_url = current | remove_first: '/de' %}
-          {% assign de_url = current %}
-        {% else %}
-          {% assign en_url = current %}
-          {% assign de_url = '/de' | append: current %}
-        {% endif %}
+{% if current | slice: 0, 4 == '/de/' %}
+  {% assign en_url = current | remove_first: '/de' %}
+  {% assign de_url = current %}
+{% else %}
+  {% assign en_url = current %}
+  {% assign de_url = '/de' | append: current %}
+{% endif %}
 
-        <!-- Special cases -->
-        {% if current == '/de/datenschutz/' %}
-          {% assign en_url = '/privacy/' %}
-        {% endif %}
-        {% if current == '/privacy/' %}
-          {% assign de_url = '/de/datenschutz/' %}
-        {% endif %}
-        {% if current == '/de/impressum/' %}
-          {% assign en_url = '/impressum/' %}
-        {% endif %}
-        {% if current == '/impressum/' %}
-          {% assign de_url = '/de/impressum/' %}
-        {% endif %}
+<!-- Special cases -->
+{% if current == '/de/datenschutz/' %}
+  {% assign en_url = '/privacy/' %}
+{% endif %}
+{% if current == '/privacy/' %}
+  {% assign de_url = '/de/datenschutz/' %}
+{% endif %}
+{% if current == '/de/impressum/' %}
+  {% assign en_url = '/impressum/' %}
+{% endif %}
+{% if current == '/impressum/' %}
+  {% assign de_url = '/de/impressum/' %}
+{% endif %}
+
 
         {% if page.lang == "de" %}
           <a href="{{ en_url }}" class="lang-btn">EN</a>
