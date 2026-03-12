@@ -2,23 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- English pages -->
-  <url><loc>https://vaira.ch/</loc></url>
-  <url><loc>https://vaira.ch/about/</loc></url>
-  <url><loc>https://vaira.ch/services/</loc></url>
-  <url><loc>https://vaira.ch/industries/</loc></url>
-  <url><loc>https://vaira.ch/contact/</loc></url>
-  <url><loc>https://vaira.ch/privacy/</loc></url>
-  <url><loc>https://vaira.ch/impressum/</loc></url>
-  <url><loc>https://vaira.ch/use-cases/</loc></url>
+  <url>
+    <loc>https://vaira.ch/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/about/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/services/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/industries/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/contact/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/privacy/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/impressum/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/use-cases/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
 
   <!-- German pages -->
-  <url><loc>https://vaira.ch/de/</loc></url>
-  <url><loc>https://vaira.ch/de/about/</loc></url>
-  <url><loc>https://vaira.ch/de/services/</loc></url>
-  <url><loc>https://vaira.ch/de/industries/</loc></url>
-  <url><loc>https://vaira.ch/de/contact/</loc></url>
-  <url><loc>https://vaira.ch/de/datenschutz/</loc></url>
-  <url><loc>https://vaira.ch/de/impressum/</loc></url>
-  <url><loc>https://vaira.ch/de/use-cases/</loc></url>
+  <url>
+    <loc>https://vaira.ch/de/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/about/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/services/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/industries/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/contact/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/datenschutz/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/impressum/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://vaira.ch/de/use-cases/</loc>
+    <lastmod>2026-03-12</lastmod>
+  </url>
 
 </urlset>
