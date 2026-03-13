@@ -57,6 +57,14 @@
   <meta property="og:locale" content="en_US">
 {% endif %}
 
+<!-- INSERT SAFE OG LOCALE ALTERNATES HERE -->
+{% if page.lang == "de" %}
+  <meta property="og:locale:alternate" content="en_US">
+{% else %}
+  <meta property="og:locale:alternate" content="de_CH">
+{% endif %}
+<!-- END INSERT -->
+
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title | default: site.title }}">
