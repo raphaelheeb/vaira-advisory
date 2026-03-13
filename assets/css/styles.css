@@ -2148,6 +2148,6 @@ nav ul.nav {
 /* Semantic SEO block adjustments */
 .section--semantic {
   background-color: #efefef; /* subtle contrast */
-  padding-top: 2rem;         /* reduced top padding */
-  padding-bottom: 2rem;      /* reduced bottom padding */
+  padding-top: 3.5rem;         /* reduced top padding */
+  padding-bottom: 3rem;      /* reduced bottom padding */
 }
