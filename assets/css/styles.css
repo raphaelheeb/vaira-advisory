@@ -2144,3 +2144,10 @@ nav ul.nav {
     /* transform: scale(0.XX); */
   }
 }
+
+/* Semantic SEO block adjustments */
+.section--semantic {
+  background-color: #efefef; /* subtle contrast */
+  padding-top: 2rem;         /* reduced top padding */
+  padding-bottom: 2rem;      /* reduced bottom padding */
+}
