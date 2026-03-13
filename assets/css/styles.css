@@ -2144,18 +2144,3 @@ nav ul.nav {
     /* transform: scale(0.XX); */
   }
 }
-
-
-.section--semantic {
-  background-color: #ececec; /* subtle contrast */
-}
-
-.section--tight-top {
-  padding-top: 2rem; /* aligns with HERO */
-}
-
-.section--tight-bottom {
-  padding-bottom: 2rem; /* reduces gap to next section */
-}
-
-
