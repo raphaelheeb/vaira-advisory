@@ -68,6 +68,17 @@
   <meta name="twitter:image" content="{{ site.url }}/assets/img/social-preview.png">
 {% endif %}
 
+<!-- INSERT SAFE TWITTER LOCALE TAGS HERE -->
+{% if page.lang == "de" %}
+  <meta name="twitter:locale" content="de_CH">
+  <meta name="twitter:locale:alternate" content="en_US">
+{% else %}
+  <meta name="twitter:locale" content="en_US">
+  <meta name="twitter:locale:alternate" content="de_CH">
+{% endif %}
+<!-- END INSERT -->
+
+
   <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
