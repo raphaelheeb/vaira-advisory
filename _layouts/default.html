@@ -140,6 +140,16 @@
   "inLanguage": "{% if page.lang == 'de' %}de{% else %}en{% endif %}"
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "{{ page.url | absolute_url }}",
+  "name": "{{ page.title }}",
+  "inLanguage": "{{ page.lang }}"
+}
+</script>
   
 </head>
 
