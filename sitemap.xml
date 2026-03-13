@@ -4,83 +4,84 @@
   <!-- English pages -->
   <url>
     <loc>https://vaira.ch/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/about/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/services/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/industries/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/contact/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/privacy/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/impressum/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/use-cases/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <!-- German pages -->
   <url>
     <loc>https://vaira.ch/de/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/about/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/services/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/industries/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/contact/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/datenschutz/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/impressum/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
   <url>
     <loc>https://vaira.ch/de/use-cases/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
 
 </urlset>
+
