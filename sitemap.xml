@@ -1,72 +1,76 @@
+---
+layout: null
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<!-- English pages -->
-<url>
-  <loc>https://vaira.ch/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/about/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/services/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/industries/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/contact/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/privacy/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/impressum/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/use-cases/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
+  <!-- English pages -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/about/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/services/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/industries/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/contact/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/privacy/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/impressum/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/use-cases/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
 
-<!-- German pages -->
-<url>
-  <loc>https://vaira.ch/de/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/about/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/services/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/industries/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/contact/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/datenschutz/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/impressum/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-  <loc>https://vaira.ch/de/use-cases/</loc>
-  <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-</url>
+  <!-- German pages -->
+  <url>
+    <loc>{{ site.url }}/de/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/about/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/services/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/industries/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/contact/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/datenschutz/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/impressum/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/de/use-cases/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
 
 </urlset>
