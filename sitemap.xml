@@ -3,74 +3,138 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- English pages -->
   <url>
     <loc>{{ site.url }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/about/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/services/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/industries/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/industries/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/industries/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/industries/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/contact/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/contact/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/privacy/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/privacy/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/impressum/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/impressum/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/impressum/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/use-cases/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/use-cases/" />
   </url>
 
   <!-- German pages -->
   <url>
     <loc>{{ site.url }}/de/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/about/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/services/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/industries/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/industries/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/industries/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/industries/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/contact/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/contact/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/datenschutz/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/privacy/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/impressum/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/impressum/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/impressum/" />
   </url>
+
   <url>
     <loc>{{ site.url }}/de/use-cases/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/use-cases/" />
   </url>
 
 </urlset>
