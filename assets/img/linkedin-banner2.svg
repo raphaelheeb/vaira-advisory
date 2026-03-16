@@ -17,23 +17,38 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-  <!-- Top-right arc motif -->
+  <!-- Refined top-right arc motif -->
   <g fill="none" stroke="white" stroke-linecap="round">
 
-    <path d="M 1504.75 134.2 A 155 155 0 0 1 1429 0"
-          stroke-width="1.35" stroke-opacity="0.55"/>
+    <!-- OUTER ARC: slightly larger, shifted left and up -->
+    <path d="
+      M 1464.75 114.2
+      A 178 178 0 0 1 1389 0
+    "
+      stroke-width="1.35" stroke-opacity="0.55"/>
 
-    <path d="M 1502.7 81.3 A 115 115 0 0 1 1469 0"
-          stroke-width="1.0" stroke-opacity="0.40"/>
+    <!-- INNER ARC: slightly larger, shifted left and up -->
+    <path d="
+      M 1462.7 61.3
+      A 132 132 0 0 1 1429 0
+    "
+      stroke-width="1.0" stroke-opacity="0.40"/>
 
-    <line x1="1584" y1="0" x2="1488.4" y2="94.2"
+    <!-- RADIAL LINE: shifted left and up -->
+    <line x1="1544" y1="0"
+          x2="1448.4" y2="74.2"
           stroke-width="1.0" stroke-opacity="0.50"/>
 
-    <line x1="1517.6" y1="60.8" x2="1523.2" y2="66.4"
+    <!-- TICK 1 -->
+    <line x1="1477.6" y1="40.8"
+          x2="1483.2" y2="46.4"
           stroke-width="0.8" stroke-opacity="0.42"/>
 
-    <line x1="1545.1" y1="24.7" x2="1559.3" y2="38.9"
+    <!-- TICK 2 -->
+    <line x1="1505.1" y1="4.7"
+          x2="1519.3" y2="18.9"
           stroke-width="0.9" stroke-opacity="0.50"/>
+
   </g>
 
   <!-- Two-line tagline (Option B) -->
@@ -48,3 +63,4 @@
   </g>
 
 </svg>
+
