@@ -33,20 +33,17 @@
   </g>
 
   <!-- Radial line + ticks (rotated downward) -->
-  <g transform="rotate(140 210 210)">
-    <line x1="210" y1="210" x2="400" y2="210"
-           fill="#2B4E5A"
-         stroke="white" stroke-width="1" stroke-opacity="0.45"
-          vector-effect="non-scaling-stroke"/>
-    <line x1="360" y1="205" x2="360" y2="215"
-           fill="#2B4E5A"
-         stroke="white" stroke-width="1" stroke-opacity="0.40"
-          vector-effect="non-scaling-stroke"/>
-    <line x1="320" y1="205" x2="320" y2="215"
-          fill="#2B4E5A"
-         stroke="white" stroke-width="1" stroke-opacity="0.32"
-          vector-effect="non-scaling-stroke"/>
-  </g>
+ <g transform="rotate(140 210 210)">
+  <line x1="210" y1="210" x2="520" y2="210"
+        stroke="white" stroke-width="1" stroke-opacity="0.45"
+        vector-effect="non-scaling-stroke"/>
+  <line x1="360" y1="205" x2="360" y2="215"
+        stroke="white" stroke-width="1" stroke-opacity="0.40"
+        vector-effect="non-scaling-stroke"/>
+  <line x1="320" y1="205" x2="320" y2="215"
+        stroke="white" stroke-width="1" stroke-opacity="0.32"
+        vector-effect="non-scaling-stroke"/>
+</g>
 
 </g>
 
