@@ -17,8 +17,8 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-<!-- Top-right arc motif (scaled full height, consistent with subpages) -->
-<g transform="translate(1188,0) scale(0.943)">
+<!-- Top-right arc motif (full height, rotated, correctly cropped) -->
+<g transform="translate(1338,-50) scale(0.943)">
   
   <!-- Circles -->
   <g transform="rotate(-120 210 210)">
