@@ -2,7 +2,7 @@
      xmlns="http://www.w3.org/2000/svg">
 
   <!-- Background -->
-  <rect width="1200" height="1200" fill="#FAFCFC"/>
+  <rect width="1200" height="1200" fill="#2B4E5A"/>
 
   <!-- CAD Contour Group (scaled and centered) -->
   <g transform="translate(150,150) scale(1.5)">
@@ -44,3 +44,4 @@
     </g>
   </g>
 </svg>
+
