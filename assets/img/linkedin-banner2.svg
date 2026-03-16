@@ -20,17 +20,17 @@
 <!-- Top-right arc motif (corrected placement, no black background) -->
 <g transform="translate(1338,-90) scale(0.943)">
   
-  <!-- Circles -->
-  <g transform="rotate(-120 210 210)">
-    <path d="M20 210 A190 190 0 0 1 400 210"
-          fill="#2B4E5A"
+ <!-- Circles (full circles instead of arcs) -->
+<g transform="rotate(-120 210 210)">
+  <circle cx="210" cy="210" r="190"
+          fill="none"
           stroke="white" stroke-width="1.75" stroke-opacity="0.55"
           vector-effect="non-scaling-stroke"/>
-    <path d="M60 210 A150 150 0 0 1 360 210"
-          fill="#2B4E5A"
+  <circle cx="210" cy="210" r="150"
+          fill="none"
           stroke="white" stroke-width="1.25" stroke-opacity="0.40"
           vector-effect="non-scaling-stroke"/>
-  </g>
+</g>
 
   <!-- Radial line + ticks (rotated downward) -->
 <g transform="rotate(140 210 210)">
