@@ -27,6 +27,7 @@
           stroke="white" stroke-width="1.75" stroke-opacity="0.55"
           vector-effect="non-scaling-stroke"/>
     <path d="M60 210 A150 150 0 0 1 360 210"
+          fill="#2B4E5A"
           stroke="white" stroke-width="1.25" stroke-opacity="0.40"
           vector-effect="non-scaling-stroke"/>
   </g>
