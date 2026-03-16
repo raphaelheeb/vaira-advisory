@@ -17,10 +17,10 @@
   <rect width="1584" height="396" fill="#2B4E5A"/>
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
-<!-- Top-right arc motif (corrected placement + downward radial line) -->
+<!-- Top-right arc motif (corrected placement, no black background) -->
 <g transform="translate(1338,0) scale(0.943)">
   
-  <!-- Circles (same rotation as subpages) -->
+  <!-- Circles -->
   <g transform="rotate(-120 210 210)">
     <path d="M20 210 A190 190 0 0 1 400 210"
           stroke="white" stroke-width="1.75" stroke-opacity="0.55"
@@ -30,7 +30,7 @@
           vector-effect="non-scaling-stroke"/>
   </g>
 
-  <!-- Radial line + ticks (rotated further downward) -->
+  <!-- Radial line + ticks (rotated downward) -->
   <g transform="rotate(140 210 210)">
     <line x1="210" y1="210" x2="400" y2="210"
           stroke="white" stroke-width="1" stroke-opacity="0.45"
