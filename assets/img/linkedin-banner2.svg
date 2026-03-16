@@ -18,7 +18,7 @@
   <rect width="1584" height="396" fill="url(#heroFade)" opacity="0.24"/>
 
 <!-- Top-right arc motif (corrected placement, no black background) -->
-<g transform="translate(1338,0) scale(0.943)">
+<g transform="translate(1338,-90) scale(0.943)">
   
   <!-- Circles -->
   <g transform="rotate(-120 210 210)">
