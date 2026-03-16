@@ -31,7 +31,7 @@
   </g>
 
   <!-- Radial line + ticks -->
-  <g transform="rotate(0 210 210)">
+  <g transform="rotate(120 210 210)">
     <line x1="210" y1="210" x2="400" y2="210"
           stroke="white" stroke-width="1" stroke-opacity="0.45"
           vector-effect="non-scaling-stroke"/>
