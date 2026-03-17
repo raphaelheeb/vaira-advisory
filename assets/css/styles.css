@@ -2152,16 +2152,35 @@ nav ul.nav {
   padding-bottom: 3rem;      /* reduced bottom padding */
 }
 
-.leadership-photo {
-  width: 150px;
-  margin: 0 auto 25px auto; /* centers and adds spacing */
+.leadership-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .leadership-photo img {
-  width: 100%;
+  width: 280px; /* adjust between 260–320px */
   height: auto;
-  border-radius: 50%;
   display: block;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle depth, optional */
-  object-fit: cover;
+  border-radius: 4px; /* subtle, architectural; remove if you want sharp corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* optional, very subtle depth */
+}
+
+.leadership-text {
+  flex: 1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .leadership-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .leadership-photo img {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
 }
