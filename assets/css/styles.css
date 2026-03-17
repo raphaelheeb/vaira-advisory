@@ -2152,19 +2152,23 @@ nav ul.nav {
   padding-bottom: 3rem;      /* reduced bottom padding */
 }
 
+
 .leadership-layout {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  margin-bottom: 40px;
+  gap: 40px;
+  align-items: stretch; /* critical: makes both columns equal height */
+}
+
+.leadership-photo {
+  flex: 0 0 320px; /* fixed width, adjust as needed */
+  overflow: hidden; /* allows cropping */
 }
 
 .leadership-photo img {
-  width: 280px; /* adjust between 260–320px */
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills full height, crops elegantly */
   display: block;
-  border-radius: 4px; /* subtle, architectural; remove if you want sharp corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* optional, very subtle depth */
 }
 
 .leadership-text {
@@ -2172,15 +2176,19 @@ nav ul.nav {
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .leadership-layout {
     flex-direction: column;
-    gap: 20px;
+  }
+
+  .leadership-photo {
+    width: 100%;
+    height: auto;
   }
 
   .leadership-photo img {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
+    height: auto;
+    object-fit: contain;
   }
 }
+
