@@ -7,13 +7,12 @@
   <!-- VAIRA FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
 
-  <style>
+ <style>
   :root {
     --primary: #2B4E5A;
     --primary-mid: #5F8A8E;
     --primary-dark: #084442;
     --text-dark: #0E1514;
-    --text-light: #FFFFFF;
   }
 
   @page {
@@ -28,7 +27,6 @@
     font-size: 11pt;
     line-height: 1.45;
     color: var(--text-dark);
-    background: #fff;
   }
 
   h1, h2, h3 {
@@ -49,13 +47,7 @@
     padding-bottom: 0.25rem;
     border-bottom: 2px solid var(--primary-mid);
     display: inline-block;
-    white-space: nowrap; /* garantiert einzeilig */
-  }
-
-  h3 {
-    font-size: 12pt;
-    margin-top: 1.2rem;
-    margin-bottom: 0.3rem;
+    white-space: nowrap;
   }
 
   p {
@@ -63,27 +55,17 @@
     text-align: justify;
   }
 
-  ul {
-    margin: 0.4rem 0 1rem 1.1rem;
-    padding: 0;
-    list-style: disc;
-  }
-
-  ul li {
-    margin-bottom: 0.35rem;
-  }
-
   /* HEADER */
   .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1.6rem;
+    gap: 1.8rem;
     margin-bottom: 2.4rem;
   }
 
   .header-left {
-    width: 68%;
+    width: 70%;
   }
 
   .header-title {
@@ -94,15 +76,32 @@
     line-height: 1.35;
   }
 
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .contact {
     font-size: 10.5pt;
     color: #555;
-    margin-bottom: 0.4rem;
+  }
+
+  .qr {
+    width: 2.2cm;
+    height: 2.2cm;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    color: #666;
   }
 
   .links {
     font-size: 10.5pt;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
   }
 
   .links a {
@@ -114,20 +113,14 @@
     text-decoration: underline;
   }
 
-  .header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    margin-top: 0.4rem; /* optische Ausrichtung */
-  }
-
   .photo {
-    width: 4.6cm;   /* Schweizer Standard */
-    height: 4.6cm;
+    width: 4.7cm;
+    height: 4.7cm;
     border-radius: 6px;
     overflow: hidden;
     background: #ddd;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
   }
 
   .photo img {
@@ -135,25 +128,14 @@
     height: 100%;
     object-fit: cover;
   }
-
-  .qr {
-    width: 2.3cm;
-    height: 2.3cm;
-    background: #eee;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9pt;
-    color: #666;
-  }
 </style>
+
 
 </head>
 
 <body>
 
- <!-- HEADER -->
+<!-- HEADER -->
 <header class="header">
 
   <div class="header-left">
@@ -164,8 +146,13 @@
       <br>Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin‑off) · Führungskraft im Schweizer Deep‑Tech‑KMU
     </div>
 
-    <div class="contact">
-      Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
+    <div class="contact-row">
+      <div class="contact">
+        Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
+      </div>
+
+      <!-- QR-Code rechts neben Kontakt -->
+      <div class="qr">QR‑Code</div>
     </div>
 
     <div class="links">
@@ -174,18 +161,13 @@
     </div>
   </div>
 
-  <div class="header-right">
-    <div class="photo">
-      <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
-    </div>
-
-    <!-- QR-Code optional -->
-    <div class="qr">QR‑Code</div>
+  <div class="photo">
+    <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
   </div>
 
 </header>
 
- <!-- PROFIL -->
+<!-- PROFIL -->
 <section>
   <h2>Profil</h2>
   <p>
