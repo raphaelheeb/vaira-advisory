@@ -8,146 +8,164 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
 
 <style>
-  :root {
-    --primary: #2B4E5A;
-    --primary-mid: #5F8A8E;
-    --primary-dark: #084442;
-    --text-dark: #0E1514;
-  }
 
-  @page {
-    size: A4;
-    margin: 1.6cm;
-  }
+/* ============================
+   CV ISOLATION WRAPPER
+   ============================ */
 
-  body {
-    margin: 0;
-    padding: 2.2cm 2.6cm;
-    font-family: "Inter", system-ui, sans-serif;
-    font-size: 11pt;
-    line-height: 1.45;
-    color: var(--text-dark);
-  }
+.cv * {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0E1514;
+}
 
-  h1, h2, h3 {
-    font-family: "Inter Tight", system-ui, sans-serif;
-    font-weight: 600;
-    color: var(--text-dark);
-  }
+.cv {
+  all: revert;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0E1514;
+  padding: 2.2cm 2.6cm;
+  width: 100%;
+  max-width: 100%;
+}
 
-  h1 {
-    font-size: 26pt;
-    margin-bottom: 0.2rem;
-  }
+/* ============================
+   ROOT VARIABLES
+   ============================ */
 
-  h2 {
-    font-size: 13pt;
-    margin-top: 2.2rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid var(--primary-mid);
-    display: inline-block;
-    white-space: nowrap;
-  }
+.cv {
+  --primary: #2B4E5A;
+  --primary-mid: #5F8A8E;
+  --primary-dark: #084442;
+  --text-dark: #0E1514;
+}
 
-  /* HEADER — HARTE FIXES GEGEN GLOBAL-CSS */
-  .header {
-    display: flex !important;                 /* erzwingt Flex */
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: flex-start !important;
-    gap: 2rem !important;
-    margin-bottom: 2.4rem;
-    width: 100% !important;
-  }
+/* ============================
+   TYPOGRAPHY
+   ============================ */
 
-  .header-left {
-    width: 70% !important;
-  }
+.cv h1, .cv h2, .cv h3 {
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--text-dark);
+}
 
-  .header-title {
-    font-size: 12.5pt;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-    color: var(--primary-dark);
-    line-height: 1.35;
-  }
+.cv h1 {
+  font-size: 26pt;
+  margin-bottom: 0.2rem;
+}
 
-  .contact {
-    font-size: 10.5pt;
-    color: #555;
-    margin-bottom: 0.4rem;
-  }
+.cv h2 {
+  font-size: 13pt;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--primary-mid);
+  display: inline-block;
+  white-space: nowrap;
+}
 
-  .links {
-    font-size: 10.5pt;
-    margin-top: 0.4rem;
-  }
+.cv p {
+  margin-bottom: 0.6rem;
+  line-height: 1.45;
+}
 
-  .links a {
-    color: var(--primary-dark);
-    text-decoration: none;
-  }
+/* ============================
+   HEADER
+   ============================ */
 
-  .links a:hover {
-    text-decoration: underline;
-  }
+.cv .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+}
 
-  /* FOTO — FIX GEGEN GLOBAL-CSS UND BÜNDIGKEIT */
-  .photo {
-    width: 4.7cm !important;
-    height: 4.7cm !important;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #ddd;
-    margin-top: 0.35rem !important;           /* bündig mit H1 */
-    flex-shrink: 0 !important;                /* verhindert Verschieben */
-    display: block !important;
-  }
+.cv .header-left {
+  width: 70%;
+}
 
-  .photo img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
-  }
+.cv .header-title {
+  font-size: 12.5pt;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--primary-dark);
+  line-height: 1.35;
+}
 
-  /* TWO COLUMNS — HARTE FIXES GEGEN GLOBAL-CSS */
-  .two-columns {
-    display: grid !important;
-    grid-template-columns: 30% 68% !important;
-    column-gap: 4% !important;
-    row-gap: 2.2rem !important;
-    margin-top: 1rem !important;
-    width: 100% !important;
-  }
+.cv .contact {
+  font-size: 10.5pt;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
 
-  .job-block {
-    margin-bottom: 1.2rem;
-  }
+.cv .links {
+  font-size: 10.5pt;
+  margin-top: 0.4rem;
+}
 
-  .subheading {
-    font-size: 10.5pt;
-    color: #555;
-    font-style: italic;
-    margin-bottom: 0.4rem;
-  }
+.cv .links a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
 
-  /* NOTFALL-BLOCKER GEGEN GLOBAL FLEX-KLASSEN */
-  .no-flex {
-    display: block !important;
-    flex-direction: unset !important;
-    align-items: unset !important;
-    justify-content: unset !important;
-  }
+.cv .links a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   PHOTO
+   ============================ */
+
+.cv .photo {
+  width: 4.7cm;
+  height: 4.7cm;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ddd;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}
+
+.cv .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================
+   TWO COLUMNS
+   ============================ */
+
+.cv .two-columns {
+  display: grid;
+  grid-template-columns: 30% 68%;
+  column-gap: 4%;
+  row-gap: 2.2rem;
+  margin-top: 1rem;
+}
+
+.cv .job-block {
+  margin-bottom: 1.2rem;
+}
+
+.cv .subheading {
+  font-size: 10.5pt;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
 </style>
-
-
 
 </head>
 
 <body>
-
+  
+<div class="cv">
   <!-- HEADER -->
 <header class="header no-flex">
 
@@ -308,6 +326,6 @@
   <div class="footer">
     CV Raphael Heeb – Stand März 2026
   </div>
-
+  </div>
 </body>
 </html>
