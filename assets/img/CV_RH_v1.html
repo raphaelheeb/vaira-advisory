@@ -31,7 +31,6 @@
       --space-small: 0.6rem;
     }
 
-    /* A4 PAGE SETTINGS */
     @page {
       size: A4;
       margin: 1.6cm;
@@ -111,6 +110,21 @@
     .contact {
       font-size: 10.5pt;
       color: #555;
+      margin-bottom: 0.4rem;
+    }
+
+    .links {
+      font-size: 10.5pt;
+      margin-top: 0.2rem;
+    }
+
+    .links a {
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
 
     .photo {
@@ -126,6 +140,20 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    /* QR CODE */
+    .qr {
+      margin-top: 0.6rem;
+      width: 2.6cm;
+      height: 2.6cm;
+      background: #eee;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9pt;
+      color: #666;
     }
 
     /* TWO COLUMN LAYOUT */
@@ -164,11 +192,23 @@
   <header class="header">
     <div class="header-left">
       <h1>RAPHAEL HEEB</h1>
+
       <div class="header-title">
-        Innovations- &amp; Technologieexperte · Gründer VAIRA Technology
+        Innovation Architect & Deep‑Tech Entrepreneur  
+        <br>Gründer VAIRA Technology · Ex‑CEO NematX (ETH Spin‑off) · Deep‑Tech SME Executive
       </div>
+
       <div class="contact">
         Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
+      </div>
+
+      <div class="links">
+        <a href="https://vaira.ch" target="_blank">vaira.ch</a> ·
+        <a href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="qr">
+        QR‑Code
       </div>
     </div>
 
@@ -296,7 +336,7 @@
         </ul>
       </div>
 
-      <h2>Referenzen &amp; Partnerschaften (Auswahl)</h2>
+      <h2>Partnerschaften &amp; Referenzen</h2>
       <ul>
         <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
         <li>Zusammenarbeit mit führenden Industriepartnern</li>
@@ -312,3 +352,4 @@
 
 </body>
 </html>
+
