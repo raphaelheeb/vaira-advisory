@@ -84,6 +84,28 @@ li { margin-bottom: 0.2cm; }
   margin-top: 0 !important;
 }
 
+.contact-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1cm;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.qr {
+  width: 3cm;
+  height: 3cm;
+  flex-shrink: 0;
+}
+
+.qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 </style>
 
@@ -147,12 +169,19 @@ internationalen Partnerschaften und komplexen Innovationsprojekten.
     <li>Französisch – Gut</li>
   </ul>
 
-  <h2>Kontakt</h2>
-  <ul>
+ <h2>Kontakt</h2>
+
+<div class="contact-block">
+  <ul class="contact-info">
     <li>E-Mail: raphael.heeb@vaira.ch</li>
     <li>Website: vaira.ch</li>
     <li>LinkedIn: linkedin.com/in/raphaelheeb</li>
   </ul>
+
+  <div class="qr">
+    <img src="/assets/img/QRCode_LinkedIn_RH.svg" alt="LinkedIn QR Code">
+  </div>
+</div>
 
   <h2>Tätigkeit</h2>
   <h3>Gründer & Technischer Leiter – VAIRA Technology (2025–heute)</h3>
