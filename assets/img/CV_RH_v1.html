@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>CV – Raphael Heeb</title>
   <style>
+    /* Grundlayout */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -12,50 +13,50 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Calibri, sans-serif;
-      color: #333333;
+      color: #333;
       font-size: 11pt;
-      line-height: 1.35;
-      padding: 2cm;
-      background: #ffffff;
+      line-height: 1.45;
+      padding: 2.4cm 2.6cm;
+      background: #fff;
+    }
+
+    @page {
+      size: A4;
+      margin: 1.6cm;
     }
 
     h1, h2, h3 {
       color: #0A1A2F;
       font-weight: 600;
-      margin-bottom: 4px;
     }
 
     h1 {
-      font-size: 22pt;
-      margin-bottom: 2px;
-    }
-
-    h2 {
-      font-size: 12pt;
-      margin-top: 14px;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    h3 {
-      font-size: 11.5pt;
-      margin-top: 10px;
-      margin-bottom: 2px;
-    }
-
-    p {
+      font-size: 24pt;
       margin-bottom: 4px;
     }
 
-    .small {
-      font-size: 9.5pt;
-      color: #555555;
+    h2 {
+      font-size: 13pt;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
 
-    .page {
-      max-width: 21cm;
-      margin: 0 auto;
+    h3 {
+      font-size: 12pt;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .small {
+      font-size: 10pt;
+      color: #555;
     }
 
     /* Header */
@@ -63,7 +64,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 14px;
+      margin-bottom: 24px;
     }
 
     .header-left {
@@ -71,87 +72,70 @@
     }
 
     .header-title {
-      font-size: 12pt;
+      font-size: 12.5pt;
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .contact {
-      font-size: 10pt;
-      color: #555555;
+      font-size: 10.5pt;
+      color: #555;
+      margin-top: 4px;
     }
 
     .photo {
-      width: 4.5cm;
-      height: 4.5cm;
-      background: #e0e0e0;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9pt;
-      color: #777777;
+      width: 5cm;
+      height: 5cm;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #ddd;
     }
 
-    /* Profil */
-    .section {
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      text-align: justify;
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* Zwei-Spalten-Layout */
     .two-columns {
       display: grid;
-      grid-template-columns: 32% 66%;
-      column-gap: 2%;
-      margin-top: 10px;
-    }
-
-    .left-col h2,
-    .right-col h2 {
-      margin-top: 10px;
+      grid-template-columns: 30% 68%;
+      column-gap: 4%;
+      row-gap: 28px;
+      margin-top: 20px;
     }
 
     ul {
-      margin-left: 14px;
-      margin-bottom: 4px;
+      margin-left: 18px;
+      margin-bottom: 12px;
     }
 
     ul li {
-      margin-bottom: 2px;
+      margin-bottom: 6px;
     }
 
     .subheading {
       font-size: 10.5pt;
-      color: #555555;
+      color: #555;
       font-style: italic;
-      margin-bottom: 2px;
+      margin-bottom: 6px;
     }
 
     .job-block {
-      margin-bottom: 8px;
+      margin-bottom: 22px;
     }
 
-    .job-block ul {
-      margin-top: 2px;
-    }
-
-    /* Fußzeile (optional) */
+    /* Footer */
     .footer {
-      margin-top: 16px;
-      font-size: 9pt;
-      color: #888888;
+      margin-top: 40px;
+      font-size: 9.5pt;
+      color: #888;
       text-align: right;
-    }
-
-    @page {
-      margin: 1.8cm;
     }
   </style>
 </head>
+
 <body>
   <div class="page">
 
@@ -163,19 +147,17 @@
           Innovations- &amp; Technologieexperte | Gründer VAIRA Technology
         </div>
         <div class="contact">
-          Zürich, Schweiz | raphael.heeb@gmail.com | +41 76 463 06 83
+          Zürich, Schweiz · raphael.heeb@gmail.com · +41 76 463 06 83
         </div>
       </div>
+
       <div class="photo">
-        Portraitfoto einfügen
-        <!-- Hier kannst du später ein <img>-Tag einfügen, z.B.:
-        <img src="assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" />
-        -->
+        <img src="assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
       </div>
     </header>
 
     <!-- PROFIL -->
-    <section class="section">
+    <section>
       <h2>Profil</h2>
       <p>
         Erfahrener Technologieunternehmer mit über 15 Jahren Erfahrung in fortschrittlicher Fertigung,
@@ -189,6 +171,7 @@
 
     <!-- ZWEI SPALTEN -->
     <section class="two-columns">
+
       <!-- LINKE SPALTE -->
       <div class="left-col">
         <h2>Kernkompetenzen</h2>
@@ -225,6 +208,7 @@
 
       <!-- RECHTE SPALTE -->
       <div class="right-col">
+
         <h2>Aktuelle Tätigkeit</h2>
         <div class="job-block">
           <h3>Founder &amp; Lead Technical Architect – VAIRA Technology (2025 – heute)</h3>
@@ -243,11 +227,11 @@
 
         <h2>Strategische Erfolge</h2>
         <ul>
-          <li>Gründung und Leitung von NematX AG, einem ETH-Spin-off für LCP-3D-Drucktechnologie; erfolgreiche strategische Integration in Polyplastics Co., Ltd. (Japan).</li>
-          <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA zur Bildung strategischer Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität.</li>
-          <li>Skalierung von Hochleistungs-3D-Drucksystemen und Materialien von der F&amp;E bis zur Pilotproduktion.</li>
-          <li>Aufbau und Führung interdisziplinärer Teams zur Integration von F&amp;E, Industrialisierung und Business Development.</li>
-          <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum.</li>
+          <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
+          <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
+          <li>Skalierung von Hochleistungs-3D-Drucksystemen und Materialien von der F&amp;E bis zur Pilotproduktion</li>
+          <li>Führung interdisziplinärer Teams in F&amp;E, Industrialisierung und Business Development</li>
+          <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
         </ul>
 
         <h2>Berufserfahrung</h2>
@@ -258,7 +242,7 @@
           <ul>
             <li>Strategische und operative Gesamtleitung</li>
             <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
-            <li>Aufbau globaler Partnerschaften mit Materiallieferanten und Industriekunden</li>
+            <li>Aufbau globaler Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität</li>
             <li>Überwachung der F&amp;E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
             <li>Erfolgreiche Integration in Polyplastics (Japan)</li>
           </ul>
@@ -294,15 +278,17 @@
         <h2>Referenzen &amp; Partnerschaften (Auswahl)</h2>
         <ul>
           <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
-          <li>Zusammenarbeit mit führenden Industriepartnern in Elektronik, Halbleitertechnologie und Elektromobilität</li>
+          <li>Zusammenarbeit mit führenden Industriepartnern</li>
           <li>Erfolgreiche Skalierung von High-Tech-Produktionslinien</li>
         </ul>
+
       </div>
     </section>
 
     <div class="footer">
       CV Raphael Heeb – Stand März 2026
     </div>
+
   </div>
 </body>
 </html>
