@@ -2193,6 +2193,6 @@ nav ul.nav {
   }
 
    .leadership-text h3 {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
