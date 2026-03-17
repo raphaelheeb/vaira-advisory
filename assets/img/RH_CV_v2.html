@@ -26,17 +26,16 @@ html, body {
   page-break-after: auto;
 }
 
-/* --- dein bisheriges Layout --- */
-
+/* Überschriften */
 h1 {
-  font-size: 20pt;
-  margin: 0 0 0.2cm 0;
+  font-size: 24pt;
+  margin: 0 0 0.25cm 0;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: 11pt;
-  margin: 1.2cm 0 0.4cm 0;
-  margin-top: 0.8cm;
+  margin: 0.8cm 0 0.4cm 0;
   padding-bottom: 0.15cm;
   border-bottom: 2px solid #5F8A8E;
 }
@@ -46,6 +45,7 @@ h3 {
   margin: 0.6cm 0 0.2cm 0;
 }
 
+/* Grundabstände */
 p, ul {
   margin: 0 0 0.4cm 0;
 }
@@ -53,6 +53,7 @@ p, ul {
 ul { padding-left: 0.5cm; }
 li { margin-bottom: 0.2cm; }
 
+/* Header */
 .header {
   display: flex;
   align-items: flex-start;
@@ -64,9 +65,20 @@ li { margin-bottom: 0.2cm; }
   flex: 1;
 }
 
+.header-text p {
+  margin-bottom: 0.25cm;
+  line-height: 1.35;
+}
+
+.header-text p strong {
+  color: #5F8A8E;
+  font-size: 11pt;
+}
+
+/* Foto */
 .photo {
-  width: 4.2cm;
-  height: 4.2cm;
+  width: 4.5cm;
+  height: 4.5cm;
   border-radius: 6px;
   overflow: hidden;
   background: #ddd;
@@ -80,10 +92,12 @@ li { margin-bottom: 0.2cm; }
   display: block;
 }
 
-  .page > *:first-child {
+/* Erster Block jeder Seite ohne zusätzlichen Margin */
+.page > *:first-child {
   margin-top: 0 !important;
 }
 
+/* Kontaktblock */
 .contact-block {
   display: flex;
   align-items: flex-start;
@@ -107,52 +121,47 @@ li { margin-bottom: 0.2cm; }
   display: block;
 }
 
-  h1 {
-  font-size: 24pt;
-  margin: 0 0 0.25cm 0;
-  letter-spacing: 0.5px;
-}
-
-.header-text p strong {
-  color: #5F8A8E;
-  font-size: 11pt;
-}
-
-.header-text p {
-  margin-bottom: 0.25cm;
-  line-height: 1.35;
-}
-
-.photo {
-  width: 4.5cm;
-  height: 4.5cm;
-}
-
-  .skills {
+/* Kernkompetenzen zweispaltig & ausbalanciert */
+.skills {
   columns: 2;
   column-gap: 1cm;
+  column-fill: balance;
 }
 
 .skills li {
   break-inside: avoid;
 }
 
+/* Subtext für Klammerinhalt */
+.skills .sub {
+  font-size: 9pt;
+  color: #444;
+}
 </style>
+
 
 <body>
 <div class="page">
 
   <div class="header">
-    <div class="header-text">
-      <h1>RAPHAEL HEEB</h1>
-      <p><strong>Innovation Architect & Deep-Tech Entrepreneur</strong><br>
-      Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin-off)</p>
-      <p>Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83 · vaira.ch · LinkedIn</p>
-    </div>
-    <div class="photo">
-      <img src="/assets/img/raphael-heeb.jpg" alt="Raphael Heeb">
-    </div>
+  <div class="header-text">
+    <h1>RAPHAEL HEEB</h1>
+
+    <p><strong>Technologie- und Innovations-Spezialist</strong><br>
+    Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin-off) · 
+    Ehem. Leiter Engineering, Optics Balzers AG</p>
+
+    <p>
+      Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83<br>
+      vaira.ch · LinkedIn
+    </p>
   </div>
+
+  <div class="photo">
+    <img src="/assets/img/raphael-heeb.jpg" alt="Raphael Heeb">
+  </div>
+</div>
+
 
   <h2>Profil</h2>
   <p>
@@ -164,12 +173,13 @@ li { margin-bottom: 0.2cm; }
   </p>
 
   <h2>Kernkompetenzen</h2>
- <ul class="skills">
+
+<ul class="skills">
   <li>Strategisches Innovations- & Technologiemanagement</li>
   <li>Technologietransfer & Industrialisierung</li>
   <li>Fortgeschrittene Fertigung & Materialien</li>
   <li>Geschäftsentwicklung & internationale Partnerschaften</li>
-  <li>Interkulturelle Zusammenarbeit (Europa, Asien, USA)</li>
+  <li>Interkulturelle Zusammenarbeit<br><span class="sub">(Europa, Asien, USA)</span></li>
   <li>Führung & Teamentwicklung</li>
 </ul>
 
