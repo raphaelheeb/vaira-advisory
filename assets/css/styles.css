@@ -2151,3 +2151,17 @@ nav ul.nav {
   padding-top: 3.5rem;         /* reduced top padding */
   padding-bottom: 3rem;      /* reduced bottom padding */
 }
+
+.leadership-photo {
+  width: 150px;
+  margin: 0 auto 25px auto; /* centers and adds spacing */
+}
+
+.leadership-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle depth, optional */
+  object-fit: cover;
+}
