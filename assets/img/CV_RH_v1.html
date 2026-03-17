@@ -15,7 +15,7 @@
 
 @page {
   size: A4 portrait;
-  margin: 2cm; /* Professionelle Druckmarge */
+  margin: 3cm; /* Größerer Top-Margin */
 }
 
 html, body {
@@ -31,11 +31,14 @@ html, body {
 
 .cv {
   width: 100%;
-  max-width: 17cm; /* A4 Breite minus 2cm Ränder links/rechts */
+  max-width: 17cm; /* A4 minus Seitenränder */
   margin: 0 auto;
+  padding-top: 0.8cm; /* zusätzlicher Top-Abstand */
   font-family: "Inter", system-ui, sans-serif;
   color: #0E1514;
   box-sizing: border-box;
+  font-size: 10pt; /* kleinere Grundschrift */
+  line-height: 1.5; /* bessere Lesbarkeit */
 }
 
 /* ============================
@@ -48,12 +51,12 @@ html, body {
 }
 
 .cv h1 {
-  font-size: 24pt;
+  font-size: 22pt; /* kleiner */
   margin-bottom: 0.2rem;
 }
 
 .cv h2 {
-  font-size: 13pt;
+  font-size: 12pt;
   margin-top: 2rem;
   margin-bottom: 0.8rem;
   padding-bottom: 0.25rem;
@@ -61,13 +64,12 @@ html, body {
 }
 
 .cv h3 {
-  font-size: 11.5pt;
+  font-size: 10.5pt;
   margin-bottom: 0.6rem;
 }
 
 .cv p {
   margin-bottom: 0.6rem;
-  line-height: 1.45;
 }
 
 /* ============================
@@ -87,11 +89,11 @@ html, body {
 }
 
 .cv .header-title {
-  font-size: 12pt;
+  font-size: 11pt; /* kleiner */
   font-weight: 600;
   margin-bottom: 0.4rem;
   color: #084442;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 /* ============================
@@ -99,8 +101,8 @@ html, body {
    ============================ */
 
 .cv .photo {
-  width: 4.6cm;
-  height: 4.6cm;
+  width: 4.4cm;
+  height: 4.4cm;
   border-radius: 6px;
   overflow: hidden;
   background: #ddd;
@@ -120,8 +122,8 @@ html, body {
 
 .cv .two-columns {
   display: grid;
-  grid-template-columns: 5.5cm auto; /* Fixe Spaltenbreite */
-  column-gap: 1.2cm; /* Professioneller Abstand */
+  grid-template-columns: 5.5cm auto; /* fixe Spaltenbreite */
+  column-gap: 1.2cm; /* mehr Abstand */
   row-gap: 2.2rem;
   margin-top: 1rem;
 }
@@ -134,16 +136,17 @@ html, body {
   padding-left: 1.2rem;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
+  font-size: 10pt; /* kleiner */
 }
 
 .cv ul li {
   margin-bottom: 0.55rem;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .cv h3 + ul,
 .cv .subheading + ul {
-  margin-top: 0.6rem !important;
+  margin-top: 0.7rem !important;
 }
 
 /* ============================
@@ -168,9 +171,9 @@ html, body {
    ============================ */
 
 .cv .footer {
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
   padding-top: 1.2rem;
-  font-size: 9.5pt;
+  font-size: 9pt;
   color: #666;
   text-align: right;
 }
