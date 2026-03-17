@@ -10,13 +10,13 @@
 
 <style>
 
-/* ============================
-   A4 PAGE SETUP
-   ============================ */
+/* ============================================
+   A4 PAGE SETUP (Firefox-optimiert)
+   ============================================ */
 
 @page {
   size: A4 portrait;
-  margin-top: 3.5cm;   /* größerer Top-Margin */
+  margin-top: 3cm;      /* stabiler Top-Margin */
   margin-left: 2cm;
   margin-right: 2cm;
   margin-bottom: 2.5cm;
@@ -25,29 +25,44 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
 }
 
-/* ============================
-   CV WRAPPER
-   ============================ */
+/* ============================================
+   CV WRAPPER (Mehrseitig stabil)
+   ============================================ */
 
 .cv {
-  max-width: 17cm;
+  max-width: 17cm;          /* A4 minus Seitenränder */
   margin: 0 auto;
-  padding-top: 1cm; /* zusätzlicher Top-Abstand */
+  padding-top: 1cm;         /* zusätzlicher Top-Abstand für ALLE Seiten */
   font-family: "Inter", system-ui, sans-serif;
-  font-size: 9.5pt; /* kleinere Schrift */
-  line-height: 1.5;
+  font-size: 9.5pt;         /* Option B: kompakt */
+  line-height: 1.45;
   color: #0E1514;
 }
 
-/* ============================
+/* ============================================
+   RESET (Inkscape-kompatibel)
+   ============================================ */
+
+.cv * {
+  box-sizing: border-box;
+}
+
+.cv h1, .cv h2, .cv h3, .cv p, .cv li, .cv a, .cv span {
+  all: revert !important;   /* verhindert Textverlust im PDF */
+}
+
+/* ============================================
    TYPOGRAPHY
-   ============================ */
+   ============================================ */
 
 .cv h1 {
-  font-size: 22pt;
+  font-size: 20pt;          /* Option B */
   margin-bottom: 0.2rem;
+  line-height: 1.1;
 }
 
 .cv h2 {
@@ -63,9 +78,9 @@ html, body {
   margin-bottom: 0.6rem;
 }
 
-/* ============================
+/* ============================================
    HEADER
-   ============================ */
+   ============================================ */
 
 .cv .header {
   display: flex;
@@ -79,22 +94,42 @@ html, body {
   width: 65%;
 }
 
+.cv .header-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #084442;
+  line-height: 1.35;
+}
+
+/* ============================================
+   PHOTO (korrekt ausgerichtet)
+   ============================================ */
+
 .cv .photo {
   width: 4.4cm;
   height: 4.4cm;
-  margin-top: 0.5cm; /* Foto weiter nach unten */
+  margin-top: 0.5cm;        /* Foto weiter nach unten */
   border-radius: 6px;
   overflow: hidden;
+  background: #ddd;
   flex-shrink: 0;
 }
 
-/* ============================
-   TWO COLUMNS
-   ============================ */
+.cv img {
+  all: revert !important;   /* verhindert Bildverlust */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================
+   TWO COLUMNS (einheitlich)
+   ============================================ */
 
 .cv .two-columns {
   display: grid;
-  grid-template-columns: 5cm auto; /* schmalere linke Spalte */
+  grid-template-columns: 5cm auto; /* Option 1 */
   column-gap: 1.2cm;
   row-gap: 2.2rem;
   margin-top: 1rem;
@@ -105,9 +140,9 @@ html, body {
   page-break-inside: avoid;
 }
 
-/* ============================
+/* ============================================
    LISTS
-   ============================ */
+   ============================================ */
 
 .cv ul {
   padding-left: 1.2rem;
@@ -119,9 +154,9 @@ html, body {
   margin-bottom: 0.5rem;
 }
 
-/* ============================
-   BLOCK BREAK CONTROL
-   ============================ */
+/* ============================================
+   PAGE BREAK CONTROL (Mehrseitig stabil)
+   ============================================ */
 
 .cv section,
 .cv .job-block {
@@ -129,9 +164,33 @@ html, body {
   page-break-inside: avoid;
 }
 
-/* ============================
+/* HARTE PAGE BREAKS FÜR OPTION A */
+
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* ============================================
+   QR CODE
+   ============================================ */
+
+.cv .qr-placeholder {
+  width: 2.2cm;
+  height: 2.2cm;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9pt;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+/* ============================================
    FOOTER
-   ============================ */
+   ============================================ */
 
 .cv .footer {
   margin-top: 3.5rem;
@@ -142,7 +201,6 @@ html, body {
 }
 
 </style>
-
 
 </head>
 
