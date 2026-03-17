@@ -2153,6 +2153,10 @@ nav ul.nav {
 }
 
 
+/* ---------------------------------------------
+     ABOUT — LEADERSHIP PHOTO
+   --------------------------------------------- */
+
 .leadership-layout {
   display: flex;
   gap: 40px;
@@ -2184,15 +2188,18 @@ nav ul.nav {
   .leadership-photo {
     width: 100%;
     height: auto;
-    margin-bottom: 8px;
+    margin-bottom: 24px; /* or 32px for more breathing room */
   }
 
   .leadership-photo img {
-    height: auto;
-    object-fit: contain;
+    width: 100%;
+    height: auto !important;      /* ← THIS is the missing piece */
+    object-fit: contain !important;
   }
 
-   .leadership-text h3 {
+  .leadership-text h3 {
     margin-top: 0 !important;
+  }
 }
+
 
