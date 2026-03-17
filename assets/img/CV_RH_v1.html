@@ -8,236 +8,195 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* =========================================================
-       VAIRA DESIGN SYSTEM — A4 CV EDITION (Optimized for Print)
-       ========================================================= */
+  :root {
+    --primary: #2B4E5A;
+    --primary-mid: #5F8A8E;
+    --primary-dark: #084442;
+    --text-dark: #0E1514;
+    --text-light: #FFFFFF;
+  }
 
-    :root {
-      --primary: #2B4E5A;
-      --primary-mid: #5F8A8E;
-      --primary-light: #C9DCDC;
-      --primary-dark: #084442;
+  @page {
+    size: A4;
+    margin: 1.6cm;
+  }
 
-      --text-dark: #0E1514;
-      --text-light: #FFFFFF;
+  body {
+    margin: 0;
+    padding: 2.2cm 2.6cm;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: var(--text-dark);
+    background: #fff;
+  }
 
-      --bg-light: #F4F7F7;
+  h1, h2, h3 {
+    font-family: "Inter Tight", system-ui, sans-serif;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
 
-      --line: rgba(0,0,0,0.10);
+  h1 {
+    font-size: 26pt;
+    margin-bottom: 0.2rem;
+  }
 
-      /* A4-optimiertes Spacing */
-      --space-section: 2.4rem;
-      --space-block: 1.4rem;
-      --space-small: 0.6rem;
-    }
+  h2 {
+    font-size: 13pt;
+    margin-top: 2.2rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--primary-mid);
+    display: inline-block;
+    white-space: nowrap; /* garantiert einzeilig */
+  }
 
-    @page {
-      size: A4;
-      margin: 1.6cm;
-    }
+  h3 {
+    font-size: 12pt;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
 
-    body {
-      margin: 0;
-      padding: 2.2cm 2.6cm;
-      font-family: "Inter", system-ui, sans-serif;
-      font-size: 11pt;
-      line-height: 1.45;
-      color: var(--text-dark);
-      background: #fff;
-    }
+  p {
+    margin-bottom: 0.6rem;
+    text-align: justify;
+  }
 
-    h1, h2, h3 {
-      font-family: "Inter Tight", system-ui, sans-serif;
-      font-weight: 600;
-      color: var(--text-dark);
-      letter-spacing: 0.01em;
-    }
+  ul {
+    margin: 0.4rem 0 1rem 1.1rem;
+    padding: 0;
+    list-style: disc;
+  }
 
-    h1 {
-      font-size: 26pt;
-      margin-bottom: 0.2rem;
-    }
+  ul li {
+    margin-bottom: 0.35rem;
+  }
 
-    h2 {
-      font-size: 13pt; /* kleiner für Einzeiligkeit */
-      margin-top: var(--space-section);
-      margin-bottom: 0.8rem;
-      padding-bottom: 0.3rem;
-      border-bottom: 2px solid var(--primary-mid);
-      display: inline-block;
-      width: auto; /* verhindert Zeilenumbruch */
-      white-space: nowrap; /* garantiert einzeilig */
-    }
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
 
-    h3 {
-      font-size: 12pt;
-      margin-top: var(--space-block);
-      margin-bottom: 0.3rem;
-    }
+  .header-left {
+    width: 68%;
+  }
 
-    p {
-      margin-bottom: 0.6rem;
-      text-align: justify;
-    }
+  .header-title {
+    font-size: 12.5pt;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--primary-dark);
+    line-height: 1.35;
+  }
 
-    ul {
-      margin: 0.4rem 0 1rem 1.1rem;
-      padding: 0;
-      list-style: disc;
-    }
+  .contact {
+    font-size: 10.5pt;
+    color: #555;
+    margin-bottom: 0.4rem;
+  }
 
-    ul li {
-      margin-bottom: 0.35rem;
-    }
+  .links {
+    font-size: 10.5pt;
+    margin-top: 0.2rem;
+  }
 
-    /* HEADER */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; /* Foto vertikal mittig */
-      margin-bottom: var(--space-section);
-    }
+  .links a {
+    color: var(--primary-dark);
+    text-decoration: none;
+  }
 
-    .header-left {
-      max-width: 68%;
-    }
+  .links a:hover {
+    text-decoration: underline;
+  }
 
-    .header-title {
-      font-size: 12.5pt;
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-      color: var(--primary-dark);
-      line-height: 1.35;
-    }
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.4rem; /* optische Ausrichtung */
+  }
 
-    .contact {
-      font-size: 10.5pt;
-      color: #555;
-      margin-bottom: 0.4rem;
-    }
+  .photo {
+    width: 4.6cm;   /* Schweizer Standard */
+    height: 4.6cm;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ddd;
+  }
 
-    .links {
-      font-size: 10.5pt;
-      margin-top: 0.2rem;
-    }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .links a {
-      color: var(--primary-dark);
-      text-decoration: none;
-    }
+  .qr {
+    width: 2.3cm;
+    height: 2.3cm;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    color: #666;
+  }
+</style>
 
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    .header-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .photo {
-      width: 4.8cm;   /* Schweizer Standardgröße */
-      height: 4.8cm;
-      border-radius: 6px;
-      overflow: hidden;
-      background: #ddd;
-      flex-shrink: 0;
-    }
-
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .qr {
-      width: 2.4cm;
-      height: 2.4cm;
-      background: #eee;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9pt;
-      color: #666;
-    }
-
-    /* TWO COLUMN LAYOUT */
-    .two-columns {
-      display: grid;
-      grid-template-columns: 30% 68%;
-      column-gap: 4%;
-      row-gap: 2.2rem;
-      margin-top: 1rem;
-    }
-
-    .job-block {
-      margin-bottom: 1.2rem;
-    }
-
-    .subheading {
-      font-size: 10.5pt;
-      color: #555;
-      font-style: italic;
-      margin-bottom: 0.4rem;
-    }
-
-    /* FOOTER */
-    .footer {
-      margin-top: 2.6rem;
-      font-size: 9.5pt;
-      color: #888;
-      text-align: right;
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-left">
-      <h1>RAPHAEL HEEB</h1>
+ <!-- HEADER -->
+<header class="header">
 
-      <div class="header-title">
-        Innovation Architect & Deep‑Tech Entrepreneur  
-        <br>Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin‑off) · Führungskraft im Schweizer Deep‑Tech‑KMU
-      </div>
+  <div class="header-left">
+    <h1>RAPHAEL HEEB</h1>
 
-      <div class="contact">
-        Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
-      </div>
-
-      <div class="links">
-        <a href="https://vaira.ch" target="_blank">vaira.ch</a> ·
-        <a href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
-      </div>
+    <div class="header-title">
+      Innovation Architect & Deep‑Tech Entrepreneur  
+      <br>Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin‑off) · Führungskraft im Schweizer Deep‑Tech‑KMU
     </div>
 
-    <div class="header-right">
-      <div class="photo">
-        <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
-      </div>
-      <div class="qr">
-        QR‑Code
-      </div>
+    <div class="contact">
+      Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
     </div>
-  </header>
 
-  <!-- PROFIL -->
-  <section>
-    <h2>Profil</h2>
-    <p>
-      Erfahrener Technologieunternehmer mit über 15 Jahren Erfahrung in fortschrittlicher Fertigung,
-      Materialwissenschaft und Technologietransfer. Gründer von <strong>VAIRA Technology</strong>, einer
-      Boutique-Deep-Tech-Beratung, die Unternehmen bei der Entwicklung, Industrialisierung und Skalierung
-      innovativer Technologien unterstützt. Kombination aus fundierter technischer Expertise (PhD ETH Zürich)
-      und strategischem Management (Executive MBA HSG). Erfolgreiche Führung von High-Tech-Startups,
-      internationalen Partnerschaften und komplexen Innovationsprojekten.
-    </p>
-  </section>
+    <div class="links">
+      <a href="https://vaira.ch" target="_blank">vaira.ch</a> ·
+      <a href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div class="photo">
+      <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
+    </div>
+
+    <!-- QR-Code optional -->
+    <div class="qr">QR‑Code</div>
+  </div>
+
+</header>
+
+ <!-- PROFIL -->
+<section>
+  <h2>Profil</h2>
+  <p>
+    Erfahrener Technologieunternehmer mit über 15 Jahren Erfahrung in fortschrittlicher Fertigung,
+    Materialwissenschaft und Technologietransfer. Gründer von <strong>VAIRA Technology</strong>, einer
+    Boutique‑Deep‑Tech‑Beratung, die Unternehmen bei der Entwicklung, Industrialisierung und Skalierung
+    innovativer Technologien unterstützt. Kombination aus fundierter technischer Expertise (PhD ETH Zürich)
+    und strategischem Management (Executive MBA HSG). Erfolgreiche Führung von High‑Tech‑Startups,
+    internationalen Partnerschaften und komplexen Innovationsprojekten.
+  </p>
+</section>
 
   <!-- TWO COLUMNS -->
   <section class="two-columns">
