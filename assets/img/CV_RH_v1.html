@@ -50,17 +50,19 @@
     white-space: nowrap;
   }
 
-  /* HEADER */
+  /* HEADER — HARTE FIXES GEGEN GLOBAL-CSS */
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    display: flex !important;                 /* erzwingt Flex */
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
     margin-bottom: 2.4rem;
+    width: 100% !important;
   }
 
   .header-left {
-    width: 70%;
+    width: 70% !important;
   }
 
   .header-title {
@@ -91,50 +93,53 @@
     text-decoration: underline;
   }
 
+  /* FOTO — FIX GEGEN GLOBAL-CSS UND BÜNDIGKEIT */
   .photo {
-    width: 4.7cm;
-    height: 4.7cm;
+    width: 4.7cm !important;
+    height: 4.7cm !important;
     border-radius: 6px;
     overflow: hidden;
     background: #ddd;
-
-    /* FIX: Foto bündig mit H1 */
-    margin-top: 0.35rem !important;
+    margin-top: 0.35rem !important;           /* bündig mit H1 */
+    flex-shrink: 0 !important;                /* verhindert Verschieben */
+    display: block !important;
   }
 
   .photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
   }
 
-  /* TWO COLUMNS */
-.two-columns {
-  display: grid;
-  grid-template-columns: 30% 68%;
-  column-gap: 4%;
-  row-gap: 2.2rem;
-  margin-top: 1rem;
-}
+  /* TWO COLUMNS — HARTE FIXES GEGEN GLOBAL-CSS */
+  .two-columns {
+    display: grid !important;
+    grid-template-columns: 30% 68% !important;
+    column-gap: 4% !important;
+    row-gap: 2.2rem !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+  }
 
-.job-block {
-  margin-bottom: 1.2rem;
-}
+  .job-block {
+    margin-bottom: 1.2rem;
+  }
 
-.subheading {
-  font-size: 10.5pt;
-  color: #555;
-  font-style: italic;
-  margin-bottom: 0.4rem;
-}
-  
-.no-flex {
-  display: block !important;
-  flex-direction: unset !important;
-  align-items: unset !important;
-  justify-content: unset !important;
-}
+  .subheading {
+    font-size: 10.5pt;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+  }
 
+  /* NOTFALL-BLOCKER GEGEN GLOBAL FLEX-KLASSEN */
+  .no-flex {
+    display: block !important;
+    flex-direction: unset !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+  }
 </style>
 
 
