@@ -2188,18 +2188,19 @@ nav ul.nav {
   .leadership-photo {
     width: 100%;
     height: auto;
-    margin-bottom: 24px; /* or 32px for more breathing room */
+    margin-bottom: 24px; /* adjust to taste */
   }
 
   .leadership-photo img {
     width: 100%;
-    height: auto !important;      /* ← THIS is the missing piece */
-    object-fit: contain !important;
+    height: auto !important;        /* ← critical reset */
+    max-height: none !important;    /* ← prevents inherited stretching */
+    object-fit: contain !important; /* ← prevents cropping */
+    display: block;
   }
 
   .leadership-text h3 {
     margin-top: 0 !important;
   }
 }
-
 
