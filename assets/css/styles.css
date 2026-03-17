@@ -2191,5 +2191,8 @@ nav ul.nav {
     height: auto;
     object-fit: contain;
   }
+
+   .leadership-text h3 {
+    margin-top: 0;
 }
 
