@@ -1,7 +1,7 @@
 <style>
 @page {
   size: A4 portrait;
-  margin: 3.2cm 2cm 3.4cm 2cm;
+  margin: 0; /* Browser macht seine Default-Ränder, wir arbeiten im Inhalt */
 }
 
 html, body {
@@ -13,9 +13,10 @@ html, body {
   color: #0E1514;
 }
 
+/* Sichtbarer „Seitenrahmen“ im Inhalt */
 .cv {
   max-width: 17cm;
-  margin: 0 auto;
+  margin: 2.5cm 2cm 2.5cm 2cm; /* Top / Left / Bottom / Right */
 }
 
 h1 {
@@ -73,6 +74,7 @@ li { margin-bottom: 0.2cm; }
   page-break-before: always;
   break-before: page;
 }
+
 </style>
 
 <body>
