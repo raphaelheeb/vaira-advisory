@@ -59,12 +59,14 @@
     }
 
     h2 {
-      font-size: 14pt;
+      font-size: 13pt; /* kleiner für Einzeiligkeit */
       margin-top: var(--space-section);
       margin-bottom: 0.8rem;
-      padding-bottom: 0.4rem;
-      border-bottom: 3px solid var(--primary-mid);
-      width: 48px;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid var(--primary-mid);
+      display: inline-block;
+      width: auto; /* verhindert Zeilenumbruch */
+      white-space: nowrap; /* garantiert einzeilig */
     }
 
     h3 {
@@ -92,12 +94,12 @@
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center; /* Foto vertikal mittig */
       margin-bottom: var(--space-section);
     }
 
     .header-left {
-      max-width: 70%;
+      max-width: 68%;
     }
 
     .header-title {
@@ -105,6 +107,7 @@
       font-weight: 600;
       margin-bottom: 0.4rem;
       color: var(--primary-dark);
+      line-height: 1.35;
     }
 
     .contact {
@@ -127,9 +130,16 @@
       text-decoration: underline;
     }
 
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
     .photo {
-      width: 5cm;
-      height: 5cm;
+      width: 4.8cm;   /* Schweizer Standardgröße */
+      height: 4.8cm;
       border-radius: 6px;
       overflow: hidden;
       background: #ddd;
@@ -142,11 +152,9 @@
       object-fit: cover;
     }
 
-    /* QR CODE */
     .qr {
-      margin-top: 0.6rem;
-      width: 2.6cm;
-      height: 2.6cm;
+      width: 2.4cm;
+      height: 2.4cm;
       background: #eee;
       border-radius: 4px;
       display: flex;
@@ -195,7 +203,7 @@
 
       <div class="header-title">
         Innovation Architect & Deep‑Tech Entrepreneur  
-        <br>Gründer VAIRA Technology · Ex‑CEO NematX (ETH Spin‑off) · Deep‑Tech SME Executive
+        <br>Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin‑off) · Führungskraft im Schweizer Deep‑Tech‑KMU
       </div>
 
       <div class="contact">
@@ -206,14 +214,15 @@
         <a href="https://vaira.ch" target="_blank">vaira.ch</a> ·
         <a href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
       </div>
+    </div>
 
+    <div class="header-right">
+      <div class="photo">
+        <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
+      </div>
       <div class="qr">
         QR‑Code
       </div>
-    </div>
-
-    <div class="photo">
-      <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
     </div>
   </header>
 
@@ -270,11 +279,11 @@
     <!-- RIGHT COLUMN -->
     <div>
 
-      <h2>Aktuelle Tätigkeit</h2>
+      <h2>Tätigkeit</h2>
       <div class="job-block">
-        <h3>Founder &amp; Lead Technical Architect – VAIRA Technology (2025 – heute)</h3>
+        <h3>Gründer &amp; Technischer Leiter – VAIRA Technology (2025 – heute)</h3>
         <p class="subheading">
-          Boutique-Deep-Tech-Beratung für Innovation, Industrialisierung und Technologiepartnerschaften.
+          Beratung für Innovation, Industrialisierung und Technologiepartnerschaften.
         </p>
         <ul>
           <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
@@ -286,7 +295,7 @@
         </ul>
       </div>
 
-      <h2>Strategische Erfolge</h2>
+      <h2>Erfolge</h2>
       <ul>
         <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
         <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
@@ -298,7 +307,7 @@
       <h2>Berufserfahrung</h2>
 
       <div class="job-block">
-        <h3>CEO, Mitgründer, Präsident des Verwaltungsrats – NematX AG (2020–2025)</h3>
+        <h3>CEO, Mitgründer – NematX AG (2020–2025)</h3>
         <p class="subheading">ETH Zürich Spin-off für industriellen 3D-Druck von Flüssigkristallpolymeren (LCP).</p>
         <ul>
           <li>Strategische und operative Gesamtleitung</li>
@@ -336,7 +345,7 @@
         </ul>
       </div>
 
-      <h2>Partnerschaften &amp; Referenzen</h2>
+      <h2>Partnerschaften</h2>
       <ul>
         <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
         <li>Zusammenarbeit mit führenden Industriepartnern</li>
@@ -352,4 +361,3 @@
 
 </body>
 </html>
-
