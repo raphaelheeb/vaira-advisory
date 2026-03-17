@@ -15,48 +15,42 @@
 
 @page {
   size: A4 portrait;
-  margin: 3cm; /* Größerer Top-Margin */
+  margin-top: 3.5cm;   /* größerer Top-Margin */
+  margin-left: 2cm;
+  margin-right: 2cm;
+  margin-bottom: 2.5cm;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: auto;
 }
 
 /* ============================
-   CV WRAPPER (A4 CONTENT AREA)
+   CV WRAPPER
    ============================ */
 
 .cv {
-  width: 100%;
-  max-width: 17cm; /* A4 minus Seitenränder */
+  max-width: 17cm;
   margin: 0 auto;
-  padding-top: 0.8cm; /* zusätzlicher Top-Abstand */
+  padding-top: 1cm; /* zusätzlicher Top-Abstand */
   font-family: "Inter", system-ui, sans-serif;
+  font-size: 9.5pt; /* kleinere Schrift */
+  line-height: 1.5;
   color: #0E1514;
-  box-sizing: border-box;
-  font-size: 10pt; /* kleinere Grundschrift */
-  line-height: 1.5; /* bessere Lesbarkeit */
 }
 
 /* ============================
    TYPOGRAPHY
    ============================ */
 
-.cv h1, .cv h2, .cv h3 {
-  font-family: "Inter Tight", system-ui, sans-serif;
-  font-weight: 600;
-}
-
 .cv h1 {
-  font-size: 22pt; /* kleiner */
+  font-size: 22pt;
   margin-bottom: 0.2rem;
 }
 
 .cv h2 {
-  font-size: 12pt;
+  font-size: 11pt;
   margin-top: 2rem;
   margin-bottom: 0.8rem;
   padding-bottom: 0.25rem;
@@ -64,11 +58,7 @@ html, body {
 }
 
 .cv h3 {
-  font-size: 10.5pt;
-  margin-bottom: 0.6rem;
-}
-
-.cv p {
+  font-size: 10pt;
   margin-bottom: 0.6rem;
 }
 
@@ -88,44 +78,30 @@ html, body {
   width: 65%;
 }
 
-.cv .header-title {
-  font-size: 11pt; /* kleiner */
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: #084442;
-  line-height: 1.4;
-}
-
-/* ============================
-   PHOTO
-   ============================ */
-
 .cv .photo {
   width: 4.4cm;
   height: 4.4cm;
+  margin-top: 0.5cm; /* Foto weiter nach unten */
   border-radius: 6px;
   overflow: hidden;
-  background: #ddd;
-  margin-top: 0.1rem;
   flex-shrink: 0;
 }
 
-.cv .photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* ============================
-   TWO COLUMNS (A4 OPTIMIZED)
+   TWO COLUMNS
    ============================ */
 
 .cv .two-columns {
   display: grid;
-  grid-template-columns: 5.5cm auto; /* fixe Spaltenbreite */
-  column-gap: 1.2cm; /* mehr Abstand */
+  grid-template-columns: 5cm auto; /* schmalere linke Spalte */
+  column-gap: 1.2cm;
   row-gap: 2.2rem;
   margin-top: 1rem;
+}
+
+.cv .two-columns > div {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 /* ============================
@@ -136,34 +112,20 @@ html, body {
   padding-left: 1.2rem;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
-  font-size: 10pt; /* kleiner */
 }
 
 .cv ul li {
-  margin-bottom: 0.55rem;
-  line-height: 1.5;
-}
-
-.cv h3 + ul,
-.cv .subheading + ul {
-  margin-top: 0.7rem !important;
+  margin-bottom: 0.5rem;
 }
 
 /* ============================
-   QR CODE
+   BLOCK BREAK CONTROL
    ============================ */
 
-.cv .qr-placeholder {
-  width: 2.2cm;
-  height: 2.2cm;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 9pt;
-  color: #666;
-  margin-top: 0.4rem;
+.cv section,
+.cv .job-block {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 /* ============================
@@ -174,11 +136,12 @@ html, body {
   margin-top: 3.5rem;
   padding-top: 1.2rem;
   font-size: 9pt;
-  color: #666;
   text-align: right;
+  color: #666;
 }
 
 </style>
+
 
 </head>
 
