@@ -1,7 +1,7 @@
 <style>
 @page {
   size: A4 portrait;
-  margin: 0; /* Browser macht seine Default-Ränder, wir arbeiten im Inhalt */
+  margin: 0; /* Browser-Ränder komplett aus */
 }
 
 html, body {
@@ -13,10 +13,16 @@ html, body {
   color: #0E1514;
 }
 
-/* Sichtbarer „Seitenrahmen“ im Inhalt */
+/* Unser „virtuelles Blatt“ mit festen Innenrändern */
 .cv {
-  max-width: 17cm;
-  margin: 2.5cm 2cm 2.5cm 2cm; /* Top / Left / Bottom / Right */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3cm 2cm 3cm 2cm; /* Top / Right / Bottom / Left – das sind deine Ränder */
+}
+
+/* Optional: zum Debuggen sichtbarer Rahmen */
+.cv {
+  /* border: 1px solid red;  // zum Testen aktivieren, danach wieder raus */
 }
 
 h1 {
@@ -74,6 +80,7 @@ li { margin-bottom: 0.2cm; }
   page-break-before: always;
   break-before: page;
 }
+
 
 </style>
 
