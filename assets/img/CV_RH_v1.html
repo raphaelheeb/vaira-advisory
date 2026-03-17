@@ -7,7 +7,7 @@
   <!-- VAIRA FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
 
- <style>
+<style>
   :root {
     --primary: #2B4E5A;
     --primary-mid: #5F8A8E;
@@ -50,22 +50,17 @@
     white-space: nowrap;
   }
 
-  p {
-    margin-bottom: 0.6rem;
-    text-align: justify;
-  }
-
   /* HEADER */
   .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1.8rem;
+    gap: 2rem;
     margin-bottom: 2.4rem;
   }
 
   .header-left {
-    width: 70%;
+    width: 68%;
   }
 
   .header-title {
@@ -76,27 +71,10 @@
     line-height: 1.35;
   }
 
-  .contact-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .contact {
     font-size: 10.5pt;
     color: #555;
-  }
-
-  .qr {
-    width: 2.2cm;
-    height: 2.2cm;
-    background: #eee;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9pt;
-    color: #666;
+    margin-bottom: 0.4rem;
   }
 
   .links {
@@ -113,14 +91,21 @@
     text-decoration: underline;
   }
 
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+  }
+
   .photo {
     width: 4.7cm;
     height: 4.7cm;
     border-radius: 6px;
     overflow: hidden;
     background: #ddd;
-    flex-shrink: 0;
-    margin-top: 0.2rem;
+    margin-top: 0.4rem; /* Foto tiefer setzen */
   }
 
   .photo img {
@@ -128,8 +113,20 @@
     height: 100%;
     object-fit: cover;
   }
-</style>
 
+  .qr {
+    width: 2.0cm;
+    height: 2.0cm;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5pt;
+    color: #666;
+    margin-top: 0.4rem;
+  }
+</style>
 
 </head>
 
@@ -146,19 +143,17 @@
       <br>Gründer VAIRA Technology · Ehem. CEO NematX (ETH Spin‑off) · Führungskraft im Schweizer Deep‑Tech‑KMU
     </div>
 
-    <div class="contact-row">
-      <div class="contact">
-        Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
-      </div>
-
-      <!-- QR-Code rechts neben Kontakt -->
-      <div class="qr">QR‑Code</div>
+    <div class="contact">
+      Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
     </div>
 
     <div class="links">
       <a href="https://vaira.ch" target="_blank">vaira.ch</a> ·
       <a href="https://www.linkedin.com/in/raphaelheeb/" target="_blank">LinkedIn</a>
     </div>
+
+    <!-- QR-Code dezent unter den Links -->
+    <div class="qr">QR‑Code</div>
   </div>
 
   <div class="photo">
@@ -166,6 +161,7 @@
   </div>
 
 </header>
+
 
 <!-- PROFIL -->
 <section>
