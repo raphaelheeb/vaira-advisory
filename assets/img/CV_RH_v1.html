@@ -3,68 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <title>CV – Raphael Heeb</title>
+
+  <!-- VAIRA FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
+
   <style>
-    /* Grundlayout */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    /* =========================================================
+       VAIRA DESIGN SYSTEM — A4 CV EDITION (Optimized for Print)
+       ========================================================= */
+
+    :root {
+      --primary: #2B4E5A;
+      --primary-mid: #5F8A8E;
+      --primary-light: #C9DCDC;
+      --primary-dark: #084442;
+
+      --text-dark: #0E1514;
+      --text-light: #FFFFFF;
+
+      --bg-light: #F4F7F7;
+
+      --line: rgba(0,0,0,0.10);
+
+      /* A4-optimiertes Spacing */
+      --space-section: 2.4rem;
+      --space-block: 1.4rem;
+      --space-small: 0.6rem;
     }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Calibri, sans-serif;
-      color: #333;
-      font-size: 11pt;
-      line-height: 1.45;
-      padding: 2.4cm 2.6cm;
-      background: #fff;
-    }
-
+    /* A4 PAGE SETTINGS */
     @page {
       size: A4;
       margin: 1.6cm;
     }
 
+    body {
+      margin: 0;
+      padding: 2.2cm 2.6cm;
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 11pt;
+      line-height: 1.45;
+      color: var(--text-dark);
+      background: #fff;
+    }
+
     h1, h2, h3 {
-      color: #0A1A2F;
+      font-family: "Inter Tight", system-ui, sans-serif;
       font-weight: 600;
+      color: var(--text-dark);
+      letter-spacing: 0.01em;
     }
 
     h1 {
-      font-size: 24pt;
-      margin-bottom: 4px;
+      font-size: 26pt;
+      margin-bottom: 0.2rem;
     }
 
     h2 {
-      font-size: 13pt;
-      margin-top: 28px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
+      font-size: 14pt;
+      margin-top: var(--space-section);
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 3px solid var(--primary-mid);
+      width: 48px;
     }
 
     h3 {
       font-size: 12pt;
-      margin-top: 18px;
-      margin-bottom: 6px;
+      margin-top: var(--space-block);
+      margin-bottom: 0.3rem;
     }
 
     p {
-      margin-bottom: 10px;
+      margin-bottom: 0.6rem;
       text-align: justify;
     }
 
-    .small {
-      font-size: 10pt;
-      color: #555;
+    ul {
+      margin: 0.4rem 0 1rem 1.1rem;
+      padding: 0;
+      list-style: disc;
     }
 
-    /* Header */
+    ul li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* HEADER */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 24px;
+      margin-bottom: var(--space-section);
     }
 
     .header-left {
@@ -74,13 +104,13 @@
     .header-title {
       font-size: 12.5pt;
       font-weight: 600;
-      margin-bottom: 6px;
+      margin-bottom: 0.4rem;
+      color: var(--primary-dark);
     }
 
     .contact {
       font-size: 10.5pt;
       color: #555;
-      margin-top: 4px;
     }
 
     .photo {
@@ -89,6 +119,7 @@
       border-radius: 6px;
       overflow: hidden;
       background: #ddd;
+      flex-shrink: 0;
     }
 
     .photo img {
@@ -97,38 +128,29 @@
       object-fit: cover;
     }
 
-    /* Zwei-Spalten-Layout */
+    /* TWO COLUMN LAYOUT */
     .two-columns {
       display: grid;
       grid-template-columns: 30% 68%;
       column-gap: 4%;
-      row-gap: 28px;
-      margin-top: 20px;
+      row-gap: 2.2rem;
+      margin-top: 1rem;
     }
 
-    ul {
-      margin-left: 18px;
-      margin-bottom: 12px;
-    }
-
-    ul li {
-      margin-bottom: 6px;
+    .job-block {
+      margin-bottom: 1.2rem;
     }
 
     .subheading {
       font-size: 10.5pt;
       color: #555;
       font-style: italic;
-      margin-bottom: 6px;
+      margin-bottom: 0.4rem;
     }
 
-    .job-block {
-      margin-bottom: 22px;
-    }
-
-    /* Footer */
+    /* FOOTER */
     .footer {
-      margin-top: 40px;
+      margin-top: 2.6rem;
       font-size: 9.5pt;
       color: #888;
       text-align: right;
@@ -137,158 +159,156 @@
 </head>
 
 <body>
-  <div class="page">
 
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header-left">
-        <h1>RAPHAEL HEEB</h1>
-        <div class="header-title">
-          Innovations- &amp; Technologieexperte | Gründer VAIRA Technology
-        </div>
-        <div class="contact">
-          Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
-        </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <h1>RAPHAEL HEEB</h1>
+      <div class="header-title">
+        Innovations- &amp; Technologieexperte · Gründer VAIRA Technology
       </div>
-
-      <div class="photo">
-        <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
+      <div class="contact">
+        Zürich, Schweiz · raphael.heeb@vaira.ch · +41 76 463 06 83
       </div>
-    </header>
-
-    <!-- PROFIL -->
-    <section>
-      <h2>Profil</h2>
-      <p>
-        Erfahrener Technologieunternehmer mit über 15 Jahren Erfahrung in fortschrittlicher Fertigung,
-        Materialwissenschaft und Technologietransfer. Gründer von <strong>VAIRA Technology</strong>, einer
-        Boutique-Deep-Tech-Beratung, die Unternehmen bei der Entwicklung, Industrialisierung und Skalierung
-        innovativer Technologien unterstützt. Kombination aus fundierter technischer Expertise (PhD ETH Zürich)
-        und strategischem Management (Executive MBA HSG). Erfolgreiche Führung von High-Tech-Startups,
-        internationalen Partnerschaften und komplexen Innovationsprojekten.
-      </p>
-    </section>
-
-    <!-- ZWEI SPALTEN -->
-    <section class="two-columns">
-
-      <!-- LINKE SPALTE -->
-      <div class="left-col">
-        <h2>Kernkompetenzen</h2>
-        <ul>
-          <li>Strategisches Innovations- &amp; Technologiemanagement</li>
-          <li>Technologietransfer &amp; Industrialisierung</li>
-          <li>Fortgeschrittene Fertigung &amp; Materialien (inkl. Additive Fertigung, LCP-Technologien)</li>
-          <li>Geschäftsentwicklung &amp; internationale Partnerschaften</li>
-          <li>Interkulturelle Zusammenarbeit (Europa, Asien, USA)</li>
-          <li>Führung &amp; Teamentwicklung</li>
-        </ul>
-
-        <h2>Auszeichnungen</h2>
-        <ul>
-          <li>W.A. de Vigier Award – Gewinner</li>
-          <li>Formnext Start-Up Challenge – Gewinner</li>
-          <li>Shenzhen Innovation &amp; Entrepreneurship Competition – Finalist</li>
-        </ul>
-
-        <h2>Ausbildung</h2>
-        <ul>
-          <li>Executive MBA (General Management), Universität St. Gallen (HSG), 2019</li>
-          <li>PhD (Dr. sc. ETH) in Oberflächentechnologie &amp; Polymertechnik, ETH Zürich, 2009</li>
-          <li>Dipl. Werkstoffingenieur ETH, ETH Zürich, 2005</li>
-        </ul>
-
-        <h2>Sprachen</h2>
-        <ul>
-          <li>Deutsch – Muttersprache</li>
-          <li>Englisch – Verhandlungssicher</li>
-          <li>Französisch – Gut</li>
-        </ul>
-      </div>
-
-      <!-- RECHTE SPALTE -->
-      <div class="right-col">
-
-        <h2>Aktuelle Tätigkeit</h2>
-        <div class="job-block">
-          <h3>Founder &amp; Lead Technical Architect – VAIRA Technology (2026 – heute)</h3>
-          <p class="subheading">
-            Boutique-Deep-Tech-Beratung für Innovation, Industrialisierung und Technologiepartnerschaften.
-          </p>
-          <ul>
-            <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
-            <li>Technische Architektur, Materialentwicklung und Fertigungsprozesse (inkl. LCP-basierte Technologien)</li>
-            <li>Aufbau internationaler Technologiepartnerschaften (Europa, Asien, USA)</li>
-            <li>Erstellung von technischen Whitepapers, Roadmaps und Entscheidungsgrundlagen</li>
-            <li>Unterstützung von Standortförderungen bei Innovationsprojekten und Technologietransfer</li>
-            <li>Beratung zu F&amp;E-Integration, Produktionsaufbau und Skalierungsstrategien</li>
-          </ul>
-        </div>
-
-        <h2>Strategische Erfolge</h2>
-        <ul>
-          <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
-          <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
-          <li>Skalierung von Hochleistungs-3D-Drucksystemen und Materialien von der F&amp;E bis zur Pilotproduktion</li>
-          <li>Führung interdisziplinärer Teams in F&amp;E, Industrialisierung und Business Development</li>
-          <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
-        </ul>
-
-        <h2>Berufserfahrung</h2>
-
-        <div class="job-block">
-          <h3>CEO, Mitgründer, Präsident des Verwaltungsrats – NematX AG (2020–2025)</h3>
-          <p class="subheading">ETH Zürich Spin-off für industriellen 3D-Druck von Flüssigkristallpolymeren (LCP).</p>
-          <ul>
-            <li>Strategische und operative Gesamtleitung</li>
-            <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
-            <li>Aufbau globaler Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität</li>
-            <li>Überwachung der F&amp;E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
-            <li>Erfolgreiche Integration in Polyplastics (Japan)</li>
-          </ul>
-        </div>
-
-        <div class="job-block">
-          <h3>Leiter Engineering / Mitglied der Geschäftsleitung – Optics Balzers AG (2016–2019)</h3>
-          <ul>
-            <li>Leitung der Engineering-Abteilung für Produktindustrialisierung und Serienproduktion</li>
-            <li>Einführung von Programmen zur kontinuierlichen Verbesserung</li>
-            <li>Koordination der Zusammenarbeit zwischen Standorten in Liechtenstein und Asien</li>
-          </ul>
-        </div>
-
-        <div class="job-block">
-          <h3>Leiter Pilotproduktion – Optics Balzers AG (2013–2015)</h3>
-          <ul>
-            <li>Aufbau einer neuen Pilotlinie für optische Baugruppen</li>
-            <li>Überführung von F&amp;E-Konzepten in die Produktion</li>
-            <li>Definition von Produktionsprozessen und Implementierung der Qualitätssicherung</li>
-          </ul>
-        </div>
-
-        <div class="job-block">
-          <h3>Projektleiter F&amp;E / NPI – Optics Balzers AG (2009–2013)</h3>
-          <ul>
-            <li>Planung und Durchführung von F&amp;E-Projekten</li>
-            <li>Einsatz fortschrittlicher Fertigungstechnologien zur Erweiterung der Unternehmenskompetenzen</li>
-            <li>Unterstützung des Produktmanagements und der Geschäftsentwicklung</li>
-          </ul>
-        </div>
-
-        <h2>Referenzen &amp; Partnerschaften (Auswahl)</h2>
-        <ul>
-          <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
-          <li>Zusammenarbeit mit führenden Industriepartnern</li>
-          <li>Erfolgreiche Skalierung von High-Tech-Produktionslinien</li>
-        </ul>
-
-      </div>
-    </section>
-
-    <div class="footer">
-      CV Raphael Heeb – Stand März 2026
     </div>
 
+    <div class="photo">
+      <img src="/assets/img/raphael-heeb.jpg" alt="Portrait Raphael Heeb" />
+    </div>
+  </header>
+
+  <!-- PROFIL -->
+  <section>
+    <h2>Profil</h2>
+    <p>
+      Erfahrener Technologieunternehmer mit über 15 Jahren Erfahrung in fortschrittlicher Fertigung,
+      Materialwissenschaft und Technologietransfer. Gründer von <strong>VAIRA Technology</strong>, einer
+      Boutique-Deep-Tech-Beratung, die Unternehmen bei der Entwicklung, Industrialisierung und Skalierung
+      innovativer Technologien unterstützt. Kombination aus fundierter technischer Expertise (PhD ETH Zürich)
+      und strategischem Management (Executive MBA HSG). Erfolgreiche Führung von High-Tech-Startups,
+      internationalen Partnerschaften und komplexen Innovationsprojekten.
+    </p>
+  </section>
+
+  <!-- TWO COLUMNS -->
+  <section class="two-columns">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <h2>Kernkompetenzen</h2>
+      <ul>
+        <li>Strategisches Innovations- &amp; Technologiemanagement</li>
+        <li>Technologietransfer &amp; Industrialisierung</li>
+        <li>Fortgeschrittene Fertigung &amp; Materialien (inkl. Additive Fertigung, LCP-Technologien)</li>
+        <li>Geschäftsentwicklung &amp; internationale Partnerschaften</li>
+        <li>Interkulturelle Zusammenarbeit (Europa, Asien, USA)</li>
+        <li>Führung &amp; Teamentwicklung</li>
+      </ul>
+
+      <h2>Auszeichnungen</h2>
+      <ul>
+        <li>W.A. de Vigier Award – Gewinner</li>
+        <li>Formnext Start-Up Challenge – Gewinner</li>
+        <li>Shenzhen Innovation &amp; Entrepreneurship Competition – Finalist</li>
+      </ul>
+
+      <h2>Ausbildung</h2>
+      <ul>
+        <li>Executive MBA (General Management), Universität St. Gallen (HSG), 2019</li>
+        <li>PhD (Dr. sc. ETH) in Oberflächentechnologie &amp; Polymertechnik, ETH Zürich, 2009</li>
+        <li>Dipl. Werkstoffingenieur ETH, ETH Zürich, 2005</li>
+      </ul>
+
+      <h2>Sprachen</h2>
+      <ul>
+        <li>Deutsch – Muttersprache</li>
+        <li>Englisch – Verhandlungssicher</li>
+        <li>Französisch – Gut</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <h2>Aktuelle Tätigkeit</h2>
+      <div class="job-block">
+        <h3>Founder &amp; Lead Technical Architect – VAIRA Technology (2025 – heute)</h3>
+        <p class="subheading">
+          Boutique-Deep-Tech-Beratung für Innovation, Industrialisierung und Technologiepartnerschaften.
+        </p>
+        <ul>
+          <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
+          <li>Technische Architektur, Materialentwicklung und Fertigungsprozesse (inkl. LCP-basierte Technologien)</li>
+          <li>Aufbau internationaler Technologiepartnerschaften (Europa, Asien, USA)</li>
+          <li>Erstellung von technischen Whitepapers, Roadmaps und Entscheidungsgrundlagen</li>
+          <li>Unterstützung von Standortförderungen bei Innovationsprojekten und Technologietransfer</li>
+          <li>Beratung zu F&amp;E-Integration, Produktionsaufbau und Skalierungsstrategien</li>
+        </ul>
+      </div>
+
+      <h2>Strategische Erfolge</h2>
+      <ul>
+        <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
+        <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
+        <li>Skalierung von Hochleistungs-3D-Drucksystemen und Materialien von der F&amp;E bis zur Pilotproduktion</li>
+        <li>Führung interdisziplinärer Teams in F&amp;E, Industrialisierung und Business Development</li>
+        <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
+      </ul>
+
+      <h2>Berufserfahrung</h2>
+
+      <div class="job-block">
+        <h3>CEO, Mitgründer, Präsident des Verwaltungsrats – NematX AG (2020–2025)</h3>
+        <p class="subheading">ETH Zürich Spin-off für industriellen 3D-Druck von Flüssigkristallpolymeren (LCP).</p>
+        <ul>
+          <li>Strategische und operative Gesamtleitung</li>
+          <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
+          <li>Aufbau globaler Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität</li>
+          <li>Überwachung der F&amp;E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
+          <li>Erfolgreiche Integration in Polyplastics (Japan)</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <h3>Leiter Engineering / Mitglied der Geschäftsleitung – Optics Balzers AG (2016–2019)</h3>
+        <ul>
+          <li>Leitung der Engineering-Abteilung für Produktindustrialisierung und Serienproduktion</li>
+          <li>Einführung von Programmen zur kontinuierlichen Verbesserung</li>
+          <li>Koordination der Zusammenarbeit zwischen Standorten in Liechtenstein und Asien</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <h3>Leiter Pilotproduktion – Optics Balzers AG (2013–2015)</h3>
+        <ul>
+          <li>Aufbau einer neuen Pilotlinie für optische Baugruppen</li>
+          <li>Überführung von F&amp;E-Konzepten in die Produktion</li>
+          <li>Definition von Produktionsprozessen und Implementierung der Qualitätssicherung</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <h3>Projektleiter F&amp;E / NPI – Optics Balzers AG (2009–2013)</h3>
+        <ul>
+          <li>Planung und Durchführung von F&amp;E-Projekten</li>
+          <li>Einsatz fortschrittlicher Fertigungstechnologien zur Erweiterung der Unternehmenskompetenzen</li>
+          <li>Unterstützung des Produktmanagements und der Geschäftsentwicklung</li>
+        </ul>
+      </div>
+
+      <h2>Referenzen &amp; Partnerschaften (Auswahl)</h2>
+      <ul>
+        <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
+        <li>Zusammenarbeit mit führenden Industriepartnern</li>
+        <li>Erfolgreiche Skalierung von High-Tech-Produktionslinien</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <div class="footer">
+    CV Raphael Heeb – Stand März 2026
   </div>
+
 </body>
 </html>
