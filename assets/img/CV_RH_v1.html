@@ -67,6 +67,11 @@
   white-space: nowrap;
 }
 
+.cv h3 {
+  font-size: 11.5pt;
+  margin-bottom: 0.6rem; /* Abstand zu UL */
+}
+
 .cv p {
   margin-bottom: 0.6rem;
   line-height: 1.45;
@@ -79,7 +84,7 @@
 .cv .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* Foto bündig */
   gap: 2rem;
   margin-bottom: 2.4rem;
 }
@@ -96,26 +101,6 @@
   line-height: 1.35;
 }
 
-.cv .contact {
-  font-size: 10.5pt;
-  color: #555;
-  margin-bottom: 0.4rem;
-}
-
-.cv .links {
-  font-size: 10.5pt;
-  margin-top: 0.4rem;
-}
-
-.cv .links a {
-  color: var(--primary-dark);
-  text-decoration: none;
-}
-
-.cv .links a:hover {
-  text-decoration: underline;
-}
-
 /* ============================
    PHOTO
    ============================ */
@@ -126,7 +111,7 @@
   border-radius: 6px;
   overflow: hidden;
   background: #ddd;
-  margin-top: 0.35rem;
+  margin-top: 0.15rem; /* Perfekte Ausrichtung */
   flex-shrink: 0;
 }
 
@@ -143,7 +128,7 @@
 .cv .two-columns {
   display: grid;
   grid-template-columns: 30% 68%;
-  column-gap: 4%;
+  column-gap: 6%; /* Mehr Abstand */
   row-gap: 2.2rem;
   margin-top: 1rem;
 }
@@ -159,40 +144,58 @@
   margin-bottom: 0.4rem;
 }
 
-/* SPALTENABSTAND */
-.cv .two-columns {
-  column-gap: 6%;
-}
+/* ============================
+   LISTS & BULLETS
+   ============================ */
 
-/* BULLET-POINT EINRÜCKUNG + ABSTAND */
 .cv ul {
-  padding-left: 1.2rem;
+  padding-left: 1.2rem; /* Einrückung */
   margin-top: 0.4rem;
   margin-bottom: 1rem;
 }
 
 .cv ul li {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.55rem; /* Vertikaler Abstand */
   line-height: 1.45;
 }
 
-/* KONTAKT-KATEGORIE QR-CODE */
-.cv .contact-list .qr {
+/* Abstand zwischen H3/Subheading und UL */
+.cv h3 + ul,
+.cv .subheading + ul {
+  margin-top: 0.6rem !important;
+}
+
+/* ============================
+   KONTAKT-BLOCK & QR-CODE
+   ============================ */
+
+.cv .contact-list .qr-placeholder {
   width: 2.2cm;
   height: 2.2cm;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9pt;
+  color: #666;
   margin-top: 0.4rem;
 }
 
-/* FOOTER ABSTAND */
+/* ============================
+   FOOTER
+   ============================ */
+
 .cv .footer {
-  margin-top: 2.4rem;
-  padding-top: 1rem;
+  margin-top: 3rem; /* Mehr Luft */
+  padding-top: 1.2rem;
   font-size: 9.5pt;
   color: #666;
   text-align: right;
 }
-  
+
 </style>
+
 
 </head>
 
