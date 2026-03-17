@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+/* Grundlayout */
 html, body {
   margin: 0;
   padding: 0;
@@ -13,17 +14,20 @@ html, body {
   color: #0E1514;
 }
 
-/* Jede Seite als eigenes „Blatt“ */
 .page {
   width: 210mm;
   height: 297mm;
   box-sizing: border-box;
-  padding: 30mm 20mm 30mm 20mm; /* Top / Right / Bottom / Left */
+  padding: 30mm 20mm 30mm 20mm;
   page-break-after: always;
 }
 
 .page:last-child {
   page-break-after: auto;
+}
+
+.page > *:first-child {
+  margin-top: 0 !important;
 }
 
 /* Überschriften */
@@ -35,14 +39,18 @@ h1 {
 
 h2 {
   font-size: 11pt;
-  margin: 0.8cm 0 0.4cm 0;
+  margin: 0.7cm 0 0.4cm 0;
   padding-bottom: 0.15cm;
   border-bottom: 2px solid #5F8A8E;
 }
 
+.page h2:first-of-type {
+  margin-top: 0.4cm;
+}
+
 h3 {
   font-size: 10pt;
-  margin: 0.6cm 0 0.2cm 0;
+  margin: 0.4cm 0 0.2cm 0;
 }
 
 /* Grundabstände */
@@ -51,7 +59,7 @@ p, ul {
 }
 
 ul { padding-left: 0.5cm; }
-li { margin-bottom: 0.2cm; }
+ul li { margin-bottom: 0.15cm; }
 
 /* Header */
 .header {
@@ -66,8 +74,8 @@ li { margin-bottom: 0.2cm; }
 }
 
 .header-text p {
-  margin-bottom: 0.25cm;
-  line-height: 1.35;
+  margin-bottom: 0.22cm;
+  line-height: 1.32;
 }
 
 .header-text p strong {
@@ -90,11 +98,6 @@ li { margin-bottom: 0.2cm; }
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-/* Erster Block jeder Seite ohne zusätzlichen Margin */
-.page > *:first-child {
-  margin-top: 0 !important;
 }
 
 /* Kontaktblock */
@@ -121,7 +124,7 @@ li { margin-bottom: 0.2cm; }
   display: block;
 }
 
-/* Kernkompetenzen zweispaltig & ausbalanciert */
+/* Kernkompetenzen */
 .skills {
   columns: 2;
   column-gap: 1cm;
@@ -132,10 +135,28 @@ li { margin-bottom: 0.2cm; }
   break-inside: avoid;
 }
 
-/* Subtext für Klammerinhalt */
 .skills .sub {
   font-size: 9pt;
   color: #444;
+}
+
+/* Tätigkeitsblock */
+.role-block {
+  border-left: 2px solid #5F8A8E;
+  padding-left: 0.5cm;
+  margin-bottom: 0.8cm;
+}
+
+/* Erfolgsblock */
+.achievements {
+  background: #F5F8F8;
+  padding: 0.6cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.6cm;
+}
+
+.achievements ul {
+  margin: 0;
 }
 </style>
 
@@ -197,9 +218,8 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
 
 </div>
 
-  
-<div class="page">
-  
+  <div class="page">
+
   <h2>Sprachen</h2>
   <ul>
     <li>Deutsch – Muttersprache</li>
@@ -207,41 +227,45 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
     <li>Französisch – Gut</li>
   </ul>
 
- <h2>Kontakt</h2>
+  <h2>Kontakt</h2>
+  <div class="contact-block">
+    <ul class="contact-info">
+      <li>E-Mail: raphael.heeb@vaira.ch</li>
+      <li>Website: vaira.ch</li>
+      <li>LinkedIn: linkedin.com/in/raphaelheeb</li>
+    </ul>
 
-<div class="contact-block">
-  <ul class="contact-info">
-    <li>E-Mail: raphael.heeb@vaira.ch</li>
-    <li>Website: vaira.ch</li>
-    <li>LinkedIn: linkedin.com/in/raphaelheeb</li>
-  </ul>
-
-  <div class="qr">
-    <img src="/assets/img/QRCode_LinkedIn_RH.svg" alt="LinkedIn QR Code">
+    <div class="qr">
+      <img src="/assets/img/QRCode_LinkedIn_RH.svg" alt="LinkedIn QR Code">
+    </div>
   </div>
-</div>
 
   <h2>Tätigkeit</h2>
-  <h3>Gründer & Technischer Leiter – VAIRA Technology (2025–heute)</h3>
-  <ul>
-    <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
-    <li>Technische Architektur, Materialentwicklung und Fertigungsprozesse (inkl. LCP-basierte Technologien)</li>
-    <li>Aufbau internationaler Technologiepartnerschaften (Europa, Asien, USA)</li>
-    <li>Erstellung von technischen Whitepapers, Roadmaps und Entscheidungsgrundlagen</li>
-    <li>Unterstützung von Standortförderungen bei Innovationsprojekten und Technologietransfer</li>
-    <li>Beratung zu F&E-Integration, Produktionsaufbau und Skalierungsstrategien</li>
-  </ul>
+  <div class="role-block">
+    <h3>Gründer & Technischer Leiter – VAIRA Technology (2025–heute)</h3>
+    <ul>
+      <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
+      <li>Technische Architektur, Materialentwicklung und Fertigungsprozesse (inkl. LCP-basierte Technologien)</li>
+      <li>Aufbau internationaler Technologiepartnerschaften (Europa, Asien, USA)</li>
+      <li>Erstellung strategischer Entscheidungsgrundlagen (Whitepapers, Roadmaps, Technologieanalysen)</li>
+      <li>Unterstützung von Standortförderungen bei Innovationsprojekten und Technologietransfer</li>
+      <li>Beratung von Geschäftsleitungen zu F&E-Integration, Produktionsaufbau und Skalierungsstrategien</li>
+    </ul>
+  </div>
 
   <h2>Erfolge</h2>
-  <ul>
-    <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
-    <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
-    <li>Skalierung von Hochleistungs-3D-Drucksystemen und Materialien von der F&E bis zur Pilotproduktion</li>
-    <li>Führung interdisziplinärer Teams in F&E, Industrialisierung und Business Development</li>
-    <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
-  </ul>
-  
+  <div class="achievements">
+    <ul>
+      <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics (Japan)</li>
+      <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
+      <li>Skalierung von Hochleistungs-3D-Drucksystemen von Labor- auf Pilotproduktionsniveau</li>
+      <li>Führung interdisziplinärer Teams in F&E, Industrialisierung und Business Development</li>
+      <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
+    </ul>
   </div>
+
+</div>
+
   
   <div class="page">
     
