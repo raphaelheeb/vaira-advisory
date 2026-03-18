@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   font-size: 10pt;
-  margin: 0.4cm 0 0.2cm 0;
+  margin: 0.4cm 0 0.1cm 0;
 }
 
 /* Grundabstände */
@@ -114,7 +114,7 @@ a:hover {
 /* Kontaktblock */
 .contact-block {
   display: flex;
-  align-items: center; /* vertikal zentriert */
+  align-items: center;
   gap: 1cm;
 }
 
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .qr {
-  width: 2.0cm;   /* verkleinert */
+  width: 2.0cm;
   height: 2.0cm;
   flex-shrink: 0;
 }
@@ -151,11 +151,17 @@ a:hover {
   color: #444;
 }
 
-/* Tätigkeitsblock */
+/* Tätigkeitsblock (Seite 2 & 3) */
 .role-block {
   border-left: 2px solid #5F8A8E;
   padding-left: 0.5cm;
-  margin-bottom: 0.8cm;
+  margin-bottom: 0.9cm;
+}
+
+.period {
+  font-size: 9pt;
+  color: #444;
+  margin: -0.1cm 0 0.3cm 0;
 }
 
 /* Erfolgsblock */
@@ -167,6 +173,18 @@ a:hover {
 }
 
 .achievements ul {
+  margin: 0;
+}
+
+/* Partnerschaften */
+.partners-block {
+  background: #F5F8F8;
+  padding: 0.5cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.4cm;
+}
+
+.partners-block ul {
   margin: 0;
 }
 </style>
@@ -280,47 +298,61 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
 
   
   <div class="page">
-    
+
   <h2>Berufserfahrung</h2>
 
-  <h3>CEO & Mitgründer – NematX AG (2020–2025)</h3>
-  <ul>
-    <li>Strategische und operative Gesamtleitung</li>
-    <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
-    <li>Aufbau globaler Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität</li>
-    <li>Überwachung der F&E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
-    <li>Erfolgreiche Integration in Polyplastics (Japan)</li>
-  </ul>
+  <div class="role-block">
+    <h3>CEO & Mitgründer – NematX AG</h3>
+    <div class="period">2020–2025</div>
+    <ul>
+      <li>Strategische und operative Gesamtleitung eines ETH-Spin-offs im Bereich Hochleistungs-3D-Druck</li>
+      <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
+      <li>Aufbau globaler Partnerschaften in Elektronik, Halbleitertechnologie und Elektromobilität</li>
+      <li>Führung der F&E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
+      <li>Erfolgreiche strategische Integration in Polyplastics (Japan)</li>
+    </ul>
+  </div>
 
-  <h3>Leiter Engineering / Mitglied der Geschäftsleitung – Optics Balzers AG (2016–2019)</h3>
-  <ul>
-    <li>Leitung der Engineering-Abteilung für Produktindustrialisierung und Serienproduktion</li>
-    <li>Einführung von Programmen zur kontinuierlichen Verbesserung</li>
-    <li>Koordination der Zusammenarbeit zwischen Standorten in Liechtenstein und Asien</li>
-  </ul>
+  <div class="role-block">
+    <h3>Leiter Engineering / Mitglied der Geschäftsleitung – Optics Balzers AG</h3>
+    <div class="period">2016–2019</div>
+    <ul>
+      <li>Leitung der Engineering-Abteilung für Produktindustrialisierung und Serienproduktion</li>
+      <li>Einführung von Programmen zur kontinuierlichen Verbesserung (Lean, Prozessoptimierung)</li>
+      <li>Koordination der Zusammenarbeit zwischen Standorten in Liechtenstein und Asien</li>
+    </ul>
+  </div>
 
-  <h3>Leiter Pilotproduktion – Optics Balzers AG (2013–2015)</h3>
-  <ul>
-    <li>Aufbau einer neuen Pilotlinie für optische Baugruppen</li>
-    <li>Überführung von F&E-Konzepten in die Produktion</li>
-    <li>Definition von Produktionsprozessen und Implementierung der Qualitätssicherung</li>
-  </ul>
+  <div class="role-block">
+    <h3>Leiter Pilotproduktion – Optics Balzers AG</h3>
+    <div class="period">2013–2015</div>
+    <ul>
+      <li>Aufbau einer neuen Pilotlinie für optische Baugruppen</li>
+      <li>Überführung von F&E-Konzepten in stabile Produktionsprozesse</li>
+      <li>Definition und Implementierung von Qualitäts- und Fertigungsstandards</li>
+    </ul>
+  </div>
 
-  <h3>Projektleiter F&E / NPI – Optics Balzers AG (2009–2013)</h3>
-  <ul>
-    <li>Planung und Durchführung von F&E-Projekten</li>
-    <li>Einsatz fortschrittlicher Fertigungstechnologien zur Erweiterung der Unternehmenskompetenzen</li>
-    <li>Unterstützung des Produktmanagements und der Geschäftsentwicklung</li>
-  </ul>
+  <div class="role-block">
+    <h3>Projektleiter F&E / NPI – Optics Balzers AG</h3>
+    <div class="period">2009–2013</div>
+    <ul>
+      <li>Planung und Leitung komplexer F&E-Projekte im Bereich optischer Beschichtungen</li>
+      <li>Einsatz fortschrittlicher Fertigungstechnologien zur Erweiterung der Unternehmenskompetenzen</li>
+      <li>Unterstützung des Produktmanagements und der Geschäftsentwicklung</li>
+    </ul>
+  </div>
 
-  
   <h2>Partnerschaften</h2>
-  <ul>
-    <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
-    <li>Zusammenarbeit mit führenden Industriepartnern</li>
-    <li>Erfolgreiche Skalierung von High-Tech-Produktionslinien</li>
-  </ul>
+  <div class="partners-block">
+    <ul>
+      <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
+      <li>Zusammenarbeit mit führenden Industriepartnern in Elektronik, Halbleitertechnologie und Mobilität</li>
+      <li>Erfolgreiche Skalierung von High-Tech-Produktionslinien</li>
+    </ul>
+  </div>
 
 </div>
+
 </body>
 
