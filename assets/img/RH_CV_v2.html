@@ -61,6 +61,17 @@ p, ul {
 ul { padding-left: 0.5cm; }
 ul li { margin-bottom: 0.15cm; }
 
+/* Links */
+a {
+  color: #0E1514;
+  text-decoration: none;
+  border-bottom: 1px solid #5F8A8E;
+}
+
+a:hover {
+  color: #5F8A8E;
+}
+
 /* Header */
 .header {
   display: flex;
@@ -103,7 +114,7 @@ ul li { margin-bottom: 0.15cm; }
 /* Kontaktblock */
 .contact-block {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* vertikal zentriert */
   gap: 1cm;
 }
 
@@ -112,8 +123,8 @@ ul li { margin-bottom: 0.15cm; }
 }
 
 .qr {
-  width: 3cm;
-  height: 3cm;
+  width: 2.4cm;   /* verkleinert */
+  height: 2.4cm;
   flex-shrink: 0;
 }
 
@@ -218,7 +229,7 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
 
 </div>
 
-  <div class="page">
+ <div class="page">
 
   <h2>Sprachen</h2>
   <ul>
@@ -230,9 +241,9 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
   <h2>Kontakt</h2>
   <div class="contact-block">
     <ul class="contact-info">
-      <li>E-Mail: raphael.heeb@vaira.ch</li>
-      <li>Website: vaira.ch</li>
-      <li>LinkedIn: linkedin.com/in/raphaelheeb</li>
+      <li>E-Mail: <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a></li>
+      <li>Website: <a href="https://vaira.ch">vaira.ch</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/raphaelheeb">linkedin.com/in/raphaelheeb</a></li>
     </ul>
 
     <div class="qr">
@@ -265,6 +276,7 @@ von High-Tech-Produktionslinien und Aufbau globaler Industriepartnerschaften.
   </div>
 
 </div>
+
 
   
   <div class="page">
