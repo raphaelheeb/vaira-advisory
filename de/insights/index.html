@@ -1,0 +1,122 @@
+---
+layout: default
+lang: de
+title: Insights zu Innovation & Engineering Strategy
+description: Perspektiven darauf, wie Deep‑Tech‑Produkte entwickelt, gebaut und erfolgreich in den Markt gebracht werden.
+permalink: /de/insights/
+bodyClass: subpage subpage--insights
+switch_url: /insights/
+---
+<!-- ========================= -->
+<!-- SUBPAGE HERO SECTION -->
+<!-- ========================= -->
+<section id="hero" class="hero hero--clean">
+  <div class="content-wrapper">
+    <h1 class="hero-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="hero-sub">{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+
+<!-- ========================= -->
+<!-- FILTERS (Pillars) -->
+<!-- ========================= -->
+<section class="section section--alt">
+  <div class="content-wrapper wrapper--narrow">
+
+    <div class="insights-filters">
+      <span class="filter-label">Nach Säule filtern:</span>
+
+      <a href="/de/insights/" class="filter-pill">Alle</a>
+      <a href="/de/insights/?pillar=Foundation" class="filter-pill">Gründung</a>
+      <a href="/de/insights/?pillar=Differentiation" class="filter-pill">Differenzierung</a>
+      <a href="/de/insights/?pillar=Positioning" class="filter-pill">Positionierung</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================= -->
+<!-- INSIGHTS GRID SECTION -->
+<!-- ========================= -->
+<section class="section section--alt">
+  <div class="content-wrapper wrapper--narrow">
+
+    <h2 style="margin-bottom:1.5rem;">Neueste Insights</h2>
+
+    {% assign insights = site.de_insights | sort: "date" | reverse %}
+
+    {% if page.pillar %}
+      {% assign insights = insights | where: "pillar", page.pillar %}
+    {% endif %}
+
+    <div class="insights-grid">
+
+      {% for insight in insights %}
+      <a class="insights-card" href="{{ insight.url | relative_url }}">
+
+        <div class="insights-card-content">
+
+          {% if insight.category %}
+            <div class="insights-card-category">
+              {% include insight-category.html category=insight.category %}
+            </div>
+          {% endif %}
+
+          <div class="insights-meta">
+            {% if insight.pillar %}
+              <span class="insights-pillar">{{ insight.pillar }}</span>
+              <span class="insights-dot">•</span>
+            {% endif %}
+
+            {% comment %}
+            German month translation
+            {% endcomment %}
+            {% assign month_en = insight.date | date: "%B" %}
+
+{% case month_en %}
+  {% when "January" %}{% assign month_de = "Januar" %}
+  {% when "February" %}{% assign month_de = "Februar" %}
+  {% when "March" %}{% assign month_de = "März" %}
+  {% when "April" %}{% assign month_de = "April" %}
+  {% when "May" %}{% assign month_de = "Mai" %}
+  {% when "June" %}{% assign month_de = "Juni" %}
+  {% when "July" %}{% assign month_de = "Juli" %}
+  {% when "August" %}{% assign month_de = "August" %}
+  {% when "September" %}{% assign month_de = "September" %}
+  {% when "October" %}{% assign month_de = "Oktober" %}
+  {% when "November" %}{% assign month_de = "November" %}
+  {% when "December" %}{% assign month_de = "Dezember" %}
+{% endcase %}
+
+<span class="insights-date">
+  {{ insight.date | date: "%-d." }} {{ month_de }} {{ insight.date | date: "%Y" }}
+</span>
+
+          </div>
+
+          <h3 class="insights-card-title">{{ insight.title }}</h3>
+
+          {% if insight.description %}
+            <p class="insights-card-desc">{{ insight.description }}</p>
+          {% endif %}
+
+
+            {% if insight.tags %}
+  <ul class="insights-card-tags">
+    {% for tag in insight.tags %}
+      <li class="tag">{{ tag }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+        </div>
+
+      </a>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
