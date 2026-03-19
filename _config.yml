@@ -3,3 +3,15 @@ url: "https://vaira.ch"
 baseurl: ""
 theme: null
 markdown: kramdown
+
+# ----------------------------------------
+# Collections
+# ----------------------------------------
+collections:
+  insights:
+    output: true
+    permalink: /insights/:name/
+  de_insights:
+    output: true
+    permalink: /de/insights/:name/
+

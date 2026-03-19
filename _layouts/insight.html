@@ -1,0 +1,216 @@
+---
+layout: default
+---
+
+{% comment %}
+===========================================
+LANGUAGE SWITCHER LOGIC (EN ↔ DE)
+===========================================
+{% endcomment %}
+
+{% if page.translation_key %}
+  {% if page.lang == "en" %}
+    {% assign counterpart = site.de_insights | where: "translation_key", page.translation_key | first %}
+  {% else %}
+    {% assign counterpart = site.insights | where: "translation_key", page.translation_key | first %}
+  {% endif %}
+{% endif %}
+
+{% if counterpart %}
+  {% assign switch_url = counterpart.url %}
+{% else %}
+  {% if page.lang == "en" %}
+    {% assign switch_url = "/de/insights/" %}
+  {% else %}
+    {% assign switch_url = "/insights/" %}
+  {% endif %}
+{% endif %}
+
+
+<article class="insight-article insights-page">
+
+  <!-- HERO (clean + calm) -->
+<section id="hero" class="hero hero--clean">
+  <div class="content-wrapper">
+
+    <h1 class="hero-title">{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="hero-sub">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="insight-meta-top insight-meta-in-hero">
+      <span class="insight-category">
+  {% if page.lang == "de" %}
+    {% case page.category %}
+      {% when "Founder Narrative" %}Gründerperspektive
+      {% else %}{{ page.category }}
+    {% endcase %}
+  {% else %}
+    {{ page.category }}
+  {% endif %}
+</span>
+
+      {% if page.pillar %}
+        <span class="insight-dot">&#8226</span>
+        <span class="insight-pillar">
+  {% if page.lang == "de" %}
+    {% case page.pillar %}
+      {% when "Foundation" %}Gründung
+      {% when "Differentiation" %}Differenzierung
+      {% when "Positioning" %}Positionierung
+      {% else %}{{ page.pillar }}
+    {% endcase %}
+  {% else %}
+    {{ page.pillar }}
+  {% endif %}
+</span>
+
+      {% endif %}
+
+      <span class="insight-dot">&#8226</span>
+     <span class="insight-reading">
+  {% if page.lang == "de" %}
+    {{ page.reading_time }} min Lesezeit
+  {% else %}
+    {{ page.reading_time }} min read
+  {% endif %}
+</span>
+
+
+      <span class="insight-dot">&#8226</span>
+
+      <!-- ========================= -->
+      <!-- DATE (EN + DE localized) -->
+      <!-- ========================= -->
+      <span class="insight-date">
+        {% if page.lang == "de" %}
+
+          {% assign month_en = page.date | date: "%B" %}
+
+          {% case month_en %}
+            {% when "January" %}{% assign month_de = "Januar" %}
+            {% when "February" %}{% assign month_de = "Februar" %}
+            {% when "March" %}{% assign month_de = "März" %}
+            {% when "April" %}{% assign month_de = "April" %}
+            {% when "May" %}{% assign month_de = "Mai" %}
+            {% when "June" %}{% assign month_de = "Juni" %}
+            {% when "July" %}{% assign month_de = "Juli" %}
+            {% when "August" %}{% assign month_de = "August" %}
+            {% when "September" %}{% assign month_de = "September" %}
+            {% when "October" %}{% assign month_de = "Oktober" %}
+            {% when "November" %}{% assign month_de = "November" %}
+            {% when "December" %}{% assign month_de = "Dezember" %}
+          {% endcase %}
+
+          {{ page.date | date: "%-d." }} {{ month_de }} {{ page.date | date: "%Y" }}
+
+        {% else %}
+          {{ page.date | date: "%B %-d, %Y" }}
+        {% endif %}
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- CORE THEMES -->
+  {% if page.themes %}
+  <section class="section insight-themes">
+    <div class="content-wrapper wrapper--narrow">
+      <h3>
+        {% if page.lang == "de" %}
+          Kernthemen
+        {% else %}
+          Core Themes
+        {% endif %}
+      </h3>
+
+      <ul class="insight-themes-list">
+        {% for theme in page.themes %}
+          <li>{{ theme }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+
+  <!-- BODY -->
+  <section class="section">
+    <div class="content-wrapper wrapper--narrow insight-body">
+      {{ content }}
+    </div>
+  </section>
+
+
+  <!-- RELATED INSIGHTS -->
+  {% if page.links %}
+  <section class="section related-insights">
+    <div class="content-wrapper wrapper--narrow">
+      <h3>
+        {% if page.lang == "de" %}
+          Verwandte Insights
+        {% else %}
+          Related Insights
+        {% endif %}
+      </h3>
+
+      <ul class="related-insights-list">
+        {% for link in page.links %}
+          {% if page.lang == "de" %}
+            {% assign related = site.de_insights | where: "slug", link.slug | first %}
+          {% else %}
+            {% assign related = site.insights | where: "slug", link.slug | first %}
+          {% endif %}
+
+          {% if related %}
+            <li>
+              <a href="{{ related.url }}">{{ related.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+
+
+ <!-- TAGS -->
+{% if page.tags %}
+<section class="section insight-tags">
+  <div class="content-wrapper wrapper--narrow">
+
+    <p class="tags-label">
+      {% if page.lang == "de" %}
+        Tags:
+      {% else %}
+        Tags:
+      {% endif %}
+    </p>
+
+    <div class="tags-container">
+      <ul class="tags-list">{% for tag in page.tags %}<li class="tag">{{ tag }}</li>{% endfor %}</ul>
+    </div>
+
+  </div>
+</section>
+{% endif %}
+
+
+
+  <!-- NAVIGATION -->
+  <section class="section">
+    <div class="content-wrapper wrapper--narrow insight-nav">
+      {% if page.lang == "en" %}
+        <a href="/insights/" class="insight-back">← Back to Insights</a>
+      {% else %}
+        <a href="/de/insights/" class="insight-back">← Zurück zu Insights</a>
+      {% endif %}
+    </div>
+  </section>
+
+</article>
+

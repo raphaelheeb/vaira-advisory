@@ -18,6 +18,7 @@
           <li><a href="/de/services/"     class="{% if page.url == '/de/services/' %}active{% endif %}">Dienstleistungen</a></li>
           <li><a href="/de/industries/"   class="{% if page.url == '/de/industries/' %}active{% endif %}">Branchen</a></li>
           <li><a href="/de/use-cases/"    class="{% if page.url == '/de/use-cases/' %}active{% endif %}">Anwendungen</a></li>
+          <li><a href="/de/insights/"    class="{% if page.url == '/de/insights/' %}active{% endif %}">Insights</a></li>
           <li><a href="/de/about/"        class="{% if page.url == '/de/about/' %}active{% endif %}">Über Uns</a></li>
           <li><a href="/de/contact/"      class="{% if page.url == '/de/contact/' %}active{% endif %}">Kontakt</a></li>
 
@@ -26,6 +27,7 @@
           <li><a href="/services/"        class="{% if page.url == '/services/' %}active{% endif %}">Services</a></li>
           <li><a href="/industries/"      class="{% if page.url == '/industries/' %}active{% endif %}">Industries</a></li>
           <li><a href="/use-cases/"       class="{% if page.url == '/use-cases/' %}active{% endif %}">Use Cases</a></li>
+          <li><a href="/insights/"        class="{% if page.url == '/insights/' %}active{% endif %}">Insights</a></li>
           <li><a href="/about/"           class="{% if page.url == '/about/' %}active{% endif %}">About</a></li>
           <li><a href="/contact/"         class="{% if page.url == '/contact/' %}active{% endif %}">Contact Us</a></li>
 
@@ -42,8 +44,35 @@
       <div class="language-switcher">
 
         {% comment %}
-        Hard mapping EN <-> DE for all relevant pages.
-        No dynamic magic, no /de/de/, no guessing.
+        ==========================================================
+        INSIGHT OVERRIDE:
+        Use switch_url from layout (articles) OR page.switch_url
+        from front matter (index pages).
+        ==========================================================
+        {% endcomment %}
+
+        {% assign effective_switch_url = nil %}
+        {% if switch_url %}
+          {% assign effective_switch_url = switch_url %}
+        {% elsif page.switch_url %}
+          {% assign effective_switch_url = page.switch_url %}
+        {% endif %}
+
+        {% if effective_switch_url %}
+          {% if page.lang == "en" %}
+            <span class="lang-btn active">EN</span>
+            <a href="{{ effective_switch_url }}" class="lang-btn">DE</a>
+          {% else %}
+            <a href="{{ effective_switch_url }}" class="lang-btn">EN</a>
+            <span class="lang-btn active">DE</span>
+          {% endif %}
+
+        {% else %}
+        {% comment %}
+        ==========================================================
+        DEFAULT HARD-MAPPED SWITCHER (unchanged)
+        Used for all non-Insight pages.
+        ==========================================================
         {% endcomment %}
 
         {% assign en_url  = '/' %}
@@ -79,6 +108,13 @@
           {% when '/de/use-cases/' %}
             {% assign en_url = '/use-cases/' %}
             {% assign de_url = '/de/use-cases/' %}
+
+          {% when '/insights/' %}
+            {% assign en_url = '/insights/' %}
+            {% assign de_url = '/de/insights/' %}
+          {% when '/de/insights/' %}
+            {% assign en_url = '/insights/' %}
+            {% assign de_url = '/de/insights/' %}
 
           {% when '/about/' %}
             {% assign en_url = '/about/' %}
@@ -118,6 +154,8 @@
           <a href="{{ de_url }}" class="lang-btn">DE</a>
         {% endif %}
 
+        {% endif %}
+
       </div>
 
       <!-- MOBILE HAMBURGER -->
@@ -135,12 +173,14 @@
       <a href="/de/services/">Dienstleistungen</a>
       <a href="/de/industries/">Branchen</a>
       <a href="/de/use-cases/">Anwendungen</a>
+      <a href="/de/insights/">Insights</a>
       <a href="/de/about/">Über Uns</a>
       <a href="/de/contact/">Kontakt</a>
     {% else %}
       <a href="/services/">Services</a>
       <a href="/industries/">Industries</a>
       <a href="/use-cases/">Use Cases</a>
+      <a href="/insights/">Insights</a>
       <a href="/about/">About</a>
       <a href="/contact/">Contact Us</a>
     {% endif %}

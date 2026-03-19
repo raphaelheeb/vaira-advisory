@@ -3,6 +3,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ page.lang | default: 'en' }}">
 <head>
+  {% include seo.html %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,16 +28,22 @@
   <meta name="keywords" content="VAIRA Technology, deep-tech consulting, advanced manufacturing, industrialization, automation, Switzerland, Zürich, engineering consultancy">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+<!-- Canonical -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <!-- Hreflang -->
-{% assign clean_url = page.url | remove_first: '/de' %}
-
-<link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ clean_url }}">
-<link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de{{ clean_url }}">
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ clean_url }}">
-
+<!-- Hreflang -->
+{% if page.slug %}
+  <!-- Bilingual Insights article -->
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/insights/{{ page.slug }}/">
+  <link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/{{ page.slug }}/">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/{{ page.slug }}/">
+{% else %}
+  <!-- Standard EN/DE pages -->
+  {% assign clean_url = page.url | remove_first: '/de' %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ clean_url }}">
+  <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ clean_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ clean_url }}">
+{% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +51,7 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=3005' | relative_url }}">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
-  <link rel="manifest" href="/manifest.json">
-
+  
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -96,15 +102,16 @@
 {% endif %}
 <!-- END INSERT -->
 
-
   <!-- Microsoft Clarity -->
+{% if jekyll.environment == "production" %}
 <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vuhgyfya54");
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/XXXXXX";
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script");
 </script>
+{% endif %}
 
 <script>
   clarity("set", "userType", "raphael");
@@ -213,6 +220,40 @@
   <script>
     document.documentElement.classList.remove('no-js');
   </script>
+
+{% comment %}
+===========================================================
+INSIGHT LANGUAGE SWITCHER LOGIC
+Runs BEFORE header so header can see switch_url.
+Uses translation_key when available.
+===========================================================
+{% endcomment %}
+
+{% assign switch_url = nil %}
+
+{% if page.layout == "insight" %}
+
+  {% if page.translation_key %}
+    {% if page.lang == "en" %}
+      {% assign counterpart = site.de_insights | where: "translation_key", page.translation_key | first %}
+    {% else %}
+      {% assign counterpart = site.insights | where: "translation_key", page.translation_key | first %}
+    {% endif %}
+
+    {% if counterpart %}
+      {% assign switch_url = counterpart.url %}
+    {% endif %}
+  {% endif %}
+
+  {% if switch_url == nil %}
+    {% if page.lang == "en" %}
+      {% assign switch_url = "/de/insights/" %}
+    {% else %}
+      {% assign switch_url = "/insights/" %}
+    {% endif %}
+  {% endif %}
+
+{% endif %}
 
   {% include header.html %}
 
