@@ -1,0 +1,22 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Label -->
+  <text x="32" y="48" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#333" letter-spacing="0.5px">LEADERSHIP</text>
+
+  <!-- Structural Geometry -->
+  <rect x="200" y="180" width="120" height="240" stroke="#222" stroke-width="2"/>
+  <rect x="360" y="120" width="100" height="180" transform="rotate(8 360 120)" stroke="#222" stroke-width="2"/>
+
+  <!-- Vertical Alignment Line -->
+  <line x1="600" y1="100" x2="600" y2="575" stroke="#222" stroke-width="2"/>
+
+  <!-- Horizontal Rhythm Lines -->
+  <line x1="180" y1="300" x2="1020" y2="300" stroke="#222" stroke-width="2"/>
+  <line x1="180" y1="400" x2="1020" y2="400" stroke="#222" stroke-width="2"/>
+
+  <!-- Diagonal Beam -->
+  <line x1="240" y1="600" x2="960" y2="120" stroke="#222" stroke-width="2"/>
+
+  <!-- Corner Frame -->
+  <line x1="100" y1="100" x2="200" y2="100" stroke="#222" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="200" stroke="#222" stroke-width="2"/>
+</svg>
