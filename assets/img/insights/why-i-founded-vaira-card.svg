@@ -1,22 +1,27 @@
 <svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+
   <!-- Label -->
-  <text x="32" y="48" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#333" letter-spacing="0.5px">LEADERSHIP</text>
+  <text x="40" y="60" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#333" letter-spacing="1px">
+    LEADERSHIP
+  </text>
 
-  <!-- Structural Geometry -->
-  <rect x="200" y="180" width="120" height="240" stroke="#222" stroke-width="2"/>
-  <rect x="360" y="120" width="100" height="180" transform="rotate(8 360 120)" stroke="#222" stroke-width="2"/>
+  <!-- Left Crosshair (scaled-up version of your icon) -->
+  <line x1="200" y1="150" x2="200" y2="525" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="50"  y1="337.5" x2="350" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Vertical Alignment Line -->
-  <line x1="600" y1="100" x2="600" y2="575" stroke="#222" stroke-width="2"/>
+  <!-- Diagonal Directional Line (same logic as your icon) -->
+  <line x1="200" y1="337.5" x2="420" y2="150" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Horizontal Rhythm Lines -->
-  <line x1="180" y1="300" x2="1020" y2="300" stroke="#222" stroke-width="2"/>
-  <line x1="180" y1="400" x2="1020" y2="400" stroke="#222" stroke-width="2"/>
+  <!-- Corner Polyline (your icon’s signature detail) -->
+  <polyline points="390,150 420,150 420,180"
+            stroke="#222" stroke-width="2" stroke-linecap="round" fill="none"/>
 
-  <!-- Diagonal Beam -->
-  <line x1="240" y1="600" x2="960" y2="120" stroke="#222" stroke-width="2"/>
+  <!-- Right-Side Extension (widescreen adaptation) -->
+  <line x1="420" y1="180" x2="900" y2="180" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="420" y1="337.5" x2="1100" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="420" y1="495" x2="900" y2="495" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Corner Frame -->
-  <line x1="100" y1="100" x2="200" y2="100" stroke="#222" stroke-width="2"/>
-  <line x1="100" y1="100" x2="100" y2="200" stroke="#222" stroke-width="2"/>
+  <!-- Vertical Anchor on the Right -->
+  <line x1="900" y1="150" x2="900" y2="525" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+
 </svg>
