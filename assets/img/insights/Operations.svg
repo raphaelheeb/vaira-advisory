@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft flow background -->
+  <rect
+    x="16" y="22" width="32" height="20" rx="4"
+    fill="#C9DCDC" fill-opacity="0.18"
+  />
+  <!-- Stages -->
+  <rect
+    x="18" y="24" width="10" height="16" rx="2"
+    stroke="#5F8A8E" stroke-width="2.25" fill="none"
+  />
+  <rect
+    x="28" y="24" width="10" height="16" rx="2"
+    stroke="#5F8A8E" stroke-width="2.25" fill="none"
+  />
+  <rect
+    x="38" y="24" width="10" height="16" rx="2"
+    fill="#C9DCDC" fill-opacity="0.38"
+    stroke="#5F8A8E" stroke-width="2.25"
+  />
+  <!-- Flow line -->
+  <path
+    d="M18 42 H46"
+    stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"
+  />
+</svg>
