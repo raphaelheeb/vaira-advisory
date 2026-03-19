@@ -25,8 +25,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false
-          bundler: true   # ← THIS is the missing piece that fixes exit code 127
+          bundler-cache: false   # disable GitHub’s broken cache
+
+      - name: Install Bundler
+        run: gem install bundler
 
       - name: Install dependencies
         run: bundle install
@@ -53,4 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
