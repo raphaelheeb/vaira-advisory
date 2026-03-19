@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Highlighted block -->
+  <rect
+    x="30" y="22" width="12" height="10"
+    fill="#C9DCDC" fill-opacity="0.28"
+  />
+  <!-- Framework blocks -->
+  <rect
+    x="18" y="22" width="10" height="10"
+    stroke="#5F8A8E" stroke-width="2.25" fill="none"
+  />
+  <rect
+    x="18" y="34" width="10" height="10"
+    stroke="#5F8A8E" stroke-width="2.25" fill="none"
+  />
+  <rect
+    x="30" y="34" width="12" height="10"
+    stroke="#5F8A8E" stroke-width="2.25" fill="none"
+  />
+  <!-- Alignment line -->
+  <line
+    x1="16" y1="20" x2="46" y2="20"
+    stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"
+  />
+</svg>

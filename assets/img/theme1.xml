@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="VAIRA Theme">
+  <a:themeElements>
+
+    <!-- COLOR SCHEME -->
+    <a:clrScheme name="VAIRA Colors">
+      <a:dk1><a:srgbClr val="0E1514"/></a:dk1>
+      <a:lt1><a:srgbClr val="FFFFFF"/></a:lt1>
+      <a:dk2><a:srgbClr val="2B4E5A"/></a:dk2>
+      <a:lt2><a:srgbClr val="F4F7F7"/></a:lt2>
+
+      <a:accent1><a:srgbClr val="2B4E5A"/></a:accent1>
+      <a:accent2><a:srgbClr val="5F8A8E"/></a:accent2>
+      <a:accent3><a:srgbClr val="C9DCDC"/></a:accent3>
+      <a:accent4><a:srgbClr val="084442"/></a:accent4>
+      <a:accent5><a:srgbClr val="FAFCFC"/></a:accent5>
+      <a:accent6><a:srgbClr val="B8D4D0"/></a:accent6>
+
+      <a:hlink><a:srgbClr val="5F8A8E"/></a:hlink>
+      <a:folHlink><a:srgbClr val="C9DCDC"/></a:folHlink>
+    </a:clrScheme>
+
+    <!-- FONT SCHEME -->
+    <a:fontScheme name="VAIRA Typography">
+      <a:majorFont>
+        <a:latin typeface="Inter Tight"/>
+        <a:ea typeface="Inter Tight"/>
+        <a:cs typeface="Inter Tight"/>
+      </a:majorFont>
+      <a:minorFont>
+        <a:latin typeface="Inter"/>
+        <a:ea typeface="Inter"/>
+        <a:cs typeface="Inter"/>
+      </a:minorFont>
+    </a:fontScheme>
+
+    <!-- FORMAT SCHEME -->
+    <a:fmtScheme name="VAIRA Format Scheme">
+
+      <!-- Fill styles -->
+      <a:fillStyleLst>
+        <a:solidFill><a:schemeClr val="lt1"/></a:solidFill>
+        <a:solidFill><a:schemeClr val="lt2"/></a:solidFill>
+        <a:solidFill><a:schemeClr val="dk1"/></a:solidFill>
+      </a:fillStyleLst>
+
+      <!-- Line styles -->
+      <a:lnStyleLst>
+        <a:ln w="12700"><a:solidFill><a:schemeClr val="dk1"/></a:solidFill></a:ln>
+        <a:ln w="6350"><a:solidFill><a:schemeClr val="accent2"/></a:solidFill></a:ln>
+        <a:ln w="2540"><a:solidFill><a:schemeClr val="accent3"/></a:solidFill></a:ln>
+      </a:lnStyleLst>
+
+      <!-- Effect styles -->
+      <a:effectStyleLst>
+        <a:effectStyle>
+          <a:effectLst>
+            <a:outerShdw blurRad="40000" dist="20000" dir="5400000">
+              <a:srgbClr val="000000">
+                <a:alpha val="12000"/>
+              </a:srgbClr>
+            </a:outerShdw>
+          </a:effectLst>
+        </a:effectStyle>
+        <a:effectStyle>
+          <a:effectLst>
+            <a:outerShdw blurRad="40000" dist="20000" dir="5400000">
+              <a:srgbClr val="000000">
+                <a:alpha val="18000"/>
+              </a:srgbClr>
+            </a:outerShdw>
+          </a:effectLst>
+        </a:effectStyle>
+        <a:effectStyle>
+          <a:effectLst/>
+        </a:effectStyle>
+      </a:effectStyleLst>
+
+      <!-- Background styles -->
+      <a:bgFillStyleLst>
+        <a:solidFill><a:schemeClr val="lt1"/></a:solidFill>
+        <a:solidFill><a:schemeClr val="lt2"/></a:solidFill>
+        <a:solidFill><a:schemeClr val="accent5"/></a:solidFill>
+      </a:bgFillStyleLst>
+
+    </a:fmtScheme>
+  </a:themeElements>
+
+  <a:objectDefaults/>
+  <a:extraClrSchemeLst/>
+</a:theme>
