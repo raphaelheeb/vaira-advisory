@@ -1,27 +1,20 @@
 <svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Label -->
-  <text x="40" y="60" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#333" letter-spacing="1px">
-    LEADERSHIP
-  </text>
+  <!-- Compact block centered vertically, left-anchored -->
+  <!-- Crosshair (scaled-up version of your icon) -->
+  <line x1="200" y1="200" x2="200" y2="475" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75"  y1="337.5" x2="325" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Left Crosshair (scaled-up version of your icon) -->
-  <line x1="200" y1="150" x2="200" y2="525" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="50"  y1="337.5" x2="350" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <!-- Diagonal directional line -->
+  <line x1="200" y1="337.5" x2="360" y2="200" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- Diagonal Directional Line (same logic as your icon) -->
-  <line x1="200" y1="337.5" x2="420" y2="150" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Corner Polyline (your icon’s signature detail) -->
-  <polyline points="390,150 420,150 420,180"
+  <!-- Polyline corner (your signature detail) -->
+  <polyline points="330,200 360,200 360,230"
             stroke="#222" stroke-width="2" stroke-linecap="round" fill="none"/>
 
-  <!-- Right-Side Extension (widescreen adaptation) -->
-  <line x1="420" y1="180" x2="900" y2="180" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="420" y1="337.5" x2="1100" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="420" y1="495" x2="900" y2="495" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Vertical Anchor on the Right -->
-  <line x1="900" y1="150" x2="900" y2="525" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <!-- Minimal right-side extension (compact, not widescreen) -->
+  <line x1="360" y1="230" x2="520" y2="230" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="360" y1="337.5" x2="600" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <line x1="360" y1="445" x2="520" y2="445" stroke="#222" stroke-width="2" stroke-linecap="round"/>
 
 </svg>
