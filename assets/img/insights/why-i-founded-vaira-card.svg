@@ -1,20 +1,33 @@
-<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Highlighted segment (founding moment) -->
+  <path
+    d="M28.8 24 L31.8 24 L35.5 32 L26.3 32 Z"
+    fill="#C9DCDC"
+    fill-opacity="0.28"
+  />
 
-  <!-- Compact block centered vertically, left-anchored -->
-  <!-- Crosshair (scaled-up version of your icon) -->
-  <line x1="200" y1="200" x2="200" y2="475" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="75"  y1="337.5" x2="325" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+  <!-- Asymmetrical rising path -->
+  <line
+    x1="22" y1="46"
+    x2="30" y2="20"
+    stroke="#5F8A8E"
+    stroke-width="2.25"
+    stroke-linecap="round"
+  />
+  <line
+    x1="42" y1="46"
+    x2="30" y2="20"
+    stroke="#5F8A8E"
+    stroke-width="2.25"
+    stroke-linecap="round"
+  />
 
-  <!-- Diagonal directional line -->
-  <line x1="200" y1="337.5" x2="360" y2="200" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Polyline corner (your signature detail) -->
-  <polyline points="330,200 360,200 360,230"
-            stroke="#222" stroke-width="2" stroke-linecap="round" fill="none"/>
-
-  <!-- Minimal right-side extension (compact, not widescreen) -->
-  <line x1="360" y1="230" x2="520" y2="230" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="360" y1="337.5" x2="600" y2="337.5" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-  <line x1="360" y1="445" x2="520" y2="445" stroke="#222" stroke-width="2" stroke-linecap="round"/>
-
+  <!-- Horizon line above the fill -->
+  <line
+    x1="24" y1="18"
+    x2="44" y2="18"
+    stroke="#5F8A8E"
+    stroke-width="2.25"
+    stroke-linecap="round"
+  />
 </svg>
