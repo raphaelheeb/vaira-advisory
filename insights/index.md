@@ -6,7 +6,6 @@ description: Perspectives on how deep‑tech products are designed, built, and b
 permalink: /insights/
 bodyClass: subpage subpage--insights
 switch_url: /de/insights/
-liquid: true
 ---
 
 <!-- ========================= -->

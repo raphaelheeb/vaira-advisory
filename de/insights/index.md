@@ -6,7 +6,6 @@ description: Perspektiven darauf, wie Deep‑Tech‑Produkte entwickelt, gebaut 
 permalink: /de/insights/
 bodyClass: subpage subpage--insights
 switch_url: /insights/
-liquid: true
 ---
 <!-- ========================= -->
 <!-- SUBPAGE HERO SECTION -->
