@@ -69,7 +69,7 @@ Industrieunternehmen sind stark in der Umsetzung, aber wenn Innovation von denje
 
 ---
 
-## Was ich von Startups gelernt habe
+## Was ich in Startups gelernt habe
 
 Später, als Gründer und Führungskraft in einem Deep‑Tech‑Startup, habe ich das andere Extrem erlebt. Startups bewegen sich schnell, weil sie müssen. Sie nutzen Einschränkungen als Vorteil, iterieren rasch und treffen Entscheidungen mit begrenzten Informationen. Das schafft Fokus und Momentum, bringt aber auch Risiken mit sich. Ich habe die Stärken dieser Umgebung erlebt - schnelle Lernzyklen, starke Ownership, direkte Kommunikation und kompromissloser Fokus auf das Wesentliche - aber auch die Schwächen: begrenzte Engineering‑Tiefe, zu wenig Fertigungsdenken und Prozesse, die unter Skalierung versagen können.
 
