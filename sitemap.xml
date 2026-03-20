@@ -72,6 +72,14 @@ layout: null
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/use-cases/" />
   </url>
 
+  <url>
+  <loc>{{ site.url }}/insights/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
+</url>
+
   <!-- German pages -->
   <url>
     <loc>{{ site.url }}/de/</loc>
@@ -136,5 +144,35 @@ layout: null
     <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/use-cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/use-cases/" />
   </url>
+
+<url>
+  <loc>{{ site.url }}/de/insights/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
+</url>
+
+
+  <!-- Insights - Articles published -->
+
+<url>
+  <loc>{{ site.url }}/insights/why-i-founded-vaira/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/why-i-founded-vaira/" />
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/why-i-founded-vaira/" />
+</url>
+
+
+<url>
+  <loc>{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+  <!-- Add EN alternate only if the English version exists -->
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+</url>
+
+
 
 </urlset>
