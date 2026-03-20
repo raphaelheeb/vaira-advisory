@@ -61,7 +61,7 @@ Heute stehen Schweizer und andere westliche Unternehmen unter wachsendem Druck d
 
 ---
 
-## Was mir Industrieunternehmen beigebracht haben
+## Was ich in Industrieunternehmen gelernt habe
 
 Die Arbeit in industriellen Umgebungen hat mir aufgezeigt, welchen Wert Präzision, Qualität und Zuverlässigkeit haben. Diese Unternehmen wissen, wie man Produkte baut, die funktionieren - konsistent und im grossen Massstab. Gleichzeitig habe ich gesehen, wie Innovation ins Stocken geraten kann, wenn Entscheidungszyklen unnötig lang werden, wenn Innovationsteams von F&E, Engineering oder Operations entkoppelt sind oder wenn Lieferanten zu spät eingebunden werden. Selbst hochkompetente Teams können hart arbeiten, ohne sich wirklich in dieselbe Richtung zu bewegen.
 
@@ -69,7 +69,7 @@ Industrieunternehmen sind stark in der Umsetzung, aber wenn Innovation von denje
 
 ---
 
-## Was mir Startups beigebracht haben
+## Was ich von Startups gelernt habe
 
 Später, als Gründer und Führungskraft in einem Deep‑Tech‑Startup, habe ich das andere Extrem erlebt. Startups bewegen sich schnell, weil sie müssen. Sie nutzen Einschränkungen als Vorteil, iterieren rasch und treffen Entscheidungen mit begrenzten Informationen. Das schafft Fokus und Momentum, bringt aber auch Risiken mit sich. Ich habe die Stärken dieser Umgebung erlebt - schnelle Lernzyklen, starke Ownership, direkte Kommunikation und kompromissloser Fokus auf das Wesentliche - aber auch die Schwächen: begrenzte Engineering‑Tiefe, zu wenig Fertigungsdenken und Prozesse, die unter Skalierung versagen können.
 
@@ -117,7 +117,7 @@ Mit der Zeit wurde klar, dass Organisationen einen hybriden Ansatz brauchen: die
 
 ---
 
-## Fazit: Warum es VAIRA gibt
+## Fazit: Weshalb es VAIRA gibt
 
 Innovation scheitert nicht, weil Teams zu wenig Talent oder zu wenige Ideen haben. Sie scheitert, weil ihnen Klarheit, Struktur und Ausrichtung fehlen. VAIRA existiert, um technische Disziplin in Innovationsvorhaben zu bringen - um Organisationen zu helfen, Komplexität zu navigieren, Entwicklung zu beschleunigen und Produkte zu bauen, die sich zuverlässig fertigen und skalieren lassen.
 
