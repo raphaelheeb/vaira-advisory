@@ -115,10 +115,21 @@ switch_url: /insights/
             {% if insight.tags %}
   <ul class="insights-card-tags">
     {% for tag in insight.tags %}
-      <li class="tag">{{ tag }}</li>
+      <li class="tag">
+        {% case tag %}
+          {% when "Foundation" %}Gründung
+          {% when "Differentiation" %}Differenzierung
+          {% when "Positioning" %}Positionierung
+          {% when "Strategy" %}Strategie
+          {% when "Engineering" %}Engineering
+          {% when "Innovation" %}Innovation
+          {% else %}{{ tag }}
+        {% endcase %}
+      </li>
     {% endfor %}
   </ul>
 {% endif %}
+
         </div>
 
       </a>
