@@ -18,3 +18,15 @@ collections:
     output: true
     permalink: /de/insights/:name/
 
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-include-cache
+
+# Force GitHub Pages to NOT load Minima
+github:
+  theme: null
+
