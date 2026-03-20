@@ -66,10 +66,18 @@ switch_url: /insights/
           {% endif %}
 
           <div class="insights-meta">
-            {% if insight.pillar %}
-              <span class="insights-pillar">{{ insight.pillar }}</span>
-              <span class="insights-dot">•</span>
-            {% endif %}
+       {% if insight.pillar %}
+  <span class="insights-pillar">
+    {% case insight.pillar %}
+      {% when "Foundation" %}Gründung
+      {% when "Differentiation" %}Differenzierung
+      {% when "Positioning" %}Positionierung
+      {% else %}{{ insight.pillar }}
+    {% endcase %}
+  </span>
+  <span class="insights-dot">•</span>
+{% endif %}
+
 
             {% comment %}
             German month translation
