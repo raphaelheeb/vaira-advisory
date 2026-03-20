@@ -4,6 +4,9 @@ baseurl: ""
 theme: null
 markdown: kramdown
 
+# Required for github-pages gem (jekyll-github-metadata)
+repository: raphaelheeb/vaira-advisory
+
 # ----------------------------------------
 # Collections
 # ----------------------------------------
