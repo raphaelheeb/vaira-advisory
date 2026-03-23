@@ -24,11 +24,11 @@ og_image: /assets/img/insights/why-i-founded-vaira-hero.jpg
 category: "Founder Narrative"
 pillar: "Foundation"
 tags:
-  - innovation
-  - engineering
-  - founder-story
-  - clarity
-  - architecture
+  - Innovation
+  - Engineering
+  - Gründerstory
+  - Klarheit
+  - Architektur
 
 # Core Themes
 themes:
