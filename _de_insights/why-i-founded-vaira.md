@@ -45,7 +45,7 @@ links:
 
 # Metadata
 author: "Raphael"
-date: 2026-03-20
+date: 2026-03-24
 reading_time: 7
 canonical_url: "https://vaira.ch/de/insights/warum-ich-vaira-gegruendet-habe/"
 
