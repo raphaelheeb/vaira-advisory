@@ -6,7 +6,7 @@
   <!-- English pages -->
   <url>
     <loc>http://0.0.0.0:4000/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
@@ -14,7 +14,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/about/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/about/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/about/" />
@@ -22,7 +22,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/services/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/services/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/services/" />
@@ -30,7 +30,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/industries/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/industries/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/industries/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/industries/" />
@@ -38,7 +38,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/contact/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/contact/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/contact/" />
@@ -46,7 +46,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/privacy/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/privacy/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/datenschutz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/privacy/" />
@@ -54,7 +54,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/impressum/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/impressum/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/impressum/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/impressum/" />
@@ -62,7 +62,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/use-cases/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/use-cases/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/use-cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/use-cases/" />
@@ -70,7 +70,7 @@
 
   <url>
   <loc>http://0.0.0.0:4000/insights/</loc>
-  <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+  <lastmod>2026-03-24T15:36:57+01:00</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/" />
   <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/" />
   <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/" />
@@ -79,7 +79,7 @@
   <!-- German pages -->
   <url>
     <loc>http://0.0.0.0:4000/de/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
@@ -87,7 +87,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/about/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/about/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/about/" />
@@ -95,7 +95,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/services/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/services/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/services/" />
@@ -103,7 +103,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/industries/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/industries/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/industries/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/industries/" />
@@ -111,7 +111,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/contact/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/contact/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/contact/" />
@@ -119,7 +119,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/datenschutz/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/privacy/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/datenschutz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/privacy/" />
@@ -127,7 +127,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/impressum/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/impressum/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/impressum/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/impressum/" />
@@ -135,7 +135,7 @@
 
   <url>
     <loc>http://0.0.0.0:4000/de/use-cases/</loc>
-    <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+    <lastmod>2026-03-24T15:36:57+01:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/use-cases/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/use-cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/use-cases/" />
@@ -143,7 +143,7 @@
 
 <url>
   <loc>http://0.0.0.0:4000/de/insights/</loc>
-  <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+  <lastmod>2026-03-24T15:36:57+01:00</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/" />
   <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/" />
   <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/" />
@@ -154,7 +154,7 @@
 
 <url>
   <loc>http://0.0.0.0:4000/insights/why-i-founded-vaira/</loc>
-  <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+  <lastmod>2026-03-24T15:36:57+01:00</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/why-i-founded-vaira/" />
   <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
   <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/why-i-founded-vaira/" />
@@ -163,7 +163,7 @@
 
 <url>
   <loc>http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
-  <lastmod>2026-03-24T14:15:59+01:00</lastmod>
+  <lastmod>2026-03-24T15:36:57+01:00</lastmod>
   <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
   <!-- Add EN alternate only if the English version exists -->
   <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
