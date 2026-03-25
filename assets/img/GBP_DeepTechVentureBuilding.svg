@@ -1,1 +1,34 @@
+  <svg width="260" height="260" viewBox="0 0 260 260" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <g transform="translate(0,-12)">
+
+    <!-- Bottom block -->
+    <rect x="40" y="150" width="55" height="55"
+          stroke="currentColor" stroke-width="3"/>
+
+    <!-- Middle block -->
+    <rect x="70" y="93" width="55" height="55"
+          fill="var(--primary-light)"
+          stroke="currentColor" stroke-width="3"/>
+
+    <!-- Top block -->
+    <rect x="100" y="36" width="55" height="55"
+          stroke="currentColor" stroke-width="3" fill="none"/> 
+
+    <!-- L-shape: vertical span = 165px (3 × 55) -->
+    <path d="
+      M158 36
+      H207
+      V155
+      H257
+      V205
+      H158
+      Z
+      "
+      stroke="var(--primary)"
+      stroke-width="3"/>
+  </g>
+
+</svg>
 
