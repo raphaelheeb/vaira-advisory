@@ -1,8 +1,6 @@
   <svg width="260" height="260" viewBox="0 0 260 260" fill="none"
      xmlns="http://www.w3.org/2000/svg">
 
-  <g transform="translate(0,-12)">
-
     <!-- Bottom block -->
     <rect x="40" y="150" width="55" height="55"
           stroke="currentColor" stroke-width="3"/>
@@ -28,7 +26,6 @@
       "
       stroke="#2B4E5A"
       stroke-width="3"/>
-  </g>
 
 </svg>
 
