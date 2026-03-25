@@ -4,9 +4,8 @@
   <rect width="1080" height="1080" fill="#2B4E5A"/>
 
   <!-- Illustration container -->
-  <!-- 30% larger: scale increased from 9.5 → 12.4 -->
-  <!-- Translation adjusted to keep perfect centering -->
-  <g transform="translate(260,260) scale(12.4)" fill="none" stroke-linecap="round">
+  <!-- Perfectly centered for scale(12.4) -->
+  <g transform="translate(205,280) scale(12.4)" fill="none" stroke-linecap="round">
 
     <!-- Outer rounded rectangle (main stroke) -->
     <rect x="10" y="16" width="44" height="32" rx="6"
