@@ -8,7 +8,7 @@
 
     <!-- Diagonal line -->
     <line x1="130" y1="130" x2="180" y2="80"
-          stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+          stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
 
     <!-- Open arrowhead, now correctly aligned -->
    
