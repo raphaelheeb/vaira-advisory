@@ -6,14 +6,6 @@
   <!-- Illustration container -->
   <g transform="translate(160,160) scale(2.8)" fill="none" stroke-linecap="round">
 
-    <!-- Vertical line (main stroke) -->
-    <line x1="130" y1="40" x2="130" y2="220"
-          stroke="#C9DCDC" stroke-width="4"/>
-
-    <!-- Horizontal line (main stroke) -->
-    <line x1="40" y1="130" x2="220" y2="130"
-          stroke="#C9DCDC" stroke-width="4"/>
-
     <!-- Diagonal line (accent stroke) -->
     <line x1="130" y1="130" x2="180" y2="80"
           stroke="#5F8A8E" stroke-width="4"/>
@@ -25,6 +17,14 @@
       <line x1="0" y1="0" x2="-12" y2="-6"
             stroke="#5F8A8E" stroke-width="4"/>
     </g>
+    
+    <!-- Vertical line (main stroke) -->
+    <line x1="130" y1="40" x2="130" y2="220"
+          stroke="#C9DCDC" stroke-width="4"/>
+
+    <!-- Horizontal line (main stroke) -->
+    <line x1="40" y1="130" x2="220" y2="130"
+          stroke="#C9DCDC" stroke-width="4"/>
 
   </g>
 
