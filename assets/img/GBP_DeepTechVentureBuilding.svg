@@ -1,20 +1,25 @@
-  <svg width="260" height="260" viewBox="0 0 260 260" fill="none"
-     xmlns="http://www.w3.org/2000/svg">
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
 
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#0A0A0A"/>
+
+  <!-- Group with padding (80px on each side) -->
+  <g transform="translate(160,160) scale(2.8)">
+    
     <!-- Bottom block -->
     <rect x="40" y="150" width="55" height="55"
-          stroke="currentColor" stroke-width="3"/>
+          stroke="#FFFFFF" stroke-width="4" fill="none"/>
 
     <!-- Middle block -->
     <rect x="70" y="93" width="55" height="55"
-          fill="var(--primary-light)"
-          stroke="currentColor" stroke-width="3"/>
+          fill="#2B4E5A"
+          stroke="#FFFFFF" stroke-width="4"/>
 
     <!-- Top block -->
     <rect x="100" y="36" width="55" height="55"
-          stroke="currentColor" stroke-width="3" fill="none"/> 
+          stroke="#FFFFFF" stroke-width="4" fill="none"/>
 
-    <!-- L-shape: vertical span = 165px (3 × 55) -->
+    <!-- L-shape -->
     <path d="
       M158 36
       H207
@@ -24,8 +29,9 @@
       H158
       Z
       "
-      stroke="#2B4E5A"
-      stroke-width="3"/>
+      stroke="#FFFFFF"
+      stroke-width="4"
+      fill="none"/>
+  </g>
 
 </svg>
-
