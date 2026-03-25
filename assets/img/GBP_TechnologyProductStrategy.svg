@@ -8,14 +8,14 @@
 
     <!-- Diagonal line -->
     <line x1="130" y1="130" x2="180" y2="80"
-          stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          stroke="#2B4E5A" stroke-width="3" stroke-linecap="round"/>
 
     <!-- Open arrowhead, now correctly aligned -->
     <g transform="translate(180,80) rotate(-45)">
       <line x1="0" y1="0" x2="-12" y2="6"
-            stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            stroke="#2B4E5A" stroke-width="3" stroke-linecap="round"/>
       <line x1="0" y1="0" x2="-12" y2="-6"
-            stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            stroke="#2B4E5A" stroke-width="3" stroke-linecap="round"/>
     </g>
 
   </g>
