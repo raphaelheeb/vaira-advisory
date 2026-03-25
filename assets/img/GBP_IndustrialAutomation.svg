@@ -1,8 +1,23 @@
- <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-            <rect x="10" y="16" width="44" height="32" rx="6"
-                  stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
-            <rect x="18" y="22" width="28" height="20" rx="4"
-                  fill="rgba(201,220,220,0.38)"/>
-            <circle cx="54" cy="32" r="5"
-                    fill="rgba(201,220,220,0.38)" stroke="#5F8A8E" stroke-width="2.25"/>
-          </svg>
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2B4E5A"/>
+
+  <!-- Illustration container -->
+  <g transform="translate(160,160) scale(2.8)" fill="none" stroke-linecap="round">
+
+    <!-- Outer rounded rectangle (main stroke) -->
+    <rect x="10" y="16" width="44" height="32" rx="6"
+          stroke="#C9DCDC" stroke-width="4"/>
+
+    <!-- Inner rounded rectangle (main fill) -->
+    <rect x="18" y="22" width="28" height="20" rx="4"
+          fill="#C9DCDC" fill-opacity="0.25" stroke="none"/>
+
+    <!-- Accent circle (accent fill + stroke) -->
+    <circle cx="54" cy="32" r="5"
+            fill="#5F8A8E" stroke="#5F8A8E" stroke-width="4"/>
+
+  </g>
+
+</svg>
