@@ -1,0 +1,31 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2B4E5A"/>
+
+  <!-- Illustration container -->
+  <g transform="translate(160,160) scale(2.8)" fill="none" stroke-linecap="round">
+
+    <!-- Diagonal line (accent stroke) -->
+    <line x1="130" y1="130" x2="180" y2="80"
+          stroke="#5F8A8E" stroke-width="4"/>
+
+    <!-- Arrowhead (accent stroke) -->
+    <g transform="translate(180,80) rotate(-45)">
+      <line x1="0" y1="0" x2="-12" y2="6"
+            stroke="#5F8A8E" stroke-width="4"/>
+      <line x1="0" y1="0" x2="-12" y2="-6"
+            stroke="#5F8A8E" stroke-width="4"/>
+    </g>
+    
+    <!-- Vertical line (main stroke) -->
+    <line x1="130" y1="40" x2="130" y2="220"
+          stroke="#C9DCDC" stroke-width="4"/>
+
+    <!-- Horizontal line (main stroke) -->
+    <line x1="40" y1="130" x2="220" y2="130"
+          stroke="#C9DCDC" stroke-width="4"/>
+
+  </g>
+
+</svg>

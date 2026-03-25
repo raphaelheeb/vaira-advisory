@@ -1,0 +1,37 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2B4E5A"/>
+
+  <!-- Group with padding (160px) and scale to fit -->
+  <g transform="translate(160,160) scale(2.8)">
+    
+    <!-- Bottom block -->
+    <rect x="40" y="150" width="55" height="55"
+          stroke="#C9DCDC" stroke-width="4" fill="none"/>
+
+   <!-- Middle block (filled accent) -->
+    <rect x="70" y="93" width="55" height="55"
+          fill="#C9DCDC"
+          stroke="none" stroke-width="4"/>
+
+    <!-- Top block -->
+    <rect x="100" y="36" width="55" height="55"
+          stroke="#C9DCDC" stroke-width="4" fill="none"/>
+
+    <!-- L-shape -->
+    <path d="
+      M158 36
+      H207
+      V155
+      H257
+      V205
+      H158
+      Z
+      "
+      stroke="#C9DCDC"
+      stroke-width="4"
+      fill="none"/>
+  </g>
+
+</svg>
