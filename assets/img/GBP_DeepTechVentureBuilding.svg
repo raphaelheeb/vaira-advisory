@@ -12,7 +12,7 @@
 
    <!-- Middle block (filled accent) -->
     <rect x="70" y="93" width="55" height="55"
-          fill="#C9DCDC"
+          fill="none"
           stroke="#C9DCDC" stroke-width="4"/>
 
     <!-- Top block -->
