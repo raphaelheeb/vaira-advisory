@@ -4,14 +4,14 @@
   <rect width="1080" height="1080" fill="#2B4E5A"/>
 
   <!-- Illustration container -->
-  <!-- Perfectly centered for scale(12.4) -->
-  <g transform="translate(205,280) scale(12.4)" fill="none" stroke-linecap="round">
+  <!-- Centered visually, not just geometrically -->
+  <g transform="translate(196,379) scale(12.4)" fill="none" stroke-linecap="round">
 
-    <!-- Outer rounded rectangle (main stroke) -->
+    <!-- Outer rounded rectangle -->
     <rect x="10" y="16" width="44" height="32" rx="6"
           stroke="#C9DCDC" stroke-width="2"/>
 
-    <!-- Inner rounded rectangle (main fill) -->
+    <!-- Inner rounded rectangle -->
     <rect x="18" y="22" width="28" height="20" rx="4"
           fill="#C9DCDC" fill-opacity="0.25" stroke="none"/>
 
@@ -22,3 +22,4 @@
   </g>
 
 </svg>
+
