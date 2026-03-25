@@ -4,8 +4,8 @@
   <rect width="1080" height="1080" fill="#2B4E5A"/>
 
   <!-- Illustration container -->
-  <!-- Centered and scaled specifically for a 64×64 source -->
-  <g transform="translate(360,360) scale(6.5)" fill="none" stroke-linecap="round">
+  <!-- Larger scale for 64×64 source -->
+  <g transform="translate(300,300) scale(9.5)" fill="none" stroke-linecap="round">
 
     <!-- Outer rounded rectangle (main stroke) -->
     <rect x="10" y="16" width="44" height="32" rx="6"
