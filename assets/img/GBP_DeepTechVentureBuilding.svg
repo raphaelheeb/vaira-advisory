@@ -10,9 +10,9 @@
     <rect x="40" y="150" width="55" height="55"
           stroke="#C9DCDC" stroke-width="4" fill="none"/>
 
-    <!-- Middle block -->
+   <!-- Middle block (filled accent) -->
     <rect x="70" y="93" width="55" height="55"
-          fill="none"
+          fill="#C9DCDC"
           stroke="#C9DCDC" stroke-width="4"/>
 
     <!-- Top block -->
