@@ -5,7 +5,7 @@
 
   <!-- Illustration container -->
   <!-- Centered visually, not just geometrically -->
-  <g transform="translate(120,0) scale(12.4)" fill="none" stroke-linecap="round">
+  <g transform="translate(120,150) scale(12.4)" fill="none" stroke-linecap="round">
 
     <!-- Outer rounded rectangle -->
     <rect x="10" y="16" width="44" height="32" rx="6"
