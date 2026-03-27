@@ -1,0 +1,25 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2B4E5A"/>
+
+  <!-- Illustration container -->
+  <!-- Centered visually, not just geometrically -->
+  <g transform="translate(150,150) scale(12.4)" fill="none" stroke-linecap="round">
+
+    <!-- Outer rounded rectangle -->
+    <rect x="10" y="16" width="44" height="32" rx="6"
+          stroke="#C9DCDC" stroke-width="2"/>
+
+    <!-- Inner rounded rectangle -->
+    <rect x="18" y="22" width="28" height="20" rx="4"
+          fill="#C9DCDC" fill-opacity="0.25" stroke="none"/>
+
+    <!-- Accent circle -->
+    <circle cx="54" cy="32" r="5"
+            fill="#5F8A8E" stroke="#5F8A8E" stroke-width="2"/>
+
+  </g>
+
+</svg>
+
