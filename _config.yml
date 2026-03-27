@@ -1,15 +1,17 @@
 title: VAIRA Technology
 url: "https://vaira.ch"
 baseurl: ""
-theme: null
 markdown: kramdown
+theme: null
 
-# Required for github-pages gem (jekyll-github-metadata)
+# Wichtig: gesamter assets-Ordner whitelisten
+include:
+  - assets
+
+# GitHub Pages metadata
 repository: raphaelheeb/vaira-advisory
 
-# ----------------------------------------
 # Collections
-# ----------------------------------------
 collections:
   insights:
     output: true
@@ -18,7 +20,7 @@ collections:
     output: true
     permalink: /de/insights/:name/
 
-theme: null
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -26,7 +28,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-include-cache
 
-# Force GitHub Pages to NOT load Minima
+# Verhindert Minima-Autoload
 github:
   theme: null
 

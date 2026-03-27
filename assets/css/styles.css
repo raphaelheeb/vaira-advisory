@@ -3,6 +3,77 @@
    FOUNDATIONS: Reset, Tokens, Typography, Wrappers, Sections
    ========================================================= */
 
+/* ========================= */
+/* LOCAL FONTS — VAIRA SETUP */
+/* Google Fonts metric match */
+/* ========================= */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/assets/fonts/InterTight-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/assets/fonts/InterTight-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('/assets/fonts/InterTight-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  crossorigin: anonymous;
+  ascent-override: 92%;
+  descent-override: 8%;
+  line-gap-override: 0%;
+}
+
 /* ------------------------------
    Modern Reset (clean, minimal)
    ------------------------------ */
@@ -136,12 +207,12 @@ h1, h2, h3 {
 
 h1 {
   font-size: 46px;
-  line-height: 1.22;
+  line-height: 1.24;
 }
 
 h2 {
   font-size: 32px;
-  line-height: 1.28;
+  line-height: 1.30;
   margin-bottom: var(--section-space);
   position: relative;
   padding-bottom: 12px;
@@ -160,13 +231,13 @@ h2::after {
 
 h3 {
   font-size: 22px;
-  line-height: 1.35;
+  line-height: 1.37;
   margin-bottom: 12px;
 }
 
 p {
   font-size: 17px;
-  line-height: 1.55;
+  line-height: 1.58;
   margin-bottom: 16px;
 }
 

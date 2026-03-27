@@ -1,0 +1,298 @@
+---
+layout: default
+title: Services — Deep‑Tech Consulting, Automation & Industrial Scale‑Up | VAIRA
+description: Explore VAIRA’s consulting services in deep‑tech, automation, industrialization, and advanced manufacturing.
+lang: en
+permalink: /services/
+bodyClass: subpage subpage--services
+sitemap:
+  priority: 1.0
+  changefreq: monthly
+---
+
+<!-- ========================= -->
+<!-- SUBPAGE HERO SECTION -->
+<!-- ========================= -->
+<section id="hero" class="hero hero--clean">
+  <div class="content-wrapper">
+    <h1 class="hero-title">Turning Complex Technologies<br/>into Scalable Solutions</h1>
+    <p class="hero-sub">
+      We help organizations evaluate, develop, and commercialize technologies with clarity and speed.
+    </p>
+  </div>
+
+ <div class="cad-hero-shape"   
+    style="
+       position:absolute;
+       top:-110px;
+       right:-100px;
+       width:320px;
+       height:320px;
+       opacity:0.25;
+       pointer-events:none;
+       z-index:1;
+       ">
+   <svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" fill="none" viewBox="0 0 420 420"><defs><linearGradient id="a" x1="210" x2="400" y1="210" y2="210" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#fff" stop-opacity=".45"/><stop offset="100%" stop-color="#fff" stop-opacity=".05"/></linearGradient></defs><g stroke="#fff"><path stroke-opacity=".55" stroke-width="1.75" d="M242.993 397.113a190 190 0 0 1-65.986-374.226" vector-effect="non-scaling-stroke"/><path stroke-opacity=".4" stroke-width="1.25" d="M236.047 357.721A150 150 0 0 1 183.953 62.28" vector-effect="non-scaling-stroke"/></g><path stroke="url(#a)" d="M210 210h190" transform="rotate(130 210 210)" vector-effect="non-scaling-stroke"/><path stroke="#fff" stroke-opacity=".4" d="m117.412 328.12-7.66-6.427" vector-effect="non-scaling-stroke"/><path stroke="#fff" stroke-opacity=".32" d="m143.124 297.479-7.66-6.428" vector-effect="non-scaling-stroke"/></svg>
+
+  </div>
+</section>
+
+<!-- break -->
+
+<!-- ========================= -->
+<!-- SERVICE OVERVIEW GRID -->
+<!-- ========================= -->
+<section class="section" id="services">
+  <div class="content-wrapper wrapper--narrow">
+    <h2>Our Services</h2>
+
+    <div class="card-grid" style="row-gap: 2.25rem;">
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <!-- Deep‑Tech Advisory Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path stroke="currentColor" stroke-width="2" d="M10 26h12v10H10zm8-12h12v10H18zm12 0h8v14h8v8H30z"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;">Deep‑Tech Advisory & Venture Building</h3>
+        </div>
+        <p>From early‑stage discoveries to validated concepts with technical and commercial clarity.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <!-- Technology & Product Strategy Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M24 12v24M12 24h24m-12 0 8-8m-3 0h3v3"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;">Technology & Product Strategy</h3>
+        </div>
+        <p>Identify new markets, applications, and capabilities that align with your strengths.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <!-- Engineering Execution Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 16h20m-24 8h20m-24 8h20"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;">Engineering Execution & Architecture</h3>
+        </div>
+        <p>Hands‑on technical leadership to stabilize, scale, and optimize complex technologies.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">
+            <!-- Innovation Scouting Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="24" r="3" fill="currentColor"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M24 24v15m0-30v9M9 24h9m12 0h9"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;">Innovation Scouting & Due Diligence</h3>
+        </div>
+        <p>Structured discovery and rigorous evaluation of innovations and investment opportunities.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- DEEP‑DIVE 1 — SPLIT -->
+<!-- ========================= -->
+<section class="section section--alt">
+  <div class="content-wrapper wrapper--narrow split">
+
+    <div class="split-left">
+      <h2>Deep‑Tech Advisory & Venture Building</h2>
+
+      <p>
+        Organizations often make promising discoveries in R&D but lack the clarity to turn them into viable products.
+        VAIRA bridges this gap with deep engineering expertise and hands‑on founder experience.
+      </p>
+
+      <ul>
+        <li><strong>Structured evaluation</strong> of technology maturity, capabilities, and risks</li>
+        <li><strong>Clear development pathways</strong> from lab insight to commercial prototype</li>
+        <li><strong>Supplier and prototyping guidance</strong> to accelerate early execution</li>
+        <li><strong>Capability building</strong> through embedded coaching and technical leadership</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+      <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" fill="none" viewBox="0 0 260 260"><g stroke-width="3"><path stroke="currentColor" d="M40 138h55v55H40z"/><path fill="var(--primary-light)" stroke="currentColor" d="M70 81h55v55H70z"/><path stroke="currentColor" d="M100 24h55v55h-55z"/><path stroke="var(--primary)" d="M158 24h49v119h50v50h-99Z"/></g></svg>
+
+      </div>
+
+      <p style="margin-top:1.25rem;">
+        <strong><em>Case Example:</em></strong> A university‑affiliated team developed a novel materials processing technology.
+        VAIRA defined a TRL‑based plan, identified suppliers, and supported early market analysis - accelerating their path toward commercialization.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================= -->
+<!-- DEEP‑DIVE 2 — SPLIT -->
+<!-- ========================= -->
+<section class="section">
+  <div class="content-wrapper wrapper--narrow split">
+
+    <div class="split-left">
+      <h2>Technology & Product Strategy</h2>
+
+      <p>
+        Established companies often face stagnating markets or pressure to innovate beyond their existing capabilities.
+        VAIRA identifies new applications, technologies, and product opportunities aligned with your strengths.
+      </p>
+
+      <ul>
+        <li><strong>Technology stack analysis</strong> and identification of capability gaps</li>
+        <li><strong>Market and application scouting</strong> for new revenue opportunities</li>
+        <li><strong>Rapid prototyping</strong> using advanced manufacturing and global supply chains</li>
+        <li><strong>Strategic validation cycles</strong> to reduce risk and accelerate time‑to‑market</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+        <svg width="260" height="260" fill="none" viewBox="0 0 260 260"><g stroke-linecap="round" stroke-width="3"><path stroke="currentColor" d="M130 28v180m-90-90h180"/><path stroke="var(--primary)" d="m130 118 50-50m0 0-4.243 12.728M180 68l-12.728 4.243"/></g></svg>
+
+      </div>
+
+      <p style="margin-top:1.25rem;">
+        <strong><em>Case Example:</em></strong> A global raw‑materials supplier sought to expand into future‑oriented markets.
+        VAIRA conducted technical and commercial assessments and built internal knowledge frameworks
+        that shaped the client’s long‑term product strategy.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- DEEP‑DIVE 3 — SPLIT -->
+<!-- ========================= -->
+<section class="section section--alt">
+  <div class="content-wrapper wrapper--narrow split">
+
+    <div class="split-left">
+      <h2>Engineering Execution & Architecture</h2>
+
+      <p>
+        When companies introduce new materials or production methods, complexity can escalate quickly.
+        VAIRA provides hands‑on engineering leadership to stabilize processes and build internal expertise.
+      </p>
+
+      <ul>
+        <li><strong>Fractional CTO support</strong> for early‑stage or transitioning teams</li>
+        <li><strong>Supplier management</strong> and supply‑chain restructuring</li>
+        <li><strong>Process optimization</strong> across materials, manufacturing layouts, and production workflows</li>
+        <li><strong>Quality‑control systems</strong> including PFMEA and targeted interventions</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+        <svg width="260" height="260" fill="none" viewBox="0 0 260 260"><g stroke-linecap="round" stroke-width="3"><path stroke="currentColor" d="M80 68h140"/><path stroke="var(--primary)" d="M60 118h140"/><path stroke="currentColor" d="M40 168h140"/></g></svg>
+      </div>
+
+      <p style="margin-top:1.25rem;">
+        <strong><em>Case Example:</em></strong> An international manufacturer of high-tech components launched a new product line requiring new materials
+        and a more complex production process. VAIRA optimized material selection, audited suppliers, streamlined manufacturig process
+        and implemented targeted quality controls - reducing scrap and stabilizing production output.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- DEEP‑DIVE 4 — SPLIT -->
+<!-- ========================= -->
+<section class="section">
+  <div class="content-wrapper wrapper--narrow split">
+
+    <div class="split-left">
+      <h2>Technical Due Diligence</h2>
+
+      <p>
+        Investors and corporate buyers often need rigorous technical validation before committing resources.
+        VAIRA assesses the attractiveness, risks, and long‑term potential of technologies and industrial companies.
+      </p>
+
+      <ul>
+        <li><strong>Technology stack evaluation</strong> and product portfolio analysis</li>
+        <li><strong>Risk assessment</strong> and mitigation planning for M&A</li>
+        <li><strong>Deep‑dive diligence</strong> including customer and competitor interviews</li>
+        <li><strong>Founder support</strong> on technical hiring and outsourcing decisions</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+        <svg width="260" height="260" fill="none" viewBox="0 0 260 260"><g stroke-width="3" transform="translate(0 -10)"><path stroke="currentColor" d="M40 130h70m40 0h70m-90-90v70"/><path stroke="var(--primary)" d="M130 140v80"/><circle cx="130" cy="130" r="12" fill="var(--primary)" stroke="var(--primary)"/></g></svg>
+      </div>
+
+      <p style="margin-top:1.25rem;">
+        <strong><em>Case Example:</em></strong> A strategic growth fund evaluating industrial SMEs needed a technical perspective.
+        VAIRA assessed innovation maturity, technology stacks, and growth potential - helping prioritize acquisition targets.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- DEEP‑DIVE 5 — SPLIT -->
+<!-- ========================= -->
+<section class="section section--alt">
+  <div class="content-wrapper wrapper--narrow split">
+
+    <div class="split-left">
+      <h2>Innovation Scouting</h2>
+
+      <p>
+        SMEs and corporates face increasing global competition and must innovate continuously.
+        VAIRA identifies, evaluates, and integrates innovations that align with strategic goals and capabilities.
+      </p>
+
+      <ul>
+        <li><strong>Structured scouting</strong> using a lean stage‑gate process</li>
+        <li><strong>Strategic and operational fit</strong> assessments</li>
+        <li><strong>Integration support</strong> for innovation initiatives</li>
+        <li><strong>Future production layouts</strong> and capability roadmapping</li>
+      </ul>
+    </div>
+
+    <div class="split-right">
+      <div class="micro-illustration">
+        <!-- Micro‑illustration 5 -->
+        <svg width="260" height="260" fill="none" viewBox="0 0 260 260"><g stroke-width="3" transform="translate(0 -10)"><circle cx="130" cy="130" r="90" stroke="var(--primary-mid)" opacity=".28"/><circle cx="130" cy="130" r="60" stroke="var(--primary-mid)" opacity=".28"/><circle cx="130" cy="130" r="30" stroke="var(--primary-mid)" opacity=".28"/><path stroke="var(--primary)" d="m130 130 70-60"/><circle cx="200" cy="70" r="10" fill="var(--primary)" stroke="var(--primary)"/></g></svg>
+      </div>
+
+      <p style="margin-top:1.25rem;">
+        <strong><em>Case Example:</em></strong> A Swiss SME identified a potentialy disruptive technology at a tradeshow that could replace their existing products one day.
+        VAIRA conducted a TRL assessment, reviewed the patent landscape, and outlined a capability roadmap
+        for integration.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- CTA SECTION -->
+<!-- ========================= -->
+<section class="section section--lighter section--cta">
+  <div class="content-wrapper wrapper--narrow">
+    <h2>Let’s build what’s next.</h2>
+    <p>
+      Whether you are scaling a discovery, modernizing your product portfolio, or exploring new markets - VAIRA provides the engineering clarity to move forward.
+    </p>
+    <a href="/contact" class="cta-btn cta-btn--primary">Get in Touch</a>
+  </div>
+</section>
+

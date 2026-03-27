@@ -3,172 +3,216 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- English pages -->
+  <!-- ========================= -->
+  <!-- ROOT / HOME -->
+  <!-- ========================= -->
   <url>
-    <loc>http://0.0.0.0:4000/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
+    <loc>https://vaira.ch/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/" />
+  </url>
+
+  <!-- ========================= -->
+  <!-- STATIC PAGES (EN) -->
+  <!-- ========================= -->
+  <url>
+    <loc>https://vaira.ch/about/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/about/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/about/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/about/" />
+    <loc>https://vaira.ch/services/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/services/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/services/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/services/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/services/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/services/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/services/" />
+    <loc>https://vaira.ch/industries/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/industries/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/industries/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/industries/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/industries/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/industries/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/industries/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/industries/" />
+    <loc>https://vaira.ch/contact/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/contact/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/contact/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/contact/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/contact/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/contact/" />
+    <loc>https://vaira.ch/privacy/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/privacy/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/privacy/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/privacy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/datenschutz/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/privacy/" />
+    <loc>https://vaira.ch/impressum/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/impressum/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/impressum/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/impressum/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/impressum/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/impressum/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/impressum/" />
+    <loc>https://vaira.ch/use-cases/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/use-cases/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/use-cases/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/use-cases/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/use-cases/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/use-cases/" />
+    <loc>https://vaira.ch/insights/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/insights/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/insights/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/insights/" />
+  </url>
+
+  <!-- ========================= -->
+  <!-- STATIC PAGES (DE) -->
+  <!-- ========================= -->
+  <url>
+    <loc>https://vaira.ch/de/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/" />
   </url>
 
   <url>
-  <loc>http://0.0.0.0:4000/insights/</loc>
-  <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/" />
-  <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/" />
-</url>
-
-  <!-- German pages -->
-  <url>
-    <loc>http://0.0.0.0:4000/de/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
+    <loc>https://vaira.ch/de/about/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/about/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/about/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/about/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/about/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/about/" />
+    <loc>https://vaira.ch/de/services/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/services/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/services/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/services/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/services/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/services/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/services/" />
+    <loc>https://vaira.ch/de/industries/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/industries/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/industries/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/industries/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/industries/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/industries/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/industries/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/industries/" />
+    <loc>https://vaira.ch/de/contact/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/contact/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/contact/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/contact/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/contact/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/contact/" />
+    <loc>https://vaira.ch/de/datenschutz/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/datenschutz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/privacy/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/datenschutz/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/privacy/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/datenschutz/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/privacy/" />
+    <loc>https://vaira.ch/de/impressum/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/impressum/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/impressum/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/impressum/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/impressum/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/impressum/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/impressum/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/impressum/" />
+    <loc>https://vaira.ch/de/use-cases/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/use-cases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/use-cases/" />
   </url>
 
   <url>
-    <loc>http://0.0.0.0:4000/de/use-cases/</loc>
-    <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/use-cases/" />
-    <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/use-cases/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/use-cases/" />
+    <loc>https://vaira.ch/de/insights/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/insights/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/insights/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/insights/" />
   </url>
 
-<url>
-  <loc>http://0.0.0.0:4000/de/insights/</loc>
-  <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/" />
-  <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/" />
-</url>
+  <!-- ========================= -->
+  <!-- NEW CONSULTING LANDINGPAGES -->
+  <!-- ========================= -->
 
+  <!-- Technology Consulting (EN) -->
+  <url>
+    <loc>https://vaira.ch/technology-consulting-switzerland/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/technology-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/technologieberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/technology-consulting-switzerland/" />
+  </url>
 
-  <!-- Insights - Articles published -->
+  <!-- Technologieberatung (DE) -->
+  <url>
+    <loc>https://vaira.ch/de/technologieberatung-schweiz/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/technologieberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/technology-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/technology-consulting-switzerland/" />
+  </url>
 
-<url>
-  <loc>http://0.0.0.0:4000/insights/why-i-founded-vaira/</loc>
-  <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/insights/why-i-founded-vaira/" />
-  <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/insights/why-i-founded-vaira/" />
-</url>
+  <!-- Innovation Consulting (EN) -->
+  <url>
+    <loc>https://vaira.ch/innovation-consulting-switzerland/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/innovation-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/innovationsberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/innovation-consulting-switzerland/" />
+  </url>
 
+  <!-- Innovationsberatung (DE) -->
+  <url>
+    <loc>https://vaira.ch/de/innovationsberatung-schweiz/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/innovationsberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/innovation-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/innovation-consulting-switzerland/" />
+  </url>
 
-<url>
-  <loc>http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
-  <lastmod>2026-03-25T10:04:39+01:00</lastmod>
-  <xhtml:link rel="alternate" hreflang="de" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
-  <!-- Add EN alternate only if the English version exists -->
-  <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
-</url>
+  <!-- ========================= -->
+  <!-- INSIGHTS ARTICLES -->
+  <!-- ========================= -->
 
+  <url>
+    <loc>https://vaira.ch/insights/why-i-founded-vaira/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaira.ch/insights/why-i-founded-vaira/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/insights/warum-ich-vaira-gegruendet-habe/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/insights/why-i-founded-vaira/" />
+  </url>
 
+  <url>
+    <loc>https://vaira.ch/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
+    <lastmod>2026-03-27T16:10:17+01:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vaira.ch/de/insights/warum-ich-vaira-gegruendet-habe/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaira.ch/de/insights/warum-ich-vaira-gegruendet-habe/" />
+  </url>
 
 </urlset>

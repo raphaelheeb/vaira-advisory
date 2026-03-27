@@ -1,0 +1,35 @@
+multipass: true
+
+js2svg:
+  pretty: true
+  indent: 2
+
+plugins:
+  - name: removeDoctype
+  - name: removeXMLProcInst
+  - name: removeComments
+  - name: removeMetadata
+  - name: removeEditorsNSData
+  - name: cleanupAttrs
+  - name: mergeStyles
+  - name: inlineStyles
+  - name: minifyStyles
+  - name: cleanupIDs
+  - name: removeUselessDefs
+  - name: cleanupNumericValues
+  - name: convertColors
+  - name: removeUnknownsAndDefaults
+  - name: removeNonInheritableGroupAttrs
+  - name: removeUselessStrokeAndFill
+  - name: removeUnusedNS
+  - name: cleanupEnableBackground
+  - name: convertPathData
+  - name: convertTransform
+  - name: removeDimensions
+  - name: sortAttrs
+  - name: removeOffCanvasPaths
+  - name: removeStyleElement
+  - name: removeScriptElement
+  - name: removeTitle
+  - name: removeDesc
+

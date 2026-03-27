@@ -51,6 +51,9 @@ canonical_url: "https://vaira.ch/insights/why-i-founded-vaira/"
 
 translation_key: "why-i-founded-vaira"
 switch_url: /de/insights/warum-ich-vaira-gegruendet-habe/
+sitemap:
+  priority: 0.6
+  changefreq: monthly
 ---
 
 ## Introduction

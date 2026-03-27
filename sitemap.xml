@@ -7,7 +7,9 @@ layout: null
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- English pages -->
+  <!-- ========================= -->
+  <!-- ROOT / HOME -->
+  <!-- ========================= -->
   <url>
     <loc>{{ site.url }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -16,6 +18,9 @@ layout: null
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
   </url>
 
+  <!-- ========================= -->
+  <!-- STATIC PAGES (EN) -->
+  <!-- ========================= -->
   <url>
     <loc>{{ site.url }}/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -73,14 +78,16 @@ layout: null
   </url>
 
   <url>
-  <loc>{{ site.url }}/insights/</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
-  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
-</url>
+    <loc>{{ site.url }}/insights/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
+  </url>
 
-  <!-- German pages -->
+  <!-- ========================= -->
+  <!-- STATIC PAGES (DE) -->
+  <!-- ========================= -->
   <url>
     <loc>{{ site.url }}/de/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -145,34 +152,71 @@ layout: null
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/use-cases/" />
   </url>
 
-<url>
-  <loc>{{ site.url }}/de/insights/</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
-  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
-</url>
+  <url>
+    <loc>{{ site.url }}/de/insights/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/" />
+  </url>
 
+  <!-- ========================= -->
+  <!-- NEW CONSULTING LANDINGPAGES -->
+  <!-- ========================= -->
 
-  <!-- Insights - Articles published -->
+  <!-- Technology Consulting (EN) -->
+  <url>
+    <loc>{{ site.url }}/technology-consulting-switzerland/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/technology-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/technologieberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/technology-consulting-switzerland/" />
+  </url>
 
-<url>
-  <loc>{{ site.url }}/insights/why-i-founded-vaira/</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/why-i-founded-vaira/" />
-  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/why-i-founded-vaira/" />
-</url>
+  <!-- Technologieberatung (DE) -->
+  <url>
+    <loc>{{ site.url }}/de/technologieberatung-schweiz/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/technologieberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/technology-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/technology-consulting-switzerland/" />
+  </url>
 
+  <!-- Innovation Consulting (EN) -->
+  <url>
+    <loc>{{ site.url }}/innovation-consulting-switzerland/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/innovation-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/innovationsberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/innovation-consulting-switzerland/" />
+  </url>
 
-<url>
-  <loc>{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
-  <!-- Add EN alternate only if the English version exists -->
-  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
-</url>
+  <!-- Innovationsberatung (DE) -->
+  <url>
+    <loc>{{ site.url }}/de/innovationsberatung-schweiz/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/innovationsberatung-schweiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/innovation-consulting-switzerland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/innovation-consulting-switzerland/" />
+  </url>
 
+  <!-- ========================= -->
+  <!-- INSIGHTS ARTICLES -->
+  <!-- ========================= -->
 
+  <url>
+    <loc>{{ site.url }}/insights/why-i-founded-vaira/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/why-i-founded-vaira/" />
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/why-i-founded-vaira/" />
+  </url>
+
+  <url>
+    <loc>{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
+  </url>
 
 </urlset>
