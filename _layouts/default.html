@@ -115,12 +115,7 @@ layout: none
 </script>
 
 <script>
-  clarity("set", "userType", "raphael");
-</script>
-{% endif %}
-
-<script>
-(function() {
+(function waitForClarity() {
   // 1. Check URL parameter → set cookie
   const params = new URLSearchParams(window.location.search);
   if (params.get("internal_user") === "true") {
@@ -130,12 +125,23 @@ layout: none
   // 2. Read cookie
   const isInternal = document.cookie.includes("internal_user=1");
 
-  // 3. If internal → send tag to Clarity
-  if (isInternal && typeof clarity === "function") {
-    clarity("set", "internal_user", "true");
+  // 3. Wait until Clarity is ready
+  if (typeof clarity === "function") {
+    // 4. Send your personal tag
+    clarity("set", "userType", "raphael");
+
+    // 5. Send internal user tag
+    if (isInternal) {
+      clarity("set", "internal_user", "true");
+    }
+  } else {
+    // Retry until Clarity loads
+    setTimeout(waitForClarity, 50);
   }
 })();
 </script>
+{% endif %}
+
 
 <script type="application/ld+json">
 {
