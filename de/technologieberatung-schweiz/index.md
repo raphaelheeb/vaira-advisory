@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: de
-title: "Technologieberatung Schweiz — Klarheit für technische Entscheidungen | VAIRA"
+title: "Technologie&shy;beratung Schweiz — Klarheit für technische Entscheidungen | VAIRA"
 description: "VAIRA unterstützt Schweizer Industrieunternehmen und KMU mit Technologieberatung, Tech-Scouting und Entscheidungsarchitektur für klare, fundierte Technologieentscheidungen."
 permalink: /de/technologieberatung-schweiz/
 bodyClass: subpage
