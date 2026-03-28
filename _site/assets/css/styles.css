@@ -794,6 +794,10 @@ p {
   opacity: 0.92;
 }
 
+.hero .hero-title {
+  font-size: clamp(28px, 6vw, 46px);
+}
+
 /* ------------------------------
    Header & Navigation (CLEAN)
    ------------------------------ */
