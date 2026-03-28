@@ -2304,6 +2304,13 @@ nav ul.nav {
   color: rgba(255, 255, 255, 0.85);
 }
 
+@media (max-width: 600px) {
+  .hero-title {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
+
 /* ---------------------------------------------
    2. TYPOGRAPHY — premium editorial rhythm
 --------------------------------------------- */

@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: de
-title: "Innovations&shy;beratung Schweiz — Struktur für wiederholbare Innovation | VAIRA"
+title: "Innovationsberatung Schweiz — Struktur für wiederholbare Innovation | VAIRA"
 description: "VAIRA unterstützt Schweizer Industrieunternehmen und KMU beim Aufbau klarer Innovationssysteme, Innovationsstrategie und Entscheidungsarchitektur für planbare Innovation."
 permalink: /de/innovationsberatung-schweiz/
 bodyClass: subpage
@@ -32,7 +32,7 @@ sitemap:
 <!-- HERO -->
 <section id="hero" class="hero hero--clean">
   <div class="content-wrapper">
-    <h1 class="hero-title">Innovationsberatung</h1>
+    <h1 class="hero-title">Innovations&shy;beratung</h1>
     <p class="hero-sub">Struktur für wiederholbare Innovation in Schweizer Industrieunternehmen und KMU.</p>
   </div>
 </section>
