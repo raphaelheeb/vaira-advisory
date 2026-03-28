@@ -749,6 +749,8 @@ p {
   font-size: clamp(28px, 6vw, 46px);
   line-height: 1.22;
   margin-bottom: 24px;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .hero-sub {
