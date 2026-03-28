@@ -119,6 +119,23 @@ layout: none
 </script>
 {% endif %}
 
+<script>
+(function() {
+  // 1. Check URL parameter → set cookie
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("internal_user") === "true") {
+    document.cookie = "internal_user=1; path=/; max-age=" + (60 * 60 * 24 * 400);
+  }
+
+  // 2. Read cookie
+  const isInternal = document.cookie.includes("internal_user=1");
+
+  // 3. If internal → send tag to Clarity
+  if (isInternal && typeof clarity === "function") {
+    clarity("set", "internal_user", "true");
+  }
+})();
+</script>
 
 <script type="application/ld+json">
 {
