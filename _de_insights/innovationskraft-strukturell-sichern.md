@@ -39,7 +39,7 @@ themes:
 
 # Internal Linking
 links:
-  - slug: why-i-founded-vaira
+  - slug: warum-ich-vaira-gegruendet-habe
   - slug: outsourcing-innovation-fails
   - slug: vaira-way-innovation
   - slug: structured-innovation-process
