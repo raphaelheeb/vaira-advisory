@@ -26,11 +26,11 @@
            C 400 115 430 125 455 140"
         fill="none" stroke="#2B4E5A" stroke-width="2.4"/>
 
-  <!-- Neue S-Kurve (weiter rechts & oben) -->
-  <path d="M 220 240
-           C 280 240 330 200 370 155
-           C 410 110 450 80 500 65
-           C 530 58 550 62 560 70"
+  <!-- Neue S-Kurve (30% nach links, 10% nach oben) -->
+  <path d="M 150 220
+           C 210 210 260 175 300 135
+           C 340 100 380 75 430 60
+           C 470 50 500 55 520 62"
         fill="none" stroke="#E4572E" stroke-width="2.4" stroke-dasharray="6 4"/>
 
   <!-- Hilfslinien -->
@@ -46,16 +46,16 @@
   </text>
 
   <!-- Beschriftung neue Technologie -->
-  <text x="430" y="50" font-size="12" text-anchor="middle"
+  <text x="430" y="45" font-size="12" text-anchor="middle"
         font-family="system-ui, -apple-system, sans-serif" fill="#E4572E">
     <tspan x="430" dy="0">Neue Technologie</tspan>
     <tspan x="430" dy="14">(Produkt 2)</tspan>
   </text>
 
-  <!-- Optimaler Wechselpunkt (links vom Schnittpunkt) -->
-  <circle cx="330" cy="135" r="5" fill="#E4572E"/>
+  <!-- Optimaler Wechselpunkt (links vom Schnittpunkt, korrekt höher) -->
+  <circle cx="300" cy="135" r="5" fill="#E4572E"/>
 
-  <text x="330" y="160" font-size="11" text-anchor="middle"
+  <text x="300" y="160" font-size="11" text-anchor="middle"
         font-family="system-ui, -apple-system, sans-serif" fill="#0E1514">
     Optimaler Wechselpunkt
   </text>
