@@ -2502,6 +2502,8 @@ nav ul.nav {
   max-width:640px;
   margin: 0 auto;
   margin-top: 2rem;
+  display: grid;
+  gap: 32px;
 }
 
 /* Card container */

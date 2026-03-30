@@ -746,11 +746,9 @@ p {
 }
 
 .hero-title {
-  font-size: clamp(28px, 6vw, 46px);
+  font-size: 46px;
   line-height: 1.22;
   margin-bottom: 24px;
-  hyphens: auto;
-  overflow-wrap: break-word;
 }
 
 .hero-sub {
@@ -794,10 +792,6 @@ p {
 #hero.hero--clean .hero-sub {
   font-size: 20px;
   opacity: 0.92;
-}
-
-.hero .hero-title {
-  font-size: clamp(28px, 6vw, 46px);
 }
 
 /* ------------------------------
@@ -2310,6 +2304,13 @@ nav ul.nav {
   color: rgba(255, 255, 255, 0.85);
 }
 
+@media (max-width: 600px) {
+  .hero-title {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
+
 /* ---------------------------------------------
    2. TYPOGRAPHY — premium editorial rhythm
 --------------------------------------------- */
@@ -2501,6 +2502,8 @@ nav ul.nav {
   max-width:640px;
   margin: 0 auto;
   margin-top: 2rem;
+  display: grid;
+  gap: 32px;
 }
 
 /* Card container */

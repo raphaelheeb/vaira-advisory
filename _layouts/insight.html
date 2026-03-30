@@ -40,16 +40,18 @@ LANGUAGE SWITCHER LOGIC (EN ↔ DE)
     {% endif %}
 
     <div class="insight-meta-top insight-meta-in-hero">
-      <span class="insight-category">
+     <span class="insight-category">
   {% if page.lang == "de" %}
     {% case page.category %}
       {% when "Founder Narrative" %}Gründerperspektive
+      {% when "Innovation Architecture" %}Innovationsarchitektur
       {% else %}{{ page.category }}
     {% endcase %}
   {% else %}
     {{ page.category }}
   {% endif %}
 </span>
+
 
       {% if page.pillar %}
         <span class="insight-dot">&#8226</span>
