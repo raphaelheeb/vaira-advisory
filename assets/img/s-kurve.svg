@@ -1,0 +1,57 @@
+<svg width="520" height="260" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hintergrund -->
+  <rect x="0" y="0" width="520" height="260" fill="white"/>
+
+  <!-- Achsen -->
+  <line x1="60" y1="220" x2="500" y2="220" stroke="#444" stroke-width="1.2"/>
+  <line x1="60" y1="30" x2="60" y2="220" stroke="#444" stroke-width="1.2"/>
+
+  <!-- Achsen-Beschriftung -->
+  <text x="20" y="30" font-size="11" font-family="system-ui, -apple-system, sans-serif" fill="#444">
+    Nutzen / Wettbewerbsfähigkeit
+  </text>
+  <text x="360" y="245" font-size="11" font-family="system-ui, -apple-system, sans-serif" fill="#444">
+    Zeit
+  </text>
+
+  <!-- S-Kurve bestehendes Produkt -->
+  <path d="M 60 210
+           C 140 210 180 180 220 150
+           C 260 120 300 90 360 80
+           C 410 72 450 78 480 82"
+        fill="none" stroke="#1F6FEB" stroke-width="2.2"/>
+
+  <!-- S-Kurve neues Produkt (versetzt) -->
+  <path d="M 220 210
+           C 280 210 310 185 340 160
+           C 370 135 400 110 440 100
+           C 470 94 490 96 505 98"
+        fill="none" stroke="#FF7B72" stroke-width="2.0" stroke-dasharray="4 4"/>
+
+  <!-- Labels Phasen -->
+  <text x="80" y="235" font-size="10" font-family="system-ui, -apple-system, sans-serif" fill="#666">
+    Einführung
+  </text>
+  <text x="200" y="235" font-size="10" font-family="system-ui, -apple-system, sans-serif" fill="#666">
+    Wachstum
+  </text>
+  <text x="330" y="235" font-size="10" font-family="system-ui, -apple-system, sans-serif" fill="#666">
+    Sättigung
+  </text>
+
+  <!-- Label bestehendes Produkt -->
+  <text x="260" y="105" font-size="11" font-family="system-ui, -apple-system, sans-serif" fill="#1F6FEB">
+    Bestehendes Produkt (optimiert)
+  </text>
+
+  <!-- Label neues Produkt -->
+  <text x="305" y="145" font-size="11" font-family="system-ui, -apple-system, sans-serif" fill="#FF7B72">
+    Neue Technologie / neues Produkt
+  </text>
+
+  <!-- Markierung Übergang / verpasster Moment -->
+  <circle cx="340" cy="160" r="3.5" fill="#FF7B72"/>
+  <text x="350" y="155" font-size="10" font-family="system-ui, -apple-system, sans-serif" fill="#444">
+    Zeitpunkt für neue S-Kurve
+  </text>
+</svg>
