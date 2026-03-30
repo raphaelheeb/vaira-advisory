@@ -8,7 +8,7 @@
   <!-- ========================= -->
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/" />
@@ -19,7 +19,7 @@
   <!-- ========================= -->
   <url>
     <loc>http://localhost:4000/about/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/about/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/about/" />
@@ -27,7 +27,7 @@
 
   <url>
     <loc>http://localhost:4000/services/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/services/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/services/" />
@@ -35,7 +35,7 @@
 
   <url>
     <loc>http://localhost:4000/industries/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/industries/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/industries/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/industries/" />
@@ -43,7 +43,7 @@
 
   <url>
     <loc>http://localhost:4000/contact/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/contact/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/contact/" />
@@ -51,7 +51,7 @@
 
   <url>
     <loc>http://localhost:4000/privacy/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/privacy/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/datenschutz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/privacy/" />
@@ -59,7 +59,7 @@
 
   <url>
     <loc>http://localhost:4000/impressum/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/impressum/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/impressum/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/impressum/" />
@@ -67,7 +67,7 @@
 
   <url>
     <loc>http://localhost:4000/use-cases/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/use-cases/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/use-cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/use-cases/" />
@@ -75,7 +75,7 @@
 
   <url>
     <loc>http://localhost:4000/insights/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/insights/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/insights/" />
@@ -86,7 +86,7 @@
   <!-- ========================= -->
   <url>
     <loc>http://localhost:4000/de/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/" />
@@ -94,7 +94,7 @@
 
   <url>
     <loc>http://localhost:4000/de/about/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/about/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/about/" />
@@ -102,7 +102,7 @@
 
   <url>
     <loc>http://localhost:4000/de/services/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/services/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/services/" />
@@ -110,7 +110,7 @@
 
   <url>
     <loc>http://localhost:4000/de/industries/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/industries/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/industries/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/industries/" />
@@ -118,7 +118,7 @@
 
   <url>
     <loc>http://localhost:4000/de/contact/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/contact/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/contact/" />
@@ -126,7 +126,7 @@
 
   <url>
     <loc>http://localhost:4000/de/datenschutz/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/privacy/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/datenschutz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/privacy/" />
@@ -134,7 +134,7 @@
 
   <url>
     <loc>http://localhost:4000/de/impressum/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/impressum/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/impressum/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/impressum/" />
@@ -142,7 +142,7 @@
 
   <url>
     <loc>http://localhost:4000/de/use-cases/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/use-cases/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/use-cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/use-cases/" />
@@ -150,7 +150,7 @@
 
   <url>
     <loc>http://localhost:4000/de/insights/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/insights/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/insights/" />
@@ -163,7 +163,7 @@
   <!-- Technology Consulting (EN) -->
   <url>
     <loc>http://localhost:4000/technology-consulting-switzerland/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/technology-consulting-switzerland/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/technologieberatung-schweiz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/technology-consulting-switzerland/" />
@@ -172,7 +172,7 @@
   <!-- Technologieberatung (DE) -->
   <url>
     <loc>http://localhost:4000/de/technologieberatung-schweiz/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/technologieberatung-schweiz/" />
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/technology-consulting-switzerland/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/technology-consulting-switzerland/" />
@@ -181,7 +181,7 @@
   <!-- Innovation Consulting (EN) -->
   <url>
     <loc>http://localhost:4000/innovation-consulting-switzerland/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/innovation-consulting-switzerland/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/innovationsberatung-schweiz/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/innovation-consulting-switzerland/" />
@@ -190,7 +190,7 @@
   <!-- Innovationsberatung (DE) -->
   <url>
     <loc>http://localhost:4000/de/innovationsberatung-schweiz/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/innovationsberatung-schweiz/" />
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/innovation-consulting-switzerland/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/innovation-consulting-switzerland/" />
@@ -202,7 +202,7 @@
 
   <url>
     <loc>http://localhost:4000/insights/why-i-founded-vaira/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/insights/why-i-founded-vaira/" />
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/insights/why-i-founded-vaira/" />
@@ -210,9 +210,26 @@
 
   <url>
     <loc>http://localhost:4000/de/insights/warum-ich-vaira-gegruendet-habe/</loc>
-    <lastmod>2026-03-30T20:26:55+02:00</lastmod>
+    <lastmod>2026-03-30T20:31:58+02:00</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/de/insights/warum-ich-vaira-gegruendet-habe/" />
   </url>
+
+<url>
+  <loc>http://localhost:4000/insights/structurally-sustaining-innovation-capability/</loc>
+  <lastmod>2026-03-30T20:31:58+02:00</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/insights/structurally-sustaining-innovation-capability/" />
+  <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/innovationskraft-strukturell-sichern/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/insights/structurally-sustaining-innovation-capability/" />
+</url>
+
+<url>
+  <loc>http://localhost:4000/de/insights/innovationskraft-strukturell-sichern/</loc>
+  <lastmod>2026-03-30T20:31:58+02:00</lastmod>
+  <xhtml:link rel="alternate" hreflang="de" href="http://localhost:4000/de/insights/innovationskraft-strukturell-sichern/" />
+  <xhtml:link rel="alternate" hreflang="en" href="http://localhost:4000/insights/structurally-sustaining-innovation-capability/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:4000/insights/structurally-sustaining-innovation-capability/" />
+</url>
+
 
 </urlset>

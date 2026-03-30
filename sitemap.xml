@@ -219,4 +219,21 @@ layout: null
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/de/insights/warum-ich-vaira-gegruendet-habe/" />
   </url>
 
+<url>
+  <loc>{{ site.url }}/insights/structurally-sustaining-innovation-capability/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/structurally-sustaining-innovation-capability/" />
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/innovationskraft-strukturell-sichern/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/structurally-sustaining-innovation-capability/" />
+</url>
+
+<url>
+  <loc>{{ site.url }}/de/insights/innovationskraft-strukturell-sichern/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/innovationskraft-strukturell-sichern/" />
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/structurally-sustaining-innovation-capability/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/structurally-sustaining-innovation-capability/" />
+</url>
+
+
 </urlset>
