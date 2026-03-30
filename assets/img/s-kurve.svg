@@ -27,7 +27,7 @@
         fill="none" stroke="#2B4E5A" stroke-width="2.4"/>
 
   <!-- Neue S-Kurve (weiter rechts & oben) -->
-  <path d="M 200 200
+  <path d="M 200 240
            C 260 240 310 200 350 155
            C 390 110 430 80 480 65
            C 510 58 530 62 545 70"
