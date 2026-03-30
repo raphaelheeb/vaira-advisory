@@ -149,34 +149,40 @@ LANGUAGE SWITCHER LOGIC (EN ↔ DE)
 
 
   <!-- RELATED INSIGHTS -->
-  {% if page.links %}
-  <section class="section related-insights">
-    <div class="content-wrapper wrapper--narrow">
-      <h3>
-        {% if page.lang == "de" %}
-          Verwandte Insights
-        {% else %}
-          Related Insights
-        {% endif %}
-      </h3>
+{% if page.links %}
+<section class="section related-insights">
+  <div class="content-wrapper wrapper--narrow">
+    <h3>
+      {% if page.lang == "de" %}
+        Verwandte Insights
+      {% else %}
+        Related Insights
+      {% endif %}
+    </h3>
 
-      <ul class="related-insights-list">
-        {% for link in page.links %}
-          {% if page.lang == "de" %}
-            {% assign related = site.de_insights | where: "slug", link.slug | first %}
-          {% else %}
+    <ul class="related-insights-list">
+      {% for link in page.links %}
+
+        {% if page.lang == "de" %}
+          {% assign related = site.de_insights | where: "slug", link.slug | first %}
+          {% if related == nil %}
             {% assign related = site.insights | where: "slug", link.slug | first %}
           {% endif %}
+        {% else %}
+          {% assign related = site.insights | where: "slug", link.slug | first %}
+        {% endif %}
 
-          {% if related and related.title %}
-  <li><a href="{{ related.url }}">{{ related.title }}</a></li>
+        {% if related %}
+          <li>
+            <a href="{{ related.url }}">{{ related.title }}</a>
+          </li>
+        {% endif %}
+
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 {% endif %}
-
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  {% endif %}
 
 
  <!-- TAGS -->
