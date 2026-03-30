@@ -19,18 +19,18 @@
     Zeit
   </text>
 
-  <!-- Alte S-Kurve -->
+  <!-- Alte S-Kurve (steiler & stärker gekrümmt) -->
   <path d="M 70 240
-           C 150 240 200 210 240 175
-           C 280 140 320 125 360 120
-           C 400 115 430 125 455 140"
+           C 120 240 160 200 200 150
+           C 240 100 300 80 350 75
+           C 390 72 430 90 455 120"
         fill="none" stroke="#2B4E5A" stroke-width="2.4"/>
 
-  <!-- Neue S-Kurve (30% nach links, 10% nach oben) -->
+  <!-- Neue S-Kurve (30% links, 10% oben, steiler) -->
   <path d="M 150 220
-           C 210 210 260 175 300 135
-           C 340 100 380 75 430 60
-           C 470 50 500 55 520 62"
+           C 200 200 250 150 300 110
+           C 350 70 400 50 450 40
+           C 490 35 520 45 540 55"
         fill="none" stroke="#E4572E" stroke-width="2.4" stroke-dasharray="6 4"/>
 
   <!-- Hilfslinien -->
@@ -52,10 +52,10 @@
     <tspan x="430" dy="14">(Produkt 2)</tspan>
   </text>
 
-  <!-- Optimaler Wechselpunkt (links vom Schnittpunkt, korrekt höher) -->
-  <circle cx="300" cy="135" r="5" fill="#E4572E"/>
+  <!-- Optimaler Wechselpunkt -->
+  <circle cx="300" cy="110" r="5" fill="#E4572E"/>
 
-  <text x="300" y="160" font-size="11" text-anchor="middle"
+  <text x="300" y="135" font-size="11" text-anchor="middle"
         font-family="system-ui, -apple-system, sans-serif" fill="#0E1514">
     Optimaler Wechselpunkt
   </text>
