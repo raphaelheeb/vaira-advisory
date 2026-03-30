@@ -19,18 +19,22 @@
     Zeit
   </text>
 
-  <!-- Alte S-Kurve (steiler, stärker gekrümmt) -->
+  <!-- Definition einer perfekt ausbalancierten S-Kurve -->
+  <!-- Start flach → steil → Plateau -->
+  <!-- Diese Kurve wird zweimal verwendet, einmal verschoben -->
+
+  <!-- Alte S-Kurve (Original) -->
   <path d="M 70 240
-           C 120 230 170 180 210 130
-           C 250 85 310 65 360 70
-           C 400 75 430 100 455 135"
+           C 130 240 170 200 210 150
+           C 250 100 310 80 360 85
+           C 400 90 430 120 455 150"
         fill="none" stroke="#2B4E5A" stroke-width="2.6"/>
 
-  <!-- Neue S-Kurve (30% links, 10% oben, steil & aggressiv) -->
+  <!-- Neue S-Kurve (identisch, nur verschoben + höher) -->
   <path d="M 140 220
-           C 190 190 240 140 290 100
-           C 340 60 390 40 440 35
-           C 480 32 510 40 530 50"
+           C 200 220 240 180 280 130
+           C 320 80 380 60 430 65
+           C 470 70 500 100 525 130"
         fill="none" stroke="#E4572E" stroke-width="2.6" stroke-dasharray="6 4"/>
 
   <!-- Hilfslinien -->
@@ -52,10 +56,10 @@
     <tspan x="430" dy="14">(Produkt 2)</tspan>
   </text>
 
-  <!-- Optimaler Wechselpunkt (vor dem Schnittpunkt) -->
-  <circle cx="290" cy="100" r="5" fill="#E4572E"/>
+  <!-- Optimaler Wechselpunkt -->
+  <circle cx="280" cy="130" r="5" fill="#E4572E"/>
 
-  <text x="290" y="125" font-size="11" text-anchor="middle"
+  <text x="280" y="155" font-size="11" text-anchor="middle"
         font-family="system-ui, -apple-system, sans-serif" fill="#0E1514">
     Optimaler Wechselpunkt
   </text>
