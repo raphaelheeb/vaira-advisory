@@ -11,45 +11,51 @@ html, body {
 .page {
   width: 210mm; height: 297mm;
   box-sizing: border-box;
-  padding: 22mm 18mm 32mm 18mm; /* bottom padding increased */
+  padding: 18mm 18mm 38mm 18mm; /* reduced top, increased bottom */
 }
 
-h1 { font-size: 21pt; margin: 0 0 0.18cm 0; letter-spacing: 0.4px; }
-h2 { font-size: 10.5pt; margin: 0.45cm 0 0.25cm 0; padding-bottom: 0.12cm; border-bottom: 2px solid #5F8A8E; }
-h3 { font-size: 9.8pt; margin: 0.30cm 0 0.08cm 0; }
+/* Headings */
+h1 { font-size: 21pt; margin: 0 0 0.15cm 0; letter-spacing: 0.4px; }
+h2 { font-size: 10.5pt; margin: 0.40cm 0 0.22cm 0; padding-bottom: 0.10cm; border-bottom: 2px solid #5F8A8E; }
+h3 { font-size: 9.8pt; margin: 0.28cm 0 0.06cm 0; }
 
-p, ul { margin: 0 0 0.26cm 0; }
+/* Spacing */
+p, ul { margin: 0 0 0.24cm 0; }
 ul { padding-left: 0.45cm; }
 ul li { margin-bottom: 0.10cm; }
 
-.header { display: flex; align-items: flex-start; gap: 1.1cm; margin-bottom: 0.65cm; }
+/* Header */
+.header { display: flex; align-items: flex-start; gap: 1.0cm; margin-bottom: 0.55cm; }
 .header-text { flex: 1; }
-.header-text p { margin-bottom: 0.22cm; line-height: 1.34; }
+.header-text p { margin-bottom: 0.20cm; line-height: 1.34; }
 .header-text p strong { color: #5F8A8E; font-size: 10.5pt; }
 
+/* Header links */
 .header-text a {
   color: #5F8A8E;
   border-bottom: 1px solid #5F8A8E;
   text-decoration: none;
 }
 
+/* Photo */
 .photo {
-  width: 3.8cm; height: 3.8cm;
+  width: 3.7cm; height: 3.7cm;
   border-radius: 6px; overflow: hidden;
   background: #ddd; flex-shrink: 0;
 }
 .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+/* Skills */
 .skills { columns: 2; column-gap: 0.7cm; }
 .skills li { break-inside: avoid; }
 .skills .sub { font-size: 8.5pt; color: #444; }
 
+/* Experience blocks — vertical line removed */
 .role-block {
-  border-left: 2px solid #5F8A8E;
-  padding-left: 0.40cm;
-  margin-bottom: 0.50cm;
+  padding-left: 0; /* no left border */
+  margin-bottom: 0.45cm;
 }
-.period { font-size: 8.7pt; color: #444; margin: -0.05cm 0 0.20cm 0; }
+.period { font-size: 8.7pt; color: #444; margin: -0.05cm 0 0.18cm 0; }
 </style>
 
 <body>
@@ -140,3 +146,4 @@ systems, and leading interdisciplinary teams across engineering, operations, and
 </div>
 
 </body>
+
