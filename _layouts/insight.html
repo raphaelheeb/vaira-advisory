@@ -29,7 +29,7 @@ LANGUAGE SWITCHER LOGIC (EN ↔ DE)
 
 <article class="insight-article insights-page">
 
-  <!-- HERO (clean + calm) -->
+<!-- HERO (clean + calm) -->
 <section id="hero" class="hero hero--clean">
   <div class="content-wrapper">
 
@@ -40,51 +40,33 @@ LANGUAGE SWITCHER LOGIC (EN ↔ DE)
     {% endif %}
 
     <div class="insight-meta-top insight-meta-in-hero">
-     <span class="insight-category">
-  {% if page.lang == "de" %}
-    {% case page.category %}
-      {% when "Founder Narrative" %}Gründerperspektive
-      {% when "Innovation Architecture" %}Innovationsarchitektur
-      {% else %}{{ page.category }}
-    {% endcase %}
-  {% else %}
-    {{ page.category }}
-  {% endif %}
-</span>
 
+      <!-- CATEGORY (auto-translated) -->
+      <span class="insight-category">
+        {{ site.data.categories[page.category][page.lang] }}
+      </span>
 
+      <!-- PILLAR (auto-translated) -->
       {% if page.pillar %}
         <span class="insight-dot">&#8226</span>
         <span class="insight-pillar">
-  {% if page.lang == "de" %}
-    {% case page.pillar %}
-      {% when "Foundation" %}Gründung
-      {% when "Differentiation" %}Differenzierung
-      {% when "Positioning" %}Positionierung
-      {% else %}{{ page.pillar }}
-    {% endcase %}
-  {% else %}
-    {{ page.pillar }}
-  {% endif %}
-</span>
-
+          {{ site.data.pillars[page.pillar][page.lang] }}
+        </span>
       {% endif %}
 
+      <!-- READING TIME -->
       <span class="insight-dot">&#8226</span>
-     <span class="insight-reading">
-  {% if page.lang == "de" %}
-    {{ page.reading_time }} min Lesezeit
-  {% else %}
-    {{ page.reading_time }} min read
-  {% endif %}
-</span>
-
+      <span class="insight-reading">
+        {% if page.lang == "de" %}
+          {{ page.reading_time }} min Lesezeit
+        {% else %}
+          {{ page.reading_time }} min read
+        {% endif %}
+      </span>
 
       <span class="insight-dot">&#8226</span>
 
-      <!-- ========================= -->
       <!-- DATE (EN + DE localized) -->
-      <!-- ========================= -->
       <span class="insight-date">
         {% if page.lang == "de" %}
 
@@ -219,4 +201,3 @@ LANGUAGE SWITCHER LOGIC (EN ↔ DE)
   </section>
 
 </article>
-

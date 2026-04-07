@@ -51,7 +51,7 @@ sitemap:
 
     <h2 style="margin-bottom:1.5rem;">Latest Insights</h2>
 
-    {% assign insights = site.insights | sort: "date" | reverse %}
+    {% assign insights = site.insights | where: "lang", "en" | sort: "date" | reverse %}
 
     {% if page.pillar %}
       {% assign insights = insights | where: "pillar", page.pillar %}
@@ -60,44 +60,45 @@ sitemap:
     <div class="insights-grid">
 
       {% for insight in insights %}
-     <a class="insights-card" href="{{ insight.url | relative_url }}">
+        <a class="insights-card" href="{{ insight.url | relative_url }}">
 
-  <div class="insights-card-content">
+          <div class="insights-card-content">
 
-  {% if insight.category %}
-    <div class="insights-card-category">
-      {% include insight-category.html category=insight.category %}
-    </div>
-  {% endif %}
+            {% if insight.category %}
+              <div class="insights-card-category">
+                {% assign icon_key = site.data.categories[insight.category].icon %}
+                {% include insight-category.html category=icon_key %}
+              </div>
+            {% endif %}
 
-  <div class="insights-meta">
-    {% if insight.pillar %}
-      <span class="insights-pillar">{{ insight.pillar }}</span>
-      <span class="insights-dot">•</span>
-    {% endif %}
-    <span class="insights-date">{{ insight.date | date: "%B %-d, %Y" }}</span>
-  </div>
+            <div class="insights-meta">
+              {% if insight.pillar %}
+                <span class="insights-pillar">{{ insight.pillar }}</span>
+                <span class="insights-dot">•</span>
+              {% endif %}
+              <span class="insights-date">{{ insight.date | date: "%B %-d, %Y" }}</span>
+            </div>
 
-  <h3 class="insights-card-title">{{ insight.title }}</h3>
+            <h3 class="insights-card-title">{{ insight.title }}</h3>
 
-  {% if insight.description %}
-    <p class="insights-card-desc">{{ insight.description }}</p>
-  {% endif %}
+            {% if insight.description %}
+              <p class="insights-card-desc">{{ insight.description }}</p>
+            {% endif %}
 
-  {% if insight.tags %}
-  <ul class="insights-card-tags">
-    {% for tag in insight.tags %}
-      <li class="tag">{{ tag }}</li>
-    {% endfor %}
-  </ul>
-{% endif %}
+            {% if insight.tags %}
+              <ul class="insights-card-tags">
+                {% for tag in insight.tags %}
+                  <li class="tag">{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
 
+          </div>
 
-</div>
-
-</a>
+        </a>
       {% endfor %}
 
     </div>
   </div>
 </section>
+

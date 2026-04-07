@@ -1,47 +1,81 @@
-{% assign cat = include.category | downcase %}
+{% assign icon = include.category | downcase %}
 
 <div class="insight-category-icon">
-  {% case cat %}
+  {% case icon %}
 
     {% when "founder narrative" %}
-      <svg fill="none" viewBox="0 0 64 64"><path stroke="currentColor" stroke-linecap="round" stroke-width="2.25" d="m24 46 8-26m8 26-8-26m-10-2h20"/></svg>
-
-    {% when "strategy" %}
-      <svg fill="none" viewBox="0 0 64 64"><path fill="#c9dcdc" fill-opacity=".28" d="M30 22h12v10H30z"/><path stroke="currentColor" stroke-width="2.25" d="M18 22h10v10H18zm0 12h10v10H18zm12 0h12v10H30z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2.25" d="M16 20h30"/></svg>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <line x1="24" y1="46" x2="32" y2="20"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <line x1="40" y1="46" x2="32" y2="20"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <line x1="22" y1="18" x2="42" y2="18"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+      </svg>
 
     {% when "engineering" %}
-      <svg fill="none" viewBox="0 0 64 64"><circle cx="32" cy="32" r="14" fill="#c9dcdc" fill-opacity=".18"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2.25" d="M32 18v28M18 32h28"/><path fill="#c9dcdc" fill-opacity=".38" stroke="currentColor" stroke-width="2.25" d="M28 28h8v8h-8z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <line x1="32" y1="18" x2="32" y2="46"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <line x1="18" y1="32" x2="46" y2="32"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <rect x="28" y="28" width="8" height="8"
+              fill="#C9DCDC" fill-opacity="0.38"
+              stroke="#5F8A8E" stroke-width="2.25"/>
+      </svg>
 
     {% when "innovation" %}
-      <svg fill="none" viewBox="0 0 64 64"><circle cx="32" cy="32" r="16" fill="#c9dcdc" fill-opacity=".18"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M24 30c0-4 4-6 8-6s8 2 8 6-4 6-8 6c-2 0-3.5-.5-5-1.5M26 40l6-4v8"/></svg>
-
-    {% when "operations" %}
-      <svg fill="none" viewBox="0 0 64 64"><rect width="32" height="20" x="16" y="22" fill="#c9dcdc" fill-opacity=".18" rx="4"/><rect width="10" height="16" x="18" y="24" stroke="currentColor" stroke-width="2.25" rx="2"/><rect width="10" height="16" x="28" y="24" stroke="currentColor" stroke-width="2.25" rx="2"/><rect width="10" height="16" x="38" y="24" fill="#c9dcdc" fill-opacity=".38" stroke="currentColor" stroke-width="2.25" rx="2"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2.25" d="M18 42h28"/></svg>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <!-- Loop etwas höher und tiefer gezogen, um den vollen Bereich zu nutzen -->
+        <path d="M24 28 C24 24, 28 22, 32 22 C36 22, 40 24, 40 28 C40 32, 36 34, 32 34 C30 34, 28.5 33.5, 27 32.5"
+              stroke="#5F8A8E" stroke-width="2.25"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Pfeil nach unten bis fast zur gleichen Tiefe wie Founder Narrative -->
+        <polyline points="26,40 32,34 32,46"
+                  stroke="#5F8A8E" stroke-width="2.25"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
 
     {% when "leadership" %}
-      <svg fill="none" viewBox="0 0 64 64"><path fill="#c9dcdc" fill-opacity=".18" d="M26 18h12v28H26z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2.25" d="M32 14v36M20 26h24M20 38h24"/></svg>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect x="26" y="18" width="12" height="28"
+              fill="#C9DCDC" fill-opacity="0.18"/>
+        <line x1="32" y1="14" x2="32" y2="50"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <line x1="20" y1="26" x2="44" y2="26"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+        <line x1="20" y1="38" x2="44" y2="38"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+      </svg>
 
-    {% when "innovation architecture" %}
-      <svg fill="none" viewBox="0 0 64 64">
-      <!-- Symmetrisches Kreuz, perfekt zentriert -->
-      <path
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-width="2.25"
-        d="M32 18v28M18 32h28"
-      />
-      <!-- Zentraler Knoten -->
-      <circle
-        cx="32"
-        cy="32"
-        r="4"
-        fill="#c9dcdc"
-        fill-opacity=".38"
-        stroke="currentColor"
-        stroke-width="2.25"
-      />
-    </svg>
+    {% when "operations" %}
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect x="16" y="22" width="32" height="20" rx="4"
+              fill="#C9DCDC" fill-opacity="0.18"/>
+        <rect x="18" y="24" width="10" height="16" rx="2"
+              stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
+        <rect x="28" y="24" width="10" height="16" rx="2"
+              stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
+        <rect x="38" y="24" width="10" height="16" rx="2"
+              fill="#C9DCDC" fill-opacity="0.38"
+              stroke="#5F8A8E" stroke-width="2.25"/>
+        <path d="M18 42 H46"
+              stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"/>
+      </svg>
+
+    {% when "strategy" %}
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect x="30" y="22" width="12" height="10"
+              fill="#C9DCDC" fill-opacity="0.28"/>
+        <rect x="18" y="22" width="10" height="10"
+              stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
+        <rect x="18" y="34" width="10" height="10"
+              stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
+        <rect x="30" y="34" width="12" height="10"
+              stroke="#5F8A8E" stroke-width="2.25" fill="none"/>
+      </svg>
 
   {% endcase %}
 </div>
+
 

@@ -47,7 +47,7 @@ sitemap:
 <section class="section section--alt">
   <div class="content-wrapper wrapper--narrow">
 
-    <h2 style="margin-bottom:1.5rem;">Neueste Insights</h2>
+    <h2 style="margin-bottom:1.5rem;">Neuste Insights</h2>
 
     {% assign insights = site.de_insights | sort: "date" | reverse %}
 
@@ -64,47 +64,42 @@ sitemap:
 
           {% if insight.category %}
             <div class="insights-card-category">
-              {% include insight-category.html category=insight.category %}
+
+              {% assign icon_key = site.data.categories[insight.category].icon %}
+              {% include insight-category.html category=icon_key %}
+
             </div>
           {% endif %}
 
           <div class="insights-meta">
-       {% if insight.pillar %}
-  <span class="insights-pillar">
-    {% case insight.pillar %}
-      {% when "Foundation" %}Gründung
-      {% when "Differentiation" %}Differenzierung
-      {% when "Positioning" %}Positionierung
-      {% else %}{{ insight.pillar }}
-    {% endcase %}
-  </span>
-  <span class="insights-dot">•</span>
-{% endif %}
 
+            {% if insight.pillar %}
+              <span class="insights-pillar">
+                {{ site.data.pillars[insight.pillar].de }}
+              </span>
+              <span class="insights-dot">•</span>
+            {% endif %}
 
-            {% comment %}
-            German month translation
-            {% endcomment %}
             {% assign month_en = insight.date | date: "%B" %}
 
-{% case month_en %}
-  {% when "January" %}{% assign month_de = "Januar" %}
-  {% when "February" %}{% assign month_de = "Februar" %}
-  {% when "March" %}{% assign month_de = "März" %}
-  {% when "April" %}{% assign month_de = "April" %}
-  {% when "May" %}{% assign month_de = "Mai" %}
-  {% when "June" %}{% assign month_de = "Juni" %}
-  {% when "July" %}{% assign month_de = "Juli" %}
-  {% when "August" %}{% assign month_de = "August" %}
-  {% when "September" %}{% assign month_de = "September" %}
-  {% when "October" %}{% assign month_de = "Oktober" %}
-  {% when "November" %}{% assign month_de = "November" %}
-  {% when "December" %}{% assign month_de = "Dezember" %}
-{% endcase %}
+            {% case month_en %}
+              {% when "January" %}{% assign month_de = "Januar" %}
+              {% when "February" %}{% assign month_de = "Februar" %}
+              {% when "March" %}{% assign month_de = "März" %}
+              {% when "April" %}{% assign month_de = "April" %}
+              {% when "May" %}{% assign month_de = "Mai" %}
+              {% when "June" %}{% assign month_de = "Juni" %}
+              {% when "July" %}{% assign month_de = "Juli" %}
+              {% when "August" %}{% assign month_de = "August" %}
+              {% when "September" %}{% assign month_de = "September" %}
+              {% when "October" %}{% assign month_de = "Oktober" %}
+              {% when "November" %}{% assign month_de = "November" %}
+              {% when "December" %}{% assign month_de = "Dezember" %}
+            {% endcase %}
 
-<span class="insights-date">
-  {{ insight.date | date: "%-d." }} {{ month_de }} {{ insight.date | date: "%Y" }}
-</span>
+            <span class="insights-date">
+              {{ insight.date | date: "%-d." }} {{ month_de }} {{ insight.date | date: "%Y" }}
+            </span>
 
           </div>
 
@@ -114,20 +109,11 @@ sitemap:
             <p class="insights-card-desc">{{ insight.description }}</p>
           {% endif %}
 
-
           {% if insight.tags %}
             <ul class="insights-card-tags">
               {% for tag in insight.tags %}
                 <li class="tag">
-                  {% case tag %}
-                    {% when "Foundation" %}Gründung
-                    {% when "Differentiation" %}Differenzierung
-                    {% when "Positioning" %}Positionierung
-                    {% when "Strategy" %}Strategie
-                    {% when "Engineering" %}Engineering
-                    {% when "Innovation" %}Innovation
-                    {% else %}{{ tag }}
-                  {% endcase %}
+                  {{ tag }}
                 </li>
               {% endfor %}
             </ul>
@@ -141,3 +127,4 @@ sitemap:
     </div>
   </div>
 </section>
+
