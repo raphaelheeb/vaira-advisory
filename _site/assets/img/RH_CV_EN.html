@@ -1,0 +1,373 @@
+<style>
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+/* Base layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #0E1514;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 28mm 18mm 30mm 18mm;
+  page-break-after: always;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+.page > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* Headings */
+h1 {
+  font-size: 24pt;
+  margin: 0 0 0.25cm 0;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 11pt;
+  margin: 0.7cm 0 0.4cm 0;
+  padding-bottom: 0.15cm;
+  border-bottom: 2px solid #5F8A8E;
+}
+
+.page h2:first-of-type {
+  margin-top: 0.4cm;
+}
+
+h3 {
+  font-size: 10pt;
+  margin: 0.4cm 0 0.1cm 0;
+}
+
+/* Spacing */
+p, ul {
+  margin: 0 0 0.4cm 0;
+}
+
+ul { padding-left: 0.5cm; }
+ul li { margin-bottom: 0.15cm; }
+
+/* Links */
+a {
+  color: #0E1514;
+  text-decoration: none;
+  border-bottom: 1px solid #5F8A8E;
+}
+
+a:hover {
+  color: #5F8A8E;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5cm;
+  margin-bottom: 1cm;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text p {
+  margin-bottom: 0.32cm;
+  line-height: 1.40;
+}
+
+.header-text p strong {
+  color: #5F8A8E;
+  font-size: 11pt;
+}
+
+/* Photo */
+.photo {
+  width: 4.5cm;
+  height: 4.5cm;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ddd;
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contact block */
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 1cm;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.qr {
+  width: 2.0cm;
+  height: 2.0cm;
+  flex-shrink: 0;
+}
+
+.qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Skills */
+.skills {
+  columns: 2;
+  column-gap: 1cm;
+  column-fill: balance;
+}
+
+.skills li {
+  break-inside: avoid;
+}
+
+.skills .sub {
+  font-size: 9pt;
+  color: #444;
+}
+
+/* Role block (page 2 & 3) */
+.role-block {
+  border-left: 2px solid #5F8A8E;
+  padding-left: 0.5cm;
+  margin-bottom: 0.9cm;
+}
+
+.period {
+  font-size: 9pt;
+  color: #444;
+  margin: -0.1cm 0 0.3cm 0;
+}
+
+/* Achievements */
+.achievements {
+  background: #F5F8F8;
+  padding: 0.6cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.6cm;
+}
+
+.achievements ul {
+  margin: 0;
+}
+
+/* Partnerships */
+.partners-block {
+  background: #F5F8F8;
+  padding: 0.5cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.4cm;
+}
+
+.partners-block ul {
+  margin: 0;
+}
+</style>
+
+<body>
+
+<!-- ============================
+     PAGE 1
+============================= -->
+<div class="page">
+
+  <div class="header">
+    <div class="header-text">
+      <h1>RAPHAEL HEEB</h1>
+
+      <p><strong>Technology & Innovation Specialist</strong><br>
+      Founder VAIRA Technology · Co-Founder & former CEO NematX AG · 
+      Former Head of Engineering, Optics Balzers AG</p>
+
+      <p>
+        Zurich, Switzerland · <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a> · +41 76 463 06 83<br>
+      </p>
+    </div>
+
+    <div class="photo">
+      <img src="/assets/img/raphael-heeb.jpg" alt="Raphael Heeb">
+    </div>
+  </div>
+
+  <h2>Profile</h2>
+  <p>
+    Experienced innovation expert and technology entrepreneur with over 15 years of leadership in advanced manufacturing,
+    materials science, and the industrialization of deep‑tech systems. Founder of VAIRA Technology and co‑founder and former CEO
+    of the ETH Zurich spin‑off NematX AG. Combines deep technical expertise (Dr. sc. ETH Zurich) with strategic management
+    (Executive MBA HSG). Strong track record in building scalable production capabilities, transferring technologies from R&D
+    into stable industrial environments, and leading interdisciplinary teams across engineering, manufacturing, and business
+    development. Positioned as a bridge builder between industry and research with a focus on technology execution, industrial scaling,
+    and long‑term value creation.
+  </p>
+
+  <h2>Core Competencies</h2>
+
+  <ul class="skills">
+    <li>Strategic Innovation & Technology Management</li>
+    <li>Evaluation of Innovation & Technology Projects</li>
+    <li>Technology Transfer & Industrialization<br><span class="sub">(from R&D to series production)</span></li>
+    <li>Advanced Manufacturing & Materials</li>
+    <li>Stakeholder Management across Industry, Research & Government</li>
+    <li>Intercultural Collaboration<br><span class="sub">(Europe, Asia, USA)</span></li>
+    <li>Leadership & Team Development</li>
+  </ul>
+
+  <h2>Awards</h2>
+  <ul>
+    <li>W.A. de Vigier Award – Winner</li>
+    <li>Formnext Start-Up Challenge – Winner</li>
+    <li>Shenzhen Innovation & Entrepreneurship Competition – Finalist</li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li>Executive MBA (General Management), University of St. Gallen (HSG), 2019</li>
+    <li>PhD (Dr. sc. ETH) in Surface Engineering & Polymer Technology, ETH Zurich, 2009</li>
+    <li>MSc Materials Science ETH, ETH Zurich, 2005</li>
+  </ul>
+
+</div>
+
+
+<!-- ============================
+     PAGE 2
+============================= -->
+<div class="page">
+
+  <h2>Languages</h2>
+  <ul>
+    <li>German – Native</li>
+    <li>English – Fluent (business level)</li>
+    <li>French – Basic knowledge</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <div class="contact-block">
+    <ul class="contact-info">
+      <li>Email: <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a></li>
+      <li>Website: <a href="https://vaira.ch/de">vaira.ch</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/raphaelheeb">linkedin.com/in/raphaelheeb</a></li>
+    </ul>
+
+    <div class="qr">
+      <img src="/assets/img/QRCode_LinkedIn_RH.svg" alt="LinkedIn QR Code">
+    </div>
+  </div>
+
+  <h2>Current Role</h2>
+  <div class="role-block">
+    <h3>Founder & Technical Lead – VAIRA Technology</h3>
+    <div class="period">2026 – present</div>
+    <ul>
+      <li>Development of innovation and industrialization strategies for SMEs, startups, and industrial partners</li>
+      <li>Hands-on support in technical architecture, materials development, and manufacturing processes</li>
+      <li>Building local and international technology and industry partnerships (Europe, Asia, USA)</li>
+      <li>Creation of strategic decision-making documents (whitepapers, roadmaps, technology analyses)</li>
+      <li>Support for regional development agencies in innovation projects, technology transfer, and project evaluation</li>
+      <li>Advising executive teams on innovation strategies, R&D integration, production setup, and scaling scenarios</li>
+    </ul>
+  </div>
+
+  <h2>Achievements</h2>
+  <div class="achievements">
+    <ul>
+      <li>Founded and led NematX AG; successful strategic integration into Polyplastics / DAICEL Corporation (Japan)</li>
+      <li>Identification and validation of new technologies in Europe, Asia, and the USA</li>
+      <li>Scaling high-performance 3D printing systems from laboratory to pilot production</li>
+      <li>Leadership of interdisciplinary teams in R&D, industrialization, and business development</li>
+      <li>Development of international partnerships with direct impact on regional value creation</li>
+      <li>Multiple awards for innovation and entrepreneurship</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- ============================
+     PAGE 3
+============================= -->
+<div class="page">
+
+  <h2>Professional Experience</h2>
+
+  <div class="role-block">
+    <h3>CEO & Co-Founder – NematX AG</h3>
+    <div class="period">2020–2025</div>
+    <ul>
+      <li>Strategic and operational leadership of an ETH spin-off in high-performance 3D printing</li>
+      <li>Definition of company vision, market strategy, and business development</li>
+      <li>Establishment of global partnerships across multiple markets with focus on electronics, semiconductors, and electromobility</li>
+      <li>Leadership of R&D strategy, product development, and pilot production scaling</li>
+      <li>Successful strategic integration into Polyplastics / DAICEL Corporation (Japan)</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Head of Engineering / Executive Board Member – Optics Balzers AG</h3>
+    <div class="period">2016–2019</div>
+    <ul>
+      <li>Leadership of the engineering department for product industrialization and series production</li>
+      <li>Implementation of Lean Six Sigma, Toyota KATA, and process optimization</li>
+      <li>Coordination of collaboration between sites in Liechtenstein and Asia</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Head of Pilot Production – Optics Balzers AG</h3>
+    <div class="period">2013–2015</div>
+    <ul>
+      <li>Setup of a new pilot line for optical assemblies</li>
+      <li>Transfer of R&D concepts into stable production processes</li>
+      <li>Definition and implementation of quality and manufacturing standards</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>R&D / NPI Project Manager – Optics Balzers AG</h3>
+    <div class="period">2009–2013</div>
+    <ul>
+      <li>Planning and management of complex R&D projects in optical coatings & components</li>
+      <li>Use of advanced manufacturing technologies to expand company capabilities</li>
+      <li>Support for product management and business development</li>
+    </ul>
+  </div>
+
+  <h2>Partnerships</h2>
+  <div class="partners-block">
+    <ul>
+      <li>International collaborations in Japan, Taiwan, China, USA, and Europe</li>
+      <li>Cooperation with global industry leaders in electronics, semiconductors, and mobility</li>
+      <li>Development and implementation of technological innovations with industry and research partners</li>
+      <li>Scaling of high-tech production lines with international partners across the entire value chain</li>
+      <li>Successful collaboration with regional innovation networks, universities, and technology clusters</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
