@@ -17,9 +17,4 @@
     x="30" y="34" width="12" height="10"
     stroke="#5F8A8E" stroke-width="2.25" fill="none"
   />
-  <!-- Alignment line -->
-  <line
-    x1="16" y1="20" x2="46" y2="20"
-    stroke="#5F8A8E" stroke-width="2.25" stroke-linecap="round"
-  />
 </svg>
