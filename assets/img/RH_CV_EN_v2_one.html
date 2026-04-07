@@ -1,0 +1,149 @@
+<style>
+@page { size: A4 portrait; margin: 0; }
+
+html, body {
+  margin: 0; padding: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 9.0pt; line-height: 1.40;
+  color: #0E1514;
+}
+
+.page {
+  width: 210mm; height: 297mm;
+  box-sizing: border-box;
+  padding: 18mm 18mm 38mm 18mm; /* reduced top, increased bottom */
+}
+
+/* Headings */
+h1 { font-size: 21pt; margin: 0 0 0.15cm 0; letter-spacing: 0.4px; }
+h2 { font-size: 10.5pt; margin: 0.40cm 0 0.22cm 0; padding-bottom: 0.10cm; border-bottom: 2px solid #5F8A8E; }
+h3 { font-size: 9.8pt; margin: 0.28cm 0 0.06cm 0; }
+
+/* Spacing */
+p, ul { margin: 0 0 0.24cm 0; }
+ul { padding-left: 0.45cm; }
+ul li { margin-bottom: 0.10cm; }
+
+/* Header */
+.header { display: flex; align-items: flex-start; gap: 1.0cm; margin-bottom: 0.55cm; }
+.header-text { flex: 1; }
+.header-text p { margin-bottom: 0.20cm; line-height: 1.34; }
+.header-text p strong { color: #5F8A8E; font-size: 10.5pt; }
+
+/* Header links */
+.header-text a {
+  color: #5F8A8E;
+  border-bottom: 1px solid #5F8A8E;
+  text-decoration: none;
+}
+
+/* Photo */
+.photo {
+  width: 3.7cm; height: 3.7cm;
+  border-radius: 6px; overflow: hidden;
+  background: #ddd; flex-shrink: 0;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Skills */
+.skills { columns: 2; column-gap: 0.7cm; }
+.skills li { break-inside: avoid; }
+.skills .sub { font-size: 8.5pt; color: #444; }
+
+/* Experience blocks — vertical line removed */
+.role-block {
+  padding-left: 0; /* no left border */
+  margin-bottom: 0.45cm;
+}
+.period { font-size: 8.7pt; color: #444; margin: -0.05cm 0 0.18cm 0; }
+</style>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-text">
+      <h1>RAPHAEL HEEB</h1>
+      <p><strong>Industrialization & Technology‑Transfer Specialist</strong><br>
+      Founder VAIRA Technology · Co‑Founder & former CEO NematX AG</p>
+      <p>Zurich, Switzerland · <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a> · +41 76 463 06 83</p>
+    </div>
+    <div class="photo">
+      <img src="/assets/img/raphael-heeb.jpg" alt="Raphael Heeb">
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <h2>Profile</h2>
+  <p>
+Industrialization and technology‑transfer specialist with 15+ years of experience turning advanced materials,
+manufacturing technologies, and deep‑tech concepts into scalable industrial solutions. Proven track record in
+transferring technologies from R&D into stable production environments, building pilot lines, scaling manufacturing
+systems, and leading interdisciplinary teams across engineering, operations, and business development.
+  </p>
+
+  <!-- CORE COMPETENCIES -->
+  <h2>Core Competencies</h2>
+  <ul class="skills">
+    <li>Industrialization of Advanced Technologies</li>
+    <li>Technology Transfer & R&D‑to‑Market Execution</li>
+    <li>Scale‑up of Manufacturing Systems<br><span class="sub">(pilot → series production)</span></li>
+    <li>Advanced Manufacturing & Materials Engineering</li>
+    <li>Technical Architecture & System Engineering</li>
+    <li>Technology & Innovation Management</li>
+    <li>Leadership of Engineering Teams</li>
+  </ul>
+
+  <!-- EXPERIENCE -->
+  <h2>Experience</h2>
+
+  <div class="role-block">
+    <h3>Founder & Technical Lead – VAIRA Technology</h3>
+    <div class="period">2026 – present</div>
+    <ul>
+      <li>Industrialization strategies for SMEs, startups, and industrial partners</li>
+      <li>Transfer of technologies from R&D into manufacturable, scalable systems</li>
+      <li>Design of technical architectures, materials workflows, and production processes</li>
+      <li>Assessment of technology readiness and scale‑up potential</li>
+      <li>Advising executives on production setup and technology maturation</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>CEO & Co‑Founder – NematX AG</h3>
+    <div class="period">2020–2025</div>
+    <ul>
+      <li>Led industrialization of high‑performance 3D‑printing technology</li>
+      <li>Defined technology roadmap, product architecture, and manufacturing strategy</li>
+      <li>Built interdisciplinary teams across R&D, engineering, and operations</li>
+      <li>Established global industrial partnerships in electronics & semiconductors</li>
+      <li>Oversaw scale‑up of materials, hardware, and process technologies</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Engineering Leadership – Optics Balzers AG</h3>
+    <div class="period">2009–2019</div>
+    <ul>
+      <li>Led engineering for product industrialization and series production</li>
+      <li>Built and operated pilot lines for optical assemblies</li>
+      <li>Transferred R&D concepts into stable, repeatable production processes</li>
+      <li>Implemented Lean Six Sigma and process‑optimization frameworks</li>
+      <li>Coordinated technology transfer between Liechtenstein and Asia</li>
+    </ul>
+  </div>
+
+  <!-- EDUCATION -->
+  <h2>Education</h2>
+  <ul>
+    <li>Executive MBA, University of St. Gallen (HSG), 2019</li>
+    <li>PhD (Dr. sc. ETH), Surface Engineering & Polymer Technology, ETH Zurich, 2009</li>
+    <li>Dipl. Materials Engineer ETH, ETH Zurich, 2005</li>
+  </ul>
+
+</div>
+
+</body>
+
