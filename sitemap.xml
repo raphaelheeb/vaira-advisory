@@ -235,5 +235,20 @@ layout: null
   <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/structurally-sustaining-innovation-capability/" />
 </url>
 
+<url>
+  <loc>{{ site.url }}/insights/from-idea-to-industrial-product/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/from-idea-to-industrial-product/" />
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/von-der-idee-zum-industriellen-produkt/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/from-idea-to-industrial-product/" />
+</url>
+
+<url>
+  <loc>{{ site.url }}/de/insights/von-der-idee-zum-industriellen-produkt/</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}/de/insights/von-der-idee-zum-industriellen-produkt/" />
+  <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/insights/from-idea-to-industrial-product/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/insights/from-idea-to-industrial-product/" />
+</url>
 
 </urlset>
