@@ -1,0 +1,374 @@
+<style>
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+/* Grundlayout */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: #0E1514;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 28mm 18mm 30mm 18mm;
+  page-break-after: always;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+.page > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* Überschriften */
+h1 {
+  font-size: 24pt;
+  margin: 0 0 0.25cm 0;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 11pt;
+  margin: 0.7cm 0 0.4cm 0;
+  padding-bottom: 0.15cm;
+  border-bottom: 2px solid #5F8A8E;
+}
+
+.page h2:first-of-type {
+  margin-top: 0.4cm;
+}
+
+h3 {
+  font-size: 10pt;
+  margin: 0.4cm 0 0.1cm 0;
+}
+
+/* Grundabstände */
+p, ul {
+  margin: 0 0 0.4cm 0;
+}
+
+ul { padding-left: 0.5cm; }
+ul li { margin-bottom: 0.15cm; }
+
+/* Links */
+a {
+  color: #0E1514;
+  text-decoration: none;
+  border-bottom: 1px solid #5F8A8E;
+}
+
+a:hover {
+  color: #5F8A8E;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5cm;
+  margin-bottom: 1cm;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text p {
+  margin-bottom: 0.32cm;
+  line-height: 1.40;
+}
+
+.header-text p strong {
+  color: #5F8A8E;
+  font-size: 11pt;
+}
+
+/* Foto */
+.photo {
+  width: 4.5cm;
+  height: 4.5cm;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ddd;
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Kontaktblock */
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 1cm;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.qr {
+  width: 2.0cm;
+  height: 2.0cm;
+  flex-shrink: 0;
+}
+
+.qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Kernkompetenzen */
+.skills {
+  columns: 2;
+  column-gap: 1cm;
+  column-fill: balance;
+}
+
+.skills li {
+  break-inside: avoid;
+}
+
+.skills .sub {
+  font-size: 9pt;
+  color: #444;
+}
+
+/* Tätigkeitsblock (Seite 2 & 3) */
+.role-block {
+  border-left: 2px solid #5F8A8E;
+  padding-left: 0.5cm;
+  margin-bottom: 0.9cm;
+}
+
+.period {
+  font-size: 9pt;
+  color: #444;
+  margin: -0.1cm 0 0.3cm 0;
+}
+
+/* Erfolgsblock */
+.achievements {
+  background: #F5F8F8;
+  padding: 0.6cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.6cm;
+}
+
+.achievements ul {
+  margin: 0;
+}
+
+/* Partnerschaften */
+.partners-block {
+  background: #F5F8F8;
+  padding: 0.5cm 0.8cm;
+  border-radius: 4px;
+  margin-top: 0.4cm;
+}
+
+.partners-block ul {
+  margin: 0;
+}
+</style>
+
+<body>
+
+<!-- ============================
+     SEITE 1
+============================= -->
+<div class="page">
+
+  <div class="header">
+    <div class="header-text">
+      <h1>RAPHAEL HEEB</h1>
+
+      <p><strong>Technologie- und Innovations-Spezialist</strong><br>
+      Gründer VAIRA Technology · Mitgründer & ehem. CEO NematX AG · 
+      Ehem. Leiter Engineering, Optics Balzers AG</p>
+
+      <p>
+        Zürich, Schweiz · <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a></li> · +41 76 463 06 83<br>
+      </p>
+    </div>
+
+    <div class="photo">
+      <img src="/assets/img/raphael-heeb.jpg" alt="Raphael Heeb">
+    </div>
+  </div>
+
+  <h2>Profil</h2>
+  <p>
+Erfahrener Innovationsexperte und Technologieunternehmer mit über 15 Jahren Führungserfahrung in fortschrittlicher Fertigung,
+Materialwissenschaft und Technologietransfer. Gründer von VAIRA Technology und Mitgründer sowie ehemaliger CEO des
+ETH-Spin-offs NematX AG. Kombination aus tiefem technischem Verständnis (Dr. sc. ETH Zürich) und strategischem
+Management (Executive MBA HSG). Positioniert als Brückenbauer zwischen Industrie, Forschung und Verwaltung mit Fokus auf
+Technologietransfer, Standortentwicklung und regionaler Wertschöpfung. Langjährige Erfahrung in der Zusammenarbeit mit kantonalen und 
+regionalen Standortförderungen, Innovationsnetzwerken und öffentlichen Institutionen..
+  </p>
+
+  <h2>Kernkompetenzen</h2>
+
+  <ul class="skills">
+    <li>Strategisches Innovations- & Technologiemanagement</li>
+    <li>Bewertung von Innovations- & Technologieprojekten</li>
+    <li>Technologietransfer & Industrialisierung<br><span class="sub">(von F&E bis Serienproduktion)</span></li>
+    <li>Fortschrittliche Fertigung & Materialien</li>
+    <li>Stakeholder-Management zwischen Industrie, Forschung & Verwaltung</li>
+    <li>Interkulturelle Zusammenarbeit<br><span class="sub">(Europa, Asien, USA)</span></li>
+    <li>Leadership & Teamentwicklung</li>
+  </ul>
+
+  <h2>Auszeichnungen</h2>
+  <ul>
+    <li>W.A. de Vigier Award – Gewinner</li>
+    <li>Formnext Start-Up Challenge – Gewinner</li>
+    <li>Shenzhen Innovation & Entrepreneurship Competition – Finalist</li>
+  </ul>
+
+  <h2>Ausbildung</h2>
+  <ul>
+    <li>Executive MBA (General Management), Universität St. Gallen (HSG), 2019</li>
+    <li>PhD (Dr. sc. ETH) in Oberflächentechnik & Polymertechnologie, ETH Zürich, 2009</li>
+    <li>Dipl. Werkstoffingenieur ETH, ETH Zürich, 2005</li>
+  </ul>
+
+</div>
+
+
+<!-- ============================
+     SEITE 2
+============================= -->
+<div class="page">
+
+  <h2>Sprachen</h2>
+  <ul>
+    <li>Deutsch – Muttersprache</li>
+    <li>Englisch – Verhandlungssicher</li>
+    <li>Französisch – Grundkenntnisse</li>
+  </ul>
+
+  <h2>Kontakt</h2>
+  <div class="contact-block">
+    <ul class="contact-info">
+      <li>E-Mail: <a href="mailto:raphael.heeb@vaira.ch">raphael.heeb@vaira.ch</a></li>
+      <li>Website: <a href="https://vaira.ch/de">vaira.ch</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/raphaelheeb">linkedin.com/in/raphaelheeb</a></li>
+    </ul>
+
+    <div class="qr">
+      <img src="/assets/img/QRCode_LinkedIn_RH.svg" alt="LinkedIn QR Code">
+    </div>
+  </div>
+
+  <h2>Tätigkeit</h2>
+  <div class="role-block">
+    <h3>Gründer & Technische Leitung – VAIRA Technology</h3>
+    <div class="period">2026 – heute</div>
+    <ul>
+      <li>Entwicklung von Innovations- und Industrialisierungsstrategien für KMU, Startups und Industriepartner</li>
+      <li>Hands-on Unterstützung in technischer Architektur, Materialentwicklung und Fertigungsprozessen</li>
+      <li>Aufbau lokaler sowie internationaler Technologie- und Industriepartnerschaften (Europa, Asien, USA)</li>
+      <li>Erstellung strategischer Entscheidungsgrundlagen (Whitepapers, Roadmaps, Technologieanalysen)</li>
+      <li>Unterstützung regionaler Standortförderungen bei Innovationsprojekten, Technologietransfer und Projektbewertung</li>
+      <li>Beratung von Geschäftsleitungen zu Innovationsstrategien, F&E-Integration, Produktionsaufbau und Skalierungsszenarien</li>
+       <li>Unterstützung kantonaler und regionaler Behörden bei Innovationsprojekten, Fördergesuchen und der Weiterentwicklung von Standortstrategien</li>
+    </ul>
+  </div>
+
+  <h2>Erfolge</h2>
+  <div class="achievements">
+    <ul>
+      <li>Gründung und Leitung von NematX AG; erfolgreiche strategische Integration in Polyplastics / DAICEL Corporation (Japan)</li>
+      <li>Identifikation und Validierung neuer Technologien in Europa, Asien und den USA</li>
+      <li>Skalierung von Hochleistungs-3D-Drucksystemen von Labor- auf Pilotproduktionsniveau</li>
+      <li>Führung interdisziplinärer Teams in F&E, Industrialisierung und Business Development</li>
+      <li>Aufbau internationaler Partnerschaften mit direktem Einfluss auf regionale Wertschöpfung</li>
+      <li>Mehrfache Auszeichnungen für Innovation und Unternehmertum</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<!-- ============================
+     SEITE 3
+============================= -->
+<div class="page">
+
+  <h2>Berufserfahrung</h2>
+
+  <div class="role-block">
+    <h3>CEO & Mitgründer – NematX AG</h3>
+    <div class="period">2020–2025</div>
+    <ul>
+      <li>Strategische und operative Gesamtleitung eines ETH-Spin-offs im Bereich Hochleistungs-3D-Druck</li>
+      <li>Definition von Unternehmensvision, Marktstrategie und Geschäftsentwicklung</li>
+       <li>Enge Zusammenarbeit mit Förderstellen, Hochschulen und Technologieclustern zur Stärkung des regionalen Innovationsökosystems</li>
+      <li>Aufbau globaler Partnerschaften in zahlreichen Märkten mit Fokus auf Elektronik, Halbleitertechnologie und Elektromobilität</li>
+      <li>Führung der F&E-Strategie, Produktentwicklung und Skalierung der Pilotproduktion</li>
+      <li>Erfolgreiche strategische Integration in Polyplastics / DAICEL Corporation (Japan)</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Leiter Engineering / Mitglied der Geschäftsleitung – Optics Balzers AG</h3>
+    <div class="period">2016–2019</div>
+    <ul>
+      <li>Leitung der Engineering-Abteilung für Produktindustrialisierung und Serienproduktion</li>
+      <li>Einführung von Lean Six Sigma, Toyota KATA und Prozessoptimierung</li>
+      <li>Koordination der Zusammenarbeit zwischen Standorten in Liechtenstein und Asien</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Leiter Pilotproduktion – Optics Balzers AG</h3>
+    <div class="period">2013–2015</div>
+    <ul>
+      <li>Aufbau einer neuen Pilotlinie für optische Baugruppen</li>
+      <li>Überführung von F&E-Konzepten in stabile Produktionsprozesse</li>
+      <li>Definition und Implementierung von Qualitäts- und Fertigungsstandards</li>
+    </ul>
+  </div>
+
+  <div class="role-block">
+    <h3>Projektleiter F&E / NPI – Optics Balzers AG</h3>
+    <div class="period">2009–2013</div>
+    <ul>
+      <li>Planung und Leitung komplexer F&E-Projekte im Bereich optischer Beschichtungen & Komponenten</li>
+      <li>Einsatz fortschrittlicher Fertigungstechnologien zur Erweiterung der Unternehmenskompetenzen</li>
+      <li>Unterstützung des Produktmanagements und der Geschäftsentwicklung</li>
+    </ul>
+  </div>
+
+  <h2>Partnerschaften</h2>
+  <div class="partners-block">
+    <ul>
+      <li>Internationale Kooperationen in Japan, Taiwan, China, USA und Europa</li>
+      <li>Zusammenarbeit mit global führenden Industriepartnern in Elektronik, Halbleitertechnologie und Mobilität</li>
+      <li>Entwicklung und Umsetzung technologischer Innovationen mit Partnern aus Industrie und Forschung</li>
+      <li>Skalierung von High-Tech-Produktionslinien mit internationalen Partnern entlang der gesamten Wertschöpfungskette</li>
+      <li>Erfolgreiche Zusammenarbeit mit regionalen Innovationsnetzwerken, Hochschulen und Technologieclustern</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
