@@ -188,34 +188,35 @@ a:hover {
   margin: 0;
 }
 
-/* Platzoptimierung exklusiv für Seite 3 */
+/* Seite 3 – leicht grosszügigere, aber sichere Abstände */
 .page:nth-of-type(3) {
-  padding-top: 22mm;     /* statt 28mm */
-  padding-bottom: 22mm;  /* statt 30mm */
-  line-height: 1.38;     /* statt 1.45 */
+  padding-top: 24mm;     /* vorher 22mm */
+  padding-bottom: 24mm;  /* vorher 22mm */
+  line-height: 1.40;     /* vorher 1.38 */
 }
 
-/* h2-Abstände reduzieren */
+/* h2 etwas entspannter */
 .page:nth-of-type(3) h2 {
-  margin-top: 0.25cm;    /* statt 0.7cm */
-  margin-bottom: 0.25cm; /* statt 0.4cm */
+  margin-top: 0.35cm;    
+  margin-bottom: 0.30cm;
 }
 
-/* role-block kompakter */
+/* role-block wieder etwas luftiger, aber nicht zu viel */
 .page:nth-of-type(3) .role-block {
-  margin-bottom: 0.55cm; /* statt 0.9cm */
-  padding-left: 0.35cm;  /* statt 0.5cm */
+  margin-bottom: 0.65cm; /* vorher 0.55cm */
+  padding-left: 0.40cm;  /* vorher 0.35cm */
 }
 
-/* Bullet-Abstände leicht reduzieren */
+/* Bullets minimal entspannter */
 .page:nth-of-type(3) ul li {
-  margin-bottom: 0.10cm; /* statt 0.15cm */
+  margin-bottom: 0.12cm; /* vorher 0.10cm */
 }
 
-/* h3 etwas kompakter */
+/* h3 ebenfalls leicht grosszügiger */
 .page:nth-of-type(3) h3 {
-  margin-top: 0.25cm; /* statt 0.4cm */
+  margin-top: 0.30cm; /* vorher 0.25cm */
 }
+
 </style>
 
 <body>
